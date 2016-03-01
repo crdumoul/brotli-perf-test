@@ -1,0 +1,86 @@
+Type.registerNamespace('DTG.Dollar.Web.Consumer.Services');
+DTG.Dollar.Web.Consumer.Services.CustomerWebService=function() {
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.prototype={
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.get_path();},
+GetLocations:function(searchString,includeAddress,includeMetroAreas,includeStates,includeCountries,filterCountries,filterB2B,inhibitCrossBrandShopping,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetLocations',false,{searchString:searchString,includeAddress:includeAddress,includeMetroAreas:includeMetroAreas,includeStates:includeStates,includeCountries:includeCountries,filterCountries:filterCountries,filterB2B:filterB2B,inhibitCrossBrandShopping:inhibitCrossBrandShopping},succeededCallback,failedCallback,userContext); },
+GetVehicles:function(locationCode,selectedType,filterB2B,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetVehicles',false,{locationCode:locationCode,selectedType:selectedType,filterB2B:filterB2B},succeededCallback,failedCallback,userContext); },
+GetVehiclesByDate:function(locationCode,selectedType,pickupDate,filterB2B,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetVehiclesByDate',false,{locationCode:locationCode,selectedType:selectedType,pickupDate:pickupDate,filterB2B:filterB2B},succeededCallback,failedCallback,userContext); },
+GetReturnLocations:function(pickupLocationCode,searchText,returnAll,filterB2B,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetReturnLocations',false,{pickupLocationCode:pickupLocationCode,searchText:searchText,returnAll:returnAll,filterB2B:filterB2B},succeededCallback,failedCallback,userContext); },
+PrimeReturnLocations:function(pickupLocationCode,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'PrimeReturnLocations',false,{pickupLocationCode:pickupLocationCode},succeededCallback,failedCallback,userContext); },
+GetAllStates:function(countryCode,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetAllStates',false,{countryCode:countryCode},succeededCallback,failedCallback,userContext); },
+GetD4BStates:function(countryCode,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetD4BStates',false,{countryCode:countryCode},succeededCallback,failedCallback,userContext); },
+GetStates:function(countryCode,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetStates',false,{countryCode:countryCode},succeededCallback,failedCallback,userContext); },
+GetCountries:function(succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetCountries',false,{},succeededCallback,failedCallback,userContext); },
+GetMetroAreas:function(stateCode,countryCode,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetMetroAreas',false,{stateCode:stateCode,countryCode:countryCode},succeededCallback,failedCallback,userContext); }}
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.registerClass('DTG.Dollar.Web.Consumer.Services.CustomerWebService',Sys.Net.WebServiceProxy);
+DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance = new DTG.Dollar.Web.Consumer.Services.CustomerWebService();
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.set_path = function(value) { DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.set_path(value); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.get_path = function() { return DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.get_path(); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.set_timeout = function(value) { DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.set_timeout(value); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.get_timeout = function() { return DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.get_timeout(); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.set_defaultUserContext = function(value) { DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.set_defaultUserContext(value); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.get_defaultUserContext = function() { return DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.get_defaultUserContext(); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.set_defaultSucceededCallback = function(value) { DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.set_defaultSucceededCallback(value); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.get_defaultSucceededCallback = function() { return DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.get_defaultSucceededCallback(); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.set_defaultFailedCallback = function(value) { DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.set_defaultFailedCallback(value); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.get_defaultFailedCallback = function() { return DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.get_defaultFailedCallback(); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.set_enableJsonp = function(value) { DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.set_enableJsonp(value); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.get_enableJsonp = function() { return DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.get_enableJsonp(); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.set_jsonpCallbackParameter = function(value) { DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.set_jsonpCallbackParameter(value); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.get_jsonpCallbackParameter = function() { return DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.get_jsonpCallbackParameter(); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.set_path("/services/customerwebservice.asmx");
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.GetLocations= function(searchString,includeAddress,includeMetroAreas,includeStates,includeCountries,filterCountries,filterB2B,inhibitCrossBrandShopping,onSuccess,onFailed,userContext) {DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.GetLocations(searchString,includeAddress,includeMetroAreas,includeStates,includeCountries,filterCountries,filterB2B,inhibitCrossBrandShopping,onSuccess,onFailed,userContext); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.GetVehicles= function(locationCode,selectedType,filterB2B,onSuccess,onFailed,userContext) {DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.GetVehicles(locationCode,selectedType,filterB2B,onSuccess,onFailed,userContext); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.GetVehiclesByDate= function(locationCode,selectedType,pickupDate,filterB2B,onSuccess,onFailed,userContext) {DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.GetVehiclesByDate(locationCode,selectedType,pickupDate,filterB2B,onSuccess,onFailed,userContext); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.GetReturnLocations= function(pickupLocationCode,searchText,returnAll,filterB2B,onSuccess,onFailed,userContext) {DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.GetReturnLocations(pickupLocationCode,searchText,returnAll,filterB2B,onSuccess,onFailed,userContext); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.PrimeReturnLocations= function(pickupLocationCode,onSuccess,onFailed,userContext) {DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.PrimeReturnLocations(pickupLocationCode,onSuccess,onFailed,userContext); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.GetAllStates= function(countryCode,onSuccess,onFailed,userContext) {DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.GetAllStates(countryCode,onSuccess,onFailed,userContext); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.GetD4BStates= function(countryCode,onSuccess,onFailed,userContext) {DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.GetD4BStates(countryCode,onSuccess,onFailed,userContext); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.GetStates= function(countryCode,onSuccess,onFailed,userContext) {DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.GetStates(countryCode,onSuccess,onFailed,userContext); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.GetCountries= function(onSuccess,onFailed,userContext) {DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.GetCountries(onSuccess,onFailed,userContext); }
+DTG.Dollar.Web.Consumer.Services.CustomerWebService.GetMetroAreas= function(stateCode,countryCode,onSuccess,onFailed,userContext) {DTG.Dollar.Web.Consumer.Services.CustomerWebService._staticInstance.GetMetroAreas(stateCode,countryCode,onSuccess,onFailed,userContext); }
+var gtc = Sys.Net.WebServiceProxy._generateTypedConstructor;
+if (typeof(DTG.Dollar.Web.Consumer.Services.LocationBasicInfo) === 'undefined') {
+DTG.Dollar.Web.Consumer.Services.LocationBasicInfo=gtc("DTG.Dollar.Web.Consumer.Services.LocationBasicInfo");
+DTG.Dollar.Web.Consumer.Services.LocationBasicInfo.registerClass('DTG.Dollar.Web.Consumer.Services.LocationBasicInfo');
+}
+if (typeof(DTG.Dollar.Web.Consumer.Services.VehicleBasicInfo) === 'undefined') {
+DTG.Dollar.Web.Consumer.Services.VehicleBasicInfo=gtc("DTG.Dollar.Web.Consumer.Services.VehicleBasicInfo");
+DTG.Dollar.Web.Consumer.Services.VehicleBasicInfo.registerClass('DTG.Dollar.Web.Consumer.Services.VehicleBasicInfo');
+}
+if (typeof(DTG.Dollar.Web.Consumer.Services.ReturnLocationResponse) === 'undefined') {
+DTG.Dollar.Web.Consumer.Services.ReturnLocationResponse=gtc("DTG.Dollar.Web.Consumer.Services.ReturnLocationResponse");
+DTG.Dollar.Web.Consumer.Services.ReturnLocationResponse.registerClass('DTG.Dollar.Web.Consumer.Services.ReturnLocationResponse');
+}
+if (typeof(DTG.Dollar.Web.Consumer.Services.StateBasicInfo) === 'undefined') {
+DTG.Dollar.Web.Consumer.Services.StateBasicInfo=gtc("DTG.Dollar.Web.Consumer.Services.StateBasicInfo");
+DTG.Dollar.Web.Consumer.Services.StateBasicInfo.registerClass('DTG.Dollar.Web.Consumer.Services.StateBasicInfo');
+}
+Type.registerNamespace('DTG.Enterprise.Data.Locations');
+if (typeof(DTG.Enterprise.Data.Locations.Country) === 'undefined') {
+DTG.Enterprise.Data.Locations.Country=gtc("DTG.Enterprise.Data.Locations.Country");
+DTG.Enterprise.Data.Locations.Country.registerClass('DTG.Enterprise.Data.Locations.Country');
+}
+if (typeof(DTG.Dollar.Web.Consumer.Services.MetroAreaBasicInfo) === 'undefined') {
+DTG.Dollar.Web.Consumer.Services.MetroAreaBasicInfo=gtc("DTG.Dollar.Web.Consumer.Services.MetroAreaBasicInfo");
+DTG.Dollar.Web.Consumer.Services.MetroAreaBasicInfo.registerClass('DTG.Dollar.Web.Consumer.Services.MetroAreaBasicInfo');
+}

@@ -1,0 +1,102 @@
+.rte-footer {
+    background-color: #3F3F3F;
+    color: #FFFFFF;
+}
+
+.rte-footer-parsys .rte-footer .rte-content {
+    padding-top: 22px;
+    padding-bottom: 12px;
+}
+
+.rte-footer-parsys .rte-footer .toggle-visible-content {
+    display: none;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.rte-footer-parsys .rte-footer .toggle-content-button:focus {
+    outline: 0;
+}
+
+.rte-footer-parsys .rte-footer .toggle-content-button p {
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-top: 1px solid #7a7a7a;
+    border-bottom: 1px solid #7a7a7a;
+    margin-bottom: 0;
+}
+
+.rte-footer-parsys .rte-footer .toggle-content-button p.show-text span {
+    padding-right: 33px;
+    background: url('../../../content/dam/newco/footer/footerRteDownArrow.png') right no-repeat;
+    background-size: 13px;
+}
+
+.rte-footer-parsys .rte-footer .toggle-content-button p.hide-text span {
+    padding-right: 33px;
+    background: url('../../../content/dam/newco/footer/footerRteUpArrow.png') right no-repeat;
+    background-size: 13px;
+}
+
+.toggle-content-button a,
+.rte-footer-container a:hover,
+.toggle-content-button a:hover {
+    color: #FFF;
+    cursor: pointer;
+}
+
+/***********************************
+ * Desktop Styles
+ ***********************************/
+@media (min-width: 769px) {
+    .rte-footer-container {
+        margin: 0 0 16px 0;
+        padding: 0 80px;
+        font-size: 12px;
+    }
+    .rte-footer-container hr {
+        margin-left: -80px;
+        margin-right: -80px;
+    }
+    .rte-footer-container h4 {
+        padding-top: 10px;
+        font-size: 18px;
+    }
+}
+
+/***********************************
+ * MD - SM - XS Styles
+ ***********************************/
+@media ( max-width: 768px ) {
+    .rte-footer-container {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .rte-footer-container hr {
+        margin: 0;
+    }
+    .rte-footer-container h4 {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+}
+
+/***********************************
+ * Phone Styles
+ ***********************************/
+@media (max-width: 480px) {
+    .rte-footer-parsys .rte-footer .rte-content {
+        padding-top: 6px;
+        padding-bottom: 12px;
+    }
+
+    .rte-footer-parsys .rte-footer .toggle-content-button {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+

@@ -1,0 +1,130 @@
+/* 03/02/2015 01:40 PM   ==   v0.0.0.6.623 */
+
+#modal-global-search {
+	width: 100%;
+	padding: 6px 22px;
+	border: 1px solid #939598;
+	border-radius: 7px;
+	border-bottom-left-radius: 0;
+	font-style: normal;
+	font-weight: lighter;
+	color: #1e2121;
+	position: relative;
+	z-index: 100;
+	font-size: 16px;
+}
+
+#modal-typeahead .rui-icon-search {
+	background-color: #da291c;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 36px;
+	height: 36px;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	color: #fff;
+	padding: 6px;
+	font-size: 20px;
+	display: block;
+	z-index: 150;
+}
+
+#modal-typeahead input {
+	outline: none;
+}
+
+.typeahead-input-wrapper {
+	position: relative;
+}
+
+.rui-typeahead {
+	position: absolute;
+	visibility: hidden;
+	background-color: #fff; 
+	border: 1px solid #ccc;
+	border-top: none;
+	overflow: hidden;
+	-webkit-transition: height 0.5s ;
+	transition: height 0.5s;
+	z-index: 150;
+}
+
+.modal .rui-typeahead {
+	border: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.rui-typeahead.rui-typeahead-open {
+	visibility: visible;
+}
+
+#Ntt-typeahead .search-content-quicklinks .hdrimg {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0a5498;
+}
+
+/*Anjana changes end*/
+
+
+.rui-typeahead .rui-typeahead-loader {
+	animation: fade-in 0.25s; 
+	-webkit-animation: fade-in 0.25s; 
+	position: absolute; z-index: 1; 
+	top: 0; left: 0; 
+	height: 100%; width: 100%; 
+	background: rgba(255,255,255,0.85) 
+	url('img/widget-loader-lg.gif') center center no-repeat;}
+
+.rui-typeahead-placeholder {font-style: italic; color: #999;}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to   {opacity: 1;}
+}
+@-webkit-keyframes fade-in {
+    from {opacity: 0;}
+    to   {opacity: 1;}
+}
+
+/* rui-typeahead = Global and support Search */
+.rui-typeahead h5 {margin: 0;font-size : 14px; padding: 10px 0 10px 5px; font-weight: bold; text-align: left}
+.rui-typeahead a {
+	font-weight: 600;
+	font-size: 14px;
+	color: #6E6A6A !important; 
+	display: block !important; 
+	padding: 3px 5px; 
+	text-align: left !important;}
+
+.rui-typeahead .search-content-quicklinks a {
+	position: relative; 
+	display: block; 
+	padding-left: 55px; 
+	min-height: 55px; 
+	color: #0a5498 !important;}
+.rui-typeahead .search-content-quicklinks a > img {
+	position: absolute; top: 0; left: 5px; max-width: 50px; height: 50px;}
+
+/*Prabhu Changes Starts*/
+.rui-typeahead .search-content-quicklinks a > div {font-size: 26px;vertical-align: middle;color: #0a5498;float:left;}
+.rui-typeahead .search-content-quicklinks a > div[class^="rui-icon-"] {color: #6E6A6A;padding-right: 16px;}
+.vectr {padding-left: 10px !important;text-decoration: none !important;}
+.rui-typeahead .search-content-quicklinks .hdrimg{font-size: 15px;}
+.rui-typeahead .search-content-quicklinks a > span {margin-left: auto;font-size: 15px;position: static;}
+#Ntt-typeahead .search-content-quicklinks a {padding-left: 53px; }
+#Ntt-typeahead .search-content-quicklinks a > div {font-size: 22px;vertical-align: middle;color: #6E6A6A;float:left;padding-right: 11px;}
+#Ntt-typeahead .search-content-quicklinks a > span {margin-left: auto;font-size: 13px;position: static;}
+/*Prabhu Changes Ends*/
+/* rui-typeahead [End] */
+
+/*Alex Changes Starts*/
+.rui-typeahead .search-content-quicklinks .hdrimg:hover, .rui-typeahead .search-content-quicklinks a > span:hover {
+    text-decoration: underline;
+}
+#Ntt-typeahead .search-content-quicklinks .hdrimg:hover, #Ntt-typeahead .search-content-quicklinks a > span:hover {
+    text-decoration: underline;
+}
+/*Alex Changes Ends*/

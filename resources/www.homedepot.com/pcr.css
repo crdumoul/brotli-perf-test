@@ -1,0 +1,33 @@
+.personal-category-r img {
+	width: 183px;
+	height: 183px;
+	margin-bottom: 1px;
+}
+
+.personal-category-r [class^="col-"], .personal-category-r [class*="col-"]{
+	margin-top: 20px;
+	border-left: 0 !important;
+	border-right: 0 !important;
+}
+
+.personal-category-header-title {
+	padding: 15px 10px 15px 10px;
+	background-color: #eee;
+	font-size: 21px;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.personal-category-sub-title {
+	width: 173px;
+    height: 40px;
+    color: #000;
+    background-color: #eee;
+    padding-top: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    /* line-height: 20px; */
+    padding-left: 10px;
+}

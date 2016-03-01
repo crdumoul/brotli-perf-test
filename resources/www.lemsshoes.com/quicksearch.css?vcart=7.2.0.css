@@ -1,0 +1,57 @@
+div.searchlight-balloon {
+	opacity: 1.00;
+	z-index: 999;
+}
+table.searchlight-results {
+	border-collapse: collapse;
+	font-family: 'Open Sans', 'Trebuchet MS', Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	width: 250px;
+}
+div.searchlight-results-wrapper {
+	color: #000;
+	border: 1px solid #aaa;
+	/*margin: -1px;*/
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+table.searchlight-results td {
+	padding: 4px;
+	text-shadow: none;
+}
+table.searchlight-results .searchlight-header-text,
+table.searchlight-results .searchlight-result-text {
+	
+}
+table.searchlight-results td {
+	background: #FFF;
+	width: 100%;
+}
+table.searchlight-results td .searchlight-result-item {
+	padding: 1px 0;
+}
+table.searchlight-results tr {
+	cursor: pointer;
+}
+table.searchlight-results tr.searchlight-selected th,
+table.searchlight-results tr.searchlight-selected td {
+	background: #f9f9f9;
+	color: #999;
+	text-shadow: none;
+}
+table.searchlight-results .searchlight-result-icon {
+	margin-right: 4px;
+	vertical-align: text-top;
+	float: left;
+}
+table.searchlight-results tr.searchlight-spacer-row td {
+	height: 10px;
+}
+.search-price {
+	font-weight: bold;
+	color: #AC2B27;
+	float: left;
+}

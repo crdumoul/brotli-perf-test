@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+<meta http-equiv=x-dns-prefetch-control content="off"/>
+<link rel=icon href="https://assets.tumblr.com/images/favicons/favicon.ico?_v=a891a6916b745ae20be499f98db2f875" type="image/gif"/>
+<style type=text/css>*{margin:0;padding:0}#follow-button{display:inline-block;box-sizing:border-box;height:20px;border-radius:3px;text-decoration:none;font:bold 12px "Helvetica Neue",Helvetica,Arial,Sans-serif;line-height:18px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}#follow-button .inner{height:100%;padding:0 5px}#follow-button .label{display:inline-block;height:100%;max-width:172px;padding-left:6px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}#follow-button .logo-container{float:left;padding-top:2px;width:9px}#follow-button .logo-svg{height:12px}#follow-button.blue{background-color:#36465d;color:#fff;border:1px solid #36465d}#follow-button.blue .logo-svg{fill:#fff}#follow-button.white{background-color:#fff;color:#36465d;border:1px solid #d0d0d0}#follow-button.white .logo-svg{fill:#36465d}#follow-button.black{background-color:#444;color:#fff;border:1px solid #444}#follow-button.black .logo-svg{fill:#fff}</style>
+<script type=text/javascript>var FollowButton=(function(){var i;var b=document.location.search.substring(1);var d={};var a=(document.cookie.indexOf("logged_in=1")!=-1);var e=window.navigator.userLanguage||window.navigator.language;var h={color:"blue",type:"follow",tumblelog:"staff",language:"en-us"};var g={"en-us":{follow:"Follow"},"de-de":{follow:"Folgen"},"fr-fr":{follow:"S'abonner"},"it-it":{follow:"Segui"},"ja-jp":{follow:"フォロー"},"tr-tr":{follow:"Takip et"},"es-es":{follow:"Seguir"},"ru-ru":{follow:"Читать"},"pl-pl":{follow:"Obserwuj"},"pt-pt":{follow:"Seguir"},"pt-br":{follow:"Seguir"},"nl-nl":{follow:"Volgen"},"ko-kr":{follow:"팔로우"},"zh-cn":{follow:"关注"},"zh-tw":{follow:"追蹤"}};function f(m){var l=String(m).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");return l}function j(m){var l={};m.replace(new RegExp("([^?=&]+)(=([^&]*))?","g"),function(o,n,q,p){l[n]=p});return l}function k(){if(b.length){d=j(b);if(d.tumblelog){d.tumblelog=f(unescape(d.tumblelog))}}}function c(){var l={blue:1,black:1,white:1};var r={follow:1,"follow-blog":1};var n=(l[d.color])?d.color:h.color;var o=(r[d.type])?d.type:h.type;var p=d.tumblelog||h.tumblelog;var q=d.language||e;var m=g[q.toLowerCase()]||g[h.language];i.className=n+" "+o;i.href="https://www.tumblr.com/"+(a?"":"register/")+"follow/"+p;if(d.type==="follow-blog"){document.getElementById("label").innerHTML=p}else{document.getElementById("label").innerHTML=m.follow}}return{initialize:function(){i=document.getElementById("follow-button");d=h;k();c()}}})();</script>
+</head>
+<body>
+<a href=https://www.tumblr.com/register id=follow-button class="blue follow" target=_new>
+<div class=inner>
+<div class=logo-container>
+<svg class=logo-svg version=1.1 id=Layer_1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewBox="0 0 9 12" enable-background="new 0 0 9 12" xml:space=preserve width=9 height=12>
+<rect x=-319.1 y=-571 display=none />
+<path fill-rule=evenodd clip-rule=evenodd d="M1.9,3.7C3.7,3.4,4.2,2,4.2,1c0-0.1,0.1,0,0.1,0h1.4v2.5H8v1.7H5.8
+                    v2.6c0,0.7,0.4,0.9,0.7,1c0.3,0.1,0.8,0,1.1-0.1l0.7,1.8c0,0-0.6,0.4-1.5,0.6c-0.2,0-0.4,0.1-0.6,0.1H6.1c-0.2,0-0.5,0-0.7,0
+                    c-1.4-0.3-1.9-1.5-1.9-2.7V5.2H1.9V3.7z M8.5,8.8C8.2,8.1,8,8.1,7.7,8.1c-0.3,0-0.9,0-0.9,0V5.9h1.3c0.5,0,0.7-0.3,0.7-0.6V3.5
+                    c0-0.4-0.2-0.7-0.6-0.7l-1.5,0c0,0,0-1.1,0-1.6c0-0.8-0.5-1.1-1-1.2c0,0,0,0,0,0H3.4c-0.5,0-1,0.4-1,0.9C2.2,1.8,1.6,2.6,0.5,2.9
+                    C0.2,3.1,0,3.2,0,3.6v1.3c0,0.7,0,1.1,0.8,1.1h0.3v0.9v1.4c0,1,0.6,2.1,1.3,2.7c0.6,0.5,0.8,0.6,1.4,0.8C4.6,12,5.1,12,5.7,12
+                    s1.6-0.2,2.2-0.5c0.5-0.2,0.7-0.4,0.9-0.7c0.3-0.4,0.1-0.5-0.1-1.3C8.5,8.8,8.5,8.8,8.5,8.8z"/>
+</svg>
+</div>
+<span id=label class=label>Follow</span>
+</div>
+</a>
+<script type=text/javascript>FollowButton.initialize();</script>
+<script>var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-97144-8"]);_gaq.push(["_setAllowLinker",true]);_gaq.push(["_setDomainName","tumblr.com"]);_gaq.push(["_trackPageview","/v2/follow_button.html"]);(function(){var b=document.createElement("script");b.type="text/javascript";b.async=true;b.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)})();(function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-97144-14","tumblr.com",{allowLinker:true,sampleRate:0.7});ga("send","pageview","/v2/follow_button.html");</script>
+</body>
+</html>

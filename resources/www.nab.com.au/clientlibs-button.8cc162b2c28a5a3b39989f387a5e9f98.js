@@ -1,0 +1,1 @@
+function setButtonHeight(){$(".button-container.align-bottom a").each(function(){var a=0;a=Math.max(a,$(this).outerHeight()),$(this).closest(".button").height(a)})}$(window).load(function(){setButtonHeight()});

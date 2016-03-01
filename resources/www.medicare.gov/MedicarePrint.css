@@ -1,0 +1,188 @@
+﻿/* Global Print guidelines copied from medicare-print.css to be used across all tools */
+
+/* Global header
+-------------------------------------------------------------------------------------------*/
+#headertoolbarleft,
+#headertoolbarright,
+#menu-btn,
+#topnav, 
+#nav-list,
+#headersearchrightcontent,
+.HiddenText
+{ 
+    display: none !important; 
+}
+#headerlogocontent  
+{
+    display: inline-block; 
+    margin-bottom: 0px; 
+    position: inherit;
+}
+.IE7 #headerlogocontent { margin-top: -195px; }
+.IE8 #headerlogocontent { zoom: 90%; }
+.IE8 #logotitlecontainer { margin-left: -20px !important; }
+
+
+/* Global footer
+-------------------------------------------------------------------------------------------*/
+#footer-bottom,
+#footer_home_btn
+{ 
+    display: none !important; 
+}
+#footer-home-logo-wrapper { margin-left: 0; zoom: 100%; }
+#footer_hhs_logo a
+{ 
+    width: auto; 
+    height: auto; 
+}
+#footer_hhs_logo_link img { margin-top: -120px !important; }
+#footer-top { border-top: 1px solid; margin-top: 40px; }
+#footer-address { width: 40%; }
+
+
+
+/* Page 
+-------------------------------------------------------------------------------------------*/
+html body { zoom: 100%; }
+#page  
+{   
+    width: 100% !important;
+    overflow: visible; 
+    padding-right: 30px !important;
+    padding-left: 0px !important;
+    margin-left: 0px !important; 
+    zoom: 100%;
+}
+.page-content-headline { zoom: 100%; width: 100% !important; display: inline; }
+#homebanner,
+#homepage-buttons-column,
+.sharethis-wrapper,
+.widget,
+.sub-nav,
+#left-column,
+#right-column
+{ 
+    display: none !important; 
+}
+#content-column { width: 95% !important; display: inline; }
+#breadcrumbs-wrapper .breadcrumbs .jcarousel-item, .breadcrumbs .jcarousel-item a { font-weight: normal; }
+#breadcrumbs-wrapper .breadcrumbs, .breadcrumbs .jcarousel-skin-tango .jcarousel-container-horizontal { padding: 0; }
+#breadcrumbs-wrapper .breadcrumbs .jcarousel-item { padding: 0; }
+#breadcrumbs-wrapper .breadcrumbs .jcarousel-item a:after { content: " /"; }
+.breadcrumbs, .breadcrumbs ul li { background-color: #fff !important; }
+.breadcrumbs { margin-top: 20px; margin-bottom: 0px; }
+div.gradient-h h1 { padding-left: 0px; border-bottom: 1px solid #154B75; }
+.well  
+{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+#page .mod,
+#page .mod .mod-container 
+{ 
+    padding: 0px !important; border: 0px !important; 
+} 
+
+/* Backgrounds and filters
+-------------------------------------------------------------------------------------------*/
+html,
+html body,
+html[class^='IE'],
+html body,
+h1, h2, h3, h4,
+#header,
+#footer,
+footer,
+#footer-top,
+.btn,
+div.gradient-h,
+#gethelp-section,
+#announcement-section li,
+#feedTabs,
+#feedTabs > ul > li,
+.related-resources,
+#page .mod
+{
+	background: #ffffff !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;
+}
+
+
+/* Expand/collapse
+-------------------------------------------------------------------------------------------*/
+.collapse-header { border-bottom: 1px solid #ccc !important; }
+.collapse-header .collapse-icon { display: none !important; }
+.collapse-header span { padding-left: 0px !important; }
+div.collapse,
+.results-contents
+{
+    display: block !important;
+    height: auto !important;
+}
+
+
+/* Tabs
+-------------------------------------------------------------------------------------------*/
+.ui-tabs .ui-tabs-panel { border-width: 0px !important; }
+.ui-tabs .ui-tabs-nav li
+{
+    border: 0px solid #ccc !important; 
+    background-color: #ffffff !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;
+	-webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;   
+}
+.ui-tabs li.ui-state-active
+{ 
+    border-width: 1px !important; 
+    border-bottom: 2px solid #000 !important;
+}
+
+
+/* Form elements
+-------------------------------------------------------------------------------------------*/
+button,
+input,
+select,
+.btn
+{
+    display: none !important;
+}
+input[disabled],
+select[disabled]
+{
+    opacity: 1 !important;
+    background-color: none !important;
+}
+
+/* Table elements
+-------------------------------------------------------------------------------------------*/
+th,
+th a,
+.comparison-list 
+{ 
+    background-color: #fff !important; 
+    color: #000 !important; 
+}
+
+tr
+{
+    page-break-inside: avoid;
+}
+
+/* Links
+-------------------------------------------------------------------------------------------*/
+a:link,
+a:visited 
+{   
+    color: #006699 !important;
+    text-decoration: underline !important; 
+}
+
+/* Misc
+-------------------------------------------------------------------------------------------*/
+.print-show { display: block !important; }
+.print-hide { display: none !important; }

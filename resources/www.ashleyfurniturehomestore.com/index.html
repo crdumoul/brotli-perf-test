@@ -1,0 +1,2559 @@
+
+
+<!DOCTYPE html>
+<html id="htmlElement" lang="en">
+<head><link data-feo-type="earlycss" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link data-feo-type="earlycss" href="/css/bundle.css?v=ILDEiyI5eDnhvsTAa-P3Lhw7Hd1waYEa_ZRkWwP0Xdc1" rel="stylesheet"/><link data-feo-type="earlycss" href="/feo-cdn/3/h/Ren-UTF-8~3hizujm-ZU85blC3fkt8i3g5u4e0Q0Bs-8sNDKYcsoA.css" rel="stylesheet" type="text/css"/><link data-feo-type="earlycss" href=" https://d21gpk1vhmjuf5.cloudfront.net/prod_ashleyfurniture_com-u1447275256092.css" rel="stylesheet"><script blzsys="1" type="text/javascript">//<![CDATA[
+(function(){var cssLinks=document.getElementsByTagName("link");for(var i=cssLinks.length-1;i>-1;i--){if(cssLinks[i].getAttribute("data-feo-type")=="earlycss"){cssLinks[i].parentNode.removeChild(cssLinks[i]);}}})();
+//]]></script><script blzsys="1" type="text/javascript">//<![CDATA[
+function BlzDynamicImageLoader(registeredPollAfterOnload,expectedImageSourceCheck,responsiveScreenWidths,responsiveCell2GMaxWidth,responsiveCell3GMaxWidth,responsiveCell4GMaxWidth,loadDeferral,visibilityBuffer,legacyIOSVisibilityBuffer,imageFormats,skipHidden){var registeredImages=[];var responsiveScreenWidthIndex=-1;var loadComplete=false;var registerHandler=function(element,event,handler){if(undefined!==element.addEventListener){element.addEventListener(event,handler,false);}else{if(undefined!==element.attachEvent){element.attachEvent("on"+event,handler);}}};var unregisterHandler=function(element,event,handler){if(undefined!==element.removeEventListener){element.removeEventListener(event,handler,false);}else{if(undefined!==element.detachEvent){element.detachEvent("on"+event,handler);}}};var getWindowHeight=function(){if(undefined!==self.innerHeight){return self.innerHeight;}else{if(undefined!==document.documentElement&&undefined!==document.documentElement.clientHeight){return document.documentElement.clientHeight;}else{if(undefined!==document.body){return document.body.clientHeight;}}}};var getVerticalScrollPosition=function(){if(undefined!==document.documentElement&&document.documentElement.scrollTop){return document.documentElement.scrollTop;}else{if(undefined!==document.body){return document.body.scrollTop;}}};var isHidden=function(element){return skipHidden&&(element.offsetWidth<=0||element.offsetHeight<=0);};var getVerticalPosition=function(element){if(!element){return 0;}var verticalPosition=element.offsetTop;var parent=element;while(parent=parent.offsetParent){verticalPosition+=parent.offsetTop;}return verticalPosition;};var shouldLoadNow=function(img){switch(loadDeferral){case"onLoad":if(loadComplete){return true;}case"onVisible":return !isHidden(img)&&(getVerticalPosition(img)-getVerticalScrollPosition()-visibilityBuffer)<=getWindowHeight();case"instant":default:return true;}};var determineScreenWidthIndex=function(){var checkConnection=undefined!==navigator.connection&&undefined!=navigator.connection.type;var check2g=checkConnection&&(navigator.connection.type===navigator.connection.CELL_2G)&&-1!==responsiveCell2GMaxWidth;var check3g=checkConnection&&(check2g||navigator.connection.type===navigator.connection.CELL_3G)&&-1!==responsiveCell3GMaxWidth;var check4g=checkConnection&&(check2g||check3g||navigator.connection.type===navigator.connection.CELL_4G)&&-1!==responsiveCell4GMaxWidth;for(responsiveScreenWidthIndex=0;responsiveScreenWidthIndex<responsiveScreenWidths.length;++responsiveScreenWidthIndex){var currentWidth=responsiveScreenWidths[responsiveScreenWidthIndex];if(check2g&&responsiveCell2GMaxWidth<=currentWidth){break;}if(check3g&&responsiveCell3GMaxWidth<=currentWidth){break;}if(check4g&&responsiveCell4GMaxWidth<=currentWidth){break;}if(window.screen.availWidth<=currentWidth){break;}}};var loadImage=function(img,force){if(!img){return;}if(expectedImageSourceCheck&&force!=true){var currentSrc=img.getAttribute("src",true);if(currentSrc==null){currentSrc="";}if(currentSrc!="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="){return;}}var source;var finalImage;var responsiveFormats;if(img.getAttribute("data-blzlqsrc")){finalImage=false;source=img.getAttribute("data-blzlqsrc");responsiveFormats=img.getAttribute("data-blzlqmsi");img.removeAttribute("data-blzlqsrc");img.removeAttribute("data-blzlqmsi");}else{finalImage=true;source=img.getAttribute("data-blzsrc");responsiveFormats=img.getAttribute("data-blzmsi");img.removeAttribute("data-blzsrc");img.removeAttribute("data-blzmsi");}if(null!==responsiveFormats&&responsiveFormats.length>responsiveScreenWidthIndex){var srcDotIndex=source.lastIndexOf(".");if(srcDotIndex>-1){source=source.substring(0,srcDotIndex)+"-"+responsiveScreenWidths[responsiveScreenWidthIndex]+"."+imageFormats[responsiveFormats.charAt(responsiveScreenWidthIndex)];}}if(!finalImage){var nextImageLoadHandler=function(){unregisterHandler(img,"load",nextImageLoadHandler);if(loadComplete){loadImage(img,true);}else{var nextImageDeferredLoadHandler=function(){unregisterHandler(window,"load",nextImageDeferredLoadHandler);loadImage(img,true);};registerHandler(window,"load",nextImageDeferredLoadHandler);}};registerHandler(img,"load",nextImageLoadHandler);}img.setAttribute("src",source);};var loadDynamicImages=function(){var deferredImages=[];for(var imageIndex=0;imageIndex<registeredImages.length;++imageIndex){var img=registeredImages[imageIndex];if(shouldLoadNow(img)){loadImage(img);}else{deferredImages.push(img);}}registeredImages=deferredImages;if(("onVisible"===loadDeferral||"onLoad"===loadDeferral)&&(registeredImages.length==0&&loadComplete)){unregisterHandler(window,"resize",loadDynamicImages);unregisterHandler(window,"scroll",loadDynamicImages);}};var registerDynamicImages=function(){registeredImages=[];for(var registeredImageIndex=0;registeredImageIndex<document.images.length;++registeredImageIndex){var img=document.images[registeredImageIndex];if(img.getAttribute("data-blzsrc")){registeredImages.push(img);}}};var repeatedRegisterAndCheck=function(){if(registeredPollAfterOnload||!loadComplete){registerDynamicImages();loadDynamicImages();}if(!loadComplete){setTimeout(repeatedRegisterAndCheck,100);}else{if(registeredPollAfterOnload){setTimeout(repeatedRegisterAndCheck,500);}}};determineScreenWidthIndex();setTimeout(repeatedRegisterAndCheck,100);if("onVisible"===loadDeferral||"onLoad"===loadDeferral){registerHandler(window,"resize",loadDynamicImages);registerHandler(window,"scroll",loadDynamicImages);}registerHandler(window,"load",function(){loadComplete=true;registerDynamicImages();loadDynamicImages();});repeatedRegisterAndCheck();}
+//]]></script><script blzsys="1" type="text/javascript">//<![CDATA[
+var aFeoOverrideAttrRead=function(tag,att,el){try{var pref="data-feo-orig-";if(el){if(!el.getAttribute(pref+att)){return;}}else{var els=document.getElementsByTagName(tag);for(var i=els.length-1;i>=0;i--){el=els[i];if(el.getAttribute(pref+att)&&!el.aFeoRealGetAttribute){break;}}if(i<0){return;}}el.aFeoRealGetAttribute=el.getAttribute;el.getAttribute=function(a,force){if(a==att&&!force){a=pref+a;}return this.aFeoRealGetAttribute(a);};Object.defineProperty(el,att,{get:function(){return this.aFeoRealGetAttribute(pref+att);}});}catch(err){}};
+//]]></script><script blzsys="1" type="text/javascript">var aFeoApplied=true;</script><script blzsys="1" type="text/javascript">//<![CDATA[
+BlzDynamicImageLoader(true,true,[128,240,320,480],-1,-1,-1,"onVisible",100,1000,["png","gif","jpg","webp","jxr","bmp","jp2"],true);
+//]]></script><script type="text/javascript">(function (cookies) {
+	for (var cookieIndex = 0; cookieIndex < cookies.length; ++cookieIndex) {
+		document.cookie = cookies[cookieIndex];
+	}
+})(["afhsEmailOverlay=Empty|Mar 01, 2016; path=/","CanadianPopUp=shown 03, 01 2016; expires=Wed, 01-Mar-2017 19:38:32 GMT; path=/","AFMZipCode=; path=/","AFIPPROD=!rQEsCoup5AhfnAwD1d99J+/8pwAohb1d9x+ByYc1KdyYzSP2ZS79SKLJ9u4lzKXUBqgUnmTa/xN9hEg=; path=/"]);</script>
+
+<link rel="alternate" hreflang="en" href="http://www.ashleyfurniturehomestore.com/en"><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><meta http-equiv="x-ua-compatible" content="IE=Edge" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"8434cbb159","applicationID":"8905055","transactionName":"ZFxRMksHXEBSUxJaXV0WcjVpSV5SSl8TR0EcVFIPVwpTSlxFEh1TQElL","queueTime":0,"applicationTime":232,"ttGuid":"1F6AECA826C955AC","agent":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XQUOVVRWGwsJVFRSAgQ="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(){}function r(t){function e(t){return t&&t instanceof n?t:t?a(t,i,o):o()}function u(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,f=0;s>f;f++)a[f].apply(i,r);var u=c[v[n]];return u&&u.push([w,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return f[t]=f[t]||r(u)}function h(t,e){s(t,function(t,n){e=e||"feature",v[n]=e,e in c||(c[e]=[])})}var m={},v={},w={on:d,emit:u,get:p,listeners:l,context:e,buffer:h};return w}function o(){return new n}var i="nr@context",a=t("gos"),s=t(1),c={},f={},u=e.exports=r();u.backlog=c},{1:24,gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:24,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,a){try{f?f-=1:r("err",[a||new UncaughtException(t,e,n)])}catch(c){try{r("ierr",[c,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof s?s.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=t("loader"),s=window.onerror,c=!1,f=0;a.features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(1),t(2),"addEventListener"in window&&t(3),a.xhrWrappable&&t(4),c=!0)}i.on("fn-start",function(){c&&(f+=1)}),i.on("fn-err",function(t,e,r){c&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){c&&!this.thrown&&f>0&&(f-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:25,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=NREUM.o.EV;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){for(var e=t;e&&!e.hasOwnProperty("addEventListener");)e=Object.getPrototypeOf(e);e&&r(e)}function r(t){a.inPlace(t,["addEventListener","removeEventListener"],"-",o)}function o(t){return t[1]}var i=t("ee").get("events"),a=t(1)(i),s=t("gos");e.exports=i,r(window),"getPrototypeOf"in Object?(n(document),n(XMLHttpRequest.prototype)):XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&r(XMLHttpRequest.prototype),i.on("addEventListener-start",function(t){if(t[1]){var e=t[1];if("function"==typeof e){var n=s(e,"nr@wrapped",function(){return a(e,"fn-",null,e.name||"anonymous")});this.wrapped=t[1]=n}else"function"==typeof e.handleEvent&&a.inPlace(e,["handleEvent"],"fn-")}}),i.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:26,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").get("history"),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:26,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").get("raf"),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:26,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=i(t[0],"fn-",this,n)}var o=t("ee").get("timer"),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:26,ee:"QJf3ax"}],11:[function(t,e){function n(t,e){e=e||this;var n=i.context(e);e.readyState>3&&!n.resolved&&(n.resolved=!0,i.emit("xhr-resolved",[],e));try{c.inPlace(e,l,"fn-",r)}catch(o){}}function r(t,e){return e}function o(t,e){for(var n in t)e[n]=t[n];return e}var i=t("ee").get("xhr"),a=t(1),s=t(2),c=s(i),f=s(a),u=NREUM.o,d=u.XHR,l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout","onreadystatechange"];e.exports=i,window.XMLHttpRequest=function(t){var e=new d(t);try{i.emit("new-xhr",[e],e),e.hasOwnProperty("addEventListener")&&f.inPlace(e,["addEventListener","removeEventListener"],"-",r),e.addEventListener("readystatechange",n,!1)}catch(o){try{i.emit("internal-error",[o])}catch(a){}}return e},o(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:7,2:26,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;u>o;o++)t.removeEventListener(f[o],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=n(t,this.lastSize);if(i&&(r.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,c.emit("xhr-done",[t],t),a("xhr",[e,r,this.startTime])}}}function n(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var o="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return r(o)}function r(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var i=t("loader");if(i.xhrWrappable){var a=t("handle"),s=t(2),c=t("ee"),f=["load","error","abort","timeout"],u=f.length,d=t(1),l=t(3),p=window.XMLHttpRequest;i.features.xhr=!0,t(5),t(4),c.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=e,n.ended=!1,n.xhrGuids={},n.lastSize=null,l&&(l>34||10>l)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),c.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),c.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),c.on("send-xhr-start",function(t,e){var n=this.metrics,o=t[0],i=this;if(n&&o){var a=r(o);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{c.emit("internal-error",[n])}catch(r){}}};for(var s=0;u>s;s++)e.addEventListener(f[s],this.listener,!1)}),c.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),c.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),c.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),c.on("addEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-added",[t[1],t[2]],e)}),c.on("removeEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-removed",[t[1],t[2]],e)}),c.on("fn-start",function(t,e,n){e instanceof p&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),c.on("fn-end",function(t,e){this.xhrCbStart&&c.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:15,4:11,5:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],14:[function(t,e){function n(t,e){return function(){r(t,[(new Date).getTime()].concat(i(arguments)),null,e)}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],s=["addPageAction"],c="api-";o(a,function(t,e){newrelic[e]=n(c+e,"api")}),o(s,function(t,e){newrelic[e]=n(c+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),r("err",[t,(new Date).getTime()])}},{1:24,2:25,handle:"D5DuLP"}],15:[function(t,e){var n=0,r=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);r&&(n=+r[1]),e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n,o){r.buffer([t],o),r.emit(t,e,n)}var r=t("ee").get("handle");e.exports=n,n.ee=r},{ee:"QJf3ax"}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){if(!h++){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){t[e]||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()],null,"api");var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()],null,"api")}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;NREUM.o={ST:setTimeout,XHR:c.XMLHttpRequest,REQ:c.Request,EV:c.Event,PR:c.Promise,MO:c.MutationObserver},t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-885.min.js"},l=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),p=e.exports={offset:i(),origin:u,features:{},xhrWrappable:l};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()],null,"api");var h=0},{1:24,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],24:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],25:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],26:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,c;try{i=this,n=o(arguments),s="function"==typeof r?r(n,i):r||{}}catch(u){d([u,"",[n,i,a],s])}f(e+"start",[n,i,a],s);try{return c=t.apply(i,n)}catch(l){throw f(e+"err",[n,i,l],s),l}finally{f(e+"end",[n,i,c],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,u(t,nrWrapper),nrWrapper)}function c(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!s){s=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}s=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=c,e.flag=i,e}},{1:25,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script><link href="/css/bundle.css?v=dqq0d2U_HGQ0TNB__CgnsTvJjvXn_OEJG_gyhL08mhg1" rel="stylesheet"/>
+<link href="/feo-cdn/3/h/Ren-UTF-8~3hizujm-ZU85blC3fkt8i3g5u4e0Q0Bs-8sNDKYcsoA.css" rel="stylesheet" type="text/css"/>
+<script data-feo-orig-src="/bundles/scripts-head.js?v=24G4dSEXdXAo4SSEfjCjs8QdfEOOGY8AvTFIUd1X5oI1" src="/feo-cdn/V/c/Ren-UTF-8~VctfCtXMx2NQ-FnPSp8NTSHcc-LHey5Qh98K7GZUi58.js"></script>
+
+            <script src="//display.ugc.bazaarvoice.com/static/ashleyfurniture/bvapi.js"></script>
+    <link rel="canonical" href="https://www.ashleyfurniturehomestore.com/" /><script src="//cdn.optimizely.com/js/4116674183.js"></script><link href=" https://d21gpk1vhmjuf5.cloudfront.net/prod_ashleyfurniture_com-u1447275256092.css" rel="stylesheet"><script type="text/javascript">var triggermail=triggermail||[];triggermail.load=function(a){var b=document.createElement("script");b.type="text/javascript";b.async=!0;b.src=("https:"===document.location.protocol?"https://":"http://")+"www.bluecore.com/triggermail.js/"+a+".js";a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a);};triggermail.load("ashley");window.triggermail=triggermail;</script>
+<meta name="google-site-verification" content="uWk1LQTaNFr0qGWl5Pu0OkIFR_bQB1wApBSfhRKJ2_w" /><script src="//assets.adobedtm.com/fe874cc7085707c4a0be228d2edac4d34f9691dd/satelliteLib-af482893d19d4fe6b403ec17ce4de17569b4e363.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+
+    <script type="text/javascript">MP.UrlLang="mp_js_current_lang";MP.SrcUrl=decodeURIComponent("mp_js_orgin_url");MP.oSite=decodeURIComponent("mp_js_origin_baseUrl");MP.tSite=decodeURIComponent("mp_js_translated_baseUrl");MP.init();</script>
+<title>
+	Home Furniture and Accessories | Ashley HomeStore
+</title><meta name="description" content="Browse Ashley online and discover a furniture store with amazing pricing on stylish and durable home furnishings. Get more without paying more. Flat rate shipping $9.99 on many items." /><meta name="keywords" content="Ashley Homestore, Ashley Furniture Industries, Couch, Sofa, Ashley Furniture, AFHS, Ashley HomeStore, Ashley Furniture Home Store, Customer Service, Furniture, Loveseat, Love Seat, Living Room, Dining Room, Home Office, Bedroom, Coffee Table, End Table, Ottoman, Recliner, Chair, Barstool, Dining Room Table, Kitchen Table, Dining Room Chair, Lighting, Chandelier, Chandellier, Pendant Light, Bed, Dresser, Kids Bed, Youth Bed, Desk, Mirror, Chest, Chest of Drawers, Nightstand, Bookshelves, Bookcases, Book Case, Book Shelf, Cabinet, TV Stand, Entertainment Center" /></head>
+<!--[if !IE]><!--><body><!--<![endif]-->
+<!--[if lte IE 9]><body class="ie lte-ie9"><![endif]-->
+<!--[if gte IE 10]><body class="ie"><![endif]-->
+        <script type="text/javascript" id="mpelid"
+            src="https://ashleyfurniturehomestore.mpeasylink.com/mpel/mpel.js" async></script>
+    
+
+    <script type="text/javascript">var cartCount=0;</script>
+
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K48QNF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src="//www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);})(window,document,"script","dataLayer","GTM-K48QNF");</script>
+<!-- End Google Tag Manager -->
+
+
+    <form method="post" action="/" id="mainform">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="zk/pd/8hGci6VYEbnbMUVcomk+BPwlBpGWr4uv4nKSLQ4a3Pl3OeXmbz0zeNX7n6ztDMWAAO6GvE77p1QqqUtPUJ7dUKME0bzAUfNqDVQNaKF5pI" />
+</div>
+
+<script type="text/javascript">var theForm=document.forms["mainform"];if(!theForm){theForm=document.mainform;}function __doPostBack(eventTarget,eventArgument){if(!theForm.onsubmit||(theForm.onsubmit()!=false)){theForm.__EVENTTARGET.value=eventTarget;theForm.__EVENTARGUMENT.value=eventArgument;theForm.submit();}}</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="29452C2B" />
+</div>
+        
+            <div id="top" class="off-canvas-wrap" data-offcanvas>
+                <div class="inner-wrap">
+                    
+
+<a class="exit-off-canvas"></a>
+
+<aside class="left-off-canvas-menu">
+
+    <ul class="afhs-off-canvas-account off-canvas-list has-submenu">
+         
+        <li><a class="afhs-button" href="/loginpage"><i class="fa fa-lock"></i> Sign In</a></li>
+        <li><a href="/loginpage">Create Account</a></li>
+            
+        <li><a href="/furniture-stores">Store Locator</a></li>
+        <li><a href="/order-details">Order Status</a></li>
+        
+    </ul>
+</aside>
+<header class="afhs-header-wrap clearfix">
+    <div class="afhs-header afhs-homepage-max-width">
+
+        
+
+
+    <div class="afhs-header-promos clearfix">
+        <a href='/c/sale/featured/?icid=GH-Text-Top-R' class='afhs-promo-item ' data-magellan-arrival='build' ><!-- mp_trans_remove_start -->Spring Sale Event - Up to 20% Off<!-- mp_trans_remove_end -->
+               </a><a href='/c/best-sellers/?icid=GH-Text-Top-M' class='afhs-promo-item ' data-magellan-arrival='build' >Prices in USD Only
+               </a><a href='/financing?icid=GH-Text-Top-L' class='afhs-promo-item ' data-magellan-arrival='build' ><font color="#f58d2a">Online Financing Available!</font>
+               </a>
+    </div>
+
+              
+
+        <div class="afhs-inner-header-wrap">
+
+            <a href="#top" role="button" class="afhs-hamburger left-off-canvas-toggle">
+                <img id="ctl09_HamburgerIcon" class="afhs-hamburger-icon" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="images/hamburger.svg" style="width:25px;" />
+                <label class="afhs-menu-label">Menu</label>
+            </a>
+
+            <a href="./" id="ctl09_afhsLogoLink" class="afhs-logo">
+                <img class="afhs-logo-img" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/header/ahs_logo_horizontal.png" alt="Ashley HOMESTORE" />
+            </a>
+
+            
+
+
+<!-- Mega Nav -->
+    <div class="afhs-mega-nav show-for-large-up">
+        <!--Topbar Start -->
+        <nav class="top-bar" data-topbar role="navigation">
+            <section class="top-bar-section">
+                
+                <!-- Level 1 Menu Items -->
+                <ul id="afhs-menu">
+                    
+
+<li class="afhs-mega-dropdown has-dropdown">
+
+    
+
+    <a href="/furniture?icid=meganav-furniture" class="show-js"  target="">Furniture</a>
+
+    
+    <ul class="dropdown">
+        <li class="back"><a href="#">Back</a></li>
+        <li class="level"><label>Furniture</label></li>
+        
+
+
+<!-- Drop Down Start -->
+
+
+<ol class="afhs-mega-nav-group">
+        
+                    <!-- Level 2 item -->
+    <li class="afhs-mega-nav-parent">
+        <a href="/furniture/living-room?icid=meganav-furniture-menu-living-room"
+            target="">
+            Living Room</a>
+
+                        <!-- Level 2 Children -->
+        <ul class="afhs-mega-nav-children">
+            <li class="back"><a href="#">Back</a></li>
+            <li class="level"><label>Living Room</label></li>
+
+                        
+            <li>
+                <a 
+                    href="/c/furniture/living-room/sofas/?icid=meganav-furniture-menu-sofas" 
+                    target="">Sofas</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/living-room/loveseats/?icid=meganav-furniture-menu-loveseats" 
+                    target="">Loveseats</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/living-room/sectional-sofas/?icid=meganav-furniture-menu-sectional-sofas" 
+                    target="">Sectional Sofas </a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/living-room/sleeper-sofas/?icid=meganav-furniture-menu-sofa-sleepers" 
+                    target="">Sleeper Sofa</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/living-room/power-sofas-loveseats-and-recliners/?icid=meganav-furniture-menu-power-sofas" 
+                    target="">Power Seating</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/living-room/recliners/?icid=meganav-furniture-menu-recliners" 
+                    target="">Recliners</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/living-room/chairs-and-chaise/?icid=meganav-furniture-menu-living-room-chairs-and-chaise" 
+                    target="">Chairs & Chaise</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/living-room/ottomans-poufs/?icid=meganav-furniture-menu-ottomans" 
+                    target="">Ottomans & Poufs</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/living-room/coffee-tables/?icid=meganav-furniture-menu-coffee-tables" 
+                    target="">Coffee Tables</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/living-room/end-and-side-tables/?icid=meganav-furniture-menu-end-tables" 
+                    target="">End & Side Tables</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/living-room/occasional-tables/?icid=meganav-furniture-menu-console-tables" 
+                    target="">Occasional Tables</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/living-room/console-tables/?icid=meganav-furniture-menu-console-tables" 
+                    target="">Console Tables</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/living-room/tv-stands-and-media-centers/?icid=meganav-furniture-menu-tv-stands" 
+                    target="">TV Stands & Media</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/living-room/accent-furniture/?icid=meganav-furniture-menu-accent-furniture" 
+                    target="">Accent Furniture</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/living-room/storage/?icid=meganav-furniture-menu-living-room-storage" 
+                    target="">Storage</a>
+            </li>
+                     
+        </ul>
+    </li>
+
+              
+</ol>
+    
+<ol class="afhs-mega-nav-group">
+        
+                    <!-- Level 2 item -->
+    <li class="afhs-mega-nav-parent">
+        <a href="/furniture/bedroom?icid=meganav-furniture-menu-bedroom"
+            target="">
+            Bedroom</a>
+
+                        <!-- Level 2 Children -->
+        <ul class="afhs-mega-nav-children">
+            <li class="back"><a href="#">Back</a></li>
+            <li class="level"><label>Bedroom</label></li>
+
+                        
+            <li>
+                <a 
+                    href="/c/furniture/bedroom/beds/?icid=meganav-furniture-menu-beds" 
+                    target="">Beds</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/bedroom/headboards/?icid=meganav-furniture-menu-headboards" 
+                    target="">Headboards</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/bedroom/nightstands/?icid=meganav-furniture-menu-nightstands" 
+                    target="">Nightstands</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/bedroom/dressers-and-mirrors/?icid=meganav-furniture-menu-dressers-mirrors" 
+                    target="">Dressers & Mirrors</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/bedroom/chest-of-drawers/?icid=meganav-furniture-menu-chest-of-drawers" 
+                    target="">Chest of Drawers</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/living-room/chairs-and-chaise/?icid=meganav-furniture-menu-bedroom-chairs" 
+                    target="">Chairs</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/bedroom/benches/?icid=meganav-furniture-menu-bedroom-benches" 
+                    target="">Benches</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/bedding/?icid=meganav-furniture-menu-bedding" 
+                    target="">Bedding</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/bedroom/bed-pillows/?icid=meganav-furniture-menu-bed-pillows" 
+                    target="">Bed Pillows</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/bedroom/storage/?icid=meganav-furniture-menu-bedroom-storage" 
+                    target="">Storage</a>
+            </li>
+                     
+        </ul>
+    </li>
+
+              
+                    <!-- Level 2 item -->
+    <li class="afhs-mega-nav-parent">
+        <a href="/furniture/home-office?icid=meganav-furniture-menu-home-office"
+            target="">
+            Home Office</a>
+
+                        <!-- Level 2 Children -->
+        <ul class="afhs-mega-nav-children">
+            <li class="back"><a href="#">Back</a></li>
+            <li class="level"><label>Home Office</label></li>
+
+                        
+            <li>
+                <a 
+                    href="/c/furniture/home-office/desks/?icid=meganav-furniture-menu-desks" 
+                    target="">Desks</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/home-office/office-chairs/?icid=meganav-furniture-menu-office-chairs" 
+                    target="">Office Chairs</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/home-office/bookcases/?icid=meganav-furniture-menu-office-bookcases" 
+                    target="">Bookcases</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/home-office/storage/?icid=meganav-furniture-menu-office-storage" 
+                    target="">Storage</a>
+            </li>
+                     
+        </ul>
+    </li>
+
+              
+    <li>
+        <a href="/c/furniture/entryway/?icid=meganav-furniture-menu-entryway" target=""><b>Entryway</b></a>
+    </li>
+             
+</ol>
+    
+<ol class="afhs-mega-nav-group">
+        
+                    <!-- Level 2 item -->
+    <li class="afhs-mega-nav-parent">
+        <a href="/furniture/kitchen-and-dining-rooms?icid=meganav-furniture-menu-kitchen-dining"
+            target="">
+            Kitchen & Dining</a>
+
+                        <!-- Level 2 Children -->
+        <ul class="afhs-mega-nav-children">
+            <li class="back"><a href="#">Back</a></li>
+            <li class="level"><label>Kitchen & Dining</label></li>
+
+                        
+            <li>
+                <a 
+                    href="/c/furniture/kitchen-and-dining-room/dining-room-tables/?icid=meganav-furniture-menu-dining-room-tables" 
+                    target="">Dining Room Tables</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/kitchen-and-dining-room/dining-room-sets/?icid=meganav-furniture-menu-kitchen-dining-sets" 
+                    target="">Dining Room Sets</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/kitchen-and-dining-room/chairs/?icid=meganav-furniture-menu-dining-chairs" 
+                    target="">Chairs</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/kitchen-and-dining-room/bar-stools/?icid=meganav-furniture-menu-bar-stools" 
+                    target="">Bar Stools</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/kitchen-and-dining-room/benches/?icid=meganav-furniture-menu-dining-benches" 
+                    target="">Benches</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/kitchen-and-dining-room/storage/?icid=meganav-furniture-menu-dining-storage" 
+                    target="">Storage</a>
+            </li>
+                     
+        </ul>
+    </li>
+
+              
+                    <!-- Level 2 item -->
+    <li class="afhs-mega-nav-parent">
+        <a href="/lifestyles?icid=meganav-furniture-menu-lifestyles"
+            target="">
+            Lifestyles</a>
+
+                        <!-- Level 2 Children -->
+        <ul class="afhs-mega-nav-children">
+            <li class="back"><a href="#">Back</a></li>
+            <li class="level"><label>Lifestyles</label></li>
+
+                        
+            <li>
+                <a 
+                    href="/c/shop-urbanology/?icid=meganav-furniture-urbanology" 
+                    target="">Urbanology®</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/lifestyles/vintage-casual?icid=meganav-furniture-vintage-casual" 
+                    target="">Vintage Casual®</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/lifestyles/contemporary?icid=meganav-furniture-contemporary" 
+                    target="">Contemporary</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/lifestyles/traditional-classics?icid=meganav-furniture-traditional" 
+                    target="">Traditional Classics</a>
+            </li>
+                     
+        </ul>
+    </li>
+
+              
+                    <!-- Level 2 item -->
+    <li class="afhs-mega-nav-parent">
+        <a href="/collections?icid=meganav-furniture-menu-shop-by-collection"
+            target="">
+            Collections</a>
+
+                        <!-- Level 2 Children -->
+        <ul class="afhs-mega-nav-children">
+            <li class="back"><a href="#">Back</a></li>
+            <li class="level"><label>Collections</label></li>
+
+                        
+            <li>
+                <a 
+                    href="/c/collections/porter/?icid=meganav-furniture-menu-porter" 
+                    target="">Porter</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/collections/tanshire/?icid=meganav-furniture-tanshire" 
+                    target="">Tanshire</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/collections/zenfield/?icid=meganav-furniture-zenfield" 
+                    target="">Zenfield</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/collections?icid=meganav-furniture-more" 
+                    target="">More...</a>
+            </li>
+                     
+        </ul>
+    </li>
+
+              
+</ol>
+    
+<ol class="afhs-mega-nav-group afhs-flyout-wrapper">
+    <li>
+        <a class="afhs-flyout-link" href="/c/furniture/kitchen-and-dining-room/bar-stools/?icid=meganav-furniture-card" target="">
+            <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/global-use/mega-nav/cards-20160223/product-card-furniture.jpg" alt="furniture" />
+            <p class="afhs-flyout-message">Stylish <strong>BARSTOOLS<!-- mp_trans_remove_start --> STARTING AT $39.99<!-- mp_trans_remove_end --></strong> prove there's more than one way to take your comfort level to new heights.</p>
+            <strong>Shop Barstools</strong>
+        </a>
+    </li>
+</ol>
+        
+    </ul>
+</li>
+
+<li class="afhs-mega-dropdown has-dropdown">
+
+    
+
+    <a href="/kids?icid=meganav-kids-menu" class="show-js"  target="">Kids</a>
+
+    
+    <ul class="dropdown">
+        <li class="back"><a href="#">Back</a></li>
+        <li class="level"><label>Kids</label></li>
+        
+
+
+<!-- Drop Down Start -->
+
+
+<ol class="afhs-mega-nav-group">
+        
+    <li>
+        <a href="/c/kids/?icid=meganav-kids-menu-all-kids" target="">All Kids</a>
+    </li>
+             
+    <li>
+        <a href="/c/kids/beds/?icid=meganav-kids-menu-kids-beds" target="">Beds</a>
+    </li>
+             
+    <li>
+        <a href="/c/kids/nightstands/?icid=meganav-kids-menu-nightstands" target="">Nightstands</a>
+    </li>
+             
+    <li>
+        <a href="/c/kids/bunk-beds/?icid=meganav-kids-menu-bunk-beds" target="">Bunk Beds</a>
+    </li>
+             
+    <li>
+        <a href="/c/kids/kids-chairs/?icid=meganav-kids-menu-chairs" target="">Chairs</a>
+    </li>
+             
+    <li>
+        <a href="/c/kids/kids-desks/?icid=meganav-kids-menu-desks" target="">Desks</a>
+    </li>
+             
+    <li>
+        <a href="/c/kids/dressers/?icid=meganav-kids-menu-kids-dressers" target="">Dressers</a>
+    </li>
+             
+    <li>
+        <a href="/c/kids/chest-of-drawers/?icid=meganav-kids-menu-chest-of-drawers" target="">Chest of Drawers</a>
+    </li>
+             
+    <li>
+        <a href="/c/kids/storage/?icid=meganav-kids-menu-storage" target="">Storage</a>
+    </li>
+             
+    <li>
+        <a href="/c/kids/bedding/?icid=meganav-kids-menu-bedding" target="">Bedding</a>
+    </li>
+             
+    <li>
+        <a href="/c/kids/kids-wall-decor/?icid=meganav-kids-menu-wall-decor" target="">Wall Decor</a>
+    </li>
+             
+    <li>
+        <a href="/c/lighting/kids-lighting/?icid=meganav-kids-menu-lighting" target="">Lighting</a>
+    </li>
+             
+    <li>
+        <a href="/c/rugs/kids-rugs/?icid=meganav-kids-menu-rugs" target="">Rugs</a>
+    </li>
+             
+</ol>
+    
+<ol class="afhs-mega-nav-group afhs-flyout-wrapper">
+    <li>
+        <a class="afhs-flyout-link" href="/kids?icid=meganav-kids-card" target="">
+            <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/global-use/mega-nav/cards-20160223/product-card-kids.jpg" alt="kids" />
+            <p class="afhs-flyout-message">Introducing Gen Now. Unique furnishings for kids of all ages and tastes.</p>
+            <strong>Shop All Kids</strong>
+        </a>
+    </li>
+</ol>
+        
+    </ul>
+</li>
+
+<li class="afhs-mega-dropdown has-dropdown">
+
+    
+
+    <a href="/decor-pillows?icid=meganav-decor-menu" class="show-js"  target="">Decor & Pillows</a>
+
+    
+    <ul class="dropdown">
+        <li class="back"><a href="#">Back</a></li>
+        <li class="level"><label>Decor & Pillows</label></li>
+        
+
+
+<!-- Drop Down Start -->
+
+
+<ol class="afhs-mega-nav-group">
+        
+                    <!-- Level 2 item -->
+    <li class="afhs-mega-nav-parent">
+        <a href="/home-accents?icid=meganav-decor-menu-home-accents"
+            target="">
+            Home Accents</a>
+
+                        <!-- Level 2 Children -->
+        <ul class="afhs-mega-nav-children">
+            <li class="back"><a href="#">Back</a></li>
+            <li class="level"><label>Home Accents</label></li>
+
+                        
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/home-accents/candles-and-candle-holders/?icid=meganav-decor-menu-candle-holders" 
+                    target="">Candles & Candle Holders</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/home-accents/home-decor/?icid=meganav-decor-menu-home-decor" 
+                    target="">Home Décor</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/home-accents/vases-and-bottles/?icid=meganav-decor-menu-vases-bottles" 
+                    target="">Vases & Bottles</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/home-accents/sculptures/?icid=meganav-decor-menu-sculptures" 
+                    target="">Sculptures</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/home-accents/baskets-and-boxes/?icid=meganav-decor-menu-baskets-boxes" 
+                    target="">Baskets & Boxes</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/home-accents/bowls-and-trays/?icid=meganav-decor-menu-bowls-and-trays" 
+                    target="">Bowls & Trays</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/home-accents/storage-and-organization/?icid=meganav-decor-menu-storage" 
+                    target="">Storage & Organization</a>
+            </li>
+                     
+        </ul>
+    </li>
+
+              
+</ol>
+    
+<ol class="afhs-mega-nav-group">
+        
+                    <!-- Level 2 item -->
+    <li class="afhs-mega-nav-parent">
+        <a href="/pillows-throws?icid=meganav-decor-menu-pillows-throws"
+            target="">
+            Pillows & Throws</a>
+
+                        <!-- Level 2 Children -->
+        <ul class="afhs-mega-nav-children">
+            <li class="back"><a href="#">Back</a></li>
+            <li class="level"><label>Pillows & Throws</label></li>
+
+                        
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/pillows-and-throws/blankets-and-throws/?icid=meganav-decor-menu-blankets-throws" 
+                    target="">Blankets & Throws</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/living-room/poufs/?icid=meganav-decor-menu-poufs" 
+                    target="">Poufs</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/pillows-and-throws/throw-pillows/?icid=meganav-decor-menu-throw-pillows" 
+                    target="">Throw Pillows</a>
+            </li>
+                     
+        </ul>
+    </li>
+
+              
+                    <!-- Level 2 item -->
+    <li class="afhs-mega-nav-parent">
+        <a href="/wall-decor?icid=meganav-decor-menu-wall-decor"
+            target="">
+            Wall Décor</a>
+
+                        <!-- Level 2 Children -->
+        <ul class="afhs-mega-nav-children">
+            <li class="back"><a href="#">Back</a></li>
+            <li class="level"><label>Wall Décor</label></li>
+
+                        
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/wall-decor/mirrors/?icid=meganav-decor-menu-mirrors" 
+                    target="">Mirrors</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/wall-decor/clocks/?icid=meganav-decor-menu-clocks" 
+                    target="">Clocks</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/wall-decor/framed-art/?icid=meganav-decor-menu-framed-art" 
+                    target="">Framed Art</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/wall-decor/canvas-art/?icid=meganav-decor-menu-canvas-art" 
+                    target="">Canvas Art</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/wall-decor/wall-art/?icid=meganav-decor-menu-wall-art" 
+                    target="">Wall Art</a>
+            </li>
+                     
+        </ul>
+    </li>
+
+              
+                    <!-- Level 2 item -->
+    <li class="afhs-mega-nav-parent">
+        <a href="/c/decor-and-pillows/table-top/?icid=meganav-decor-menu-tabletop"
+            target="">
+            Tabletop</a>
+
+                        <!-- Level 2 Children -->
+        <ul class="afhs-mega-nav-children">
+            <li class="back"><a href="#">Back</a></li>
+            <li class="level"><label>Tabletop</label></li>
+
+                        
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/table-top/piecetabletopsets/?icid=meganav-decor-menu-5-piece-sets" 
+                    target="">5-Piece Sets</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/table-top/canisters-and-jars/?icid=meganav-decor-menu-canisters-jars" 
+                    target="">Canisters & Jars</a>
+            </li>
+                     
+        </ul>
+    </li>
+
+              
+</ol>
+    
+<ol class="afhs-mega-nav-group afhs-flyout-wrapper">
+    <li>
+        <a class="afhs-flyout-link" href="/decor-pillows?icid=meganav-decor-menu-card" target="">
+            <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/global-use/mega-nav/cards-20160223/product-card-decor-pillows.jpg" alt="decor pillows" />
+            <p class="afhs-flyout-message"><!-- mp_trans_remove_start --><strong>UP TO 20% OFF* </strong><!-- mp_trans_remove_end -->accessories for a perfectly curated designer look.</p>
+            <strong>Shop All Decor</strong>
+        </a>
+    </li>
+</ol>
+        
+    </ul>
+</li>
+
+<li class="afhs-mega-dropdown has-dropdown">
+
+    
+
+    <a href="/rugs?icid=meganav-rugs-menu" class="show-js"  target="">Rugs</a>
+
+    
+    <ul class="dropdown">
+        <li class="back"><a href="#">Back</a></li>
+        <li class="level"><label>Rugs</label></li>
+        
+
+
+<!-- Drop Down Start -->
+
+
+<ol class="afhs-mega-nav-group">
+        
+    <li>
+        <a href="/c/rugs/area-rugs/?icid=meganav-rugs-menu-area-rugs" target="">Area Rugs</a>
+    </li>
+             
+    <li>
+        <a href="/c/rugs/kids-rugs/?icid=meganav-rugs-menu-kids-rugs" target="">Kids Rugs</a>
+    </li>
+             
+    <li>
+        <a href="/c/rugs/indoor-outdoor-rugs/?icid=meganav-rugs-menu-area-rugs" target="">Indoor / Outdoor</a>
+    </li>
+             
+    <li>
+        <a href="/c/rugs/?icid=meganav-rugs-menu-area-rugs" target="">All Rugs</a>
+    </li>
+             
+</ol>
+    
+<ol class="afhs-mega-nav-group afhs-flyout-wrapper">
+    <li>
+        <a class="afhs-flyout-link" href="/c/rugs/?icid=meganav-rugs-card" target="">
+            <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/global-use/mega-nav/cards-20160223/product-card-rugs.jpg" alt="rugs" />
+            <p class="afhs-flyout-message"><!-- mp_trans_remove_start --><strong> UP TO 20% OFF* </strong><!-- mp_trans_remove_end -->a wide selection of colorful rugs you'll want in every room.</p>
+            <strong>Shop All Rugs</strong>
+        </a>
+    </li>
+</ol>
+        
+    </ul>
+</li>
+
+<li class="afhs-mega-dropdown has-dropdown">
+
+    
+
+    <a href="/lighting?icid=meganav-lighting-menu" class="show-js"  target="">Lighting</a>
+
+    
+    <ul class="dropdown">
+        <li class="back"><a href="#">Back</a></li>
+        <li class="level"><label>Lighting</label></li>
+        
+
+
+<!-- Drop Down Start -->
+
+
+<ol class="afhs-mega-nav-group">
+        
+    <li>
+        <a href="/c/lighting/table-lamps/?icid=meganav-lighting-menu-table-lamps" target="">Table Lamps</a>
+    </li>
+             
+    <li>
+        <a href="/c/lighting/floor-lamps/?icid=meganav-lighting-menu-floor-lamps" target="">Floor Lamps</a>
+    </li>
+             
+    <li>
+        <a href="/c/lighting/chandeliers/?icid=meganav-lighting-menu-chandeliers" target="">Chandeliers</a>
+    </li>
+             
+    <li>
+        <a href="/c/lighting/pendants/?icid=meganav-lighting-menu-pendants" target="">Pendants</a>
+    </li>
+             
+    <li>
+        <a href="/c/lighting/kids-lighting/?icid=meganav-lighting-menu-kids-lighting" target="">Kids Lighting</a>
+    </li>
+             
+    <li>
+        <a href="/c/lighting/?icid=meganav-lighting-menu-all-lighting" target="">All Lighting</a>
+    </li>
+             
+</ol>
+    
+<ol class="afhs-mega-nav-group afhs-flyout-wrapper">
+    <li>
+        <a class="afhs-flyout-link" href="/c/lighting/?icid=meganav-lighting-card-text" target="">
+            <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/global-use/mega-nav/cards-20160223/product-card-lighting.jpg" alt="lighting" />
+            <p class="afhs-flyout-message">Put your rooms in a new light with table lamps, floor lamps, pendants and chandeliers.</p>
+            <strong>Shop All Lighting</strong>
+        </a>
+    </li>
+</ol>
+        
+    </ul>
+</li>
+
+<li class="afhs-mega-dropdown has-dropdown">
+
+    
+
+    <a href="/bedding-navigation?icid=meganav-mattress-menu" class="show-js"  target="">Mattresses & Bedding</a>
+
+    
+    <ul class="dropdown">
+        <li class="back"><a href="#">Back</a></li>
+        <li class="level"><label>Mattresses & Bedding</label></li>
+        
+
+
+<!-- Drop Down Start -->
+
+
+<ol class="afhs-mega-nav-group">
+        
+                    <!-- Level 2 item -->
+    <li class="afhs-mega-nav-parent">
+        <a href="/mattresses?icid=meganav-bedding-mattresses-menu-ashley-sleep"
+            target="">
+            Mattresses</a>
+
+                        <!-- Level 2 Children -->
+        <ul class="afhs-mega-nav-children">
+            <li class="back"><a href="#">Back</a></li>
+            <li class="level"><label>Mattresses</label></li>
+
+                        
+            <li>
+                <a 
+                    href="/c/mattresses/ashley-sleep-mattresses/?icid=meganav-bedding-mattresses-menu-ashley-sleep" 
+                    target="">Ashley Sleep Mattresses</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/mattresses/foundations/?icid=meganav-bedding-mattresses-menu-foundations" 
+                    target="">Foundations & Box Springs</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/sealy-mattresses?icid=meganav-bedding-mattresses-menu-sealy" 
+                    target="">Sealy</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/serta?icid=meganav-bedding-mattresses-menu-serta" 
+                    target="">Serta</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/tempur-pedic-mattresses?icid=meganav-bedding-mattresses-menu-tempur-pedic" 
+                    target="">Tempur-Pedic</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/tempur-pedic-canada?icid=meganav-bedding-mattresses-menu-tempur-canada" 
+                    target="">Tempur-Pedic Canada</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/simmons-beautyrest-mattresses?icid=meganav-bedding-mattresses-menu-simmons" 
+                    target="">Simmons</a>
+            </li>
+                     
+        </ul>
+    </li>
+
+              
+</ol>
+    
+<ol class="afhs-mega-nav-group">
+        
+                    <!-- Level 2 item -->
+    <li class="afhs-mega-nav-parent">
+        <a href="/bedding?icid=meganav-bedding-mattresses-menu-bedding"
+            target="">
+            Bedding</a>
+
+                        <!-- Level 2 Children -->
+        <ul class="afhs-mega-nav-children">
+            <li class="back"><a href="#">Back</a></li>
+            <li class="level"><label>Bedding</label></li>
+
+                        
+            <li>
+                <a 
+                    href="/c/bedding/comforters/?icid=meganav-bedding-mattresses-menu-comforters" 
+                    target="">Comforters</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/bedding/quilts/?icid=meganav-bedding-mattresses-menu-quilts" 
+                    target="">Quilts</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/bedding/duvets-and-coverlets/?icid=meganav-bedding-mattresses-menu-duvets-coverlets" 
+                    target="">Duvets & Coverlets</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/pillows-and-throws/blankets-and-throws/?icid=meganav-bedding-mattresses-menu-blankets-throws" 
+                    target="">Blankets & Throws</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/furniture/bedroom/bed-pillows/?icid=meganav-bedding-mattresses-menu-bed-pillows" 
+                    target="">Bed Pillows</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/kids/bedding/?icid=meganav-bedding-mattresses-menu-kids-bedding" 
+                    target="">Kids Bedding</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/decor-and-pillows/pillows-and-throws/throw-pillows/?icid=meganav-bedding-mattresses-menu-throw-pillows" 
+                    target="">Throw Pillows</a>
+            </li>
+                     
+            <li>
+                <a 
+                    href="/c/bedding/?icid=meganav-bedding-mattresses-menu-all-bedding" 
+                    target="">All Bedding</a>
+            </li>
+                     
+        </ul>
+    </li>
+
+              
+</ol>
+    
+<ol class="afhs-mega-nav-group afhs-flyout-wrapper">
+    <li>
+        <a class="afhs-flyout-link" href="/c/mattresses/ashley-sleep-mattresses/?icid=meganav-bedding-menu-card" target="">
+            <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/global-use/mega-nav/cards-20160223/product-card-bedding.jpg" alt="bedding" />
+            <p class="afhs-flyout-message">Not spending a third of your life in bed? Time for a new ultra-supportive mattress.</p>
+            <strong>Shop All Mattresses</strong>
+        </a>
+    </li>
+</ol>
+        
+    </ul>
+</li>
+
+<li class="afhs-mega-dropdown has-dropdown">
+
+    
+
+    <a href="/c/smart-buys/?icid=meganav-smart-buy-menu" class="show-js" style="color:#f48120" target="">Smart Buys</a>
+
+    
+    <ul class="dropdown">
+        <li class="back"><a href="#">Back</a></li>
+        <li class="level"><label>Smart Buys</label></li>
+        
+
+
+<!-- Drop Down Start -->
+
+
+<ol class="afhs-mega-nav-group">
+        
+    <li>
+        <a href="/c/smart-buys/?icid=meganav-smart-buys-all" target="">All Smart Buys</a>
+    </li>
+             
+    <li>
+        <a href="/c/smart-buys/smart-buys-living-room/?icid=meganav-smart-buys-living-room" target="">Living Room</a>
+    </li>
+             
+    <li>
+        <a href="/c/smart-buys/smart-buys-bedroom/?icid=meganav-smart-buys-bedroom" target="">Bedroom</a>
+    </li>
+             
+    <li>
+        <a href="/c/smart-buys/smart-buys-dining/?icid=meganav-smart-buys-dining-room" target="">Dining Room</a>
+    </li>
+             
+</ol>
+    
+<ol class="afhs-mega-nav-group afhs-flyout-wrapper">
+    <li>
+        <a class="afhs-flyout-link" href="/c/smart-buys/?icid=meganav-smart-menu-card-text" target="">
+            <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/global-use/mega-nav/cards-20160223/product-card-smart-buy.jpg" alt="smart buy" />
+            <p class="afhs-flyout-message">Fashionably stylish and a low everyday price? It's offered every day with <strong>SMART BUYS</strong>.</p>
+            <strong>Shop All Smart Buys</strong>
+        </a>
+    </li>
+</ol>
+        
+    </ul>
+</li>
+
+<li class="afhs-mega-dropdown has-dropdown">
+
+    
+
+    <a href="/c/sale/featured/?icid=meganav-sale-menu" class="show-js" style="color:#f48120" target="">Sale</a>
+
+    
+    <ul class="dropdown">
+        <li class="back"><a href="#">Back</a></li>
+        <li class="level"><label>Sale</label></li>
+        
+
+
+<!-- Drop Down Start -->
+
+
+<ol class="afhs-mega-nav-group">
+        
+    <li>
+        <a href="/furniture/kitchen-and-dining-rooms?icid=meganav-sale-dining" target="">Up to 20% Off* Dining</a>
+    </li>
+             
+    <li>
+        <a href="/c/furniture/living-room/tv-stands-and-media-centers/?icid=meganav-sale-entertainment" target="">Up to 20% Off* Entertainment</a>
+    </li>
+             
+    <li>
+        <a href="/home-accents?icid=meganav-sale-home-accents" target="">Up to 20% Off* Home Accents</a>
+    </li>
+             
+    <li>
+        <a href="/rugs?icid=meganav-sale-rugs" target="">Up to 20% Off* Rugs</a>
+    </li>
+             
+    <li>
+        <a href="/furniture/living-room?icid=meganav-sale-upholstery" target="">Up to 15% Off* Upholstery</a>
+    </li>
+             
+    <li>
+        <a href="/c/furniture/kitchen-and-dining-room/bar-stools/?icid=meganav-sale-bar-stools-C1" target="">Bar Stools Starting at $39.99</a>
+    </li>
+             
+    <li>
+        <a href="/c/decor-deals/?icid=meganav-sale-decor-shop" target="">Decor Deals</a>
+    </li>
+             
+</ol>
+    
+<ol class="afhs-mega-nav-group afhs-flyout-wrapper">
+    <li>
+        <a class="afhs-flyout-link" href="/c/sale/featured/?icid=meganav-sale-card-deal-of-the-day" target="">
+            <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/global-use/mega-nav/cards-20160223/product-card-sale.jpg" alt="sale" />
+            <p class="afhs-flyout-message"><strong>UP TO 20% OFF*</strong> dining, upholstered seating, decor and more at the <strong>SPRING SALE EVENT</strong>.</p>
+            <strong>Shop Deal</strong>
+        </a>
+    </li>
+</ol>
+        
+    </ul>
+</li>
+                </ul>
+
+            
+                    <ul class="afhs-nav-promo-block right">
+                        <li>
+                            <a href='/c/best-sellers/?icid=meganav-best-sellers-button' >
+                                <div class="small">HUNDREDS OF ITEMS</div>
+                                <div class="big">
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/img/head/shopImage.png" alt="shop Image" />
+                                    BEST SELLERS
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                
+            </section>
+        </nav>
+        <!--Topbar End -->
+    </div>
+
+    
+            <div class="afhs-account-search-container">
+
+                <div class="afhs-search">
+                    <div id="afhsUnbxd">
+                        <input id="TbxSearch" autocomplete="off" type="search" placeholder="Search" unbxdattr="sq">
+                        <a unbxdattr="sq_bt" class="button postfix">
+                            <img id="ctl09_searchIcon2" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="images/search-icon2.svg" style="width:20px;" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="afhs-top-menu">
+                    <a class="afhs-search-link afhs-top-menu-parent" href="#">
+                        <img id="ctl09_searchIcon" class="afhs-top-menu-icon" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="images/search-icon2.svg" />
+                        <span>Search</span>
+                    </a>
+
+                    <a class="afhs-top-menu-parent"  href="/furniture-stores">
+                        <img id="ctl09_locationIcon" class="afhs-top-menu-icon" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="images/location-icon.svg" />
+                        <span>Find a Store</span>
+                    </a>
+             
+                    <a class="afhs-my-account-link afhs-top-menu-parent" 
+                        data-dropdown="afhs-account-dropdown" 
+                        aria-controls="afhs-account-dropdown" 
+                        data-options="is_hover:true; hover_timeout:200;" 
+                        href="/loginpage">
+                        <img id="ctl09_accountIcon" class="afhs-top-menu-icon" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="images/use-icon.svg" />
+                        <span>My Account</span>
+                    </a>
+                    <a href='/cart/viewcart' class='afhs-cart-link afhs-top-menu-parent' ><img id="ctl09_cartIcon" class="afhs-cart-icon afhs-top-menu-icon" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="images/cart-icon.svg" />
+                    <span class="afhs-cart-count cart-item-count"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <ul id="afhs-account-dropdown" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
+             
+            <li><a class="button" href="/loginpage">Sign In</a></li>
+            <li><a href="/loginpage">Create Account</a></li>
+                
+            <li><a href="/furniture-stores">Store Locator</a></li>
+            <li><a href="/order-details">Order Status</a></li>
+            
+        </ul>
+    </div>
+    <div class="afhs-graybar show-for-large-up"></div>
+</header>
+
+
+<div id="canadianOverlay" class="reveal-modal medium " data-reveal="true">
+    <div>
+        <div class="columns medium-12 small-12">
+            <h2>Welcome to Ashley Homestores USA<br /></h2>
+            <div class=" text small">
+                <p>As you browse the site, please note that all prices shown are in USD. We are currently shipping to the 48 contiguous U.S. states.</p>
+<p>To shop, simply click below:</p>
+            </div>
+            <div class="row buttonLightBox">
+                <a href="/furniture-stores" class="button small secondary">
+                    Find a Local Store
+                </a>
+                <a href="javascript:void(0)" id="canadianContinue" class=" button small">Continue to US Site</a>
+            </div>
+        </div>
+    </div>
+    <a class="close-reveal-modal" id="canadianOverlayOverlayClose">&#215;</a>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#canadianOverlay").foundation("reveal", "open");
+        $("#canadianContinue").click(function () {
+            $("#canadianOverlayOverlayClose").click();
+        });
+    });
+</script>
+
+                    <div class="clear"></div>
+                    <div class="afhs-content">
+                        
+
+<div id="home">
+    
+
+<div class="row smallCaptionCarousel">
+    <ul data-orbit data-options="timer_speed:5000;pause_on_hover:false;animation_speed:500;">
+        
+        <li>
+            <img data-src="/-/media/images/page-categories/home-page/caroucels-20160223/homepage-bb1-mpc-20160223.jpg" alt="Spring Sale Event - Up to 20% Off" data-responsive-width='{"small": 640, "medium": 1680}' data-format="sitecore" />
+            <noscript>
+                <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/caroucels-20160223/homepage-bb1-mpc-20160223.jpg" alt="Spring Sale Event - Up to 20% Off">
+            </noscript>            
+            
+            <div class="orbit-caption"  
+             >
+                <div class="content-caption"  >
+                    <style>/*WARNING: THESE STYLES AFFECT ALL OF THE SLIDES IN THE BILLBOARD. IF YOU DELETE THIS SLIDE YOU MUST COPY THIS STYLE INFORMATION OVER TO AN EXISTING SLIDE!*/
+    /*Makes the orbit-caption fill the slide*/
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption {
+    display: block;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0 !important;
+    right: 0;
+    bottom: 0 !important;
+    max-width: none !important;
+    background: none !important;
+    padding: 0 !important;
+    }
+    /*Make Banner Clickable, By Changing Button Size To Fill Banner*/
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption .button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0);
+    margin: 0;
+    padding: 0;
+    /*Hide Button Text*/
+    text-indent: -6000px;
+    }
+    /*Moves Orbit Bullets down*/
+    .orbit-container .orbit-bullets {
+    bottom: .1% !important;
+    margin-left: 47.5% !important;
+    width: 5% !important;
+    }
+    @media only screen and (max-width: 40.062em) {
+    /*Makes the mobile carousel taller than the desktop carousel*/
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li {
+    padding-bottom: 15.5%;
+    }
+    }
+    /*END WARNING*/</style>
+
+<style>.smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption #bb-1 h2 {
+    display: none;
+    }
+    @media only screen and (max-width: 40.062em) {
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption #bb-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;background:#000 url("/feo-cdn/a/H/37qZ6ViYs.jpg") no-repeat center;
+    background-size: cover;
+    }
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption h2 {
+    background: none;
+    position: absolute;
+    top: 0 !important;
+    }
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption #bb-1 h2 {
+    display: inline;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: initial;
+    line-height: 1;
+    color: #333;
+    text-align: center;
+    font-family: proxima_novalight;
+    font-size: 4vw!important;
+    font-weight: normal;
+    width: 50%;
+    margin: auto;
+    padding: 1vw;
+    background-color: rgba(255,255,255,.65);
+    border: 2px solid rgba(0,0,0,.2);
+    text-transform:uppercase;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    }
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption #bb-1 h2 strong {
+    font-weight: bold;
+    color: #333;
+    font-size: 9vw!important;
+    font-family: proxima_nova_rgbold;
+    background: rgba(0,0,0, 0);
+    line-height: .9;
+    }
+    }</style>
+
+<style>/*Styles for the three top buttons*/
+    .bb-1-button a {
+    position: absolute;
+    height: 100%;
+    width: 33.3%;
+    top: 0;
+    z-index: 2;
+}
+    .bb-1-grid a {
+    position: absolute;
+    height: 42.7%;
+    width: 16.667%;
+    z-index: 2;
+}
+
+	.bb-1-grid a {
+
+	}
+
+	.bb-1-grid a .grid-text {
+		visibility: hidden;
+		height: 100%;
+		width: 100%;
+	}
+
+	.bb-1-grid a:hover .grid-text {
+		background-color: rgba(153,153,153,.5);
+		visibility: visible;
+	}
+
+	.bb-1-grid a .grid-text p{
+		color: #fff;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+	}
+    /*Styles for disclaimer text */
+    .bb-1-disclaimer a {
+    position: absolute;
+    height: 5%;
+    width: 34%;
+    bottom: 3%;
+    left: 33%;
+    z-index: 2;
+    }
+
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    	.bb-1-grid a .grid-text p {
+    		font-size: 2vw;
+    		}
+    	}</style>
+
+
+<div id="bb-1" class="billboard-text">
+
+</div>
+                </div>
+                <a href="/c/sale/featured/?ICID=HP-BB1" class="button tiny" >Shop Now</a>
+            </div>
+        </li>
+        
+        <li>
+            <img data-src="/-/media/images/page-categories/home-page/caroucels-20160223/homepage-bb2-mpx-20160223.jpg" alt="Up to 20% Off Tasteful Choices - Shop Dining" data-responsive-width='{"small": 640, "medium": 1680}' data-format="sitecore" />
+            <noscript>
+                <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/caroucels-20160223/homepage-bb2-mpx-20160223.jpg" alt="Up to 20% Off Tasteful Choices - Shop Dining">
+            </noscript>            
+            
+            <div class="orbit-caption"  
+             >
+                <div class="content-caption"  >
+                    <style>/*WARNING: THESE STYLES AFFECT ALL OF THE SLIDES IN THE BILLBOARD. IF YOU DELETE THIS SLIDE YOU MUST COPY THIS STYLE INFORMATION OVER TO AN EXISTING SLIDE!*/
+    /*Makes the orbit-caption fill the slide*/
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption {
+    display: block;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0 !important;
+    right: 0;
+    bottom: 0 !important;
+    max-width: none !important;
+    background: none !important;
+    padding: 0 !important;
+    }
+    /*Make Banner Clickable, By Changing Button Size To Fill Banner*/
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption .button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0);
+    margin: 0;
+    padding: 0;
+    /*Hide Button Text*/
+    text-indent: -6000px;
+    }
+    /*Moves Orbit Bullets down*/
+    .orbit-container .orbit-bullets {
+    bottom: .1% !important;
+    margin-left: 47.5% !important;
+    width: 5% !important;
+    }
+    @media only screen and (max-width: 40.062em) {
+    /*Makes the mobile carousel taller than the desktop carousel*/
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li {
+    padding-bottom: 15.5%;
+    }
+    }
+    /*END WARNING*/</style>
+
+<style>.smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption #bb-2 h2 {
+    display: none;
+    }
+    @media only screen and (max-width: 40.062em) {
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption #bb-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;background:#000 url("/feo-cdn/C/G/L9TsqLG-A.jpg") no-repeat center;
+    background-size: cover;
+    }
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption h2 {
+    background: none;
+    position: absolute;
+    top: 0 !important;
+    }
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption #bb-2 h2 {
+    display: inline;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: initial;
+    line-height: 1;
+    color: #333;
+    text-align: center;
+    font-family: proxima_novalight;
+    font-size: 4vw!important;
+    font-weight: normal;
+    width: 50%;
+    margin: auto;
+    padding: 1vw;
+    background-color: rgba(255,255,255,.65);
+    border: 2px solid rgba(0,0,0,.2);
+    text-transform:uppercase;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    }
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption #bb-2 h2 strong {
+    font-weight: bold;
+    color: #333;
+    font-size: 9vw!important;
+    font-family: proxima_nova_rgbold;
+    background: rgba(0,0,0, 0);
+    line-height: .9;
+    }
+    }</style>
+
+<style>/*Styles for the two buttons*/
+    .bb-2-button a {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    z-index: 2;
+}</style>
+
+
+<div id="bb-2" class="billboard-text">
+
+</div>
+                </div>
+                <a href="/furniture/kitchen-and-dining-rooms?icid=HP-BB2" class="button tiny" >Shop Now</a>
+            </div>
+        </li>
+        
+        <li>
+            <img data-src="/-/media/images/page-categories/home-page/caroucels-20160225/homepage-bb3-mpx-20160225.jpg" alt="Ashley HomeStore Instagram" data-responsive-width='{"small": 640, "medium": 1680}' data-format="sitecore" />
+            <noscript>
+                <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/caroucels-20160225/homepage-bb3-mpx-20160225.jpg" alt="Ashley HomeStore Instagram">
+            </noscript>            
+            
+            <div class="orbit-caption"  
+             >
+                <div class="content-caption"  >
+                    <style>/*WARNING: THESE STYLES AFFECT ALL OF THE SLIDES IN THE BILLBOARD. IF YOU DELETE THIS SLIDE YOU MUST COPY THIS STYLE INFORMATION OVER TO AN EXISTING SLIDE!*/
+    /*Makes the orbit-caption fill the slide*/
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption {
+    display: block;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0 !important;
+    right: 0;
+    bottom: 0 !important;
+    max-width: none !important;
+    background: none !important;
+    padding: 0 !important;
+    }
+    /*Make Banner Clickable, By Changing Button Size To Fill Banner*/
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption .button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0);
+    margin: 0;
+    padding: 0;
+    /*Hide Button Text*/
+    text-indent: -6000px;
+    }
+    /*Moves Orbit Bullets down*/
+    .orbit-container .orbit-bullets {
+    bottom: .1% !important;
+    margin-left: 47.5% !important;
+    width: 5% !important;
+    }
+    @media only screen and (max-width: 40.062em) {
+    /*Makes the mobile carousel taller than the desktop carousel*/
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li {
+    padding-bottom: 15.5%;
+    }
+    }
+    /*END WARNING*/</style>
+
+<style>.smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption #bb-3 h2 {
+    display: none;
+    }
+    @media only screen and (max-width: 40.062em) {
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption #bb-3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;background:#000 url("/feo-cdn/g/R/mXSUruryU.jpg") no-repeat center;
+    background-size: cover;
+    }
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption h2 {
+    background: none;
+    position: absolute;
+    top: 0 !important;
+    }
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption #bb-3 h2 {
+    display: inline;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: initial;
+    line-height: 1;
+    color: #333;
+    text-align: center;
+    font-family: proxima_novalight;
+    font-size: 4vw!important;
+    font-weight: normal;
+    width: 50%;
+    margin: auto;
+    padding: 1vw;
+    background-color: rgba(255,255,255,.65);
+    border: 2px solid rgba(0,0,0,.2);
+    text-transform:uppercase;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    }
+    .smallCaptionCarousel .orbit-container .orbit-slides-container li .orbit-caption #bb-3 h2 strong {
+    font-weight: bold;
+    color: #333;
+    font-size: 9vw!important;
+    font-family: proxima_nova_rgbold;
+    background: rgba(0,0,0, 0);
+    line-height: .9;
+    }
+    }</style>
+
+<style>/*Styles for the three top buttons*/
+    .bb-3-button a {
+    position: absolute;
+    height: 100%;
+    width: 33.3%;
+    top: 0;
+    z-index: 2;
+}
+    .bb-3-grid a {
+    position: absolute;
+    height: 42.7%;
+    width: 16.667%;
+    z-index: 2;
+}
+
+	.bb-3-grid a {
+
+	}
+
+	.bb-3-grid a .grid-text {
+		visibility: hidden;
+		height: 100%;
+		width: 100%;
+	}
+
+	.bb-3-grid a:hover .grid-text {
+		background-color: rgba(153,153,153,.5);
+		visibility: visible;
+	}
+
+	.bb-3-grid a .grid-text p{
+		color: #fff;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+	}
+
+    /*Styles for desktop link */
+    .bb-3-desktop-link a {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    /*Styles for disclaimer text */
+    .bb-3-disclaimer a {
+    position: absolute;
+    height: 5%;
+    width: 34%;
+    bottom: 3%;
+    left: 33%;
+    z-index: 2;
+    }
+
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    	.bb-3-grid a .grid-text p {
+    		font-size: 2vw;
+    		}
+    	}</style>
+
+
+<div id="bb-3" class="billboard-text">
+
+</div>
+                </div>
+                <a href="https://www.instagram.com/Ashleyhomestore/?ICID=HP-BB3" class="button tiny" >Instagram</a>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+
+<div class="row toutBlock toutBlockNew">
+    
+
+<div class="htmlBlock">
+    
+</div>
+
+
+<div class="htmlBlock">
+    <style>/*New Homepage Overrides -----------------------------------------------------*/
+@media only screen and (max-width: 40em) {
+  .row.toutBlock.toutBlockNew.htmlToutBlock {
+    padding: 0 !important; } }
+@media only screen and (max-width: 40em) {
+  .toutBlockNew .htmlBlock>div>div:nth-child(n+2) {
+    margin-top: 0 !important; } }
+@media only screen and (max-width: 960px) and (min-width: 40.063em) {
+  .toutBlockNew {
+    max-height: inherit !important; } }
+.toutBlockNew {
+  max-height: inherit !important; }
+
+@media only screen and (min-width: 40.063em) {
+  .toutBlock {
+    height: inherit !important; } }
+/*New Homepage Utility -------------------------------------------------------*/
+#home .row {
+  max-width: 1600px; }
+
+.toutBlockNew img {
+  max-height: none !important;
+}
+/*Promo Blocks ---------------------------------------------------------------*/
+.afhs-new-homepage .afhs-block-row {
+  padding: .5rem 2% .5rem 2%; }
+  @media only screen and (max-width: 40em) {
+    .afhs-new-homepage .afhs-block-row {
+      padding: .5rem 1% .5rem 1%; } }
+
+.afhs-new-homepage .afhs-offer-card {
+  position: relative;
+  -webkit-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  -ms-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+  margin: 2%;
+  overflow: hidden; }
+  @media only screen and (max-width: 40em) {
+    .afhs-new-homepage .afhs-offer-card {
+      margin: 5px; } }
+
+.afhs-new-homepage .afhs-offer-card-large {
+  position: relative;
+  -webkit-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  -ms-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+  margin: 0 0 0 0;
+  overflow: hidden; }
+  @media only screen and (max-width: 40em) {
+    .afhs-new-homepage .afhs-offer-card-large {
+      margin: 0 0 0 0; } }
+
+.afhs-new-homepage .afhs-offer-card-image {
+  z-index: 100;
+  width: 100%;
+  max-width: 100%; }
+
+.afhs-new-homepage .afhs-offer-card-link {
+  z-index: 100;
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  cursor: pointer; }
+
+.afhs-new-homepage .afhs-offer-card-action:hover {
+  text-decoration: underline !important;
+  color: #000; }
+
+.afhs-new-homepage .afhs-offer-card .afhs-offer-card-action {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #f4811f; }
+
+.afhs-new-homepage .afhs-offer-card-house-caption {
+  position: absolute;
+  top: 75%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-transform: translateY(-75%);
+  -moz-transform: translateY(-75%);
+  -ms-transform: translateY(-75%);
+  transform: translateY(-75%); }
+
+.afhs-new-homepage .afhs-offer-card-house-caption .afhs-offer-card-title.afhs-offer-large {
+  /*Tablet Title Size*/
+  /*Phone Title Size*/ }
+  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+    .afhs-new-homepage .afhs-offer-card-house-caption .afhs-offer-card-title.afhs-offer-large {
+      font-size: 2.6rem !important; } }
+  @media only screen and (max-width: 40em) {
+    .afhs-new-homepage .afhs-offer-card-house-caption .afhs-offer-card-title.afhs-offer-large {
+      font-size: 1.4rem !important; } }
+
+.afhs-new-homepage .afhs-offer-card-house-caption .afhs-offer-card-action {
+  font-size: 1.3rem; }
+  @media only screen and (max-width: 40em) {
+    .afhs-new-homepage .afhs-offer-card-house-caption .afhs-offer-card-action {
+      font-size: 1rem; } }
+
+.afhs-new-homepage .afhs-offer-card.afhs-offer-card-house {
+  max-width: none; }
+
+.afhs-new-homepage .afhs-offer-card-title.afhs-offer-large {
+  font-size: 3rem !important;
+  line-height: 1;
+  margin: 0 0 3% 0; }
+
+.afhs-new-homepage .afhs-offer-card-caption {
+  padding: 2% 2% 2% 2%;
+  background: rgba(255, 255, 255, 0.8); }
+
+.afhs-new-homepage .afhs-offer-card-caption .afhs-offer-card-title {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0;
+  font-family: "proxima-nova", helvetica, arial, sans-serif;
+  /*Tablet Title Size*/
+  /*Phone Title Size*/ }
+  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+    .afhs-new-homepage .afhs-offer-card-caption .afhs-offer-card-title {
+      font-size: 1.2rem; } }
+  @media only screen and (max-width: 40em) {
+    .afhs-new-homepage .afhs-offer-card-caption .afhs-offer-card-title {
+      font-size: 1rem; } }
+
+.afhs-new-homepage .afhs-offer-card-title strong {
+  color: #f4811f; }
+
+/*AFHS Hero Promos -----------------------------------------------------------*/
+.afhs-new-homepage {
+  position: relative;
+}
+
+.afhs-hero-promos {
+  max-width: 1300px;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  position: absolute;
+  top: 0;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 200; }
+
+.afhs-hero-promos .columns {
+  border-right: 1px solid #ccc; }
+
+.afhs-hero-promos .columns:last-child {
+  border-right: none; }
+
+.afhs-hero-promos .columns {
+  text-align: center; }
+
+.afhs-promo-block p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0; }
+
+.afhs-promo-block p a {
+  color: #4E4E4E; }
+
+/*Styles for 3A Buttons*/
+    .bb-5-button a {
+    position: absolute;
+    height: 100%;
+    width: 33.3%;
+    top: 0;
+    z-index: 2;
+}
+    .bb-5-grid a {
+    position: absolute;
+    height: 42.7%;
+    width: 16.667%;
+    z-index: 2;
+}
+
+	.bb-5-grid a {
+
+	}
+
+	.bb-5-grid a .grid-text {
+		visibility: hidden;
+		height: 100%;
+		width: 100%;
+	}
+
+	.bb-5-grid a:hover .grid-text {
+		background-color: rgba(153,153,153,.5);
+		visibility: visible;
+	}
+
+	.bb-5-grid a .grid-text p{
+		color: #fff;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+	}</style>
+        <div class="afhs-new-homepage">
+
+        <!-- mp_trans_remove_start -->
+        <!-- Hero Image 1 -->
+        <div class="row collapse">
+
+          <!-- Carousel Image 1 1600x739 Start -->
+          <div class="large-12 medium-12 small-12 columns">
+            <figure class="afhs-offer-card-large">
+              <a href="/financing/?icid=HP-1C">
+                <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/tout-cards-20160223/financing-banner-homepage-mobile.gif?la=en" alt="Up to 24 Month Special Financing" class="afhs-offer-card-image show-for-small-only">
+                <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/tout-cards-20160223/financing-banner-homepage.gif?la=en" alt="Up to 24 Month Special Financing" class="afhs-offer-card-image show-for-medium-up">
+              </a>
+            </figure>
+          </div>
+
+        </div>
+        <!-- Hero Image 1 End -->
+	<!-- mp_trans_remove_end -->
+
+        <!-- 3 Offer Blocks Start -->
+        <div class="row afhs-block-row collapse">
+
+          <!--Box A-->
+          <div class="large-4 medium-4 small-6 columns">
+            <figure class="afhs-offer-card">
+              <a href="/furniture/living-room/?icid=HP-2A">
+                <img class="afhs-offer-card-image" alt="Comfortable Sofa" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/tout-cards-20160223/homepage-2a.jpg?la=en">
+              </a>
+
+              <a class="afhs-offer-card-link" href="/furniture/living-room/?icid=HP-2A">
+                    <figcaption class="afhs-offer-card-caption">
+                  <h3 class="afhs-offer-card-title"><!-- mp_trans_remove_start --><strong>up to 15% off* </strong><!-- mp_trans_remove_end -->upholstered seating&nbsp;&raquo;</h3>
+                </figcaption>
+              </a>
+            </figure>
+          </div>
+
+          <!--Box B 480x638-->
+          <div class="large-4 medium-4 small-6 columns">
+            <figure class="afhs-offer-card">
+              <a href="/p/corraya-queen-panel-bed/apk-b428-qpb/?icid=HP-2B">
+                <img class="afhs-offer-card-image" alt="Beautiful Bed" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/tout-cards-20160223/homepage-2b.jpg?la=en">
+              </a>
+
+              <a class="afhs-offer-card-link" href="/p/corraya-queen-panel-bed/apk-b428-qpb/?icid=HP-2B">
+                <figcaption class="afhs-offer-card-caption">
+                  <h3 class="afhs-offer-card-title">Corraya Queen Panel Bed<!-- mp_trans_remove_start --> <strong>$299</strong><!-- mp_trans_remove_end -->&nbsp;&raquo;</h3>
+                </figcaption>
+              </a>
+            </figure>
+          </div>
+
+          <!--Box C 480x638-->
+          <div class="large-4 medium-4 small-6 hide-for-small-only columns">
+<figure class="afhs-offer-card">
+              <a href="/c/furniture/living-room/tv-stands-and-media-centers?icid=HP-2C">
+                <img class="afhs-offer-card-image" alt="Wood TV Stand" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/tout-cards-20160223/homepage-2c.jpg?la=en">
+              </a>
+
+              <a class="afhs-offer-card-link" href="/c/furniture/living-room/tv-stands-and-media-centers?icid=HP-2C">
+                <figcaption class="afhs-offer-card-caption">
+                  <h3 class="afhs-offer-card-title"><!-- mp_trans_remove_start --><strong>up to 20% off* </strong><!-- mp_trans_remove_end -->TV stands, more&nbsp;&raquo;</h3>
+                </figcaption>
+              </a>
+            </figure>
+          </div>
+
+        </div>
+        <!-- 3 Offer Blocks End -->
+
+        <!-- mp_trans_remove_start -->
+        <!-- Hero Image 2 -->
+        <div class="row collapse">
+
+          <!-- Carousel Image 2 1600x739 Start -->
+          <div class="large-12 medium-12 small-12 columns">
+
+            <figure class="afhs-offer-card-large">
+              <a href="/c/rugs/?icid=HP-3A">
+                <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/tout-cards-20160223/homepage-3a-mobile.jpg?la=en" alt="Up to 20% Off Chic Elements" class="afhs-offer-card-image show-for-small-only">
+              </a>
+            </figure>
+            <figure class="afhs-offer-card-large">
+                <div class="bb-5-button">
+<a style="left: 35%; width: 13%; height: 8%; top: 88%;" href="/c/decor-and-pillows/home-accents/?icid=HP-3A-Accents">&nbsp;</a>
+<a style="left: 51%; width: 11%; height: 8%; top: 88%;" href="/c/rugs/?icid=HP-3A-Rugs">&nbsp;</a><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/tout-cards-20160223/homepage-3a.jpg?la=en" alt="Up to 20% Off Chic Elements" class="afhs-offer-card-image show-for-medium-up"></div>
+            </figure>
+
+          </div>
+
+        </div>
+        <!-- Hero Image 2 End -->
+	<!-- mp_trans_remove_end -->
+
+        <!-- 3 Offer Blocks Start -->
+        <div class="row afhs-block-row collapse">
+
+          <!--Box A 480x638-->
+           		<div class="large-4 medium-4 hide-for-small-only small-6 columns">
+	<!-- mp_trans_remove_start -->
+            <figure class="afhs-offer-card">
+              <a href="/c/smart-buys/?icid=HP-4A">
+                <img class="afhs-offer-card-image" alt="Stylish Bed" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/tout-cards-20160223/homepage-4a.jpg?la=en">
+              </a>
+
+              <a class="afhs-offer-card-link" href="/c/smart-buys/?icid=HP-4A">
+                <figcaption class="afhs-offer-card-caption">
+                  <h3 class="afhs-offer-card-title">our best everyday <strong>low prices</strong>&nbsp;&raquo;</h3>
+                </figcaption>
+              </a>
+            </figure>
+                        <span style="display: none">
+            <!-- mp_trans_remove_end -->
+                        <figure class="afhs-offer-card">
+              <a href="/c/furniture/bedroom/beds/?icid=HP-4A-French">
+                <img class="afhs-offer-card-image" alt="Stylish Bed" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/tout-cards-20160223/homepage-4a-french.jpg?la=en">
+              </a>
+
+              <a class="afhs-offer-card-link" href="/c/furniture/bedroom/beds/?icid=HP-4A-French">
+                <figcaption class="afhs-offer-card-caption">
+                  <h3 class="afhs-offer-card-title">shop <strong>beds</strong>&nbsp;&raquo;</h3>
+                </figcaption>
+              </a>
+            </figure>
+            <!-- mp_trans_remove_start --></span><!-- mp_trans_remove_end -->
+          </div>
+
+
+          <!--Box B 480x638-->
+          <div class="large-4 medium-4 small-6 columns">
+            <figure class="afhs-offer-card">
+              <a href="/c/top-rated/?icid=HP-4B">
+                <img class="afhs-offer-card-image" alt="Top Rated List" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/tout-cards-20160223/homepage-4b-new.jpg?la=en">
+              </a>
+
+              <a class="afhs-offer-card-link" href="/c/top-rated/?icid=HP-4B">
+                <figcaption class="afhs-offer-card-caption">
+                  <h3 class="afhs-offer-card-title">see why these items are getting <strong>rave reviews</strong>&nbsp;&raquo;</h3>
+                </figcaption>
+              </a>
+            </figure>
+          </div>
+
+          <!--Box C 480x638-->
+          <div class="large-4 medium-4 small-6 columns">
+            <figure class="afhs-offer-card">
+              <a href="/c/furniture/kitchen-and-dining-room/bar-stools/?icid=HP-4C">
+                <img class="afhs-offer-card-image" alt="Bar Stools" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/tout-cards-20160223/homepage-4c.jpg?la=en">
+              </a>
+
+              <a class="afhs-offer-card-link" href="/c/furniture/kitchen-and-dining-room/bar-stools/?icid=HP-4C">
+                <figcaption class="afhs-offer-card-caption">
+                  <h3 class="afhs-offer-card-title">barstools<!-- mp_trans_remove_start --> as low as<strong> $39.99</strong><!-- mp_trans_remove_end -->&nbsp;&raquo;</h3>
+                </figcaption>
+              </a>
+            </figure>
+
+          </div>          
+        </div>      
+        <!-- 3 Offer Blocks End -->
+<!-- mp_trans_remove_start -->
+        <!-- Carousel Slide 3 -->
+        <div class="row collapse">
+
+          <!-- Carousel Image 2 1600x400 Start -->
+          <div class="large-12 medium-12 small-12 columns">
+            <figure class="afhs-offer-card-large">
+              <a href="/c/furniture/entryway/?icid=HP-5A">
+                <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/tout-cards-20160223/homepage-5a-mobile-new.jpg?la=en" alt="Console Table Stack" class="afhs-offer-card-image show-for-small-only">
+                <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/tout-cards-20160223/homepage-5a-new.jpg?la=en" alt="Console Table Stack" class="afhs-offer-card-image show-for-medium-up">
+              </a>
+            </figure>
+          </div>
+
+        </div>
+        <!-- Carousel Slide 3 End -->
+<!-- mp_trans_remove_end -->
+
+        <!-- 3 Offer Blocks Start -->
+        <div class="row afhs-block-row collapse">
+
+<!--Box A 480x238-->
+          <div class="large-4 medium-4 small-12 columns">
+            <figure class="afhs-offer-card">
+              <a href="/a-hope-to-dream/?icid=HP-6A">
+                <img class="afhs-offer-card-image" alt="hope to dream" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/tout-cards-6-a-b-c/hp-6a-b.jpg?la=en">
+              </a>
+            </figure>
+          </div>
+
+ <!--Box B 480x238-->
+          <div class="large-4 medium-4 small-12 columns">
+            <figure class="afhs-offer-card">
+              <a href="/financing/?icid=HP-6B">
+                <img class="afhs-offer-card-image" alt="Ashley HomeStore Online Financing" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/tout-cards-6-a-b-c/hp-6b-b.gif?la=en">
+              </a>
+            </figure>
+          </div>
+
+<!--Box C 480x238-->
+          <div class="large-4 medium-4 small-12 columns">
+            <figure class="afhs-offer-card">
+              <a href="http://blog.ashleyfurniturehomestore.com/?icid=HP-6C" target="_blank">
+                <img class="afhs-offer-card-image" alt="Ashley HomeStore Blog" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/page-categories/home-page/tout-cards-6-a-b-c/hp-6c.jpg?la=en">
+              </a>
+            </figure>
+          </div>
+
+        </div>
+        <!-- 3 Offer Blocks End -->
+      </div>
+      <!-- Ashley New Homepage End ******************************************-->
+</div>
+
+</div>
+
+    <a href="javascript:void(0)" class="scrollToTop" title="Scroll to top of page."></a>
+</div>
+<script type="text/javascript">$(document).ready(function(){$(".prodGridBox .productImage img").load(function(){adjustProductBoxes(".prodGridBox .pricing-table");});if(typeof newestProductsBvSource!=="undefined"&&Object.keys(newestProductsBvSource).length>0){$BV.ui("rr","inline_ratings",{productIds:newestProductsBvSource,containerPrefix:"BVRRInlineRating"});}$(window).smartresize(function(){adjustProductBoxes(".prodGridBox .pricing-table");});});</script>
+
+
+<script type="application/ld+json">
+{
+   "@context": "http://schema.org",
+   "@type": "WebSite",
+   "url": "https://www.ashleyfurniturehomestore.com",
+   "potentialAction": {
+     "@type": "SearchAction",
+     "target": "http://www.ashleyfurniturehomestore.com/SearchPage?s={search_term_string}&icid=sitelink",
+     "query-input": "required name=search_term_string"
+   }
+}
+</script>
+ 
+
+<script type="text/javascript">window.DDO={flowPath:"home page",specVersion:"1.0",pageData:{pageName:"afhs:Home",pageSiteSection:"Homepage",pageDepartment:"Unknown",pageCategory:"Unknown",pageSubCategory:"Unknown",pageType:"Homepage",pageError:"Unknown",pageTemplate:"Homepage"},siteData:{sitePlatform:"desktop",siteDomain:"afhs"},userData:{userStatus:"Not Logged In",userCampaign:"Unknown",zipCode:"",loginForm:"afhs:Corporate:LoginPage",userAction:"guest",loginAttempt:"",loginName:""}};if(typeof(loginError)!=="undefined"&&loginError){window.DDO.userData.loginAttempt="error";}</script>
+
+                    </div>
+                    
+
+<div class="footer">
+    <div class="row footerTop">
+        
+        <div class="contentCenter">
+            
+            <div id="singnIn" class="column medium-5">
+                <h3>Shop Like An Insider</h3>
+                <div class="contentSignIn clearfix">
+                    <label for="TbxEmailFooter" class="hideLabel">Email</label>
+                    <input id="TbxEmailFooter" type="email" placeholder="Enter your email address" />
+                    <a class="button small signup " id="signUpButton">Sign Up</a>
+                </div>
+                <p class="text">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/-/media/images/footer/signupsection/emailenvelopeimage.png" alt="Email" />
+                    Sign up now for the latest offers, sales and tips.
+                </p>
+            </div>
+            
+            <div class="clear hide-for-large-up"></div>
+
+            <hr class="hide-for-large-up" />
+
+            <div id="financing" class="column medium-4">
+                <h3>Financing</h3>
+                <div class="column small-3">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc='/-/media/images/global-use/logos/ahs-logo-237-store-detail-pages.png?h=79&amp;w=240' alt='Home store image' />
+                </div>
+                <div class="column small-9">
+                    <p>
+                        <style>.content + div > .footer > .footerBottom > .contentCenter >.footerNav {
+    display:none;
+} 
+.content + div > .footer > .footerTop {
+    display:none;
+}</style>
+
+<strong>The Ashley Advantage&trade; Card</strong><br />
+offers style &amp; value with <br />
+affordable payments.
+                        <a href='/financing' >Learn More
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="clear hide-for-large-up"></div>
+            <hr class="hide-for-large-up" />
+            <div id="socialNav" class="column medium-3">
+                <div class="right-wrapper">
+                    <h3><p>Need Help With Your Order?<br>1-866-436-3393</p></h3>
+                    <ul class="sub-nav">
+                        
+                        <li>
+                            <a href='https://instagram.com/Ashleyhomestore/' ><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc='/-/media/images/global-use/social-icons/instagram.png?h=35&amp;w=35' alt='Instagram' />
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='https://www.pinterest.com/ashleyhomestore/' ><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc='/-/media/images/global-use/social-icons/pinterest.png?h=35&amp;w=35' alt='Pinterest' />
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='https://www.facebook.com/AshleyHomeStore' target='_blank' ><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc='/-/media/images/global-use/social-icons/facebook.png?h=35&amp;w=35' alt='Facebook' />
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='https://twitter.com/ashleyhomestore' target='_blank' ><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc='/-/media/images/global-use/social-icons/twitter.png?h=35&amp;w=35' alt='Twitter' />
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='https://www.youtube.com/user/ashleyhomestore' target='_blank' ><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc='/-/media/images/global-use/social-icons/youtube.png?h=35&amp;w=35' alt='YouTube' />
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='https://plus.google.com/+AshleyHomeStore' target='_blank' ><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc='/-/media/images/global-use/social-icons/googleplus.png?h=35&amp;w=35' alt='Google+' />
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <hr />
+        </div>
+        
+    </div>
+    <div class="row footerBottom">
+        <div class="contentCenter">
+            
+            <div class="footerNav clearfix">
+                
+                <div class="column medium-3">
+                    <ul>
+                        <li>Company</li>
+                        
+                        <li>
+                            <a href='/about-us' >About Us
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='/furniture-stores' >Store Locations
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='https://ashleyfurniture.mua.hrdepartment.com/hr/ats/JobSearch/index' target='_blank' >Careers
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='/news' >News
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='/contact-us' >Contact Us
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="clear hide-for-large-up"></div>
+                <hr class="hide-for-large-up" />
+                
+                <div class="column medium-3">
+                    <ul>
+                        <li>Customer Support</li>
+                        
+                        <li>
+                            <a href='/customer-care' >Customer Care
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='/shopping' >Shopping
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='/returns' >Returns
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='/delivery-information' >Shipping & Delivery
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='/faq' >FAQ
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='/care-and-cleaning' >Care & Cleaning
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='/warranty-information' >Warranty Information
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='/glossary' >Glossary
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="clear hide-for-large-up"></div>
+                <hr class="hide-for-large-up" />
+                
+                <div class="column medium-3">
+                    <ul>
+                        <li>Get Inspired</li>
+                        
+                        <li>
+                            <a href='http://blog.ashleyfurniturehomestore.com/' target='_blank' >Blog
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='https://www.ashleyfurniturehomestore.com/layouts/eCatalogViewer.aspx?catalogType=ecatalog&amp;catalogName=Urbanology2015&amp;icid=Footer-Catalog' target='_blank' >Our Catalog
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='http://roomplanner.icovia.com/ashley/resources/icovia.aspx' target='_blank' >Room Planner
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='/a-hope-to-dream' >Hope To Dream
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="clear hide-for-large-up"></div>
+                <hr class="hide-for-large-up" />
+                
+                <div class="column medium-3">
+                    <ul>
+                        <li>My Account</li>
+                        
+                        <li>
+                            <a href='/order-details' >Order Status
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='/loginpage' >Sign In
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='/loginpage' >Forgot Password
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="clear hide-for-large-up"></div>
+                <hr class="hide-for-large-up" />
+                
+            </div>
+            
+            <div class="clearfix" id="listBrands">
+                <div class="column medium-5 large-6">
+                    <div class="icon-bar five-up">
+                        <a href='/essential-accessibility' class='item' ><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc='/-/media/images/footer/logolist/accessability.png?h=37&amp;w=98' alt='Accessibility' />
+                        </a><a href='http://www.bbb.org/wisconsin/business-reviews/furniture-retail/ashley-furniture-homestore-in-arcadia-wi-1000020448?icid=footer-bbb' class='item' target='_blank' ><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc='/-/media/images/page-categories/footer-link/essential-accessibility/bbb.png?h=38&amp;w=96' alt='Better Business Bureau Accredited Business' />
+                        </a><a href='' class='item' ><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc='/-/media/images/page-categories/footer-link/essential-accessibility/ssl-7.jpg?h=30&amp;w=62' alt='SSL Protected' />
+                        </a><a href='http://www.bizrate.com/ratings_guide/merchant_detail__mid--296649.html' class='item' target='_blank' ><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc='/-/media/images/page-categories/footer-link/essential-accessibility/bizrate.jpg?h=30&amp;w=62' alt='Bizrate Customer Certified' />
+                        </a>
+                    </div>
+                </div>
+                <div class="column medium-7 large-6 copyright">
+                    <p><span style="font-size: 0.8em;">©Ashley HomeStores, Ltd., 2016. All Rights Reserved.</span></p>
+                    <div class="legalInformation">
+                        <ul class="sub-nav">
+                            
+                            <li>
+                                <a href='/coupons-sales-and-offers' >Offers & Details*
+                                </a>
+                                <em>|</em>
+                                
+                            </li>
+                            
+                            <li>
+                                <a href='/terms-and-conditions' >Terms & Conditions
+                                </a>
+                                <em>|</em>
+                                
+                            </li>
+                            
+                            <li>
+                                <a href='/terms-of-use' >Terms of Use
+                                </a>
+                                <em>|</em>
+                                
+                            </li>
+                            
+                            <li>
+                                <a href='/privacy-policy' >Privacy Policy
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="clear"></div>
+                    <span id="frenchLanguageToogle">
+                        <!--mp_global_switch_begins-->
+<a class="user-locale" data-href="https://www.meublesashley.com/" href="https://www.meublesashley.com/" onclick="return chooser();
+function chooser(){
+MP.SrcUrl=unescape('mp_js_orgin_url');
+MP.UrlLang='mp_js_current_lang';
+MP.oSite=decodeURIComponent('mp_js_origin_baseUrl');
+MP.tSite=decodeURIComponent('mp_js_translated_baseUrl');
+MP.init();
+var script=document.createElement('SCRIPT');
+script.src='https://ashleyfurniturehomestore.mpeasylink.com/mpel/mpel_chooser.js';
+document.body.appendChild(script);
+event.stopPropagation();
+return false;
+}" title="Language"> Fran&ccedil;ais</a>
+<!--mp_global_switch_ends-->
+ 
+                    </span>
+                    <div class="clear"></div>
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="signUp" class="reveal-modal  tiny" data-reveal>
+</div>
+<div id="signUpSuccess" class="reveal-modal  tiny" data-reveal>
+    <div class="row smallLightBox">
+        <div class="columns medium3">
+            <div class="forgotPass">
+                <div>You have successfully subscribed - Thank You!</div>
+                <div class="content successContent clearfix">
+                    <div class="columns small-3 medium-2 successImg">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="/img/myAccount/successIcon.png" alt="Success Icon">
+                    </div>
+                    <div class="checkSuccessContent small-9 medium-10 columns">
+                        <div class="successDescription">
+                            <h3>Success</h3>
+                            <p>You are now subscribed to Ashley Furniture</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="forgotPassbuttons checkSuccess">
+                    <a class="small button" href="javascript:void(0)" onclick="$(this).closest('[data-reveal]').foundation('reveal','close');return false;">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+<script>var newCustomer="True";if(newCustomer){$("#listBrands").css("margin-top","0em");}</script>
+
+                </div>
+            </div>
+            <script data-feo-orig-src="/bundles/scripts.js?v=51LAvq_9HyYeCd7zNVIFgfBKoeUTILmy48TEigJUcGI1" src="/feo-cdn/Z/C/Ren-UTF-8~ZCKv5rdmlSFiQW9zo_LTf8xGtiz7BgVGWnXqS2ZyTkA.js"></script>
+
+    </form>
+
+    <script type="text/javascript" id="twitter-wjs" src="//platform.twitter.com/widgets.js"></script>
+    <script type="text/javascript" src="//apis.google.com/js/platform.js" async defer></script>
+    <div id="fb-root"></div>
+    <script type="text/javascript">(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/en_US/all.js#xfbml=1&version=v2.0";fjs.parentNode.insertBefore(js,fjs);}(document,"script","facebook-jssdk"));</script>
+    <script type="text/javascript" src=" https://d21gpk1vhmjuf5.cloudfront.net/prod_ashleyfurniture_com-u1447275256092.js"></script>
+    <script type ="text/javascript" src="/js/axcontrol/ddoMappingAndReporting.js"></script>
+    <script type="text/javascript" src="/js/custom/resource.js"></script>
+    <script type="text/javascript" src="/js/clamp.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@import url('/shop/css/pagebuilder/about-amway-standard.css');
+
+.HomeLandingPage .LYT_Breadcrumb {display:none;}
+
+/*top level promo tiles*/
+.HomeLandingPage .BE_SecZn .BE_MC_onethird {background:none;}
+
+/*headline*/
+h1.MC_LYT_BE_element {width:auto; padding-left:0px; font-size:25px; color:#99BCCC;}
+.HomeLandingPage h1.MC_LYT_BE_element {padding-left:30px;}
+.MC_LYT_TextSubtext {padding-bottom:5px;}
+
+/*HR*/
+.HomeLandingPage .BE_MC_fullLandingWidth.BE_BdZn .MC_LYT_TextRuleSeperator .MC_LYT_BE_hr { background:url("/shop/images/heroNav_TileShadow.gif") no-repeat center top transparent; height:13px; padding-bottom:12px; margin-top:12px;}
+
+/*content*/
+.HomeLandingPage .BE_BdZn .MC_LYT_imgtxt_container{padding-left:55px; width:905px;}
+.MC_LYT_cartridge {margin-bottom:8px;}
+.HomeLandingPage .MC_LYT_cartridge {margin-bottom:1px;}
+.HomeLandingPage .BE_Prim2Zn .BE_First .MC_LYT_imgtxt_container{padding-left:55px; padding-right:55px; width:362px;}
+.HomeLandingPage .BE_SecZn .ILTR img {padding-right:0px;}
+.HomeLandingPage .BE_SecZn .BE_MC_onethird {padding-right:0px;width:320px;}
+.HomeLandingPage .BE_SecZn .BE_MC_onethird.BE_First .MC_LYT_imgtxt_container {padding-left:55px;width:265px;}
+.HomeLandingPage .BE_SecZn .BE_MC_onethird.BE_Last .MC_LYT_imgtxt_container {padding-right:30px; padding-left:10px; width:280px;}
+.MC_LYT_imgtxt_sub {font-family:Verdana; font-size:12px; color:#494948;font-weight:bold;}
+.MC_LYT_imgtxt_text sub, .MC_LYT_imgtxt_container sub {font-size:10px;}
+.HomeLandingPage .MC_LYT_imgtxt_text a {font-size:12px;}
+.HomeLandingPage .MC_LYT_imgtxt_text sub a {font-size:10px;}
+
+/*H3 subheads*/
+.HomeLandingPage .MC_LYT_imgtxt_text h3 {font-size:12px;}
+.HomeLandingPage .MC_LYT_imgtxt_text h3 {color:#3F95B4;}
+.MC_LYT_imgtxt_container.abox h3.MC_LYT_imgtxt_title {padding-top:0px;}
+
+/*promo tiles*/
+.HomeLandingPage h4 {font-size:15px;color:#006994;line-height:27px;}
+.HomeLandingPage .BE_Bd3Zn .MC_LYT_imgtxt_text {color:#929191;}
+.HomeLandingPage .BE_Bd3Zn {margin-top:20px;}
+.HomeLandingPage .BE_Bd3Zn td.BE_MC_onethird {width:320px;}
+.HomeLandingPage .BE_Bd3Zn td.BE_MC_onethird.BE_HO{border-left:1px solid #dcdcdc; padding-left:15px; padding-right:5px;}
+.HomeLandingPage .BE_Bd3Zn td.BE_MC_onethird.BE_HO.BE_First{border-left:none; }
+
+/*right side tiles*/
+.HomeLandingPage .BE_SecZn .BE_Last div {line-height:14px;}
+.HomeLandingPage .BE_SecZn .BE_Last .ILTR p a {color:#80BC47;}
+
+/*SUPPORT PAGES */
+.BE_MC_fullwidth .abox .MC_LYT_mustache_bottom, .BE_MC_halfwidth .abox .MC_LYT_mustache_bottom, .BE_MC_halfwidth .abox, .BE_MC_fullwidth .abox {background:none;}
+.BE_MC_Slice.BE_MC_halfwidth._alignbox .MC_LYT_mustache_bottom, .BE_MC_halfwidth .ITTB.abox .MC_LYT_imgtxt_image, .BE_MC_halfwidth .abox .MC_LYT_mustache_bottom, .BE_MC_halfwidth .MC_LYT_BE_TabNavTopHoriz .MC_LYT_mustache_bottom {background:none; border-top:1px solid #ccc;}
+.abox .MC_LYT_plume_top, ._alignbox .MC_LYT_plume_top {display:none;}
+.MC_LYT_imgtxt_container.abox .BE_HO {}
+td.BE_MC_Slice.BE_MC_halfwidth._imgTxt._ITTB._alignbox.HK_LYT_imgtxt_sub._noflex._full {border-top:1px solid #ccc;}
+.MC_LYT_imgtxt_container.abox h2.MC_LYT_BE_element, ._alignbox .BE_HDR h2.MC_LYT_BE_element {color:#494948; padding:8px 8px 7px 15px;text-transform:uppercase; z-index:100; background-color:#ccc;margin-bottom:1px;}
+.MC_LYT_imgtxt_container.abox .BE_HO {border-top:1px solid #ccc;}
+.MC_LYT_imgtxt_container.abox .MC_LYT_imgtxt_textcontainer {padding:12px;}
+.BE_MC_SliceSep span {height:0px;}
+.BE_MC_Align ._alignbox .MC_LYT_imgtxt_text {border-top:1px solid #ccc;}
+/*.MC_LYT_imgtxt_container.abox {border-top:30px solid #ccc; padding-top:1px;}*/
+
+/* temporary */
+.MC_LYT_imgtxt_text {padding:0px;}
+
+/* HIDE UNSUPPORTED CARTRIDGES 
+Until they can be properly styled and supported for all brands */
+.MC_LYT_MosaicLayout {display:none;}
+.MC_LYT_IWHO {display:none;}
+.MC_LYT_HAB {display: none;}
+.MC_LYT_TMB {display: none;}

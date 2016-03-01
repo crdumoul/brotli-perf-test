@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Aktiv Grotesk W01 Light1370681';
+  src: url('../../en/CathayPacific/CathaySans_WCorp_Lt.eot');
+  src: url('../../en/CathayPacific/CathaySans_WCorp_Lt.eot?#iefix') format('embedded-opentype'),
+       url('../../en/CathayPacific/CathaySans_WCorp_Lt.woff') format('woff'),
+       url('../../en/CathayPacific/CathaySans_WCorp_Lt.ttf')  format('truetype'),
+       url('../../en/CathayPacific/CathaySans_Lt.svg#Cathay Pacific Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aktiv Grotesk W01 Regular';
+  src: url('../../en/CathayPacific/CathaySans_WCorp_Rg.eot');
+  src: url('../../en/CathayPacific/CathaySans_WCorp_Rg.eot?#iefix') format('embedded-opentype'),
+       url('../../en/CathayPacific/CathaySans_WCorp_Rg.woff') format('woff'),
+       url('../../en/CathayPacific/CathaySans_WCorp_Rg.ttf')  format('truetype'),
+       url('../../en/CathayPacific/CathaySans_Rg.svg#Cathay Pacific') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aktiv Grotesk W01 Medium';
+  src: url('../../en/CathayPacific/CathaySans_WCorp_Md.eot');
+  src: url('../../en/CathayPacific/CathaySans_WCorp_Md.eot?#iefix') format('embedded-opentype'),
+       url('../../en/CathayPacific/CathaySans_WCorp_Md.woff') format('woff'),
+       url('../../en/CathayPacific/CathaySans_WCorp_Md.ttf')  format('truetype'),
+       url('../../en/CathayPacific/CathaySans_Md.svg#Cathay Pacific Medium') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aktiv Grotesk W01 Bold1370651';
+  src: url('../../en/CathayPacific/CathaySans_WCorp_Bd.eot');
+  src: url('../../en/CathayPacific/CathaySans_WCorp_Bd.eot?#iefix') format('embedded-opentype'),
+       url('../../en/CathayPacific/CathaySans_WCorp_Bd.woff') format('woff'),
+       url('../../en/CathayPacific/CathaySans_WCorp_Bd.ttf')  format('truetype'),
+       url('../../en/CathayPacific/CathaySans_Bd.svg#Cathay Pacific Bold') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}

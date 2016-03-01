@@ -1,0 +1,46 @@
+ @media (min-width: 1200px) {
+/*.rui-hero-expander .container .content{ width: 35%; }*/
+.rui-hero-expander .container .content .lead::before, .rui-hero-expander .container .content .lead::after{ width: 2em; }
+.rui-hero-expander .content .lead {width: 80%; }
+  }
+
+
+@media (min-width: 992px) {
+/*.rui-hero-expander .container .content{ width: 35%; }*/
+.rui-hero-expander .container .content .lead::before, .rui-hero-expander .container .content .lead::after{ width: 2em; }
+  }
+
+
+@media (max-width: 991px) and (min-width: 768px) {
+
+	.rui-hero-expander .content .lead {    font-size: 1em; width: 14em; }
+	.rui-hero-expander .container .content .lead::before, .rui-hero-expander .container .content .lead::after{ width: 1.5em; }
+  }
+
+
+
+/*ipad mini */
+@media (min-width: 768px) {
+	.rui-hero-expander .content .lead {width: 14em; }
+  }  
+  
+  
+  
+@media (max-width: 767px) {
+	.rui-hero-expander .container .content{ /*width: 12em;*/ }
+	.rui-hero-expander .container .content .lead::before, .rui-hero-expander .container .content .lead::after{ width: 1.4em; }
+	/*.rui-hero-expander .content .lead {    font-size: 1em; width: 13.5em; }*/
+  }
+
+
+@media (max-width: 385px) {
+	.rui-hero-expander .container .content{ /*width: 51%; */}
+	.rui-hero-expander .container .content .lead::before, .rui-hero-expander .container .content .lead::after{ width: 1em; }
+
+  }
+
+@media (max-width: 320px) {
+	.rui-hero-expander .container .content{ width: 65%; }
+	
+
+  }

@@ -1,0 +1,187 @@
+/* $Id: datepicker.css,v 1.2 2008-06-27 22:03:29 achai Exp $ */  
+div.datepicker {
+	position: absolute; 
+	text-align: center;
+	border:1px solid #C7C8C9;
+	background-color:#F0EEEF;
+	font-size: 10px;
+	padding:3px;
+}
+
+.popCal {
+	background-color: #fff;
+	font-weight: bold;
+	padding: 2px 0 5px 0;
+}
+
+div.datepicker .month-wrap {
+    position: relative;
+	width: 100%;
+	height: 20px;
+}
+
+div.datepicker .datepicker-prev {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 26px;
+	height: 20px;
+}
+
+div.datepicker .datepicker-prev img, div.datepicker .datepicker-next img {
+	position: absolute;
+	left: 10px;
+	top: 5px;
+}
+
+div.datepicker .datepicker-next {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 26px;
+	height: 20px;
+}
+
+div.datepicker .datepicker-header {
+	color:#414141;
+	position: absolute;
+	left: 26px;
+	top: 0px;
+	width: 128px;
+    font-size:12px;
+	height: 20px;
+	line-height: 20px;
+}
+
+div.datepicker .days-wrap {
+	overflow: hidden;
+}
+
+div.datepicker .days-wrap span:first-child {
+	width:24px;
+}
+
+div.datepicker .days-wrap span{
+	float: left;
+	width: 26px;
+	height: 12px;
+}
+
+div.datepicker table {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	width: 180px;
+}
+div.datepicker table thead tr th {
+ 	height: 0px;
+    font-size: 0px;
+	border: none;
+	text-indent: -9999px;    
+}
+
+div.datepicker table tbody tr {
+ margin: 0px;
+ padding: 0px;
+}
+
+div.datepicker table tbody tr td {
+color: #414141;
+font-size:12px;
+text-align:right;
+width:18px;
+padding: 3px 5px 3px 0;
+cursor: pointer;
+}
+
+
+
+div.datepicker td:hover,
+div.datepicker td.outbound:hover,
+div.datepicker td.today:hover {
+background-color:#F0EEEF;
+color:#009CDE;
+}
+
+div.datepicker td.focus {
+   background: #F3F3F3;
+}
+
+
+
+div.datepicker table tbody tr td.wday {
+	text-align: right;
+	color: #cacaca;
+	border-bottom: 1px solid #f0eeef;
+	border-top: 1px solid #f0eeef;
+	padding: 2px 5px 2px 0;
+	font-size: 11px;
+	cursor: auto;
+}
+
+
+
+div.datepicker table tbody tr td.outbound {
+ background: #FFFFFF;
+color:#CACACA;
+}
+
+div.datepicker table tbody tr td.today {
+background-color:#F0EEEF;
+color:#009CDE;
+}
+div.datepicker td.nclick, div.datepicker td.nclick:hover {
+ background: #FFFFFF;
+ font-size: 12px;
+ color:#cacaca;
+ cursor: auto; 
+}
+
+
+div.datepicker td.wday:hover {
+	background-color: #fff;
+	color: #cacaca;
+	cursor: arrow;
+}
+
+div.datepicker table tbody tr td.nclick_outbound, div.datepicker table tbody tr td.outbound {
+background: #FFFFFF;
+color:#FFFFFF;
+font-size:0px;
+padding: 0;
+line-height: 0;
+}
+div.datepicker table tbody tr td.nclick:hover,
+div.datepicker table tbody tr td.nclick_outbound:hover {
+}
+div.datepicker table tbody tr td.nclick_outbound:hover {
+}
+div.datepicker table tfoot {
+ font-size: 1px;
+ background: #FFFFFF;
+ border-top:1px solid #c4d5e3;
+ cursor: pointer;
+ text-align: center;
+ padding: 0px;
+}
+
+
+#datepicker-calendar_to_input-prev {
+	cursor: pointer;
+}
+
+#datepicker-calendar_to_input-next {
+	text-align: right;
+	cursor: pointer;
+}
+
+
+#datepicker-calendar_from_input-prev {
+	cursor: pointer;
+}
+
+#datepicker-calendar_from_input-next  {
+	text-align: right;
+	cursor: pointer;
+}
+

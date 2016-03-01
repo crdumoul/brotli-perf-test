@@ -1,0 +1,11 @@
+/* Scaling transforms */
+.visibleNearbySimple .rsSlide img {
+  opacity: 0.5;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-backface-visibility: hidden;
+}
+.visibleNearbySimple .rsActiveSlide img {
+  opacity: 1;
+}

@@ -1,0 +1,940 @@
+.MOD div,
+.MOD p,
+.MOD table,
+.MOD caption,
+.MOD tbody,
+.MOD tfoot,
+.MOD thead,
+.MOD tr,
+.MOD th,
+.MOD td,
+.MOD h1,
+.MOD h2,
+.MOD h3,
+.MOD h4,
+.MOD h5,
+.MOD h6,
+.MOD ul,
+.MOD ol,
+.MOD li,
+.MOD dl,
+.MOD dt,
+.MOD dd,
+.MOD pre,
+.MOD form,
+.MOD fieldset,
+.MOD legend,
+.MOD input,
+.MOD textarea,
+.MOD blockquote,
+.MOD iframe
+{
+	margin:0;
+	padding:0;
+}
+
+.MOD table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+.MOD caption,
+.MOD th
+{
+	text-align:left;
+}
+
+.MOD fieldset,
+.MOD img,
+.MOD abbr,
+.MOD acronym
+{ 
+	border:0;
+}
+
+.MOD address,
+.MOD caption,
+.MOD cite,
+.MOD code,
+.MOD dfn,
+.MOD em,
+.MOD th,
+.MOD var
+{
+	font-style:normal;
+	font-weight:normal;
+}
+
+.MOD strong {
+	font-weight:bold;
+}
+
+.MOD ol,
+.MOD ul {
+	list-style:none;
+}
+
+.MOD h1,
+.MOD h2,
+.MOD h3,
+.MOD h4,
+.MOD h5,
+.MOD h6
+{
+	font-weight:normal;
+}
+
+.MOD .hasLayout,
+.MOD .contain,
+.hasLayout,
+.contain
+{
+	*zoom:1;
+}
+
+.MOD .contain:after,
+.contain:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+	overflow: hidden;
+}
+
+.MOD .capitalize {
+	text-transform:capitalize;
+}
+
+.MOD .upperCase {
+	text-transform:uppercase;
+}
+
+.MOD .lowerCase {
+	text-transform:lowercase;
+}
+
+.MOD .floatLeft {
+	float:left;
+	_display:inline;
+}
+
+.MOD .floatRight {
+	float:right;
+	_display:inline;
+}
+
+.MOD .none {
+	display:none;
+}
+#MOD{
+	font-family:Verdana,Arial,Helvetica,San-Serif;
+	font-size:12px;
+	padding-bottom:20px;
+}
+#MOD table{width:100%;}
+#MOD a{
+	color:#117bc0;
+	cursor:pointer;
+}
+#MOD .pos{color:#339933;}
+#MOD .neg{color:#d50202;}
+#MOD .zero{color:#394f59;}
+/* Layout */
+#MOD .row .col{float:left;}
+#MOD .row .col + .col{
+	margin-left:35px;
+}
+#MOD .IndexPanelModule .col + .col{
+	margin-left: 15px;
+}
+#MOD .row .col-half{
+	width:45%;
+}
+#MOD .row .col-one-third{
+	width:32%;
+}
+#MOD .row .col-two-thirds{
+	width:58%;
+}
+/*Tables */
+#MOD table.data{
+	font-size:11px;
+}
+#MOD table.data caption{
+	border-top:1px solid #000;
+	border-bottom:1px dotted #000;
+	padding:6px 0;
+}
+#MOD table.data caption .mod-secondary{color:#999;}
+#MOD table.data td,
+#MOD table.data th{
+	text-align:right;
+}
+#MOD table.data tbody th{
+	text-align:left;
+	font-weight:normal;
+}
+#MOD table.data .text{
+	text-align:left;
+}
+#MOD table.data th{
+	padding:6px 4px 6px 0;
+}
+#MOD table.data td{	
+	padding:6px 0 6px 6px;
+}
+#MOD table.data tr{
+	border-bottom:1px dotted #000;
+}
+#MOD table.data th.prominent{
+	font-size:16px;
+	font-weight:normal;
+}
+#MOD table.captionless th{
+	border-bottom:1px solid #000;
+}
+#MOD table.data tr.last td{
+	border:none;
+}
+/* Truncated containers */
+#MOD .truncated-container .truncated{
+	display:none;
+}
+#MOD .truncated-container.expanded .truncated{
+	display:block;
+}
+#MOD .truncated-container.expanded .expand{display:none;}
+#MOD .truncated-container .collapse{display:none;}
+#MOD .truncated-container.expanded .collapse{display:inline;}
+
+#MOD .truncated-container a.expand-toggle{
+	color:#ff0000;
+}
+#MOD .truncated-container a.expand-toggle .icon{
+	margin-left:8px;
+}
+
+/* To do move the Market's dashboard toggle to use a UI.Utils.toggle and the toggle style in common.css*/
+
+/* Dashboard */
+.dashboard-module{
+	width:625px;
+}
+.dashboard-module .view-toggle{
+	font-size:10px;
+	margin-bottom:7px;
+	text-align:right;
+}
+.dashboard-module .view-toggle label{font-weight:bold;}
+.dashboard-module .view-toggle dl, 
+.dashboard-module .view-toggle dd,
+.dashboard-module .view-toggle dt{
+	display:inline;
+	color:#666;
+}
+.dashboard-module .view-toggle dt{
+	padding:0 4px;
+}
+.dashboard-module .view-toggle dl{cursor:pointer;}
+.dashboard-module .view-toggle dl.selected{cursor:default;}
+.dashboard-module .view-toggle dl.selected dd{ color:#000;}
+.dashboard-module .view-toggle ul{
+	display:inline;
+}
+.dashboard-module .view-toggle li{
+	display:inline;
+	line-height:10px;
+	padding:0 10px;	
+}
+
+#MOD .dashboard-module .view-toggle li a{
+	color:#ff6b00;
+}
+#MOD .dashboard-module .view-toggle li.selected a{
+	color:#000;
+	cursor:default;
+}
+.dashboard-module .view-toggle li+li{
+	border-left:1px solid #444;	
+}
+.dashboard-module .view-toggle li.last{
+	padding-right:0;
+}
+.dashboard-module .content{
+	border:1px solid #e0e0e0;
+	border-bottom:3px solid #313131;
+}
+.dashboard-module .ec-control{
+	border-top:1px solid #d6d6d6;
+	cursor:pointer;
+	line-height:5px;
+	padding:3px 0;
+}
+.dashboard-module .ec-control .icon{margin:0 50%;}
+.dashboard-module .expanded-content{
+	border-top:1px solid #c2c2c2;
+	display:none;
+}
+.dashboard-module.loading .expanded-content{
+	background:url("http://content.markitcdn.com/data.theglobeandmail.com/Research/ResourceManager/gh7MfP0Hfmk4_cUVa0fIzQ2/d/f/Joox-pyK7eD18z6UAPrCcA2/Research/content/Images/Loader-Small.gif") no-repeat center;
+	cursor:wait;
+	height:350px;
+}
+.dashboard-module.loading .expanded-content *{
+	display:none;
+}
+.dashboard-module.expanded .expanded-content{
+	display:block;
+}
+.dashboard-module.expanded .ec-control>.icon-expand-collapse{
+	background-position:-133px top;
+}
+.dashboard-module .attributions{
+	padding:6px 2px;
+}
+.dashboard-module .attributions p{
+	color:#a0a0a0;
+	float:left;
+	font-size:10px;
+	width:520px;
+}
+.dashboard-module .attributions .vendor{
+	float:right;
+}
+#MOD .dashboard-module .label,
+#MOD .dashboard-module .prominent
+{
+	font-family:'PrattWebHeavy',PrattHeavy,Georgia,Palatino,serif;
+}
+
+#MOD .clicktip-tester { cursor: pointer; }
+
+#MOD .clicktip
+{
+	cursor:pointer;
+	text-decoration:underline;
+}
+
+#MOD .tooltip  
+{
+	position: absolute;
+	z-index: 100000;
+}
+
+#MOD .tooltip .tooltipText 
+{
+	background-color: #fff;
+	border: 1px solid #999;
+	box-shadow: 3px 3px 0px #CCC;
+	font-size: 9px;
+	padding: 10px;
+	position: relative;
+}
+
+#MOD .tooltip .tooltipText h3,
+#MOD .tooltip .tooltipText p { padding-bottom: 5px; }
+
+#MOD .tooltip .tooltipText .lt { color: #aaa; }
+#MOD .tooltip .closetip 
+{
+	cursor: pointer;
+	position: absolute;
+	top: 5px; right: 5px;
+}
+
+#MOD .tooltip .speakbox 
+{
+	background-image:url("http://content.markitcdn.com/data.theglobeandmail.com/Research/ResourceManager/ZdeKcvistbeO7nPBECuLAw2/d/f/HPGe6_wLWkgfVKPZN3LJCQ2/Research/content/images/Sprite.png");
+	background-position: -210px -40px;
+	background-repeat: no-repeat;
+	clear: both;
+	float: left;
+	height: 7px;
+	margin-top: -1px;
+	position: relative;
+	left: 5px;
+	width: 14px;
+}
+
+
+#MOD table.article-quotes {
+	border-collapse: collapse;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, Verdana, Sans-Serif;
+	font-size: 14px;
+}
+#MOD table.article-quotes .caption {
+	font-family: 'PrattBlack', Helvetica, Arial, Verdana, Sans-Serif;
+	color: #000;
+	font-size: 16px;
+	display: block;
+}
+#MOD table.article-quotes tr {
+	border-top: 1px #ddd solid;
+	vertical-align: baseline;
+}
+#MOD table.article-quotes td {
+	font-family: 'Pratt Regular', Helvetica, Arial, Verdana, Sans-Serif;
+	font-size: 30px;
+	padding: 0 0 17px;
+	width: 25%;
+}
+#MOD table.article-quotes .company-name {
+	font-family: 'PrattBlack', Helvetica, Arial, Verdana, Sans-Serif;
+	color: #000;
+	padding: 10px 14px 10px 0
+}
+#MOD table.article-quotes .company-name div {
+	padding: 7px 14px 7px 0;
+	border-right: 1px #ddd solid;
+}
+#MOD table.article-quotes .disclaimer {
+	color: #999;
+}
+#MOD table.article-quotes .disclaimer td {
+	font-size: 10px;
+	padding-top: 5px;
+}
+#MOD .hidden {
+	display: none;
+}
+#MOD div.MiniMarketsDashboardModule table.tiles{
+	background:#ebeff0;
+	border-bottom:1px solid #f5f5f5;	
+}
+/*Tile Title th*/
+#MOD div.MiniMarketsDashboardModule th{
+	background:#394f5a;
+	color:#fff;
+	font-size:12px;
+	font-family:'GMSans', Helvetica, sans-serif; 
+	font-weight:normal;
+	line-height:8px;
+	padding:7px 0/*6px*/ 7px 10px;
+	text-align:left;
+	white-space:nowrap;
+}
+#MOD div.MiniMarketsDashboardModule th + th{
+	border:1px solid #FFF;
+	border-width:0 0 0 1px;
+}
+#MOD div.MiniMarketsDashboardModule th.positive{	
+	background-color:#339933;
+}
+#MOD div.MiniMarketsDashboardModule th.negative{
+	background-color:#d50202;	
+}
+/*td, module and Tile body */
+#MOD div.MiniMarketsDashboardModule td{
+	font-size:10px;
+	padding:0 6px 0 10px;
+	vertical-align:top;
+	width:88px;
+}
+#MOD div.MiniMarketsDashboardModule td + td{
+	border:1px dotted #75828a;
+	border-width:0 0 0 1px;
+}
+
+#MOD div.MiniMarketsDashboardModule div.TileModule{
+	width:71px;
+}
+#MOD div.MiniMarketsDashboardModule div.tile-body{
+	padding:7px 0 8px;
+	position:relative;
+}
+/*el style*/
+#MOD div.MiniMarketsDashboardModule .timing{
+	color:#777;
+	font-family:Arial;
+	font-size:9px;
+}
+#MOD div.MiniMarketsDashboardModule .tiles .status{
+	margin: 4px 0 0 0;
+	line-height:14px;
+}
+#MOD div.MiniMarketsDashboardModule .prominent{
+	color:#394f59;
+	font-size:24px;
+}
+#MOD div.MiniMarketsDashboardModule .prominent span.unit{
+	font-size:0.8em;
+}
+#MOD div.MiniMarketsDashboardModule .less-prominent{
+	font-size:16px;
+}
+#MOD div.MiniMarketsDashboardModule .change{
+	font-family:Arial,Helvetica,Verdana,San-Serif;
+	font-weight:bold;
+	color:#999;
+	margin-top: 4px;
+	font-size: 11px;
+}
+/* home page Overrides   TT0322098 *******************************************/
+#MOD div.HomeMiniMarketsDashboardModule div.content{
+	border:none;
+}
+#MOD div.HomeMiniMarketsDashboardModule table.tiles {
+	background:none;
+}
+#MOD div.HomeMiniMarketsDashboardModule.dashboard-module {
+	width:620px;
+}
+/*****************************************************************************/
+
+#MOD div.MiniMarketsDashboardModule .tiles th,
+#MOD div.MiniMarketsDashboardModule .tiles td {
+	cursor: pointer;
+}
+#MOD div.MiniMarketsDashboardModule .tiles td.hover,
+#MOD div.MiniMarketsDashboardModule .tiles td.selected{
+	background:#d5e0e5;
+}
+.MOD .icon,
+.MOD .icons{
+	background:url("http://content.markitcdn.com/data.theglobeandmail.com/Research/ResourceManager/6Wkl0r62PHYn7gdbP0tQIQ2/d/f/HPGe6_wLWkgfVKPZN3LJCQ2/Research/Content/Images/Sprite.png") top left no-repeat;
+	display:inline-block;
+	/*text-indent:-999px;*/
+	overflow:hidden;
+}
+.MOD .icon-map-us{
+	background-position:left -11px;
+	height:11px;
+	width:16px;	
+}
+.MOD .icon-map-ca{
+	background-position:left -33px;
+	height:11px;
+	width:16px;	
+}
+.MOD .view-toggle .selected .icon-map-ca{
+	background-position:left -22px;
+}
+.MOD .view-toggle .selected .icon-map-us{
+	background-position:left 0px;	
+}
+.MOD .icon-reuters{
+	background-position:-24px top;
+	height:23px;
+	width:98px;
+	margin: 0 0 0 -3px;
+}
+.MOD .icon-scotia-bank{
+	background-position: -417px -27px;
+	height:30px;
+	width:160px;
+}
+.MOD .icon-econoday{
+	background-position:-23px -23px;
+	height:12px;
+	width:74px;
+	margin:6px 0 0 -3px;
+}
+.MOD .icon-expand-collapse{
+	background-position:-121px top;
+	height:5px;
+	width:12px;
+}
+.MOD .icon-close{
+	background-position:-159px top;
+	height:11px;
+	width:11px;
+}
+.MOD .icon-read-more{
+	background-position:-198px top;
+	height:7px;
+	width:4px;
+}
+.MOD .icon-read-less {
+    background-position: -298px top;
+    height: 7px;
+    width: 7px;
+}
+.MOD .icon-question{
+	background-position: -203px top;
+    height:12px;
+    width:12px;
+    margin:0 0 0 7px;
+    line-height:12px;
+    position:relative;
+}
+.MOD .icon-upcoming{
+	background-position: -122px -12px;
+    height: 17px;
+    width: 74px;
+    margin: 0 -25px 0 5px;
+}
+.MOD .pos span.icons{
+	background-position:-288px top;
+	height:6px;
+	width:9px;
+}
+.MOD .neg span.icons{
+	background-position:-280px top;
+	height:6px;
+	width:9px;
+}
+.MOD .zero span.icons
+{
+	background:none;
+	height:6px;
+	width:9px;
+}
+.MOD .MarketTileModule .pos span.icons{
+	background-position:-288px top;
+	height:4px;
+	width:8px;
+	padding-top:1px;
+}
+.MOD .MarketTileModule .neg span.icons{
+	background-position:-264px top;
+	height:4px;
+	width:8px;
+	padding-top:1px;
+}
+.MOD .MarketTileModule .zero span.icons{
+	background:none;
+	height:4px;
+	width:8px;
+}
+.MOD .icons-open-session{
+	background-position:-250px top;
+	height:6px;
+	width:6px;
+	margin:0 3px 0 -3px;
+	line-height:6px;
+}
+.MOD .icons-close-session{
+	background-position:-257px top;
+	height:6px;
+	width:6px;
+	margin:0 3px 0 -3px;
+	line-height:6px;
+}
+.MOD span.arrow{
+	width:auto;
+	height: auto;
+	position: static;
+}
+.MOD .prominent .neg span.icons{
+	background-position:-216px top;
+	height:13px;
+	width:16px;
+	margin:0 1px 0 -4px;
+	line-height:13px;
+}
+.MOD .prominent .pos span.icons{
+	background-position:-233px top;
+	height:13px;
+	width:16px;
+	margin:0 1px 0 -4px;
+	line-height:13px;
+}
+.MOD .prominent .zero span.icons{
+	background:none;
+	height:13px;
+	width:16px;
+	margin:0 1px 0 -4px;
+	line-height:13px;
+}
+.MOD .icon-remove{
+	background-position:-305px top;
+	height:8px;
+	width:9px;
+}
+.MOD .icon-refresh{
+	background-position:-313px top;
+	height:14px;
+	width:14px;
+}
+
+/* chart size icons: small */
+.MOD .icon-view-small{
+	background-position:-344px 0px;
+	cursor: pointer;
+	height: 12px;
+	width: 20px;
+	margin-top:8px;
+	text-indent: 0px;
+}
+.MOD .selected .icon-view-small {
+	background-position:-344px -21px;
+}
+
+/*
+TT0295870
+Not here:
+http://protos.dev.local/TheGlobeandMail/ReportOnBusiness/deliverables/20140109/company_page_lite_1.png
+But here:
+http://protos.dev.local/TheGlobeandMail/ReportOnBusiness/deliverables/20140109/company_page_lite_1_expanded.png
+.MOD .icon-view-small,
+.MOD .icon-view-medium{
+	background-color:white;
+}
+*/
+
+.MOD .icon-view-small:hover,
+.MOD .selected .icon-view-small:hover 
+{
+	background-position:-344px -42px;
+}
+
+/* chart size icons: medium */
+.MOD .icon-view-medium{
+	background-position:-365px 0px;
+	cursor: pointer;
+	height: 16px;
+	width: 24px;
+	margin-top:4px;
+	text-indent: 0px;
+}
+.MOD .selected .icon-view-medium {
+	background-position:-365px -21px;
+}
+
+.MOD .icon-view-medium:hover,
+.MOD .selected .icon-view-medium:hover 
+{
+	background-position:-365px -42px;
+}
+
+/* chart size icons: full */
+.MOD .icon-view-fullscreen {
+	background-position:-390px 0px;
+	cursor: pointer;
+	height:20px;
+	width:26px;
+	margin-top:0px;
+	text-indent: 0px;
+}
+.MOD .selected .icon-view-fullscreen {
+	background-position:-390px -21px;
+}
+
+.MOD li[data-size] .icon-view-fullscreen:hover,
+.MOD li[data-size] .selected .icon-view-fullscreen:hover {
+	background-position:-390px -42px;
+}
+
+
+/*.MOD .icon-button-round,
+.MOD .icon-button-round span
+{
+	//display: inline-block;
+	//background:transparent scoll no-repeat;
+}*/
+.MOD .icon-button-round a{
+	background-position:-417px top;
+	height:24px;
+	display:block;
+}
+.MOD .icon-button-round{
+	background-position:-463px top;
+	line-height:20px;
+	height:24px;
+	width:5px;
+	margin:0 -5px 0 -1px;
+	padding-right:32px;
+}
+
+.MOD .icon-globe 
+{
+	background-position: -23px -39px;
+	height: 20px;
+	width: 180px;
+}
+
+
+
+/* used in the editors picks dropdown on fs chart */
+.MOD .icon-editor 
+{
+	height: 67px;
+	width: 125px;
+}
+
+.MOD .icon-editor-momentum 
+{
+	background-position: 0px -75px;
+}
+
+.MOD .icon-editor-deep-value
+{
+	background-position: -150px -75px;
+}
+
+.MOD .icon-editor-indexing 
+{
+	background-position: -300px -75px;
+}
+
+.MOD .icon-editor-income 
+{
+	background-position: -450px -75px;
+}
+
+.MOD .icon-editor-growth
+{
+	background-position: 0px -150px;
+}
+
+.MOD .icon-editor-volatility
+{
+	background-position: -150px -150px;
+}
+
+.MOD .icon-editor-volume
+{
+	background-position: -300px -150px;
+}
+
+.MOD .icon-editor-trend
+{
+	background-position: -450px -150px;
+}
+
+/* used in the style dropdown menu */
+.MOD .icon-style 
+{
+	height: 36px;
+	width: 81px;
+}
+
+.MOD .icon-style-CloseDot 
+{
+	background-position: -75px -225px;
+}
+
+.MOD .icon-style-CloseLine
+{
+	background-position: -75px -275px;
+}
+
+.MOD .icon-style-CloseMountain 
+{
+	background-position: -75px -325px;
+}
+
+.MOD .icon-style-PositiveNegativeLine
+{
+	background-position: -175px -225px;
+}
+
+.MOD .icon-style-PositiveNegativeFill
+{
+	background-position: -175px -275px;
+}
+
+.MOD .icon-style-OHLC
+{
+	background-position: -175px -325px;
+}
+
+.MOD .icon-style-Candlestick 
+{
+	background-position: -275px -225px;
+}
+
+.MOD .icon-style-CandlestickRG
+{
+	background-position: -275px -275px;
+}
+
+.MOD .icon-add
+{
+	background-position: -525px 0;
+	height: 21px;
+	width: 20px;
+}
+.MOD .icon-listen  
+{
+	background-position: -300px -20px;
+	height: 12px;
+	width: 8px;
+}
+/* investment lists icons */
+.MOD .icon-menu-down-arrow {
+	background-position: -547px -1px;
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+}
+.MOD .icon-pos-arrow {
+	background-position: -233px 0;
+	height: 13px;
+	margin-right: 4px;
+	width: 16px;
+}
+.MOD .icon-neg-arrow {
+	background-position: -216px 0;
+	height: 13px;
+	margin-right: 4px;
+	width: 16px;
+}
+.MOD .icon-grey-x {
+	background-position: -158px 0;
+	cursor: pointer;
+	height: 12px;
+	width: 12px;
+	vertical-align: bottom;
+}
+.MOD .icon-half-button {
+	background-position: -75px -593px;
+	height: 29px;
+	line-height: 29px;
+	padding-left: 7px;
+	vertical-align: bottom;
+	width: 50px;
+	font-family: 'PrattWebHeavy', Georgia, serif;
+	font-size: 15px;
+}
+.MOD .icon-datepicker {
+	width: 24px;
+	height: 24px;
+	background-position: -581px -28px;
+	vertical-align: middle;
+	margin-left: 3px;
+	cursor: pointer;
+}
+
+@font-face {
+	font-family: 'PrattWebHeavy';
+	src: url("http://content.markitcdn.com/data.theglobeandmail.com/Research/ResourceManager/FIh_gWxYSUVoptziFZYR_A2/d/f/o7LrSu25yZGnZRbmxppRiw2/Research/externals/globeandmail.common/content/Fonts/pratt-web_heavy-webfont.eot");
+	src: local('☺'), 
+		url("http://content.markitcdn.com/data.theglobeandmail.com/Research/ResourceManager/RDdWDWZNnxUqp1Hyypadhw2/d/f/umUuS36H_biIPR8FUEm9Tg2/Research/externals/globeandmail.common/content/Fonts/pratt-web_heavy-webfont.woff") format('woff'), 
+		url("http://content.markitcdn.com/data.theglobeandmail.com/Research/ResourceManager/-oa586aKIKcSrLpLmMMXyw2/d/f/3tVMr1aJaytuDKB7tizukA2/Research/externals/globeandmail.common/content/Fonts/pratt-web_heavy-webfont.ttf") format('truetype'), 
+		url("http://content.markitcdn.com/data.theglobeandmail.com/Research/ResourceManager/1s-8pl9kZmmXvRAypda4GA2/d/f/Z6Twh0iW1l9I5_j4Ze6ihA2/Research/externals/globeandmail.common/content/Fonts/pratt-web_heavy-webfont.svg") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PrattBlack';
+	src: url("http://content.markitcdn.com/data.theglobeandmail.com/Research/ResourceManager/nrDXZ-PrhohMF85m4rr5jg2/d/f/ytUpRCBuOOPM2flkm1dEYQ2/Research/externals/globeandmail.common/content/Fonts/prattblack-webfont.eot");
+	src: local('☺'), 
+		url("http://content.markitcdn.com/data.theglobeandmail.com/Research/ResourceManager/c8wsgI3SnXwnZyVepTV23w2/d/f/u9D1FW6zv_KvFFMCbPTieA2/Research/externals/globeandmail.common/content/Fonts/prattblack-webfont.woff") format('woff'), 
+		url("http://content.markitcdn.com/data.theglobeandmail.com/Research/ResourceManager/BDxhB2oR79zh-WEvaRWDUg2/d/f/kVK8PYx9gIKuO3xbK6LFvg2/Research/externals/globeandmail.common/content/Fonts/prattblack-webfont.ttf") format('truetype'), 
+		url("http://content.markitcdn.com/data.theglobeandmail.com/Research/ResourceManager/078p73e2BwRppyh3eBEi8w2/d/f/CM8M-APffN6KlVjlSFzYRw2/Research/externals/globeandmail.common/content/Fonts/prattblack-webfont.svg") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* TGAM will end up hosting this
+@font-face {
+    font-family: 'GMsanCRegular';
+    src: url("http://content.markitcdn.com/data.theglobeandmail.com/Research/ResourceManager/6b-uQ29oVWIm_Jro91a7uw2/d/f/bIoogYu0USV412YaIx7uBw2/Research/externals/globeandmail.common/content/Fonts/GMSans/gmsanc_reg-webfont.eot");
+    src: local('☺'), 
+		 url("http://content.markitcdn.com/data.theglobeandmail.com/Research/ResourceManager/TFHukEKBjy19vDKqRtV_vw2/d/f/FDNE/Research/externals/globeandmail.common/content/Fonts/GMSans/gmsanc_reg-webfont.eot#iefix") format('embedded-opentype'),
+         url("http://content.markitcdn.com/data.theglobeandmail.com/Research/ResourceManager/FNysJFLBXDqHayzl-dgU1w2/d/f/I-LpJHmP4WDDni41iiIHyQ2/Research/externals/globeandmail.common/content/Fonts/GMSans/gmsanc_reg-webfont.woff") format('woff'),
+         url("http://content.markitcdn.com/data.theglobeandmail.com/Research/ResourceManager/zPM5su-3aSZvU--oagMa9w2/d/f/Zukc9X8VoLYx0748l3GiIA2/Research/externals/globeandmail.common/content/Fonts/GMSans/gmsanc_reg-webfont.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+.prattHeavy{
+	font-family:'PrattBlack','PrattWebHeavy', Georgia, serif;
+}

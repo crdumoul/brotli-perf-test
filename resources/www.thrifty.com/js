@@ -1,0 +1,83 @@
+Type.registerNamespace('DTG.Thrifty.DotCom.Web.Services');
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService=function() {
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.prototype={
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.get_path();},
+GetLocations:function(searchString,includeAddress,includeMetroAreas,includeStates,includeCountries,inhibitCrossBrandShopping,inhibitRateShopCrossBrand,filterCountries,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetLocations',false,{searchString:searchString,includeAddress:includeAddress,includeMetroAreas:includeMetroAreas,includeStates:includeStates,includeCountries:includeCountries,inhibitCrossBrandShopping:inhibitCrossBrandShopping,inhibitRateShopCrossBrand:inhibitRateShopCrossBrand,filterCountries:filterCountries},succeededCallback,failedCallback,userContext); },
+GetVehicles:function(locationCode,selectedType,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetVehicles',false,{locationCode:locationCode,selectedType:selectedType},succeededCallback,failedCallback,userContext); },
+GetVehiclesByDate:function(locationCode,selectedType,pickupDate,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetVehiclesByDate',false,{locationCode:locationCode,selectedType:selectedType,pickupDate:pickupDate},succeededCallback,failedCallback,userContext); },
+GetReturnLocations:function(pickupLocationCode,searchText,returnAll,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetReturnLocations',false,{pickupLocationCode:pickupLocationCode,searchText:searchText,returnAll:returnAll},succeededCallback,failedCallback,userContext); },
+PrimeReturnLocations:function(pickupLocationCode,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'PrimeReturnLocations',false,{pickupLocationCode:pickupLocationCode},succeededCallback,failedCallback,userContext); },
+GetAllStates:function(countryCode,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetAllStates',false,{countryCode:countryCode},succeededCallback,failedCallback,userContext); },
+GetStates:function(countryCode,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetStates',false,{countryCode:countryCode},succeededCallback,failedCallback,userContext); },
+GetCountries:function(succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetCountries',false,{},succeededCallback,failedCallback,userContext); },
+GetMetroAreas:function(stateCode,countryCode,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetMetroAreas',false,{stateCode:stateCode,countryCode:countryCode},succeededCallback,failedCallback,userContext); }}
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.registerClass('DTG.Thrifty.DotCom.Web.Services.CustomerWebService',Sys.Net.WebServiceProxy);
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance = new DTG.Thrifty.DotCom.Web.Services.CustomerWebService();
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.set_path = function(value) { DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.set_path(value); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.get_path = function() { return DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.get_path(); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.set_timeout = function(value) { DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.set_timeout(value); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.get_timeout = function() { return DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.get_timeout(); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.set_defaultUserContext = function(value) { DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.set_defaultUserContext(value); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.get_defaultUserContext = function() { return DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.get_defaultUserContext(); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.set_defaultSucceededCallback = function(value) { DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.set_defaultSucceededCallback(value); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.get_defaultSucceededCallback = function() { return DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.get_defaultSucceededCallback(); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.set_defaultFailedCallback = function(value) { DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.set_defaultFailedCallback(value); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.get_defaultFailedCallback = function() { return DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.get_defaultFailedCallback(); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.set_enableJsonp = function(value) { DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.set_enableJsonp(value); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.get_enableJsonp = function() { return DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.get_enableJsonp(); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.set_jsonpCallbackParameter = function(value) { DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.set_jsonpCallbackParameter(value); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.get_jsonpCallbackParameter = function() { return DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.get_jsonpCallbackParameter(); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.set_path("/services/customerwebservice.asmx");
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.GetLocations= function(searchString,includeAddress,includeMetroAreas,includeStates,includeCountries,inhibitCrossBrandShopping,inhibitRateShopCrossBrand,filterCountries,onSuccess,onFailed,userContext) {DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.GetLocations(searchString,includeAddress,includeMetroAreas,includeStates,includeCountries,inhibitCrossBrandShopping,inhibitRateShopCrossBrand,filterCountries,onSuccess,onFailed,userContext); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.GetVehicles= function(locationCode,selectedType,onSuccess,onFailed,userContext) {DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.GetVehicles(locationCode,selectedType,onSuccess,onFailed,userContext); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.GetVehiclesByDate= function(locationCode,selectedType,pickupDate,onSuccess,onFailed,userContext) {DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.GetVehiclesByDate(locationCode,selectedType,pickupDate,onSuccess,onFailed,userContext); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.GetReturnLocations= function(pickupLocationCode,searchText,returnAll,onSuccess,onFailed,userContext) {DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.GetReturnLocations(pickupLocationCode,searchText,returnAll,onSuccess,onFailed,userContext); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.PrimeReturnLocations= function(pickupLocationCode,onSuccess,onFailed,userContext) {DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.PrimeReturnLocations(pickupLocationCode,onSuccess,onFailed,userContext); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.GetAllStates= function(countryCode,onSuccess,onFailed,userContext) {DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.GetAllStates(countryCode,onSuccess,onFailed,userContext); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.GetStates= function(countryCode,onSuccess,onFailed,userContext) {DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.GetStates(countryCode,onSuccess,onFailed,userContext); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.GetCountries= function(onSuccess,onFailed,userContext) {DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.GetCountries(onSuccess,onFailed,userContext); }
+DTG.Thrifty.DotCom.Web.Services.CustomerWebService.GetMetroAreas= function(stateCode,countryCode,onSuccess,onFailed,userContext) {DTG.Thrifty.DotCom.Web.Services.CustomerWebService._staticInstance.GetMetroAreas(stateCode,countryCode,onSuccess,onFailed,userContext); }
+var gtc = Sys.Net.WebServiceProxy._generateTypedConstructor;
+if (typeof(DTG.Thrifty.DotCom.Web.Services.LocationBasicInfo) === 'undefined') {
+DTG.Thrifty.DotCom.Web.Services.LocationBasicInfo=gtc("DTG.Thrifty.DotCom.Web.Services.LocationBasicInfo");
+DTG.Thrifty.DotCom.Web.Services.LocationBasicInfo.registerClass('DTG.Thrifty.DotCom.Web.Services.LocationBasicInfo');
+}
+if (typeof(DTG.Thrifty.DotCom.Web.Services.VehicleBasicInfo) === 'undefined') {
+DTG.Thrifty.DotCom.Web.Services.VehicleBasicInfo=gtc("DTG.Thrifty.DotCom.Web.Services.VehicleBasicInfo");
+DTG.Thrifty.DotCom.Web.Services.VehicleBasicInfo.registerClass('DTG.Thrifty.DotCom.Web.Services.VehicleBasicInfo');
+}
+if (typeof(DTG.Thrifty.DotCom.Web.Services.ReturnLocationResponse) === 'undefined') {
+DTG.Thrifty.DotCom.Web.Services.ReturnLocationResponse=gtc("DTG.Thrifty.DotCom.Web.Services.ReturnLocationResponse");
+DTG.Thrifty.DotCom.Web.Services.ReturnLocationResponse.registerClass('DTG.Thrifty.DotCom.Web.Services.ReturnLocationResponse');
+}
+if (typeof(DTG.Thrifty.DotCom.Web.Services.StateBasicInfo) === 'undefined') {
+DTG.Thrifty.DotCom.Web.Services.StateBasicInfo=gtc("DTG.Thrifty.DotCom.Web.Services.StateBasicInfo");
+DTG.Thrifty.DotCom.Web.Services.StateBasicInfo.registerClass('DTG.Thrifty.DotCom.Web.Services.StateBasicInfo');
+}
+Type.registerNamespace('DTG.Enterprise.Data.Locations');
+if (typeof(DTG.Enterprise.Data.Locations.Country) === 'undefined') {
+DTG.Enterprise.Data.Locations.Country=gtc("DTG.Enterprise.Data.Locations.Country");
+DTG.Enterprise.Data.Locations.Country.registerClass('DTG.Enterprise.Data.Locations.Country');
+}
+if (typeof(DTG.Thrifty.DotCom.Web.Services.MetroAreaBasicInfo) === 'undefined') {
+DTG.Thrifty.DotCom.Web.Services.MetroAreaBasicInfo=gtc("DTG.Thrifty.DotCom.Web.Services.MetroAreaBasicInfo");
+DTG.Thrifty.DotCom.Web.Services.MetroAreaBasicInfo.registerClass('DTG.Thrifty.DotCom.Web.Services.MetroAreaBasicInfo');
+}

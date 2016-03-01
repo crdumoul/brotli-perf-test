@@ -1,0 +1,141 @@
+/* Everything here needs to move into GlobalCustom or a separate css file */
+
+/***************
+*
+*  0. Global Sliver
+*
+****************/
+.zoneMerchTop { background: #3c3c3c; }
+
+#globalNavWrapper {
+	position: relative;
+	display: block;
+	width:900px;
+	height:45px;
+	margin:0 auto 0 auto;
+}
+
+/***************
+*
+*  1. Main
+*
+****************/
+
+.royalSlider {
+	left: 211px;
+	top: -9px;
+	width: 769px;
+	height: 508px;
+}
+
+/***************
+*
+*  2. Bullets
+*
+****************/
+
+.default .rsBullets {
+	position: absolute;
+	z-index: 35;
+	left: 0;
+	bottom: 15px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto; 
+	text-align: center;
+	line-height: 8px;
+	overflow: hidden;
+}
+.default .rsBullet {
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	*display:inline; 
+	*zoom:1;
+	padding: 6px 8px 6px;
+}
+.default .rsBullet span {
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #333;
+	background: rgba(0,0,0,0.62);
+}
+.default .rsBullet.rsNavSelected span {
+	background-color: #963093;
+}
+
+/***************
+*
+*  3. SECONDARIES
+*
+****************/
+
+.secContainer {
+/*	height: 250px; */
+	margin: 0 auto 10px;
+}
+
+.secContainer .Left, 
+.secContainer .Center, 
+.secContainer .Right, 
+{
+	height: auto;
+}
+
+/***************
+*
+*  4. WOA (Updated: 150902)
+*
+****************/
+
+div.sdmenu {
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+div.sdmenu div { padding-bottom: 0; }
+div.sdmenu div.hp-leftnav-section { padding-bottom: 7px; }
+
+div.sdmenu div span {
+	padding: 0;
+	font-weight: normal;
+	cursor: inherit;
+}
+
+div.sdmenu span.blue { cursor: inherit; font-weight: bold; }
+
+div.sdmenu div a {
+	line-height: 15px;
+	padding: 7px 15px;
+}
+
+.hp-woarot-header, .hp-woarot-subheader {
+-webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+		border-radius: 10px;
+	text-align: center;
+	text-transform: uppercase;
+    padding: 9px 12px;
+    font-weight: bold;
+    cursor: default;
+    font: bold 1em 'Arial';
+}
+
+div.sdmenu ul > li:last-child a {
+	border-width: 0;
+}
+
+div.sdmenu div a {
+	line-height: 15px;
+	/*letter-spacing: 1px;*/
+}
+
+.hp-woarot-subheader {
+	background: #333;
+	color: #fff;
+}
+
+.hp-leftnav-seeallitems .quicklinks ul li { font-weight: bold; }
+.hp-leftnav-seeallitems .hp-woarot-subheader { margin-bottom: 6px; }

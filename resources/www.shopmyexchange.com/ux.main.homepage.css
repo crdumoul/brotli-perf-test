@@ -1,0 +1,35 @@
+.mainContent .grouping-slot {
+   padding: 0 2px 7px;
+}
+
+.mainContent .grouping-slot img {
+   margin: 0 14px;
+   display: block;
+}
+
+.mainContent .grouping-slot .single-column,
+.mainContent .grouping-slot .two-columns,
+.mainContent .grouping-slot .three-columns {
+   padding-top: 25px;
+}
+
+.mainContent .grouping-slot .two-columns:after,
+.mainContent .grouping-slot .three-columns:after {
+   clear: both;
+   content: ".";
+   display: block;
+   line-height: 0;
+}
+
+.mainContent .grouping-slot .two-columns img,
+.mainContent .grouping-slot .three-columns img {
+   float: left;
+}
+
+.mainContent .grouping-slot .single-column img {
+   max-width: 992px;
+}
+
+.mainContent .grouping-slot .three-columns img {
+   max-width: 312px;
+}

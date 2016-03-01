@@ -1,0 +1,219 @@
+﻿    /*base.css*/
+    /*z-index changed to address bug with rendering long names. */
+/*#LYT_Header a.GN_NAV_Logo {display:block;float:left;height:95px;width:278px; z-index:60; }*/
+#LYT_Header a.GN_NAV_Logo {display:block;float:left;height:95px;width:278px; z-index:0; }
+.NAV_ShoppingNav ul li.NAV_List a{ background:url(/Shop/Images/ico_sprite_right.gif) 100% 2px no-repeat;display:block; padding-right:26px; border-right:solid 1px #ccc;  }
+.NAV_ShoppingNav ul li.NAV_Track a{ background:url('/Shop/Images/ico_sprite_right.gif') no-repeat 100% -386px;display:block; padding-right:26px; border-right:solid 1px #ccc; }
+.NAV_ShoppingNav ul li.NAV_Track_Last a{border-right:none;}
+.NAV_ShoppingNav ul li.NAV_ItemCount a{ background:url('/Shop/Images/ico_sprite_right.gif') no-repeat 100% -216px;}
+.MC_LYT_FORM_listerror{background:url(/Shop/Images/ico_sprite_sheet.gif) -2171px -894px no-repeat;padding-left:17px;padding-top:1px;color:#FD2725}
+.MC_LYT_ico_help{ display:inline;padding:0 21px 0 0; background:url(/Shop/Images/ico_sprite_sheet.gif) -1086px -326px  no-repeat;}
+.MC_LYT_ico_fullscreen{ background: url(/Shop/Images/ico_sprite_sheet.gif) 0 -1527px no-repeat; padding: 0 0 0 14px;font-weight:normal }
+a.print {background: url("/shop/images/ico_sprite_right.gif") no-repeat scroll 100% -38px transparent;clear: both;color: #063D88;display: block;float: right;line-height: 2em;margin-right: 1em;padding-right: 20px;}
+a.setTopMargin_10px {margin-top: -10px}
+.right_column a.print { float:right; display: block; background: transparent url(/shop/images/ico_sprite_right.gif) no-repeat scroll 100% -38px; padding-right: 0; margin-right: 0; line-height: 2.0em; clear: both; width:20px;height:25px; }
+.MC_LYT_ICO_Notification{background:url(/Shop/Images/ico_sprite_sheet.gif) -2173px -721px no-repeat; padding-left: 20px}
+.MC_LYT_ICO_FreeShipping {background:#d4c4ad url(/Shop/Images/ico_sprite_sheet.gif) 4px -2343px no-repeat;color:#FF2727;margin:0 0 5px;padding:2px 5px 2px 22px;}
+.MC_LYT_NoCharge{background-color:#d4c4ac;color:#FF2727;margin:0 0 5px;padding:2px 5px 2px 5px;}
+.MC_LYT_ICO_rightarrow {padding:0 10px 0 0;background: url(/Shop/Images/ico_sprite_sheet.gif) 68px -1135px no-repeat; }
+a.MC_LYT_ICO_ViewAdvancedOptions{padding-left:11px; background:url(/Shop/Images/ico_sprite_sheet.gif) no-repeat -1086px -1355px;cursor:pointer;}
+a.MC_LYT_ICO_CloseAdvancedOptions{padding-left:11px; background:url(/Shop/Images/ico_sprite_sheet.gif) no-repeat -1086px -1367px;cursor:pointer;}
+.MC_LYT_ICO_ViewOptions {background:transparent url(/Shop/Images/ico_sprite_sheet.gif) no-repeat scroll -1086px -1355px;padding-left:5px;}
+.MC_LYT_ICO_CloseOptions {padding-left:11px; background:url(/Shop/Images/ico_sprite_sheet.gif) no-repeat -1086px -1358px;}
+.GF_NAV_ThirdParty .GF_NAV_BBB a{display:block; margin-right:9px;width:32px;height:49px; background-image:url(/Shop/Images/ico_sprite_sheet.gif); background-position: 0 -139px; }
+.GF_NAV_ThirdParty .GF_NAV_RSA a{display:block; margin-right:9px;width:37px; height:49px;background-image:url(/Shop/Images/ico_sprite_sheet.gif); background-position: -1086px -1648px; }
+.GF_NAV_ThirdParty .GF_NAV_DB a{display:block; width:42px; height:49px; background-image:url(/Shop/Images/ico_sprite_sheet.gif); background-position: 0 -217px}
+.GF_NAV_ThirdParty .GF_NAV_IBOAI a{display:block; width:44px; height:49px; background-image:url(/Shop/Images/ico_sprite_sheet.gif); background-position: -2170px -530px}
+a.TXT_PopoutLink {background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -99px no-repeat; padding-left:16px; }
+a.TXT_PopoutLink_right { background:transparent url(/Shop/Images/ico_sprite_right.gif) no-repeat scroll 100% -87px; padding-right:16px; }
+.MC_LYT_HowMuch {background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -731px no-repeat; padding-left:17px;color:#006699;}
+.MSG_FA_Red_Alert, .MC_LYT_Error { background:#ffcccc url url(/Shop/Images/ico_sprite_sheet.gif) 0 -105px no-repeat; border:1px solid #FF2727; color:#FF2727; font-weight:bold; margin:0 0 10px 0; padding:10px 10px 10px 34px}
+.MC_LYT_ico_help2{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -326px no-repeat; display:block; padding:10px 21px 0 0 }
+.LTY_help_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -258px no-repeat; #display:inline-block; padding:8px; margin-left:5px;}
+.MC_LYT_ico_fullscreen{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -1527pxno-repeat; padding: 0 0 0 14px;font-weight:normal }
+.MC_LYT_ico_info{ background: url(/Shop/Images/ico_sprite_sheet.gif) 0 -1347px no-repeat; cursor:default; display:inline-block; height:17px; padding-bottom:3px; text-indent:-10000px; width:17px }
+.MC_LYT_edit_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1609px no-repeat; padding: 0 0 5px 21px;font-weight:normal; #display:inline-block; }
+.MC_LYT_minus_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -1777px no-repeat; padding: 0 0 0 19px;font-weight:normal }
+.MC_LYT_arrowBlue_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -562px no-repeat; padding:0 0 0 13px }
+.MC_LYT_expand_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -1588px no-repeat; padding-left:20px; cursor:pointer;font-weight:700;color:#494948 !important; text-decoration:none !important;}
+.MC_LYT_collapse_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -1747px no-repeat; padding-left:20px; cursor:pointer;font-weight:700;color:#494948 !important; text-decoration:none !important; }
+.MC_LYT_mobile_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -1804px no-repeat; padding: 5px 0 0 14px }
+.MC_LYT_mail_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -1555px no-repeat; padding: 0 0 0 21px }
+.MC_LYT_trophyGold_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1121px no-repeat; padding: 0 0 0 21px }
+.MC_LYT_trophySilver_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1193px no-repeat; padding: 0 0 0 21px }
+.MC_LYT_trophyPlatinum_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1157px no-repeat; padding: 0 0 0 21px }
+.MC_LYT_picture_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -71px no-repeat; padding: 0 0 0 14px }
+.MC_LYT_alerts_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1475px no-repeat;padding:3px 0 3px 20px; }
+.MC_LYT_TrashEmpty_icon{ background:transparent url(/Shop/Images/Trash_Empty.gif) no-repeat; padding:3px 0 3px 20px;;font-weight:normal; #display:inline-block;}
+.MC_LYT_TrashFull_icon{ background:transparent url(/Shop/Images/Trash_Full.gif) no-repeat; padding:3px 0 3px 20px;font-weight:normal; #display:inline-block;}
+.MC_LYT_Alerts{background:transparent url(/Shop/Images/ico_sprite_sheet.gif) no-repeat scroll -1088px -1477px;color:#006699;padding-bottom:2px;padding-left:17px;}
+.MC_LYT_AlertsShipping {background:transparent url(/Shop/Images/ico_sprite_sheet.gif) no-repeat scroll -1087px -1472px;padding-left:21px;}
+.MC_LYT_AlertMsg {background:#FFFFCC url(/Shop/Images/ico_sprite_sheet.gif) -2163px -884px no-repeat;border:1px solid #494948;clear:both;color:#494948;font-weight:bold;margin-bottom:10px;padding:10px 10px 8px 41px; padding:5px 10px 10px 41px}
+.alert_lineitem {background: url(/Shop/Images/ico_sprite_sheet.gif)-1086px -1964px no-repeat; padding:2px 0 2px 16px;}
+.MC_LYT_AlertMessage, .MC_LYT_Alert  { /*background: #ffffcc url(/Shop/Images/ico_sprite_sheet.gif) -2160px -885px no-repeat;*/background: #ffffcc url(/Shop/Images/ico_alert.gif) 10px 10px no-repeat; border:1px solid #f0cd12; color:#494948; font-weight:bold; margin:0 0 10px 0; padding:10px 10px 10px 34px }
+.MC_LYT_Alert.LgAlertContainer { background-image:none; position:relative;}
+.MC_LYT_Alert.LgAlertContainer .imgStatusCodes { background: url(/Shop/Images/ico_sprite_sheet.gif) -2160px -885px no-repeat; position:absolute; top:0px; left:0px; width:28px; height:28px;}
+.ebankinginformation a {color:#006699; font-weight:400;}
+.MC_LYT_whatnew_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1085px -1712px no-repeat; padding:3px 0 3px 20px;}
+.MC_LYT_calendar_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1535px no-repeat; padding-left:20px }
+.MC_LYT_refresh_icon{ background: url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1785px no-repeat; padding:0px 0px 2px 18px; #display:inline-block}
+.MC_LYT_next_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -306px no-repeat; padding:0 10px 0 0 }
+.MC_LYT_prev_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -333px no-repeat; padding:0 0 0 10px }
+.MC_LYT_ico_adobereader_small{ background: url(/Shop/Images/ico_sprite_sheet.gif) -1086px -36px no-repeat; padding:0 0 10px 15px }
+.TXT_PrintPage {background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -157px no-repeat;height:16px;line-height:16px;padding-left:20px;}
+.Icon_DownloadeCard {background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -2390px no-repeat;height:16px;line-height:16px;padding-left:20px;}
+#ResourceInfo a.Icon_DownloadeCard {background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -2381px no-repeat; padding:10px 0 0 20px}
+.Icon_PreviousPage {background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -2428px no-repeat;height:16px;line-height:16px;padding-left:17px;}
+.MC_LYT_smallGrey_RightLink {background: url(/Shop/Images/ico_sprite_sheet.gif) 0 -1084px no-repeat !important; font-size:10px;font-weight:normal;margin-right:0px;padding-right: 10px;text-transform:none }
+.MC_LYT_Newcourse_icon{background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1679px no-repeat; padding-left:24px }
+.MC_LYT_ico_videolink_small{ background: url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1785px no-repeat; padding:0 0 0 15px }
+.GE_LYT_field_Error { background: url(/Shop/Images/ico_sprite_sheet.gif) 0 -105px no-repeat; color:#FF2727; font-weight:bold; margin:0 0 10px 0; padding:10px 10px 10px 34px }
+a.MC_LYT_ICO_Arrowdown{background: transparent url(/Shop/Images/ico_blue_arrow_down.gif) 100% 2px no-repeat;padding-right:10px; color:#000;}
+
+/* icon graphic was moved to a span to contain the sprite on long message panes */
+._messageDisplayInstance div {position:relative;}
+.MC_LYT_HappyMessage { background:#d6f0cc; border:1px solid #028e02; color:#028e02; font-weight:bold; margin:0 0 10px 0; padding:10px 10px 10px 34px; position:relative; }
+.MC_LYT_HappyMessage .messageIconContainer {position:absolute; top:0px; left:0px; display:block; width:32px; height:32px; background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 10px -1949px no-repeat;}
+.MC_LYT_Notification { background:#BDE5F8; border:1px solid #00529B; color:#00529B; font-weight:bold; margin:0 0 10px 0; padding:10px 10px 10px 34px; position:relative; }
+.MC_LYT_Notification .messageIconContainer {position:absolute; top:0px; left:0px; display:block; width:32px; height:32px; background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 10px -2111px no-repeat;}
+
+.MC_LYT_AddtoCart{ background:#d6f0cc url(/Shop/Images/ico_sprite_sheet.gif) 5px -1955px no-repeat; border:1px solid #028e02; color:#028e02; font-size:10px; font-weight:bold; margin:0 0 5px 0;*margin:0 0 -5px 0; padding:5px 5px 5px 22px }
+
+/*add to sprite*/
+/*.MC_LYT_img_getadobe { background:transparent url(../Images/ico_adobe_reader.gif) 0 4px no-repeat; clear:both; overflow: auto; padding:0 0 0 125px }*/
+/*add to sprite*/
+/*.MC_LYT_document_icon { background:transparent url(../Images/ico_doc_small.gif) 0 50% no-repeat; padding: 0 0 0 13px }*/
+/*add to sprite*/
+/*.MC_LYT_required_icon { background:transparent url(../Images/ico_required.gif) 0 50% no-repeat; padding: 0 0 0 25px }*/
+/*add to sprite*/
+/*.MC_LYT_ico_rss { background:url(../Images/common/ico_rss_mark.gif) left 100% no-repeat; padding:0px 0 0 22px; #display:inline-block*/
+
+/*----------------------------------------------------------------------------*/
+
+/*los_base.css*/
+
+a.TXT_PrintLink { padding-left:20px; padding-top:1px; padding-bottom:2px;height:16px; background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -158px no-repeat; font-weight:normal; }
+a.TXT_AlertLinkRight { color:#ff2727; padding-right:20px; background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -2163px -884px no-repeat; }
+/*#LYT_ListViewTabArea .LYT_SearchBox input { padding:3px 0 0 25px; width:120px; height:17px; line-height:17px; color:#666; background:#fff url(/Shop/Images/ico_sprite_sheet.gif) -1083px -742px no-repeat; }*/
+table.MC_LYT_TableStyleA tbody td.LYT_AlertMessage { width:18px; height:18px; padding:0; cursor:pointer; text-indent:-1000em; background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -2163px -884px no-repeat; }
+.GE_TXT_HelpIcon { background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -258px no-repeat; display:inline-block; width:14px; height:14px; padding:0px; text-transform:none; text-decoration:none; font-weight:normal; }
+.GE_TXT_ToggleLink { background:transparent url(/Shop/Images/ico_sprite_sheet.gif)  -1086px -1041px no-repeat; padding-left:15px; text-transform:none; text-decoration:none; font-weight:normal; color:#063d88; }
+.GE_TXT_ToggleLinkOff { background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1071px no-repeat; }
+.MC_LYT_Flagged { background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -991px no-repeat; padding:0 0 0 18px; height:14px; display:inline-block; }
+.asteriskIcon { background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -513px no-repeat; padding:0 0 0 18px; height:14px; display:inline-block; }
+.unavailableIcon { background:transparent url(/Shop/Images/details_unavailable.png) 0 0 no-repeat; padding:0 0 0 18px; height:16px; display:inline-block; }
+/*----------------------------------------------------------------------------------/*
+
+/*product_management_base.css*/
+p.calc a.quantity { background: url(/Shop/Images/ico_sprite_sheet.gif) 0 -731px no-repeat; padding-left: 1.75em; }
+a.view_all { background: url(/Shop/Images/ico_sprite_sheet.gif) 0 -543px  no-repeat; padding-left: 1.125em; }
+p.warning.has_icon { padding-left: 2em; background: url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1396px no-repeat; }
+.MC_LYT_ItemAdded{ background:url(/Shop/Images/ico_sprite_sheet.gif) 3px -1955px no-repeat;color:#028e02; font-weight:normal; margin:0 0 5px 0;*margin:0; padding:5px 5px 0px 22px; float:left; }
+.MC_LYT_hypViewCart {background: url("/Shop/Images/ico_sprite_right.gif") no-repeat scroll -3px -216px transparent; text-transform: uppercase; padding:0 0 2px 22px;}
+.MC_LYT_hypViewCart_pipe {color:#000000;padding:0 3px 0 2px;}
+.MC_LYT_QtyAlert{ background:url(/Shop/Images/ico_sprite_sheet.gif) no-repeat scroll -1080px -1958px;color:#ff2727;font-weight:bold;margin:0 0 5px 0;*margin:0;padding:5px 5px 5px 22px; float:right;}
+.zoom{background: url(/Shop/Images/ico_sprite_sheet.gif) -1055px -180px no-repeat;}
+.left_column .larger_image{ position: relative; left: 20px; top: -30px; z-index: 1;}
+.left_column .larger_image > a{background:transparent url(/Shop/Images/ico_sprite_sheet.gif) no-repeat scroll -2170px -1948px;color:#063D88;padding:2px 0 5px 20px;}
+div#product_detail_container ul.product_nav li.all a { padding-right: 1.25em; margin-right: 1.25em; background: url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1268px no-repeat; }
+div.resources_tools ul li a.media { background-image: url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1785px; }
+div.resources_tools ul li a.file { background-image: url(/Shop/Images/ico_sprite_sheet.gif) 0 -962px; }
+div.resources_tools ul li a.link { background-image: url(/Shop/Images/ico_sprite_sheet.gif) 0 -598px; }
+div.cart table tr.add td a.add, #Mega_Menu #Selected_Items a.add { padding-left: 1em; background: url(/Shop/Images/ico_sprite_sheet.gif)  0 -1185px  no-repeat; }
+div.cart table tr.add td a.add.disabled { color: #6985AD; background: url(/Shop/Images/ico_sprite_sheet.gif) 0 -1215px  no-repeat; }
+#Mega_Menu #Selected_Items a.add.disabled { color: #6985AD; background:none; cursor:default }
+table.add_to td.desc a.add { background: url(/Shop/Images/ico_sprite_sheet.gif) 0 -1188px no-repeat; padding-left: 1.125em; }
+div.quick-view-bottom-links a.add { padding-left: 1em; background: url(/Shop/Images/ico_sprite_sheet.gif) 0 -1185px no-repeat; }
+div.quick-view-bottom-links a.add.disabled { color: #6985AD; background: url(/Shop/Images/ico_sprite_sheet.gif) 0 -1215px no-repeat; }
+.MC_TXT_CalcLink { background: url(/Shop/Images/ico_sprite_sheet.gif) 0 -731px no-repeat; padding-left: 16px; }
+.MC_LYT_VendorShip a{padding:2px 0 2px 0;background: transparent url(/Shop/Images/ico_sprite_sheet.gif) no-repeat scroll -1050px -992px; padding-left: 19px;color:#ff2727 !important;}
+.MC_LYT_ProductFamily .MC_LYT_ProductFamilyFooterCommands .MC_LYT_ProductFamilyAddTo a { display: block; background: transparent url(/Shop/Images/ico_sprite_sheet.gif) 5px -1177px no-repeat; padding-left: 20px; padding-top: 8px; }
+.MC_LYT_ProductNotAvailableAlert{background:#FFF url(/Shop/Images/ico_sprite_sheet.gif) -2170px -893px no-repeat; font-weight:bold;margin-top:10px;padding:0px 10px 8px 20px;}
+.MC_LYT_SortByViewAll, .MC_LYT_OrderHistory .MC_LYT_SortByViewAll {font-weight:700; background:transparent url(/Shop/Images/ico_sprite_right.gif) no-repeat scroll right -126px; float:right; margin-right:4px; padding-right:10px;}
+.MC_LYT_SortByPrevious, .MC_LYT_OrderHistory .MC_LYT_SortByPrevious {padding: 0 4px 0 7px; background: url(/Shop/Images/ico_sprite_sheet.gif) -1086px -128px no-repeat; overflow:hidden;}
+.MC_LYT_SortByNext, .MC_LYT_OrderHistory .MC_LYT_SortByNext {font-weight:700; padding:0 7px 0 4px; background: url(../images/ico_next_arrow.gif) scroll 100% 4px no-repeat; overflow:hidden; }
+.MC_LTY_PA_Replacement_Products a{background: url(/shop/images/ico_replacements.gif) scroll 100% -1px no-repeat; overflow:hidden;padding-right:20px;*zoom:1}
+.MC_LYT_promoListOuter a {color:#063d88;padding:0 9px 0 0;/*background: url(/Shop/Images/ico_sprite_sheet.gif) 0 -1138px scroll 100% 3px no-repeat;*/ /*gray_arrow_right.gif*/ overflow:hidden; }
+.MC_LYT_AsmtHistory .GE_TXT_Alert { /* temp */ display:block; color:#ff2727; padding:10px 0px 10px 20px; background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -105px no-repeat; }
+.MC_LYT_NoSearchResults_ViewList a{background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -1138px no-repeat; padding-right:10px; margin-right:58px;display:inline-block;}
+.RecProductStepsCheck{background: #ccc url(/Shop/Images/ico_sprite_sheet.gif) 510px -780px no-repeat;}
+.MC_LYT_RecProductContainer .RecProductIcon1{background:url(/Shop/Images/ico_sprite_sheet.gif) -1086px -479px no-repeat; padding-right:15px; width:130px; *width:145px;} 
+.MC_LYT_RecProduct_ico_sprite_sheet.gif {padding: 0 8px 0 14px; background: url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1785px -1086px -1293px scroll 0 2px no-repeat; font-size:10px; float:left; border-right:1px solid #ccc; margin-right:8px;}
+.MC_LYT_RSCart .MC_LYT_ProductFamilyFooterCommands .MC_LYT_ProductFamilyAddTo a { display: block; background: transparent url(/Shop/Images/ico_sprite_sheet.gif) 7px -1177px no-repeat; padding-left: 20px; padding-top: 8px; }
+.MC_LYT_ico_video{padding-right:12px; background: url(/Shop/Images/ico_sprite_sheet.gif)-1086px -1293px no-repeat;}
+.MC_LYT_RecProduct_ico_video{padding: 0 8px 0 14px; background: url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1293px no-repeat; font-size:10px; float:left; border-right:1px solid #ccc; margin-right:8px;}
+.MC_LYT_StoreInfo a.MC_NAV_LearnMore { color:#006699;text-transform:none;padding-right:10px; font-weight:normal; background:transparent url(/Shop/Images/ico_sprite_right.gif) 100% -126px no-repeat; }
+#MODAL_LYT_StoreQuickview .MODAL_LYT_Header a.MODAL_NAV_Close { float:right; width:20px; height:20px; text-indent:-9999px; overflow:hidden; background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -1842px no-repeat top left;   }
+.MC_LYT_photoUpload{padding-left:18px; background: transparent url(/Shop/Images/ico_sprite_sheet.gif) -2280px -1176px no-repeat;display:inline-block;}
+.MC_LYT_photoRemove{padding-left:18px; background: transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -478px no-repeat;display:inline-block;}
+tr td.TXT_LYT_ProductListCat_ProdName .MC_LYT_ico_freeShipping{margin-top:3px;height:10px;width:20px;background: transparent url(/Shop/Images/ico_freeShipping.png) top left no-repeat; display:block;}
+.MC_LYT_ico_freeShipping a{}
+/* user_management_base.css*/
+.MC_FRM_Myacct_RightContainer .MC_LYT_Pending_Order span.default_card {	background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -822px no-repeat !important;  height:16px;margin:0 10px;padding-left:24px;}
+.MC_LYT_ViewLink {float: right; background:transparent url(../images/ico_arrowR.gif) no-repeat scroll right center;padding-right: 15px;font-weight: normal;font-size: 9px;margin-right: 0px;}
+div.LYT_Registration .FRM_tooltip {background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -1242px no-repeat; cursor:help; display:inline-block; height:16px; margin:0 5px; overflow:hidden; padding:0 !important; width:16px; }
+.MC_REG_Brochure ul li { list-style:none; background:url(/Shop/Images/ico_sprite_sheet.gif) -1086px -34px no-repeat; padding-left:20px; margin:0; line-height:20px }
+
+/* icon graphic was moved to a span to contain the sprite on long message panes */
+.PU_LO_Alert{ background:#ffffcc; padding:10px 10px 10px 29px; border:1px solid #494948; color:#494948; font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:bold; clear:both; overflow:hidden; position:relative;}
+.PU_LO_Alert .messageIconContainer {position:absolute; top:0px; left:0px; display:block; width:32px; height:32px; background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -2163px -884px no-repeat;}
+.PU_LO_Warning{ background:#ffffcc; padding:10px 10px 10px 29px; border:1px solid #494948; color:#494948; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; clear:both; overflow:hidden; position:relative;}
+.PU_LO_Warning .messageIconContainer {position:absolute; top:0px; left:0px; display:block; width:32px; height:32px; background:transparent url("/Shop/Images/ico_warning.gif") 6px 6px no-repeat;}
+.PU_LO_Red_Alert{ background:#ffcccc; padding:10px 10px 10px 29px; border:1px solid #ff2727; color:#ff2727; font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:bold; margin-bottom:10px; position:relative;}
+.PU_LO_Red_Alert .messageIconContainer {position:absolute; top:0px; left:0px; display:block; width:32px; height:32px; background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1079px -1955px no-repeat;}
+
+.PU_LO_PasswordError{font-size:12px; font-weight:bold; padding:5px 0 0 18px; background: url(/Shop/Images/ico_sprite_sheet.gif) 0 -71px no-repeat; }
+.PU_LO_PasswordError_Top{font-size:12px; font-weight:bold; padding:5px 0 0 18px; background: url(/Shop/Images/ico_sprite_sheet.gif) 0 -71px no-repeat; }
+.PU_LO_LOgin_NP .PU_LO_NP_Red_Alert{ background:#ffcccc url(/Shop/Images/ico_sprite_sheet.gif)  0 -105px no-repeat; padding:10px 10px 10px 29px; border:1px solid #ff2727; color:#ff2727; font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:bold; margin-bottom:10px; }
+.MC_LYT_CR_SortByViewAll{background:transparent url(../images/ico_gray_arrow_right.gif) no-repeat scroll right center;float:right;margin-right:4px;padding-right:10px;}
+.MC_LYT_CR_SortByPrevious{padding: 0 4px 0 7px;background: url(/Shop/Images/ico_sprite_sheet.gif) -1086px -132px no-repeat; overflow:hidden;}
+.MC_LYT_CR_SortByNext{padding: 0 7px 0 4px;background: url(/Shop/Images/ico_sprite_sheet.gif) 0 -1935px no-repeat; overflow:hidden; }
+.Alert_msg{ background:#ffffcc url(/Shop/Images/ico_sprite_sheet.gif) -2163px -884px no-repeat; padding:10px 10px 10px 29px; border:1px solid #494948; color:#494948; font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:bold; clear:both; overflow:hidden; margin:0 0 10px 0;}
+.Red_Alert{ background:#ffcccc url(/Shop/Images/ico_sprite_sheet.gif) 0 -105px no-repeat; padding:10px 10px 10px 29px; border:1px solid #ff2727; color:#ff2727; font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:bold; margin:0 0 10px 0;}
+.MC_ADD_Left_Pdf{ background: url(/Shop/Images/ico_sprite_sheet.gif) -1086px -36px no-repeat; padding:0 0 0 36px; font-weight:normal !important; clear:both; overflow:hidden;}	
+.tableGrid span.default_card { background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -822px no-repeat; width:14px; height:16px; display:inline-block; margin-right:10px; padding-left:0px }
+.FRM_tooltip { background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -1242px no-repeat; width:16px; height:16px; cursor:help; display:inline-block; overflow:hidden; margin:0px 5px; padding:0px !important }
+.MC_LYT_IBO_Customer_Address .MC_LYT_Pending_Order span.default_card { background:transparent url(/Shop/Images/ico_sprite_sheet.gif) 0 -822px no-repeat !important;  height:16px; margin:0px 10px; padding-left:24px }
+.MC_LYT_CR_List_Bullet a {background: #ffffff url(/Shop/Images/ico_sprite_sheet.gif) 0 5px no-repeat; padding: 5px 0 5px 20px;}f
+.MC_LYT_arrowLink a{background:transparent url(../images/ico_gray_arrow_right.gif) no-repeat scroll right center;padding-right:10px;}
+
+/*missing in sprite*/
+/*.MC_LYT_report_icon{ background:transparent url(../Images/common/icon_report.gif) 0 50% no-repeat; padding: 0 0 5px 21px; font-size:11px; font-weight:normal }*/
+
+.MC_LYT_report_icon{ background:transparent url(/Shop/Images/ico_sprite_sheet.gif)  0 50% no-repeat; padding: 0 0 5px 21px;font-weight:normal }
+.tableGrid span.ditto { background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1573px no-repeat; width:15px; height:16px; display:inline-block; margin-right:10px; padding-left:0px }
+.MC_LYT_Error { clear:both; background:#FFCCCC url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1645px no-repeat; color:#FF2727; font-weight:bold; border:1px solid #FF2727; padding:10px 10px 10px 41px; margin-bottom:10px }
+.MC_LYT_IBO_Customer_Address .MC_LYT_Pending_Order span { background: transparent url(/Shop/Images/ico_sprite_sheet.gif)  -1086px -1575px no-repeat; line-height:30px; height:30px; padding-left:20px; }
+.MC_FRM_Myacct_RightContainer .MC_LYT_Pending_Order span {background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1086px -1573px no-repeat;height:30px;line-height:30px;padding-left:20px;}
+/*add to sprite*/
+/*.MC_BizReport_Ico {background: url(../images/Ico_Report.gif) left bottom no-repeat; padding:0 10px 0 20px; }*/
+
+.LO_Alert1{ background:#ffffcc url(/Shop/Images/LOS/ico_sprite_sheet.gif) -2163px -884px no-repeat; margin-bottom:9px; padding:10px 10px 10px 24px; border:1px solid #494948; color:#494948; font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:bold;}
+/*------------------------------------------------------------------------------------*/
+/* Resource Center icons /Jason Tenney (Last Modified: 03/29/2010 AIUGF21) */
+.RC_Ico_video {background: transparent url(/Shop/Images/ico_sprite_sheet.gif) -1084px -1319px no-repeat; display:block; cursor:pointer !important;padding-left:22px; min-height:30px;}
+.RC_Ico_photo_album { background: transparent url(/Shop/Images/ico_sprite_sheet.gif) -2172px -128px no-repeat; display:block; cursor:pointer !important;min-height:30px;}
+.RC_Ico_PDF { background: transparent url(/Shop/Images/ico_sprite_sheet.gif) -2167px -2212px no-repeat; display:block; cursor:pointer !important; padding-left:22px;min-height:30px;}
+.MC_LYT_RCLinkAltLang a{padding:5px 0 10px 20px;background: transparent url(/Shop/Images/ico_sprite_sheet.gif) -2167px -2213px no-repeat; }
+.RC_Ico_Doc { background: transparent url(/Shop/Images/ico_sprite_sheet.gif) -2171px -200px no-repeat; display:block; cursor:pointer !important;min-height:30px;}
+.RC_Ico_HTML { background: transparent url(/Shop/Images/ico_sprite_sheet.gif) -2171px -235px no-repeat; display:block; cursor:pointer !important;min-height:30px;}
+.RC_Ico_Podcast { background: transparent url(/Shop/Images/ico_sprite_sheet.gif) -2169px -164px no-repeat; display:block; cursor:pointer !important;min-height:30px;}
+.RC_Ico_WMP { background: transparent url(/Shop/Images/ico_sprite_sheet.gif) -2172px -271px no-repeat; display:block; cursor:pointer !important;min-height:30px;}
+.RC_Ico_audio { background: transparent url(/Shop/Images/ico_sprite_sheet.gif) -2166px -2168px no-repeat; display:block; cursor:pointer !important;min-height:30px;}
+.RC_Ico_Flash { background: transparent url(/Shop/Images/ico_sprite_sheet.gif) -2172px -310px no-repeat; display:block; cursor:pointer !important;min-height:30px;}
+.RC_Ico_Quicktime { background: transparent url(/Shop/Images/ico_sprite_sheet.gif) -2172px -346px no-repeat; display:block; cursor:pointer !important;min-height:30px;}
+.RC_Ico_WordDoc { background: transparent url(/Shop/Images/ico_sprite_sheet.gif) -2169px -384px no-repeat; display:block; cursor:pointer !important;min-height:30px;}
+.RC_Ico_ExcelDoc { background: transparent url(/Shop/Images/ico_sprite_sheet.gif) -2169px -420px no-repeat; display:block; cursor:pointer !important;min-height:30px;}
+.RC_Ico_PowerPoint, 
+.RC_Ico_slideshow { background: transparent url(/Shop/Images/ico_sprite_sheet.gif) -2170px -456px no-repeat; display:block; cursor:pointer !important;min-height:30px; padding-left: 22px; }
+
+/* Resource Center download and social sharing icons /Ricky Rosario */
+a.RC_Ico_Facebook { background:transparent url(../Images/ResourceCenter/Social/link-facebook.gif) no-repeat left center;padding-left:25px; }
+a.RC_Ico_Digg { background:transparent url(../Images/ResourceCenter/Social/link-digg.gif) no-repeat left center;padding-left:25px; }
+a.RC_Ico_Twitter { background:transparent url(../Images/ResourceCenter/Social/link-twitter.gif) no-repeat left center;padding-left:25px; }
+a.RC_Ico_Stumble { background:transparent url(../Images/ResourceCenter/Social/link-stumble.gif) no-repeat left center;padding-left:25px; }
+a.RC_Ico_MySpace { background:transparent url(../Images/ResourceCenter/Social/link-myspace.gif) no-repeat left center;padding-left:25px; }
+a.RC_Ico_Email { background:transparent url(../Images/ResourceCenter/Social/link-email.gif) no-repeat left center; padding-left:25px; }
+a.MC_LYT_ICO_Close {background:transparent url(/Shop/Images/ico_sprite_right.gif) no-repeat scroll 100% -170px; line-height:1.3em; cursor:pointer !important; text-decoration:underline; padding:2px 25px 2px 0px !important; display:inline-block; }
+
+.MC_BizReport_Message { background: url(/Shop/Images/ico_sprite_sheet.gif) #ffffcc no-repeat -2170px -190px; border: 1px solid #f0cd12; color: #494948; margin: 0 3px 0 0; padding: 10px 1px 10px 20px; font-size: 9pt;  }

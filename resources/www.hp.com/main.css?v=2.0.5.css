@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+/*
+	----------------------------
+	GLOBAL HP CLASSES + STYLES
+	----------------------------
+*/
+
+.body, .body input, .body textarea {font-family:"HPSimplified", arial}
+body,img,p,h1,h2,h3,h4,h5,h6,form,table,td,ul,ol,li,fieldset {margin:0; padding:0; border:0;}
+
+/* override for full width */
+.body {width:auto;}
+
+#section-features h2  { font-size: 5.125em; line-height: .9em; margin: 0 0 10px; }
+#section-features h3  { font-size: 1.875em; line-height: 1em; margin: 0; }
+#section-features h4  { font-size: 1.375em; line-height: 1em; margin: 0; }
+
+
+h1 {font-size:32px; line-height:1em; margin:0 18px;}
+h2 {font-size:24px; line-height:30px;}
+h3 {font-size:20px; line-height:24px; margin-bottom:8px;}
+h4 {font-size:18px; line-height:22px;}
+h5 {font-size:18px; line-height:22px;}
+h6 {font-size:16px; line-height:22px;} 
+
+.content h2, .breakout h2 {font-size:40px; line-height:1em; margin:0;}
+.content h3, .breakout h3 { font-size: 1.875em; line-height: 1em; margin:0; }
+.content h4, .breakout h4 { font-size: 1.375em; line-height: 1em; margin:0; }
+.hero-section h3 {font-size:3em; line-height:1em;}
+
+.content img + h2, .breakout img + h2, .content img + h3, .breakout img + h3, .content img + h4, .breakout img + h4 {margin-top:15px;}
+.col-3 a  + h2, .col-4 a + h2, .col-3 a  + h3, .col-4 a + h3, .col-3 a  + h4, .col-4 a + h4{ margin-top:15px;}
+
+.body p {margin:18px 0; line-height: 1.375em;}
+.body .xxl { font-size: 50px; line-height: 1; }
+.body .l { font-size: 18px; }
+.body .thin { font-weight: 100; line-height: 1;}
+.body .hide {display: none;}
+
+a {color:#007DBA; text-decoration:none;}
+a:visited {color:#822980;}
+a:hover, a:focus {text-decoration:underline;}
+
+::-moz-selection {background:#f05332; color:white; text-shadow:none;}
+::selection {background:#f05332; color:white; text-shadow:none;}
+
+sup {font-size:10px; line-height:1;}
+small {padding:10px 15px;}
+
+.center-text {text-align:center}
+.float-left {float:left}
+.float-right {float:right;}
+
+.gray-text {color:#767676;}
+.white-text {color:#fff;}
+.red-text {color:#d7410b;}
+
+.margin-top {margin-top:40px !important;}
+.margin-bottom {margin-bottom:50px !important;}
+.margin-bottom-60 {margin-bottom:60px !important;}
+.margin-bottom-70 {margin-bottom:70px !important;}
+.margin-left {margin-left:40px !important;}
+.margin-left-20 {margin-left:20px !important;}
+.margin-left-60 {margin-left:60px !important;}
+.margin-right {margin-right:40px !important;}
+.margin-right-60 {margin-right:60px !important;}
+
+.clearfix:before, .clearfix:after {content:""; display:table;}
+.clearfix:after {clear:both;}
+.clearfix {zoom:1;}
+
+/* add space above h1 */
+#section-top { margin-top: 40px; z-index: 2; }
+
+/* center content */
+.content {width:1000px; margin:0 auto; position:relative;}
+
+/* HP Button Styles  */
+.button {display:inline-block; margin:0; border:0; cursor:pointer; background-color:#d7410b; color:#fff; font-size:16px; line-height:36px; font-weight:bold; padding:0px 16px; white-space:nowrap; -webkit-border-radius:0 6px; -moz-border-radius:0 6px; -ms-border-radius:0 6px; border-radius:0 6px;}
+.button:hover, .button:visited, .button.secondary:focus {background-color:#c1401a; color:#fff; text-decoration:none; }
+
+.button.secondary {background-color:#0096D6;}
+.button.secondary:hover, .button.secondary:visited, .button.secondary:focus {background-color:#007DBA;}
+.button.tertiary {background-color:#767676;}
+.button.tertiary:hover, .button.tertiary:visited {background-color:#5a5a5a;}
+.button.disabled, .button.disabled:hover {background-color:#ccc;}
+.button.share {background-color:#ffffff; color:#767676; font-size:14px; line-height:24px; font-weight:normal; padding:0px 10px; white-space:nowrap; -webkit-border-radius:0 6px; -moz-border-radius:0 6px; -ms-border-radius:0 6px; border-radius:0 6px; cursor:pointer;}
+
+/* navigation and dock */
+#local-nav {clear:both; position: relative;}
+.docked  #local-nav {height:40px;}
+#local-nav h1 {margin-top: .5em; margin-bottom: 0; padding-bottom: .25em;}
+#local-nav a {color: #000;}
+#local-nav a:hover {text-decoration: none;}
+
+#local-nav > a, #local-nav h2, #local-nav > a:hover {float: left; margin: 0 18px; font-size: 16px; line-height: 2.3em; position: relative; display: inline-block; zoom: 1; *display: inline;}
+#local-nav > a { color: #aaa; border-bottom: 4px solid transparent;}
+#local-nav h2, #local-nav > a:hover { color: #000; border-bottom: 4px solid #0096d6;}
+
+.dock {background: #fff; z-index: 100; border-bottom: 1px solid #ccc;}
+.nav .cta {position: absolute; font-size: 18px; right: 18px; bottom: 8px;}
+.nav a.button {font-size: 14px; line-height: 28px; color: #fff !important;}
+.nav {position: relative;  width: 1000px; margin: 0 auto;}
+
+.docked .dock {top: 0px; left:0; right:0; position: fixed;}
+
+.top-rule {/*padding-top:50px; margin-top:50px; */border-top: #acacac 1px solid;}
+.spaced {padding-top:50px; margin-bottom:50px;}
+.spaced.breakout {margin-top:50px; padding-top:0;}
+.top-rule.spaced + div {margin-top:50px;}
+.bottom-rule{padding-bottom:50px; margin-bottom:0; border-bottom:#acacac 1px solid;}
+
+ul.textlist {margin:20px 0 0 20px; list-style-type:disc !important;}
+ul.textlist li {margin-top:10px;}
+
+/* collumn layouts */
+ul.col-2, ul.col-3, ul.col-4 {list-style-type:none; padding:0;}
+ul.col-2 > li, ul.col-3 > li, ul.col-4 > li {display: inline-block; vertical-align: top; zoom: 1; *display: inline; position: relative}
+ul.col-2 > li {width:47%;}
+ul.col-2 > li.wide {width:72%;}
+ul.col-2 > li.wide + li {width:25%;}
+ul.col-2 > li:first-child {margin-right:2.5%;}
+
+ul.col-3 > li {width: 30.5%; margin-right: 2.4%;}
+ul.col-4 > li {width: 22%; margin-right: 2.5%;}
+
+ul.pipe > li {border-left:#ccc 1px solid;}
+ul.pipe > li > *  {padding-left:10%;} 
+ul.pipe > li:first-child {border-left:none;}
+ul.pipe > li:first-child > * {padding-left:0}
+
+/* generic list floats */
+ul.li-left li {float:left;}
+
+/* price styles */
+.price {vertical-align: top; font-size: 32px; color: #d7410b; display: inline-block; line-height: 38px;}
+.cents {font-size: 16px; line-height: 16px; vertical-align: text-top;}
+.ie7 .cents, .ie8 .cents {line-height:32px;vertical-align: super;}
+.price .cents {display:inline-block; text-indent:-5px}
+.price .cents:first-child {text-indent:0}
+
+/* background colors */
+.bg-white {background-color:#fff;}
+.bg-ltgray {background-color:#f2f2f2;}
+
+/* footnotes */
+#footnotes {font-size:12px; color:#767676; border-top:1px solid #e5e8e8; padding-top:30px;}
+.blue-bar #footnotes {border:none;}
+#footnotes p {text-indent:-1em; margin-left:9px; line-height:1.3em;}
+
+/* overrides */
+.clear-styles {list-style-type:none; padding:0;}
+.no-overflow {overflow:hidden;}
+.no-margin {margin:0;}
+.no-margin-bottom {margin-bottom:0;}
+.no-margin-top {margin-top:0;}
+.no-h-padding {padding-right:0; padding-left:0;}
+
+
+/* blue-bar styles */
+/* REFERENCE - officejet-pro-printers : products */
+.breakout.blue-bar {background-color:#0e9bd7; color:#fff; padding:35px 0;}
+.breakout.blue-bar ul.col-3 > li {width:26.5%; margin-right:4.5%;}
+.center-col {border-left: 1px solid #fff;border-right: 1px solid #fff;padding-left: 2.5%;padding-right: 2.5%;}
+.left-col {margin-right: 0!important;}
+.breakout.blue-bar img {margin:15px 0;}
+.blue-bar-3600-12 {margin:15px 0px 0px 70px!important;}
+.blue-bar-3600-3 {margin:15px 0px 0px 30px!important;}
+.bull {margin:15px 0px 40px 70px!important;}
+
+
+
+/* blue bar social footer */
+.blue-bar.social-footer {padding:105px 0;font-family: 'HPSimplified';}
+.blue-bar.social-footer .negative-indent {text-indent:-35px;}
+.blue-bar.social-footer h3 { border-bottom: 1px solid #fff; font-size: 24px; margin-bottom: .5em; padding-bottom: .333em;font-family: 'HPSimplified';}
+.blue-bar.social-footer .button { color: #000; background-color: #fff; line-height: 28px; font-size: 14px; }
+.blue-bar.social-footer .share-this .button {padding:2px 7px; background-position:50% 50%;}
+.blue-bar.social-footer .button.share { color: #767676; line-height: 24px; font-weight: normal; }
+.blue-bar.social-footer .share-fb-learn-more { color: #ffffff; }
+.blue-bar.social-footer p.xxl, .blue-bar.social-footer p.xxl { margin-bottom: .5em; font-size: 50px; }
+.blue-bar.social-footer p.xxxl {font-size:75px; line-height:1em;}

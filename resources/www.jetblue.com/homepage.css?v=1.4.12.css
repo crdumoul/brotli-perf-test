@@ -1,0 +1,4163 @@
+/*=== Body 
+Author: Roger
+Colors: Orange: #ff9900 | Light Blue: #4d90cd
+	      Dark Blue: #004990 | Darker Blue: #00285e
+==================================================*/
+
+/* Structural Containers & Wrappers */
+	
+.inner {
+	padding: 10px 20px;
+	}
+
+#login-search-wrap {
+//	height: 341px;
+}
+
+#promo-getaway-wrap {
+	/* height: 426px; */
+	margin-top: 10px;
+	}
+#sidekicks-wrap {
+	height: 322px;
+	margin-top: 10px;
+	}
+#social-wrap {
+	height: 160px;
+	margin-top: 10px;
+	}
+
+ 
+
+
+/*=== TrueBlue Module
+Author: Roger
+Colors: Orange: #ff9900 | Light Blue: #4d90cd
+	      Dark Blue: #004990 | Darker Blue: #00285e
+==================================================*/
+#trueblue .name,
+#trueblue .clear-btn,
+#trueblue .points,
+#trueblue .trip,
+/*#trueblue em,*/
+#trueblue .cta,
+#trueblue .earn-points,
+#trueblue .upcoming-flight { display: none; }
+
+.trueblue {
+	z-index: 2;
+	position: relative;
+	//background: transparent url(/img/true-blue-bg.jpg) 0 0 no-repeat;
+	background-color: #00245D;
+	color: #ffffff;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#trueblue.bff {
+background: transparent url(/img/mosaicbg.jpg) -2px 22px no-repeat;
+    background-image: url(/img/mosaicbg.jpg);
+    background-color: #00245D;
+    background-size: 318px 343px;
+    background-repeat: no-repeat;
+    min-height: 365px;
+   }
+	
+.trueblue a { color: #ffffff; }
+
+.trueblue a:hover,
+.trueblue a:active { text-decoration: underline; }
+
+.trueblue h2 {
+	position: relative;
+	top: -1px;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: 50px;
+	line-height: 1.35;
+	height: 60px;
+	margin: 0px;
+	}
+.trueblue img { margin-bottom: 10px; }
+.trueblue p {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 12px;
+    font-size: 0.85em;
+	}
+
+.trueblue a {
+	display: inline;
+	position: relative;
+	}
+.trueblue .password-reset:hover {
+	text-decoration: none;
+	}
+	
+.trueblue .rgt-arrow {
+	height: 1%;
+	display: inline-block;
+	background: transparent url(/img/rgt-arrow.png) right -28px no-repeat;
+	padding: 5px 11px 4px 0;
+	position: absolute;
+	top: 25%;
+	margin-left: 2px;
+	text-decoration: none;
+	}
+
+#true_blue_form { position: relative; }
+
+#true_blue_form .tb-email-password-wrapper {
+	height: 114px;
+	overflow: hidden;
+}
+
+.trueblue input {
+	background-color: #33507d;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	width: 251px;
+	height: 34px;
+	padding: 0 10px;
+	text-decoration: none;
+	outline: none;
+	display: block;
+	overflow: hidden;
+    border: 1px solid #33507d;
+    font-size: 1.0em;
+}
+
+html.ie7 .trueblue input,
+html.ie8 .trueblue input {
+	height: 28px;
+	padding-top: 5px;
+	line-height: 1.7;
+	}
+	
+html.ie9 .trueblue input {	
+	line-height: 1.7;
+	}
+
+#email_field {
+    margin-bottom: 17px;
+    margin-top: 13px;
+}
+	
+#password-place {
+	display: none;
+	width: 210px;
+	height: 32px;
+	padding-right: 50px;
+	border: 0;
+	background: none;
+	background-color: #33507d;
+	}
+	
+html.ie7 #password-place,
+html.ie8 #password-place {	
+	height: 22px;
+	line-height: 1.7;
+	zoom: 1;
+	}
+	
+	
+#true_blue_form .showPassPlaceholder {
+	display: block;
+	position: relative;
+	top: -44px;
+	left: 1px;
+	}	
+	
+html.ie7 #true_blue_form .showPassPlaceholder,
+html.ie8 #true_blue_form .showPassPlaceholder {
+	top: -43px;
+	}	
+
+#password_field {
+	width: 211px;
+	height: 34px;
+	margin-bottom: 10px;
+	padding-right: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+	
+html.ie7 #password_field,
+html.ie8 #password_field {	
+	line-height: 1.4;
+	height: 27px;
+	}	
+	
+html.ie9 #password_field {	
+	line-height: 1.2;
+	}	
+
+.trueblue input::-webkit-input-placeholder {
+	color: white;
+ 	}
+.trueblue input:-moz-placeholder {
+	color: white;
+	}
+
+.trueblue .join { margin-bottom: 23px; }
+
+
+.trueblue #true_blue_form .submit-btn-wrap {
+	float: left;
+}
+.trueblue #true_blue_form .submit-btn-inner {
+	//background: transparent url(/img/submit-btn-sp.png) right -200px no-repeat;
+	width: 67px;
+	height: 35px;
+	padding-right: 3px;
+	}
+
+.trueblue .signin-text a {
+	font-weight: 700;
+	}
+
+.trueblue #true_blue_form #signin_btn {
+	background: none;
+	background-color: #306faa;
+	color: #ffffff;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	width: 67px;
+	height: 35px;
+	border: 0;
+	margin: 0;
+	padding: 3px 0 0 0;
+	border-radius: 3px;
+	font-size: 0.86em;
+    border: 1px solid transparent;
+}
+
+
+.trueblue #true_blue_form #signin_btn:hover { background-color: #004990; }
+.trueblue #true_blue_form #signin_btn:focus { text-decoration: underline; background-color: #004990; }
+
+.trueblue .join span {
+	float: left;
+	font-size: 12px;
+	height: 13px;
+	margin-left: 10px;
+	padding: 13px 0;
+    font-size: 0.9em;
+	}
+
+.trueblue .join span a {
+	font-weight: bold;
+	margin-left: 5px;
+}
+.trueblue .join span a:hover {
+	text-decoration: underline;
+}
+
+/*=== TrueBlue : Logged In (State)
+Author: Roger
+==================================================*/
+#trueblue.login #true_blue_form,
+#trueblue.login p,
+#trueblue.login img {
+	display: none;
+	}
+#trueblue.login .name {
+	display: block;
+	font-size: 40px;
+	margin: 0;
+	}
+#trueblue.login .clear-btn {
+	cursor: pointer;
+	display: inline-block;
+	background: transparent url(/img/clear-btn.png) 0 0 no-repeat;
+	width: 15px;
+	height: 15px;
+	margin-left: 5px;
+	}
+#trueblue.login .clear-btn:hover {background-position: 0 -20px;}
+
+#trueblue.login .points,
+#trueblue.login .trip {
+	display: block;
+	color: #ffffff;
+	font-size: 39px;
+	font-weight: 100;
+	line-height: 1;
+	word-spacing: -2px;
+	height: auto;
+	margin-bottom: 30px;
+	}
+#trueblue.login .points {
+	color: #4d90cd;
+	}
+
+#trueblue.login .snapshot {
+	display: inline;
+	color: #ffffff;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	}
+
+#trueblue.login .snapshot a {
+	color: #4d90cd;
+	text-decoration: none;
+	}
+#trueblue.login .snapshot a:hover {
+	color: #4d90cd;
+	text-decoration: underline;
+	}
+
+#trueblue.login em {
+	display: inline;
+	font-style: normal;
+	color: #ffffff;
+	}
+
+#trueblue.login .cta {
+	position: absolute;
+	left: 20px;
+	bottom: 60px;
+	display: block;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	}
+
+/*=== TrueBlue : Earn More Points (State)
+Author: Roger
+==================================================*/
+#trueblue.login .earn-points { display: block; }
+#trueblue.login .earn-points h3 {
+	font-size: 25px;
+	font-weight: 100;
+	color: #4d90cd;
+	margin: 10px auto;
+	}
+#trueblue.login .learn-btn {
+	display: block;
+	//background: transparent url(/img/submit-btn-sp.png) left -400px no-repeat;
+	width: 91px;
+	height: 22px;
+	padding-left: 3px;
+	}
+#trueblue.login .learn-btn .inner {
+	display: block;
+	//background: transparent url(/img/submit-btn-sp.png) right -440px no-repeat;
+	width: 91px;
+	height: 22px;
+	margin: 0;
+	padding: 0;
+	padding-right: 3px;
+	}
+#trueblue.login .learn-btn .inner a {
+	display: block;
+	background-color: #306FAA;
+	color: #ffffff;
+	text-align: center;
+	width: 91px;
+	min-height: 12px;
+	padding: 5px 0;
+	border-radius: 3px;
+	font-size: 1.0em;
+}
+
+#trueblue.login .learn-btn:hover { background-position: left -480px; }
+#trueblue.login .learn-btn:hover .inner { background-position: right -520px; }
+#trueblue.login .learn-btn .inner a:hover { background-color: #003C7B;  text-decoration: none;}
+
+
+/*=== TrueBlue : Upcoming Flight (State)
+Author: Roger
+==================================================*/
+#trueblue.login .upcoming-flight { display: block; }
+
+#trueblue.login .upcoming-flight h3 {
+	color: #4d90cd;
+	font-size: 16px;
+	font-weight: 100;
+	margin: 10px 0 5px;
+	}
+#trueblue.login .upcoming-flight em.date {
+	font-weight: 700;
+	}
+
+#trueblue.login .origin,
+#trueblue.login .connect,
+#trueblue.login .destination {
+	float: left;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	}
+
+#trueblue.login .connect {
+	width: 30px;
+	height: 30px;
+	padding: 5px 5px 0;
+	}
+
+#trueblue.login span.image img { display: inline; }
+
+#trueblue.login .connect span.image {
+	padding-top: 30px;
+	}
+
+#trueblue.login span.airport {
+	font-weight: 900;
+	font-size: 43px;
+	line-height: 1.1;
+	}
+
+
+/*=== TrueBlue : Error Modal
+Author: Roger
+==================================================*/
+#trueblue.error .error-modal {
+	z-index: 100;
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    display: block;
+    /* background: transparent url(/img/trueblue-module-error-bg.png) 0 0 no-repeat; */
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    /* width: 274px; */
+    height: 345px;
+    /* padding: 10px 20px; */
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#trueblue .error-system {
+	display: none;
+	}
+
+#trueblue.system .error-system {
+	display: block;
+	}
+	
+#trueblue .trueblue-switch {
+	z-index: 110;
+	display: none;
+	position: absolute;
+	top: 18px;
+	right: 20px;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	width: auto;
+	}
+
+#trueblue.login .trueblue-switch,
+#trueblue.error .trueblue-switch { display: block; }
+
+#trueblue.login .trueblue-switch .close-btn { display: none; }
+#trueblue.login .trueblue-switch .signout {
+	display: block;
+	color: #5ea1de;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+    font-size: 0.9em;
+}
+	
+#trueblue.login .trueblue-switch .signout:hover {
+	text-decoration: underline;
+	}	
+
+#trueblue.error .trueblue-switch .signout {
+	display: none;
+	}
+
+#trueblue.error .trueblue-switch .close-btn {
+	cursor: pointer;
+	display: block;
+	float: right;
+	background: transparent url(/img/context-switcher-btn-sp.png) 0 -126px no-repeat;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	text-indent: -9999px;
+	color: #004990;
+	display: block;
+	height: 30px;
+	margin-left: 10px;
+	padding-top: 7px;
+	padding-left: 30px;
+	}
+
+#trueblue.error .trueblue-switch .close-btn:hover { background-position: 0 -289px; }
+
+#trueblue.error .password-reset {
+	clear: left;
+	display: block;
+	font-size: 14px;
+	margin-top: 20px;
+	}
+
+#trueblue.system .password-reset { display: none; }
+
+#trueblue.error .password-reset a {
+//	color: #4d90cd;
+}
+#trueblue.error .password-reset .rgt-arrow {
+	background-position: 0 0;
+	}
+
+#trueblue.error .password-reset a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+	}
+#trueblue.error .password-reset a:hover .rgt-arrow { background-position: 0 -28px; }
+
+/*=== TrueBlue : Dropdown Navigation
+Author: Roger
+==================================================*/
+#trueblue #trueblue-dropdown{ display: none; }
+#trueblue-dropdown .trueblue-nav { display: none; }
+
+#trueblue.login #trueblue-dropdown {
+	cursor: pointer;
+	z-index: 3;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	display: block;
+	background: transparent url(/img/trueblue-dropdown-bg.png) 0 0 no-repeat;
+	width: 180px;
+	height: 43px;
+	}
+
+#trueblue.login .active .trueblue-nav {
+	z-index: 10;
+	position: absolute;
+	top: 3px;
+	left: 0;
+	display: block;
+	background: transparent url(/img/trueblue-dropdown-bg.png) -4px -48px no-repeat;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 172px;
+	padding-top: 40px;
+	margin: 0 4px;
+	-ms-box-shadow: 1px 1px 10px hsla(0,0%,0%,.5);
+	-webkit-box-shadow: 1px 1px 10px hsla(0,0%,0%,.5);
+	-moz-box-shadow: 1px 1px 10px hsla(0,0%,0%,.5);
+	box-shadow: 1px 1px 10px hsla(0,0%,0%,.5);
+	}
+
+.active .trueblue-nav .inner {
+	background: transparent url(/img/trueblue-dropdown-bg.png) -185px 163px no-repeat;
+	padding: 0 0 3px 0;
+	}
+
+.active .trueblue-nav .nav {
+	background-color: #004990;
+	padding-bottom: 5px;
+	}
+
+.active .trueblue-nav .nav li {
+	display: block;
+	font-size: 13px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	}
+
+.active .trueblue-nav .nav li a {
+	display: block;
+	}
+
+.active .trueblue-nav .nav li a:hover {
+	display: block;
+	color: #5EA1DE; /* As per Charles */
+	text-decoration: underline;
+	}
+
+/*=== Booker Module
+Author: Roger
+Colors: Orange: #ff9900 | Light Blue: #4d90cd
+	      Dark Blue: #004990 | Darker Blue: #00285e
+==================================================*/
+
+.booker {
+	z-index: 2;
+	position: relative;
+	background: transparent url(/img/booker-rnd-sp.gif) 3px top no-repeat;
+	color: #004990;
+	outline: 0;
+	font-size: 11px;
+	height: 337px;
+	}
+
+.booker .booker-inner {
+	background: #f1f5f8 url(/img/booker-rnd-sp.gif) -640px bottom no-repeat;
+	height: 328px;
+	margin-top: 3px;
+	padding: 10px 20px 0;
+	}
+
+.booker h2 {
+	position: relative;
+	left: -4px;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: 50px;
+	line-height: 1.15;
+	height: 68px;
+	margin: 0;
+	}
+
+.booker a { color: #4d90cd;	}
+.booker a:hover { color: #004990; }
+
+.booker .media { /* Booker Specific Media Block */
+	overflow: hidden;
+	_overflow: visible;
+	zoom: 1;
+	}
+.booker .media .img {
+	float: left;
+	margin-right: 10px;
+	}
+.booker .media .img img { display: block; }
+.booker .media .inner-media {
+	overflow: hidden;
+	_overflow: visible;
+	zoom: 1;
+	padding-bottom: 5px;
+	}
+
+.booker .dwn-arrow {
+	position: absolute;
+	top: 30%;
+	right: -12px;
+	background: transparent url(/img/dwn-arrow-sml.png) right 0 no-repeat;
+	padding: 3px 7px 2px 0;
+	height: 1%;
+	}
+
+.booker .dwn-lrg-arrow {
+	position: absolute;
+	top: 16px;
+	right: 9px;
+	background: transparent url(/img/dwn-arrow.png) 0 0 no-repeat;
+	width: 12px;
+	height: 7px;
+	}
+
+.booker .rgt-arrow {
+	height: 1%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: transparent url(/img/rgt-arrow.png) right 0 no-repeat;
+	padding: 5px 11px 4px 0;
+	}
+.booker .rgt-arrow:hover { background-position: right -14px; }
+
+
+.booker .sml-rnd-qmark,
+.booker .sml-rnd-qmark-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: transparent url(/img/sml-rnd-qmark.png) 0 0 no-repeat;
+	text-indent: -9999px;
+	width: 16px;
+	height: 16px;
+	}
+.booker .sml-rnd-qmark-hover { background-position: 0 -21px; }
+
+.booker .lrg-rnd-qmark {
+	position: absolute;
+	top: 3px;
+	right: 4px;
+	background: transparent url(/img/qmark-btn.gif) 0 0 no-repeat;
+	width: 28px;
+	height: 28px;
+	}
+.booker .lrg-rnd-qmark:hover { background-position: 0 -33px; }
+
+.booker .radio-styled {
+	position: absolute;
+	top: 8px;
+	cursor: pointer;
+	background: transparent url(/img/radio-btn-bg.png) 0 0 no-repeat;
+	width: 14px;
+	height: 14px;
+	}
+.booker .active .radio-styled { background-position: -38px 0; }
+/*.booker .radio-styled:hover { background-position: -19px 0; }*/
+
+
+/*=== Booker : Error Modal
+Author: Roger
+==================================================*/
+
+.error .error-heading,
+.error-orange .error-heading { font-size: 50px; left: -2px; }
+
+#trueblue.error .error-heading { left: 1px; }
+
+.error-modal { display: none; }
+
+#booker.error .error-modal {
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	background: transparent url(/img/error-modal-blue-bg.png) 0 0 no-repeat;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	width: 598px;
+	height: 321px;
+	padding: 10px 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	}
+#booker.error-orange .error-modal {
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	background: transparent url(/img/error-modal-orange-bg.png) no-repeat;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	width: 598px;
+	height: 321px;
+	padding: 10px 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	}
+
+.error-modal p {
+	font-family: /*din-web-jetblue, */Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.25;
+	margin-bottom: 20px;
+	}
+
+
+
+.error-modal .cancel-btn,
+.error-modal .ok-btn,
+.error-modal .again-btn,
+.error-modal .cancel-btn .inner,
+.error-modal .ok-btn .inner,
+.error-modal .again-btn .inner {
+	float: left;
+	padding:0;
+	margin-bottom: 10px;
+}
+
+.error-modal .cancel-btn a,
+.error-modal .ok-btn a,
+.error-modal .again-btn a{
+	cursor: pointer;
+	float: left;
+	width: 109px;
+	height: 35px;
+	margin-left: 10px;
+	padding-left: 3px;
+	cursor: pointer;
+	display: block;
+    background-color: #306FAA;
+	color: #ffffff;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	width: 107px;
+	height: 11px;
+	border: 0;
+	margin: 0;
+	padding: 12px 0;
+	padding-right: 2px; 
+	border-radius: 3px; 
+    margin-right: 20px;
+    font-size: 0.88em;
+}
+
+.error-modal .cancel-btn a:focus,
+.error-modal .ok-btn a:focus,
+.error-modal .again-btn a:focus, 
+.error-modal .cancel-btn a:hover,
+.error-modal .ok-btn a:hover,
+.error-modal .again-btn a:hover { background-color: #004990;}
+
+.error-modal .again-btn a { text-decoration: none }
+.error-modal .cancel-btn a { text-decoration: none }
+.error-modal .ok-btn a { text-decoration: none }
+.error-orange .cancel-btn,
+.error-orange .ok-btn { background-position: 0 0; }
+
+.error-orange .cancel-btn .inner,
+.error-orange .ok-btn .inner {
+	background-position: -118px bottom;
+	height: 35px;
+	padding: 0;
+	padding-bottom: 2px;
+	}
+
+.error-orange .cancel-btn span,
+.error-orange .ok-btn span {
+	background-color: #ffffff;
+	color: #ff9900;
+	}
+
+
+/*=== Booker : Context Switcher
+Author: Roger
+==================================================*/
+.booker .context-switch {
+	z-index: 110;
+	position: absolute;
+	top: 18px;
+	right: 20px;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	width: 100%;
+	overflow: hidden;
+	}
+
+.context-switch .checkin-btn,
+.context-switch .flight-status-btn,
+.context-switch .close-btn {
+	cursor: pointer;
+	display: none;
+	float: right;
+	background: transparent url(/img/context-switcher-btn-sp.png) 0 0 no-repeat;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #4d90cd;
+	height: 24px;
+	margin-left: 10px;
+	padding-top: 7px;
+	padding-left: 30px;
+	}
+	
+/* Find Flights & Find Vacations Styles */
+.fflight .context-switch .checkin-btn,
+.fvacation .context-switch .checkin-btn {
+	display: block;
+	background-position: 0 1px;
+	}
+.fflight .context-switch .checkin-btn:hover,
+.fvacation .context-switch .checkin-btn:hover {
+	background-position: 0 -161px;
+	color: #004990;
+	}
+.fflight .context-switch .flight-status-btn,
+.fvacation .context-switch .flight-status-btn {
+	display: block;
+	background-position: 0 -28px;
+	}
+.fflight .context-switch .flight-status-btn:hover,
+.fvacation .context-switch .flight-status-btn:hover {
+	background-position: 0 -190px;
+	color: #004990;
+	}
+
+.checkin .context-switch .close-btn,
+.fstatus .context-switch .close-btn {
+	display: block;
+	background-position: 0 -56px;
+	text-indent: -9999px;
+	height: 30px;
+	}
+.checkin .context-switch .close-btn:hover,
+.fstatus .context-switch .close-btn:hover { background-position: 0 -219px; }
+
+
+.error-orange .context-switch .checkin-btn,
+.error-orange .context-switch .flight-status-btn,
+.error .context-switch .checkin-btn,
+.error .context-switch .flight-status-btn { display: none; }
+
+.error-orange .context-switch .close-btn {
+	display: block;
+	background-position: 0 -91px;
+	text-indent: -9999px;
+	height: 30px;
+	}
+.error-orange .context-switch .close-btn:hover { background-position: 0 -254px; }
+
+.error .context-switch .close-btn {
+	display: block;
+	background-position: 0 -126px;
+	text-indent: -9999px;
+	height: 30px;
+	}
+.error .context-switch .close-btn:hover { background-position: 0 -289px; }
+
+/* Search Type Selectors  */
+.booker .search-type {
+	font-size: 12px;
+	height: 37px;
+	margin-bottom: 7px;
+	}
+
+.search-type div {
+	cursor: pointer;
+	float: left;
+	color: #ffffff;
+	width: 108px;
+	height: 37px;
+	margin-left: 5px;
+	}
+
+/* Default Button States */
+.search-type .flights-btn,
+.search-type .vacations-btn {
+	display: block;
+	background: transparent url(/img/search-type-bg.png) 0 -72px no-repeat;
+	width: 94px;
+	height: 31px;
+	padding-left: 14px;
+	}
+	
+.search-type .flights-btn a,
+.search-type .vacations-btn a {
+	display: block;
+	background: transparent url(/img/search-type-bg.png) 79px -108px no-repeat;
+	color: #f1f5f8;
+	width: 94px;
+	height: 31px;
+	}
+	
+.search-type .flights-btn span,
+.search-type .vacations-btn span {
+	cursor: pointer;
+	display: block;
+	background-color: #4d90cd;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	text-align: center;
+	width: 80px;
+	height: 20px;
+	padding-top: 11px;
+	}
+
+/* Active Button State */
+.search-type .active,
+.search-type .active {
+	background: transparent url(/img/dwn-arrow-dark.png) center bottom no-repeat;
+	}
+.search-type .active .flights-btn,
+.search-type .active .vacations-btn { background-position: 0 0; }
+.search-type .active .flights-btn a,
+.search-type .active .vacations-btn a { background-position: 79px -36px; }
+.search-type .active .flights-btn span,
+.search-type .active .vacations-btn span { background-color: #004990; }
+
+/* Hover State */
+.search-type .flights-btn:hover,
+.search-type .vacations-btn:hover { background-position: 0 0; }
+.search-type .flights-btn:hover span,
+.search-type .vacations-btn:hover span { background-color: #004990; }
+.search-type .flights-btn:hover a,
+.search-type .vacations-btn:hover a { background-position: 79px -36px; }
+
+
+/*=== Booker : Recent Searches (Flight Type and Terms & Conditions )
+Author: Roger
+==================================================*/
+.booker .flight-type {
+	color: #4d90cd;
+	font-weight: 700;
+	margin-bottom: 7px;
+	}
+
+.fflight .flight-type .radio-styled { top: 3px; }
+
+
+.flight-type li {
+	position: relative;
+	float: left;
+	width: 70px;
+	height: 15px;
+	margin-left: 10px;
+	padding: 5px 0;
+	}
+
+.flight-type .radio-txt {
+	cursor: pointer;
+	position: absolute;
+	top: 5px;
+	left: 18px;
+	}
+
+.flight-type .recent-search-dropdown {
+	width: auto;
+	z-index: 5;
+	margin-right: 10px;
+	}
+
+.flight-type .recent-search-dropdown > span {
+	width: auto;
+	position: relative;
+	cursor: pointer;
+	}
+
+.flight-type .recent-search-dropdown > span:hover {
+	color: #004990;
+	}
+
+.flight-type .recent-search-dropdown span.disabled-span,
+.flight-type .recent-search-dropdown span.disabled-span:hover {
+	color: gray;
+	cursor: default;
+	}
+
+.flight-type .recent-search-dropdown > span:hover .dwn-arrow {
+	background-position: right -6px;
+	}
+
+.flight-type .recent-search-dropdown .recent-results-list { display: none; }
+
+.flight-type .active .recent-results-list {
+	z-index: 10;
+	position: absolute;
+	top: -2px;
+	left: -10px;
+	display: block;
+	background: transparent url(/img/drop-down-blue-bg.png?v=1.4.5) -1139px 0 no-repeat;
+	color: #ffffff;
+	width: 145px;
+	height: 100px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-ms-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	}
+
+.flight-type .recent-results-list .inner {
+	padding: 0;
+	padding-top: 7px;
+	}
+
+.flight-type .active .recent-results-list > span,
+.flight-type .active .recent-results-list li {
+	float: none;
+	display: block;
+	cursor: pointer;
+	width: auto;
+	margin: 0;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	}
+
+.flight-type .active .recent-results-list li:hover {
+	background-color: #2e74b5;
+	}
+
+.flight-type .recent-results-list span {
+	position: relative;
+	display: inline-block;
+	width: auto;
+	height: auto;
+	padding-left: 10px;
+	}
+.flight-type .recent-results-list span .dwn-arrow {
+	top: 30%;
+	right: -12px;
+	position: absolute;
+	background-position: right -12px;
+	}
+.flight-type .recent-results-list ol {
+	padding-top: 5px;
+	}
+.fflight .flight-type .terms-conditions { display: none; }
+.fvacation .flight-type .terms-conditions {
+	width: auto;
+	display: inline;
+	position: relative;
+	}
+.flight-type .terms-conditions .rgt-arrow  
+{
+    top: 25%;
+    top: 7px\9;
+    right: -11px;  
+    *top: -10px;
+    *right: -110px;
+    *float: left;
+    *position: relative;
+	
+}
+
+.fflight .flight-type .round-trip,
+.fflight .flight-type .one-way,
+.fflight .flight-type .multi-city,
+.fflight .flight-type .dota { display: inline; position: relative; }
+.fvacation .flight-type .round-trip,
+.fvacation .flight-type .one-way,
+.fvacation .flight-type .multi-city,
+.fvacation .flight-type .dota { display: none; }
+
+.flight-type .round-trip { width: 75px; }
+.flight-type .one-way {}
+
+.flight-type .multi-city { width: auto; margin-left: 8px; }
+.flight-type .multi-city a:hover .rgt-arrow { background-position: right -14px; }
+.multi-city .rgt-arrow { position: absolute; top: 25%; right: -11px; }
+
+.flight-type .dota { float: right; width: auto; }
+.oldie .flight-type .dota { width: 228px; }
+.dota a { margin-right: 8px; }
+.dota .rgt-arrow { top: 25%; }
+.dota a:hover .rgt-arrow { background-position: right -14px; }
+
+/*=== Booker : Form Structure
+Author: Roger
+==================================================*/
+
+/*
+ * Hide all forms & inputs initially
+ */
+.js .booker input,
+.js .booker select { display: none; border: 0; outline: 0; }
+.book-flights, .fflight-form, .fvacation-form, .checkin-form, .fstatus-form { display: none; }
+
+.column-left,
+.column-right {
+	float: left;
+	width: 294px;
+	height: auto;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	}
+/**
+html.ie7 .fvacation .column-left,
+html.ie7 .fvacation .column-right { height: 150px; }
+**/
+.booker span.placeholder,
+#to_field, #vac_to_field, #from_field, #vac_from_field,
+#fs_to_field, #vac_fs_to_field, #fs_from_field, #vac_fs_from_field,
+#confirm_field, #vac_confirm_field, #depart_city_field, #vac_depart_city_field,
+#first_name_field, #vac_first_name_field, #last_name_field, #vac_last_name_field,
+#flight_number_field {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #4d90cd;
+	margin-left: 48px;
+	}
+.booker input::-webkit-input-placeholder {
+	color: #4d90cd;
+	}
+
+#to_field, #vac_to_field, #from_field, #vac_from_field,
+#fs_to_field, #vac_fs_to_field, #fs_from_field, #vac_fs_from_field,
+#confirm_field, #vac_confirm_field, #depart_city_field, #vac_depart_city_field,
+#first_name_field, #vac_first_name_field, #last_name_field, #vac_last_name_field,
+#flight_number_field {
+	display: inline;
+	border: 0;
+	color: #4d90cd;
+	width: 230px;
+	height: 24px;
+	margin: 4px 0 4px 55px;
+	}
+#to_field, #from_field:focus { outline: 0; }
+
+html.oldie #to_field, html.oldie #vac_to_field, html.oldie #from_field, html.oldie #vac_from_field,
+html.oldie #fs_to_field, html.oldie #vac_fs_to_field, html.oldie #fs_from_field, html.oldie #vac_fs_from_field,
+html.oldie #confirm_field, html.oldie #vac_confirm_field, html.oldie #depart_city_field, html.oldie #vac_depart_city_field,
+html.oldie #first_name_field, html.oldie #vac_first_name_field, html.oldie #last_name_field, html.oldie #vac_last_name_field,
+html.oldie #flight_number_field { margin-top: 10px; height: 18px; }
+
+.booker .disabled span.placeholder { cursor: default; color: #bababa; }
+
+
+/*=== Booker : Inset Form Buttons
+Author: Roger
+==================================================*/
+.from-wrap .from-btn,
+.depart-wrap .depart-btn,
+.to-wrap .to-btn,
+.return-wrap .return-btn {
+	cursor: pointer;
+	position: absolute;
+	top: 4px;
+	left: 3px;
+	background: transparent url(/img/form-btn-sp.png?v=1.3) 0 0 no-repeat;
+	width: 41px;
+	height: 27px;
+	}
+.from-wrap .from-btn { background-position: 0 0; }
+.depart-wrap .depart-btn { background-position: -46px 0; }
+.to-wrap .to-btn { background-position: -92px 0; }
+.return-wrap .return-btn { background-position: -138px 0; }
+
+/*
+ * Hover States on container hover
+ */
+.from-wrap:hover .from-btn { background-position: 0 -64px; }
+.depart-wrap:hover .depart-btn { background-position: -46px -64px; }
+.to-wrap:hover .to-btn { background-position: -92px -64px; }
+.return-wrap:hover .return-btn { background-position: -138px -64px; }
+
+
+/*
+ * Disabled Form Field Button States
+ */
+#booker .disabled { cursor: default; }
+#booker .disabled .from-btn { cursor: default; background-position: 0 -32px; }
+#booker .disabled .depart-btn { cursor: default; background-position: -46px -32px; }
+#booker .disabled .to-btn { cursor: default; background-position: -92px -32px; }
+#booker .disabled .return-btn { cursor: default; background-position: -138px -32px; }
+
+
+/*=== Booker : Autofill Display
+Author: Roger
+==================================================*/
+.from-wrap .autofill,  /*Turn off the display by default */
+.to-wrap .autofill,
+.depart-city-wrap .autofill,
+.from-wrap .autofill-placeholder,
+.to-wrap .autofill-placeholder,
+.depart-city-wrap .autofill-placeholder { display: none; }
+
+.active .autofill,
+.placeholder .autofill-placeholder {
+	z-index: 50;
+	position: absolute;
+	top: 33px;
+	left: -1px;
+	display: block;
+	background-color: #ffffff;
+	color: #4d90cd;
+	width: 292px;
+	border: 1px solid #d3e3f3;
+	padding-bottom: 10px;
+	}
+.placeholder .autofill-placeholder { z-index: 40; }
+
+.active .autofill .inner,
+.placeholder .autofill-placeholder .inner { padding: 0 12px; }
+
+.active .autofill .city-list,
+.active .autofill .city-desc,
+.active .autofill .show-more,
+.placeholder .autofill-placeholder .show-more {
+	border-bottom: 1px solid #D3E3F3;
+	margin-top: 8px;
+	padding-bottom: 5px;
+	}
+
+.no-results .autofill .city-desc { display: none; }
+.no-results .autofill .city-list { height: 0; margin: 0; padding: 0; display: none; border: none; overflow: hidden; }
+
+.active .autofill .show-more,
+.placeholder .autofill-placeholder .show-more { border: 0; padding-bottom: 0; }	
+	
+.active .autofill .city-desc { cursor: default; }
+
+.active .autofill .city-list li,
+.active .autofill .city-desc li,
+.active .autofill .show-more li,
+.placeholder .autofill-placeholder .show-more li {
+	background: transparent url(/img/city-sml-disc-orange.png) left 4px no-repeat;
+	margin-top: 5px;
+	margin-bottom: 2px;
+	padding-left: 8px;
+	}
+.active .autofill .city-desc li,
+.active .autofill .show-more li,
+.placeholder .autofill-placeholder .show-more li {
+	float: left;
+	background-image: url(/img/city-lrg-disc-orange.png);
+	background-position: left center;
+	margin-top: 0;
+	margin-left: 14px;
+	padding-left: 10px;
+	}
+.active .autofill .show-more li,
+.placeholder .autofill-placeholder .show-more li {
+	position: relative;
+	background: none;
+	margin-left: 20px;
+	padding: 0;
+	}
+.oldie .active .autofill .city-list li, /* IE position fixing */
+.oldie .active .autofill .city-desc li,
+.oldie .active .autofill .show-more li,
+.oldie .placeholder .autofill-placeholder .show-more li { background-position: left 3px; }
+
+.active .autofill .show-more li a:hover .rgt-arrow,
+.placeholder .autofill-placeholder .show-more li a:hover .rgt-arrow { background-position: right -14px; }
+
+
+/*
+ * City List Hover States (This is a global changet meaning this affects the city list in the modal window as well)
+ */
+
+.city-list a:visited {
+	color: #4d90cd;
+}
+.city-list a { padding: 2px 3px; }
+.city-list a.active,
+.city-list a:hover,
+.city-list .partner a:hover {
+	color: #ffffff;
+	text-decoration: none !important;
+	padding: 2px 3px;
+	}
+.city-list a.active,
+.city-list a:hover { background-color: #ff9900; }
+
+.city-list .partner a.active,
+.city-list .partner a:hover { background-color: #767676; }
+
+/*.fvacation-form .city-list .partner a.active,
+.fvacation-form .city-list .partner a:hover { background-color: #ff9900; }*/
+
+.active .show-more .rgt-arrow,
+.placeholder .show-more .rgt-arrow {
+	top: 10%;
+	right: -11px;
+	position: absolute;
+	}
+.oldie .active .show-more .rgt-arrow,
+.oldie .placeholder .show-more .rgt-arrow { top: 1px; } /* IE position fixing */
+
+/*
+ * Typograpy and Special Cases
+ */
+.active .autofill .city-list .partner {
+	background-image: url(/img/city-sml-disc-grey.png);
+	color: #a6a6a6;
+	}
+.active .autofill .city-desc .partner {
+	background-image: url(/img/city-lrg-disc-grey.png);
+	color: #a6a6a6;
+	}
+	
+/*.fvacation-form .autofill .city-list .partner {
+	background-image: url(/img/city-sml-disc-orange.png);
+	}*/
+	
+.active .autofill .city-desc .first,
+.active .autofill .show-more .first,
+.placeholder .autofill-placeholder .show-more .first { margin: 0; }
+
+/*=== Booker : Find Flights & Vacations (Default State)
+Author: Roger
+==================================================*/
+.fflight .book-flights { display: block; }
+
+.fflight .fflight-form,
+.fvacation .fvacation-form { display: block; }
+
+.fvacation .fflight-form { display: none; }
+
+.from-wrap,
+.depart-wrap,
+.to-wrap,
+.return-wrap,
+.confirm-wrap,
+.depart-city-wrap,
+.name-wrap,
+.flight-number-wrap {
+	cursor: pointer;
+	position: relative;
+	border-top: 1px solid #c0c0c0;
+	border-right: 1px solid #f0f0f0;
+	border-bottom: 1px solid #e7e7e7;
+	border-left: 1px solid #c0c0c0;
+	/* Fallback declaration for unsupported browsers */
+	background-image: url(../img/input-bg.png) 0 top repeat-x;
+	/* Multiple Backgrounds using CSS3 */
+	background: url(../img/input-bg.png) 0 top repeat-x,
+							url(../img/input-bg.png) left 0 repeat-y,
+							url(../img/input-bg.png) left top no-repeat,
+							url(../img/input-bg.png) left top no-repeat;
+	/* Declare background-color at the end to complete the cascade */
+	background-color: #ffffff;
+	height: 15px;
+	margin-top: 11px;
+	padding: 10px;
+	z-index: 2;
+	}
+
+.depart-wrap:focus,  
+.return-wrap:focus { outline: 0; }
+
+.from-wrap, .to-wrap,
+.depart-city-wrap { z-index: 4; height: 34px; padding: 0; }
+.to-wrap { z-index: 3; }
+
+.depart-wrap,
+.return-wrap { overflow: hidden; }
+
+.depart-wrap input,
+.return-wrap input { width: 0; height: 0; overflow: hidden; display: block !important; position: absolute; top: -100px; }
+
+/*=== Booker : Find Flights & Vacations : Passenger Drop Downs
+Author: Roger
+==================================================*/
+
+
+.passengers,
+.fare-type { width: 297px; height: 37px; margin-top: 10px; }
+
+.fflight .passengers .kid-vacation-dropdown {
+	display: none;
+	}
+
+.passengers .adult-dropdown,
+.passengers .kid-dropdown,
+.passengers .kid-vacation-dropdown,
+.passengers .infant-dropdown {
+	z-index: 1;
+	cursor: pointer;
+	position: relative;
+	float: left;
+	background: transparent url(/img/drop-down-bg.png?v=1.3) 0 0 no-repeat;
+	width: 82px;
+	height: 37px;
+	white-space: nowrap;	
+	}
+.passengers .dd-num,
+.passengers .dd-text {
+	display: inline-block;
+	color: #4d90cd;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 11px;
+	padding-left: 8px;
+	}
+
+.passengers .dd-text {
+	padding: 0;
+	margin: 0; 
+	}
+
+.passengers .adult-dropdown {}
+.passengers .kid-dropdown,
+.passengers .kid-vacation-dropdown {
+	background-position: 4px 0;
+	margin: 0 10px 0 10px;
+	padding: 0 0;
+	}
+.passengers .age { background-position: 0 -84px; }
+.passengers .infant-dropdown {
+	background-position: 0 -42px;
+	width: 115px;
+	}
+
+.adult-dropdown .adult-count,
+.kid-dropdown .kid-count,
+.kid-vacation-dropdown .kid-count,
+.infant-dropdown .infant-count { display: none; }
+
+.passengers .active .adult-count,
+.passengers .active .kid-count,
+.passengers .active .infant-count {
+	z-index: 20;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	background: transparent url(/img/drop-down-blue-bg.png?v=1.4.2) 0 0 no-repeat;
+	-ms-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);	
+	color: #ffffff;
+	width: 80px;
+	height: 204px;
+	margin-left: 1px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;		    
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	}
+
+	
+#vac_adult_count_display {
+    height:180px;
+    background-position: -2368px 0;
+}
+.passengers .active .kid-count { margin-left: 5px; }
+.fvacation .passengers .active .kid-count { height: 120px; }
+
+.passengers .active .infant-count {
+	background-position: -170px 0;
+	width: 113px;
+	height: 125px;
+	}
+
+.passengers .active .adult-count .inner, /* inner-padding-reset */
+.passengers .active .kid-count .inner,
+.passengers .age .kid-age .inner,
+.passengers .active .infant-count .inner { padding: 0; }
+
+.passengers .active .adult-count ol,
+.passengers .active .kid-count ol,
+.passengers .active .infant-count ol { padding-bottom: 5px; }
+
+.passengers .active .adult-count span,
+.passengers .active .kid-count span,
+.passengers .active .infant-count span,
+.passengers .active .adult-count a,
+.passengers .active .kid-count a,
+.passengers .active .infant-count a {
+	float: none;
+	cursor: pointer;
+	color: #ffffff;
+	margin: 0;
+	padding-bottom: 5px;
+	}
+
+.passengers .active .adult-count .dd-text,
+.passengers .active .kid-count .dd-text,
+.passengers .active .infant-count .dd-text {
+	color: #ffffff;
+	margin: 0 0 5px 0;
+	padding: 0;
+	}
+
+.passengers .active .adult-count li,
+.passengers .active .kid-count li,
+.passengers .active .infant-count li {
+	font-weight: bold;
+	width: auto;
+	padding: 5px 0 5px 20px;
+	}
+.passengers .active .adult-count li:hover,
+.passengers .active .kid-count li:hover,
+.passengers .active .infant-count li:hover { background-color: #2e74b5; }
+
+/*=== Booker : Find Vacations : Kid Drop Down
+Author: Roger
+==================================================*/
+.fvacation .kid-dropdown,
+.kid-vacation-dropdown .kid-age { display: none; }
+.fvacation .passengers .kid-vacation-dropdown { display: block; }
+
+.passengers .kid-vacation-dropdown .hotspot { display: inline-block; width: 100%; }
+
+.passengers .kid-1,
+.passengers .kid-2,
+.passengers .kid-3 { height: 70px; }
+
+.passengers .age .kid-age,
+.passengers .kid-1 .kid-age,
+.passengers .kid-2 .kid-age,
+.passengers .kid-3 .kid-age {
+	z-index: 30;
+	position: absolute;
+	top: 37px;
+	left: 0;
+	display: block;
+	background: transparent url(/img/drop-down-blue-bg.png?v=1.4.2) -406px top no-repeat;
+	color: #ffffff;
+	width: 146px;
+	height: 31px;
+	}
+.passengers .kid-2 .kid-age { background-position: -557px top; width: 238px; }
+.passengers .kid-3 .kid-age { background-position: -800px top; width: 334px; }
+
+.passengers .age .kid-age input {
+	display: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #4d90cd;
+	width: 80px;
+	height: 18px;
+	border: 1px solid #c0c0c0;
+	border-top: 2px solid #c0c0c0;
+	padding-left: 5px;
+	}
+	
+html.ie7 .passengers .age .kid-age input {
+	width: 80px;
+	}		
+
+.passengers .kid-1 .kid-age #kid_age_1, /* Display Styles for Kid Age Inputs */
+.passengers .kid-2 .kid-age #kid_age_1,
+.passengers .kid-3 .kid-age #kid_age_1,
+.passengers .kid-2 .kid-age #kid_age_2,
+.passengers .kid-3 .kid-age #kid_age_2,
+.passengers .kid-3 .kid-age #kid_age_3 { display: block; }
+
+
+.passengers .age .kid-age .ages {
+	padding: 4px 0 6px;
+	}
+
+.passengers .age .kid-age .ages li.first { margin-left: 10px; }
+.passengers .age .kid-age .ages li.second { margin-left: 10px; }
+.passengers .age .kid-age .ages li {
+	float: left;
+	margin-left: 5px;
+	}
+html.ie7 .passengers .age .kid-age .ages li {margin-left: 4px;}	
+html.ie7 .passengers .age .kid-age .ages li.first { margin-left: 5px; }
+html.ie7 .passengers .age .kid-age .ages li.second { margin-left: 5px; }
+
+	
+	
+.passengers .age .kid-age .ages li span {
+	cursor: default;
+	display: inline-block;
+	padding: 7px 0 7px 3px;
+	}
+
+/*=== Booker : Find Flights & Find Vacations : Fare Type
+Author: Roger
+==================================================*/
+.fare-type li {
+	position: relative;
+	float: left;
+	color: #4d90cd;
+	font-weight: bold;
+	width: 85px;
+	height: 20px;
+	margin-left: 6px;
+	}
+
+.fare-type .radio-styled,
+.fare-type .radio-styled-active,
+.fare-type .radio-styled-selected { top: 8px; }
+
+
+.fare-type .radio-txt {
+	cursor: pointer;
+	position: absolute;
+	top: 9px;
+	left: 18px;
+	}
+
+.fare-type .lowest { width: 58px; margin: 0 0 0 14px; }
+.fare-type .refundable {}
+.fare-type .points {}
+
+.fflight .hotel-dropdown,
+.fflight .rental-car,
+.fflight .rental-yes,
+.fflight .rental-no { display: none; }
+
+.fvacation .lowest,
+.fvacation .refundable,
+.fvacation .points { display: none; }
+
+.fvacation .hotel-dropdown,
+.fvacation .rental-car,
+.fvacation .rental-yes,
+.fvacation .rental-no { display: block; }
+
+.fvacation .hotel-dropdown {
+	z-index: 1;
+	cursor: pointer;
+	position: relative;
+	float: left;
+	background: transparent url(/img/drop-down-bg.png?v=1.3) 0 -42px no-repeat;
+	width: 115px;
+	height: 37px;
+	}
+.fare-type .dd-num,
+.fare-type .dd-text {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 12px;
+	padding-left: 10px;
+	}
+
+.fare-type .dd-text {
+	padding-left: 0;
+	}
+
+.hotel-dropdown .hotel-room-count { display: none; }
+
+.fare-type .active .hotel-room-count {
+	z-index: 20;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	background: transparent url(/img/drop-down-blue-bg.png?v=1.4.2) -1410px 0px no-repeat;
+	color: #ffffff;
+	width: 113px;
+	height: 120px;
+	-ms-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	}
+
+.fare-type .active .hotel-room-count .inner {
+	padding: 0;
+	}
+
+.fare-type .active .hotel-room-count ol { padding: 5px 0; }
+
+.fare-type .active .hotel-room-count li {
+	cursor: pointer;
+	float: none;
+	color: #ffffff;
+	font-weight: bold;
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 5px 0 5px 20px;
+	}
+
+.fare-type .active .hotel-room-count .dd-text { margin: 0; padding: 0; }
+
+.fare-type .active .hotel-room-count li:hover { background-color: #2e74b5; }
+
+.fvacation .rental-car {
+	width: 72px;
+	margin-left: 5px;
+	}
+
+.fvacation .rental-car span {
+	position: absolute;
+	top: 9px;
+	left: 10px;
+	font-weight: bold;
+	}
+
+.fvacation .rental-yes,
+.fvacation .rental-no { width: 45px; }
+
+
+/*=== Booker : Find Flights & Find Vacations : Special Needs
+Author: Roger
+==================================================*/
+.booker .special-needs {
+	z-index: 1;
+	clear: left;
+	width: 385px;
+	
+	}
+.special-needs a {
+	display: inline-block;
+	background: transparent url(/img/special-needs-bg.gif) 0 0 no-repeat;
+	width: 361px;
+	height: 16px;
+	padding: 3px 4px 0 20px;
+	}
+.special-needs1 a {
+	display: inline-block;
+	background: transparent url(/img/special-needs-icon.gif) 0 0 no-repeat;
+	height: 16px;
+	padding: 5px 4px 0 20px;
+	/*margin-top: 5px;*/
+	}
+.special-needs2 a {
+	display: inline-block;
+	background: transparent url(/img/pets-baggage-icon.gif) 0 0 no-repeat;
+	height: 16px;
+	padding: 5px 4px 0 20px;
+	/*margin-top: 5px;*/
+	}
+.special-needs3 a {
+	display: inline-block;
+	/*background: transparent url(/img/pets-baggage-icon.gif) 0 0 no-repeat;/**/
+	/**/background: transparent url(/img/baggage-icon.png) 0 0 no-repeat;/**/
+	height: 16px;
+	padding: 5px 4px 0 22px;
+	/*margin-top: 5px;*/
+	}
+.oldie .special-needs a, .special-needs1 a, .special-needs2 a { padding-top: 5px; margin-top: 14px; } /* IE Position Fix */
+.special-needs a:hover, .special-needs1 a:hover, .special-needs2 a:hover, .special-needs3 a:hover { background-position: 0 -21px; }
+@-moz-document url-prefix() {	 
+	    .special-needs a, .special-needs1 a, .special-needs2 a { margin-top: 3px; }	 /*Firefox Position Fix*/
+}
+
+/*=== Booker : Check-In (State)
+Author: Roger
+==================================================*/
+
+.checkin .checkin-form,
+.checkin #confirm_field,
+.checkin #depart_city_field,
+.checkin #first_name_field,
+.checkin #last_name_field { display: block; }
+
+.checkin a:hover { text-decoration: underline; }
+.checkin h3 { font-size: 18px; margin: 15px 0 26px; }
+.checkin h6 {
+	color: #454545;
+	margin: 0 0 5px;
+	}
+
+.checkin .column-left,
+.checkin .column-right { height: 80px; }
+
+.checkin .confirm-wrap,
+.checkin .depart-city-wrap,
+.checkin .name-wrap {
+	height: 33px;
+	padding: 0;
+	}
+
+.checkin #confirm_field,
+
+.checkin #depart_city_field,
+.checkin #first_name_field,
+.checkin #last_name_field {
+	height: 25px;
+	margin: 4px 0 0 10px;
+	padding: 0;
+	width:270px;
+	}
+
+.checkin .media,
+.checkin .fine-print { float: left; color: #4d90cd; }
+.checkin .fine-print { clear: left; width: 350px; margin-top: 5px;}
+
+
+/*=== Booker : Flight Status (State)
+Author: Madan
+==================================================*/
+
+/* FS Search Type */
+/* Default Button States */
+.search-type .bycities-btn,
+.search-type .byflightnum-btn {
+	display: block;
+	background: transparent url(/img/search-type-bg.png) 0 -72px no-repeat;
+	width: 94px;
+	height: 31px;
+	padding-left: 13px;
+	}
+	
+.search-type .bycities-btn a,
+.search-type .byflightnum-btn a {
+	display: block;
+	background: transparent url(/img/search-type-bg.png) 79px -108px no-repeat;
+	color: #f1f5f8;
+	width: 94px;
+	height: 31px;
+	}
+.search-type .bycities-btn span,
+.search-type .byflightnum-btn span {
+	cursor: pointer;
+	display: block;
+	background-color: #4d90cd;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	text-align: center;
+	width: 80px;
+	height: 20px;
+	padding-top: 11px;
+	}
+	
+
+/* Active Button State */
+.search-type .active .bycities-btn,
+.search-type .active .byflightnum-btn { background-position: 0 0; }
+.search-type .active .bycities-btn a,
+.search-type .active .byflightnum-btn a { background-position: 79px -36px; }
+.search-type .active .bycities-btn span,
+.search-type .active .byflightnum-btn span { background-color: #004990; }
+
+/* Hover State */
+.search-type .bycities-btn:hover,
+.search-type .byflightnum-btn:hover { background-position: 0 0; }
+.search-type .bycities-btn:hover span,
+.search-type .byflightnum-btn:hover span { background-color: #004990; }
+.search-type .bycities-btn:hover a,
+.search-type .byflightnum-btn:hover a { background-position: 79px -36px; }
+
+.search-type .byflightnum-btn
+{
+    width: 150px;    
+}	
+.search-type .byflightnum-btn a
+{
+    background: transparent url(/img/search-type-bg.png) 136px -108px no-repeat;
+    width: 150px;
+}
+.search-type .byflightnum-btn span
+{
+    width: 137px;
+}
+.search-type .byflightnum-btn:hover a { background-position: 136px -36px; }
+.search-type .active .byflightnum-btn a { background-position: 136px -36px; }
+
+
+.displayNone
+{
+    display: none;
+}
+.displayBlock
+{
+    display:block;
+}
+.displayInline
+{
+    display:inline;
+}
+
+#ffstatus .from-wrap, #ffstatus .flight-number-wrap
+{
+    margin-top:2px;
+}
+
+#ffstatus .departure-dropdown {
+	z-index: 1;
+	cursor: pointer;
+	position: relative;
+	float: left;
+	background: transparent url(/img/drop-down-bg.png?v=1.3) 0 -366px no-repeat;
+	width: 293px;
+	height: 37px;
+	white-space: nowrap;	
+	}
+#ffstatus .dd-text {
+	display: inline-block;
+	color: #4d90cd;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 11px;
+	padding-left: 8px;
+	}
+/*
+#ffstatus .dd-text {
+	padding: 0;
+	margin: 0; 
+}
+	*/
+.departure-dropdown .departureContainer 
+{
+    display: none; 
+}
+
+#ffstatus .active .departureContainer {
+	z-index: 20;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	background: transparent url(/img/drop-down-blue-bg.png?v=1.3) -2453px 0 no-repeat;
+	-ms-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);	
+	color: #ffffff;
+	width: 293px;
+	height: 108px;
+	margin-left: 1px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;		    
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+}
+
+
+#ffstatus .active .departureContainer .inner{ padding: 0; }
+
+#ffstatus .active .departureContainer ol{ padding-bottom: 5px; }
+
+#ffstatus .active .departureContainer span,
+#ffstatus .active .departureContainer a{
+	float: none;
+	cursor: pointer;
+	color: #ffffff;
+	margin: 0;
+	padding-bottom: 5px;
+	}
+
+#ffstatus .active .departureContainer .dd-text {
+	color: #ffffff;
+	margin: 0 0 5px 0;
+    padding-left: 8px;
+	padding-top: 11px;
+}
+
+#ffstatus .active .departureContainer li {
+	font-weight: bold;
+	width: auto;
+	padding: 5px 0 5px 8px;
+	}
+#ffstatus .active .departureContainer li:hover{ background-color: #2e74b5; }
+
+
+
+/*=== Booker : Flight Status (State)
+Author: Madan
+==================================================*/
+
+/* FS Search Type */
+/* Default Button States */
+.search-type .bycities-btn,
+.search-type .byflightnum-btn {
+	display: block;
+	background: transparent url(/img/search-type-bg.png) 0 -72px no-repeat;
+	width: 94px;
+	height: 31px;
+	padding-left: 13px;
+	}
+	
+.search-type .bycities-btn a,
+.search-type .byflightnum-btn a {
+	display: block;
+	background: transparent url(/img/search-type-bg.png) 79px -108px no-repeat;
+	color: #f1f5f8;
+	width: 94px;
+	height: 31px;
+	}
+.search-type .bycities-btn span,
+.search-type .byflightnum-btn span {
+	cursor: pointer;
+	display: block;
+	background-color: #4d90cd;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	text-align: center;
+	width: 80px;
+	height: 20px;
+	padding-top: 11px;
+	}
+	
+
+/* Active Button State */
+.search-type .active .bycities-btn,
+.search-type .active .byflightnum-btn { background-position: 0 0; }
+.search-type .active .bycities-btn a,
+.search-type .active .byflightnum-btn a { background-position: 79px -36px; }
+.search-type .active .bycities-btn span,
+.search-type .active .byflightnum-btn span { background-color: #004990; }
+
+/* Hover State */
+.search-type .bycities-btn:hover,
+.search-type .byflightnum-btn:hover { background-position: 0 0; }
+.search-type .bycities-btn:hover span,
+.search-type .byflightnum-btn:hover span { background-color: #004990; }
+.search-type .bycities-btn:hover a,
+.search-type .byflightnum-btn:hover a { background-position: 79px -36px; }
+
+.search-type .byflightnum-btn
+{
+    width: 150px;    
+}	
+.search-type .byflightnum-btn a
+{
+    background: transparent url(/img/search-type-bg.png) 136px -108px no-repeat;
+    width: 150px;
+}
+.search-type .byflightnum-btn span
+{
+    width: 137px;
+}
+.search-type .byflightnum-btn:hover a { background-position: 136px -36px; }
+.search-type .active .byflightnum-btn a { background-position: 136px -36px; }
+
+
+.displayNone
+{
+    display: none;
+}
+.displayBlock
+{
+    display:block;
+}
+.displayInline
+{
+    display:inline;
+}
+
+#ffstatus .from-wrap, #ffstatus .flight-number-wrap
+{
+    margin-top:2px;
+}
+
+#ffstatus .departure-dropdown {
+	z-index: 1;
+	cursor: pointer;
+	position: relative;
+	float: left;
+	background: transparent url(/img/drop-down-bg.png?v=1.3) 0 -366px no-repeat;
+	width: 293px;
+	height: 37px;
+	white-space: nowrap;	
+	}
+#ffstatus .dd-text {
+	display: inline-block;
+	color: #4d90cd;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 11px;
+	padding-left: 8px;
+	}
+/*
+#ffstatus .dd-text {
+	padding: 0;
+	margin: 0; 
+}
+	*/
+.departure-dropdown .departureContainer 
+{
+    display: none; 
+}
+
+#ffstatus .active .departureContainer {
+	z-index: 20;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	background: transparent url(/img/drop-down-blue-bg.png?v=1.3) -2453px 0 no-repeat;
+	-ms-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);	
+	color: #ffffff;
+	width: 293px;
+	height: 108px;
+	margin-left: 1px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;		    
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+}
+
+
+#ffstatus .active .departureContainer .inner{ padding: 0; }
+
+#ffstatus .active .departureContainer ol{ padding-bottom: 5px; }
+
+#ffstatus .active .departureContainer span,
+#ffstatus .active .departureContainer a{
+	float: none;
+	cursor: pointer;
+	color: #ffffff;
+	margin: 0;
+	padding-bottom: 5px;
+	}
+
+#ffstatus .active .departureContainer .dd-text {
+	color: #ffffff;
+	margin: 0 0 5px 0;
+    padding-left: 8px;
+	padding-top: 11px;
+}
+
+#ffstatus .active .departureContainer li {
+	font-weight: bold;
+	width: auto;
+	padding: 5px 0 5px 8px;
+	}
+#ffstatus .active .departureContainer li:hover{ background-color: #2e74b5; }
+
+
+
+/*=== Booker : Flight Status (State)
+Author: Roger
+==================================================*/
+.fstatus .fstatus-form,
+.fstatus #fs_from_field,
+.fstatus #fs_to_field,
+.fstatus #flight_number_field  { display: block; }
+
+.fstatus .flight-number-wrap {
+	height: 34px;
+	padding: 0;
+	}
+
+.fstatus #flight_number_field {
+	height: 26px;
+	margin: 4px 0 0 10px;
+	padding: 0;
+	}
+
+/*
+.fstatus .column-left,
+.fstatus .column-right { margin-top: 47px; }
+*/
+
+.fstatus .form-heading { font-size: 18px; }
+
+.fstatus h4 {	font-size: 12px; margin: 20px 0 10px; }
+
+.fstatus .departure-date li {
+	cursor: pointer;
+	position: relative;
+	float: left;
+	color: #4d90cd;
+	font-weight: bold;
+	width: 85px;
+	height: 20px;
+	}
+
+.fstatus .departure-date .radio-styled { top: 0; }
+.fstatus .departure-date .txt {
+	position: absolute;
+	top: 1px;
+	left: 18px;
+	}
+
+/*=== Booker : Submit Buttons
+Author: Roger
+==================================================*/
+.booker .submit-btn-wrap {
+	cursor: pointer;
+	position: absolute;
+	right: 23px;
+	bottom: 5px;
+//	background: transparent url(/img/submit-btn-sp.png) left 0 no-repeat;
+	width: 137px;
+	height: 35px;
+	padding-left: 3px;
+	}
+.submit-btn-wrap .submit-btn-inner {
+//	background: transparent url(/img/submit-btn-sp.png) right -40px no-repeat;
+	width: 137px;
+	height: 35px;
+	padding-right: 3px;
+	}
+
+.booker .book-flights .submit-btn-wrap,
+.booker .book-flights .submit-btn-inner { width: 67px; }
+.booker .checkin-form .submit-btn-wrap,
+.booker .checkin-form .submit-btn-inner { width: 98px; }
+.booker .fstatus-form .submit-btn-wrap,
+.booker .fstatus-form .submit-btn-inner { width: 108px; }
+
+.booker .submit-btn-wrap:hover { background-position: left -80px; }
+.booker .submit-btn-wrap:hover .submit-btn-inner { background-position: right -120px; }
+.booker .book-flights .submit-btn-wrap:hover .find-it-btn,
+.booker .fvacation-form .submit-btn-wrap:hover .find-it-btn,
+.booker .checkin-form .submit-btn-wrap:hover #checkin-btn,
+.booker .fstatus-form .submit-btn-wrap:hover #check-status-btn { background-color: #ff7300; }
+
+.booker .book-flights .find-it-btn,
+.booker .fvacation-form .find-it-btn,
+.booker .checkin-form #checkin-btn,
+.booker .fstatus-form #check-status-btn {
+	display: block;
+	background-color: #ff9900;
+	color: #ffffff;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	width: 137px;
+	height: 35px;
+	border: 0;
+	margin: 0;
+	padding: 3px 0 0 0;
+	}
+	
+html.ie7 .booker .book-flights .find-it-btn,
+html.ie7 .booker .fvacation-form .find-it-btn,
+html.ie7 .booker .checkin-form #checkin-btn,
+html.ie7 .booker .fstatus-form #check-status-btn {
+	filter: alpha(opacity=100);	
+	}
+	
+.booker .book-flights .find-it-btn { width: 67px; }
+.booker .checkin-form #checkin-btn { width: 98px; }
+.booker .fstatus-form #check-status-btn { width: 287px; }
+
+
+/* flight status changes - Madan*/
+#ffstatus .submit-btn-inner
+{
+    width:286px !important;
+}
+#ffstatus .submit-btn-wrap
+{
+    position:relative;
+    float:left;
+    margin-top:11px;
+    margin-left:1px;
+    width:293px !important;
+    bottom:0;
+    right:0;
+}
+
+
+
+/*=== Promotional & Itinerary Module
+Author: Andrew
+Colors: Orange: #ff9900 | Light Blue: #4d90cd
+	      Dark Blue: #004990 | Darker Blue: #00285e
+==================================================*/
+
+#promo-getaway-wrap {
+	/* height: 426px; */
+	margin-top: 10px;
+	}
+
+.promo-carousel {
+	position: relative;
+	height: 424px;
+	overflow: hidden;
+	}
+
+.promo-carousel .prev, 
+.promo-carousel .next {
+	position: absolute;
+	top: -10000px;
+	left: -10000px;
+	}
+
+.promo-carousel .visibleStage,
+.promo-carousel .visibleStage ul li {
+	width: 638px;
+	}
+
+.promo-carousel .visibleStage ul li a {
+	display: block;
+	width: 638px;
+	height: 424px;
+	overflow: hidden;
+	}
+
+.promo-carousel .carouselPagin {
+	background: #FFF;
+	position: relative;
+	top: -20px;
+	padding: 5px 5px 5px 10px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+	}
+
+.promo-carousel .carouselPagin span {
+	background: url(/img/bg-pagination-dots.jpg) no-repeat 0 -55px;
+	}
+
+.carousel .carouselPagin span:hover {
+	background-position: 0 0;
+	}
+
+.carousel .carouselPagin span.active {
+	background-position: 0 0;
+	}
+
+.itinerary {
+	background: url(/img/bg-itinerary.jpg) no-repeat 0 0;
+	height: 424px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	}
+
+.itinerary .itinerary-wrap {
+	padding: 10px 20px 20px;
+	}
+	
+.itinerary .loading {
+	background: url(/img/ajax-loader.gif) no-repeat center center;
+	height: 394px;
+	overflow: hidden;
+	}		
+
+.itinerary h2.itinerary-heading {
+	width: 200px;
+	float: left;
+	color: #fff;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    height: 70px;
+    line-height: 1.35;
+    margin: 0;
+	}
+
+.itinerary .check-in-print {
+	width: 380px;
+	float: right;
+	padding: 10px 0 0;
+	}
+
+.itinerary .check-in-print .button {
+	display: block;
+	float: right;
+	background: url(/img/bg-itinerary-check-in-button.png) no-repeat 0 0;
+	color: #fff;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	padding: 0 0 0 50px;
+	text-transform: uppercase;
+	}
+
+.itinerary .check-in-print .button .text {
+	display: block;
+	background: url(/img/bg-itinerary-check-in-button.png) no-repeat right -50px;
+	padding: 11px 17px 11px 0;
+	}
+
+.itinerary .check-in-print .button-disable {
+	background-position: 0 -100px;
+	color: #8096b3;
+	cursor: default;
+	}
+
+.itinerary .check-in-print .button-disable .text {
+	background-position: right -150px;
+	}
+
+.itinerary .check-in-print .button-print {
+	background-position: 0 -200px;
+	padding: 0 0 0 63px;
+	}
+
+.itinerary .check-in-print .button-print .text {
+	padding-right: 19px;
+	}
+	
+.itinerary .check-in-print .button:hover {	
+	background-position: 0 -250px; 
+	}
+	
+.itinerary .check-in-print .button-print:hover {	
+	background-position: 0 -300px; 
+	}
+	
+.itinerary .check-in-print .button:hover .text,
+.itinerary .check-in-print .button-print:hover .text {	
+	background-position: right -350px; 
+	}		
+	
+.itinerary .check-in-print .button-disable:hover {
+	background-position: 0 -100px;
+	}
+
+.itinerary .check-in-print .button-disable:hover .text {
+	background-position: right -150px;
+	}	
+
+.itinerary .table-row {
+	clear: both;
+	color: #FFF;
+	text-transform: uppercase;
+	border-bottom: 1px solid #0e4b82;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	}
+
+.itinerary .row1 {
+	padding-bottom: 12px;
+	}
+
+.itinerary .row2,
+.itinerary .row3 {
+	padding: 15px 0 12px;
+	}
+
+.itinerary .table-row ul.itinerary-share {
+	display: block;
+	float: right;
+	width: 320px;
+	}
+
+.itinerary .table-row .itinerary-share li {
+	float: right;
+	width: 24px;
+	}
+
+.itinerary .table-row .itinerary-share li span {
+	display: inline !important;
+	float: none;
+	}
+
+.itinerary .table-row .itinerary-share li.share-this-trip {
+	width: 120px;
+	padding: 7px 0 0;
+	text-align: right;
+	font-size: 12px;
+	font-weight: 700;
+	}
+
+.itinerary .table-row .itinerary-share li.share-this-trip span {
+	font-size: 12px;
+	}
+
+.itinerary .table-row .itinerary-share li.facebook,
+.itinerary .table-row .itinerary-share li.twitter  {
+	width: 24px;
+	padding-left: 7px;
+	}
+
+.itinerary .table-row .itinerary-share li.pick-me-up {
+	width: 110px;
+	margin-left: 10px;
+	padding-top: 5px;
+	border-left: 1px solid #0e4b82;
+	text-align: right;
+	}
+
+.itinerary .table-row .itinerary-share li.pick-me-up a {
+	display: block;
+	background: url(/img/bg-itinerary-pick-me-up-icon.png) no-repeat 13px 0px;
+	padding: 2px 0 4px 40px;
+	color: #5ea1de;
+	font-weight: 700;
+	font-size: 12px;
+	}
+	
+	
+html.ie7 .itinerary .table-row .itinerary-share li.pick-me-up a,	
+html.ie8 .itinerary .table-row .itinerary-share li.pick-me-up a {	
+	padding-left: 20px;
+	}		
+
+.itinerary .table-row .itinerary-share li.pick-me-up a:hover {
+	background-position: 13px -50px;
+	color: #76beec;
+	text-decoration: underline;
+	}
+
+
+#tooltip.tooltip-pick-me-up .tooltipContentArea {
+	display: block;
+	background: url(/img/bg-itinerary-pick-me-up-tip.png) no-repeat 0 0;
+	width: 282px;
+	height: 127px;
+	overflow: hidden;
+	z-index: 10;
+	text-align: left;
+	color: #454545;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.6;
+	text-transform: none;
+	}
+
+/*
+html.ie7 #tooltip.tooltip-pick-me-up .tooltipContentArea {
+	background-image:  url(/img/bg-itinerary-pick-me-up-tip-ie.png);
+	}
+*/
+
+#tooltip.tooltip-pick-me-up .tooltipContentArea strong {
+	display: block;
+	padding: 29px 28px 0 88px;
+	font-weight: 400;
+	}
+
+.itinerary .table-row .date,
+.itinerary .table-row .confirm-number,
+.itinerary .table-row .itinerary-share,
+.itinerary .table-row .depart,
+.itinerary .table-row .flight,
+.itinerary .table-row .origin,
+.itinerary .table-row .connect,
+.itinerary .table-row .destination,
+.itinerary .table-row .arrive {
+	float: left;
+	}
+
+.itinerary .table-row .confirm-number {
+	width: 140px;
+	}
+
+.itinerary .table-row .date,
+.itinerary .table-row .confirm-number {
+	padding: 5px 0 0;
+	}
+
+.itinerary .table-row .date,
+.itinerary .table-row .depart {
+	width: 90px;
+	}
+
+.itinerary .table-row .flight {
+	width: 85px;
+	}
+
+.itinerary .table-row .connect {
+	width: 80px;
+	text-align: center;
+	}
+
+.itinerary .table-row .origin,
+.itinerary .table-row .destination {
+	width: 95px;
+	text-align: center;
+	}
+
+.itinerary .table-row .arrive {
+	float: right;
+	text-align: right;
+	width: 150px;
+	}
+
+.itinerary .table-row span,
+.itinerary .table-row a {
+	display: block;
+	line-height: 1.05;
+	}
+
+.itinerary .table-row span.label {
+	color: #ACACBB; /* maybe #ACACBB? : original #999 */
+	font-weight: 400;
+	font-size: 14px;
+	}
+
+.itinerary .table-row span.value {
+    font-weight: 900;
+    font-size: 18px;
+	}
+
+.itinerary .table-row a.status {
+	color: #6c6;
+    font-weight: 900;
+    font-size: 14px;
+	}
+
+.itinerary .table-row a.status-delayed, 
+.itinerary .table-row a.status-divert {
+	color: #e0c52f;
+	font-weight: 900;
+	font-size: 14px;
+	}
+
+.itinerary .table-row a.status-cancelled {
+	color: #e45e50;
+	font-weight: 900;
+	font-size: 14px;
+	}
+	
+.itinerary .table-row a.status-details {
+	color: #4d90cd;
+	font-weight: 900;
+	font-size: 14px;
+	}	
+	
+.itinerary .single-itinerary-interline a.status-details {
+	font-weight: 700;
+	font-size: 18px;
+	}	
+	
+.itinerary .table-row a.status:hover,
+.itinerary .table-row a.status-delayed:hover,
+.itinerary .table-row a.status-cancelled:hover,
+.itinerary .table-row a.status-details:hover,
+.itinerary .table-row a.status-delayed:hover,
+.itinerary .table-row a.status-divert:hover {
+	text-decoration: underline;
+	}
+	
+
+.itinerary .table-row a.status .rgt-arrow,
+.itinerary .table-row a.status-delayed .rgt-arrow,
+.itinerary .table-row a.status-cancelled .rgt-arrow,
+.itinerary .table-row a.status-details .rgt-arrow,
+.itinerary .table-row a.status-delayed .rgt-arrow,
+.itinerary .table-row a.status-divert .rgt-arrow {
+    background: url(/img/bg-itinerary-links-arrows.png) no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 9px;
+    margin-left: 2px;
+    width: 4px;
+	}	
+	
+html.ie7 .itinerary .table-row .rgt-arrow {	
+	position: relative;
+	top: -2px;
+	}
+	
+html.ie7 .itinerary .single-itinerary-interline .rgt-arrow {	
+	position: relative;
+	top: -3px;
+	}	
+	
+.itinerary .table-row a.status-delayed .rgt-arrow {
+	background-position: 0 -20px;
+	}	
+	
+.itinerary .table-row a.status-cancelled .rgt-arrow {
+	background-position: 0 -40px;
+	}	
+	
+.itinerary .table-row a.status-details .rgt-arrow {
+	background-position: 0 -60px;
+	}	
+	
+.itinerary .single-itinerary a.status .rgt-arrow,
+.itinerary .single-itinerary a.status-delayed .rgt-arrow,
+.itinerary .cancelled-itinerary a.status-cancelled .rgt-arrow,
+.itinerary .single-itinerary-interline a.status-details .rgt-arrow {
+	height: 10px;
+	}		
+	
+html.ie7 .itinerary .single-itinerary a.status .rgt-arrow,
+html.ie7 .itinerary .single-itinerary a.status-delayed .rgt-arrow,
+html.ie7 .itinerary .cancelled-itinerary a.status-cancelled .rgt-arrow,
+html.ie7 .itinerary .single-itinerary-interline a.status-details .rgt-arrow {	
+	top: -4px;
+	}
+	
+html.ie7 .itinerary .single-itinerary-interline a.status-details .rgt-arrow {
+	top: -5px;
+	}	
+
+.itinerary .travel-data-set {
+	height: 254px;
+	overflow: hidden;
+	}
+	
+.itinerary .table-row span.location {
+	padding-bottom: 3px;
+	color: #FFF;
+	font-weight: 700;
+	font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    width:115px;
+	}
+	
+.itinerary .single-itinerary-interline span.location {
+	padding-top: 49px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    width:115px;
+	}		
+
+.itinerary .table-row span.airport {
+	font-weight: 900;
+	font-size: 45px;
+	line-height: 1.1;
+	}
+
+.itinerary .table-row span.terminal {
+	font-weight: 700;
+	font-size: 12px;
+	position: relative;
+	top: -2px;
+	left: 0;
+	}
+
+.itinerary .table-row span.image {
+	padding-top: 11px;
+	}
+	
+.itinerary .table-row span.interline {
+	font-size: 11px;
+	padding-top: 19px;
+	}	
+	
+.itinerary .single-itinerary-interline span.interline {	
+	padding-top: 3px;
+	}
+
+.itinerary .single-itinerary,
+.itinerary .cancelled-itinerary,
+.itinerary .single-itinerary-interline {
+	padding: 27px 0;
+	border-bottom: 0;
+	}
+
+.itinerary .single-itinerary .flight,
+.itinerary .cancelled-itinerary .flight,
+.itinerary .single-itinerary-interline .flight {
+	width: 150px;
+	padding-top: 47px;
+	}
+	
+.itinerary .single-itinerary-interline .flight {
+	width: 141px;
+	}	
+
+.itinerary .cancelled-itinerary .flight {
+	width: 155px;
+	}
+
+.itinerary .single-itinerary .origin,
+.itinerary .single-itinerary .destination,
+.itinerary .single-itinerary-interline .origin,
+.itinerary .single-itinerary-interline .destination {
+	width: 110px;
+	}
+
+.itinerary .single-itinerary .connect,
+.itinerary .single-itinerary-interline .connect {
+	width: 102px;
+	}
+
+.itinerary .cancelled-itinerary .message {
+	float: left;
+	width: 420px;
+	}
+
+.itinerary .cancelled-itinerary .message h6,
+.itinerary .cancelled-itinerary .message p {
+	font-size: 15px;
+	line-height: 2;
+	margin: 0;
+	font-weight: 400;
+	}
+
+.itinerary .cancelled-itinerary .message h6 {
+	padding-top: 35px;
+	color: #e45e50;
+	}
+
+.itinerary .cancelled-itinerary .message p {
+	color: #FFF;
+	text-transform: none;
+	}
+.itinerary .cancelled-itinerary .message h6,
+.itinerary .cancelled-itinerary .message p strong {
+	font-weight: 700;
+	}
+
+.itinerary .single-itinerary span.status-label,
+.itinerary .cancelled-itinerary span.status-label,
+.itinerary .single-itinerary-interline span.status-label {
+	padding-top: 10px;
+	color: #999;
+    font-weight: 400;
+    font-size: 14px;
+	}
+
+.itinerary .single-itinerary span.status,
+.itinerary .single-itinerary span.status-delayed,
+.itinerary .cancelled-itinerary span.status-cancelled {
+	font-size: 18px;
+	}
+
+.itinerary .single-itinerary span.temp {
+	padding: 4px 0 10px;
+	font-weight: 700;
+	}
+
+.itinerary .single-itinerary span.airport {
+	font-size: 55px;
+	}
+
+.itinerary .single-itinerary span.times,
+.itinerary .single-itinerary-interline span.times {
+	color: #999;
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 20px;
+    position: relative;
+    top: -5px;
+    left: 0;
+	}
+	
+.itinerary .single-itinerary-interline span.times {
+	padding-bottom: 0;
+	}
+
+.itinerary .single-itinerary span.times strong,
+.itinerary .single-itinerary-interline span.times strong {
+	color: #FFF;
+    font-weight: 900;
+	}
+
+.itinerary .single-itinerary span.image,
+.itinerary .single-itinerary-interline span.image {
+	display: block;
+	padding-top: 59px;
+	}
+
+.itinerary .addtional-links {
+	padding: 0;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	}
+	
+.itinerary .addtional-links a {
+	float: left;
+	display: block;
+	background: url(/img/bg-itinerary-additional-links.png) no-repeat 0 0;
+	margin: 0 22px 0 0;
+	padding: 4px 0 4px 24px;
+	color: #5ea1de;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	}
+	
+.itinerary .addtional-links a:hover {
+	color: #76BEEC;
+	text-decoration: underline;
+	}	
+
+.itinerary .addtional-links a.full-itinerary {
+	background-position: 0 0;
+	}
+	
+.itinerary .addtional-links a.full-itinerary:hover {
+	background-position: 0 -50px;
+	}	
+
+.itinerary .addtional-links a.sign-up {
+	background-position: 0 -100px;
+	}
+	
+.itinerary .addtional-links a.sign-up:hover {
+	background-position: 0 -150px;
+	}	
+
+.itinerary .addtional-links a.flying {
+	background-position: 0 -200px;
+	}
+	
+.itinerary .addtional-links a.flying:hover {
+	background-position: 0 -250px;
+	}	
+
+.itinerary .addtional-links a span {
+	display: block;
+	}
+
+/*=== Offers & upsells Module
+Author: Andrew
+Colors: Orange: #ff9900 | Light Blue: #4d90cd
+	      Dark Blue: #004990 | Darker Blue: #00285e
+==================================================*/
+.offers-wrap {
+	background: transparent url(/img/booker-rnd-sp.gif) -1286px top no-repeat;
+	width: 315px;
+	margin: 0;
+	}
+
+.offers-wrap .offers-inner {
+	background: #f1f5f8 url(/img/booker-rnd-sp.gif) -1606px bottom no-repeat;
+	height: 414px;
+	margin-top: 3px;
+	padding-top: 7px;
+	}
+
+.offer1, 
+.offer2, 
+.offer3 {
+	padding: 0 20px 20px;
+	}
+
+.offer1 .inner, 
+.offer2 .inner, 
+.offer3 .inner {
+	border-top: 1px solid #dae8f4;
+	padding: 17px 0 0;
+	}
+
+.offer1 .inner {
+	padding-top: 11px;
+	}
+
+.offer1 .inner {
+	background: url(/img/bg-offer-getaways.jpg) no-repeat 213px 12px;
+	border-top: 0;
+	}
+
+.offers-wrap .offers-inner .inner div span {
+	display: block;
+	}
+
+.offers-wrap .offers-inner .inner .header {
+	padding-bottom: 6px;
+	color: #004990;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	}
+
+.offers-wrap .offers-inner .inner .header sup {
+	font-size: 23px;
+	position: relative;
+	top: -18px;
+	}
+
+html.oldie .offers-wrap .offers-inner .inner .header sup {
+	top: -22px;
+	}
+
+.offers-wrap .offers-inner .inner .header em {
+	position: relative;
+	top: -3px;
+	left: 2px;
+	}
+
+.offers-wrap .offers-inner .inner .to,
+.offers-wrap .offers-inner .inner .from {
+	color: #4d90cd;
+	font-size: 15px;
+	line-height: 1.1;
+	}
+
+.offers-wrap .offers-inner .inner .to strong,
+.offers-wrap .offers-inner .inner .from strong {
+	color: #004990;
+	}
+
+.offers-wrap .offers-inner .inner .description {
+	color: #454545;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 1.2;
+	}
+
+.offers-wrap .offers-inner .inner .restrictions {
+	padding-top: 5px;
+	color: #4d90cd;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	}
+	
+.offers-wrap .offers-inner .inner .restrictions a {
+ 	color: #4D90CD;
+ 	}
+ 	
+.offers-wrap .offers-inner .inner .restrictions a:hover {
+ 	color: #004990;
+ 	text-decoration: underline;
+ 	}	
+ 	
+.offers-wrap .offers-inner .inner .details {
+ 	
+ 	}
+ 	
+.offers-wrap .offers-inner .inner .details .description-text {
+	float: left;
+	width: 235px;
+ 	}
+ 	
+.offers-wrap .offers-inner .inner .details .see-offer {
+	float: right;
+	width: 32px;
+	padding: 69px 0 0;
+ 	}	
+ 	
+.offers-wrap .offers-inner .inner .details .see-offer a {
+	background: url(/img/bg-offer-deal-button.png) no-repeat 0 0;
+	display: block;
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	color: #f1f5f8;
+	font-size: 1px;
+	line-height: 1px;
+	text-indent: -10000px;
+  	}	
+
+.offers-wrap .offers-inner .inner .details .see-offer a:hover {
+	background: url(/img/bg-offer-deal-button.png) no-repeat 0 -40px;
+	}
+
+.upsells-wrap {
+	width: 315px;
+	margin: 0;
+	}
+
+.upsells-wrap .inner {
+	padding: 0;
+	}
+
+.upsell-1 {
+	height: 207px;
+	overflow: hidden;
+	}
+
+.upsell-2 {
+	padding-top: 10px;
+	height: 207px;
+	overflow: hidden;
+	}
+
+.upsell-2 .info {
+	display: block;
+	position: relative;
+	top: -64px;
+	left: 0;
+	}
+
+.upsell-2 .info .title {
+	display: block;
+	float: left;
+	padding: 16px 0 0 18px;
+	width: 170px;
+	color: #fff;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: 11px;
+	line-height: 1.15;
+	text-transform: uppercase;
+	}
+
+.upsell-2 .info .title span {
+	font-size: 24px;
+	line-height: 1.15;
+	}
+
+.upsell-2 .info .view-all {
+	display: block;
+	padding: 16px 20px 0;
+	}
+
+.upsell-2 .info .view-all .button {
+	display: block;
+	float: right;
+	background: url(/img/bg-upsell-button-caps.png) no-repeat 0 0;
+	padding: 0 0 0 3px;
+	color: #fff;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	}
+
+.upsell-2 .info .view-all .button .text {
+	display: block;
+	background: url(/img/bg-upsell-button-caps.png) no-repeat right -50px;
+	padding: 10px 20px 10px 17px;
+	line-height: 1.1;
+	text-transform: uppercase;
+	}
+
+/*=== Sidekicks Module
+Author: Andrew
+Colors: Orange: #ff9900 | Light Blue: #4d90cd
+	      Dark Blue: #004990 | Darker Blue: #00285e
+==================================================*/
+.sk1 {}
+.sk2 {}
+.sk3 {}
+.sk4 {}
+
+#sidekicks-wrap .col1 {
+	background: url(/img/bg-sidekicks-wrap-modules-bottom-strip.jpg) no-repeat 0 bottom #f1f5f8;
+	height: 320px;
+	overflow: hidden;
+	}
+
+#sidekicks-wrap .col1 a {
+	display: block;
+	height: 320px;
+	overflow: hidden;
+	zoom: 1;
+	cursor: pointer;
+	background: transparent;
+	}
+	
+#sidekicks-wrap .col1 span.title {
+	display: block;
+	margin: 0;
+	padding: 26px 20px 11px;
+	color: #004990;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.3;
+	}
+
+#sidekicks-wrap .col1 span.description {
+	display: block;
+	padding: 0 20px;
+	color: #454545;
+	font-size: 13px;
+	line-height: 1.7;
+}	
+
+
+#sidekicks-wrap div > a:hover,
+#sidekicks-wrap div > a:focus {
+	text-decoration: none;
+}	
+
+#sidekicks-wrap div > a:hover .title,
+#sidekicks-wrap div > a:focus .title {
+	text-decoration: underline;
+}	
+
+
+
+/** Vacations List styles */
+#city-modal.origins-list div.region { display: none; }
+#city-modal.origins-list .cities {
+	width: 100%;
+	margin-top: 10px;
+	}
+#city-modal.origins-list .cities .city-list {
+	width: 255px;
+	}
+#city-modal.vacations-list .cities .city-list li,
+#city-modal.origins-list .cities .city-list li {
+	background: transparent url(/img/city-lrg-disc-orange.png) left 5px no-repeat;
+	font-size: 11px;
+	margin-top: 2px;
+	padding-left: 8px;
+	}
+#city-modal.vacations-list div.region { display: none; }
+#city-modal.vacations-list .cities {
+	width: 100%;
+	margin-top: 10px;
+	}
+#city-modal.vacations-list .cities .city-list {
+	width: 255px;
+	}
+#city-modal.vacations-list .cities .city-desc,
+#city-modal.origins-list .cities .city-desc {
+	display: none;
+	}
+#city-modal.vacations-list .cities .city-list li,
+#city-modal.origins-list .cities .city-list li {
+	background: transparent url(/img/city-lrg-disc-orange.png) left 5px no-repeat;
+	font-size: 11px;
+	margin-top: 2px;
+	padding-left: 8px;
+	}
+
+
+/*=== Calendar : jQuery UI Datepicker (1.8.12)
+Author: Roger
+Colors: Orange: #ff9900 | Light Blue: #4d90cd
+	      Dark Blue: #004990 | Darker Blue: #00285e
+	      Light Grey: #f1f5f8 | Dark Grey: #a6a6a6
+==================================================*/
+#calendar-wrap {
+	cursor: default;
+	z-index: 1000;
+	display: none;
+	position: absolute;
+	top: 197px;
+	left: 13px;
+	background: #004890;
+	width: 306px;
+	height: 330px;
+	padding: 44px 0 10px;
+	z-index: 1;
+	border: 1px solid #d3e3f3;
+}
+	
+#calendar-wrap.return {
+	background-position: -617px 0;
+	left: 317px
+}
+
+#calendar-wrap.depart .helper,
+#calendar-wrap.return .helper {
+	cursor: pointer;
+	position: absolute;
+	top: 7px;
+	right: 7px;
+	background: none;
+	width: 294px;
+	height: 36px;
+}
+#calendar-wrap.return .helper { left: 7px; }
+
+#calendar-wrap .outer-header,
+#calendar-inner {
+	background: #ffffff;
+	height: 222px;
+	border-bottom: 1px solid #d3e3f3;
+	border-top: 0;
+	padding: 14px;
+}
+
+#calendar-wrap .outer-header {
+	background: #004890;
+	color: #fff;
+	height: auto;
+	border: 0;
+	font: 900 16px/16px din-web-jetblue, Arial, Helvetica, sans-serif;
+}
+#calendar-wrap .outer-header span {
+	display: none;
+}
+#calendar-wrap.depart .outer-header .departing,
+#calendar-wrap.return .outer-header .returning {
+	display: inline;
+}
+
+html.ie7 #calendar-inner {
+	height: 305px;
+	}
+
+#calendar-inner .header {
+	color: #454545;
+	height: 39px;
+	border-bottom: 1px solid #d3e3f3;
+	display: none!important; /*MX 1.8 GUI Change - Arnaldo Capo */
+	}
+#calendar-inner .header p {
+	padding: 10px 0 0;
+	}
+#calendar-inner .header .date {
+	color: #004990;
+	font-weight: 700;
+	}
+#calendar-inner .header .calendar-switch {
+	z-index: 110;
+	position: absolute;
+	top: 49px;
+	right: 20px;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	width: auto;
+	}	
+#calendar-inner .header .calendar-switch .close-btn {
+	cursor: pointer;
+	display: block;
+	float: right;
+	background: transparent url(/img/context-switcher-btn-sp.png) 0 -58px no-repeat;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	text-indent: -9999px;
+	color: #004990;
+	width: 30px;
+	height: 30px;
+	}
+#calendar-inner .header .calendar-switch .close-btn:hover {
+	background-position: 0 -221px;
+	}
+
+#calendar-inner .footer {
+	margin: 0;
+}
+
+.oldie #calendar-inner .footer {
+	margin-top: 10px;
+}
+
+#calendar-inner .footer p {
+	font-weight: bold;
+	text-align: center;
+	color: #454545;
+}
+
+#depart-cal,
+#return-cal { position: absolute; left: -10000px; top: -10000px; }
+
+.depart #depart-cal { position: static; display: block; height: 191px; }
+.return #return-cal { position: static; display: block; height: 191px; }
+
+html.ie7 .depart #depart-cal,
+html.ie7 .return #return-cal { height: 210px; overflow: hidden; }
+
+/* Hide the helper */
+#ui-datepicker-div { display: none; }
+
+.ui-datepicker {
+	position: relative;	
+	height: 205px;
+	margin-top: 8px;
+}
+
+.ui-datepicker .ui-datepicker-header {
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+}
+	
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: transparent url(/img/calendar-arrow-sp.png) 0 0 no-repeat;
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+}
+	
+.ui-datepicker .ui-datepicker-prev {
+	left: 0px;
+	background-position: 0 -50px;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover { background-position: 0 -75px; }
+.ui-datepicker .ui-datepicker-next-hover { background-position: 0 -25px; }
+
+.ui-datepicker-group-first .ui-datepicker-header .ui-state-disabled,
+.ui-datepicker-group-last .ui-datepicker-header .ui-state-disabled {
+	position: absolute;
+	top: -10000px;
+	left: -10000px;
+	}
+
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	text-indent: -9999px;
+	}
+
+.ui-datepicker .ui-datepicker-title {}
+.ui-datepicker .ui-datepicker-month {}
+.ui-datepicker .ui-datepicker-year {}
+
+.ui-datepicker .ui-datepicker-group {
+	float: left;
+	width: 285px;
+	overflow-y: hidden;
+	margin: 0 auto;
+	}
+
+.ui-datepicker .ui-datepicker-calendar {
+	width: 209px;
+	margin: 5px auto;
+	}
+.ui-datepicker table {
+	background: transparent url(/img/calendar-vertical.gif) 0 10px repeat-x;
+	font-size: 13px;
+	text-align: center;
+	width: 160px;
+	overflow-y: hidden;
+	}
+.ui-datepicker th {
+	color: #454545;
+	height: 20px;
+	}
+.ui-datepicker td {
+	width: 25px;
+	height: 22px;
+	}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding-top: 4px;
+	}
+
+#calendar-wrap .ui-datepicker .departure-date {
+	background: transparent url(/img/calendar-date-bg.png) center 0 no-repeat;
+	}
+#calendar-wrap .ui-datepicker .return-date {
+	background: transparent url(/img/calendar-date-bg.png) center -28px no-repeat;
+	}
+#calendar-wrap .ui-datepicker .departure-date a,
+#calendar-wrap .ui-datepicker .return-date a {
+	color: #ffffff;
+	}
+
+/* Highlight the duration of the trip */
+#calendar-wrap .ui-datepicker .duration-date {
+	background-color: #f0f5f8;
+	}
+
+
+.ui-datepicker .ui-state-disabled .ui-state-default {
+	cursor: default;
+	color: #bfbfbf;
+	font-weight: 600;
+	}
+.ui-datepicker .ui-state-disabled .ui-state-default:hover {
+	color: #bfbfbf;
+	}
+
+.ui-datepicker .ui-state-default {
+	cursor: pointer;
+	color: #4d90cd;
+	font-weight: 700;
+	}
+.ui-datepicker .ui-state-default:hover { color: #ff9900; }
+
+.ui-datepicker .ui-state-active {
+	color: #ff9900;
+}
+
+
+
+/*=== CLEAR FIX / HOLLY HACK FOR STANDARD 
+	  COMPLIANT BROWSERS AND IE 6-7
+==================================================*/
+
+#promo-getaway-wrap:after,
+#jb-footer .body-wrap .getaways-cities-wrap:after,
+.upsell-2 .info:after,
+.itinerary .itinerary-wrap:after,
+.itinerary .check-in-print:after,
+.itinerary .table-row:after,
+.itinerary .table-row .itinerary-share:after,
+.itinerary .addtional-links:after,
+#pick-me-up-form .float-form-element:after,
+.offers-wrap .offers-inner .inner .details:after {
+	content: ".";
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+	}
+
+
+#promo-getaway-wrap,
+#jb-footer .body-wrap .getaways-cities-wrap,
+.upsell-2 .info,
+.itinerary .itinerary-wrap,
+.itinerary .check-in-print,
+.itinerary .table-row,
+.itinerary .table-row .itinerary-share,
+.itinerary .addtional-links,
+#pick-me-up-form .float-form-element,
+.offers-wrap .offers-inner .inner .details {
+	zoom: 1;
+	_height: 1%;
+	}
+
+.trueblue .loading {
+	background: url(/img/ajax-loader-dbg.gif) no-repeat center center;
+	height: 40px;
+	width: 40px;
+	overflow: hidden;
+	position: absolute;
+	top: 111px;
+	left: 180px;
+	display: none;
+	}
+
+.skdisclaimer {
+	color: #999999;
+	font-size:9px;
+	padding-top:8px;
+}
+
+	
+/*=== Calendar : jQuery UI Datepicker: jump to month drop down
+Author: Claudio
+==================================================*/
+
+.calendar-jump-month .jump-month-dropdown{
+	z-index: 1;
+	cursor: pointer;
+	position: relative;
+	float: left;
+	background: transparent url(/img/drop-down-bg.png?v=1.3) 0 -335px no-repeat;
+	width: 130px;
+	height: 32px;
+	color: #4d90cd;
+	padding-top: 0px;
+	padding-left: 10px;
+	margin-top: 1px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;	
+	}
+.calendar-jump-month .dd-num,
+.calendar-jump-month .dd-text {
+	display: inline-block;
+	color: #4d90cd;
+	font-weight: bold;
+	padding-top: 9px;		
+	}
+
+.calendar-jump-month .active .dd-num 
+{
+   padding-left: 5px;
+}
+
+.calendar-jump-month .dd-text {
+	padding: 0;
+	margin: 0; 
+	}
+
+.calendar-jump-month .jump-month-dropdown {}
+
+.jump-month-dropdown .jump-months { display: none; }
+
+.calendar-jump-month .active .jump-months {
+	z-index: 20;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	background: #4d90cd;
+	-ms-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	color: #ffffff;
+	width: 130px;
+	margin-left: 1px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	}
+
+.calendar-jump-month .active .jump-months .inner /* inner-padding-reset */
+ { padding: 0; }
+ 
+.calendar-jump-month .active .jump-months ol { padding-bottom: 5px; }
+
+.calendar-jump-month .active .jump-months span,
+.calendar-jump-month .active .jump-months a{
+	float: none;
+	cursor: pointer;
+	color: #ffffff;
+	margin: 0;
+	padding-bottom: 8px;
+	}
+
+.calendar-jump-month .active .jump-months .dd-text {
+	color: #ffffff;
+	margin: 0 0 5px 0;
+	padding: 0;
+	}
+
+.calendar-jump-month .active .jump-months li {
+	font-weight: bold;
+	width: auto;
+	padding: 3px 6px 4px 6px;
+	}
+.calendar-jump-month .active .jump-months li:hover { background-color: #2e74b5; }
+
+.calendar-jump-month .dwn-lrg-arrow {
+	position: absolute;
+	top: 12px;
+	right: 20px;
+	background: transparent url(/img/dwn-arrow.png) 0 0 no-repeat;
+	width: 12px;
+	height: 7px;
+	}
+	
+.calendar-jump-month .active .dwn-lrg-arrow {
+	display: none;
+	}
+	
+.dd-age-range 
+{
+    position:relative;
+    font-weight:normal;
+    font-size: 10px;
+    line-height:16px;
+    color: #bfbfbf;
+	font-weight: bold;
+    margin-bottom: 10px;
+    z-index: -1;
+    white-space: nowrap;
+    top: 10px;	
+    left:5px;
+}
+
+.dd-age-range-infant
+{
+    position:absolute;
+    font-weight:normal;
+    font-size: 10px;
+    line-height:16px;
+    color: #bfbfbf;
+	font-weight: bold;
+    margin-bottom: 10px;
+    z-index: -1;
+    white-space: nowrap;
+    float:right;
+    left:98px;
+    top:34px;
+}
+
+
+.jumpToText 
+{
+    float:left;
+    padding: 10px 0 0;
+    font-weight:normal;
+    font-size: 12px;
+    line-height:16px;
+    color:#454545;
+}
+
+.calendar-jump-container {
+    float: right;
+    width: 100%;
+    background: #f1f5f8;
+    padding: 6px 14px;
+    	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*=== Booker : Check in and Flight status button background
+Author: Claudio
+==================================================*/
+
+.context-switch .checkin-btn-box
+{
+    background: transparent url(/img/bg_checkin-fs.png?v=1.3) 0 0 no-repeat; 
+    width: 126px;
+    height: 37px;
+    float:right;	
+    margin-right: 9px;   
+}
+
+.context-switch .flight-status-btn-box
+{
+    background: transparent url(/img/bg_checkin-fs.png?v=1.3) -141px 0 no-repeat;
+    width: 167px;
+    height: 38px;
+    float: right;	
+}
+
+.checkin-btn-box .checkin-btn 
+{    
+    margin-right: 22px;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
+
+.flight-status-btn-box .flight-status-btn 
+{
+    margin-right: 22px;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
+.context-switch .checkin-btn-box:hover .checkin-btn {background-position: 0 -161px;color: #004990; }
+.context-switch .flight-status-btn-box:hover .flight-status-btn  { background-position: 0 -190px; color: #004990; }
+
+.checkin .checkin-btn-box,
+.checkin .flight-status-btn-box,
+.fstatus .checkin-btn-box,
+.fstatus .flight-status-btn-box,
+.error .checkin-btn-box,
+.error .flight-status-btn-box
+{
+    display: none;
+}
+
+
+/*=== Booker : Search Type - Vacation is not Book A Vacation & Save Big
+Author: Claudio
+==================================================*/
+.search-type div.second
+{
+    width: 170px;
+}
+.search-type .vacations-btn {
+	display: block;
+	background: transparent url(/img/search-type-bg.png) 0 -72px no-repeat;
+	width: 155px;
+	height: 31px;
+	padding-left: 14px;
+	}
+	
+.search-type .vacations-btn a {
+	display: block;
+	background: transparent url(/img/search-type-bg.png) 140px -108px no-repeat;
+	color: #f1f5f8;
+	width: 155px;
+	height: 31px;
+	}
+	
+.search-type .vacations-btn span {
+	cursor: pointer;
+	display: block;
+	background-color: #4d90cd;
+	font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	text-align: center;
+	width: 140px;
+	white-space: nowrap;
+	height: 20px;
+	padding-top: 11px;
+	}   
+
+/* Active Button State */
+.search-type .active .vacations-btn { background-position: 0 0; }
+.search-type .active .vacations-btn a { background-position: 140px -36px; }
+
+/* Hover State */
+.search-type .vacations-btn:hover { background-position: 0 0; }
+.search-type .vacations-btn:hover a { background-position: 140px -36px; } 
+
+/*Kid and infant drop down with age range
+Author: Claudio
+*/
+.passenger-age-wrap
+{
+    display: inline-block;
+    width: 598px;
+    height: 37px;
+    margin-top: 7px;
+    margin-bottom: 2px;
+    padding: 0px;
+}
+
+.passenger-age-wrap .passengers.clearfix
+{
+    width: 380px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.passengers .kid-dropdown, 
+.passengers .kid-vacation-dropdown
+{
+    z-index: 1;
+    cursor: pointer;
+    background: transparent url(/img/drop-down-bg.png?v=1.3) 0 -217px no-repeat;
+    white-space: nowrap;
+    width: 122px;
+    height: 37px;
+}
+
+
+.passengers .kid-vacation-dropdown.disabled  {  width: 131px; background-position: 0 -168px; margin-right:1px; /* vacation kid drop-down age selected */ }
+
+.kid-vacation-dropdown.disabled .dwn-lrg-arrow {
+	right: 10px;
+}
+
+.passengers .infant-dropdown
+{
+    width: 155px;
+    background: transparent url(/img/drop-down-bg.png?v=1.3) 0 -259px no-repeat;
+    height: 37px;
+}
+
+.passengers .active .kid-count {
+	background-position: -1663px 0;
+	width: 120px;
+	height: 205px;
+	}
+	
+.passengers .active .infant-count {
+	background-position: -1788px 0;
+	width: 153px;
+	}	
+	
+.passengers .active .kid-count { margin-left: 0px; }
+.fvacation .passengers .active .kid-count { height: 120px;}
+
+.passengers .active .kid-count .inner,
+.passengers .age .kid-age .inner,
+.passengers .active .infant-count .inner { padding: 0; }
+
+.passengers .active .kid-count ol,
+.passengers .active .infant-count ol { padding-bottom: 5px; }
+
+.passengers .active .kid-count span,
+.passengers .active .infant-count span,
+.passengers .active .kid-count a,
+.passengers .active .infant-count a {
+	float: none;
+	cursor: pointer;
+	color: #ffffff;
+	margin: 0;
+	padding-bottom: 5px;
+	}
+
+.passengers .active .kid-count .dd-text,
+.passengers .active .infant-count .dd-text {
+	color: #ffffff;
+	margin: 0 3px 5px 0;
+	padding: 0;
+	}
+
+.passengers .active .kid-count li,
+.passengers .active .infant-count li {
+	font-weight: bold;
+	width: auto;
+	padding: 5px 0 5px 20px;
+	}
+
+.fare-type
+{
+    width: 150px;
+    float: right;
+    margin-top: -45px;
+    margin-right: 75px;
+}
+
+.fare-type .points
+{
+    width: 55px;
+    margin-right: 0px;
+    padding-right: 0px;                               
+}
+
+.fvacation .hotel-dropdown
+{	
+    margin-top: 7px;
+    margin-left: 16px;
+}
+
+.dd-text-yrs
+{
+    color: #ACACBB;
+    font-size: 11px;
+    font-weight: bold;	
+    display: inline-block;
+}
+
+
+.kid-dropdown .dwn-lrg-arrow,
+.infant-dropdown .dwn-lrg-arrow {
+	right: 6px;
+}
+
+.kid-vacation-dropdown .dwn-lrg-arrow { right: 6px; }
+
+.kid-vacation-dropdown  .dd-text-yrs,
+.fvacation .infant-dropdown  .dd-text-yrs {
+    margin-left: 3px;
+}
+
+/* Flight status - change calendar icon to orange when active */
+.fstatus .active .from-btn { background-position: 0 -95px; }
+.fstatus .active .to-btn { background-position: -46px -95px; }
+
+/* Flight - change calendar icon to orange when active */
+.fflight .active .from-btn { background-position: 0 -95px; }
+.fflight .active .to-btn { background-position: -46px -95px; }
+
+/* depart and return btn active states */
+.depart-btn.active,
+.depart-wrap:hover .depart-btn.active {
+	background-position: -92px -95px;
+}
+.return-btn.active,
+.return-wrap:hover .return-btn.active { background-position: -138px -95px; }
+
+/* CHROME - hide placeholder on focus */
+.checkin input:focus::-webkit-input-placeholder, 
+.fstatus input:focus::-webkit-input-placeholder,
+#true_blue_form input:focus::-webkit-input-placeholder { color: transparent; }
+
+.fare-type.vac {
+    margin-top: 0px;
+    *margin-top: -15px;
+    height: 20px;
+    width: 165px;
+    margin-right: 0;
+}
+
+.fare-type.vac .radio-txt { top: 5px; }
+.fare-type.vac .cash { width: 50px; margin-left: 14px; }
+.fare-type.vac .cashPoints { width: 95px; }
+
+.flexible {
+    width: 180px;
+    margin-top: -14px;
+    float: right;
+    margin-right: 32px;
+    *float: none;	
+	*margin-left: 385px;	
+}
+
+.flexible .checkbox-txt {
+	display: block;
+	margin: 2px 0 0 22px;
+	font-weight: bold;	
+	color: #4D90CD;
+}
+
+.bookerFlexibleCheckbox {
+    display: block;
+    cursor: pointer;
+    background: transparent url(/img/check-btn-bg.png) 0 0 no-repeat;
+    width: 14px;
+    height: 14px;
+   
+    float: left;
+}
+
+#flexible {
+	display: none;
+}
+
+.bookerFlexible_active {
+    background-position: -19px 0;
+}
+
+.rememberme {
+
+    margin-top: -14px;
+    margin-bottom: 12px;
+}
+
+.rememberme .checkbox-txt {
+	display: block;
+	margin: 2px 0 0 22px;
+	font-weight: normal;	
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.remembermeCheckbox {
+    display: block;
+    cursor: pointer;
+    background: transparent url(/img/check-btn-bg.png) 0 0 no-repeat;
+    width: 14px;
+    height: 14px;
+    margin-top:-1px;
+    float: left;
+}
+
+#rememberme {
+	display: none;
+}
+
+.rememberme_active {
+    background-position: -19px 0;
+}
+
+.bookerHorizontalLine {
+    background-color:#cee1f0;
+    width: 211px;
+    height: 1px;
+    float: right;
+    margin-top: -19px;
+    *margin-left: 165px;
+}
+
+.noFlexDateCheckbox {
+    margin-top: -35px;
+}
+
+.hideCancelBtn {
+    display: none;
+}
+
+/* @mx3.0 */
+.hideOKBtn {
+    display: none;
+}
+
+
+
+/* target iPad */
+@media only screen and (device-width: 768px) 
+{
+    #from_field, #to_field, #vac_from_field, #vac_to_field { width: 223px; }
+    .search-type .vacations-btn { padding-left: 13px; }
+    
+    #booker .submit-btn-wrap, 
+    #booker .submit-btn-wrap .submit-btn-inner,
+    .trueblue #true_blue_form .submit-btn-wrap,
+    #true_blue_form .submit-btn-wrap .submit-btn-inner  {
+        background: none; 
+    }
+    
+    #fs_from_field, #fs_to_field {
+        width: 223px;        
+    }
+}
+.offscreen {
+    position: absolute;
+    left: -999em;
+}
+
+/* Flexible Vacations Button Width */
+/* Author PJ */
+.search-type div.first, .search-type div.second {
+	width: auto;
+}
+.search-type .flights-btn, .search-type .vacations-btn 
+{
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+}
+.search-type .flights-btn a, .search-type .vacations-btn a
+{
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+}
+.search-type .flights-btn span, .search-type .vacations-btn span
+{
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+}
+.search-type .flights-btn .content, .search-type .vacations-btn .content {
+	vertical-align: top;
+}
+.search-type .flights-btn .end, .search-type .vacations-btn .end
+{
+    background-color: transparent;
+    background-image: url(/img/search-type-bg.png);
+    display: inline-block;
+    height: 31px;
+    padding-top: 0;
+    width: 14px;
+}
+.flights-btn .left.end, .vacations-btn .left.end {
+	background-position: 0 -72px;
+}
+.flights-btn .right.end, .vacations-btn .right.end {
+	background-position: 0 -108px;
+}
+.search-type .active .flights-btn .end,.search-type .flights-btn:hover .end, .search-type .active .vacations-btn .end,.search-type .vacations-btn:hover .end {
+	background-color: transparent;
+}
+.search-type .active .flights-btn .left.end,.search-type .flights-btn:hover .left.end, .search-type .active .vacations-btn .left.end,.search-type .vacations-btn:hover .left.end {
+	background-position: 0 0;
+}
+.search-type .active .flights-btn .right.end,.search-type .flights-btn:hover .right.end, .search-type .active .vacations-btn .right.end,.search-type .vacations-btn:hover .right.end {
+	background-position: 0 -36px;
+}
+.search-type .flights-btn span.content
+{
+    min-width: 80px;
+}
+/* Slight hack to account for iOS WebKit rounding bug */
+.search-type .flights-btn .content, .search-type .vacations-btn .content 
+{
+    border-width: 0 1px;
+    border-style: solid;
+}
+.flights-btn .left.end, .vacations-btn .left.end {
+	margin-right: -1px;
+}
+.flights-btn .right.end, .vacations-btn .right.end {
+	margin-left: -1px;
+}
+.search-type .flights-btn span, .search-type .vacations-btn span  
+{
+    border-width: 0;
+    border-color: #4d90cd;
+}
+.search-type .flights-btn:hover span, .search-type .vacations-btn:hover span {
+	border-color: #004990;
+}
+.search-type .active .flights-btn span, .search-type .active .vacations-btn span {
+	border-color: #004990;
+}
+/* CSS for adding "FROM" to fare pods */
+.offer1,.offer2,.offer3 {
+	padding: 0 15px 15px;
+}
+.offer1 .inner {
+	padding: 3px 0 0;
+}
+.offer2 .inner,.offer3 .inner {
+	padding: 12px 0 0;
+}
+.fromLabel {
+	color:#4D90CD;
+	font-size: 11px;
+}
+.login #main-inner {
+    min-height: 345px;
+}
+div#confirmation-inner {
+    background-color: #00245D;
+    min-height: 345px;
+}
+
+#true_blue_form .tb-email-password-wrapper :-ms-input-placeholder {
+    color: white !important;
+}

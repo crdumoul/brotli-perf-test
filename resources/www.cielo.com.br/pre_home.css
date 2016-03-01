@@ -1,0 +1,105 @@
+.modal-part h3{
+	font-size: 22px;
+	color: #5E5E5E;
+	text-align: center;
+	margin: 55px 0 25px 0;
+	padding-top: 50px;
+	border-top: 1px solid #CCC;
+	font-family: "museo700";
+}
+
+.modal-part h2{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 40px;
+	font-family: "museo300";
+}
+
+.modal-part p{
+	font-size: 20px;
+	color: #000000;
+	text-align: center;
+	font-family: "museo-sans";
+}
+.modal-content {
+	height: 500px !important;
+}
+
+
+.modal-part .oi{
+	font-size: 20px;
+	color: #000000;
+	text-align: center;
+	border-bottom: 2px solid #F5EFEF;
+	padding-bottom: 80px;
+	font-family: "museo-sans";
+}
+
+.corpo-home{
+	width: 540px;
+	margin: 0 auto;
+}
+
+.botoes{
+	height: 32px;
+	text-align: center; 
+}
+
+.botoes > a{
+	width: 180px;
+	outline: none;
+}
+
+.botoes > a + a{
+	margin-left: 9px; 
+}
+
+/*
+.modal-content .header-modal a:hover{
+	background: url("../../images/icons/hoverFechar.png") no-repeat right top;
+}*/
+
+ @media only screen and (max-width : 767px) { 
+/* @media only screen and (min-width: 100px) {  */ 
+
+	.header-modal{
+		height: 110px;
+	}
+	
+	.reveal-modal, .modal-content, .botoes {
+		height: auto !important;
+	}
+
+	.reveal-modal.xlarge{
+		margin: auto;
+	}
+
+	.corpo-home{
+		padding: 20px 0;
+	}
+	
+	.corpo-home h2{
+		font-size: 55px;
+	}
+
+	.corpo-home h3{
+		font-size: 35px;
+	}
+
+	.corpo-home p{
+		font-size: 30px;
+	}
+
+	.botoes a{
+		margin: 15px 0;
+		line-height: 1;
+		outline: none;
+	}
+
+	.botoes > a{
+		width: 400px;
+	}
+
+
+}
+

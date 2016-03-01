@@ -1,0 +1,110 @@
+
+.ml-header-links.visible-md-block.visible-lg-block.can-header{
+	background: #ebebeb;
+	height: 50px;
+}
+#phone{
+	width:400px;
+	padding-top: 15px;
+}
+#languageSelector{
+	float: right;
+    padding-top: 5px;
+}
+span.flag-CA,span.flag-US{
+	float:left;
+	height:16px;
+	width:30px;
+}
+span.flag-CA{
+	background:url(/images/can/common/logos/flag_ca.png) no-repeat;
+}
+span.flag-US{
+	background:url(/images/can/common/logos/flag_us.png) no-repeat;
+}
+div.langSelector {
+	display: block;
+	text-shadow: #fff 1px 1px 1px;
+	text-transform: uppercase;
+}
+div.langSelector >ol>li, #langPrompt>li, #langPrompt>li>ol>li{
+	display: inline-block;
+}
+.currentLang {
+	text-decoration: underline;
+}
+.dropdown-menu.pull-right.dropdown-language{
+	background-color: #f5f5f5;
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
+	top: 40px;
+	right: 0px;
+	width: 200px;
+}
+.dropdown-menu.pull-right.dropdown-language:after{
+	content: none;
+}
+.ml-header-link.ml-header-language{
+	border-left: 1px solid #d6d6d6;
+	float: right;
+	height: 40px !important;
+}
+#languageSelector .ml-header-link.ml-header-language{
+	border:none;
+}
+#langPrompt .dropDownMsg {
+	border-bottom: 1px solid #bab9b9;
+	padding: 12px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+}
+#langPrompt .dropDownLangOption {
+	background-color: #d4d4d4;
+    border-bottom: 1px solid #ffffff;
+    float: left;
+    margin: 0px;
+    padding: 12px 0px;
+    text-align: left;
+	text-transform: uppercase;
+	width:100%;
+}
+#langPrompt .dropDownLangOption:last-child {
+	border-bottom: none;
+}
+#langPrompt .dropDownLangOption ol li a, #langPrompt .dropDownLangOption ol li a:link{
+	border: none;
+	padding: 0px;
+}
+#langPrompt .dropDownLangOptionText {
+	float: left;
+    letter-spacing: 1.5px;
+    padding-left: 18px;
+    width: 100%;
+}
+#langPrompt .dropDownLangOptionFlag {
+	float:right;
+	padding-right: 20px;
+}
+
+@media screen and (min-width: 960px) {
+	.dropdown-menu.pull-right.dropdown-language{
+		position: absolute;
+		right: -411px;
+		top: 35px;
+	}
+}
+@media screen and (min-width: 676px) {
+    .miniLang {
+        display:block !important;
+    }
+}
+@media screen and (max-width: 675px){
+    .miniLang {
+        display:none;
+    }
+	.ml-header-language,.ml-header-language-basic {
+        display:inline-block;
+    }
+}

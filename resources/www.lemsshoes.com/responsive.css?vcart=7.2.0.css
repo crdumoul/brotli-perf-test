@@ -1,0 +1,2382 @@
+/*	
+ * 3dcart Shopping Cart System - Version: 6
+ * http://3dcart.com/
+ * Web Developer: Joel Edwards
+ * Date: Tue, Mar 20 2015 14:22:40 -0500
+*/
+
+@media only screen and (max-width: 767px) {
+
+
+/*	Global Styles
+	-------------	*/
+html {
+	border: none;
+	max-width: 100% !important;
+}
+body {
+	padding: 0 20px;
+}
+table, 
+thead, 
+tbody, 
+th, 
+td, 
+tr { 
+	display: block;
+}
+thead tr {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+img {
+    max-width: 100%;
+}
+section {
+    margin: 0;
+    padding: 0;
+}
+.breadcrumbs {
+    display: none;
+}
+.productBlockContainer .product-container {
+    width: 100%;
+    padding: 0;
+}
+/* SimpleModal modifications */
+#simplemodal-container .simplemodal-data {
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-overflow-scrolling:touch;
+}
+#simplemodal-container .simplemodal-data iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    vertical-align: top;
+}
+/* Items Display Type 1: Thumbnails */
+.product-item .name {
+    max-width: 100%;
+}
+/* Items Display Type 2: Listing */
+.item-template-1 .id {
+    float: none;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.item-template-1 .product-info {
+    float: none;
+    width: 100%;
+}
+.item-template-1 .name {
+    float: none;
+    width: 100%;
+}
+.item-template-1 .price {
+    float: none;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+}
+.item-template-1 .action {
+    float: none;
+    width: 100%;
+}
+/* Items Display Type 3: Details */
+.item-template-2 .img img {
+    max-width: 90%;
+}
+.hidden-mobile {
+    display: none !important;
+}
+.show-mobile {
+    display: block !important;
+}
+.paging {
+    text-align: center;
+}
+#itemsBlock .products-header span {
+    display: none;
+}
+.steps {
+    font-size: 14px;
+}
+/* ReCaptcha Fix */
+.crmField .recaptcha {
+    max-width: 280px !important;
+    overflow: hidden;
+}
+#recaptcha_table  {
+    display: table !important;
+}
+#recaptcha_table thead {
+    display: table-header-group !important;
+}
+#recaptcha_table tbody {
+    display: table-row-group !important;
+}
+#recaptcha_table th {
+    display: table-cell !important;
+}
+#recaptcha_table tr {
+    display: table-row !important;
+}
+#recaptcha_table td {
+    display: table-cell !important;
+}
+.recaptchatable #recaptcha_image {
+    margin: 0 !important;
+    width: 200px !important;
+	height: auto !important;
+}
+.recaptchatable #recaptcha_image img,
+.recaptchatable .recaptcha_image_cell {
+    max-width: 220px !important;
+    height: auto !important;
+}
+.recaptchatable .recaptcha_image_cell center {
+    text-align: left !important;
+}
+.recaptchatable .recaptcha_r1_c1,
+.recaptchatable .recaptcha_r2_c2,
+.recaptchatable .recaptcha_r3_c1,
+.recaptchatable .recaptcha_r3_c2,
+.recaptchatable .recaptcha_r7_c1,
+.recaptchatable .recaptcha_r8_c1,
+.recaptchatable .recaptcha_r3_c3,
+.recaptchatable .recaptcha_r2_c1,
+.recaptchatable .recaptcha_r4_c1,
+.recaptchatable .recaptcha_r4_c2,
+.recaptchatable .recaptcha_r4_c4 {
+    background: none !important;
+    max-width: 280px !important;
+}
+.recaptchatable .recaptcha_r2_c1 {
+    width: 0 !important;
+}
+/* messagebar.min.js */
+.mb--messagebar {
+    font-size: 1.3em;
+}
+
+/*	home.html Template
+	------------------	*/
+#home_carousel {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/*	category.html Template
+	----------------------	*/
+#subcategoriesBlock select {
+    width: 100%;
+    margin: 15px 0;
+    padding: 4px 6px;
+}
+.category-viewall {
+    display: none;
+}
+/*	Disables QuickView feature.	*/
+.qv {
+    display: none !important;
+}
+
+/*	listing_0.html Template
+	--------------------------	*/
+#listing0 .primary {
+	float: none;
+	width: 100%;
+	margin: 0 0 15px;
+}
+#listing0 .secondary {
+	float: none;
+	width: auto;
+	margin: 0;
+	position: relative;
+}
+#listing0 .main-image img {
+    width: 100% !important;
+    height: auto !important;
+}
+#listing0 .addl-images > div img {
+    max-width: 50px;
+    max-height: 50px;
+}
+#realmediaBlock object {
+    width: 100%;
+    height: auto;
+}
+#listing0 .detail-section .alpha-col {
+    margin: 0;
+    width: 100%;
+}
+#listing0 .detail-section .beta-col {
+    padding: 0;
+}
+#listing0 .addToCartBlock {
+    width: 100%;
+}
+.addToCartBlock .qtybox-addcart button {
+    display: block;
+    float: left;
+}
+.addToCartBlock .qtybox-addcart input,
+.addToCartBlock .qtybox-addcart button {
+    margin: 0 10px 10px 0;
+}
+#listing0 .multipleShipToBlock {
+    width: 100%;
+}
+.multipleShipToBlock select {
+    width: 85%;
+    margin: 5px 0;
+}
+.multipleShipToBlock input {
+    width: 100%;
+    margin: 5px 0;
+}
+.multipleShipToBlock label {
+    display: block;
+}
+.multipleShipToBlock .send-to {
+    width: 85%;
+}
+.multipleShipToBlock .add-name {
+    width: 100%;
+    margin: 0 0 5px 0;
+}
+.multipleShipToBlock .help {
+    margin: 13px 0 0 15px;
+}
+.product_availability h4 {
+	display: none;
+}
+.qa_allowratings strong {
+    display: block;
+}
+#listing0 .quantityBlock a {
+    display: block;
+}
+#showRealMedia span {
+    display: none;
+}
+#showRealMedia i {
+    font-size: 34px;
+}
+/* Accordion responsive breakpoint */
+.r-tabs .r-tabs-nav {
+    display: none;
+}
+.r-tabs .r-tabs-accordion-title {
+    display: block;
+}
+
+/*	listing_dd.html Template
+	--------------------------	*/
+#listingDd h1 {
+    float: none;
+	width: auto;
+	margin: -5px 0 10px 0;
+}
+#listingDd .product-id {
+	float: none;
+	width: auto;
+	margin-bottom: 15px;
+}
+#listingDd .primary {
+	float: none;
+	width: auto;
+	margin: 0 5px 15px 0;
+}
+#listingDd .secondary {
+	float: none;
+	width: auto;
+	margin-left: 5px;
+	position: relative;
+}
+#listingDd .ddTimer {
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 15px;
+}
+#listingDd .savings-percentage {
+	top: -20px;
+	right: -10px;
+}
+
+/*	listing_gd.html Template
+	--------------------------	*/
+#listingGd h1 {
+    float: none;
+	width: auto;
+	margin: 0 0 10px 0;
+}
+#listingGd .product-id {
+	float: none;
+	width: auto;
+	margin-bottom: 15px;
+}
+#listingGd .primary {
+	float: none;
+	width: auto;
+	margin: 0 5px 15px 0;
+}
+#listingGd .secondary {
+	float: none;
+	width: auto;
+	margin-left: 5px;
+    padding-top: 0px;
+	position: relative;
+}
+#listingGd .gdTimer {
+    font-size: 120%;
+	margin-bottom: 15px;
+	padding: 15px;
+}
+#listingGd .gdInfo {
+	width: 100%;
+}
+#listingGd .savings-percentage {
+	top: -20px;
+	right: -10px;
+}
+
+/*	login-account.html Template
+	---------------------------	*/
+#loginAccount .myaccountLogin {
+    width: auto;
+}
+#loginAccount .myaccountForgotPassword {
+    width: auto;
+}
+#loginAccount .createNewAccount {
+    width: auto;
+}
+#loginAccount .alpha-col {
+    float: none;
+    width: 100%;
+}
+#loginAccount .beta-col {
+    float: none;
+    width: 100%;
+}
+.loginField label {
+    float: none;
+    display: block;
+    width: auto;
+}
+.loginField input {
+	width: 85% !important;
+}
+.loginField textarea {
+	float: left;
+	width: 85%;
+}
+#loginAccount .submit-button {
+	margin: 15px 0 0 0;
+}
+#loginAccount .submit-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+#loginAccount .reset-button {
+	margin: 15px 0 0 0;
+}
+#loginAccount .reset-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+#loginAccount .resetpassword-text {
+	margin: 15px 0 0 0;
+}
+#loginAccount .createNewAccount .create-account-button {
+	float: none;
+}
+#loginAccount .createNewAccount .create-account-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+.fbconnect {
+    margin: 15px 0 0 0;
+}
+
+/*	registration_0.html Template
+	----------------------------	*/
+#registration0 h1 {
+    float: none;
+    text-align: center;
+}
+#registration0 .loginField select {
+	width: 85%;
+}
+#registration0 .required {
+	margin: 10px 0 0 0;
+}
+#registration0 .submit-button {
+	margin: 10px 0 0 0;
+}
+#registration0 .submit-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	view_cart.html Template
+	-----------------------	*/
+.shoppingCartItems .titles2 {
+    display: none;
+}
+#viewCart .shoppingCartItems .row {
+    border-bottom: 1px solid #d2d2d2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#viewCart .shoppingCartItems .row .item-price {
+    display: none;
+}
+#viewCart .item-info {
+    float: none;
+    width: auto;
+}
+#viewCart .product-name-options {
+    width: 70%;
+}
+#viewCart .item-qty {
+    line-height: 2.9em;
+    width: 30%;
+    margin-left: 40%;
+}
+#viewCart .item-price {
+    line-height: 2.9em;
+    width: 20%;
+}
+#viewCart .item-total {
+	float: right;
+    line-height: 2.9em;
+    margin-right: 10px;
+	text-align: right;
+    width: 20%;
+}
+#viewCart .item-remove {
+    float: none;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+#viewCart .shoppingCartTotal div {
+    margin-bottom: 5px;
+}
+#viewCart .shoppingCartTotal {
+	margin-right: 0;
+}
+/* BuySafe Bond */
+#viewCart .buysafe-bond {
+    min-width: 100%;
+    float: none;
+}
+#viewCart .third-party-payment {
+    min-width: 100%;
+    float: none;
+}
+#vc_ChkButton {
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 15px 0;
+}
+#viewCart .applyCoupon {
+    float: none;
+    width: auto;
+}
+#viewCart .shipQuote {
+    float: none;
+    width: auto;
+}
+#viewCart .displayPromotions .promo-name {
+    display: none;
+}
+#viewCart .displayPromotions .promo-desc {
+    float: none;
+    width: auto;
+}
+#viewCart .alternative-chk-buttons {
+	width: 100%;
+	text-align: center;
+}
+#divGiftWrap {
+	width: 300px;
+	height: 400px;
+	background-color :#FFF;
+}
+#frmGiftWrap label {
+    width: 100%;
+    float: none;
+}
+#frmGiftWrap select {
+    width: 100%;
+    float: none;
+}
+#divGiftwrapMsg textarea {
+    width: 100%;
+}
+#divGiftwrapMsg .chars-left {
+    margin: 0;
+}
+#cmdGWCancel {
+    margin: 0;
+}
+
+/*	checkout-step1.html Template
+	----------------------------	*/
+#checkoutStep1 .leftCol {
+    float: none;
+    width: auto;
+}
+#checkoutStep1 .rightCol {
+    float: none;
+    width: auto;
+}
+.chkField label {
+    float: none;
+    width: auto;
+    line-height: normal;
+    text-align: left;
+    display: block;
+    margin: 0 0 5px 0;
+}
+.chkField select {
+    float: none;
+    width: 85%;
+}
+.chkField input {
+    float: none;
+    width: 85%;
+}
+.chkQuestions input[type="text"] {
+    width: 85%;
+}
+.chkQuestions textarea {
+    width: 85%;
+}
+.chkQuestions select {
+    width: 85%;
+}
+#btnCheckout {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	checkout-singlepage.html Template
+	---------------------------------	*/
+#checkoutSinglePage h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#checkoutSinglePage .checkout-quantity {
+    width: 15%;
+}
+#checkoutSinglePage .checkout-price {
+    display: none;
+}
+#checkoutSinglePage .checkout-total {
+    width: 15%;
+}
+#checkoutSinglePage .login1-button {
+    float: none;
+}
+#checkoutSinglePage .login1-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+#checkoutSinglePage .leftCol {
+    float: none;
+    width: auto;
+}
+#checkoutSinglePage .rightCol {
+    float: none;
+    width: auto;
+}
+#shipping_info {
+    float: none;
+    width: 100%;
+}
+#billing_info {
+    float: none;
+    width: 100%;
+}
+#shipping_div {
+    float: none;
+    width: 100%;
+}
+#total_div {
+    float: none;
+    width: 100%;
+}
+.ccgField label {
+    float: none;
+    width: auto;
+    line-height: normal;
+    text-align: left;
+    display: block;
+    margin: 0 0 5px 0;
+}
+.msField label {
+    float: none;
+    width: auto;
+    line-height: normal;
+    text-align: left;
+    display: block;
+    margin: 0 0 5px 0;
+}
+.customGateway .cust-input {
+    float: none;
+    width: auto;
+    line-height: normal;
+    text-align: left;
+    display: block;
+    margin: 0 0 5px 0;
+}
+.chkComments textarea {
+    width: 96%;
+}
+#spanCheckout input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	checkout-singlepage-v2.html Template
+	------------------------------------	*/
+#checkoutSinglePagev2 .account_login1 .create_newaccount {
+    float: none;
+    width: auto;
+}
+#checkoutSinglePagev2 .account_login1 .registered_account {
+    float: none;
+    width: auto;
+}
+#checkoutSinglePagev2 .alpha-col {
+    float: none;
+    width: auto;
+}
+#checkoutSinglePagev2 .beta-col {
+    float: none;
+    width: auto;
+}
+#checkoutSinglePagev2 .leftCol {
+    float: none;
+    width: auto;
+}
+#checkoutSinglePagev2 .rightCol {
+    float: none;
+    width: auto;
+}
+#checkoutSinglePagev2 .chkField {
+    margin: 0;
+}
+#checkoutSinglePagev2 .chkField input,
+#checkoutSinglePagev2 .chkField select {
+    width: 85%;
+    margin-bottom: 10px;
+    margin-right: 0;
+}
+#spanCheckout button {
+    width: 100%;
+}
+
+/*	checkout-step2.html Template
+	----------------------------	*/
+#checkoutStep2 .leftCol {
+    float: none;
+    width: 100%;
+}
+#checkoutStep2 .rightCol {
+    float: none;
+    width: 100%;
+}
+#divCheckoutButton input[type="submit"] {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	checkout-step2_multiple.html Template
+	-------------------------------------	*/
+#checkoutStep2Multiple .leftCol {
+    float: none;
+    width: 100%;
+}
+#checkoutStep2Multiple .rightCol {
+    float: none;
+    width: 100%;
+    margin-bottom: 15px;
+}
+#checkoutStep2Multiple h1 {
+    float: none;
+    text-align: center;
+}
+
+/*	checkout-step3.html Template
+	----------------------------	*/
+#checkoutStep3 .leftCol {
+    float: none;
+    width: 100%;
+}
+#checkoutStep3 .rightCol {
+    float: none;
+    width: 100%;
+}
+#divCheckoutButton input[type="submit"] {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	checkout-step3_multiple.html Template
+	-------------------------------------	*/
+#checkoutStep3Multiple .leftCol {
+    float: none;
+    width: 100%;
+}
+#checkoutStep3Multiple .rightCol {
+    float: none;
+    width: 100%;
+}
+#divCheckoutButton input[type="submit"] {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	checkout-step4.html Template
+	----------------------------	*/
+#checkoutThankYou h1 {
+    font-size: 22px;
+}
+#checkoutThankYou .section-1 p {
+    width: 75%;
+}
+#checkoutThankYou .section-1 i {
+    margin-top: 0.5em;
+}
+#checkoutThankYou .section-2 p {
+    width: 75%;
+}
+#checkoutThankYou .section-2 i {
+    margin-top: 0.5em;
+}
+#checkoutThankYou .section-2 a {
+    display: block;
+}
+#checkoutStep4 .invoice-logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#checkoutStep4 .invoice-logo img {
+    width: 50%;
+}
+#checkoutStep4 .invoice-id {
+    display: none;
+}
+#checkoutStep4 .invoice-items {
+    width: 80%;
+}
+#checkoutStep4 .invoice-price {
+    display: none;
+}
+#checkoutStep4 .invoice-qty {
+    width: 20%;
+    text-align: center;
+}
+#checkoutStep4 .invoice-total {
+    display: none;
+}
+#checkoutStep4 .customerInfoBlock {
+    line-height: 1.5em;
+}
+#checkoutStep4 .billingBlock {
+    line-height: 1.5em;
+}
+#checkoutStep4 .shippingInfoBlock {
+    line-height: 1.5em;
+}
+#checkoutStep4 .customerInfoBlock .left-col {
+	float: none;
+	width: 100%;
+}
+#checkoutStep4 .customerInfoBlock .right-col {
+	float: none;
+	width: 100%;
+	margin-bottom: 15px;
+}
+#checkoutStep4 .orderDetailsBlock .left-col {
+    float: none;
+    width: auto;
+}
+#checkoutStep4 .orderDetailsBlock .right-col {
+    float: none;
+    width: auto;
+}
+/*	contact_us.html Template
+	------------------------f	*/
+.crmField input {
+	width: 85% !important;
+}
+.crmField select {
+	width: 85%;
+}
+.crmField textarea {
+	width: 85%;
+}
+.crmForm #divSubmitButton {
+	margin: 15px 0 15px 0;
+}
+.crmForm #divSubmitButton input[type="button"] {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	myaccount.html Template
+	------------------------	*/
+#myaccount h1 {
+    float: none;
+    text-align: center;
+}
+#myaccount .icon-btn {
+    white-space: nowrap;
+}
+#myaccount .username {
+    float: none;
+    margin: 0;
+}
+#myaccount .logout-btn {
+    float: none;
+    margin-top: 15px;
+}
+#myaccount .logout-btn input {
+    width: 100%;
+    padding: 15px 0;
+}
+#myaccount tr {
+    padding: 10px;
+    margin: 15px auto;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+#myaccount td { 
+	border: none;
+	border-bottom: 1px solid transparent; 
+	position: relative;
+    padding: 2px 0 2px 50% !important;
+	width: auto !important;
+}
+#myaccount td:before {
+	position: absolute;
+	top: 0;
+	left: 6px;
+	width: 45%;
+	padding: 1px 10px 1px 0;
+	white-space: nowrap;
+}
+#myaccount .billing-address {
+    margin-bottom: 10px;
+}
+#myaccount .shipping-address {
+    margin-bottom: 10px;
+}
+#myaccount .billing-address span {
+    display: block;
+}
+#myaccount .shipping-address span {
+    display: block;
+}
+#myaccount .row td {
+    padding: 2px 0 2px 50% !important;
+}
+#myaccount .row td.crm-norequest {
+    padding: 0 !important;
+}
+.savedOrders .saved-order-delete {
+    position: absolute;
+    right: -15px;
+    top: -35px;
+    text-indent: -999px;
+}
+.savedOrders .icon-btn {
+    margin: 2px 0;
+}
+.crmRequests td.crm-norequest {
+    padding: 0 !important;
+}
+.giftCertificates .check-balance {
+    float: none;
+    margin-bottom: 0;
+}
+
+/*	managemycc.html Template
+	------------------------	*/
+#manageMyCc h1 {
+    float: none;
+    text-align: center;
+}
+#divCardEdit, 
+#divCard {
+    width: auto;
+}
+#manageMyCc .ccBillingInfo {
+    width: auto;
+}
+#manageMyCc .update-btn {
+	margin: 15px 0 15px 0;
+}
+#manageMyCc .update-btn input {
+	margin: 0 0 10px 0;
+}
+#manageMyCc .updCcField label {
+	float: none;
+	width: auto;
+	text-align: left;
+	margin-right: 0;
+    display: block;
+}
+#manageMyCc .updCcField input {
+    width: 85%;
+}
+#manageMyCc .updCcField select {
+    width: 85%;
+    margin: 0 0 10px 0;
+}
+
+/*	update_account.html Template
+	----------------------------	*/
+#updateAccount h1 {
+    float: none;
+    text-align: center;
+}
+#updateAccount .updaccField label {
+    float: none;
+    display: block;
+    text-align: left;
+}
+#updateAccount .updaccField input {
+    width: 85%;
+}
+#updateAccount .updaccField select {
+	width: 85%;
+}
+.update-btn input[type="button"] {
+    width: 100%;
+    padding: 15px 0;
+}
+#updateAccount .updaccField .mailist-chk {
+    float: left;
+    width: auto;
+}
+#updateAccount .mailist-subscribe {
+    width: 70%;
+}
+
+/*	order-history.html Template
+	---------------------------	*/
+#orderHistory h1 {
+    float: none;
+    text-align: center;
+}
+#orderHistory tr {
+    padding: 10px;
+    margin: 15px auto;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+#orderHistory td { 
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+    padding: 2px 0 2px 50% !important;
+}
+#orderHistory td:before {
+	position: absolute;
+	top: 0;
+	left: 6px;
+	width: 45%;
+	padding: 1px 10px 1px 0;
+	white-space: nowrap;
+}
+#orderHistory .oid {
+    width: auto;
+    padding-left: 6px;
+    font-weight: bold;
+}
+#orderHistory td {
+	width: auto !important;
+}
+
+/*	order-history-view.html Template
+	--------------------------------	*/
+#orderHistoryView .invoice-logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#orderHistoryView .invoice-logo img {
+    width: 50%;
+}
+#orderHistoryView h4 {
+	border-bottom: 1px solid #d2d2d2;
+	margin: 10px 0 10px 0;
+    padding-bottom: 5px;
+}
+#orderHistoryView .customerInfoBlock .left-col {
+	float: none;
+	width: auto;
+}
+#orderHistoryView .customerInfoBlock .right-col {
+	float: none;
+	width: auto;
+}
+#orderHistoryView .billingBlock .left-col {
+    float: none;
+    width: 100%;
+}
+#orderHistoryView .billingBlock .right-col {
+    float: none;
+    width: 100%;
+}
+#orderHistoryView .orderDetailsBlock .left-col {
+    float: none;
+    width: auto;
+}
+#orderHistoryView .orderDetailsBlock .right-col {
+    float: none;
+    width: auto;
+}
+#orderHistoryView .invoice-id {
+    display: none;
+}
+#orderHistoryView .invoice-items {
+    width: 80%;
+}
+#orderHistoryView .invoice-price {
+    display: none;
+}
+#orderHistoryView .invoice-qty {
+    width: 20%;
+    text-align: center;
+}
+#orderHistoryView .invoice-total {
+    display: none;
+}
+
+/*	order-history-download.html Template
+	------------------------------------	*/
+#orderHistoryDownload h1 {
+    float: none;
+    text-align: center;
+}
+#orderHistoryDownload h1 > span {
+    display: block;
+    font-size: 50%;
+    font-weight: bold;
+    margin-top: 15px;
+}
+#orderHistoryDownload .productDownload {
+	width: auto;
+}
+
+/*	addresses.html Template
+	-----------------------	*/
+#addresses h1 {
+    float: none;
+    text-align: center;
+}
+#addresses h2 {
+    display: none;
+}
+#addresses .viewAddress {
+    float: none;
+    margin: 0 0 20px;
+    width: auto;
+}
+
+/*	add_addresses.html Template
+	---------------------------	*/
+#addAddresses h1 {
+    float: none;
+    text-align: center;
+}
+#addAddresses .addUpdateAddress {
+	width: auto;
+}
+#addAddresses .frmField label {
+    float: none;
+    text-align: left;
+    display: block;
+}
+#addAddresses .frmField input {
+    width: 85%;
+}
+#addAddresses .frmField select {
+    width: 85%;
+}
+#addAddresses .back-add-address-button {
+    margin: 15px 0 10px 0;
+}
+#addAddresses .back-add-address-button input {
+    width: 100%;
+    padding: 15px 0;
+    margin: 5px 0;
+}
+
+/*	crm_request.html Template
+	-------------------------	*/
+#crmRequest h1 {
+    float: none;
+    text-align: center;
+}
+.crmRequestForm {
+    margin-top: 15px;
+}
+#crmRequest .submit-request-button {
+	margin: 15px 0 0 0;
+}
+#crmRequest .submit-request-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	crm.html Template
+	-----------------	*/
+#crm h1 {
+    float: none;
+    text-align: center;
+}
+#crm tr {
+    padding: 10px;
+    margin: 15px auto;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+#crm td { 
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+    padding: 2px 0 2px 50% !important;
+}
+#crm td:before {
+	position: absolute;
+	top: 0;
+	left: 6px;
+	width: 45%;
+	padding: 1px 10px 1px 0;
+	white-space: nowrap;
+}
+.crmTicketInfo .label {
+	width: 40%;
+}
+.crmTicketInfo .text {
+	width: 60%;
+}
+.crmTicketStatus {
+    padding: 0 !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.crmTicketStatus td {
+	width: auto !important;
+}
+#crm .update-request-button {
+	margin: 15px 0 0 0;
+}
+#crm .update-request-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	rma_new.html Template
+	---------------------	*/
+#rmaNew h1 {
+    float: none;
+    text-align: center;
+}
+#rmaNew tr {
+    padding: 10px;
+    margin: 15px auto;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+#rmaNew td { 
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+    padding: 2px 0 2px 50% !important;
+	width: auto !important;
+}
+#rmaNew td:before {
+	position: absolute;
+	top: 0;
+	left: 6px;
+	width: 45%;
+	padding: 1px 10px 1px 0;
+	white-space: nowrap;
+}
+#rmaNew .viewRmaOption select {
+    width: 90%;
+}
+#rmaNew .rmaComments textarea {
+    width: 100%;
+}
+#rmaNew .add-mod-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	rma_new_thankyou.html Template
+	------------------------------	*/
+#rmaNewThankyou h1 {
+    float: none;
+    text-align: center;
+}
+#rmaNewThankyou .newrmaThankYou {
+    width: auto;
+}
+#rmaNewThankyou .rma-details-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	giftregistry_view.html Template
+	-------------------------------	*/
+#giftregistryView h1 {
+    float: none;
+    text-align: center;
+}
+.giftregField input {
+    width: 85%;
+}
+.giftregField input[type="button"] {
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px 0;
+}
+.giftregistryGiftInfo .giftreg-url .text {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 90%;
+	white-space: nowrap;
+}
+.giftregistryProducts .view-productlist-button {
+    float: none;
+}
+.giftregistryProducts .view-productlist-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+.giftregistrySendEmails .send-email-button input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 15px 0;
+}
+
+/*	view_giftregistry_list.html Template
+	------------------------------------	*/
+#viewGiftregistryList h1 {
+    float: none;
+    text-align: center;
+}
+#viewGiftregistryList .giftreg-back-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+.giftreg-productList .titles2 {
+    display: none;
+}
+.giftreg-productList .view-items {
+    float: none;
+    width: auto;
+}
+.giftreg-productList .view-price {
+    width: 20%;
+}
+.giftreg-productList .view-subtotal {
+    width: 20%;
+}
+#viewGiftregistryList .giftreg-remove-item {
+    float: none;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: block;
+}
+#viewGiftregistryList .giftreg-remove-item .icon-btn-close {
+	width: 16px;
+	height: 21px;
+	padding: 0;
+	margin: 0 auto;
+}
+#viewGiftregistryList .view-desired input[type="button"] {
+    display: none;
+}
+#viewGiftregistryList .view-actions {
+    float: none !important;
+    width: 100%;
+}
+#viewGiftregistryList .view-actions input {
+    width: 100%;
+    padding: 15px 0;
+}
+#viewGiftregistryList tr {
+    padding: 10px;
+    margin: 15px auto;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+#viewGiftregistryList td { 
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+    padding: 2px 0 2px 50% !important;
+	width: auto !important;
+}
+#viewGiftregistryList td:before {
+	position: absolute;
+	top: 0;
+	left: 6px;
+	width: 45%;
+	padding: 1px 10px 1px 0;
+	white-space: nowrap;
+}
+#viewGiftregistryList td.view-emptypurchasedlist {
+    padding: 0 !important;
+}
+
+/*	giftregistry_delete.html Template
+	--------------------------------	*/
+#giftregistryDelete h1 {
+    float: none;
+    text-align: center;
+}
+#giftregistryDelete .delete-actions input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 15px 0;
+}
+
+/*	giftregistry_edit.html Template
+	-------------------------------	*/
+#giftregistryEdit h1 {
+    float: none;
+    text-align: center;
+}
+.giftregField label {
+    float: none;
+    display: block;
+}
+.giftregField input {
+	float: none;
+    width: 85%;
+}
+.giftregField textarea {
+    width: 85%;
+}
+#giftregistryEdit .save-cancel-button input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 15px 0;
+}
+.giftregistryeditInfo .passwordinstructions {
+	float: none;
+	clear: left;
+	margin: 5px 0 0 0;
+}
+.giftregistryeditInfo .messageinstructions {
+	float: none;
+	clear: left;
+	margin: 5px 0 0 0;
+}
+
+/*	addtowishlist.html Template
+	-----------------------------------	*/
+#addtoWishlist h1 {
+    text-align: center;
+}
+#addtoWishlist .thumbnail {
+    position: relative;
+    top: 0;
+    text-align: center;
+    width: 100px;
+    margin: 0 auto;
+}
+#addtoWishlist .wishlistField select,
+#addtoWishlist .wishlistField input[type="text"] {
+    width: 100%;
+}
+#addtoWishlist .addwishlist-submit-button {
+    margin: 0 0 10px 0;
+}
+#addtoWishlist .addwishlist-submit-button button {
+    width: 100%;
+}
+
+/*	giftregistry_prelogin.html Template
+	-----------------------------------	*/
+#giftregistryPrelogin h1 {
+    float: none;
+    text-align: center;
+}
+#giftregistryPrelogin .continue-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	giftregistry_home.html Template
+	-------------------------------	*/
+#giftregistryHome h1 {
+    float: none;
+    text-align: center;
+}
+#giftregistryHomePassword .label {
+	float: left;
+	width: 50%;
+}
+#giftregistryHomePassword .text {
+	float: left;
+	width: 50%;
+}
+#giftregistryHome tr {
+    padding: 10px;
+    margin: 15px auto;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+#giftregistryHome td { 
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+	padding: 1px 0 1px 50%;
+}
+#giftregistryHome td:before {
+	position: absolute;
+	top: 0;
+	left: 6px;
+	width: 45%;
+	padding: 1px 10px 1px 0;
+	white-space: nowrap;
+}
+.giftRegistrySearchResult td {
+	width: auto !important;
+}
+.giftRegistrySearchResult .search-noresults {
+    padding: 0 !important;
+}
+.giftRegistrySearch .home-search-button {
+    float: none;
+}
+.giftRegistrySearch .home-search-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+.giftRegistryCreate .create-registry-button {
+    float: none;
+}
+.giftRegistryCreate .create-registry-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+#giftregistryHome td.select-registry-button {
+    width: auto !important;
+    padding: 0 !important;
+}
+#giftregistryHome .select-registry-button input[type="button"] {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	giftregistry_home_password.html Template
+	----------------------------------------	*/
+#giftregistryHomePassword h1 {
+    float: none;
+    text-align: center;
+}
+
+/*	wishlist_prelogin.html Template
+	-------------------------------	*/
+#wishlistPrelogin h1 {
+    float: none;
+    text-align: center;
+}
+
+/*	view_wishlist.html Template
+	---------------------------	*/
+#viewWishlist h1 {
+    float: none;
+    text-align: center;
+}
+.wishlistView .titles2 {
+    display: none;
+}
+#viewWishlist .wl-items {
+    float: none;
+    width: auto;
+}
+#viewWishlist .product-name-options {
+    width: 70%;
+}
+#viewWishlist .wl-quantity {
+    line-height: 2.9em;
+    width: 20%;
+    margin-left: 40%;
+}
+#viewWishlist .wl-price {
+    line-height: 2.9em;
+    width: 20%;
+}
+#viewWishlist .wl-total {
+    line-height: 2.9em;
+    width: 20%;
+}
+#viewWishlist .wl-details {
+    float: none;
+    width: auto;
+}
+#viewWishlist .remove-item {
+    display: none;
+}
+#viewWishlist .wl-remove-item .icon-btn-close {
+	width: 16px;
+	height: 21px;
+	padding: 0;
+	margin: 0 auto;
+}
+#viewWishlist .wl-remove-item {
+    float: none;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: block;
+}
+#viewWishlist .add-item {
+    float: none !important;
+}
+#viewWishlist .add-item input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	my_rma.html Template
+	--------------------	*/
+#myRma h1 {
+    float: none;
+    text-align: center;
+}
+#myRma tr {
+    padding: 10px;
+    margin: 15px auto;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+#myRma td { 
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+    padding: 2px 0 2px 50% !important;
+	width: auto !important;
+}
+#myRma td:before {
+	position: absolute;
+	top: 0;
+	left: 6px;
+	width: 45%;
+	padding: 1px 10px 1px 0;
+	white-space: nowrap;
+}
+
+/*	reward_detail.html Template
+	---------------------------	*/
+#rewardDetail h1 {
+    float: none;
+    text-align: center;
+}
+#rewardDetail tr {
+    padding: 10px;
+    margin: 15px auto;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+#rewardDetail td { 
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+    padding: 2px 0 2px 50% !important;
+}
+#rewardDetail td:before {
+	position: absolute;
+	top: 0;
+	left: 6px;
+	width: 45%;
+	padding: 1px 10px 1px 0;
+	white-space: nowrap;
+}
+.rewardsDetail td {
+	width: auto !important;
+}
+.pointsAvailable {
+	width: 50%;
+}
+.totalPoints {
+	width: 50%;
+}
+.redeem-btn input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	rewards.html Template
+	---------------------------	*/
+#rewards h1 {
+    float: none;
+    text-align: center;
+}
+
+/*	feed_page_0.html Template
+	-------------------------	*/
+#feedPage0 h1 {
+    float: none;
+    text-align: center;
+}
+
+/*	register_affiliate.html Template
+	--------------------------------	*/
+#registerAffiliate h1 {
+    float: none;
+    text-align: center;
+	margin-bottom: 15px;
+}
+#registerAffiliate .regAffiliate {
+	width: auto;
+	margin: 15px auto;
+}
+#registerAffiliate .affField textarea {
+	width: 100%;
+}
+#registerAffiliate .submit-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	affiliateInfo.html Template
+	---------------------------	*/
+#affiliateInfo h1 {
+    float: none;
+    text-align: center;
+}
+#affiliateInfo .loginField label {
+	float: none;
+	width: auto;
+	line-height: 2.9em;
+	text-align: left;
+	margin-right: 10px;
+}
+#affiliateInfo .continue-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+#affiliateInfo .loginForm {
+	width: auto;
+	margin: 15px auto;
+}
+#affiliateInfo .loginForm .login-button {
+	margin: 15px 0 10px 0;
+}
+#affiliateInfo .loginForm .login-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+#affiliateInfo .createnewaccountForm {
+	width: auto;
+	margin: 15px auto;
+}
+#affiliateInfo .createnewaccountForm .register-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	affiliate.html Template
+	-----------------------	*/
+#affiliate h1 {
+    float: none;
+    text-align: center;
+}
+#affiliate tr {
+    padding: 10px;
+    margin: 15px auto;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+#affiliate td { 
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+    padding: 2px 0 2px 50% !important;
+}
+#affiliate td:before {
+	position: absolute;
+	top: 0;
+	left: 6px;
+	width: 45%;
+	padding: 1px 10px 1px 0;
+	white-space: nowrap;
+}
+.affiliate td {
+	width: auto !important;
+}
+.affiliateLinks textarea {
+    width: 98%;
+}
+#affiliate td.no-display {
+    padding: 0 !important;
+}
+
+/*	blog.html Template
+	------------------	*/
+#blog .button {
+    float: right;
+}
+#blog .blogPost {
+	float: none;
+	width: 100%;
+}
+#blog .blogPost .post_image-container img {
+    max-width: 100%;
+}
+#blog .blogNav {
+	float: none;
+	width: 100%;
+	margin-left: 0;
+}
+#blog .blogNav select {
+    width: 100%;
+    padding: 4px 6px;
+}
+#blog .video-content iframe {
+    width: 100%;
+    max-height: 100% !important;
+}
+#blog article.blog-body {
+    text-align: justify;
+    line-height: 1.5em;
+}
+#blog article.blog-body object {
+    min-width: 100%;
+}
+#blog .blogField label {
+    float: none;
+}
+#blog .blogField input[type="text"],
+#blog .blogField textarea {
+    width: 100%;
+}
+#blog .blogAddComments input[type="submit"] {
+    width: 100%;
+    margin-left: 0;
+    padding: 15px 0;
+}
+
+/*	manufacturer_index.html Template
+	--------------------------------	*/
+#manufacturerIndex h1 {
+    float: none;
+    text-align: center;
+}
+#manufacturerIndex .mfg-name {
+	float: none;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+/*	category_index.html Template
+	----------------------------	*/
+#categoryIndex h1 {
+    float: none;
+    text-align: center;
+}
+#categoryIndex ul {
+    margin-bottom: 15px;
+}
+
+/*	product_index.html Template
+	---------------------------	*/
+#productIndex  h1 {
+    float: none;
+    text-align: center;
+}
+
+/*	shipment_update_address.html Template
+	-------------------------------------	*/
+#shipmentUpdateAddress  h1 {
+    float: none;
+    text-align: center;
+}
+#shipmentUpdateAddress .leftCol {
+	float: none;
+	width: 100%;
+}
+#shipmentUpdateAddress .rightCol {
+	float: none;
+	width: 100%;
+}
+
+/*	gc_view.html Template
+	---------------------	*/
+#gcView  h1 {
+    float: none;
+    text-align: center;
+}
+#gcView tr {
+    padding: 10px;
+    margin: 15px auto;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+#gcView td { 
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+    padding: 2px 0 2px 50% !important;
+}
+#gcView td:before {
+	position: absolute;
+	top: 0;
+	left: 6px;
+	width: 45%;
+	padding: 1px 10px 1px 0;
+	white-space: nowrap;
+}
+.gcViewBlock td {
+	width: auto !important;
+}
+
+/*	gc_balance.html Template
+	------------------------	*/
+#gcBalance h1 {
+    float: none;
+    text-align: center;
+}
+#gcBalance tr {
+    padding: 10px;
+    margin: 15px auto;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+#gcBalance td { 
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+    padding: 2px 0 2px 50% !important;
+	width: auto !important;
+}
+#gcBalance td:before {
+	position: absolute;
+	top: 0;
+	left: 6px;
+	width: 45%;
+	padding: 1px 10px 1px 0;
+	white-space: nowrap;
+}
+#gcBalance .gcField label {
+    float: none;
+    width: auto;
+    display: block;
+}
+#gcBalance .gcField input {
+    float: none;
+}
+#gcBalance .gcField .captcha {
+    float: none;
+}
+#gcBalance .gcCheckBalance {
+	width: auto;
+	margin: 15px auto;
+}
+.gcCheckBalance .check-balance-button {
+	margin-left: 0;
+}
+.gcCheckBalance .check-balance-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	view_reminders.html Template
+	----------------------------	*/
+#viewReminders h1 {
+    float: none;
+    text-align: center;
+}
+#viewReminders tr {
+    padding: 10px;
+    margin: 15px auto;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+#viewReminders td { 
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+    padding: 2px 0 2px 50% !important;
+	width: auto !important;
+    line-height: 2.3em;
+}
+#viewReminders td:before {
+	position: absolute;
+	top: 0;
+	left: 6px;
+	width: 45%;
+	padding: 1px 10px 1px 0;
+	white-space: nowrap;
+}
+.viewReminders .next-change input {
+	width: 50%;
+}
+
+/*	recommendafriend.html Template
+	------------------------------	*/
+#recommendAFriend h1 {
+    float: none;
+    text-align: center;
+}
+#recommendAFriend .recommendBlock {
+    margin: 0;
+}
+#recommendAFriend .thumbnail {
+	position: relative;
+	top: 0;
+	right: 0;
+	text-align: center;
+	width: auto;
+    margin-bottom: 15px;
+}
+.recomField label {
+	margin: 0;
+}
+.recomField .captcha {
+	float: none;
+}
+.recomField input[type="text"] {
+	width: 100%;
+}
+.recomField textarea {
+	float: left;
+	width: 100%;
+	height: 60px;
+}
+#recommendAFriend .recommend-submit-button {
+	margin: 0 0 10px 0;
+}
+#recommendAFriend .recommend-submit-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	product_review_new.html Template
+	--------------------------------	*/
+#productReviewNew h1 {
+    float: none;
+    text-align: center;
+}
+.reviewField label {
+	float: none;
+    display: block;
+}
+.reviewField input[type="text"] {
+    width: 85%;
+}
+.newReviewForm .left {
+    float: none !important;
+}
+#productReviewNew .new-rating input {
+    clear: left;
+    margin: 2px 0 0;
+}
+#productReviewNew .new-rating img {
+	margin: 0 10px 15px 5px;
+}
+#productReviewNew .required {
+	margin: 0 0 15px 0;
+}
+#productReviewNew .review-submit-button {
+	margin: 0 0 0 0;
+}
+#productReviewNew .review-submit-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	product_makeanoffer_new.html Template
+	-------------------------------------	*/
+#productMakeanofferNew h1 {
+    float: none;
+    text-align: center;
+}
+.offerField label {
+	float: none;
+    display: block;
+}
+.offerField textarea {
+    width: 85%;
+}
+#productMakeanofferNew .required {
+	margin: 0 0 15px 0;
+}
+#productMakeanofferNew .offer-submit-button {
+	margin: 0 0 0 0;
+}
+#productMakeanofferNew .offer-submit-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	notify.html Template
+	--------------------	*/
+#notify {
+    padding-top: 35px;
+}
+#notify h1 {
+    float: none;
+    font-size: 22px;
+    text-align: center;
+    margin: 0 0 5px;
+}
+#notify .thumbnail {
+	position: relative;
+	top: 0;
+	right: 0;
+	text-align: center;
+	width: auto;
+    margin-bottom: 15px;
+}
+.notiField label {
+	float: none;
+    display: block;
+}
+.notiField .captcha {
+	float: none;
+}
+.notiField input[type="text"] {
+	width: 85%;
+}
+.notiField textarea {
+	width: 85%;
+}
+#notify .notify-submit-button {
+	margin: 0 0 0 0;
+}
+#notify .notify-submit-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	productqa.html Template
+	-----------------------	*/
+#productQa h1 {
+    float: none;
+    text-align: center;
+}
+#productQa .qaForm {
+    padding-bottom: 25px;
+}
+.qaField label {
+	float: none;
+	line-height: 2.9em;
+    width: auto;
+	display: block;
+}
+.qaField input {
+    width: 85%;
+}
+.qaField em {
+    float: left;
+    font-size: 80%;
+}
+#productQa .required {
+	margin: 0 0 10px 0;
+}
+#productQa .qa-submit-button {
+	margin: 0 0 0 0;
+}
+#productQa .qa-submit-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	usps_tracking.html Template
+	---------------------------	*/
+#uspsTracking .left-col {
+	float: none;
+	width: auto;
+}
+#uspsTracking .right-col {
+	float: none;
+	width: auto;
+}
+#uspsTracking .logo {
+    display: none;
+}
+#uspsTracking tr {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#uspsTracking td { 
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+    width: auto !important;
+	padding: 1px 0 10px 50% !important;
+}
+#uspsTracking td:before {
+	position: absolute;
+	top: 0;
+	left: 6px;
+	width: 45%;
+	padding: 1px 10px 1px 0;
+	white-space: nowrap;
+}
+
+/*	ups_tracking.html Template
+	--------------------------	*/
+#upsTracking .left-col {
+	float: none;
+	width: auto;
+	padding: 10px;
+}
+#upsTracking .right-col {
+	float: none;
+	width: auto;
+	padding: 10px;
+}
+#upsTracking h3 {
+	line-height: 1.8em;
+}
+#upsTracking .logo {
+    display: none;
+}
+#upsTracking .trackingStatus {
+	width: auto;
+}
+#upsTracking .trackingModule {
+	width: auto;
+}
+.trackingField {
+	float: none;
+	margin: 0 0 15px 0;
+}
+.trackingField input {
+    width: 85%;
+}
+.view-lic-button {
+	float: none;
+	margin: 15px 0 0 0;
+}
+.view-lic-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+.track-pkg-button {
+	float: none;
+	margin: 15px 0 15px 0;
+}
+.track-pkg-button input {
+    width: 100%;
+    padding: 15px 0;
+}
+#upsTracking tr {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#upsTracking td { 
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+    width: auto !important;
+	padding: 1px 0 10px 50% !important;
+}
+#upsTracking td:before {
+	position: absolute;
+	top: 0;
+	left: 6px;
+	width: 45%;
+	padding: 1px 10px 1px 0;
+	white-space: nowrap;
+}
+
+/*	fedex_tracking.html Template
+	----------------------------	*/
+#fedexTracking h3 {
+    float: none;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#fedexTracking tr {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#fedexTracking td { 
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+    width: auto !important;
+	padding: 1px 0 10px 50% !important;
+}
+#fedexTracking td:before {
+	position: absolute;
+	top: 0;
+	left: 6px;
+	width: 45%;
+	padding: 1px 10px 1px 0;
+	white-space: nowrap;
+}
+#fedexTracking .left-col {
+	float: none;
+	width: auto;
+    line-height: 2.3em;
+}
+#fedexTracking .right-col {
+	float: none;
+	width: auto;
+}
+
+/*	tnt_tracking.html Template
+	--------------------------	*/
+#tntTracking h3 {
+    float: none;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#tntTracking tr {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#tntTracking td { 
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+    width: auto !important;
+	padding: 1px 0 10px 50% !important;
+}
+#tntTracking td:before {
+	position: absolute;
+	top: 0;
+	left: 6px;
+	width: 45%;
+	padding: 1px 10px 1px 0;
+	white-space: nowrap;
+}
+#tntTracking .left-col {
+	float: none;
+	width: auto;
+    line-height: 2.3em;
+}
+#tntTracking .right-col {
+	float: none;
+	width: auto;
+}
+
+/*	redeem.html Template
+	--------------------	*/
+#redeem h1 {
+    float: none;
+    text-align: center;
+}
+#redeem .action {
+    margin-top: 10px;
+}
+#redeem .action input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+/*	redeemItem.html Template
+	------------------------	*/
+#redeemItem h1 {
+    float: none;
+    text-align: center;
+}
+#redeemItem .titles {
+    text-align: center;
+}
+#redeemItem .button {
+    float: right !important;
+}
+
+/*	checkout_upsell.html Template
+	-----------------------------	*/
+#checkoutUpsell h1 {
+    float: none;
+    text-align: center;
+}
+#checkoutUpsell li {
+	float: none;
+	width: 100%;
+    margin: 0 auto 20px;
+}
+#checkoutUpsell .chkupsell-actions input {
+    width: 100%;
+	margin: 5px 0;
+    padding: 15px 0;
+}
+
+/*	view_cart_quick.html Template
+	-----------------------------	*/
+#viewCartQuick section {
+    padding: 0 10px !important;
+}
+#viewCartQuick .quickCartCheckout {
+    width: 100%;
+    height: 100%;
+    margin: 1em 0;
+}
+#viewCartQuick .quickCartItems {
+    display: none;
+}
+#viewCartQuick .quickCartRelated {
+    display: none;
+}
+#viewCartQuick .quick-close-modal {
+    margin: 0 0 5px 0;
+}
+#viewCartQuick .boxShadow {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none; 
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.product-item .name {
+    max-width: 100%;
+    max-height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.category-viewall {
+    display: none;
+}
+
+}

@@ -1,0 +1,431 @@
+<head>
+<!--[if lte IE 8]><meta http-equiv="refresh" content="0;URL=/shopping/?ie8=true"><![endif]-->
+<!-- New Relic -->
+<script type="text/javascript">
+window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(1),t(4),"addEventListener"in window&&t(2),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(3),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:8,2:5,3:9,4:7,5:20,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(2);t("loader").features.stn=!0,t(1),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:6,2:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:20,2:21,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:21,2:20,ee:"QJf3ax"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:21,2:20,ee:"QJf3ax"}],8:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:21,2:20,ee:"QJf3ax"}],9:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:5,2:21,ee:"QJf3ax"}],10:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:11,3:9,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],11:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],20:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],21:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:20,ee:"QJf3ax"}]},{},["G9z0Bl",3,10,4]);
+;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"0a6195046c",applicationID:"5465864",sa:1,agent:"js-agent.newrelic.com/nr-476.min.js"}
+</script>
+<!-- End New Relic -->
+<!-- Begin Monetate tag v8. Place at start of document head. DO NOT ALTER. -->
+<script>var monetateT=(new Date).getTime();(function(){var p=document.location.protocol;if(p=="http:"||p=="https:"){var m=document.createElement("script");m.type="text/javascript";m.src=(p=="https:"?"https://s":"http://")+"e.monetate.net/js/2/a-9cf5fd29/p/buildabear.com/entry.js";var e=document.createElement("div");e.appendChild(m);document.write(e.innerHTML)}})();</script>
+<!-- End Monetate tag. -->
+<SCRIPT>
+<!--
+var gomez={gs:new Date().getTime(),acctId:'C2BA04',pgId:'Build-A-Bear',grpId:''};
+//-->
+</SCRIPT>
+<SCRIPT>
+<!--
+/*Gomez tag version: 7.1.1*/var gomez=gomez?gomez:{};gomez.h3=function(d, s){for(var p in s){d[p]=s[p];}return d;};gomez.h3(gomez,{b3:function(r){if(r<=0)return false;return Math.random()<=r&&r;},b0:function(n){var c=document.cookie;var v=c.match(new RegExp(';[ ]*'+n+'=([^;]*)'));if(!v)v=c.match(new RegExp('^'+n+'=([^;]*)'));if(v)return unescape(v[1]);return '';},c2:function(n,v,e,p,d,s){try{var t=this,a=t.domain?t.domain:location.hostname;var c=n+'='+escape(v)+(e?';expires='+e.toGMTString():'')+(p?';path='+p:';path=/')+(d?';domain='+d:';domain='+a)+(s?';secure':'');document.cookie=c;}catch(e){}},z0:function(n){var t=this;if(n){var s =t.b0("__g_c");if(!s)return '';var v=s.match(new RegExp(n+':([^\|]*)'));if(v)return unescape(v[1]);return '';}else return '';},z1:function(n,m){var t=this;if(n){var s=t.b0("__g_c");if(s){if(s.indexOf(n+':')!=-1)s=s.replace(new RegExp('('+n+':[^\|]*)'),n+':'+m);else s=s==' '?n+':'+m:s+'|'+n+':'+m;t.c2("__g_c",s);}else t.c2("__g_c",n+':'+m);};},b2:function(v,s){var t=this,f=new Date(t.gt()+946080000000),g=''+v+'_'+s;t.c2('__g_u',g,f);t.gc.c=v;t.gc.d=s;t.z1('c',v);t.z1('d',s);},gt:function(){return new Date().getTime()},b5:function(){return new Date().getTime()-gomez.gs},j1:function(h){if(h){if(h.indexOf('<')!=-1||h.indexOf('%3C')!=-1||h.indexOf('%3c')!=-1)return null;if(window.decodeURIComponent)return decodeURIComponent(h);else return unescape(h);}return null;},f1:function(u,t){try{if(u){if(!/(^http|^https)/.test(u)){if(t==1)return gomez.j1(location.hostname);else return u;}var p=new RegExp('(^http|^https|):\/{2}([^\?#;]*)');if(t==1)p=new RegExp('(^http|^https|):\/{2}([^\/\?]*)');var r=u.match(p);if(r&&t==1)return gomez.j1(r[2]);else if(r)return r[0];}return null;}catch(e){return null;}},j3:function(n){try{var t =this,key=escape((window.location+n).replace(new RegExp("([:\/\.])","gm"),""));if(key&&key.length>100){key=key.substring(0,100);}if(window.localStorage){window.localStorage.setItem(key, t.gt());}else{t.z1('r',key+'___'+t.gt());}}catch(e){return ;}}, j2:function(){try{var m,t =this,key=escape((document.referrer+window.location).replace(new RegExp("([:\/\.])","gm"),""));if(key&&key.length>100){key=key.substring(0,100);}if(window.localStorage){m=window.localStorage.getItem(key);}if(!m){var c=t.z0("r");if(c){var r=c.split('___');if(r &&r[0]==key){m=r[1];}};};t.j4();return m;}catch(e){return ;}}, j4:function(){try{var t =this;if(window.localStorage){var key=escape((document.referrer+window.location).replace(new RegExp("([:\/\.])","gm"),""));if(key&&key.length>100){key=key.substring(0,100);}window.localStorage.removeItem(key);}else{t.z1('r', '');}}catch(e){return ;}}, j5:function(){var ret='';for(var i=0;i<3;i++){ret =ret +(((1+Math.random())*0x10000)|0).toString(16).substring(1);}ret =parseInt(ret, 16);return ret;},j6:function(){var t =this;var g=t.b0("__g_u");if(g&&g!='1'&&g.indexOf('NaN')==-1&&g.indexOf('undefined')==-1){var r =g.split("_");if(r.length>5){if(parseInt(r[5])<new Date().getTime()){return undefined;}else{return parseFloat(r[2]);}}}return undefined;},nameEvent:function(){},startInterval:function(){},endInterval:function(){},customValue:function(){}});gomez.P=function(){};gomez.P.prototype={hash:function(o){if(!o)return '';var t=this,s='{n:'+t.f9(o['n'])+'|';for(var i in o){if(i=='n')continue;if(typeof(o[i])=='string'||typeof(o[i])=='number')s +=i+':'+t.f9(o[i])+'|';};s=s.substring(0,s.length-1);return s+'}';},f9:function(s){s=''+s;s=s.replace(new RegExp("[|]","gm"),"#$#").replace(':','$*$').replace('{','@#@').replace('}','*@*').replace('&','!*!');return s;},g0:function(){var t=this,z=gomez;if(z.grpIds)z.h3(z.gc,z.grpIds);if(z.wrate)z.gc.r=z.wrate;z.gc.e=z.grpId;for(var i=1;i<5;i++){if(z["grpId"+i]!=undefined){z.gc["e"+i]=z["grpId"+i];}}z.gc.b=z.pgId;z.gc.l=z.f1(z.m,2);if(self.screen){z.gc.m=screen.width;z.gc.o=screen.height;}else if(self.java){var j=java.awt.Toolkit.getDefaultToolkit();var s=j.getScreenSize();z.gc.m=s.width;z.gc.o=s.height;};z.gc.p=navigator.platform;if(navigator.cpuClass)z.gc.q=navigator.cpuClass;if(!z.gc.f&&!z.gc.g){try{var a=new Array("MSIE","Firefox","Opera","Safari","Chrome"),b=document.createElement('div');if(b.addBehavior&&document.body){b.addBehavior('#default#clientCaps');z.gc.k=b.connectionType;}}catch(e){};for(var i=0;i<a.length;i++){if(navigator.userAgent.indexOf(a[i])!=-1){z.gc.g=a[i];var c=navigator.userAgent.match('Version')?'Version':a[i];z.gc.f=(new String(navigator.userAgent.substring(navigator.userAgent.indexOf(c)).match(/[\d.]+/))).substring(0);}}if(!z.gc.f&&!z.gc.g){z.gc.g=navigator.vendor||navigator.appName;z.gc.f=(new String(navigator.appVersion.match(/[\d.]+/))).substring(0);}}return t.hash(z.gc);}};try{gomez.gc={'n':'c'};var iU=gomez.b0('__g_u');if(iU==undefined||iU==''){gomez.b2(gomez.j5(), 0);}var sR=gomez.j6();if(sR==undefined){sR=1;gomez.isFirstVi=true;}else{gomez.isFirstVi=false;}var wR=gomez.wrate?parseFloat(gomez.wrate):(gomez.wrate==0?0:1);wR=wR<0?0:(wR>1?1:wR);gomez.inSample=gomez.z0('a');if(!gomez.inSample||gomez.inSample==''){if(gomez.b3(wR*sR)){gomez.inSample=1;}else{gomez.inSample=0;}gomez.z1('a', gomez.inSample);}else{gomez.inSample=parseInt(gomez.inSample);}gomez.runFlg=gomez.inSample>0;if(gomez.runFlg){gomez.clickT=gomez.j2();gomez.h1=function(v,d){return v?v:d};gomez.gs=gomez.h1(gomez.gs,new Date().getTime());gomez.acctId=gomez.h1(gomez.acctId,'');gomez.pgId=gomez.h1(gomez.pgId,'');gomez.grpId=gomez.h1(gomez.grpId, '');gomez.E=function(c){this.s=c;};gomez.E.prototype={g1:function(e){var t=gomez,i=t.g6(e);if(i)i.e=t.b5();}};gomez.L=function(m){this.a=m;};gomez.L.prototype={g2:function(m){var t=gomez,n=t.b5();var s=document.getElementsByTagName(m);var e=t.k;if(m=='script')e=t.j;if(m=='iframe')e=t.l;if(s){var l=s.length;for(var i=0;i<l;i++){var u =s[i].href||s[i].src;if(u &&!e[u]){var r =new gomez.E(e);t.grm[u]=r;e[u]=new t.c7(u, n);if(t.gIE&&m=='script')t.e2(s[i],'readystatechange',t.d2,false);else t.e2(s[i],'load',r.g1,false);}}}}};gomez.L.m=new Object;gomez.S=function(){var t=this,h=gomez.acctId+".r.axf8.net";t.x=('https:'==location.protocol?'https:':'http:')+'//'+h+'/mr/b.gif?';t.pvHttpUrl=('https:'==location.protocol?'https:':'http:')+'//'+h+'/mr/e.gif?';t.abHttpUrl=('https:'==location.protocol?'https:':'http:')+'//'+h+'/mr/f.gif?';};gomez.h2=function(){var t=this;t.gIE=false;t.f=new Object;t._h=0;t.j=new Object;t.k=new Object;t.l=new Object;t.m=location.href;t.p=-1;t.q=-1;t.u=new Array;t._w=false;t.gSfr=/KHTML|WebKit/i.test(navigator.userAgent);t.grm=new Object;t.b;t.d=false;t.x=false;t.s=new gomez.S;t._a=false;t.h6=false;t.n1=0;t.c=false;};gomez.h3(gomez,{h5:function(u){try{var s=document.createElement('script');s.async=true;if(navigator.userAgent.indexOf('Firefox/3.5')!=-1){s.defer=true;}s.src=u;s.type='text/javascript';if(document.body)document.body.appendChild(s);else if(document.documentElement.getElementsByTagName('head')[0])document.documentElement.getElementsByTagName('head')[0].appendChild(s);}catch(e){var t=gomez;if(t.gSfr)document.write("<scr"+"ipt src='"+u+"'"+"><\/scr"+"ipt>");}},a9:function(){var t=gomez,i=t.z0('a'),g=t.b0('__g_u'),h=t.z0('h'), b=t.z0('b');t.gc.h=b;if(h)t.n1=parseInt(h);if(!t.gc.h)t.gc.h=1;t.z1('b',parseInt(t.gc.h)+1);if(i){t.a=parseInt(i);if(t.a==1){t._w=true;}else if(t.a==3){t.x=true;t._w=true;};t.d=true;}if(!t.gc.a)return;if(b){t.gc.c=t.z0('c');t.gc.i=t.z0('e');t.gc.j=t.z0('f');t.iFS=false;}else {var s='v=1';t.c2('__g_u','1',new Date(t.gt()+1000));t.iFS=true;if(t.b0('__g_u')&&g&&g!='1'&&g.indexOf('NaN')==-1&&g.indexOf('undefined')==-1){s='v=0';var r=g.split('_');t.b2(parseInt(r[0]),parseInt(r[1])+1);if(r[4]&&r[4]!='0'&&t.gt()<parseInt(r[5])&&r[2]&&r[2]!='0'){t.b1(parseFloat(r[2]),parseFloat(r[3]),parseFloat(r[4]),parseInt(r[5]));if(r[6])t.n0(parseInt(r[6]));};};t.h6=true;};t.gc.d=t.z0('d');if(!t.gc.d||(t.gc.d&&t.gc.d==0)){t.z1('d',1);t.gc.d=1;}t.b=t.z0('g');t.j8();if(i &&!t.isFirstVi&&t._w&&!t._a){t.h7();t._a=true;};},h7:function(){var t=gomez,u=t.tloc?t.tloc:('https:'==location.protocol?'https:':'http:')+'//'+t.acctId+'.t.axf8.net/js/gtag7.1.1.js';t.h5(u);},n0:function(h){var t=gomez,f=new Date(t.gt()+946080000000),g=t.b0('__g_u');t.n1=h;t.z1('h',h);if(g&&g!='1'&&g.indexOf('NaN')==-1&&g.indexOf('undefined')==-1){var r=g.split('_');g=''+r[0]+'_'+r[1]+'_'+r[2]+'_'+r[3]+'_'+r[4]+'_'+r[5]+'_'+h;t.c2('__g_u',g,f);};},b1:function(v,s,q,f){var t=this;if(s ==undefined)s =1;t.d=true;t.z1('e',v);t.z1('f',s);t.gc.i=v;t.gc.j=s;t.h4(v,s,q,f);},b3:function(i, v, s){var t =this;t.d=true;if(s ==undefined)s =1;if(i==0||i==1){t.a=i;if(i==1){t._w=true;if(!t._a){t.h7();t._a=true;};}else{t.d=false;}t.z1('a',t.a);if(v !=undefined){t.b1(v, s);}}else if(i==2){t.h4(v, s);}},h4:function(o,p,q,d){var t=this,f=new Date(t.gt()+946080000000),g=t.b0('__g_u');if(g&&g!='1'&&g.indexOf('NaN')==-1&&g.indexOf('undefined')==-1){var r=g.split('_'),s;if(d)s=d;else if(q&&q>=0)s=new Date(t.gt()+parseInt(q*86400000)).getTime();else{q=5;s=new Date(t.gt()+432000000).getTime();};g=''+r[0]+'_'+r[1]+'_'+o+'_'+p+'_'+q+'_'+s;t.c2('__g_u',g,f);};},b6:function(){var t=gomez;t.p=t.b5();},f8:function(){var t=this;if(t.pollId1)clearInterval(t.pollId1);},b7:function(){var t =gomez;t.f8();t.q=t.b5();},c7:function(u, s){var t=this;t.m=u;t.s=s;},c8:function(){var t=gomez,n=t.b5(),l=document.images.length;if(l>t._h){for(var i=t._h;i<l;++i){var u =document.images[i].href||document.images[i].src;if(u){var r =new gomez.E(t.f);t.grm[u]=r;t.f[u]=new t.c7(u, n);t.e2(document.images[i],'load',t.c4,false);t.e2(document.images[i],'error',t.c5,false);t.e2(document.images[i],'abort',t.c6,false);}}}t._h=l;},c4:function(e){var t=gomez,i=t.g6(e);if(i)i.e=t.b5();},c5:function(e){var t=gomez,i=t.g6(e);if(i){i.e=t.b5();i.b=1;}},c6:function(e){var t=gomez,i=t.g6(e);if(i)i.a=t.b5();},g6:function(e){var t=gomez,e=window.event?window.event:e,a=t.d8(e),i;if(t.grm[a.href||a.src]&&t.grm[a.href||a.src].s)i =t.grm[a.href||a.src].s[a.href||a.src];return i;},d2:function(){var t=gomez;var e=window.event?window.event:e,s=t.d8(e);if(s.readyState=='loaded'||s.readyState=='complete'){var o =t.j[s.href||s.src];if(o)o.e=t.b5();}},nameEvent:function(n){var t=this;t.f6(n,1);},startInterval:function(n){var t=this;t.f6(n,2,1);},endInterval:function(n){var t=this;t.f6(n,2,2);},f6:function(n,p,b){if(n&&n.length>70)n=n.substring(0,70);var t=this,f=t.u;if(p==3){f[f.length]={'n':'a','a':n,'b':b,'e':p,'f':undefined};}else{f[f.length]={'n':'a','a':n,'b':t.b5(),'e':p,'f':b};}},customValue:function(n,v){var t=this;if(typeof(v)!='number'){return;}t.f6(n,3,v);},d8:function(e){if(gomez.gIE)return e.srcElement||{};else return e.currentTarget||e.target||{};},e2:function(e,p,f,c){var n='on'+p;if(e.addEventListener)e.addEventListener(p,f,c);else if(e.attachEvent)e.attachEvent(n, f);else{var x=e[n];if(typeof e[n]!='function')e[n]=f;else e[n]=function(a){x(a);f(a);};}},i1:function(){var d =window.document, done=false,i2=function (){if(!done){done=true;gomez.b6();gomez.a9();}};(function (){try{d.documentElement.doScroll('left');}catch(e){setTimeout(arguments.callee, 50);return;}i2();})();d.onreadystatechange=function(){if(d.readyState=='complete'){d.onreadystatechange=null;i2();}};},j7:function(s, toUrl){try{var t=this,z=gomez;if(!s)return;s+="{n:u|e:1}";var p ='';if(t.isFirstVi){p='&a='+z.acctId+'&r=1&s=1';}else if(t.iFS){p='&a='+z.acctId+'&r='+t.j6();}if(window.encodeURIComponent)s=encodeURIComponent(s);else s=escape(s);z.h5(z.e(toUrl)+'info='+s+p);}catch(err){}return;},e:function(u){if(!/\?|&/.test(u))if(!/\?/.test(u))u +='?';else u +='&';return u;},j8:function(){var t=gomez, p=new gomez.P();var s=p.g0();t.j7(s, t.s.pvHttpUrl);},g7:function(){try{var t=gomez;t.gc.a=t.acctId;/*@cc_on t.gIE=true;@*/if(!t.gIE)t.gIE=!-[1,];if(t.gIE){t.i1();window.attachEvent('onload', t.b7);}else if(window.addEventListener){window.addEventListener('DOMContentLoaded', t.b6, false);window.addEventListener('load', t.b7, false);}else if(t.gSfr){var m=setInterval(function(){if(/loaded|complete/.test(document.readyState)){clearInterval(m);delete m;t.b6();t.b7();}}, 10);}else return;if(!t.jbo){t.c8();t.pollId1=setInterval(t.c8, 10);}if(!t.gIE)t.a9();}catch(e){return;}}});gomez.h2();gomez.g7();}}catch(e){};
+//-->
+</SCRIPT>
+<!--[if lte IE 9]>
+<script src="/public/js/polyfill.min.js"></script>
+<![endif]-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Shop, Explore &amp; Play at Build-A-Bear Workshop</title>
+<meta name="title" content="Shop, Explore &amp; Play at Build-A-Bear Workshop">
+<meta name="description" content="Build your beary own stuffed animal at Build-A-Bear Workshop. It's the most fun you will ever make. Shop online or find a location near you!">
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes" name="viewport">
+<link rel="canonical" href="http://www.buildabear.com"/>
+
+<link href="/public/css/global.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Start Omniture -->
+<script>
+  var trackerID = "UA-5146644-1";
+  if(window.location.hostname.indexOf("www.buildabear.com") == -1) {
+    trackerID = "UA-5146644-4";
+  }
+  if(window.location.hostname.indexOf("co.uk") != -1) {
+    trackerID = "UA-5146644-3";
+  }
+  var s_account="babearcom-beta";
+  if((window.location.hostname.indexOf("stage.buildabear.com") != -1)) {
+    s_account="babearbabearus-beta-atg";
+  }
+  else if((window.location.hostname.indexOf("dev.buildabear.com") != -1)) {
+    s_account="babearbabearus-beta-atg";
+  }
+  else if((window.location.hostname.indexOf("www.buildabear.com") == -1)) {
+    s_account="babearbabearus-beta-atg";
+  }
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script>
+  var pageTracker = _gat._getTracker(trackerID);
+  pageTracker._initData();
+  pageTracker._trackPageview();
+</script>
+<script src="/javascript/s_code_babw_us.js"></script>
+<!-- /Omniture -->
+
+<!-- Foresee script -->
+<script type="text/javascript">
+    // Instructions: please embed this snippet directly into every page in your website template.
+    // For optimal performance, this must be embedded directly into the template, not referenced
+    // as an external file.
+
+    // Answers Cloud Services Embed Script v1.02
+    // DO NOT MODIFY BELOW THIS LINE *****************************************
+    ;(function (g) {
+        var d = document, i, am = d.createElement('script'), h = d.head || d.getElementsByTagName("head")[0],
+                aex = {
+                    "src": "//gateway.answerscloud.com/build-a-bear/R03541356AC/gateway.min.js",
+                    "type": "text/javascript",
+                    "async": "true",
+                    "data-vendor": "acs",
+                    "data-role": "gateway"
+                };
+        for (var attr in aex) { am.setAttribute(attr,aex[attr]); }
+        h.appendChild(am);
+        g['acsReady'] = function () {var aT = '__acsReady__', args = Array.prototype.slice.call(arguments, 0),k = setInterval(function () {if (typeof g[aT] === 'function') {clearInterval(k);for (i = 0; i < args.length; i++) {g[aT].call(g, function(fn) { return function() { setTimeout(fn, 1) };}(args[i]));}}}, 50);};
+    })(window);
+    // DO NOT MODIFY ABOVE THIS LINE *****************************************
+</script>
+
+
+</head>
+<body class="home">
+
+
+<nav id="off-canvas" class="off-canvas" role="navigation">
+
+    <ul class="header-container">
+        <li class="main-nav-wrap menu-topper">
+            <div class="clouds"></div>
+        </li>
+        <li class="main-nav-wrap home-wrap"><a class="play nav-head" href="/"><i class="back-to-home"></i>Build-A-Bear</a></li>
+        <li class="main-nav-wrap"><a href="/our-brand/">Our Brand</a></li>
+        <li class="main-nav-wrap"><a href="/parents/">Parents</a></li>
+        <li class="main-nav-wrap shop-wrap">
+            <div class="nav-head-wrap">
+                <button class="expander shop-expand" type="button" data-toggle="collapse" data-target="#shopCollapse" aria-expanded="false" aria-controls="shopCollapse"><span class="shop nav-head">Shop</span><i class="header-sprite expand-indicator"></i></button>
+            </div>
+        </li>
+        <li>
+            <ul class="sub-nav shop-sub collapse in" id="shopCollapse">
+                <li><a href="/shopping/">Shop Home</a></li>
+                <li><a href="/shopping/orderLookup.jsp">Order Locator</a></li>
+                <li><a href="/shopping/search/Stuffed_Animals/z/">Stuffed Animals</a></li>
+                <li><a href="/shopping/search/Clothing/z/">Clothing</a></li>
+                <li><a href="/shopping/search/Accessories/z/">Accessories</a></li>
+                <li><a href="/shopping/search/Gifts/z/">Gifts</a></li>
+                <li><a href="/shopping/search/Outlet/_/">Outlet</a></li>
+            </ul>
+        </li>
+        <li class="main-nav-wrap workshop-wrap">
+            <div class="nav-head-wrap">
+                <button class="expander workshop-expand collapsed" type="button" data-toggle="collapse" data-target="#workshopCollapse" aria-expanded="false" aria-controls="workshopCollapse"><span class="workshop nav-head">Workshop</span><i class="header-sprite expand-indicator"></i></button>
+            </div>
+        </li>
+        <li>
+            <ul class="sub-nav workshop-sub collapse" id="workshopCollapse">
+                <li><a href="/workshop/">Workshop Home</a></li>
+                <li><a href="/party/">Plan a Party</a></li>
+            </ul>
+        </li>
+        <li class="main-nav-wrap"><a href="/play">Play</a></li>
+        <li class="main-nav-wrap"><a href="/shopping/workshop/Store-Locator/fld10200000/1000009"><i class="store-locator-icon"></i>Store Locator</a></li>
+        <li class="main-nav-wrap small-text"><a href="/shopping/info/Guest-Services/3100005/10900008">Guest Services</a></li>
+        <li class="main-nav-wrap small-text"><a href="/shopping/workshop/About-Us/3100004/10100029">About Us</a></li>
+        <li class="main-nav-wrap small-text"><a href="/shopping/workshop/Career-Opportunities/3300004/10100042">Careers</a></li>
+        <li>
+            <ul class="tou-links">
+                <li><a href="/shopping/info/Internet-Safety/300002/1200012">Internet Safety</a></li>
+                <li><a href="/shopping/info/Switch-Countries/1800003/2500007?country=US">Switch Countries</a></li>
+                <li><a href="/shopping/info/Privacy-Policy/3300008/10100013">Privacy Policy</a></li>
+                <li><a href="/shopping/info/Terms-of-Use/3300008/10100013">Terms of Use</a></li>
+            </ul>
+        </li>
+        <li class="main-nav-wrap">
+            <p class="copyright">&copy; 1999-2015 Build-A-Bear Workshop, Inc. All rights reserved.</p>
+        </li>
+    </ul>
+</nav>
+
+<header role="banner" class="brand">
+    <a class="logo" itemscope itemtype="http://schema.org/Corporation" itemprop="logo" href="/" title="Build-A-Bear Workshop"></a>
+    <div class="top-header">
+        <div class="header-wrap">
+            <nav>
+                <ul class="left-nav">
+                    <li id="nav-btn" class="hamburger"><button class="sprite-hamburger"></button></li>
+                    <li class="explore-bab"><a href="/">Build-A-Bear</a></li>
+                    <li class="workshop-link"><a href="/workshop/">Workshop</a></li>
+                    <li class="play-link"><a href="/play/">Play</a></li>
+                </ul>
+            
+
+                <ul class="right-nav">
+                    <li class="shop"><a href="/shopping/">Shop</a></li>
+                    <li class="store-locator-right"><a href="/shopping/workshop/Store-Locator/fld10200000/1000009"><span class="locator-icon"></span>Store Locator</a></li>
+                    <li class="search-btn"><button class="search-icon"></button></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="search-header">
+        <div class="header-wrap">
+            <form method="GET" action="/shopping/search">
+                <div class="search-wrap"><input type="search" placeholder="What can we find for you?" id="header-search-box" name="q" value="" class="header-search-box">
+                <button type="submit" class="header-search-button"></button>
+                </div>
+            </form>
+            <nav>
+	    		<ul class="left-nav">
+	    			<li class="main-nav-wrap">
+	    				<a class="nav-head collections" href="/our-brand/">Our Brand</a>
+	    				<ul class="sub-nav shop-sub">
+                            <li><a href="/our-brand/our-story/">Our Story</a></li>
+                            <li><a href="/our-brand/our-experience/">Our Experience</a></li>
+                            <li><a href="/our-brand/bears-around-the-world/">Bears Around the World</a></li>
+                            <li><a href="/our-brand/giving-back/">Giving Back</a></li>
+	    				</ul>
+	    			</li>
+	    		</ul>
+
+	    		<ul class="right-nav">
+	    			<li class="main-nav-wrap">
+	    				<a class="nav-head collections" href="/parents/">Parents</a>
+	    				<ul class="sub-nav shop-sub">
+                            <li><a href="/parents/growing-through-play/">Growing Through Play</a></li>
+                            <li><a href="/parents/unleashing-playtime/">Unleashing Playtime</a></li>
+                            <li><a href="/parents/making-moments/">Making Moments</a></li>
+	    				</ul>
+	    			</li>
+	    		</ul>
+	    	</nav>
+        </div>
+    </div>
+</header>
+
+
+<main id="main">
+  <div id="module-container" class="container">
+<!--     <div class="heart-holder">
+      <div id="endHeart"></div>
+      <div id="heart"></div>
+    </div>
+    <div class="path-holder"></div> -->
+    <div id="module-catcher" class="module-catcher"></div>
+    <div id="module-box">
+      <section id="module-1" class="module module-1">
+        <div id="startHeart"></div>
+        <div class="mod1-text mod-text">
+          <h1>Build-A-Bear<br/>at the Heart</h1>
+          <p>Learn more about Build-A-Bear <br/>and the importance of <br/>imaginative play.</p>
+          <a href="/our-brand/" id="explore">Visit Our Brand</a>
+        </div>
+        <img class="items clouds3" src="/public/images/home/clouds3.png" />
+        <img class="items boat" src="/public/images/home/boat.png" />
+      </section>
+      <!-- <section id="module-1-back" class="module-1-back"></section> -->
+
+      <section id="module-2" class="module module-2">
+
+      	<img class="color-burst" src="/public/images/home/color-burst.png" />
+      	<img class="sweet-stripes" src="/public/images/home/sweet-stripes.png" />
+      	<img class="jumpin-jack" src="/public/images/home/jumpin-jack.png" />
+
+      	<img class="the-beep" src="/public/images/home/beep-chick.png" />
+
+      	<div style="display:none;" class="pinkBunny"><a class="iframe" href="/easter-gifts/hide-and-go-beep-adventure/trophy-room/second.html" id="hiddenBeep" data-levelID="V0WIjg1550r529k"><img src="/public/images/initiatives/easter/trophy-room/pink.png" /></a></div>
+
+        <div class="logo-link">
+        	<img src="/public/images/home/easter-logo.png" />
+        	<div class="logo-text">
+
+        		Make your own Easter fun with our new Hide &amp; Go Beeps™ or bunny friends!
+	            <a href="/easter-gifts/">See Them All</a>
+
+        	</div>
+        </div>
+            
+      </section>
+      <!-- <section id="module-2-back" class="module-2-back"></section> -->
+
+      <section class="module module-3">
+        <div class="mod3-text mod-text">
+          <h1>Blast off to <br/><span>Adventure</span></h1>
+          <p>A world of play is waiting - Let's Fly!</p>
+          <a class="play-games-btn" href="/play">Play</a>
+        </div>
+
+        <img class="items blimp" src="/public/images/home/blimp.png" alt="Blimp" />
+        <img class="items cloud2" src="/public/images/home/cloud2.png" alt="Cloud" />
+
+        <a class="items video" href="/play/#videos">
+          <img class="screenshot" src="/public/images/home/billboard-bearville.png" alt="Video Name" />
+        </a>
+
+        <img class="items clouds" src="/public/images/home/clouds.png" alt="Clouds" />
+
+      </section>
+     <!--  <section class="module-3-back"></section> -->
+
+      <section class="module module-4">
+        <div class="mod4-text mod-text">
+          <h1>Find the <br/><span>Perfect</span> Gift</h1>
+          <p>A gift from the heart <br/>is the best place to start</p>
+          <a class="go-shop-btn" href="/shopping">Go Shop</a>
+        </div>
+        <img src="/public/images/home/risa.png" class="risa" />
+        <div class="bearHusky">
+        	<img src="/public/images/home/bunny-box.png" class="bearCondo" />
+        	<img src="/public/images/home/husky-heart.png" class="husky" />
+        </div>
+      </section>
+      <!-- <section class="module-4-back"></section> -->
+    </div>
+    <footer id="home-footer" class="site-footer home-footer">
+      <div class="footer-site-overview">
+        <a href="/shopping/workshop/About-Us/3100004/10100029?sc_hpan=footer&amp;sc_hpdr=footer_veryleft">About Us</a>
+        <a href="/shopping/info/Guest-Services/3100005/10900008?sc_hpan=footer&amp;sc_hpdr=footer_centerleft">Guest Services</a>
+        <a href="/shopping/workshop/Career-Opportunities/3300004/10100042?sc_hpan=footer&amp;sc_hpdr=footer_centerright">Careers</a>
+	    <a href="/shopping/store/Store-Locator/fld10200000/1000009?sc_hpan=footer&amp;sc_hpdr=footer_farright">Store Locator</a>
+      </div>
+      <div class="footer-copyright">&copy; 1999-2015 Build-A-Bear Workshop, Inc. All rights reserved.</div>
+      <div class="footer-tou">
+        <ul class="tou-links">
+          <li><a href="/shopping/info/Privacy-Policy/3300008/10100013">Privacy Policy</a>
+          <li><a href="/shopping/info/Terms-of-Use/3300008/10100013">Terms of Use</a>
+          <li><a href="/shopping/info/Switch-Countries/1800003/2500007?country=US">Switch Countries</a>
+        </ul>
+      </div>
+    </footer>
+    <script>
+    (function startScroll(){
+      var modContainer = document.getElementById("module-container");
+      var modBox = document.getElementById("module-box");
+      var module2 = document.getElementById("module-2");
+      var modheight = module2.offsetTop + module2.offsetHeight;
+      var module1 = document.getElementById("module-1");
+      var module1back = document.getElementById("module-1-back");
+      var viewHeight = document.documentElement.clientHeight;
+      var footer = document.getElementById("home-footer");
+      var newHeight = module1.offsetTop;
+      var mod1Height = document.getElementById('module-1').clientHeight;
+      module1.style.height = viewHeight + "px";
+      module1back.style.height = viewHeight + "px";
+      modBox.style.height = ((newHeight + viewHeight)) + "px";
+      //footer.style.top = ((newHeight + mod1Height)) + "px";
+      //modContainer.scrollTop = 10000;
+    })();
+    </script>
+  </div>
+</main>
+
+<!--[if lte IE 8]>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="/public/js/global.min.js"></script>
+<script src="/public/js/TweenMax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/plugins/ScrollToPlugin.min.js"></script>
+<script src="/public/js/home.min.js"></script>
+
+<!--SiteCatalyst code version: H.1.
+  Copyright 1997-2005 Omniture, Inc. More info available at
+  http://www.omniture.com -->
+<script>
+var serverName = '';
+var cookieParts = document.cookie.split(';');
+for (var i = 0; i < cookieParts.length; i++) {
+  if ( cookieParts[i].indexOf('JSESSIONID') > -1 ) {
+    var value = cookieParts[i].split('=')[1];
+    var serverNameBeginIndex = value.indexOf('.');
+    serverName = value.substring(serverNameBeginIndex + 1);
+  }
+}
+
+/* You may give each page an identifying name, server, and channel on the next lines. */
+s.pageName="Build-A-Bear Home"; //Value of Page Title
+s.campaign="";
+s.server=serverName; //ID of clustered server that served the page
+s.channel="brand"; //Section of site: shop || aboutus || party || play || help
+s.pageType=""; // N/A
+s.prop3=""; //Value of search terms
+s.prop21="home";       //page type, set on all pages
+s.prop22="home";       //site section level 2, set on all pages
+s.prop23="home";       //site section level 3, set on all pages
+s.prop24="";       //number of results from search, set on keyword search results page
+/* E-commerce Variables */
+s.state=""; //Billing address State
+s.zip=""; //Billing address ZIP
+s.events="";
+/*  An array of events that may have taken place
+  event3, Cart: View Wishlist
+  event4, Cart: Create Wishlist
+  event5, Cart: Move To Wishlist
+  event6, Cart: Move To Basket
+  event7, Cart: Remove from Wishlist
+  event8, BAP: Total Booked
+  event9, Wishlists Sent
+  event10,  Cart: Added From Upsell Page
+  event11,  Entry Form Downloaded
+  event12, SFS club Signup
+  event13, Out of Stock Items
+  purchase, Revenue
+  purchase, Orders
+  purchase, Units
+  scOpen, Carts Created
+  scView, Cart Views
+  scCheckout, Checkouts
+  scAdd, Cart Additions
+  scRemove, Cart Removals
+*/
+var productData = "";
+s.products=productData; //List of products/SKUs manipulated by an event
+s.purchaseID=""; //Order ID from Checkout Confirm
+s.eVar1=""; //Value of search terms
+s.eVar4="";        //Build a Party spend per guest, set on party confirmation page
+s.eVar10="";       //Build a Party number of guests, set on party confirmation page
+s.eVar13="";       //Build a Party total spend, set on party confirmation page
+s.eVar14="";
+s.eVar18="";
+s.eVar19="";
+s.eVar20="";
+s.eVar21=""; //InStock || LimitedStock || OutOfStock
+s.eVar23="";
+s.eVar25="";
+s.eVar26="";
+s.eVar27="";
+s.eVar28=""; //Wishlist Created: "Wish List from Cart" || "Wish List from Email"
+s.eVar29=""; //Cart: "Added to basked" || "Added to wishlist"
+s.eVar30=""; //Return Visist (Value of an incremented, user specific cookie: visits to the site
+s.eVar33="";
+s.eVar38="";
+s.eVar39="";
+s.eVar53="";       //merchandising category level 1, set on only browse/category pages
+s.eVar54="";       //merchandising category level 2, set on only browse/category pages
+s.eVar55="";       //merchandising category level 3, set on only browse/category pages
+s.eVar56="";       //merchandising category complete, set on only browse/category pages
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//-->
+</script>
+<script>
+<!-- if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-') //-->
+</script>
+
+<noscript>
+  <img src="http://babearcom.122.2O7.net/b/ss/babearcom/1/H.1--NS/0" height="1" width="1" border="3" alt=""/>
+</noscript>
+<!--/DO NOT REMOVE/-->
+
+<!-- End SiteCatalyst code version: H.1. -->
+
+<script id="srOther">
+	(function(){
+		var _smtr = _smtr || window._smtr || [];
+		_smtr.push(['pageView', {'pageType' : 'other'}]);
+	})();
+</script>
+
+</body>
+</html>

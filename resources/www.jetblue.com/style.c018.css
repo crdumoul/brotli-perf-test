@@ -1,0 +1,389 @@
+.bookerWrapper {
+  width: 610px;
+  min-height: 337px;
+  float: right;
+  background: #f1f5f8;
+  padding: 14px;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  /*
+	 * Styling to fix the re-sizing from inline errors
+	 */
+  /*
+  .jbBooker input[type=submit] {
+    margin-top:-11px;
+    margin-right: 10px;
+  }
+  */
+}
+.bookerWrapper cityselector {
+  font-size: inherit;
+}
+.bookerWrapper:focus,
+.bookerWrapper:active {
+  outline: none;
+}
+.bookerWrapper a:visited:after {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.bookerWrapper h2 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+  line-height: 1em;
+  color: #004990;
+  font-weight: 900;
+}
+.bookerWrapper input[type="radio"] {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.bookerWrapper input[type="radio"] + label + label {
+  margin-right: 10px;
+}
+.bookerWrapper .currencySelect input[type="radio"] + label:focus,
+.bookerWrapper .itinerarySelect input[type="radio"] + label:focus,
+.bookerWrapper .currencySelect input[type="radio"]:focus + label,
+.bookerWrapper .itinerarySelect input[type="radio"]:focus + label,
+.bookerWrapper .currencySelect input[type="radio"]:focus + label + span,
+.bookerWrapper .itinerarySelect input[type="radio"]:focus + label + span {
+  text-decoration: underline;
+}
+.bookerWrapper .searchSelect ul li input[type="radio"]:focus + label,
+.bookerWrapper .searchSelect ul li input[type="radio"]:active + label {
+  outline: none;
+  text-decoration: none;
+  border-width: 3px;
+  margin-top: -1px;
+  margin-right: 6px;
+  margin-bottom: -1px;
+  margin-left: -1px;
+}
+.bookerWrapper .nav {
+  float: right;
+}
+.bookerWrapper .nav button,
+.bookerWrapper .nav input[type=button],
+.bookerWrapper .nav a.button {
+  font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  color: #306FAA;
+  font-weight: 700;
+  box-shadow: 1px 1px 1px #ccc;
+  background: #f9f9f9;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f2f2f2 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffffff 0%, #f2f2f2 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ffffff 0%, #f2f2f2 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 100%);
+  /* W3C */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+  -webkit-appearance: none;
+  font-size: 0.9em;
+}
+.bookerWrapper .nav button:hover,
+.bookerWrapper .nav input[type=button]:hover,
+.bookerWrapper .nav a.button:hover,
+.bookerWrapper .nav button:focus,
+.bookerWrapper .nav input[type=button]:focus,
+.bookerWrapper .nav a.button:focus {
+  color: #004990;
+  cursor: pointer;
+}
+.bookerWrapper .nav button:active,
+.bookerWrapper .nav input[type=button]:active,
+.bookerWrapper .nav a.button:active {
+  text-decoration: none;
+}
+.bookerWrapper .nav.close button {
+  height: 29px;
+  width: 30px;
+  background: transparent url(//www.jetblue.com/img/context-switcher-btn-sp.png) 0 -58px no-repeat;
+  border: none;
+  text-indent: 100%;
+  word-wrap: break-word;
+  font-size: 0;
+  box-shadow: none;
+  filter: none;
+}
+.bookerWrapper .nav.close button:hover {
+  background-position: 0 -221px;
+}
+.bookerWrapper ::selection {
+  background: #0099FF;
+}
+.bookerWrapper .jbFlightStatus .errors-wrapper {
+  margin: -12px;
+  margin-top: -63px;
+  bottom: -215px;
+}
+.bookerWrapper .specialAssistance {
+  *display: table-cell;
+}
+.bookerWrapper .faq {
+  *display: table-cell;
+}
+.bookerWrapper .baggagePolicy {
+  *display: table-cell;
+}
+.bookerWrapper .form_errors_overlay {
+  margin: -13px;
+  margin-top: -69px;
+}
+.bookerWrapper .checkin,
+.bookerWrapper .flightStatus {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  width: auto;
+  line-height: 25px;
+  border: 1px solid #f5f5f5;
+}
+.bookerWrapper .checkin img,
+.bookerWrapper .flightStatus img {
+  margin-top: -1px;
+}
+.bookerWrapper .checkin:focus,
+.bookerWrapper .flightStatus:focus {
+  outline: 1px solid #7FB6E8;
+}
+.bookerWrapper button.flightStatus {
+  margin-right: 3px;
+  margin-left: 13px;
+}
+.bookerWrapper .jbCheckin .errors-wrapper {
+  top: -50px;
+  margin: -12px;
+  bottom: -4px;
+}
+.bookerWrapper #faq-modal {
+  overflow: auto;
+}
+.bookerWrapper .jbBooker div.flexsearch {
+  padding: 10px 0;
+}
+.bookerWrapper .jbBooker .originDestinationSelect,
+.bookerWrapper .jbBooker div.additionalInfo,
+.bookerWrapper .jbBooker div.additionalInfo ul,
+.bookerWrapper .jbBooker .clndr.formcontrol,
+.bookerWrapper .jbBooker div.currencySelect {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.bookerWrapper .jbBooker div.additionalInfo {
+  margin-top: 16px;
+}
+.bookerWrapper .jbBooker div.currencySelect.noFlex {
+  margin-top: 26px;
+  float: right;
+  margin-right: -2px;
+}
+.bookerWrapper .jbBooker div.passengerSelect {
+  padding-bottom: 4px;
+}
+.bookerWrapper .jbBooker .calendar_wrapper {
+  margin-top: 12px;
+}
+.bookerWrapper .autocomplete input {
+  min-width: 233px;
+}
+.bookerWrapper .clndr.formcontrol {
+  min-width: 293px;
+}
+.bookerWrapper .dropdown-menu {
+  width: 305px;
+}
+.bookerWrapper .suggestions_wrapper {
+  width: 295px;
+}
+.bookerWrapper .dropdown-menu li[ng-transclude],
+.bookerWrapper .dropdown-menu .onsale {
+  width: 303px;
+}
+.bookerWrapper .clndr .form-control {
+  display: inline;
+  border: 0;
+  color: #306FAA;
+  min-width: 230px;
+}
+.bookerWrapper .cal_active .inline_error {
+  visibility: hidden;
+}
+/* helper classes */
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.din {
+  font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+}
+.bold {
+  font-weight: 700;
+}
+.nav .checkin {
+  background: transparent url(/img/context-switcher-btn-sp.png) 0 0 no-repeat;
+}
+/* IE8 Fixes */
+html.no-boxshadow button.checkin,
+html.no-boxshadow button.flightStatus {
+  border: 1px solid #ddd;
+}
+/*  */
+.bookerWrapper .jbCheckin .autocomplete input {
+  width: 223px;
+}
+/* HOT FIX TO HIDE INLINE MESSAGES */
+/*
+.jbBooker .inline_error {
+  display: block !important;
+  visibility: hidden !Important;
+  opacity: 0 !Important;
+}
+ 
+ 
+.jbFlightStatus  .inline_error,
+.jbCheckin  .inline_error{
+  display: none !important;
+  visibility: hidden !Important;
+  opacity: 0 !Important;
+}
+*/
+/* END HOT FIX */
+.jbFlightStatus .lookupDays {
+  padding-top: 7px;
+}
+.form_errors_overlay .error_close_button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: white;
+  border-radius: 100px;
+  line-height: 31px !important;
+  font-size: 36px;
+  text-align: center;
+  color: #0076be;
+  text-decoration: none;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+}
+.ie8 .form_errors_overlay .error_close_button,
+.ie9 .form_errors_overlay .error_close_button,
+.ie10 .form_errors_overlay .error_close_button {
+  line-height: 32px !important;
+}
+.foreground-sprite-fsclosebutton {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background: transparent !important;
+}
+.foreground-sprite-fsclosebutton img {
+  position: absolute;
+  max-width: none;
+  top: -59px;
+  left: 0px;
+}
+.foreground-sprite-fsclosebutton.closebtn {
+  width: 29px;
+  height: 28px;
+}
+.foreground-sprite-fsclosebutton.closebtn:hover img {
+  top: -222px;
+  left: 0px;
+  cursor: pointer;
+}
+.foreground-sprite-chkinclosebutton {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background: transparent !important;
+}
+.foreground-sprite-chkinclosebutton img {
+  position: absolute;
+  max-width: none;
+  top: -59px;
+  left: 0px;
+}
+.foreground-sprite-chkinclosebutton.chkinclosebtn {
+  width: 29px;
+  height: 28px;
+}
+.foreground-sprite-chkinclosebutton.chkinclosebtn:hover img {
+  top: -222px;
+  left: 0px;
+  cursor: pointer;
+}
+.foreground-sprite-checkin {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.foreground-sprite-checkin img {
+  position: absolute;
+  max-width: none;
+  left: -3px;
+}
+.foreground-sprite-checkin.checkinBtn {
+  width: 28px;
+  height: 24px;
+  text-align: justify;
+  float: left;
+}
+.checkin:hover .foreground-sprite-checkin.checkinBtn img,
+.checkin:focus .foreground-sprite-checkin.checkinBtn img {
+  top: -162px;
+  cursor: pointer;
+}
+.foreground-sprite-fstatus {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.foreground-sprite-fstatus img {
+  position: absolute;
+  max-width: none;
+  left: -3px;
+  top: -29px;
+}
+.foreground-sprite-fstatus.fstatusBtn {
+  width: 28px;
+  height: 24px;
+  text-align: justify;
+  float: left;
+}
+.flightStatus:hover .foreground-sprite-fstatus.fstatusBtn img,
+.flightStatus:focus .foreground-sprite-fstatus.fstatusBtn img {
+  top: -191px;
+  cursor: pointer;
+}

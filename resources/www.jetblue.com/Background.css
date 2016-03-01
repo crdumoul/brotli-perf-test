@@ -1,0 +1,18 @@
+/* Adjust the background here */
+#bgHolder .background {
+	background: #FFF url(/img/bg-jetblue-body-logoonly.jpg) no-repeat center top; 
+	/* background: #FFF url(/img/bg-jetblue-body-logoonly.jpg) no-repeat center top; */ 
+	/* background-image: url(/img/bg-jetblue-body-holiday2012.jpg); */
+}
+/* Adjust the logo link position */
+/*
+#jb-header h1 {
+	left: 3px;
+	top: 35px;
+}
+*/
+/*
+.logo img {
+   opacity: 0 !important;
+}
+*/

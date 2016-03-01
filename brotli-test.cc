@@ -80,24 +80,28 @@ void measure_compress(const char * name, int level, const char * input_data, siz
 }
 
 int main (int argc, char ** argv) {
-  FILE * infile = open_file(argv[1], "r");
-  if (infile == NULL) {
-    exit(1);
+  try {
+    FILE * infile = open_file(argv[1], "r");
+    if (infile == NULL) {
+      exit(1);
+    }
+    char * input_data = NULL;
+    size_t input_size = 0;
+    read_data(infile, &input_data, &input_size);
+    fclose(infile);
+
+    char * output_data = (char *) malloc(input_size);
+
+    printf("{\"original_size\":%lu,\n", input_size);
+    for (int level = 1 ; level <= 11 ; level ++) {
+      measure_compress("brotli", level, input_data, input_size, output_data, brotli_compress);
+      printf(",\n");
+    }
+    measure_compress("zlib", 6, input_data, input_size, output_data, zlib_compress);
+    printf("}\n");
+  } catch (const char * message) {
+    printf("Caught exception: %s\n", message);
+    return 1;
   }
-  char * input_data = NULL;
-  size_t input_size = 0;
-  read_data(infile, &input_data, &input_size);
-  fclose(infile);
-
-  char * output_data = (char *) malloc(input_size);
-
-  printf("{\"original_size\":%lu,\n", input_size);
-  for (int level = 1 ; level <= 11 ; level ++) {
-    measure_compress("brotli", level, input_data, input_size, output_data, brotli_compress);
-    printf(",\n");
-  }
-  measure_compress("zlib", 6, input_data, input_size, output_data, zlib_compress);
-  printf("}\n");
-
   return 0;
 }

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+    <bindings xmlns="http://www.mozilla.org/xbl" xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <binding id="none">
+        <content><children/></content>
+    </binding>
+    <binding id="ellipsis">
+        <content>
+            <xul:label crop="end"><children/></xul:label>
+        </content>
+        <implementation>
+            <field name="node">document.getAnonymousNodes(this)[0]</field>
+            <field name="style">this.node.style</field>
+            <property name="styleStr">
+                <getter>this.style.display</getter>
+                <setter>if(this.style.display != val) this.style.display = val</setter>
+            </property>
+            <property name="text">
+                <getter>this.node.value</getter>
+                <setter>if(this.node.value != val) this.node.value = val</setter>
+            </property>
+            <method name="ellipsify">
+                <body>
+                    var words = this.textContent.split(/\s+/g)
+                    if(!words[0]) words.shift()
+                    if(!words[words.length - 1]) words.pop()
+                    this.text = words.join(' ')
+                    this.styleStr = words.length ? '' : 'none'
+                </body>
+            </method>
+            <constructor>this.ellipsify()</constructor>
+        </implementation>
+        <handlers>
+            <handler event="DOMSubtreeModified">this.ellipsify()</handler>
+        </handlers>
+    </binding>
+</bindings>

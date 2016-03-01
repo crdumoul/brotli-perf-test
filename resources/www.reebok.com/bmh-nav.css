@@ -1,0 +1,334 @@
+/*********
+Stack-Nav
+**********/
+.stack-nav .middle-nav{
+	background: url("../img/lifestyle-background.jpg") #deddd9 repeat-x;
+	background-position: top center;
+	width: 100%;
+	z-index: 20;
+}
+
+body.mobile .stack-nav .middle-nav{
+background-position: top center;
+}
+
+.stack-nav .middle-nav ul{
+	max-width: 1260px;
+	width: 100%;
+	margin: auto;
+	height: 100%;
+}
+
+body.mobile .stack-nav .middle-nav ul {
+	max-width: 657px;
+	width: 100%;
+	margin: auto;
+	padding-top: 29px;
+	height: 100px;
+}
+
+.stack-nav .middle-nav ul li{
+	float: left;
+	width: 14.28%;
+	height: 100%;
+	position: relative;
+	padding-bottom: 20px;
+	display: block;
+}
+
+body.mobile .stack-nav .middle-nav ul li{
+	float: left;
+	width: 25%;
+	height: 150px;
+	position: relative;
+}
+
+.stack-nav .middle-nav ul li .icon{
+	background:url('../img/lifestyle-sprite.png');
+	width: 80px;
+	height: 140px;
+	display: block;
+	margin-top: 22px;
+	background-position: top 0;
+	margin-left: 50%;
+}
+
+body.mobile .stack-nav .middle-nav ul li .icon{
+	margin:auto;
+}
+/*
+.stack-nav .middle-nav ul li.crossfit .icon{
+	background-position: 0px 0px;
+}
+.stack-nav .middle-nav ul li.crossfit:hover .icon{
+	background-position: 0px -152px;
+}
+
+.stack-nav .middle-nav ul li.dance .icon{
+	background-position: 0px -304px;
+}
+
+.stack-nav .middle-nav ul li.dance:hover .icon{
+	background-position: 0px -456px;
+}
+
+.stack-nav .middle-nav ul li.running .icon{
+	background-position: 0px -608px;
+}
+
+.stack-nav .middle-nav ul li.running:hover .icon{
+	background-position: 0px -760px;
+}
+.stack-nav .middle-nav ul li.studio .icon {
+	background-position: 0px -912px;
+	margin-left: 60%;
+}
+
+.stack-nav .middle-nav ul li.studio:hover .icon {
+	background-position: 0px -1064px;
+}
+
+.stack-nav .middle-nav ul li.training .icon {
+	background-position: 0px -1216px;
+}
+
+.stack-nav .middle-nav ul li.training:hover .icon {
+	background-position: 0px -1361px;
+}
+
+.stack-nav .middle-nav ul li.walking .icon {
+	background-position: 0px -1512px;
+}
+
+.stack-nav .middle-nav ul li.walking:hover .icon {
+	background-position: 0px -1664px;
+}
+
+.stack-nav .middle-nav ul li.yoga .icon {
+	background-position: 0px -1816px;
+}
+
+.stack-nav .middle-nav ul li.yoga:hover .icon {
+	background-position: 0px -1968px;
+}
+
+.stack-nav .middle-nav ul li.combat .icon {
+	background-position: 0px -1816px;
+}
+
+.stack-nav .middle-nav ul li.combat:hover .icon {
+	background-position: 0px -1968px;
+}
+*/
+
+.stack-nav .middle-nav ul li.crossfit .icon{
+	background-position: 0px 0px;
+	margin-top: 27px;
+	margin-left: 45%
+}
+
+.stack-nav .middle-nav ul li.crossfit:hover .icon{
+	background-position: 0px -152px;
+}
+
+.stack-nav .middle-nav ul li.dance .icon{
+	background-position: 0px -304px;
+	margin-top: 25px;
+}
+
+.stack-nav .middle-nav ul li.dance:hover .icon{
+	background-position: 0px -456px;
+}
+
+.stack-nav .middle-nav ul li.running .icon{
+	background-position: 0px -608px;
+	margin-left: 45%
+}
+
+.stack-nav .middle-nav ul li.running:hover .icon{
+	background-position: 0px -760px;
+}
+
+.stack-nav .middle-nav ul li.combat .icon{
+	background-position: 0px -920px;
+	margin-left: 45%;
+	width: 90px;
+}
+
+.stack-nav .middle-nav ul li.combat:hover .icon{
+	background-position: 0px -1072px;
+}
+
+.stack-nav .middle-nav ul li.training .icon{
+	background-position: 0px -1216px;
+	margin-top: 31px;
+}
+
+.stack-nav .middle-nav ul li.training:hover .icon{
+	background-position: 0px -1364px;
+}
+
+.stack-nav .middle-nav ul li.walking .icon{
+	background-position: 0px -1512px;
+	margin-top: 27px;
+}
+
+.stack-nav .middle-nav ul li.walking:hover .icon{
+	background-position: 0px -1664px;
+}
+
+.stack-nav .middle-nav ul li.yoga .icon{
+	background-position: 0px -1816px;
+	margin-top: 26px;
+}
+
+.stack-nav .middle-nav ul li.yoga:hover .icon{
+	background-position: 0px -1968px;
+}
+
+.stack-nav .middle-nav ul li p{
+	text-transform: uppercase;
+	font-size: 19.08px;
+	font-family: 'DINWebPro-CondMedium' , Helvetica, sans-serif;
+	margin-top: -33px;
+	margin-bottom: 7px;
+	color: #5d5d5d;
+}
+
+body.mobile .stack-nav .middle-nav ul li p{
+	margin-top: -10px;
+	margin-left: 0;
+	text-align: center;
+}
+
+.stack-nav .middle-nav ul li a:hover p{
+	color: #be292d;
+}
+
+.stack-nav .middle-nav ul li.running p{margin-left: 30px;}
+.stack-nav .middle-nav ul li.combat p{margin-left: 26px;}
+.stack-nav .middle-nav ul li.yoga p{margin-left: 16px; margin-top: -37px;}
+.stack-nav .middle-nav ul li.training p{margin-left: 22px; margin-top: -42px;}
+.stack-nav .middle-nav ul li.dance p{margin-left: 47px; margin-top: -36px;}
+.stack-nav .middle-nav ul li.walking p{margin-left: 30px; margin-top: -38px;}
+.stack-nav .middle-nav ul li.crossfit p{margin-left: 32px; margin-top: -38px;}
+
+body.mobile .stack-nav .middle-nav ul li.combat {
+	margin-left: 80px;
+}
+.stack-nav .lifestyle-tab{
+	margin: auto;
+	position: absolute;
+	width: 100%;
+	line-height: 13px;
+	text-align:center;
+	margin-top: -46px;
+	border-bottom: 4px solid #d8d8cf;
+	z-index: 4;
+}
+
+body.mobile .stack-nav .lifestyle-tab{
+	margin-top: 0;
+	margin-bottom:-23px;
+	margin-top: -40px;
+	z-index: 4;
+	position: relative;
+}
+
+.stack-nav .lifestyle-tab .inner-tab p{
+ 	background: #ededed;
+	background: url('../img/tab-pixel-sprite.jpg') repeat-x #ededed;
+	background-position: top;
+	display: inline-block;
+	padding: 5px 63px 0 34px;
+	font-family: 'DINWebPro-CondMedium' , Helvetica, sans-serif;
+	color: #40403a;
+	font-size: 19.08px;
+	line-height: 41px;
+	position: relative;
+	cursor: pointer;
+	text-transform: uppercase;
+	z-index: 99;
+}
+
+body.mobile .stack-nav .lifestyle-tab p{
+	background: url('../img/lifestyle-tab-background.jpg') repeat-x #e8e8e5;
+	border-bottom: 3px solid #d8d8cf;
+}
+
+.stack-nav .lifestyle-tab p:hover{
+	background: #f2f2ef;
+	background: url('../img/tab-pixel-sprite.jpg') repeat-x #f2f2ef;
+	background-position: 0 bottom;
+}
+
+.stack-nav .lifestyle-tab p span:before{
+	content: '@';
+	font-family: 'icomoon'!important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 32.2px;
+	padding-top: 21px;
+	line-height: 0;
+	font-size: 19px;
+}
+
+.stack-nav .lifestyle-tab p span.closed:before{
+	content: '(';
+	font-family: 'icomoon'!important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 29px;
+	font-size: 24px;
+	padding-top: 21px;
+	line-height: 0;
+}
+
+body.mobile .stack-nav  .lifestyle-tab p span:before{
+	padding-top: 22px;
+}
+
+body.mobile .stack-nav  .lifestyle-tab p span.closed:before{
+	padding-top: 22px;
+}
+
+/*
+@media only screen and (max-width: 1300px){
+
+	.stack-nav .middle-nav ul{
+		width: 95%;
+	}
+	.stack-nav .middle-nav ul li .icon{
+		margin-left: 40%;
+	}
+	.stack-nav .middle-nav ul li.studio .icon{
+		margin-left: 45%;
+	}
+	.stack-nav .middle-nav ul li p{
+		font-size: 18px;
+	}
+
+	.stack-nav .middle-nav ul li.running p{margin-left: 10px;}
+	.stack-nav .middle-nav ul li.combat p{margin-left: 37px;}
+	.stack-nav .middle-nav ul li.yoga p{margin-left: 50px;}
+	.stack-nav .middle-nav ul li.training p{margin-left: 5px;}
+	.stack-nav .middle-nav ul li.dance p{margin-left: 24px;}
+	.stack-nav .middle-nav ul li.walking p{margin-left: 7px;}
+	.stack-nav .middle-nav ul li.crossfit p{margin-left: 20px;}
+
+}
+*/

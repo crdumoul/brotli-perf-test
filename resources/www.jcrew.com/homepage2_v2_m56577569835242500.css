@@ -1,0 +1,498 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* set the font-size to 100% for IE using conditional comments */
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+}
+#mainHTMLcontainer {
+  position: relative;
+  width: 960px;
+  height: 650px !important;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#stories-container {
+  position: absolute;
+  left: 0;
+  top: 163px;
+  width: 208px;
+  z-index:5;
+}
+
+#stories-container .innerText {
+  opacity: 1;
+}
+
+#box-container{
+  position: absolute;
+  left: 0;
+  top: 163px;
+  width: 224px;
+  z-index:100;
+  border: 0px solid red;
+}
+
+a:focus{
+outline: none;
+}
+
+.boxy{
+  background-color:transparent;
+  width:224px;
+  height:79px;
+  position:relative;
+  left:0;
+  z-index:101;
+  border: 0px solid green;
+}
+
+#stories-container div {
+  position: relative;
+  z-index: 50;
+  /* total width is 208 */
+  width: 206px;
+  padding: 0 4px 0 0;
+  /* total height is 81 */
+  height: 80px;
+  color: #000;
+  line-height: 17px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.story {
+	 border-top: 1px solid #000;
+	 opacity: 0;
+	 visibility: hidden; /* for IE8 and below that don't support opacity */
+}
+
+#stories-container .boxHref {
+	opacity: 0;
+	visibility: hidden;
+}
+
+
+
+#stories-container div:last-child {
+  /* the last story needs a total height of 82 to account for the 1px bottom border. 
+  we might need to do this in jquery for IE compatibility */
+  height: 81px;
+  border-bottom: 1px solid #000;
+}
+
+.story-title {
+  font-family: "futura-pt",sans-serif;
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  font-style: normal;
+  color: #000;
+  display: inline-block;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  height: auto !important;
+  width: 220px;
+  border: 0px solid green;
+}
+
+#story0 .story-title	{
+	width: 230px;
+}
+
+.storyImage	{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 578px;
+	height: 650px;
+	}
+	
+
+.story-tagline {
+  font-family: "futura-pt",sans-serif;
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  font-style: normal;
+  color: #333333;
+  display: inline-block;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  width: 220px;
+  float: none;
+  border: 0px solid red;
+}
+
+#story0 .story-tagline	{
+	width: 233px;
+	border: 0px solid red;
+}
+
+#story1 .story-tagline	{
+	width: 230px;
+	border: 0px solid red;
+}
+
+#rollovers-container {
+  position: absolute;
+  left: -1px;
+  top: 163px;
+  width: 224px;
+  overflow: visible;
+  z-index:6;
+  border: 0px solid blue;
+}
+
+#rollovers-container .innerText {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#rollovers-container div {
+  position: relative;
+  left: -286px;
+  /* total width is 286 */
+  width: 270px;
+  padding: 0 8px 0 8px;
+  height: 82px;
+  background-color: #000;
+  color: #fff;
+  line-height: 1;
+  display: block;
+  text-decoration: none;
+  border: 0px solid red;
+}
+
+#rollovers-container div:last-child {
+  /* the last rollover needs a total height of 83 to account for the 1px bottom border of the last story.
+  we might need to do this in jquery for IE compatibility */
+  height: 83px;
+}
+.rollover-title {
+  position: relative;
+  display: inline-block;
+  width: 272px;
+  font-family: "futura-pt",Helvetica,sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .5px;
+  border: 0px solid green;
+}
+
+#rollover0 .rollover-title	{
+	width: 282px;
+}
+
+.rollover-tagline {
+  position: relative;
+  display: inline-block;
+  font-family: "futura-pt",Helvetica,sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 2px;
+  width: 272px;
+  border: 0px solid red;
+}
+
+
+#story-asset0 .story-cta-link	{
+	display: none;	
+}
+#story-asset0 .story-cta-link1, #story-asset0 .story-cta-link1Small	{
+	display: none;	
+}
+#story-asset0 .story-cta-link2, #story-asset0 .story-cta-link2Small	{
+	display: none;	
+}
+#story-asset0 .story-cta-link3, #story-asset0 .story-cta-link3Small	{
+	display: none;	
+}
+#story-asset0 .story-cta-link4, #story-asset0 .story-cta-link4Small	{
+	display: none;	
+}
+#story-asset0 .story-cta-link5, #story-asset0 .story-cta-link5Small	{
+	display: none;	
+}
+#story-asset0 .story-cta-link6, #story-asset0 .story-cta-link6Small	{
+	display: none;	
+}
+
+
+#story-assets-mask {
+  position: absolute;
+  left: 223px;
+  top: 0px;
+  width: 740px;
+  height: 650px;
+  overflow: hidden;
+}
+#story-assets-container {  
+  position: relative;
+}
+.story-asset-container {
+  position: relative;
+  width: 740px;
+  height: 650px;
+}
+
+a.story-cta-link4{
+	/* width:156px !important; */
+}
+
+a.story-cta-link, a.story-cta-link1, a.story-cta-link2, a.story-cta-link3, a.story-cta-link4, a.story-cta-link5, a.story-cta-link6 {
+  font-family: "futura-pt",sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  border: 0px solid red;
+  width: auto; 
+  padding: 8px 12px 8px 12px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  /*text-transform: uppercase;*/
+  display: inline-block;
+  z-index: 10;
+}
+a.story-cta-link:hover,
+a.story-cta-link.hover
+ {
+  background-color: #f64f37
+}
+
+a.story-cta-link1Small, a.story-cta-link2Small, a.story-cta-link3Small, a.story-cta-link4Small, a.story-cta-link5Small, a.story-cta-link6Small {
+  font-family: "futura-pt",sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  border: 0px solid red;
+  width: auto; 
+  padding: 4px 12px 4px 12px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  /*text-transform: uppercase;*/
+  display: inline-block;
+  z-index: 10;
+}
+
+a.story-cta-link, a.story-cta-link1, a.story-cta-link2, a.story-cta-link3, a.story-cta-link4, a.story-cta-link5, a.story-cta-link6 {
+  font-family: "futura-pt",sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  border: 0px solid red;
+  width: auto; 
+  padding: 8px 12px 8px 12px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  /*text-transform: uppercase;*/
+  display: inline-block;
+  z-index: 10;
+}
+
+.cta-addendum {
+  position: absolute;
+  font-family: "futura-pt",sans-serif;
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  border: 0px solid red;
+  width: 190px; 
+  padding: 8px 12px 2px 12px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  z-index: 15;
+}
+
+
+.ctaTop {
+  
+   border: 0px solid red;
+}
+
+.ctaBottom {
+  
+   border: 0px solid green;
+}
+
+#date-container {
+  position: absolute;
+  left: 2px;
+  top: 130px;
+  width: 208px;
+  font-family: "futura-pt",sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #000;
+}
+#today {
+  font-weight: bold;
+}
+#top-nav-container {
+  position: relative;
+  left: 2px;
+  top: 18px;
+  border: 0px solid red;
+}
+.top-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1;
+   border: 0px solid red;
+}
+.top-nav:first-child {
+  display: block;
+}
+.top-nav-title {
+  text-transform: uppercase;
+  font-family: "futura-pt",sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  font-style: normal;
+}
+.top-nav ul {
+  list-style: none;
+  margin-left: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+.top-nav li {
+  margin: 3px 0 3px 0;
+  opacity: 0;
+
+}
+
+.top-nav a {
+  color: #000;
+  text-transform: uppercase;
+  font-family: "futura-pt",sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 4px 0 4px 0;
+  border: 0px solid red;
+   text-decoration: none;
+  font-style: normal;
+}
+
+.top-nav a:hover {
+  color: #666;
+}
+
+.top-nav-arrow {
+  position: relative;
+  left: 4px;
+}
+
+#tout-container {
+  position: absolute;
+  left: 801px;
+  top: 0px;
+  float: left;
+  width: 175px;
+  height: 97px;
+  z-index: 10;
+  padding: 0 0 0 0;
+  background: #fff;
+  border: 0px solid green;
+}
+
+#tout-container .toutTop {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: #fff;
+  padding: 15px 0 0 2px;
+  z-index: 11;
+  border: 0px solid green;
+}
+
+#tout-container .toutBottom {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: #fff;
+  padding: 15px 0 0 2px;
+  border: 0px solid red;
+  z-index: 10;
+}
+
+#tout-container .toutDetailsBtn {
+  position: absolute;
+  left: 89px;
+  top: 153px;
+  z-index: 12;
+  border: 0;
+}
+
+
+/* Specifically for April ludlow free-shipping tout/disclaimer  */
+
+#ludlowTout  {
+  position: absolute;
+  left:30px;
+  top: 30px;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  display:none;
+}
+
+#promoDisclaimer  {
+  position: absolute;
+  left: -60px;
+  top: 0px;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  z-index: 13;
+  display:none;
+}
+
+
+
+
+
+
+
+
+/* iphone specific styles  */
+@media only screen and (max-device-width: 480px) {
+	.story-asset-container {  float: left; }
+	.story-cta a:hover {  background-color: #000; }
+}
+
+@media only screen and (device-width: 768px) {
+  /* For general iPad layouts */
+  .story-asset-container {  float: left; }
+  .story-cta a:hover {  background-color: #000; }
+}
+
+/* ipad specific styles for portrait  */
+ @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and(orientation:portrait)  {
+	.story-asset-container {  float: left; }
+	.story-cta a:hover {  background-color: #000; }
+}
+/* ipad specific styles for landscape  */
+ @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+	.story-asset-container {  float: left; }
+	.story-cta a:hover {  background-color: #000; }
+}

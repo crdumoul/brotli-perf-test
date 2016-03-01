@@ -1,0 +1,61 @@
+@media screen and (min-width:960px) and (max-width:1279px) {
+	#wrapper {
+		width: 100%;
+	}		
+	.pagerWrapper.max-width-container {
+		padding:0;
+	}
+	#logo-row{
+		padding-left: 50px;
+	}
+	.pagerWrapper.max-width-container ul{
+		width:100%;
+	}	
+	#primary {
+		float:right;
+		width:75%;
+	}
+	#header #top-row .max-width-container {
+	    padding-left: 50px;
+	}
+	#navigation {
+		font-size: 1.1em;
+	}
+	#navigation ul.level-1 {
+		padding: 0 50px;
+	}
+	ul.search-result-items .grid-tile {
+	}
+	ul.level-1 > li {
+		margin-left: 3.5%;
+	}
+	div.level-2 .menu-wrapper {
+		height: 215px;
+	}
+	.pt_content #main{
+		padding: 0 80px 0 50px;
+	}
+	.pt_storefront #main .html-slot-container {
+		padding: 0px 50px;
+	}
+	.pt_content .newsletter-signup-col-1,
+	.pt_content .newsletter-signup-col-2{
+		padding: 30px 25px 0px 50px;
+	}
+	.holiday-content .copy-beneath-banner,
+	.holiday-content.holiday-fullwidth-1,
+	.holiday-content.holiday-fullwidth-2,
+	.holiday-content.holiday-fullwidth-3 {	
+		padding: 10px 30px 30px;
+	}
+	.holiday-horizontal-line {
+		margin: 0px 150px 30px;
+	}
+
+}
+
+@media screen and (min-width:1550px) {
+	#request-catalog-form .input-text {
+	    margin-left: 0.6em;
+	}
+}

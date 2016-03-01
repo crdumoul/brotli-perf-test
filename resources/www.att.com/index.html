@@ -1,0 +1,3009 @@
+<!DOCTYPE HTML> 
+<html lang="en"> 
+<!--********** Getting Environment.properties values from dspjspTaglib file**********--> 
+<!--********** Storing navServiceURL value from Enviornment Setup **********--> 
+<!--********** Updating ge5p_hostUrl for Telsa Global Variable ge5p_environmentHost **********--> 
+<!-- Variable Setting for localisation -->                             
+<head> 
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
+<script type="text/javascript"> 
+(function SSLredirect(){ 
+	if(window.location.protocol != "http:"){return} 
+	var globalNavCookie; 
+	var allCookies = document.cookie.split('; '); 
+	var httpsPort = ""; 
+	for (var i=0;i<allCookies.length;i++) { 
+		var cookiePair = allCookies[i].split('='); 
+		var cookieName = cookiePair[0]; 
+		cookiePair.shift(); 
+		var cookieValue = cookiePair.join('='); 
+		if(cookieName == "GNSESS"){globalNavCookie = new Function("return " + cookieValue)()} 
+	} 
+	if(typeof globalNavCookie == "object" && typeof globalNavCookie.ENC != "undefined" && globalNavCookie.ENC != ""){ 
+		var newUrl = document.createElement('a'); 
+		if(httpsPort != ""){newUrl.port = httpsPort} 
+		newUrl.href = window.location.href; 
+		newUrl.protocol = "https"; 
+		window.location.href = newUrl.href; 
+	} 
+})(); 
+</script> 
+	<script> 
+	var uagent = navigator.userAgent.toLowerCase(); 
+	function getURLParam(pName) { 
+		var queryString = location.search, startPos, stopPos, tempPos = 0, pValue = ""; 
+		if (typeof pName === "string" && pName !== "") { 
+			if (queryString.indexOf(pName) != -1) { 
+				startPos = queryString.indexOf(pName) + pName.length + 1; 
+				stopPos = ((tempPos = (queryString.indexOf("&", startPos))) == -1) ? queryString.length : tempPos; 
+				return unescape(queryString.substring(startPos, stopPos)); 
+			} 
+		} 
+		return pValue; 
+	} 
+	function setOrderSourceABSplit() { 
+		var referrer = document.referrer; 
+		if(referrer.indexOf("/login") == -1 && (referrer.indexOf("/shopmobile/") != -1 || referrer.indexOf('https://m.att.com') != -1)){ 
+			var ajaxUrl = location.pathname.replace('.html', '.setOrderSourceABSplit.xhr.html'); 
+			var request = new XMLHttpRequest(); 
+			request.open("GET",ajaxUrl,true); 
+			request.send(); 
+			sessionStorage.setItem("storageFullSiteView", "True"); 
+			return true; 
+		} 
+		return false; 
+	} 
+	if (getURLParam("mobile") === "false") { 
+		sessionStorage.setItem("storageFullSiteView", "True"); 
+		setOrderSourceABSplit(); 
+	} else { 
+		var v_tempStorageFullSiteView = ''; 
+		if((typeof(sessionStorage.getItem("storageFullSiteView")) === "undefined" || sessionStorage.getItem("storageFullSiteView") == null) 
+				&& v_tempStorageFullSiteView == 'True' ){			 
+			sessionStorage.setItem("storageFullSiteView", v_tempStorageFullSiteView); 
+		} 
+		if(typeof(Storage) === "undefined" || sessionStorage.getItem("storageFullSiteView") !== "True" && !setOrderSourceABSplit()) { 
+			if (uagent.indexOf("mobile") > -1) { 
+				if (uagent.indexOf("ipad") < 0 && uagent.indexOf("tablet") < 0 && uagent.indexOf("gt-p10") < 0) { 
+					var ajaxUrl = location.pathname.replace('.html', '.sessioninvalidate.html'); 
+					var request = new XMLHttpRequest(); 
+					var referrer = encodeURIComponent(document.referrer); 
+					request.open("GET",ajaxUrl,true); 
+					request.send(); 
+					referrer = referrer.replace("%3A","%253A"); 
+					if (window.location.search != '') { 
+						window.location = "https://m.att.com" + window.location.search + '&referrer=' + referrer; 
+					} else { 
+						window.location = "https://m.att.com" + '?referrer=' + referrer; 
+					} 
+				} 
+			} 
+		} 
+	} 
+	</script> 
+	<title> 
+            AT&T - DIRECTV, Wireless, Cell Phones, U-verse & Internet 
+	</title> 
+	<meta name="description" content="Shop AT&amp;T for special offers on the latest phones like iPhone 6s and Galaxy S6. Find incredible deals on DIRECTV, U-verse Internet, and Home Phone bundles." >	 
+	<meta name="keywords" content="AT&amp;T, Cell Phones, U-verse, High Speed Internet, Digital TV, Home Phone, Bundles, Wireless, 4G, LTE" > 
+	<meta name="robots" content="INDEX,FOLLOW" /> 
+    <link rel="canonical" href="https://www.att.com/"/> 
+	<meta name="verify-v1" content="byKACSdFnpnvPyDbbtC1Ca4gjO9crDrmfX9T0LrkRaI=" /> 
+    <meta name="y_key" content="1543af448e9750db" /> 
+    <meta name="msvalidate.01" content="1A67BDDDDB844ABA85FD37D994D537C8" /> 
+			<script type="text/javascript" src="https://www.att.com/scripts/tealeaf/tealeaf.min.4.0.1607.js"></script> 
+<link rel="stylesheet" type="text/css" href="https://www.att.com/media/cms/homepage/styles/combined-top.min.css"/> 
+		<script type="text/javascript">CQURLInfo={"requestPath":"/content/att/homepage/en/index","extension":"html","selectors":[],"systemId":"12b32c41-8d69-473f-9d63-fabaf0641cda","runModes":"crx2,publish,crx3mongo"};</script> 
+<link rel="stylesheet" href="/shopcms/atthomepage/clientlib/clientlib.min.css" type="text/css"> 
+<style> 
+.LoginModalButtonDiv { 
+    padding: 0 15px 0 10px; 
+} 
+.LoginModalButtonDiv { 
+    background-color: #FAFAFA; 
+    border-top: 1px solid #E5E5E5; 
+} 
+.LoginModalBotLinks { 
+    color: #333333; 
+    float: left; 
+    font-size: 12px; 
+    padding: 19px 15px 19px 0; 
+    text-align: left; 
+    width: 562px; 
+} 
+.LoginModalFirstPara { 
+    padding: 19px 15px; 
+    position: relative; 
+    text-align: left; 
+} 
+.LoginModalLastPara { 
+    padding: 19px 15px; 
+    position: relative; 
+    text-align: left; 
+} 
+ul.LoginModalFirstUL { 
+    color: #333333; 
+    font: 12px Arial; 
+    list-style: disc outside none; 
+    padding-left: 20px; 
+} 
+ul.LoginModalFirstUL li { 
+    color: #333333; 
+    font: 12px Arial; 
+    padding-bottom: 3px; 
+} 
+.LoginModalMiddleParaST { 
+   padding: 19px 15px; 
+} 
+.LoginModalButtonDiv { 
+    padding: 0 15px 0 10px; 
+} 
+#pageID { 
+left:30em !important; 
+} 
+.alertBanner { 
+	width: 974px; 
+	margin:auto auto 15px; 
+	text-align:left; 
+	height:30px; 
+ } 
+.cta a:hover {text-decoration:none;} 
+#marquee{margin-top:-1px;} 
+#ge5p_z2{height: 101px;} 
+.loginpane {height:400px;overflow:hidden; }  
+#content{top:-59px;}	 
+</style> 
+<style> 
+.JSAMDefaultStaticImage { 
+background-image:url("/content/dam/att/2015/global/JSAM-assets/bg-1100x514/3Q/246367-mrq-home-orderonline-1100x514.jpg"); 
+background-repeat:no-repeat; 
+background-position:50% 50%; 
+}	 
+</style> 
+<!--[if IE 8]> 
+<style> 
+	.alertBannerIE { 
+	height:0px !important; 
+	margin: auto auto 41px !important; 
+	} 
+</style> 
+<![endif]--> 
+<!--[if gte IE 8]> 
+<link rel="stylesheet" href="https://www.att.com/styles/global-ie7.css" type="text/css" media="screen, projection, print" /> 
+<![endif]--> 
+	        <!-- Tesla Defaults --> 
+    	<script type="text/javascript"> 
+    	var host = window.location.hostname;  
+        var isProd = (host == "www.att.com") ? true : false; 
+			var globalNavDefaultSelections = { 
+			"integer_set_primaryTabHighlight": "", 
+            "integer_set_secondaryTabHighlight": "", 
+            "string_set_localeLanguage": "en_US", 
+            "string_set_changePageToSpanishURL": "/homepage/es/?locale=es_US", 
+            "boolean_set_showPageInSpanishLink": false, 
+            "boolean_set_application_globalsearch_setProductionSearch": false, 
+            "boolean_set_turnOnMotionpoint": true, 
+            "boolean_set_useProductionMotionpoint": isProd, 
+            "string_set_navService": "//www.att.com", 
+            "string_set_teslaHost": "", 
+            "string_load_module_name": "" 
+		}; 
+       </script> 
+       <noscript> 
+           <style type="text/css">  
+           @import "/globalnav/tesla/2.0/themes/tesla.theme.min.css";  
+			</style>  
+	   </noscript> 
+			<!-- Tesla 2.0 JS--> 
+            <script type="text/javascript" src="/globalnav/tesla/2.0/tesla.scaffold.js"></script> 
+	<!-- Global JS files --> 
+<script type="text/javascript">var IS_HOMEPAGE = true;</script> 
+        <script type="text/javascript" src="https://www.att.com/media/cms/homepage/scripts/combined-top.min.js"></script>         
+ <script> 
+ var dataMap = new Array(); 
+</script> 
+		  <script> 
+		  dataMap['cq'] = '100'; 
+		  </script> 
+		  <script> 
+		  dataMap['tdata'] = '0'; 
+		  </script> 
+<script> 
+			var variantWeightageMap = new Array(); 
+			var allZero = true; 
+			var sumValues = 0; 
+			var weightageMap = new Array(); 
+			//clean up the data coming from component, if required 
+			for (var dataKey in dataMap) { 
+				var keyVal = dataMap[dataKey]; 
+				if (keyVal == undefined || keyVal == "" 
+						|| !(/^\d+$/.test(keyVal))) { 
+					keyVal = 0; 
+				} else { 
+					keyVal = parseInt(keyVal); 
+				} 
+				dataMap[dataKey] = keyVal; 
+				sumValues = sumValues + keyVal; 
+				if (keyVal > 0) { 
+					allZero = false; 
+				} 
+			} 
+		 // calculate the relative percentage 
+			var indexCounter = 0;  
+			for (var dataKey in dataMap) { 
+				if (allZero == true && indexCounter == 0) { 
+					dataMap[dataKey] = 100; 
+					sumValues = 100; 
+				} 
+				var keyVal = dataMap[dataKey]; 
+				weightageMap[dataKey] = (keyVal / sumValues) * 100; 
+			} 
+			// sort the array map 
+			function keysbyValue(O) { 
+				var A = []; 
+				for ( var p in O) { 
+					if (O.hasOwnProperty(p)) 
+						A.push([ p, O[p] ]); 
+				} 
+				A.sort(function(a, b) { 
+					var a1 = a[1], b1 = b[1]; 
+					return a1 - b1; 
+				}); 
+				for (var i = 0, L = A.length; i < L; i++) { 
+					A[i] = A[i][0]; 
+				} 
+				return A; 
+			} 
+			var weightageMapKeys = keysbyValue(weightageMap); 
+			var sortedWeightageMap = new Array(); 
+			for (var i = 0; i < weightageMapKeys.length; i++) { 
+				sortedWeightageMap[weightageMapKeys[i]] = weightageMap[weightageMapKeys[i]]; 
+			} 
+</script> 
+		<script type="text/javascript">var tdataPageID = "PG1084", tdataTimeout = "", tdataDomain = "tdata-offers.att.com";</script> 
+<script> 
+  		var tdataMarq = true;	 
+	   // Random number generator script for toggeling between Tdata & CQ. 
+		var randomNumber = Math.floor((Math.random() * 100) + 1); 
+	    if (window.console) console.log("Tdata Test RandomNumberJSP.." + randomNumber); 
+	    var startRange = 1; 
+	    var endRange = 1; 
+        if (window.console ) { 
+            for (var dataKey in sortedWeightageMap) { 
+                console.log(dataKey + " = " + sortedWeightageMap[dataKey]); 
+            } 
+        } 
+		for (var dataKey in sortedWeightageMap) { 
+            startRange = endRange; 
+            endRange = startRange + sortedWeightageMap[dataKey]; 
+            if (startRange <= randomNumber && randomNumber < endRange) { 
+                if (dataKey == "cq") {//trim 
+                    tdataMarq = false; 
+                } else { 
+                    tdataMarq = true; 
+                } 
+                if (window.console) console.log("tdataMarq set to.. " + tdataMarq); 
+                break; 
+            } 
+        } 
+	     //Call tdata based on random number generated previously.   
+	     if(tdataMarq){ 
+	    	   if(true){ 
+                   if("" == "true"){ 
+               	jQuery.ajax({ 
+                  url: "/media/cms/shop/scripts/tdata.js", 
+                  dataType: "script", 
+                  async:false 
+				}); 
+                   }else{ 
+                       jQuery.ajax({ 
+                  url: "/media/cms/shop/scripts/tdata.min.js", 
+                  dataType: "script", 
+                  async:false 
+				}); 
+                   } 
+	    	   } 
+		} 
+	</script> 
+        <script type="text/javascript"> 
+            jQuery.noConflict(); 
+        </script> 
+<script type="application/ld+json">  
+{ 
+     "@context": "http://schema.org", 
+     "@type": "WebSite", 
+     "url" : "https://www.att.com/", 
+     "potentialAction": { 
+     "@type": "SearchAction", 
+     "target": "https://www.att.com/global-search/search.jsp?q={search_term}", 
+      "query-input": "required name=search_term" 
+     } 
+} 
+</script> 
+<script type="application/ld+json">  
+{      
+     "@context" : "http://schema.org",  
+     "@type" : "Organization",  
+     "url" : "https://www.att.com/",   
+     "logo" : "https://www.att.com/shopcms/media/att/2014/global/social-logo/logo-att-color-trans-200x200.png",  
+     "sameAs" : ["https://twitter.com/attdeals",  
+     "https://www.facebook.com/ATT",  
+     "https://www.linkedin.com/company/at&t",  
+     "https://plus.google.com/+ATT",  
+     "http://instagram.com/att/",  
+     "https://www.youtube.com/user/ShareATT"],  
+     "contactPoint" : [  
+     {  "@type" : "ContactPoint",  
+        "telephone" : "+1-800-288-2020",  
+        "contactType" : ["customer service","technical support"],  
+        "contactOption" : "TollFree",  
+        "areaServed" : "US"  
+     } , {  
+        "@type" : "ContactPoint",  
+        "telephone" : "+1-800-651-5111",  
+        "contactType" : "customer service",  
+        "contactOption" : ["HearingImpairedSupported","TollFree"],  
+        "areaServed" : "US"  
+     } ] }  
+</script> 
+	<!-- what is it: check for page url that includes plan, package or service --> 
+	<!--==== Start REVOLUTION REQUIRED JS dependencies ====================================================-->  
+	<script src="/scripts/revolution1.1.0/revolution_combined.js"></script>  
+	<!--==== End REVOLUTION REQUIRED JS dependencies ======================================================--> 
+<link rel="alternate" media="only screen and (max-width: 800px)" href="https://m.att.com"/> 
+<link rel="alternate" hreflang="en" href="https://www.att.com/"/> 
+<link rel="alternate" hreflang="es" href="https://www.att.com/es-us/"/>  
+<!-- disabling the complitly plugin --> 
+<script type="text/javascript"> 
+window.suggestmeyes_loaded = true; 
+</script> 
+				<script src="/scripts/satellite/prod/8bb7555f31d461fe2aef4e2d53a11a03e7f9a04c/satelliteLib-bee1ce9b89e943a46b1dfd167adc564fe75eef37.js"></script> 
+</head> 
+<!-- Add author only code below --> 
+<body id="top" data-cqpath="49307505154793706457240412985946900110;2016005"> 
+	<div class="parbase clientcontext"><script type="text/javascript">CQURLInfo={"requestPath":"/content/att/homepage/en/index/jcr:content/clientcontext","extension":"html","selectors":[],"systemId":"12b32c41-8d69-473f-9d63-fabaf0641cda","runModes":"crx2,publish,crx3mongo"};</script> 
+<script type="text/javascript" src="/shopcms/shopetc/clientlibs/granite/jquery.min.js"></script> 
+<script type="text/javascript" src="/shopcms/shopetc/clientlibs/granite/utils.min.js"></script> 
+<script type="text/javascript" src="/shopcms/shopetc/clientlibs/granite/jquery/granite.min.js"></script> 
+<script type="text/javascript" src="/shopcms/shopetc/clientlibs/foundation/jquery.min.js"></script> 
+<script type="text/javascript" src="/shopcms/shopetc/clientlibs/foundation/shared.min.js"></script> 
+<script type="text/javascript" src="/shopcms/shopetc/clientlibs/granite/underscore.min.js"></script> 
+<script type="text/javascript" src="/shopcms/shopetc/clientlibs/foundation/personalization/kernel.min.js"></script> 
+<script src="/media/cms/homepage/scripts/BrowserDetect.js" type="text/javascript"></script> 
+<script type="text/javascript"> 
+    var atgProfileDataReady = jQuery.Deferred(); 
+    $CQ(function() { 
+    	//delete itmes with "_XSS" names  
+        if(window.localStorage!==undefined){  
+            var strData = decodeURIComponent(window.localStorage.getItem("ClientSidePersistence"));  
+            if(strData.toLowerCase().indexOf("_xss") > -1){  
+                var arrData = strData.split("%2C");  
+                var strClientPersistance = "";  
+                for(var i=0;i<arrData.length;i++)  
+                {  
+                    if(arrData[i].toLowerCase().indexOf("_xss") > -1){  
+                        continue;  
+                    }  
+                    else{  
+                       strClientPersistance += arrData[i];  
+                    }  
+                }  
+                window.localStorage.setItem("ClientSidePersistence",encodeURIComponent(strClientPersistance));  
+            }  
+        } 
+    	// call to att profile 
+        loadATTProfileForPersonalization(); 
+        CQ_Analytics.SegmentMgr.loadSegments("/shopcms/shopetc/segmentation"); 
+	        CQ_Analytics.ClientContextUtils.init("/shopcms/shopetc/clientcontext/default","/homepage/index"); 
+    }); 
+    // method to make ajax call to atgprofile to get a json and set in the SessionPersistence cookie or Localstorage 
+    function loadATTProfileForPersonalization() 
+     { 
+         atgProfileDataReady; 
+ 		var atgProfileDataTimer = setTimeout(function() { 
+ 		atgProfileDataReady.reject();  
+ 		}, 4000); 
+ 	//setting authorizaleId with our trustedkey for fixing the errors.		 
+     CQ_Analytics.ProfileDataMgr.setProperty("authorizableId", "03e2a1cac921ba5da75666813d03996c"); 
+	    var v_orderCookie = ATT.util.getCookie('ORDER_COOKIE'); 
+        console.log("DEBUG : Order cookie read - " + v_orderCookie); 
+	    if(v_orderCookie) { 
+            console.log("DEBUG : Order cookie read is - " + v_orderCookie); 
+	        var v_orderCookieJson = jQuery.parseJSON(v_orderCookie); 
+	        var orderDate = v_orderCookieJson.orderSubmittedDate; 
+	        console.log("DEBUG : orderDate from cookie = " + orderDate); 
+	        if(orderDate!=null){ 
+                var yy = parseInt(orderDate.substring(0,4)); 
+                var mm = parseInt(orderDate.substring(5,7))-1; 
+                var dd = parseInt(orderDate.substring(8,10)); 
+                if(!isNaN(yy) && !isNaN(mm) && !isNaN(dd)){ 
+		            var orderDateDate = new Date(yy,mm,dd,0,0,0,0); 
+	                console.log("DEBUG : orderDateDate = " + orderDateDate); 
+					var currentDate = new Date(); 
+	                console.log("DEBUG : currentDate = " + currentDate); 
+		            if(orderDateDate!=null && currentDate!=null){ 
+		                var timeDiff = Math.abs(currentDate.getTime() - orderDateDate.getTime()); 
+						var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));  
+	                    console.log("DEBUG : diffDays = " + diffDays); 
+		                if(diffDays>0){ 
+							CQ_Analytics.ProfileDataMgr.setProperty('daysSinceLastOrderSubmitted', diffDays);       
+		                } 
+		            } 
+		        } 
+	        } else { 
+	        	CQ_Analytics.ProfileDataMgr.setProperty('daysSinceLastOrderSubmitted', -1);  
+	        } 
+	    } 
+    	$CQ.ajax({ url: '/homepage/index/_jcr_content.atgprofile.xhr.json', cache: false, dataType: 'text', success: function(data){ 
+ 		var json = jQuery.parseJSON(data);	 
+        var contextFromLS = unescape(window.localStorage.getItem("ClientSidePersistence")); 
+        /*var start = contextFromLS.indexOf("checkAvailabilityPerformed="); 
+        var end = 0; 
+        if(start>0) end = contextFromLS.indexOf(",",start); 
+		var capFromLS = "N"; 
+        if(start>0 && end!=0) capFromLS = contextFromLS.substring(start+27, end); 
+        start = contextFromLS.indexOf("addressLine1="); 
+        end = 0; 
+        if(start>0) end = contextFromLS.indexOf(",",start); 
+		var addressLine1FromLS = ""; 
+        if(start>0 && end!=0) addressLine1FromLS = contextFromLS.substring(start+13, end);            */ 
+        var start = contextFromLS.indexOf("zip5="); 
+        var end = 0; 
+        if(start>0) end = contextFromLS.indexOf(",",start); 
+		var zip5 = ""; 
+        if(start>0 && end!=0) zip5 = contextFromLS.substring(start+5, end);       
+        start = contextFromLS.indexOf("zip="); 
+        end = 0; 
+        if(start>0) end = contextFromLS.indexOf(",",start); 
+		var zip = ""; 
+        if(start>0 && end!=0) zip = contextFromLS.substring(start+4, end);  
+        start = contextFromLS.indexOf("paperlessFlag="); 
+        end = 0; 
+        if(start>0) end = contextFromLS.indexOf(",",start); 
+		var paperlessFlag = ""; 
+        if(start>0 && end!=0) paperlessFlag = contextFromLS.substring(start+14, end);      
+        start = contextFromLS.indexOf("iruAuthorized="); 
+        end = 0; 
+        if(start>0) end = contextFromLS.indexOf(",",start); 
+		var iruAuthorized = ""; 
+        if(start>0 && end!=0) iruAuthorized = contextFromLS.substring(start+14, end);              
+        var paperlessFlagFromJson = json.paperlessFlag!=null?json.paperlessFlag.toString():""; 
+        var iruAuthFlagFromJson = json.iruAuthorized!=null?json.iruAuthorized.toString():"false"; 
+		//Loading Profile data from Lower Funnel to upper funnel profile object 
+		if(sessionStorage.ufProfile !==undefined){ 
+    	  window.sessionStorage.setItem('profile', JSON.stringify(jQuery.extend(JSON.parse(window.sessionStorage.profile) , JSON.parse(window.sessionStorage.ufProfile)))); 
+		} 
+		//mapping required check availability properties to atgprofile  
+		if(sessionStorage.ufProfile !== undefined && jQuery.isEmptyObject(json)){ 
+			var LFJson = jQuery.parseJSON(sessionStorage.ufProfile); 
+			json.ban = LFJson.uverseAccounts[0].ban; 
+			json.loginId = LFJson.loginId; 
+			//json.state = LFJson.profile.state; 
+			//json.city = LFJson.profile.city; 
+			json.zip5 = LFJson.profile.zipCode; 
+			//json.addressId = LFJson.profile.addressId; 
+			//json.dma = LFJson.profile.dma; 
+			//json.checkAvailabilityPerformed = "Y"; 
+			//json.addressLine1 = LFJson.profile.addressLine1; 
+			//json.addressLine2 = LFJson.profile.addressLine2; 
+			json.customerState = 'authenticated'; 
+            json.cState = 'authenticated'; 
+			//json.existUverse = true; 
+			//json.uverseQual = LFJson.profile.isUverseAvailable  ? "Y" : "N"; 
+			//json.uHSIAQual = LFJson.profile.isHSIAAvailable  ? "Y" : "N"; 
+			//json.uVOIPQual = LFJson.profile.isVOIPAvailable  ? "Y" : "N"; 
+			//json.uIPTVQual = LFJson.profile.isIPTVAvailable  ? "Y" : "N"; 
+			//json.maxHsiaSpeed = LFJson.CkavDataBean.maxHsiaSpeedAvailable; 
+			//json.maxUverseSpeed = LFJson.CkavDataBean.maxHsiaSpeedAvailable; 
+			/*if(json.maxUverseSpeed === null){ 
+                json.maxUverseSpeed = ""; 
+            }*/ 
+			json.accountType = LFJson.loginType; 
+			//json.uverseBuyflowMyATTSales = true; 
+			//json.uZip = LFJson.profile.zipCode; 
+        } 
+        //Reload local Storage only upon authenticated flow or check availability flow 
+        /*if((json.checkAvailabilityPerformed === 'Y' && (capFromLS != 'Y' || addressLine1FromLS != json.addressLine1))  
+            || json.customerState === 'authenticated'  || json.cState === 'authenticated' 
+            || (json.zip5 != null && json.zip5 != zip5)  
+            || (json.zip != null && json.zip != zip)  
+            || paperlessFlagFromJson != paperlessFlag 
+            || iruAuthFlagFromJson != iruAuthorized){*/ 
+		if(json.customerState === 'authenticated'  || json.cState === 'authenticated' 
+            || (json.zip5 != null && json.zip5 != zip5)  
+            || (json.zip != null && json.zip != zip)  
+            || paperlessFlagFromJson != paperlessFlag 
+            || iruAuthFlagFromJson != iruAuthorized){ 
+            console.log('DEBUG: Overwriting LS'); 
+            $CQ.each(json, function(key, val) {       
+                   var value = val; 
+                   if(typeof val=="boolean" || typeof val=="number"){ 
+                       value = val.toString(); 
+                    } 
+                    if(value.indexOf("|")>0){ 
+                        value = value.replace(/[|]/g,"~"); 
+                    } 
+                    if (key === 'region_code') { 
+                         key = 'state'; 
+                     } 
+                    if (key === 'zip') { 
+                         value = value.substring(0,5); 
+                     } 
+                     if (key === 'network') { 
+                         if (val === 'att') { 
+                             key = 'existDSL'; 
+                             value = 'true'; 
+                             CQ_Analytics.ProfileDataMgr.setProperty('compISP', 'false'); 
+                         } else { 
+                             key = 'existDSL'; 
+                             value = 'false'; 
+                             CQ_Analytics.ProfileDataMgr.setProperty('compISP', 'true');                      
+                         } 
+                     } 
+            //set Ready2Go value from ORDER_COOKIE, instead of profile because of order summary session invalidation limitation. 
+            if (key == 'existR2G') { 
+                         var orderCookie = ATT.util.getCookie('ORDER_COOKIE'); 
+                         if(orderCookie) { 
+                             var orderCookieJson = jQuery.parseJSON(orderCookie); 
+                             value = orderCookieJson.R2GExists; 
+                         } 
+                     } 
+                CQ_Analytics.ProfileDataMgr.setProperty(key, value);                     
+            }); 
+        } 
+		if(window.location.href.indexOf('suppress_redirect') !== -1) { 
+		    CQ_Analytics.ProfileDataMgr.setProperty("existingUverseCustomer", false); 
+		} 
+ 	// setting browser and operating system after reading from the client side 
+         CQ_Analytics.ProfileDataMgr.setProperty("browser", BrowserDetect.browser);  
+         CQ_Analytics.ProfileDataMgr.setProperty("os", BrowserDetect.OS); 
+         //B2C-226133 -Setting localstorage value that is coming from atg profile json 
+         //CQ_Analytics.ProfileDataMgr.setProperty("checkAvailabilityPerformed", json.checkAvailabilityPerformed); 
+         CQ_Analytics.ProfileDataMgr.setProperty("flowIndicator", json.flowIndicator); 
+         /*var chkavlPerformed = json.checkAvailabilityPerformed; 
+         if (chkavlPerformed === '') {	 
+         	CQ_Analytics.ProfileDataMgr.setProperty('welcomeBackUser', 'Y'); 
+         }*/ 
+         clearTimeout(atgProfileDataTimer); 
+         atgProfileDataReady.resolve(data);		 
+ 	}}); 
+		if( (typeof blnLOB != 'undefined') && (ATT.util.getCookie("SALES_USER_ID") == null) ){ 
+			var waitForSalesSession = setInterval(function() { 
+				if (ATT.util.getCookie("SALES_USER_ID") !== null) { 
+					clearInterval(waitForSalesSession); 
+					retrievePersonalizationCall(); 
+				} 
+			}, 100); 
+		} else { 
+			retrievePersonalizationCall(); 
+		} 
+    }	 
+    function retrievePersonalizationCall()  
+	{		 
+		if ( (window.sessionStorage.isModifyFlow == "true") && (ATT.util.getCookie("tAuthNState") == "true") ) { 
+			var serviceURL = "/services/myshop/model/ecom/shop/personalization/WbfcPersonalizationService/retrievePersonalizationInfo"; 
+		} 
+		else { 
+			var serviceURL = "/services/shop/model/ecom/shop/personalization/WbfcPersonalizationService/retrievePersonalizationInfo"; 
+		} 
+		$CQ.ajax({ url: serviceURL, cache: false, dataType: 'text', success: function(data){ 
+			var json = jQuery.parseJSON(data); 
+			var contextFromLS = unescape(window.localStorage.getItem("ClientSidePersistence")); 
+			var start = contextFromLS.indexOf("checkAvailabilityPerformed="); 
+			var end = 0; 
+			if(start>0) end = contextFromLS.indexOf(",",start); 
+			var capFromLS = "N"; 
+			if(start>0 && end!=0) capFromLS = contextFromLS.substring(start+27, end); 
+			start = contextFromLS.indexOf("addressLine1="); 
+			end = 0; 
+			if(start>0) end = contextFromLS.indexOf(",",start); 
+			var addressLine1FromLS = ""; 
+			if(start>0 && end!=0) addressLine1FromLS = contextFromLS.substring(start+13, end);             
+			start = contextFromLS.indexOf("zip5="); 
+			end = 0; 
+			if(start>0) end = contextFromLS.indexOf(",",start); 
+			var zip5 = ""; 
+			if(start>0 && end!=0) zip5 = contextFromLS.substring(start+5, end);       
+			start = contextFromLS.indexOf("zip="); 
+			end = 0; 
+			if(start>0) end = contextFromLS.indexOf(",",start); 
+			var zip = ""; 
+			if(start>0 && end!=0) zip = contextFromLS.substring(start+4, end);  
+			if((json.cqPersonalizationInfo.checkAvailabilityPerformed === 'Y' && (capFromLS != 'Y' || addressLine1FromLS != json.cqPersonalizationInfo.addressLine1))  
+                || (json.cqPersonalizationInfo.zip5 != null && json.cqPersonalizationInfo.zip5 != zip5)  
+				|| (json.cqPersonalizationInfo.zip != null && json.cqPersonalizationInfo.zip != zip)){			 
+				$CQ.each(json.cqPersonalizationInfo, function(key, val) {		 
+					var value = val; 
+					if (value !=null){						 
+						if(typeof val=="boolean" || typeof val=="number"){ 
+						   value = val.toString(); 
+						} 
+						if(value.indexOf("|")>0){ 
+							value = value.replace(/[|]/g,"~"); 
+						} 
+						if (key === 'region_code') { 
+							 key = 'state'; 
+						} 
+						if (key === 'zip') { 
+							 value = value.substring(0,5); 
+						} 
+						CQ_Analytics.ProfileDataMgr.setProperty(key, value); 
+					} 
+				}); 
+			} 
+			CQ_Analytics.ProfileDataMgr.setProperty("checkAvailabilityPerformed", json.cqPersonalizationInfo.checkAvailabilityPerformed); 
+			var chkavlPerformed = json.cqPersonalizationInfo.checkAvailabilityPerformed; 
+			if (chkavlPerformed === '') {	 
+				CQ_Analytics.ProfileDataMgr.setProperty('welcomeBackUser', 'Y'); 
+			} 
+		}});		 
+	} 
+</script> 
+</div> 
+	<!-- Global Nav header --> 
+    <!-- Start zone 1 Html for SEO (Global Nav) --> 
+	<div class="ge5p_global_styles" data-standalone="true"><nav id="ge5p_z1" class="ge5p_z1-navbar" role="navigation"><!-- Content --> 
+	<!-- 
+ ************************** 
+ * Telsa GN Zone-1 SEO HTML 
+ * Updated on 12/14/2015 
+ ************************** 
+--> 
+<div id="ge5p_z1-global-nav-container" class="container"> 
+	<ul id="ge5p_z1-nav-left-seg" class="ge5p_z1-nav-left-seg" 
+		aria-owns="ge5p_z1_s1001 ge5p_z1_s1002 ge5p_z1_s1003 ge5p_z1-skip-navigation-link" 
+		role="tree"> 
+		<li class="ge5p_z1-tab ge5p_z1-has-submenu"><a aria-selected="false" aria-expanded="false" aria-setsize="3" tabindex="10" role="treeitem" class="ge5p_z1-drop-down" aria-level="1" href="https://www.att.com/" id="ge5p_z1_s1001" aria-label="Personal" aria-owns="ge5p_z1_1_0" data-cqpath="49307505154793706457240412985946900110;2016005">Personal</a> 
+		<div class="ge5p_z1-menu"> 
+				<ul aria-owns="ge5p_z1_t1001 ge5p_z1_t1002 ge5p_z1_t1003" 
+					role="group" class="ge5p_z1_s1001" id="ge5p_z1_1_0" 
+					aria-labelledby="ge5p_z1_s1001"> 
+					<li class="ge5p_z1-menuitem"><a tabindex="10" role="treeitem" aria-label="att.com" aria-setsize="3" aria-posinset="1" aria-level="2" id="ge5p_z1_t1001" href="//att.com/" data-cqpath="49307505154793706457240412985946900110;2016005">att.com</a></li> 
+					<li class="ge5p_z1-menuitem"><a tabindex="10" role="treeitem" aria-label="att.net" aria-setsize="3" aria-posinset="2" aria-level="2" id="ge5p_z1_t1002" href="//att.net/" data-cqpath="49307505154793706457240412985946900110;2016005">att.net</a></li> 
+					<li class="ge5p_z1-menuitem"><a tabindex="10" role="treeitem" aria-label="uverse.com" aria-setsize="3" aria-posinset="3" aria-level="2" id="ge5p_z1_t1003" href="//uverseonline.att.net/" data-cqpath="49307505154793706457240412985946900110;2016005">uverse.com</a></li> 
+				</ul> 
+			</div></li> 
+		<li class="ge5p_z1-tab ge5p_z1-has-submenu"><a aria-selected="false" aria-expanded="false" aria-setsize="4" tabindex="10" role="treeitem" class="ge5p_z1-drop-down" aria-level="1" href="https://www.att.com/gen/general?pid=11627" id="ge5p_z1_s1002" aria-label="Business" aria-owns="ge5p_z1_1_1" data-cqpath="49307505154793706457240412985946900110;2016005">Business</a> 
+		<div class="ge5p_z1-menu"> 
+				<ul 
+					aria-owns="ge5p_z1_t1004 ge5p_z1_t1005 ge5p_z1_t1006 ge5p_z1_t1007" 
+					role="group" class="ge5p_z1_s1002" id="ge5p_z1_1_1" 
+					aria-labelledby="ge5p_z1_s1002"> 
+					<li class="ge5p_z1-menuitem"><a tabindex="10" role="treeitem" aria-label="Small Business" aria-setsize="4" aria-posinset="1" aria-level="2" id="ge5p_z1_t1004" href="//att.com/gen/landing-pages?pid=9213" data-cqpath="49307505154793706457240412985946900110;2016005">Small Business</a></li> 
+					<li class="ge5p_z1-menuitem"><a tabindex="10" role="treeitem" aria-label="Enterprise Business" aria-setsize="4" aria-posinset="2" aria-level="2" id="ge5p_z1_t1005" href="//att.com/gen/landing-pages?pid=9214" data-cqpath="49307505154793706457240412985946900110;2016005">Enterprise 
+							Business</a></li> 
+					<li class="ge5p_z1-menuitem"><a tabindex="10" role="treeitem" aria-label="Wholesale" aria-setsize="4" aria-posinset="3" aria-level="2" id="ge5p_z1_t1006" href="//att.com/gen/general?pid=11624" data-cqpath="49307505154793706457240412985946900110;2016005">Wholesale</a></li> 
+					<li class="ge5p_z1-menuitem"><a tabindex="10" role="treeitem" aria-label="Government" aria-setsize="4" aria-posinset="4" aria-level="2" id="ge5p_z1_t1007" href="//att.com/gen/general?pid=11625" data-cqpath="49307505154793706457240412985946900110;2016005">Government</a></li> 
+				</ul> 
+			</div></li> 
+		<li class="ge5p_z1-tab ge5p_z1-has-submenu"><a aria-selected="false" aria-expanded="false" aria-setsize="2" tabindex="10" role="treeitem" class="ge5p_z1-drop-down" aria-level="1" href="https://www.att.com/gen/landing-pages?pid=3309" id="ge5p_z1_s1003" aria-label="About AT&amp;amp;T" aria-owns="ge5p_z1_1_2" data-cqpath="49307505154793706457240412985946900110;2016005">About AT&amp;T</a> 
+		<div class="ge5p_z1-menu"> 
+				<ul 
+				aria-owns="ge5p_z1_t2006 ge5p_z1_t2007 ge5p_z1_t2008" role="group" class="ge5p_z1_s1003" id="ge5p_z1_1_2" aria-labelledby="ge5p_z1_s1003"> 
+					<li class="ge5p_z1-menuitem"><a tabindex="0" role="treeitem" aria-label="About Us" aria-posinset="1" aria-setsize="2" aria-level="2" id="ge5p_z1_t1009" href="http://about.att.com/category/all_news.html" data-cqpath="49307505154793706457240412985946900110;2016005">About Us</a></li> 
+					<li class="ge5p_z1-menuitem"><a tabindex="0" role="treeitem" aria-label="Investor Relations" aria-posinset="2" aria-setsize="2" aria-level="2" id="ge5p_z1_t1010" href="//att.com/gen/landing-pages?pid=5718" data-cqpath="49307505154793706457240412985946900110;2016005">Investor Relations</a></li> 
+				</ul> 
+		</div></li>		 
+		<li class="ge5p_z1-tab ge5p_z1-skip-navigation"><a tabindex="1" href="#wrapper" id="ge5p_z1-skip-navigation-link" class="ge5p_z1-skip-navigation-link" aria-label="Skip Navigation" role="treeitem" aria-posinset="1" aria-level="1" data-cqpath="49307505154793706457240412985946900110;2016005">Skip Navigation</a></li> 
+	</ul> 
+	<ul id="ge5p_z1-nav-right-seg" class="ge5p_z1-nav-right-seg" 
+		aria-owns="ge5p_z1_s2001 ge5p_z1_s2002 ge5p_z1_s2003" role="tree"> 
+		<li class="ge5p_z1-tab"><a aria-selected="false" aria-expanded="false" aria-setsize="3" tabindex="10" role="treeitem" class="ge5p_z1-drop-down" aria-posinset="undefined" aria-level="1" href="" id="ge5p_z1_s2001" aria-label="Coverage Maps" data-cqpath="49307505154793706457240412985946900110;2016005">Coverage Maps</a> <!-- aria-owns="ge5p_z1_1_1"--> 
+		<div class="ge5p_z1-menu"> 
+				<ul 
+				role="group" class="ge5p_z1_s2002"> 
+					<li class="ge5p_z1-menuitem"><a tabindex="0" role="treeitem" aria-label="Wireless" aria-posinset="1" aria-setsize="3" aria-level="2" id="ge5p_z1_t2003" href="//att.com/maps/wireless-coverage.html" data-cqpath="49307505154793706457240412985946900110;2016005">Wireless</a></li> 
+					<li class="ge5p_z1-menuitem"><a tabindex="0" role="treeitem" aria-label="U-verse" aria-posinset="2" aria-setsize="3" aria-level="2" id="ge5p_z1_t2004" href="//att.com/local/" data-cqpath="49307505154793706457240412985946900110;2016005">U-verse</a></li> 
+					<li class="ge5p_z1-menuitem"><a tabindex="0" role="treeitem" aria-label="U-verse with AT&amp;T GigaPower" aria-posinset="3" aria-setsize="3" aria-level="2" id="ge5p_z1_t2005" href="//att.com/gigapowercities/" data-cqpath="49307505154793706457240412985946900110;2016005">U-verse with AT&amp;T GigaPower</a></li> 
+				</ul> 
+		</div></li> 
+		<li class="ge5p_z1-tab"><a aria-label="Store Locations &amp; Appointments" role="treeitem" tabindex="10" aria-setsize="0" aria-posinset="1" aria-level="1" href="//att.com/storelocator/" id="ge5p_z1_s2002" data-cqpath="49307505154793706457240412985946900110;2016005">Store Locations 
+				&amp; Appointments</a></li> 
+		<li class="ge5p_z1-tab ge5p_z1-has-submenu ge5p_z1-language-drop-down"><a id="ge5p_z1-language-drop-down-link" class="ge5p_z1-language-drop-down ge5p_z1-drop-down" aria-selected="false" aria-expanded="false" aria-setsize="3" tabindex="10" role="treeitem" aria-level="1" href="#" aria-label="Language" aria-owns="ge5p_z1_1_2" data-cqpath="49307505154793706457240412985946900110;2016005">Language</a> 
+		<div class="ge5p_z1-menu"> 
+				<ul class="ge5p_z1-language_submenu ge5p_z1_s2003" role="group" 
+					id="ge5p_z1_1_2" 
+					aria-owns="ge5p_z1_t2001 ge5p_z1_t2002 ge5p_z1_t2003"> 
+					<li class="ge5p_z1-menuitem"><a tabindex="10" aria-label="Pagina en Espanol" role="treeitem" aria-setsize="3" aria-posinset="1" aria-level="2" id="ge5p_z1-change-language" href="/globalnav/tesla/index.jsp?locale=es_US" class="en_US" data-cqpath="49307505154793706457240412985946900110;2016005">Página 
+							en Español</a></li> 
+					<li class="ge5p_z1-menuitem"><a tabindex="10" aria-label="Sitio en Espanol" role="treeitem" aria-setsize="3" aria-posinset="2" aria-level="2" id="ge5p_z1_t2002" href="//espanol.att.com/" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005">Sitio en Espanol<i 
+							class="cssIcon-open-window-w"></i><span class="hidden-spoken">This 
+								link will open a new window</span></a></li> 
+					<li class="ge5p_z1-menuitem"><a tabindex="10" aria-label="Other Language Sites" role="treeitem" aria-setsize="3" aria-posinset="3" aria-level="2" id="ge5p_z1_t2003" href="//world.att.com/" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005">Other Language Sites<i 
+							class="cssIcon-open-window-w"></i><span class="hidden-spoken">This 
+								link will open a new window</span></a></li> 
+				</ul> 
+			</div></li> 
+	</ul> 
+</div> 
+	</nav></div> 
+    <!--   End zone 1 Html for SEO --> 
+    <!-- Start zone 2 Html for SEO (Secondary Nav, User Info, Search)  --> 
+	<div class="ge5p_global_styles" data-standalone="true"><nav id="ge5p_z2" class="container" role="navigation"><!-- Content --> 
+	<!-- 
+ **************************************** 
+ * Telsa GN Zone-2 SEO HTML for home page 
+ * Updated on 12/14/2015 
+ **************************************** 
+--> 
+<div class="row-fluid"> 
+	<div id="ge5p_z2-user-info"> 
+		<div class="ge5p_z2-zipcode-outer"> 
+			<div id="ge5p_z2-zipcode-inner" class="ge5p_z2-zipcode-inner"> 
+			</div> 
+		</div> 
+	</div> 
+</div> 
+<div id="ge5p_z2-primary-nav-wrapper" class="row-fluid"> 
+	<nav id="ge5p_z2-primary-nav" style="height: 45px;"> 
+		<ul id="ge5p_z2-nav-bar" aria-owns="" role="tree" 
+			aria-label="Primary Navigation Bar"> 
+			<li id="primaryLogo" class="ge5p_z2-primaryLogo" 
+				style="height: auto;"><a class="ge5p_z2-primary-nav-el" title="AT&amp;T Home Page Link" alt="AT&amp;T Home Page Link" href="http://www.att.com" tabindex="0" role="treeitem" aria-setsize="4" aria-level="1" aria-posinset="1" aria-expanded="false" aria-selected="false" data-cqpath="49307505154793706457240412985946900110;2016005">AT&amp;T<span class="hidden-spoken">AT&amp;T Home Page Link</span></a></li> 
+			<li class="ge5p_z2-nav-item" style="height: auto;"><a id="ge5p_z2_p1001" class="ge5p_z2-primary-nav-el" tabindex="0" aria-label="Shop" role="treeitem" aria-setsize="4" aria-level="1" aria-posinset="2" aria-selected="false" aria-expanded="false" aria-owns="ge5p_z2_1_1" href="https://www.att.com/shop/" data-cqpath="49307505154793706457240412985946900110;2016005">Shop</a> 
+			</li> 
+			<li class="ge5p_z2-nav-item" style="height: auto;"><a id="ge5p_z2_p3001" class="ge5p_z2-primary-nav-el" tabindex="0" aria-label="myAT&amp;T" role="treeitem" aria-setsize="4" aria-level="1" aria-posinset="2" aria-selected="false" aria-expanded="false" aria-owns="ge5p_z2_1_2" href="http://www.att.com/olam/passthroughAction.myworld?actionType=Manage" data-cqpath="49307505154793706457240412985946900110;2016005">myAT&amp;T</a> 
+			</li> 
+			<li class="ge5p_z2-nav-item" style="height: auto;"><a id="ge5p_z2_p5001" class="ge5p_z2-primary-nav-el" tabindex="0" aria-label="Support" role="treeitem" aria-setsize="4" aria-level="1" aria-posinset="2" aria-selected="false" aria-expanded="false" aria-owns="ge5p_z2_1_3" href="https://www.att.com/esupport/index.jsp" data-cqpath="49307505154793706457240412985946900110;2016005">Support</a> 
+			</li> 
+			<li id="primary_Search" style="height: auto;"><form action="//www.att.com/global-search/search.jsp" name="searchForm" id="searchForm" method="get" role="search"> 
+					<fieldset> 
+						<input type="hidden" value="HOME" name="App_ID"> <input 
+							type="hidden" value="FALSE" name="autoSuggest"> <input 
+							type="hidden" value="FALSE" id="tabPressed" name="tabPressed"> 
+						<input type="text" title="Search" 
+							class="span3 ask_a_question_box ui-autocomplete-input" 
+							id="ge5p_search" name="q" placeholder="Loading..." autocomplete="off" 
+							aria-autocomplete="list" aria-haspopup="true" role="textbox" style="cursor:wait;" disabled> 
+						<input type="submit" class="cssIcon-search" 
+							value="Search Submit Button" alt="Search Submit Button"> 
+						<div class="autoSuggest" id="autoSuggestBox"> 
+							<ul 
+								class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" 
+								role="listbox" aria-activedescendant="ui-active-menuitem" 
+								style="z-index: 901; top: 0px; left: 0px; display: none;"></ul> 
+						</div> 
+					</fieldset> 
+				</form></li> 
+		</ul> 
+	</nav> 
+</div> 
+	</nav></div> 
+	<!-- End zone 2 Html for SEO -->  
+	<!-- main content of page --> 
+	<div id="wrapper" class="main-container-wrapper"> 
+	<!-- undernav content --> 
+	<div class="alertBanner alertBannerIE" > 
+<div class="parbase teaser homepagealertteaser alertTeaser"> 
+<div id="homepagealert" > 
+<script type="text/javascript">$CQ(function() { 
+            initializeTeaserLoader([{"path":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/early-upgrade-multi-line","name":"early-upgrade-multi-line","title":"Early Upgrade Multi Line","campainName":"upgrade-alert-banners","thumbnail":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/early-upgrade-multi-line.thumb.png","id":"upgrade-alert-banners_early-upgrade-multi-line","segments":["/shopcms/shopetc/segmentation/UF/segmnts/early-upgrade-multi-line"],"tags":[]},{"path":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/early-upgrade-single-line","name":"early-upgrade-single-line","title":"Early Upgrade Single Line","campainName":"upgrade-alert-banners","thumbnail":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/early-upgrade-single-line.thumb.png","id":"upgrade-alert-banners_early-upgrade-single-line","segments":["/shopcms/shopetc/segmentation/UF/segmnts/early-upgrade-single-line"],"tags":[]},{"path":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/next-trade-in-upgrade-multi-line","name":"next-trade-in-upgrade-multi-line","title":"Next+Trade In Upgrade Multi Line","campainName":"upgrade-alert-banners","thumbnail":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/next-trade-in-upgrade-multi-line.thumb.png","id":"upgrade-alert-banners_next-trade-in-upgrade-multi-line","segments":["/shopcms/shopetc/segmentation/UF/segmnts/next-trade-in-upgrade-multi-line"],"tags":[]},{"path":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/next-trade-in-upgrade-single-line","name":"next-trade-in-upgrade-single-line","title":"Next+Trade In Upgrade Single Line","campainName":"upgrade-alert-banners","thumbnail":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/next-trade-in-upgrade-single-line.thumb.png","id":"upgrade-alert-banners_next-trade-in-upgrade-single-line","segments":["/shopcms/shopetc/segmentation/UF/segmnts/next-trade-in-upgrade-single-line"],"tags":[]},{"path":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/next-upgrade-multi-line","name":"next-upgrade-multi-line","title":"Next Upgrade Multi Line","campainName":"upgrade-alert-banners","thumbnail":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/next-upgrade-multi-line.thumb.png","id":"upgrade-alert-banners_next-upgrade-multi-line","segments":["/shopcms/shopetc/segmentation/UF/segmnts/next-upgrade-multi-line"],"tags":[]},{"path":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/next-upgrade-single-line","name":"next-upgrade-single-line","title":"Next Upgrade Single Line","campainName":"upgrade-alert-banners","thumbnail":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/next-upgrade-single-line.thumb.png","id":"upgrade-alert-banners_next-upgrade-single-line","segments":["/shopcms/shopetc/segmentation/UF/segmnts/next-upgrade-single-line"],"tags":[]},{"path":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/standard-any-upgrade-multi-line","name":"standard-any-upgrade-multi-line","title":"Standard+Any Upgrade Multi Line","campainName":"upgrade-alert-banners","thumbnail":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/standard-any-upgrade-multi-line.thumb.png","id":"upgrade-alert-banners_standard-any-upgrade-multi-line","segments":["/shopcms/shopetc/segmentation/UF/segmnts/standard-any-upgrade-multi-line"],"tags":[]},{"path":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/standard-any-upgrade-single-line","name":"standard-any-upgrade-single-line","title":"Standard+Any Upgrade Single Line","campainName":"upgrade-alert-banners","thumbnail":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/standard-any-upgrade-single-line.thumb.png","id":"upgrade-alert-banners_standard-any-upgrade-single-line","segments":["/shopcms/shopetc/segmentation/UF/segmnts/standard-any-upgrade-single-line"],"tags":[]},{"path":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/standard-upgrade-multi-line","name":"standard-upgrade-multi-line","title":"Standard Upgrade Multi Line","campainName":"upgrade-alert-banners","thumbnail":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/standard-upgrade-multi-line.thumb.png","id":"upgrade-alert-banners_standard-upgrade-multi-line","segments":["/shopcms/shopetc/segmentation/UF/segmnts/standard-upgrade-multi-line"],"tags":[]},{"path":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/standard-upgrade-single-line","name":"standard-upgrade-single-line","title":"Standard Upgrade Single Line","campainName":"upgrade-alert-banners","thumbnail":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/standard-upgrade-single-line.thumb.png","id":"upgrade-alert-banners_standard-upgrade-single-line","segments":["/shopcms/shopetc/segmentation/UF/segmnts/standard-upgrade-single-line"],"tags":[]},{"path":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/default1","name":"default1","title":"default","campainName":"upgrade-alert-banners","thumbnail":"/shopcms/campaigns/att/en/home/upgrade-alert-banners/default1.thumb.png","id":"upgrade-alert-banners_default1","segments":[],"tags":[]}], "first", "_content_att_homepage_en_index_jcr_content_alertTeaser", "false", "", "/content/att/homepage/en/index/jcr:content/alertTeaser"); 
+        }); 
+			if (window.teaserCount == undefined){ window.teaserCount = 1; } else { window.teaserCount++; } 
+		</script> 
+<div id="_content_att_homepage_en_index_jcr_content_alertTeaser" 
+	class="campaign campaign-upgrade-alert-banners" 
+	data-cLetter=""> 
+	<noscript> 
+		<div class="page teaserpage"> 
+<div data-teaserId="240386760740888115940208718794555898289"> 
+    <div class="parbase LoBTabs"> 
+        <div class="parsys LobTab1"> 
+</div> 
+        <div class="clear"></div> 
+</div> 
+    <script type="text/javascript"> 
+        if (window.teaserCallback) { 
+            window.teaserCallback("240386760740888115940208718794555898289"); 
+        } 
+    </script> 
+</div></div> 
+	</noscript> 
+	<noscript><div class="page teaserpage"> 
+</div> 
+</noscript> 
+</div> 
+<script type="text/javascript"> 
+                  jQuery('#_content_att_homepage_en_index_jcr_content_alertTeaser').bind('teaserLoaded', function(event) { 
+                 jQuery('#_content_att_homepage_en_index_jcr_content_alertTeaser').attr('data-cLetter',jQuery("#sLetter").val()); 
+                var defLetter=jQuery('#virtualmarqueeDiv').attr('data-cLetter'); 
+                var segLetter=jQuery('#_content_att_homepage_en_index_jcr_content_alertTeaser').attr('data-cLetter'); 
+                 AEMcarousel.removeCarousel(defLetter,segLetter); 
+                }); 
+</script> 
+   <script type="text/javascript"><!-- jQuery(function() { ShiftMarqueeDown(); }); --></script> 
+</div> 
+</div> 
+</div> 
+		<div id="main-container"> 
+<style> 
+.JSAMDefaultStaticImage { 
+background-image:url("/shopcms/media/att/2015/global/JSAM-assets/bg-1100x514/3Q/246367-mrq-home-orderonline-1100x514.jpg"); 
+background-repeat:no-repeat; 
+background-position:50% 50%; 
+}	 
+</style> 
+<div class="breadcrumb gutter wirelessCartImgAlign"> 
+        <div id="undernav-right"> 
+        <div id="mini-cart-link-container"> 
+            <a id="minicart-link" href="#" data-cqpath="49307505154793706457240412985946900110;2016005">My Wireless Cart  
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAYAAAACCvahAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowMTgwMTE3NDA3MjA2ODExODIyQUU1NTRGNjg1OUVDMiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5NzE3RkQ2N0EzMzExMUU0QkUyREI5MjNENzA1QkZDOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5NzE3RkQ2NkEzMzExMUU0QkUyREI5MjNENzA1QkZDOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDM4MDExNzQwNzIwNjgxMTgyMkFFNTU0RjY4NTlFQzIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDE4MDExNzQwNzIwNjgxMTgyMkFFNTU0RjY4NTlFQzIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6z6C6BAAABdElEQVR42pxTu0pEMRCdiQuCdj7wL2z1Ayys/QgbG3H9Agsb2VawthRuaydaKIhc8CtktZBVcHWxGE+SmWTCdt7s3TmZTE5mTuayiNB/n8Fg2JUJY/hHMLwvzhUcMHMXmHhuEzk6n1mKE9rExjP4J0FIygnGbDZSIrAQRIv5CLCH/Q4aPZeqeBJms7sg2AG8SzXjXcI7hHPZgkRPtX89MZLtqatsnmLhAwsndqopYJvMoRn9Aj7EtaBxF1h4tW1SFdJ62YlGPcxXxIEy2wz4UlzlRV3OlE60W2MJXHmvmHx6dqdqq2g3dkSIjDqegF/8Hbd5pJgZ8H3SAiOYwhpzbWTsOFizwXjkLHBuT9GLSXWxHGN6yo1AXFUn+mx6u9aXmCfAi5i8NaLnLtuAffeNlNoz/1LsIQLGQKP2A6F9xI4Bz8W1Y4g4pZR9a1rmaqpdSo+vaIbrTUkLR12uNwdFDbYQ0MP+uD6NX9827DP8Uyv1T4ABAGUqum1qVa99AAAAAElFTkSuQmCC" alt="" title="??????"/> 
+                <span id="minicart-count"></span> 
+            </a><br/> 
+            <div id="cart-preview-container" style="display:none;float:right;"></div> 
+            <div id="cart-bubble-container" style="display:none;float:right;"></div> 
+        </div> 
+        <div id="lpButtonDiv"></div> 
+        <div class="clear"></div> 
+    </div>   
+        </div> 
+<div id="marqueeContainer"> 
+	<div id="marquee" class="JSAMDefaultStaticImage"> 
+		<div class="homepageMarqueePromo base"> 
+<div class="marquee parbase teaser"> 
+<script type="text/javascript">$CQ(function() { 
+            initializeTeaserLoader([{"path":"/shopcms/campaigns/att/en/home/Newer_HomePage_Marquee/samsungBOGOgeneric","name":"samsungBOGOgeneric","title":"Samsung BOGO generic","campainName":"Newer_HomePage_Marquee","thumbnail":"/shopcms/campaigns/att/en/home/Newer_HomePage_Marquee/samsungBOGOgeneric.thumb.png","id":"Newer_HomePage_Marquee_samsungBOGOgeneric","segments":["/shopcms/shopetc/segmentation/UF/segmnts/nobogostatescity"],"tags":[]},{"path":"/shopcms/campaigns/att/en/home/Newer_HomePage_Marquee/Enjoy","name":"Enjoy","title":"Enjoy","campainName":"Newer_HomePage_Marquee","thumbnail":"/shopcms/campaigns/att/en/home/Newer_HomePage_Marquee/Enjoy.thumb.png","id":"Newer_HomePage_Marquee_Enjoy","segments":["/shopcms/shopetc/segmentation/UF/segmnts/enjoy-enabled"],"tags":[]},{"path":"/shopcms/campaigns/att/en/home/Newer_HomePage_Marquee/DTV_Internet_Green","name":"DTV_Internet_Green","title":"DTV + Internet","campainName":"Newer_HomePage_Marquee","thumbnail":"/shopcms/campaigns/att/en/home/Newer_HomePage_Marquee/DTV_Internet_Green.thumb.png","id":"Newer_HomePage_Marquee_DTV_Internet_Green","segments":["/shopcms/shopetc/segmentation/UF/segmnts/uverse-21-state-prospect"],"tags":[]},{"path":"/shopcms/campaigns/att/en/home/Newer_HomePage_Marquee/Existing_UV_DMAs_22State","name":"Existing_UV_DMAs_22State","title":"Existing_UV_DMA's_22State","campainName":"Newer_HomePage_Marquee","thumbnail":"/shopcms/campaigns/att/en/home/Newer_HomePage_Marquee/Existing_UV_DMAs_22State.thumb.png","id":"Newer_HomePage_Marquee_Existing_UV_DMAs_22State","segments":["/shopcms/shopetc/segmentation/UF/segmnts/current-uverse","/shopcms/shopetc/segmentation/UF/segmnts/UverseAuthenticated"],"tags":[]},{"path":"/shopcms/campaigns/att/en/home/Newer_HomePage_Marquee/Everyone_Else_OOR_and_Non_DMAs","name":"Everyone_Else_OOR_and_Non_DMAs","title":"Everyone_Else_OOR_and_Non_DMA","campainName":"Newer_HomePage_Marquee","thumbnail":"/shopcms/campaigns/att/en/home/Newer_HomePage_Marquee/Everyone_Else_OOR_and_Non_DMAs.thumb.png","id":"Newer_HomePage_Marquee_Everyone_Else_OOR_and_Non_DMAs","segments":[],"tags":[]},{"path":"/shopcms/campaigns/att/en/home/Newer_HomePage_Marquee/homepage-default","name":"homepage-default","title":"Default","campainName":"Newer_HomePage_Marquee","thumbnail":"/shopcms/campaigns/att/en/home/Newer_HomePage_Marquee/homepage-default.thumb.png","id":"Newer_HomePage_Marquee_homepage-default","segments":[],"tags":[]}], "first", "_content_att_homepage_en_index_jcr_content_homepageMarqueePromo_marquee", "false", "", "/content/att/homepage/en/index/jcr:content/homepageMarqueePromo/marquee"); 
+        }); 
+			if (window.teaserCount == undefined){ window.teaserCount = 1; } else { window.teaserCount++; } 
+		</script> 
+<div id="_content_att_homepage_en_index_jcr_content_homepageMarqueePromo_marquee" 
+	class="campaign campaign-Newer_HomePage_Marquee" 
+	data-cLetter=""> 
+	<noscript> 
+		<div class="page teaserpage"> 
+<div data-teaserId="329442864646633930557212796181744853627"> 
+  <div id="marqueeHolder"></div> 
+<script src="/media/en_US/scripts/JSAM/JSAM_min.js" type="text/javascript"></script> 
+<script type="text/javascript"> 
+   var JSAM_JSON =  
+{ 
+	"RootName": "AdManager", 
+	"contentID": "/content/att/shop/en/marquees/Homepage_Marquees/HP_MQ_Default_OOR", 
+	"panel": [{ 
+		"alt": "Switch to AT&amp;T and get an iPhone for free. Buy an iPhone and get another one free when you add a second line. When you buy both on AT&amp;T Next with qualifying service (minimum $70 per month). Free after up to $650 in 30 monthly bill credits. (Start in 3 bills). Tax due at sale.", 
+		"background": "/shopcms/media/att/2016/mrqs/1100x514/1Q/263209-home-iphone6s-bogo-1100x514.jpg", 
+		"cNodeUUID": "148075709613466076534439728322045104068;2016044", 
+		"cmsId": "CQ", 
+		"contentID": "/content/att/shop/en/panels/homepage/hp_next_switch_iphone_free", 
+		"description": "Apple iPhone offer", 
+		"imageText": "Switch to AT&amp;T and get an iPhone for free. Buy an iPhone and get another one free when you add a second line. When you buy both on AT&amp;T Next with qualifying service (minimum $70 per month). Free after up to $650 in 30 monthly bill credits. (Start in 3 bills). Tax due at sale.", 
+		"name": "hp_next_switch_iphone_free", 
+		"slotId": "IS1229", 
+		"thumbnail": "/shopcms/media/att/2016/mrqs/hover-icon/wireless/hvr-apple.png", 
+		"asset": [{ 
+			"align": "left", 
+			"alpha": "1", 
+			"cssClass": "size15,text,Arial", 
+			"leading": "1.25", 
+			"name": "copy", 
+			"type": "Text", 
+			"x": "450", 
+			"y": "265", 
+			"label": [{ "Text": "When you buy both on AT&T Next<sup>SM<\/sup> with qual. svc. \r\n(min. $70\/mo.). Free after up to $650 in 30 monthly \r\nbill credits. (Start in 3 bills). Tax due at sale." }] 
+		}, 
+		{ 
+			"align": "left", 
+			"alpha": "1", 
+			"cssClass": "size10,Legal (#666666),Arial", 
+			"leading": "1.25", 
+			"name": "legal", 
+			"type": "Text", 
+			"width": "325", 
+			"x": "450", 
+			"y": "335", 
+			"label": [{ "Text": "*Ltd time (PR ends 3\/31\/16). Select device combos. Req\u2019s well-qual. credit. Free one req\u2019s new AT&amp;T Next 24 line with 30-mo. 0% APR agmt (up to $21.67\/mo.).&amp;nbsp;Pay up to $65.01 on free one before credits start. If svc. canceled on one, that device balance (up to $950) due. Activ., other fees, charges &amp; restr. apply. Void in CT, RI &amp; Miami-Dade.<a href='\/shopcms\/sharedcontent\/en\/legal\/WirelessOffers\/MISC\/bogo_smartphones_2016\/_jcr_content\/desktoplegal\/legalsharedcontent.modal.html' class='openModal modal705'> See offer details<\/a>" }] 
+		}, 
+		{ 
+			"align": "center", 
+			"alpha": "1", 
+			"height": "45", 
+			"name": "cta", 
+			"styleLib": "Default", 
+			"type": "Button", 
+			"x": "448", 
+			"y": "419", 
+			"cta": [{ 
+				"action": "Browse", 
+				"url": "/shop/wireless/apple-iphone-buy-one-get-one-free.html", 
+				"webtrendsType": "clickThrough" 
+			}], 
+			"label": [{ "Text": "Learn more" }] 
+		}] 
+	}, 
+	{ 
+		"alt": "The new Samsung Galaxy S7 edge and Galaxy S7. Now available for pre-order. Get it for $0 down on AT&amp;T Next. Tax due at sale. Requires well-qualified credit. If wireless service canceled, remaining installment agreement balance is due. Activation/upgrade and other fees, charges, and restrictions apply. See AT&amp;T Next details.", 
+		"background": "/shopcms/media/att/2016/mrqs/1100x514/1Q/263234-mrq-home-galaxy-s7-s7edge-1100x514.jpg", 
+		"cNodeUUID": "294501153022042535790086752555747791198;2016053", 
+		"cmsId": "CQ", 
+		"contentID": "/content/att/shop/en/panels/homepage/homepage_Samsung_GalaxyS7_S7edge_preorder", 
+		"description": "Samsung Galaxy S7 edge and Galaxy S7", 
+		"imageText": "The new Samsung Galaxy S7 edge and Galaxy S7. Now available for pre-order. Get it for $0 down on AT&amp;T Next. Tax due at sale. Requires well-qualified credit. If wireless service canceled, remaining installment agreement balance is due. Activation/upgrade and other fees, charges, and restrictions apply. See AT&amp;T Next details.", 
+		"name": "homepage_Samsung_GalaxyS7_S7edge_preorder", 
+		"slotId": "IS1230", 
+		"thumbnail": "/shopcms/media/att/2016/mrqs/hover-icon/wireless/hvr-preOrder-orng.png", 
+		"asset": [{ 
+			"align": "Left", 
+			"bulletIcon": "/shopcms/media/att/2012/global/JSAM-assets/icons/btn_1104-404_blue_arrow_carat_AA000R5P.png", 
+			"cssClass": "size12,linkblue,Arial", 
+			"name": "cta-1", 
+			"type": "Link", 
+			"x": "534", 
+			"y": "344", 
+			"cta": [{ 
+				"action": "Browse", 
+				"url": "/cellphones/samsung/galaxy-s7.html", 
+				"webtrendsType": "clickThrough" 
+			}], 
+			"label": [{ "Text": "Shop now for the Samsung Galaxy S7" }] 
+		}, 
+		{ 
+			"align": "Left", 
+			"bulletIcon": "/shopcms/media/att/2012/global/JSAM-assets/icons/btn_1104-404_blue_arrow_carat_AA000R5P.png", 
+			"cssClass": "size12,linkblue,Arial", 
+			"leading": "1.25", 
+			"name": "cta-2", 
+			"type": "Link", 
+			"x": "534", 
+			"y": "368", 
+			"cta": [{ 
+				"action": "Browse", 
+				"url": "/cellphones/samsung/galaxy-s7-edge.html", 
+				"webtrendsType": "clickThrough" 
+			}], 
+			"label": [{ "Text": "Shop now for the Samsung Galaxy S7 edge" }] 
+		}, 
+		{ 
+			"align": "left", 
+			"alpha": "1", 
+			"cssClass": "size10,Legal (#666666),Arial", 
+			"leading": "1.25", 
+			"name": "short-legal", 
+			"type": "Text", 
+			"width": "330", 
+			"x": "381", 
+			"y": "295", 
+			"label": [{ "Text": "<b>*Tax due at sale. <\/b>Req's well-qual. credit, installment, agmt &amp; elig. svc.&nbsp;<b>If wireless svc. canceled<\/b>, <b>remaining installment agmt balance is due.<\/b> Activation\/upgrade &amp; other fees, charges &amp; restr. apply.&nbsp;<a href='\/shopcms\/sharedcontent\/en\/legal\/WirelessOffers\/GenericOffers\/att_next\/_jcr_content\/desktoplegal\/legalsharedcontent.modal.html' class='openModal modal705'>See AT&T Next details<\/a>" }] 
+		}] 
+	}, 
+	{ 
+		"alt": "Switch and score. Score a $100 DIRECTV Visa&#174; Reward Card when you switch to DIRECTV. 24-month agreement required. Offers start at $19.99 per month for 12 months with 24-month agreement. Additional fees apply. SELECT&#8482; Package.  All DIRECTV OFFERS REQUIRE 24-MONTH AGREEMENT. ADDITIONAL FEES APPLY. All offers valid through April 13, 2016. See offer details.", 
+		"background": "/shopcms/media/att/2016/mrqs/1100x514/1Q/262879-savescore-homepage-100.jpg", 
+		"cNodeUUID": "102588091936176001415551000755873803200;2016050", 
+		"cmsId": "CQ", 
+		"contentID": "/content/att/shop/en/panels/homepage/directv_1999_singleplay_oof_homepage", 
+		"description": "$100 DIRECTV Visa&lt;sup&gt;&#174;&lt;/sup&gt; Reward Card", 
+		"hoverWidth": "80", 
+		"imageText": "Switch and score. Score a $100 DIRECTV Visa&#174; Reward Card when you switch to DIRECTV. 24-month agreement required. Offers start at $19.99 per month for 12 months with 24-month agreement. Additional fees apply. SELECT&#8482; Package.  All DIRECTV OFFERS REQUIRE 24-MONTH AGREEMENT. ADDITIONAL FEES APPLY. All offers valid through April 13, 2016. See offer details.", 
+		"name": "directv_1999_singleplay_oof_homepage", 
+		"slotId": "IS1232", 
+		"thumbnail": "/shopcms/media/att/2015/global/JSAM-assets/hover-icon/Q4/19.99Hover_icon_44x44.png", 
+		"asset": [{ 
+			"align": "left", 
+			"alpha": "1", 
+			"cssClass": "size10,Legal (#666666),Arial", 
+			"name": "see-offer-details", 
+			"type": "Text", 
+			"x": "143", 
+			"y": "415", 
+			"label": [{ "Text": "&nbsp;<a href='\/shopcms\/sharedcontent\/en\/legal\/Residential-Terms\/att-directv-offer-details-and-terms-and-conditions\/_jcr_content\/desktoplegal\/legalsharedcontent.modal.html' class='openModal modal705'><span style=\"color: #44c8f5\">See offer details<\/span><\/a>" }] 
+		}, 
+		{ 
+			"align": "left", 
+			"alpha": "1", 
+			"cssClass": "size9.5,white,Arial", 
+			"leading": "1.25", 
+			"name": "short-legal", 
+			"type": "Text", 
+			"width": "400", 
+			"x": "335", 
+			"y": "440", 
+			"label": [{ "Text": "ALL DIRECTV OFFERS REQUIRE 24-MONTH AGREEMENT. ADD\u2019L FEES APPLY. All offers valid through 4\/13\/16." }] 
+		}, 
+		{ 
+			"alpha": "1", 
+			"height": "40", 
+			"name": "btn", 
+			"styleLib": "Default", 
+			"type": "Button", 
+			"width": "175", 
+			"x": "145", 
+			"y": "428", 
+			"cta": [{ 
+				"action": "Browse", 
+				"url": "/shop/tv/directv.html", 
+				"webtrendsType": "clickThrough" 
+			}], 
+			"label": [{ "Text": "Shop now" }] 
+		}, 
+		{ 
+			"align": "left", 
+			"alpha": "1", 
+			"cssClass": "size9,white,Arial", 
+			"leading": "1.25", 
+			"name": "Legal 2", 
+			"type": "Text", 
+			"x": "360", 
+			"y": "385", 
+			"label": [{ "Text": "*SELECT Pkg or above and 24-mo. agmt req\u2019d." }] 
+		}] 
+	}, 
+	{ 
+		"alt": "Get up to $650 in credits per line to help you switch to AT&amp;T when you trade in your current smartphones and buy new ones on AT&amp;T Next. Limited time (ends March 31, 2016 in Puerto Rico). Each line requires eligible port-in, qualified phone trade-in, purchase, service, and final bill submission. $650 in credits equals trade-in credit (may be AT&amp;T/store promo card) + prepaid card (within 90 days) in amount of device payment plan balance/Early Termination Fee less trade-in credit. Fees, charges, and restrictions apply. See offer details.", 
+		"background": "/shopcms/media/att/2016/mrqs/1100x514/1Q/262485-ETF-National-1100x514.jpg", 
+		"cNodeUUID": "266662771573998594947500836619331327179;2016049", 
+		"cmsId": "CQ", 
+		"contentID": "/content/att/shop/en/panels/homepage/Homepage_ETF_National_16", 
+		"description": "Switch to AT&amp;T &amp; get up to $650", 
+		"imageText": "Get up to $650 in credits per line to help you switch to AT&amp;T when you trade in your current smartphones and buy new ones on AT&amp;T Next. Limited time (ends March 31, 2016 in Puerto Rico). Each line requires eligible port-in, qualified phone trade-in, purchase, service, and final bill submission. $650 in credits equals trade-in credit (may be AT&amp;T/store promo card) + prepaid card (within 90 days) in amount of device payment plan balance/Early Termination Fee less trade-in credit. Fees, charges, and restrictions apply. See offer details.", 
+		"name": "Homepage_ETF_National_16", 
+		"thumbnail": "/shopcms/media/att/2016/mrqs/hover-icon/wireless/Hover-ATT-blue-44x44.png", 
+		"asset": [{ 
+			"alpha": "1", 
+			"name": "cta", 
+			"styleLib": "White", 
+			"type": "Button", 
+			"x": "73", 
+			"y": "450", 
+			"cta": [{ 
+				"action": "Browse", 
+				"url": "/shop/wireless/switch-and-save-etf.html", 
+				"webtrendsType": "clickThrough" 
+			}], 
+			"label": [{ "Text": "Learn more" }] 
+		}, 
+		{ 
+			"align": "left", 
+			"alpha": "1", 
+			"cssClass": "size10,white,Arial", 
+			"leading": "1.25", 
+			"name": "Legal", 
+			"type": "Text", 
+			"width": "375", 
+			"x": "74", 
+			"y": "375", 
+			"label": [{ "Text": "*Ltd. time (Puerto Rico ends 3\/31\/16). Each line req\u2019s elig. port-in, trade-in, purchase &amp; svc. $650 = min. $10 trade-in credit or promo card (for AT&amp;T products &amp; svc. only) + prepaid card (in 90 days) for device balance &amp; Early Termination Fee less trade-in. Fees, charges &amp; restr. apply.&nbsp;<a href='\/shopcms\/sharedcontent\/en\/legal\/WirelessOffers\/MISC\/ETF_National_16\/_jcr_content\/desktoplegal\/legalsharedcontent.modal.html' class='openModal modal705'><span style=\"color:black\"><u>See offer details<\/u><\/span><\/a>" }] 
+		}] 
+	}, 
+	{ 
+		"alt": "FREE LG G Pad F 8.0 with a 2-year agreement. Powerful and portable. Limited time (ends March 31, 2016, in Puerto Rico). Online only. Requires eligible monthly data plan. Activation ($45) and early termination (up to $150) fees, other charges, and restrictions apply. See offer details.", 
+		"background": "/shopcms/media/att/2016/mrqs/1100x514/1Q/261420-mrq-home-lg-f8-free-1100x514.jpg", 
+		"cNodeUUID": "169361343426908749301297519058538904661;2016028", 
+		"cmsId": "CQ", 
+		"contentID": "/content/att/shop/en/panels/homepage/hp_fw2yr_LG_F8", 
+		"description": "LG G Pad F 8.0", 
+		"imageText": "FREE LG G Pad F 8.0 with a 2-year agreement. Powerful and portable. Limited time (ends March 31, 2016, in Puerto Rico). Online only. Requires eligible monthly data plan. Activation ($45) and early termination (up to $150) fees, other charges, and restrictions apply. See offer details.", 
+		"name": "hp_fw2yr_LG_F8", 
+		"slotId": "IS1233", 
+		"thumbnail": "/shopcms/media/att/2016/mrqs/hover-icon/wireless/hvr-free-orng.png", 
+		"asset": [{ 
+			"align": "left", 
+			"alpha": "1", 
+			"cssClass": "size9.75,Legal (#666666),Arial", 
+			"leading": "1.25", 
+			"name": "short-legal-and-see-offer-details", 
+			"type": "Text", 
+			"width": "282", 
+			"x": "92", 
+			"y": "345", 
+			"label": [{ "Text": "*Limited time (ends 3\/31\/16 in Puerto Rico). Requires eligible monthly data plan. Activation ($45) &amp; early termination (up to $150) fees, other charges &amp; restr. apply.&nbsp;<a href='\/shopcms\/sharedcontent\/en\/legal\/WirelessOffers\/MISC\/LG-GPad-F8-fw2yr\/_jcr_content\/desktoplegal\/legalsharedcontent.modal.html' class='openModal modal705'>See offer details<\/a>" }] 
+		}, 
+		{ 
+			"alpha": "1", 
+			"height": "40", 
+			"name": "btn", 
+			"styleLib": "Default", 
+			"type": "Button", 
+			"x": "89", 
+			"y": "386", 
+			"cta": [{ 
+				"action": "Browse", 
+				"url": "/tablets/lg/g-pad-f-8-inch.html#sku=sku7620292", 
+				"webtrendsType": "clickThrough" 
+			}], 
+			"label": [{ "Text": "Buy now" }] 
+		}] 
+	}, 
+	{ 
+		"alt": "Get two of our most popular smartphones for one great price.", 
+		"background": "/shopcms/media/att/2016/mrqs/1100x514/1Q/262853-ss-bogo-1100x514.jpg", 
+		"cNodeUUID": "191642945474704630189664376993287556077;2016042", 
+		"cmsId": "CQ", 
+		"contentID": "/content/att/shop/en/panels/homephone/hp_bogo_smartphones_2016", 
+		"description": "2 smartphones. 1 great price.", 
+		"hoverWidth": "170", 
+		"imageText": "Get two of our most popular smartphones for one great price.", 
+		"name": "hp_bogo_smartphones_2016", 
+		"slotId": "IS1231", 
+		"thumbnail": "/shopcms/media/att/2016/mrqs/hover-icon/z-misc/hover-BOGO-orange-44x44.png", 
+		"asset": [{ 
+			"align": "center", 
+			"alpha": "1", 
+			"name": "cta", 
+			"styleLib": "Blue", 
+			"type": "Button", 
+			"x": "103", 
+			"y": "397", 
+			"cta": [{ 
+				"action": "Browse", 
+				"url": "/shop/wireless/samsung-galaxy-s6-buy-one-get-one-free.html", 
+				"webtrendsType": "clickThrough" 
+			}], 
+			"label": [{ "Text": "Learn More" }] 
+		}] 
+	}], 
+	"transition": [{ 
+		"type": "fade" 
+	}] 
+}; 
+   jQuery(document).ready(function(){ 
+   if (typeof(tdataMarquee) == 'function') { 
+      tdataMarquee("1100", "514"); 
+   } else { 
+      JSAM.create({json:JSAM_JSON, width:"1100", height:"514"}); 
+   } 
+   var parentNode = document.getElementById("marqueeHolder").parentNode; 
+   parentNode.style.height = "514px"; 
+   }); 
+</script> 
+<!--start dynamic-cto-phonenumber  --> 
+<!--end dynamic-cto-phonenumber  --> 
+    <script type="text/javascript"> 
+        if (window.teaserCallback) { 
+            window.teaserCallback("329442864646633930557212796181744853627"); 
+        } 
+    </script> 
+</div> 
+	</noscript> 
+	<noscript><div class="page teaserpage"> 
+</div> 
+</noscript> 
+</div> 
+<script type="text/javascript"> 
+                  jQuery('#_content_att_homepage_en_index_jcr_content_homepageMarqueePromo_marquee').bind('teaserLoaded', function(event) { 
+                 jQuery('#_content_att_homepage_en_index_jcr_content_homepageMarqueePromo_marquee').attr('data-cLetter',jQuery("#sLetter").val()); 
+                var defLetter=jQuery('#virtualmarqueeDiv').attr('data-cLetter'); 
+                var segLetter=jQuery('#_content_att_homepage_en_index_jcr_content_homepageMarqueePromo_marquee').attr('data-cLetter'); 
+                 AEMcarousel.removeCarousel(defLetter,segLetter); 
+                }); 
+</script> 
+</div> 
+</div> 
+	</div> 
+</div> 
+<!-- 
+ --> 
+<script> 
+var cookieRME = ""; 
+var cookieUID = ""; 
+jQuery(document).ready(function(){ 
+	var globalNavCookie = GlobalNav.util.getGNCookie(); 
+	var values=globalNavCookie.UG; 
+	var authState="Unauth"; 
+	var unauth="Unauth"; 
+	var auth="Auth"; 
+	for ( i = 0; i < values.length; i++ ) { 
+		if(values[i] == auth) 
+		{ 
+			authState = auth; 
+		} 
+		if(values[i] == unauth) 
+		{ 
+			authState = unauth; 
+		} 
+	}  
+	if (authState == auth) 
+	{ 
+		jQuery("#loginContainer").addClass("hideLoginModule");         
+	} 
+	else if (authState == unauth) 
+	{   
+		jQuery("#loginContainer").removeClass("hideLoginModule"); 
+	} 
+	function onMessage (event) { 
+		var theIFrameElement= document.getElementById("ssoIframe"); 
+		if (event.source != theIFrameElement.contentWindow) return; 
+		var message = jQuery.parseJSON(event.data); 
+		cookieRME = message.data.rme; 
+		cookieUID = message.data.uid; 
+		ATT.ssologin.LoginManager.cookieCheck(); 
+		//fix for jira ticket b2c12-4246   attuid ar5204 
+		ATT.ssologin.LoginManager.removePasswordFromIDField(); 
+	} 
+	if (window.attachEvent) 
+		window.attachEvent('onmessage', onMessage); 
+	else if (window.addEventListener) 
+		window.addEventListener('message', onMessage, false); 
+//	Need to read myATT response for saved user id instead of reading the cookies, hence commenting this out so that it should not invoke rememberme.jsp	 
+//	jQuery("#ssoIframe").attr({src:"https://www.att.com/homepage/index.rememberme.html"}); 
+}); 
+</script> 
+<div class="myLoginContainer hideLoginModule" id="loginContainer"> 
+<!--	<iframe id="ssoIframe" src="" style="display:none;"></iframe> --> 
+	<div class="loginpane"> 
+<div class="myLoginpaneBox">  
+   <div class="myLoginpaneBoxTopBG"> 
+       <div class="rel PadLeft30 PadTop22"> 
+           <div class="float-left font15 colorBlack">  
+               Access Your Account 
+           </div> 
+           <div class="PadLeft10 rel top-1px float-left"> 
+               <img class="lockIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAPCAYAAADd/14OAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyQUE2QTFGOUYwN0MxMUUxOTIwQjlFNkJDNTA2N0UzQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyQUE2QTFGQUYwN0MxMUUxOTIwQjlFNkJDNTA2N0UzQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJBQTZBMUY3RjA3QzExRTE5MjBCOUU2QkM1MDY3RTNDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJBQTZBMUY4RjA3QzExRTE5MjBCOUU2QkM1MDY3RTNDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+0VOCRwAAAXJJREFUeNp8ks1OwkAUhe+0Q2ogUlqmTdghS2BhgitckBKWYiOJ+gC+hwvfwwfwZ4dLoitZqKAJrOEFkIaI0NIpda4YgknDSU4y98w3P3daEoYhoJimU0KIJbyPtcg/hJ9GzphjTRBkejomy/KVcPGwXP7Gied2OxEEQV/4cjT+9CmGO4piAyHFm7tbT9P0BGaOM/bOT8+KMUptUd5LGBqmadn2saen0wqNUUDjGDPGmIXM747iXqphmAt/sVBC+TcCHnDATJJldQ1KEpF87sPcdYHSP5BzwAzn1iD2HfAA5rPZPxCz1ZuIUzU1ZSuKcqGqapjL7S1hQ4PBUJpMJsTzvGuazWYrjuMQZjDyNZ1Km6DIQECQyWQqNJlMxk3TgGqtBlF6bLXAdb04xTt0Ol3odt8jQfwg+UJBNBMuoXRQgqN6PRJ8aDZXTeKKt5dX6Pd6kaA7d8WOeaAnjcYwldJ2YYusqjXEnyIvxiXYrs6PAAMAP1OWhsrO44kAAAAASUVORK5CYII=" height="15" width="10" alt=""/> 
+           </div> 
+           <div class="clear"></div> 
+       </div> 
+   </div> 
+<script type="text/javascript"> 
+    ATT.namespace("login"); 
+    ATT.login.errorMessages = {  
+        userid: {  
+                required: "Enter your User ID",  
+                email: "Enter a valid email format"  
+        },  
+        password: {  
+            required: "Enter your password",  
+            minlength: "Password must be a min. of 4 characters"  
+        }, 
+        wireless_num: {  
+                required: "Enter your User ID",  
+                email: "Enter a valid email format", 
+                maxdigits: "Wireless Number? Please enter 10 digits", 
+                mindigits: "Wireless Number? Please enter 10 digits" 
+        },  
+        pass: {  
+            required: "Enter your password",  
+            minlength: "Password must be a min. of 4 characters" 
+        }, 
+        wirelessnum: {  
+                required: "Missing Wireless Number" 
+        },  
+        ssn: {  
+                required: "Missing last 4 of SSN" 
+        },  
+        zip: {  
+                required: "Missing Billing ZIP Code" 
+        } 
+    }; 
+</script> 
+<script> 
+    var intMaskInterval = parseInt('1'+'000'); 
+    var errorpassword = "Enter your password";  
+    var errorpasswordmin = "Password must be a min. of 4 characters"; 
+</script> 
+<script> 
+        var URL = "https://www.att.com/olam/unauth/performAjaxToGetSavedUserId.myworld"; 
+        var userIdVal; 
+        var saveUserIdVal; 
+        var splittedIds; 
+        jQuery.ajax( 
+        {  
+            type : 'POST',  
+            url : URL,  
+            async : true,  
+            cache: false,  
+            crossDomain:true,  
+            dataType: 'jsonp text',  
+            jsonpCallback: null,  
+            jsonp: null  
+         });   
+        function colamCookieResponse(data){  
+            userIdVal = data.userId; 
+            saveUserIdVal = data.saveUserIDCheck; 
+            if(typeof(userIdVal) != "undefined"){ 
+                splittedIds = userIdVal.split(","); 
+            }             
+            if(typeof(userIdVal) != "undefined"){ 
+                if(splittedIds.length == 1){ 
+                    jQuery("#userid").val(userIdVal); 
+                } 
+                if(splittedIds.length > 1){ 
+	                for(i=0;i<splittedIds.length;i++) {             
+	                   var listItem = "<dd class='opt PadTop5 Padbot5 MarLeft0 PadLeft20Force MarTopNeg3' style='cursor:pointer;' id='"+i+"'><a href='#'>"+splittedIds[i]+"</a></dd>"; 
+	                   jQuery("#dropdownID").append(listItem);    
+	                   jQuery("#divShortcut").click(function(){ 
+	                       jQuery("#userid").val(""); 
+	                   }); 
+	                } 
+               } 
+               if(splittedIds.length == 1 || splittedIds.length < 1){ 
+            	   jQuery("#ddShortcutList").removeClass("box no-top-round"); 
+               } 
+            } 
+		    if(saveUserIdVal == 'Y') { 
+		        jQuery("#remMe").attr('checked','checked'); 
+				jQuery("#uniform-remMe span").addClass("checked"); 
+				jQuery("input#remMe").val('YES');                       
+		    } 
+		    else { 
+		    	jQuery("#remMe").removeAttr('checked'); 
+				jQuery("#uniform-remMe span").removeClass("checked"); 
+		        jQuery("input#remMe").val("NO"); 
+		    } 
+            if(typeof(userIdVal) == "undefined"){ 
+                jQuery("#ddShortcutList").removeClass("box no-top-round"); 
+            } 
+        }   
+        jQuery(window).load(function(){ 
+            jQuery('#ddShortcutBox').hide(); 
+            var ddOpened = false; 
+            jQuery('#ddShortcut.enabled input').focus(function () { 
+                var scrollTop     = jQuery(window).scrollTop(); 
+                //alert(scrollTop); 
+                var ht     = jQuery(window).height(); 
+                //alert("ht"+ht); 
+                var   elementOffset = jQuery('#divShortcut').offset().top; 
+                //alert(elementOffset); 
+                var  distance      = (elementOffset - scrollTop); 
+                //    alert(distance); 
+                var bot = ht - distance - 30; 
+            //  alert(bot); 
+                var top = 130; 
+                if (bot < 120) 
+                { 
+                    jQuery("#ddShortcutBox").css("margin-top",-115); 
+                    jQuery('#ddShortcutList').addClass('inputDropdownscrollup'); 
+                } 
+                else{ 
+                    jQuery('#ddShortcutList').removeClass('inputDropdownscrollup');      
+                    jQuery("#ddShortcutBox").css("margin-top",0); 
+                } 
+                jQuery('#ddShortcutBox').slideDown(400); 
+            }); 
+                jQuery("#ddShortcutBox").click(function(){ return false; }); 
+            jQuery("#divShortcut").click(function(){ return false; }); 
+            jQuery('body').click(function(e){ 
+          if ( !jQuery(e.target).is('#divShortcut') ) { 
+          jQuery('#ddShortcutBox').slideUp(400);  
+                // do something 
+          } 
+            }); 
+            jQuery("dd.opt").click(function(){ 
+                var temp = jQuery(this).text(); 
+                //jQuery("#ddShortcut p.head").html(temp); 
+                jQuery("#divShortcut input#userid").attr("value",temp); 
+                jQuery("#ddShortcutBox").slideUp(400); 
+                return false; 
+            }); 
+            /*START:Script to change color and background of option on HOVER*/ 
+                jQuery("dd.opt").hover( 
+                        function () { 
+                        jQuery(this).css('background','#3090C7'); 
+                        jQuery(this).find("a").css('color','#FFFFFF'); 
+                        jQuery("dd.opt a").css('text-decoration','none'); 
+                        }); 
+                jQuery("dd.opt").mouseleave( 
+                        function () { 
+                        jQuery(this).css('background','none'); 
+                        jQuery(this).find("a").css('color','#005B95'); 
+                        }); 
+            /*END:Script to change color and background of option on HOVER*/ 
+			jQuery("#userid").bind("keyup",function(){if(jQuery("#userid").val().length>0){jQuery("#ddShortcutBox").css('display','none');}else{jQuery("#ddShortcutBox").css('display','block');}}); 
+            }); 
+</script> 
+<script> 
+jQuery(document).ready(function(){ 
+    jQuery("a.openModalHp").click(function(e){          
+    	var pageLanguage = jQuery("html").attr("lang"); 
+		  var modalHref = jQuery(this).attr('href'); 
+		  var modalURL = "/homepage/" + pageLanguage + "/" + modalHref;		    
+		  //jQuery.colorbox({iframe:true, height:550, width:720, scrolling:false, href: modalURL, close:""}); 
+		  var l_height = 545; // default height     
+            if (jQuery.browser.msie) {                
+                if(pageLanguage=="en"){ 
+                    if(parseInt(jQuery.browser.version)<9){ 
+                    l_height = 519; 
+                     } 
+                 else { 
+                    l_height = 514;  
+                  }                                    
+                    jQuery.colorbox({iframe:true, height:l_height, width:720, scrolling:false, href: modalURL, close:""}); 
+                } 
+            else { 
+                if(parseInt(jQuery.browser.version)<9){ 
+                 l_height = 545; 
+              } 
+              else { 
+                 l_height = 532;  
+              }           
+             jQuery.colorbox({iframe:true, height:l_height, width:720, scrolling:false, href: modalURL, close:""}); 
+            } 
+        } 
+        else {        
+         if(pageLanguage=="en"){                 
+            l_height = 540; 
+            jQuery.colorbox({iframe:true, height:l_height, width:720, scrolling:false, href: modalURL, close:""}); 
+         } 
+         else{ 
+             jQuery.colorbox({iframe:true, height:l_height, width:720, scrolling:false, href: modalURL, close:""}); 
+         } 
+       } 
+		  return false; 
+    }); 
+    jQuery(".closeModal").click(function(){ 
+        jQuery.fn.colorbox.close(); 
+    }); 
+    jQuery("#cboxMiddleLeft").append('<div></div>'); 
+    jQuery("#cboxMiddleRight").append('<div></div>'); 
+    jQuery(function(){ 
+    	jQuery("#remMe").focus(function(){jQuery(this).parent().css("border","1px dotted #000");}); 
+    	jQuery("#remMe").blur(function(){jQuery(this).parent().css("border","none");}); 
+   	}); 
+}); 
+</script> 
+<style> 
+    /*.myLoginpaneBoxBottomBGNewPart2{ 
+    background: url("/shopcms/media/att/2012/homepage/bottom-new-updated123.png") no-repeat scroll 0 0 transparent; 
+    height: 30px; 
+    }*/ 
+</style> 
+<!--[if lte IE 8]> 
+<style> 
+#cboxBottomLeft, #cboxBottomRight{ 
+background-position-y: -28px !important; 
+} 
+#cboxBottomLeft,#cboxBottomCenter,#cboxBottomRight { 
+margin-top: -3px; 
+} 
+#cboxBottomLeft,#cboxBottomRight { 
+margin-top: 0px; 
+} 
+</style> 
+<![endif]--> 
+<div class="myLoginpaneBoxMiddleBGNew">  
+    <div class="PadTop10 myLoginpaneBoxContent PadTop17IE"> 
+        <form id="ssoLoginForm" class="w180 myStyled_forms" autocomplete="off" method="post" action="https://www.att.com/olam/loginAction.olamexecute"> 
+                <div id="useridDiv" class="userIdContent PadBot14"> 
+                <div class="userIdLabel PadBot6"> 
+                    <label for="userid" class="float-left MarBot0 strong ">User ID</label> 
+                    <a class="openModalHp localModal  font11 float-right" style="padding-right: 10px;text-align: right;" id="englishHelpLink" href="WhatIsMyUserId.html" data-cqpath="67683545730721747131803630135992058263;2012326">Which ID should I use?</a> 
+                    <div class="clear"></div> 
+                </div> 
+                <div id="divShortcut" > 
+                    <div id="userNameDiv" class="rel Left-2px LoginInput"> 
+                        <span class="textInput-wrapper enabled" id="ddShortcut"> 
+                                <span> 
+                                    <input id="userid" type="text" class="text" name="wireless_num"  onFocus="browserCompatabilityMsg();BoxFocusImgChange(this);" onBlur="BoxFocusOutImgChange(this);" maxlength="50" title='Enter User ID' />                                  
+                                </span> 
+                        </span>      
+                    </div> 
+                         <div style="display:none;" id="useridAlertDiv"> 
+                    <div class="login-error-top-image"></div> 
+                    <div class="login-error-mid-image" style="display:none;" id="useridErrDiv"> 
+                        <div id="useridErrMsg"></div> 
+                    </div> 
+                    <div class="login-error-bot-image"></div> 
+                </div> 
+                    <div id="ddShortcutBox" class="z1000WithoutErrorMsg" style="position: absolute; display: none;"> 
+                      <div class="box no-top-round" id="ddShortcutList"> 
+                                 <dl class=" MarTop10" id="dropdownID"> 
+                                 </dl> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+            <div id="passwordDiv" class="passwordContent PadBot15"> 
+                <div class="passwordLabel PadBot6"> 
+                    <label for="userPassword" class="MarBot0 strong">Password</label> 
+                </div> 
+                <div id="pwdDiv" class="rel Left-2px LoginInput"> 
+                    <span class="textInput-wrapper"> 
+                        <span> 
+						<!--Id added below for PROD12-6810--> 
+                            <input type="password" id="userPassword" class="text" name="pass" onFocus="BoxFocusImgChange(this);" onBlur="BoxFocusOutImgChange(this);" maxlength="60" title='Enter Password' onkeypress="validateCapsLock(event);"/>  
+                        </span> 
+                    </span>  
+                </div> 
+				<!--Ids changed below for PROD12-6810--> 
+                <div style="display:none;" id="userPasswordAlertsDiv "> 
+                    <div class="login-error-top-image"></div> 
+                    <div style="display:none;" class="login-error-mid-image" id="userPasswordErrDiv"> 
+                        <div id="userPasswordErrMsg"></div> 
+                    </div> 
+                    <div  id = "pwdstub" style="display:none;"> 
+                        <div class="login-error-mid-image" style="display:block;" id="LoginAlertMidPassDiv1">&nbsp;</div> 
+                        <div class="login-error-mid-image" style="display:block;" id="LoginAlertMidPassDiv2">&nbsp;</div> 
+                    </div> 
+                    <div style="display:none;" class="login-error-mid-image" id="capsLockDiv"> 
+                        <p class="CapsLockErrMsgP">CAPS lock is on</p> 
+                    </div> 
+                    <div class="login-error-bot-image"></div> 
+                </div> 
+            </div> 
+            <div class="PadTop2 LoginButtonSection">  
+                <div> 
+                    <div class=""> 
+    					<!--<input type="image" id="tguardLoginButton" value="submit" src='/shopcms/media/att/2012/homepage/login-new-bt.png' alt='Log In' title='Log In' onclick="expireCookie('SessionPersistence');ATT.ssologin.LoginManager.removePasswordFromIDField();" />--> 
+						<input type="submit" id="tguardLoginButton" value='Log In' title='Log In'  onclick="expireCookie('SessionPersistence');ATT.ssologin.LoginManager.removePasswordFromIDField();" /> 
+    				</div> 
+                    <div class="PadTop5 MyRemember"> 
+                        <div id="uniform-remMe" class="checker"> 
+                            <span id="remember"> 
+                                <input onFocus="RememberMeFocusImgChange(this)" onBlur="RememberMeFocusOutImgChange(this);" type ="checkbox" id="remMe" name="rememberme"/>    
+                            </span> 
+                        </div> 
+                        <label class="font11 strong saveUItxt" for="remMe">Save User ID</label> 
+                        <p class="font11 PadLeft20 MarBot0 PadTop5">Uncheck if on a public computer</p> 
+                    </div> 
+                    <div class="clear"></div> 
+                </div> 
+            </div> 
+            <input name="actionEvent" value="dotComLogin" type="hidden"> 
+        </form>   
+        <div class="LoginLinks PadTop20">  
+            <div class="PadBot10">                 
+                <p>Forgot <a class="" href="https://www.att.com/olam/enterEmailForgotId.myworld" data-cqpath="67683545730721747131803630135992058263;2012326">User ID</a> or <a class="" href="https://www.att.com/olam/enterUserIdSlidFpwd.myworld" data-cqpath="67683545730721747131803630135992058263;2012326">Password?</a></p> 
+            </div>             
+            <div style="padding-bottom:1px;"> 
+                <p id="registerToday">Need a User ID? <a class="" href="https://www.att.com/olam/slidRegistrationAction.olamexecute" data-cqpath="67683545730721747131803630135992058263;2012326">Register today</a></p> 
+            </div> 
+        </div> 
+    </div> 
+</div> 
+<!--<div class="myLoginpaneBoxBottomBGNewPart2">  
+</div>--> 
+</div> 
+</div> 
+</div> 
+<div id="content"> 
+	<div class="primary-content-full"> 
+		<div id="bellybandDivider"></div> 
+        <div><div class="parsys promobar"><div class="parbase opentext authortext section"> 
+<style> 
+.fullWidthTile.contentLeftDefault{ 
+padding-bottom: 23px;} 
+#homepageFeatures{background:none} 
+</style></div> 
+</div> 
+</div> 
+		<div class="parbase producttray homeproducttray"> 
+<script> 
+jQuery(document).ready(function(){ 
+    var globalNavCookie = GlobalNav.util.getGNCookie(); 
+    var values=globalNavCookie.UG; 
+    var authState="Unauth"; 
+    var unauth="Unauth"; 
+    var auth="Auth"; 
+    for ( i = 0; i < values.length; i++ ) { 
+        if(values[i] == auth) 
+        { 
+        	authState = auth; 
+        } 
+        if(values[i] == unauth) 
+        { 
+        	authState = unauth; 
+        } 
+    }	 
+	jQuery(".homeproducttray_Both").show(); 
+    if (authState == auth) { 
+        jQuery(".homeproducttray_Auth").show(); 
+        jQuery(".homeproducttray_Unauth").hide(); 
+    } 
+    else if (authState == unauth) { 
+        jQuery(".homeproducttray_Unauth").show(); 
+        jQuery(".homeproducttray_Auth").hide(); 
+    }     
+}); 
+</script> 
+<div id="ATTServicesHomepage"> 
+	<div id="serviceItemsContainer"> 
+		<div class="serviceItemContainer"> 
+			<div class="serviceItem"><div class="parbase serviceitem serviceItem1"> 
+<a href="/shop/wireless/devices/cellphones.html" class="servicesIcon" data-cqpath="337193445265852787879445595788877809229;2015086"> 
+	<img src="/shopcms/media/att/2014/shop/homepage/icon-homepage-wireless-v1.png" alt="Cell Phones"/><br> 
+</a> 
+<a href="/shop/wireless/devices/cellphones.html" data-cqpath="337193445265852787879445595788877809229;2015086">Cell Phones</a> 
+<div class="clear"></div> 
+</div> 
+</div> 
+			<div class="serviceItem"><div class="parbase serviceitem serviceItem2"> 
+<a href="/shop/tv/directv.html" class="servicesIcon" data-cqpath="163059248045290258313631840974935374863;2015305"> 
+	<img src="/shopcms/media/att/2014/shop/homepage/icon-homepage-digitaltv-v1.png" alt="TV"/><br> 
+</a> 
+<a href="/shop/tv/directv.html" data-cqpath="163059248045290258313631840974935374863;2015305">TV</a> 
+<div class="clear"></div> 
+</div> 
+</div> 
+			<div class="serviceItem"><div class="parbase serviceitem serviceItem3"> 
+<a href="/shop/bundles.html" class="servicesIcon" data-cqpath="335676593024445367081537918027523542271;2015302"> 
+	<img src="/shopcms/media/att/2014/shop/homepage/icon-homepage-bundles-v1.png" alt="Bundles"/><br> 
+</a> 
+<a href="/shop/bundles.html" data-cqpath="335676593024445367081537918027523542271;2015302">Bundles</a> 
+<div class="clear"></div> 
+</div> 
+</div> 
+			<div class="serviceItem"><div class="parbase serviceItem4 serviceitem"> 
+<a href="/shop/internet.html" class="servicesIcon" data-cqpath="443731797311604298856407897299438887;2015302"> 
+	<img src="/shopcms/media/att/2014/shop/homepage/icon-homepage-internet-v1.png" alt="Internet"/><br> 
+</a> 
+<a href="/shop/internet.html" data-cqpath="443731797311604298856407897299438887;2015302">Internet</a> 
+<div class="clear"></div> 
+</div> 
+</div> 
+			<div class="serviceItem"><div class="parbase serviceitem serviceItem5"> 
+<a href="/shop/wireless/accessories/accessorieslist.html" class="servicesIcon" data-cqpath="44195938775887910340600283536164635392;2015302"> 
+	<img src="/shopcms/media/att/2015/shop/homepage/243332-icon-homepage-accessories.jpg" alt="Accessories"/><br> 
+</a> 
+<a href="/shop/wireless/accessories/accessorieslist.html" data-cqpath="44195938775887910340600283536164635392;2015302">Accessories</a> 
+<div class="clear"></div> 
+</div> 
+</div> 
+			<div class="serviceItem"><div class="parbase serviceitem serviceItem6"> 
+<a href="/shop/wireless/devices/tablets.html" class="servicesIcon" data-cqpath="278386041139261631455352669623828290701;2015306"> 
+	<img src="/shopcms/media/att/2015/shop/homepage/bellyband-tablet-icon.png" alt="Tablets"/><br> 
+</a> 
+<a href="/shop/wireless/devices/tablets.html" data-cqpath="278386041139261631455352669623828290701;2015306"><span style="position: absolute; top: 96px; left: 618px;">Tablets</span></a> 
+<div class="clear"></div> 
+</div> 
+</div> 
+		</div> 
+        <div class="serviceItemsTile vertSep" style="float:left"></div>		 
+		<div class="rightSide"><h4>My Account </h4> 
+			<ul> 
+                      <li><a class="homeproducttray_Unauth" href="https://www.att.com/olam/passthroughAction.myworld?actionType=ViewBillDetails&gnLinkId=t1002" target="_self" data-cqpath="288745178138389060392998819480445979802;2015258">Log in to view/pay bill</a></li><li><a class="homeproducttray_Both" href="https://www.att.com/eos/unauth/eosLogin" target="_self" data-cqpath="288745178138389060392998819480445979802;2015258">Check an order status</a></li><li><a class="homeproducttray_Both" href="https://www.att.com/olam/passthroughAction.myworld?actionType=WirelessProductLandingPage" target="_self" data-cqpath="288745178138389060392998819480445979802;2015258">Check wireless usage</a></li><li><a class="homeproducttray_Both" href="https://www.att.com/shop/wireless/addaline.html" target="_self" data-cqpath="288745178138389060392998819480445979802;2015258">Add a device</a></li> 
+			</ul> 
+		</div> 
+	</div> 
+</div> 
+<div class="clear"></div> 
+</div> 
+		<div class="homepagefeatures parbase homepageftrs"> 
+<div id="homepageFeatures">     
+    <div class="featureteaser parbase teaser"> 
+<script type="text/javascript">$CQ(function() { 
+            initializeTeaserLoader([{"path":"/shopcms/campaigns/att/en/home/banner/default","name":"default","title":"default","campainName":"banner","thumbnail":"/shopcms/campaigns/att/en/home/banner/default.thumb.png","id":"banner_default","segments":[],"tags":[]}], "first", "_content_att_homepage_en_index_jcr_content_homepageftrs_featureteaser", "false", "", "/content/att/homepage/en/index/jcr:content/homepageftrs/featureteaser"); 
+        }); 
+			if (window.teaserCount == undefined){ window.teaserCount = 1; } else { window.teaserCount++; } 
+		</script> 
+<div id="_content_att_homepage_en_index_jcr_content_homepageftrs_featureteaser" 
+	class="campaign campaign-banner" 
+	data-cLetter=""> 
+	<noscript> 
+		<div class="page teaserpage"> 
+<div data-teaserId="269174979338195529281540789373150056047"> 
+    <div class="parbase LoBTabs"> 
+        <div class="parsys LobTab1"><div class="oneup parbase section"> 
+<div class="one-up parbase fullwidthoneup"> 
+<div title="" class="fullWidthTile contentLeftDefault" style="background: url('/shopcms/media/att/support/homepage/att-home-support_tile-974x150.jpg') no-repeat scroll right center transparent;"> 
+    <div class="h600"> 
+         <div class="titleAndCopy "  > 
+            <div class="TallPromo1 parsys"><div class="text tiletext parbase section"> 
+<script> 
+jQuery(window).load(function(){ 
+  jQuery(".dum_titletext").each(function(){ 
+    var v_fontfamily = jQuery(this).css("font-family"); 
+	var v_fontsize = jQuery(this).css("font-size"); 
+  	var v_color = jQuery(this).css("color"); 
+	var v_paddingleft = jQuery(this).css("padding-left"); 
+	var v_paddingright = jQuery(this).css("padding-right"); 
+	jQuery(this).find("p").css({"color": v_color,"font-family":v_fontfamily,"padding-left":v_paddingleft} ); 
+	jQuery(this).find("li").css({"color": v_color,"font-family":v_fontfamily,"padding-left":v_paddingleft} ); 
+  }) 
+}) 
+</script>   
+        <div class="dum_titletext" style="font-family:OmnesATTW02 !important; 
+ 								  font-size: 20px !important; 
+ 								  color: Black !important; 
+								  padding-left:0px !important; 
+                                  padding-right:0px !important;"> 
+			<p style="text-align: center; font-family: OmnesATTW02 !important;"><br> 
+Find support articles, videos, and tools<br> 
+for all AT&amp;T services.</p> 
+		</div> 
+</div> 
+<div class="homepagecta cta section"> 
+		<a class="stdButton blueButton btmmargin " href="https://www.att.com/esupport" role="button" target="_self" data-cqpath="140658496028026958619324800215386461035;2016019">Get support 
+</a> 
+<div class="clear"></div></div> 
+</div> 
+            <div class="fullwidthlegal"><div class="legal"> 
+<div class="clear"></div></div> 
+</div> 
+        </div> 
+    </div> 
+</div> 
+<div class="clear"></div> 
+<div class="preckavthreeupoffertiles parsys"> 
+</div> 
+</div> 
+    <div class="legal"> 
+<div class="clear"></div></div> 
+<div class="clear"></div></div> 
+</div> 
+        <div class="clear"></div> 
+</div> 
+    <script type="text/javascript"> 
+        if (window.teaserCallback) { 
+            window.teaserCallback("269174979338195529281540789373150056047"); 
+        } 
+    </script> 
+</div></div> 
+	</noscript> 
+	<noscript><div class="page teaserpage"> 
+</div> 
+</noscript> 
+</div> 
+<script type="text/javascript"> 
+                  jQuery('#_content_att_homepage_en_index_jcr_content_homepageftrs_featureteaser').bind('teaserLoaded', function(event) { 
+                 jQuery('#_content_att_homepage_en_index_jcr_content_homepageftrs_featureteaser').attr('data-cLetter',jQuery("#sLetter").val()); 
+                var defLetter=jQuery('#virtualmarqueeDiv').attr('data-cLetter'); 
+                var segLetter=jQuery('#_content_att_homepage_en_index_jcr_content_homepageftrs_featureteaser').attr('data-cLetter'); 
+                 AEMcarousel.removeCarousel(defLetter,segLetter); 
+                }); 
+</script> 
+</div> 
+</div> 
+<div class="clear"></div></div> 
+		<div id="linkFarm" class="homepage"> 
+			<div class="parbase lnkfrm teaser"> 
+<script type="text/javascript">$CQ(function() { 
+            initializeTeaserLoader([{"path":"/shopcms/campaigns/att/en/home/link-farm/New_Link_Farm/CurrentUverseCustomer","name":"CurrentUverseCustomer","title":"English Current Uverse Customer Link Farm","campainName":"New_Link_Farm","thumbnail":"/shopcms/campaigns/att/en/home/link-farm/New_Link_Farm/CurrentUverseCustomer.thumb.png","id":"New_Link_Farm_CurrentUverseCustomer","segments":["/shopcms/shopetc/segmentation/UF/segmnts/current-uverse"],"tags":[]},{"path":"/shopcms/campaigns/att/en/home/link-farm/New_Link_Farm/default","name":"default","title":"English Default Link Farm","campainName":"New_Link_Farm","thumbnail":"/shopcms/campaigns/att/en/home/link-farm/New_Link_Farm/default.thumb.png","id":"New_Link_Farm_default","segments":[],"tags":[]},{"path":"/shopcms/campaigns/att/en/home/link-farm/New_Link_Farm/CurrentUverseCustomer1","name":"CurrentUverseCustomer1","title":"JIC_Current Uverse Customer Link Farm","campainName":"New_Link_Farm","thumbnail":"/shopcms/campaigns/att/en/home/link-farm/New_Link_Farm/CurrentUverseCustomer1.thumb.png","id":"New_Link_Farm_CurrentUverseCustomer1","segments":["/shopcms/shopetc/segmentation/UF/segmnts/current-uverse"],"tags":[]}], "first", "_content_att_homepage_en_index_jcr_content_lnkfrm", "false", "", "/content/att/homepage/en/index/jcr:content/lnkfrm"); 
+        }); 
+			if (window.teaserCount == undefined){ window.teaserCount = 1; } else { window.teaserCount++; } 
+		</script> 
+<div id="_content_att_homepage_en_index_jcr_content_lnkfrm" 
+	class="campaign campaign-New_Link_Farm" 
+	data-cLetter=""> 
+	<noscript> 
+		<div class="page teaserpage"> 
+<div data-teaserId="180596185304206383267561384417173916788"> 
+    <div class="linkfarmteaser parbase LoBTabs"> 
+		    <div class="parsys lnkfrmteaser"><div class="linkfarm4col section"> 
+                        <div id="linkFarm" class="fullWidth">  
+                            <div id="linkFarmTopAndMain">  
+                                <div id="linkFarmTopLinks">  
+                                    <p> 
+                                    </p> 
+                                </div> 
+                                <div id="linkFarmMain"> 
+                                    <div class="fourColumnFormat"> 
+                                        <div class="linkFarmCol"> 
+                                            <div class="linkFarmSectionWithImg"> 
+                                                <div class="leftImg" > 
+                                                </div> 
+                                                <div class="titleAndList">  
+                                                <h4>I WANT TO</h4>  
+                                                <ul>  
+                                                    <li><a data-cqpath="193794466412515773978625368002273198751" href="http://localization.att.com/loc/controller?prod-snip=MyATT" target="">View or pay my bill</a></li> 
+                                                    <li><a data-cqpath="148300614382102844453135785272572861445" href="http://www.att.com/shop/myatt.html" target="">Go Paperless</a></li> 
+                                                    <li><a data-cqpath="302956100043202815460208514754756156213" href="http://www.att.com/shop/special-offers.html" target="">See Special Offers</a></li> 
+                                                    <li><a data-cqpath="136230900606891340003101221665843081494" href="https://www.att.com/eos/unauth/eosLogin" target="">Check order status</a></li> 
+                                                    <li><a data-cqpath="53046043095817521891429346155055937343" href="http://www.wireless.att.com/coverageviewer/" target="">View Wireless coverage map</a></li> 
+                                                    <li><a data-cqpath="250411872182697303554354645144455305797" href="https://www.att.com/olam/passthroughAction.myworld" target="">Check Wireless Usage</a></li> 
+                                                    <li><a data-cqpath="47489036882656670995003355871736726386" href="http://www.att.com/u-verse/availability/index.jsp" target="">Check Available Services</a></li> 
+                                                    <li><a data-cqpath="330785070250170457566148044244586201704" href="http://www.att.com/shop/movers" target="">Move My Service</a></li> 
+                                                    <li><a data-cqpath="101446804670154247706460413364285575284" href="https://www.att.com/storeappointment/" target="_blank">Make In-Store Appointments</a></li> 
+                                                    <li><a data-cqpath="171341403419208035744915098167996676053" href="/shop/wireless/upgrade-advantage.html " target="">Explore Upgrade Options</a></li> 
+                                                    <li><a data-cqpath="238498839427244565715400274849568327913" href="https://securec45.securewebsession.com/attsignalbooster.com/" target="">Register my Signal Booster</a></li> 
+                                                    <li><a data-cqpath="314165925073351399804471623365939611169" href="http://www.att.com/local/" target="">Find U-Verse Service In My Area </a></li> 
+                                                </ul>  
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                        <div class="linkFarmCol">  
+                                            <div class="linkFarmSectionWithImg">  
+                                                <div class="leftImg" > 
+                                                </div>  
+                                                <div class="titleAndList">  
+                                                <h4>SHOP</h4>  
+                                                <ul>  
+                                                    <li><a data-cqpath="310928258739011024181317169471585910693" href="/cellphones/iphone/iphone-6s.html" target="">iPhone 6s</a></li> 
+                                                    <li><a data-cqpath="57664285697019714458265087360040109755" href="/cellphones/iphone/iphone-6s-plus.html" target="">iPhone 6s Plus</a></li> 
+                                                    <li><a data-cqpath="251348533906074382940383387041479255843" href="/shop/wireless/data-plans.html" target="">Wireless Plans</a></li> 
+                                                    <li><a data-cqpath="123573534928408121981589628150383903353" href="https://www.att.com/shop/wireless/unlimited-plan.html" target="">Unlimited Plan</a></li> 
+                                                    <li><a data-cqpath="57227642655550539670009347267635996066" href="/shop/wireless/devices.html" target="_self">Cell Phones & Tablets</a></li> 
+                                                    <li><a data-cqpath="9414718701291559779055872306382991534" href="https://www.att.com/shop/wireless/devices/freephones.html" target="">Free Phones</a></li> 
+                                                    <li><a data-cqpath="282543371407384933765712943000800154634" href="https://www.att.com/shop/wireless/devices/refurbishedphones.html" target="_blank">Refurbished Phones</a></li> 
+                                                    <li><a data-cqpath="266614478829565020129224533146532026504" href="/shop/wireless/accessories.html" target="">Accessories</a></li> 
+                                                    <li><a data-cqpath="324373903468149055358725847760330781214" href="/shop/wireless/accessories/wearables.html" target="">Wearables & Smartwatches</a></li> 
+                                                    <li><a data-cqpath="337772330508422477113171125936174820570" href="http://att.tradein-program.com/" target="_self">Buyback Program</a></li> 
+                                                    <li><a data-cqpath="78828687094225293694401516089852768598" href="https://www.att.com/shop/internet.html" target="">High-Speed Internet</a></li> 
+                                                    <li><a data-cqpath="91086708048556796199791491711429161006" href="https://www.att.com/shop/u-verse/gigapower.html" target="">GigaPower Internet</a></li> 
+                                                    <li><a data-cqpath="89039793130147862067056848609698795248" href="https://www.att.com/shop/tv/directv.html" target="">DIRECTV TV Service</a></li> 
+                                                    <li><a data-cqpath="210226972505447517277092253836717892733" href="https://www.att.com/shop/bundles.html" target="">DIRECTV + Internet Bundles</a></li> 
+                                                    <li><a data-cqpath="99575482446522967265181682036971142596" href="http://telephones.att.com/att/" target="">Home Phone Equipment</a></li> 
+                                                    <li><a data-cqpath="290836662636950391835828773481472383613" href="https://my-digitallife.att.com/learn/?WT.tsrc=ATTLinkFarm " target="">Home Security</a></li> 
+                                                </ul>  
+                                                </div>  
+                                            </div> 
+                                        </div> 
+                                        <div class="linkFarmCol">  
+                                            <div class="linkFarmSectionWithImg">  
+                                                <div class="leftImg" > 
+                                                </div>  
+                                                <div class="titleAndList">  
+                                                <h4>Help and Support</h4>  
+                                                <ul>  
+                                                    <li><a data-cqpath="55286345992276910704036576567945417320" href="https://www.att.com/contactus/" target="">Contact Us</a></li> 
+                                                    <li><a data-cqpath="128896712631596788167474474329132388985" href="https://www.att.com/esupport/billAndAccount.jsp?view=combine" target="">Billing</a></li> 
+                                                    <li><a data-cqpath="168421221372799832687548914894973054975" href="https://www.att.com/esupport/main.html#!/wireless" target="">Wireless</a></li> 
+                                                    <li><a data-cqpath="311034272687978330356818618768795778903" href="https://www.att.com/esupport/main.html#!/u-verse-high-speed-internet" target="">U-verse Internet</a></li> 
+                                                    <li><a data-cqpath="333954354688419739026512920730098089280" href="https://www.att.com/esupport/main.html#!/u-verse-tv" target="">U-verse TV</a></li> 
+                                                    <li><a data-cqpath="197495384402188682115005423682799953211" href="https://www.att.com/esupport/main.html#!/u-verse-voice" target="">U-verse Voice</a></li> 
+                                                    <li><a data-cqpath="290786069453177623227529997542323826682" href="https://www.att.com/esupport/main.html#!/dsl-high-speed" target="">DSL Internet</a></li> 
+                                                    <li><a data-cqpath="240173846719380736751166386510608997489" href="https://www.att.com/esupport/main.html#!/local-long-distance" target="">Landline</a></li> 
+                                                    <li><a data-cqpath="319907466083954923284872347283118233688" href="https://www.att.com/esupport/main.html#!/directv" target="">DIRECTV</a></li> 
+                                                    <li><a data-cqpath="238573738335623742876513889001693239049" href="https://localization.att.com/loc/controller?return-path=http://repair.att.com/repair/landing.do" target="">Troubleshoot & Resolve</a></li> 
+                                                    <li><a data-cqpath="27172574872446196624718220197222763354" href="https://www.att.com/esupport/" target="">Support & Help</a></li> 
+                                                    <li><a data-cqpath="218187957663547611801395517101413019428" href="https://forums.att.com/" target="">Community Forums</a></li> 
+                                                    <li><a data-cqpath="66527065717456808327473897273136470294" href="http://www.att.com/gen/privacy-policy?pid=24339" target="">Choices and Controls</a></li> 
+                                                </ul>  
+                                                </div>  
+                                            </div> 
+                                        </div> 
+                                        <div class="linkFarmCol"> 
+                                            <div class="linkFarmSectionWithImg">  
+                                                <div class="leftImg" > 
+                                                </div>  
+                                                <div class="titleAndList">  
+                                                <h4>CONNECT WITH AT&amp;T</h4>  
+                                                <ul>  
+                                                    <li><a data-cqpath="97072572956101309664341197358365549644" href="http://www.att.com/gen/landing-pages?wtSlotClick=1-00760J-0-6&pid=5718&RIAConsoleLogLevel=4000" target="">Investor Relations</a></li> 
+                                                    <li><a data-cqpath="75700022765660677626593327989348501010" href="http://att.jobs/?RIAConsoleLogLevel=4000" target="">Careers</a></li> 
+                                                    <li><a data-cqpath="103411997866139991123868157293199170603" href="http://www.att.com/gen/general?pid=12218&RIAConsoleLogLevel=4000" target="">Emergency Planning</a></li> 
+                                                    <li><a data-cqpath="169063444581009054377270067810207974779" href="http://about.att.com/csr/reporting" target="">Sustainability Report</a></li> 
+                                                    <li><a data-cqpath="175629391022118418816923642901037873326" href="http://about.att.com/news/wireless-network.html" target="">Wireless Network News</a></li> 
+                                                    <li><a data-cqpath="241601869412681979217447843758701348731" href="http://about.att.com/category/all_news.html" target="">Media Newsroom</a></li> 
+                                                    <li><a data-cqpath="115017678741102920107207665735634261940" href="http://www.att.com/gen/press-room?pid=5000" target="">Social Media</a></li> 
+                                                    <li><a data-cqpath="150339383040982553676932204490198860128" href="https://citi.bridgetrack.com/usc/_spredir.htm?BTData=O!V.B.gAB4f.J.Bg6.Prla.a1J.iTK.nxL.Bj.D.wO.E&m=43JF111111W" target=""><!--mp_trans_disable_start-->AT&T Access More Card from Citi<!—mp_trans_disable_end--></a></li> 
+                                                    <li><a data-cqpath="309384958914212882761436747170014372193" href="http://developer.att.com/#http://developer.att.com/developer/tier1page.jsp?passedItemId=100006&_requestid=42836" target="">Developer Program</a></li> 
+                                                    <li><a data-cqpath="17450319457152531962480887718624773494" href="http://about.att.com/innovation" target="">AT&T Innovation</a></li> 
+                                                    <li><a data-cqpath="56159573960180603856555483278786807473" href="http://www.att.com/gen/public-affairs?pid=3181" target="">AT&T regulatory and legal documents</a></li> 
+                                                    <li><a data-cqpath="227873890263728891500740897845460370557" href="http://www.att.com/newdealer" target="_blank">Prospective New Dealers</a></li> 
+                                                </ul>  
+                                                </div>  
+                                            </div>  
+                                        </div> 
+                                    </div> 
+                                    <div class="clear"></div> 
+                                </div> 
+                            </div> 
+                        </div> 
+</div> 
+</div> 
+			<div class="clear"></div></div> 
+    <script type="text/javascript"> 
+        if (window.teaserCallback) { 
+            window.teaserCallback("180596185304206383267561384417173916788"); 
+        } 
+    </script> 
+</div></div> 
+	</noscript> 
+	<noscript><div class="page teaserpage"> 
+</div> 
+</noscript> 
+</div> 
+<script type="text/javascript"> 
+                  jQuery('#_content_att_homepage_en_index_jcr_content_lnkfrm').bind('teaserLoaded', function(event) { 
+                 jQuery('#_content_att_homepage_en_index_jcr_content_lnkfrm').attr('data-cLetter',jQuery("#sLetter").val()); 
+                var defLetter=jQuery('#virtualmarqueeDiv').attr('data-cLetter'); 
+                var segLetter=jQuery('#_content_att_homepage_en_index_jcr_content_lnkfrm').attr('data-cLetter'); 
+                 AEMcarousel.removeCarousel(defLetter,segLetter); 
+                }); 
+</script> 
+</div> 
+		</div> 
+	</div> 
+</div> 
+		</div> 
+	</div> 
+    <!-- Global Includes --> 
+		<div class="parsys sessionexpire modal"> 
+<span id="flashTabMessage" style="display:none;"/>Alert! As a security measure, your session is about to time out. 
+</span>  
+<div id="sessionExpire" style="display:none;">  
+	<div class="inlineModalHeader" title="SessionExpireModal"> 
+<style type="text/css"> 
+	.fauxH1 { 
+		font-size: 2em; 
+		font-weight: normal; 
+		color: #333333; 
+		line-height:1.7em; 
+		padding: 0 0 0 25px; 
+	} 
+</style> 
+<div class="fauxH1 authWarn scenarioContent" title="sessionExpire">Session Timeout</div>  
+<div class="fauxH1 unauthWarn scenarioContent" title="sessionExpire">Session Timeout</div> 
+<div class="fauxH1 authExpire scenarioContent" title="sessionExpire">Session Timeout</div> 
+<div class="fauxH1 unauthExpire scenarioContent" title="sessionExpire">Session Timeout</div> 
+<div class="fauxH1 upperFunnelExpire scenarioContent" title="sessionExpire">Session Timeout</div> 
+<a href="#" onclick="ATT.sessionExpire.refreshSession();jQuery.colorbox.close();" class="closeModal authWarn unauthWarn scenarioContent" data-cqpath="208267003544353288395428113586316064005">Close</a> 
+<a href="/shop/wireless.html" class="closeModal unauthExpire scenarioContent" data-cqpath="208267003544353288395428113586316064005">Close</a> 
+<a href="https://www.att.com/olam/loginAction.olamexecute" class="closeModal authExpire scenarioContent" data-cqpath="208267003544353288395428113586316064005">Close</a> 
+	</div> 
+	<div class="inlineModalContent"> 
+<style type="text/css"> 
+/************** 
+for save cart and continue btn 
+****************/ 
+.blueButton { 
+	-moz-box-shadow:inset 0px 1px 0px 0px #7bbcdd; 
+	-webkit-box-shadow:inset 0px 1px 0px 0px #7bbcdd; 
+	box-shadow:inset 0px 1px 0px 0px #7bbcdd; 
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.01, #0574ac), color-stop(.70, #0574ac) ); 
+	background:-moz-linear-gradient( center top, #0574ac 1%, #0574ac 70% ); 
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0574ac', endColorstr='#0574ac'); 
+	background-color:#7bbcdd !important; 
+	color:#ffffff !important; 
+	font-family:SourceSansProRegular, Arial, Helvetica, sans-serif; 
+	text-decoration:none; 
+	text-shadow:1px 1px 0px #1d739d; 
+	cursor: pointer; 
+} 
+.whiteButton{ 
+		cursor: pointer; 
+		color: #0574ac !important; 
+		font-family: arial, sans-serif !important; 
+		background-position: center 48%; 
+		background-repeat: no-repeat; 
+		background: #fff; /* Old browsers */ 
+		background: -moz-linear-gradient(top,  #ffffff 0%, #f2f2f2 50%, #f2f2f2 100%); /* FF3.6+ */ 
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f2f2f2), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */ 
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#f2f2f2 50%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */ 
+		background: -o-linear-gradient(top,  #ffffff 0%,#f2f2f2 50%,#f2f2f2 100%); /* Opera 11.10+ */ 
+		background: -ms-linear-gradient(top,  #ffffff 0%,#f2f2f2 50%,#f2f2f2 100%); /* IE10+ */ 
+		background: linear-gradient(to bottom,  #ffffff 0%,#f2f2f2 50%,#f2f2f2 100%); /* W3C */ 
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */ 
+		border: 1px solid #ccc; 
+	} 
+.whiteButton:hover, .whiteButton:focus{ 
+		color: #0574ac !important;; 
+		font-family: arial, sans-serif !important; 
+		background-position: center 48%; 
+		background-repeat: no-repeat; 
+		background: #fff; /* Old browsers */ 
+		background: -moz-linear-gradient(top,  #f2f2f2 0%, #f2f2f2 50%, #ffffff 100%); /* FF3.6+ */ 
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(50%,#f2f2f2), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */ 
+		background: -webkit-linear-gradient(top,  #f2f2f2 0%,#f2f2f2 50%,#ffffff 100%); /* Chrome10+,Safari5.1+ */ 
+		background: -o-linear-gradient(top,  #f2f2f2 0%,#f2f2f2 50%,#ffffff 100%); /* Opera 11.10+ */ 
+		background: -ms-linear-gradient(top,  #f2f2f2 0%,#f2f2f2 50%,#ffffff 100%); /* IE10+ */ 
+		background: linear-gradient(to bottom,  #f2f2f2 0%,#f2f2f2 50%,#ffffff 100%); /* W3C */ 
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */ 
+		border: 1px solid #ccc; 
+	} 
+.normalButton { 
+	-moz-border-radius:3px; 
+	-webkit-border-radius:3px; 
+	border-radius:3px; 
+	overflow:visible; 
+	border-radius:3px; 
+	display:inline-block; 
+	font-size:0.9375rem; 
+	padding:9px 18px 7px; 
+	max-height: 29px; 
+} 
+#colorbox {outline: none;} 
+.homepagecta.cta.section { 
+    text-align: center; 
+} 
+</style>  
+<div style="border-bottom:1px solid #E3E3E3;"> 
+	<div class="authWarn scenarioContent"><p>As a security measure, your session will end in 5 minutes.<br /><br />If you need more time, select <b>Continue</b> to extend your session.</p></div> 
+	<div class="unauthWarn scenarioContent"> 
+		<p> 
+				As a security measure, your session will end in 5 minutes.<br /><br />If you need more time, select Save Cart to return at a later time or select Continue to extend your session. 
+		</p> 
+	</div> 
+	<div class="authExpire scenarioContent"><p>Your myAT&T session has timed out. As a security measure, your session ends after 30 minutes of inactivity.<br /><br />Select <b>Continue</b> to login to myAT&T.</p></div> 
+	<div class="unauthExpire scenarioContent"><p>Your session has timed out. As a security measure, your session ends after 30 minutes of inactivity.<br /><br />Select <b>Continue</b> to return to the AT&T wireless homepage.</p></div> 
+	<!--<div class="upperFunnelExpire scenarioContent"><p>Your session has timed out. As a security measure, your session ends after 30 minutes of inactivity. <br /><br /> Select <b>Continue</b> to return to the AT&T U-verse Check Availability</p></div> --> 
+	    <div class="upperFunnelExpire scenarioContent"><p>Your session has timed out. As a security measure, your session ends after 30 minutes of inactivity.<br /><br />Select <b>Continue</b> to return to the AT&T wireless homepage.</p></div> 
+</div>  
+<div class="authWarn unauthWarn scenarioContent modalButtons clear floatr" style="top:10px;"> 
+        <a id="sessionExpireSaveCart" class="openModal modal705x400" href="/shop/wireless/modals/shopmodals/jcr:content/mainpar/savecart.xhr.html" style="margin-right:10px;" data-cqpath="208267003544353288395428113586316064005"><span class="whiteButton normalButton">Save cart</span></a> 
+	<a href="#" onclick="ATT.sessionExpire.refreshSession();jQuery.colorbox.close();" id="btn_session_authWarn_continue" data-cqpath="208267003544353288395428113586316064005"><span class="blueButton normalButton">Continue</span></a> 
+</div> 
+<div class="authExpire scenarioContent modalButtons clear floatr" style="top:10px;"> 
+	<a href="https://cprodx.att.com/apiserver/igate_web_dlom/logOut.do?style=relogin&returnurl=https://www.att.com/shopservlets/landing?redirectUrl=/olam/logout.olamexecute" class="floatr" id="btn_session_authExpire_continue" data-cqpath="208267003544353288395428113586316064005"><span class="blueButton normalButton">Continue</span></a> 
+</div> 
+<div class="unauthExpire scenarioContent modalButtons clear floatr" style="top:10px;"> 
+	<a href="/homepage/index.html" class="floatr" id="btn_session_unauthExpire_continue" data-cqpath="208267003544353288395428113586316064005"><span class="blueButton normalButton">Continue</span></a> 
+</div> 
+<div class="upperFunnelExpire scenarioContent modalButtons clear floatr" style="top:10px;"> 
+	<a href="/homepage/index.html" class="floatr" id="btn_session_upperFunnelExpire_continue" data-cqpath="208267003544353288395428113586316064005"><span class="blueButton normalButton">Continue</span></a> 
+</div> 
+<div class="clear"></div> 
+	</div> 
+</div></div> 
+		<!-- FOOTER --> 
+<div id="web_bug" style="display:none;"></div>  
+<script>  
+/* Returns a random integer between min and max. Using Math.round() will give you a non-uniform distribution! */  
+function getRandomInt(min, max) { var rndm=Math.floor(Math.random() * (max - min + 1) + min); if(typeof console != "undefined") console.log('random no genarated:'+rndm); return rndm; }  
+if(getRandomInt(1,100)==50)  
+{  
+try{document.getElementById('web_bug').innerHTML='<img src="/monitoring/cgcheck/" style="display:none;" />';}catch(e){}  
+}else{ document.getElementById('web_bug').innerHTML=''; }  
+</script> 
+		<!-- WebTrends Base Tag : include only at end of page --> 
+		<!-- Webtrend global params --> 
+	    <script type="text/javascript" src="https://www.att.com/scripts/skatools.js" async="true" defer=  ></script> 
+		<!-- This piece of line is added upon request of this ticket B2C-167168  --> 
+		<script type="text/javascript"> 
+                if (/(homepage\/|^\/$)/.test(location.pathname) || /(shop\/|^\/$)/.test(location.pathname)) 
+                { 
+                    var privateBrowsingMsg = "Private Browsing is on. To experience the full set of features on our desktop site and log in, please turn private browsing off."; 
+                    var testKey = 'qeTest', 
+                        storage = window.sessionStorage; 
+                    try { 
+                        // Try and catch quota exceeded errors 
+                        storage.setItem(testKey, '1'); 
+                        storage.removeItem(testKey); 
+                    } catch(error) { 
+                        if(error.code === DOMException.QUOTA_EXCEEDED_ERR && storage.length === 0) { 
+                            alert(privateBrowsingMsg); 
+                        }else { throw error; } 
+                    } 
+                } 
+         </script> 
+	    <!--X-Renderer: 80961573546392465754196692124625200168 --> 
+		<!-- /FOOTER -->  
+ <script type="text/javascript"> 
+   jQuery(document).ready(function(){ 
+   uaforSaf= navigator.userAgent.toLowerCase(); 
+            var deleteSafariCookies = "__utma|__utmb|__utmc|__utmz|__unam|bn_ec|TLTHID|TLTUID|SessionPersistence|meteor_referrer_cache|uverse_webtrend|AgentLaunchIndex|bn_u|stickySite|DL3K|PD-ID|VISITORID|custClass|local_state|svariants|wtAka|00d78e1f-01f0-45cd-9f9c-79e690335b05|d4421046-efa2-4b8f-86b0-7cdce9b8067a|65595271-SKEY|76226072-SKEY|65595271-VID|76226072-VID|HumanClickSiteContainerID_65595271|HumanClickSiteContainerID_76226072|ucvCookie|mmcode.pd|attPersistentPersonalization|attPersistentLocalization|AMCV_att1|s_cc|s_sq|s_vi|s_fid|s_sess|s_pers"; 
+            var deleteSafCookiesArray = deleteSafariCookies.split('|'); 
+            window.onload = setTimeout(cookieKilling,5000); 
+            function cookieKilling(){ for (var cookieSafId in deleteSafCookiesArray) expireCookie(deleteSafCookiesArray[cookieSafId]);} 
+            function expireCookie(name)                 
+            { 
+                var host = window.location.hostname; 
+				document.cookie = name +'=;expires=Thu, 01-Jan-1970 00:00:01 GMT;path=/;domain=.att.com'; 
+                document.cookie = name +'=;expires=Thu, 01-Jan-1970 00:00:01 GMT;path=/;domain=www.att.com'; 
+                document.cookie = name +'=;expires=Thu, 01-Jan-1970 00:00:01 GMT;path=/;domain=.www.att.com'; 
+                document.cookie = name +'=;expires=Thu, 01-Jan-1970 00:00:01 GMT;path=/;domain='+window.location.hostname; 
+                document.cookie = name +'=;expires=Thu, 01-Jan-1970 00:00:01 GMT;path=/'; 
+            }	 
+    }); 
+</script> 
+    <!-- Global Footer Content Start  -->   
+	<!-- Start zone 7 Html for SEO (Footer) --> 
+    <div class="ge5p_global_styles" data-standalone="true"><div id="ge5p_z7" class="ge5p_z7 container" role="contentinfo"><!-- Content --> 
+    <!-- 
+ ************************** 
+ * Telsa GN Zone-7 SEO HTML 
+ * Updated on 01/19/2016 
+ ************************** 
+--> 
+<div id="ge5p_z7-brand-elements" 
+	class="ge5p_z7-brand-elements row-fluid"> 
+	<ul id="ge5p_z7-brand-elements-holder"> 
+		<li role="presentation"><p class="ge5p_z7-dotCom"> 
+				<a tabindex="0" href="//att.com/" id="ge5p_z7_s1001" data-cqpath="49307505154793706457240412985946900110;2016005"><img width="133px" height="24px" alt="Shop, Service, Support." src="//www.att.com/media/att/2011/global/nav/en_US/logoATTdotcom.png"></a> 
+			</p></li> 
+		<li role="presentation"><p class="ge5p_z7-dotNet"> 
+				<a tabindex="0" href="//att.yahoo.com/" id="ge5p_z7_s1002" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005"><img width="173px" height="21px" alt="E-mail - News - Weather &amp; More" src="//www.att.com/media/att/2011/global/nav/en_US/logoATTdotnet.png"><i 
+					class="cssIcon-open-window-b"></i><span class="hidden-spoken">This 
+						link will open a new window</span></a> 
+			</p></li> 
+	</ul> 
+</div> 
+<div class="row-fluid"> 
+	<hr class="ge5p-fancy-line"> 
+</div> 
+<div id="ge5p_z7-key-links" class="ge5p_z7-key-links row-fluid"> 
+	<h2 class="hidden-spoken" id="ge5p_z7-key-links-heading">ATandT 
+		Key Links</h2> 
+	<ul id="ge5p_z7-key-links-holder" 
+		aria-describedby="ge5p_z7-key-links-heading" role="menubar" 
+		class="text-left"> 
+		<li role="presentation"><a role="menuitem" tabindex="0" href="//att.com/legal/legal-policy-center.html" id="ge5p_z7_s2001" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005">Legal Policy Center<i class="cssIcon-open-window-b"></i><span class="hidden-spoken">This link will open a new window</span></a></li> 
+		<li role="presentation"><a role="menuitem" tabindex="0" href="//att.com/gen/privacy-policy?pid=2506" id="ge5p_z7_s2002" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005">Privacy Policy<i class="cssIcon-open-window-b"></i><span class="hidden-spoken">This link will open a new window</span></a></li> 
+		<li role="presentation"><a role="menuitem" tabindex="0" href="//att.com/yourchoices" id="ge5p_z7_s2003" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005">Your Choices<i class="cssIcon-open-window-b"></i><span class="hidden-spoken">This link will open a new window</span></a></li> 
+		<li role="presentation"><a role="menuitem" tabindex="0" href="//att.jobs/" id="ge5p_z7_s2004" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005">Careers<i 
+				class="cssIcon-open-window-b"></i><span class="hidden-spoken">This 
+					link will open a new window</span></a></li> 
+		<li role="presentation"><a role="menuitem" tabindex="0" href="//att.com/econtactus/" id="ge5p_z7_s2005" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005">Contact 
+				Us<i class="cssIcon-open-window-b"></i><span class="hidden-spoken">This 
+					link will open a new window</span> 
+		</a></li> 
+		<li role="presentation" style="margin-left:0px;"><a role="menuitem" tabindex="0" href="//att.com/gen/general?pid=11561" id="ge5p_z7_s2006" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005">Terms of Use<i class="cssIcon-open-window-b"></i><span class="hidden-spoken">This link will open a new window</span></a></li> 
+		<li role="presentation"><a role="menuitem" tabindex="0" href="//att.com/homepage/sitemap.html" id="ge5p_z7_s2007" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005">Site Map<i class="cssIcon-open-window-b"></i><span class="hidden-spoken">This link will open a new window</span></a></li> 
+		<li role="presentation"><a role="menuitem" tabindex="0" href="//wireless.att.com/learn/articles-resources/disability-resources/disability-resources.jsp" id="ge5p_z7_s2008" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005">Accessibility<i 
+				class="cssIcon-open-window-b"></i><span class="hidden-spoken">This 
+					link will open a new window</span></a></li> 
+		<li role="presentation"><a role="menuitem" tabindex="0" href="//att.com/gen/public-affairs?pid=20107" id="ge5p_z7_s2009" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005">Wireless Emergency Alerts<i 
+				class="cssIcon-open-window-b"></i><span class="hidden-spoken">This 
+					link will open a new window</span></a></li> 
+		<li role="presentation"><a role="menuitem" tabindex="0" href="//www.att.com/internal/adchoices" id="ge5p_z7_s2010" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005">Advertising Choices<i 
+				class="cssIcon-open-window-b"></i><span class="hidden-spoken">This 
+					link will open a new window</span></a></li> 
+		<li role="presentation"><a role="menuitem" tabindex="0" href="//att.com/internal/broadbandinfo" id="ge5p_z7_s2011" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005">Broadband Information<i 
+				class="cssIcon-open-window-b"></i><span class="hidden-spoken">This 
+					link will open a new window</span></a></li> 
+	</ul> 
+</div> 
+<div id="ge5p_z7-copyright-legal" 
+	class="ge5p_z7-copyright-legal row-fluid"> 
+	<div class="text-left"> 
+		<p> 
+			<a href="http://clicks.att.com/OCT/eTrac?EMAIL_ID=1012748074&finalURL=http://att.com/Trademark-Copyright-Privacy-Policy?source=EACQM0ftr0000000E" data-cqpath="299092814778633834053214125430158400074;2015035">&copy; 2016 AT&amp;T Intellectual Property.<i class="cssIcon-open-window-b"></i> 
+			<span class="hidden-spoken">&copy; 2016 AT&amp;T Intellectual Property. link. This link will open a new window </span> 
+			<span class="hidden-spoken">This link will open a new window</span></a> 
+			<span> 
+				All rights reserved. AT&amp;T, Globe logo, Mobilizing Your World and DIRECTV are registered trademarks of AT&amp;T Intellectual Property and/or AT&amp;T affiliated companies.  
+				All other marks are the property of their respective owners. 
+			</span> 
+		</p> 
+	</div> 
+</div> 
+<div id="ge5p_z7-partners-affiliates-awards" 
+	class="ge5p_z7-partners-affiliates-awards row-fluid"> 
+	<ul> 
+		<li><a tabindex="0" href="//ctia.org/" id="ge5p_z7_s4001" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005"><img src="//0.ecom.attccc.com/media/att/2011/global/nav/en_US/logoCTIA.png" alt=""><span class="hidden-spoken"> link. The first 
+					nationwide carrier to be awarded the Seal of Wireless Quality. For 
+					details, visit www.ctia.org.</span><span class="hidden-spoken">This 
+					link will open a new window</span></a></li> 
+		<li><a tabindex="0" href="//bbb.org/atlanta/business-reviews/telephone-companies/atandt-in-atlanta-ga-7935" id="ge5p_z7_s4002" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005"><img src="//0.ecom.attccc.com/media/att/2011/global/nav/en_US/logoBBB.png" alt=""><span class="hidden-spoken"> link. Click to 
+					verify BBB accreditation and to see a BBB report.</span><span class="hidden-spoken">This link will open a new window</span></a></li> 
+		<li><a tabindex="0" href="//clicktoverify.truste.com/pvr.php?page=validate&amp;companyName=AT%26T&amp;sealid=101" id="ge5p_z7_s4003" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005"><img src="//0.ecom.attccc.com/media/att/2011/global/nav/en_US/logoTRUSTe.png" alt=""><span class="hidden-spoken"> link. This site is 
+					certified by TRUSTe</span><span class="hidden-spoken">This link 
+					will open a new window</span></a></li> 
+		<li><a tabindex="0" href="//uverseonline.att.net/sports/network/teamusa" id="ge5p_z7_s4004" target="_blank" data-cqpath="49307505154793706457240412985946900110;2016005"><img src="//0.ecom.attccc.com/media/att/2011/global/nav/en_US/logoOlympics.png" alt=""><span class="hidden-spoken"> link. USA Proud 
+					Sponsor of the U.S. Olympic Team</span><span class="hidden-spoken">This 
+					link will open a new window</span></a></li> 
+	</ul> 
+</div> 
+    </div></div>  
+	<!-- End zone 7 Html for SEO -->  
+	<!-- Webtrend global --> 
+	<meta NAME="DCSext.sessionid" CONTENT="syczrZh_2xxJAkZOjVPWlnmTjKTI_Wnq!-1768625359!1456860928127" /> 
+	<script> 
+	//<![CDATA[ 
+ 	if(~location.href.indexOf('attaccesserror')){ 
+            jQuery('<meta/>', {name: 'DCSext.wtPN', content:'HR Handoff Error Pg'}).appendTo('head'); 
+            jQuery('<meta/>', {name: 'DCSext.wtEvent', content:'HRock_System_CCHandOff_Display'}).appendTo('head'); 
+            jQuery('<meta/>', {name: 'DCSext.wtSuccessFlag', content:'0'}).appendTo('head'); 
+            jQuery('<meta/>', {name: 'DCSext.wtStatusMsg', content:'An error occurred while transferring you to our site'}).appendTo('head'); 
+	}   
+	if(~location.href.indexOf('attaccesspromo')){ 
+			var citiCustId = ATT.globalVars.cartContents.citiAccessCardCustId; 
+            jQuery('<meta/>', {name: 'DCSext.wtPN', content:'HR CC Landing Pg'}).appendTo('head'); 
+            jQuery('<meta/>', {name: 'DCSext.wtCitiCustID', content:citiCustId}).appendTo('head'); 
+	} 
+	var reporting_ready = window.reporting_ready || new jQuery.Deferred(), 
+		lpMTagConfig = lpMTagConfig || {}; 
+	lpMTagConfig.vars = lpMTagConfig.vars || []; 
+	ATT.globalVars.statuscode = ""; 
+	ATT.globalVars.custType = ""; 
+	ATT.globalVars.ban = ""; 
+	ATT.globalVars.loginId = ""; 
+	ATT.globalVars.userState = "WA"; 
+	ATT.globalVars.sessionid = "syczrZh_2xxJAkZOjVPWlnmTjKTI_Wnq!-1768625359!1456860928127"; 
+	ATT.globalVars.paymentProfileName = ""; 
+	ATT.globalVars.paymentType = function(){ 
+		var wtPaymentMethod; 
+		switch ("creditCard") { 
+		case ("billToAccount"): 
+			wtPaymentMethod = "Bill To Account"; 
+            return wtPaymentMethod; 
+			break; 
+		case ("creditCard"): 
+			wtPaymentMethod = "New CC"; 
+            return wtPaymentMethod; 
+			break; 
+		case ("paymentProfile"): 
+			wtPaymentMethod = "Payment Profile"; 
+            return wtPaymentMethod; 
+			break; 
+		default: 
+			wtPaymentMethod = "0"; 
+            return wtPaymentMethod; 
+			break; 
+		} 
+	}; 
+	ATT.globalVars.offerSkuReferFlag  = function (){ 
+		var wtOfferSkuReferFlag = "" == "myatt" ? "1": "0"; 
+		return wtOfferSkuReferFlag; 
+	}; 
+	ATT.globalVars.newShippingAddressFlag = window.localStorage.getItem('wtNewShippingAddressFlag'); 
+	ATT.globalVars.flowIndicator = ""; 
+	ATT.globalVars.buyflow = "NEW"; 
+	ATT.globalVars.ckavailUserZip = "98387"; 
+	ATT.globalVars.customerState = "localized"; 
+	ATT.globalVars.cartid= function(){ 
+	var wtcartId; 
+	if (ATT.globalVars.cartContents && ATT.globalVars.cartContents.cartId) { 
+		wtcartId = ATT.globalVars.cartContents.cartId; 
+    } else { 
+    	wtCartId = ""; 
+    } 
+		return wtcartId; 
+	}; 
+	ATT.globalVars.lpVisitorType = "NEW"; 
+	ATT.globalVars.referer = ""; 
+	if (ATT.globalVars.lpVisitorType == 'unknown') { ATT.globalVars.lpVisitorType = ATT.globalVars.cartContents.buyFlowType;}; 
+	//if (ATT.globalVars.lpVisitorType == 'unknown' || ATT.globalVars.lpVisitorType == 'UNK') { ATT.globalVars.lpVisitorType = ATT.globalVars.cartContents.buyFlowType;}; 
+	ATT.globalVars.wirelessAuthenticated = "false"; 
+	ATT.globalVars.profile_exception = ""; 
+	ATT.globalVars.city = "SPANAWAY"; 
+	ATT.globalVars.zip = function (){ 
+		var wtzip; 
+		if (ATT.globalVars.cartContents && ATT.globalVars.cartContents.userZip){ 
+				wtzip = ATT.globalVars.cartContents.userZip; 
+		} else if (ATT.util.attPLCookie()) { 
+				wtzip = (document.cookie.match(/attPersistantLocalization.*zip=(\d{5})/)||[])[1]; 
+		} else if (ATT.globalVars.ckavailUserZip)       { 
+		   wtzip = ATT.globalVars.ckavailUserZip; 
+		} 
+		else { 
+				wtzip ="98387"; 
+		} 
+		return wtzip; 
+	}; 
+	ATT.globalVars.flowcode =  function () { 
+		 var flowcode,flowCodeck = ATT.globalVars.buyflowCheck() ? ATT.globalVars.buyflowCheck() :  
+									  window.localStorage ?  window.localStorage.getItem('buyflowCode') : ''; 
+        if (ATT.globalVars.liabilityType == 'IRU') { 
+       	 flowCodeck=flowCodeck + ATT.globalVars.liabilityType; 
+        } 
+		flowcode = ["HR", flowCodeck,"~W", flowCodeck,"~U","~H", 
+									"~I","~D","~BW"].join(''); 
+		 return flowcode; 
+	}; 
+	ATT.globalVars.buyflowCheck = function () { 
+		var flowType, listYes = /\/addaline\.html|\/login\.html|\/upgradephone\.html/, 
+				sessionExpiredPage = /\/ordersummary\.html/.test(location.href); 
+	if( (listYes.test(location.href) && !/checkout/.test(location.href) && !/wlsfi=ACC/.test(location.href)) || ""){ 
+			flowType =""; 
+		}else if (ATT.globalVars.cartContents && ATT.globalVars.cartContents.flowIndicator && !sessionExpiredPage){ 
+				flowType = ATT.globalVars.cartContents.flowIndicator; 
+		}else if (ATT.globalVars.cartContents && ATT.globalVars.cartContents.buyFlowType && !sessionExpiredPage){ 
+				flowType = ATT.globalVars.cartContents.buyFlowType; 
+		} else { 
+				flowType ="NEW"; 
+		} 
+		return flowType;  
+	}; 
+ATT.globalVars.fan=""; 
+ATT.globalVars.accountGroupID=""; 
+var liabilityType='CONS'; 
+var iruAuthorized=""; 
+if (iruAuthorized == "true"){ 
+    liabilityType='IRU'; 
+} 
+ATT.globalVars.liabilityType = liabilityType; 
+	ATT.globalVars.wtFull = function(){ 
+		var urival = location.pathname.split('/'), href = location.href, wtsku, $ = jQuery,   
+		 regnolist = /\/login\.html|\/bundles\.html|\/wireless\.html|\/internet\.html|\/directv-wireless\.html|\/availability\.html|\/cellphone|\/tablets|\/mobilebroadband|\/packageslist|\/individualplans|\/familyplans|\/prepaidplans|\/dataplans|\/serviceslist|\/cartsummary|\/accessorieslist|\/checkout\//, 
+	   teaserid = function () { 
+			   var $r = jQuery("div[data-teaserid]"), teaser =[], i = $r.length, href = location.href,temp, 
+			   prodid, urlpart1, urlpart2, fullurl, fullpath; 
+			   while(i--){ 
+				   teaser[i] = $($r[i]).data('teaserid');// jQuery($r[i]).data('cqpath'); 
+				   if($('head > meta[name="DCSext.wtCQDynId"]').attr('content')===teaser[i]){ 
+								 $('head > meta[name="DCSext.wtCQDynId"]').remove(); 
+				   } 
+			   } 
+			   ATT.log("teaser length:" + teaser.length); 
+				 teaser = teaser.join('|'); 
+			ATT.log(teaser); 
+			return (teaser || ''); 
+		}; 
+	  //code for new reporting br @cg975w  
+		imprId = function () {  
+			var $r = jQuery("div[data-teaserid]"), teaser =[], i = $r.length, href = location.href,temp,  
+			prodid, urlpart1, urlpart2, fullurl, fullpath;  
+			while(i--){  
+				teaser[i] = $($r[i]).data('teaserid');// jQuery($r[i]).data('cqpath');  
+					if($('head > meta[name="DCSext.ctImprId"]').attr('content')===teaser[i]){  
+					$('head > meta[name="DCSext.ctImprId"]').remove();  
+				}  
+					teaser[i] = '~~'+$($r[i]).attr('data-teaserid')+'~~~CQ';  
+			}  
+			ATT.log("teaser Impression length:" + teaser.length);  
+			teaser = teaser.join('|');  
+		 ATT.log(teaser);  
+		 return (teaser || '');  
+		};  
+		$('<meta/>', {name: 'DCSext.ctImprId', content: imprId()}).appendTo('head');  
+		$('<meta/>', {name: 'DCS.wtFAN', content:ATT.globalVars.fan}).appendTo('head'); 
+		//Ending code for new reporting         
+		ATT.log('regex block'); 
+		if(~href.indexOf('/accessorieslist') && ~href.indexOf('.prod')){ 
+		 temp = location.pathname.split('/').slice(-1).join('').split('.'); 
+		 prodid = temp[1]; 
+		 urlpart1 = temp[0]; 
+		 fullurl = urlpart1+'.html'; 
+		 fullpath = location.pathname.split('/').slice(0,-1).join('/')+'/' + fullurl; 
+		 $('<meta/>', {name: 'DCS.dcsuri', content:fullpath}).appendTo('head'); 
+		 $('<meta/>', {name: 'DCS.wtFullUri', content:location.href}).appendTo('head'); 
+		 $('<meta/>', {name: 'DCS.wtProdId', content:prodid}).appendTo('head'); 
+		} 
+		if ($('meta[name*=detailPage]').length){ 
+			if($('meta[name*=detailPage]').attr('content') === 'package' || $('meta[name*=detailPage]').attr('content') === 'service'){ 
+				$('<meta/>', {name: 'DCS.dcsuri', content:urival.slice(0,-1).join('/')}).appendTo('head'); 
+		}else if($('meta[name*=detailPage]').attr('content') === 'accessory') { 
+			$('<meta/>', {name: 'DCS.dcsuri', content:$('meta[name*=detailPageDcsUri]').attr('content')}).appendTo('head'); 
+		}else if($('meta[name*=detailPage]').attr('content') === 'devicePage') { 
+			$('<meta/>', {name: 'DCS.dcsuri', content:$('meta[name*=detailPageDcsUri]').attr('content')}).appendTo('head'); 
+		}else{ 
+				$('<meta/>', {name: 'DCS.dcsuri', content:urival.slice(0,-2).join('/')}).appendTo('head'); 
+		} 
+			$('<meta/>', {name: 'DCSext.wtFullUri', content:location.pathname}).appendTo('head'); 
+			$('<meta/>', {name: 'DCSext.wtSku', content:jQuery("div[data-sku]").data('sku')? jQuery("div[data-sku]").data('sku') : ""}).appendTo('head'); 
+		} 
+	}; 
+	if(~location.href.indexOf('login') && ATT.globalVars.cartContents.isValidAccessCardHolder===true){ 
+		 var buyflowCheck = ATT.globalVars.buyflowCheck(); 
+		 var wtPN; 
+		 if (buyflowCheck === 'UP') { 
+            wtPN = 'HR UP CC Login Pg'; 
+        } else if (buyflowCheck === 'AL') { 
+            wtPN = 'HR AL CC Login Pg'; 
+        } 
+		 jQuery('<meta/>', {name: 'DCSext.wtPN', content:wtPN}).appendTo('head'); 
+	} 
+			ATT.globalVars.wtCartState =  'E';  
+	jQuery.when(reporting_ready).then(function (reporting) { 
+	// reporting.appname = 'shop'; 
+	if ('') { 
+		reporting.errors.push(''); 
+	} else if(''){ 
+		reporting.errors.push('');	 
+	}else{ 
+		reporting.errors.push(''); 
+	} 
+	//will work only in Publish Instance finalstge and Prod 
+	var wtClientContext = window.localStorage.getItem('ClientSidePersistence'), 
+	wtCartOneTimeAmt = window.localStorage.getItem('wtCartOneTimeAmt') || '$0.00', 
+	wtCartTotalAmt = window.localStorage.getItem('wtCartTotalAmt'), 
+	wtCartMonthlyAmt=window.localStorage.getItem('wtCartMonthlyAmt'), 
+	wtCartContents = ATT.util.getCookie('wtContents'), 
+	wtcartFulfillMethod=ATT.globalVars.cartContents.cartFulfillMethod, 
+	wtCTN, wtSLID;  
+	reporting.capture([ 
+		 {selector:'head', type:'wtmeta', name:'wtCustType', value:"Consumer"},    
+			{selector:'head', type:'wtmeta', name:'wtBuyFlowCode', value: function () { 
+				 var flowCodeck = ATT.globalVars.buyflowCheck() ? ATT.globalVars.buyflowCheck() :  
+											  window.localStorage ?  window.localStorage.getItem('buyflowCode') : ''; 
+                 if (ATT.globalVars.liabilityType == 'IRU') { 
+                	 flowCodeck=flowCodeck + ATT.globalVars.liabilityType; 
+                 } 
+				 ATT.globalVars.flowcode = ["HR", flowCodeck,"~W", flowCodeck,"~U","~H", 
+											"~I","~D","~BW"].join(''); 
+				 return ATT.globalVars.flowcode; 
+			}},            
+			{selector:'head', type:'wtmeta', name:'wtZipCode', value: function () { 
+				 return ATT.globalVars.zip(); 
+			}}, 
+			{selector:'head', type:'wtmeta', name:'dcsua', value:window.navigator.userAgent},{ 
+			    selector: 'head', 
+			    type: 'wtmeta', 
+			    name: 'wtSubFlowCode', 
+			    value: function() { 
+			        var isValidAccessCardHolder = ATT.globalVars.cartContents.isValidAccessCardHolder; 
+			        var buyflowCheck = ATT.globalVars.buyflowCheck(); 
+			        if (isValidAccessCardHolder === true) { 
+			            return 'CC'; 
+			        } 
+			    } 
+			}, 
+			{selector:'head', type:'wtmeta', name:'wtCity', value: function () { 
+				 var wtCity; 
+				 if(document.cookie.match(/attPersistantLocalization.*city=(\w*)/)){ 
+						 wtCity = (document.cookie.match(/attPersistantLocalization.*city=((\w|\s)*)/)||[])[1]; 
+				 }  else if(wtClientContext !== null) { 
+					 wtState = wtClientContext.split('city=')[1].split(',')[0]; 
+				 } else { 
+						 wtCity = "SPANAWAY"; 
+				 } 
+				 return wtCity; 
+			}}, 
+			{selector:'head', type:'wtmeta', name:'wtState', value: function () { 
+				 var wtState; 
+				 if(document.cookie.match(/attPersistantLocalization.*state=(\w*)/)){ 
+						 wtState = (document.cookie.match(/attPersistantLocalization.*state=((\w|\s)*)/)||[])[1]; 
+				 } else if(wtClientContext !== null) { 
+					 wtState = wtClientContext.split('state=')[1].split(',')[0]; 
+				 } else { 
+						 wtState = "WA"; 
+				 } 
+				 return wtState; 
+			}} 
+		]); 
+		reporting.tag.perform('inline'); 
+	}); 
+    //US27607: Upgrade Eligibility Reporting 
+   /****************************Device Assessment Question Page************Page Load Event*************************/ 
+    /************************Thank You Page****************Page Load Event*******************/ 
+    //CQ Defect #77028: chaning from dcsmultrack hit to page Load event 
+ /********************************Express Checkout Accessory Express Checkout Button **************************************************/ 
+ var wtCartOneTimeAmt = window.localStorage.getItem('wtCartOneTimeAmt'), 
+    wtCartTotalAmt = window.localStorage.getItem('wtCartTotalAmt'), 
+    wtCartMonthlyAmt=window.localStorage.getItem('wtCartMonthlyAmt'); 
+	/***************************** Express Checkout Accessory Page: Link Clicks Back Button ********************/ 
+		jQuery("#exCheckAccBackBtn").click(function(){ 
+				wtargs = [ 
+					'DCSext.wtPN' , "HRock Express Checkout Pg", 
+					'DCSext.wtLinkLoc' , "HRock_ExpressCheckoutPg_Body", 
+					'DCSext.wtLinkName' , "Back", 
+					'DCSext.wtAppName' , "HRock", 
+					'DCSext.wtCustType' , "Consumer", 
+					'DCSext.wtNoHit' ,  "1", 
+					'DCSext.wtCity',ATT.globalVars.city, 
+					'DCSext.wtState',"WA", 
+                    'DCSext.wtZipCode',ATT.globalVars.zip(), 
+                    'DCSext.dcsua', window.navigator.userAgent, 
+                    'DCSext.wtBuyFlowCode', ATT.globalVars.flowcode 
+				]; 
+				window.dcsMultiTrack.apply(this, wtargs); 
+		 }); 
+	//]]> 
+	</script> 
+<script> 
+    var v_pathName = window.location.pathname; 
+    if (v_pathName.indexOf('set-cookie') == -1) { 
+        if ((v_pathName.indexOf('availability') > 0) || (v_pathName.indexOf('checkreferralmap') > 0)) { 
+            var  wtEligResult = '', v_dcsua = (navigator) ? navigator.userAgent : ''; 
+            if (((/unsuccessful/).test(window.location.href)) || ((/unsuccessfulOOF/).test(window.location.href))) { 
+                wtEligResult = 'Red Address/WTN';  
+            } else if ((/pending-order/).test(window.location.href)) { 
+                wtEligResult = 'Pending Uverse Order';  
+            } else if ((/existing-service-found/).test(window.location.href)) { 
+                wtEligResult = 'Existing Uverse Service';  
+            } else if ((/connected-community/).test(window.location.href)) { 
+                wtEligResult = 'Connected Community';  
+            } else if ((/close-match/).test(window.location.href)) { 
+                wtEligResult = 'Close Match';  
+            } else if ((/mdu-address/).test(window.location.href)) { 
+                wtEligResult = 'MDU Close Match';  
+            } else if ((/map-referral/).test(window.location.href) || (/checkreferralmap/).test(window.location.href)) { 
+                wtEligResult = 'Map Referral';  
+            } else if ((/ranged-addresses/).test(window.location.href)) { 
+                wtEligResult = 'Ranged Addresses';  
+            } else if ((/success/).test(window.location.href)) { 
+                wtEligResult = 'Green Address/WTN';  
+            } else if ((/out-of-footprint/).test(window.location.href)) { 
+                wtEligResult = 'Out Of Footprint';                
+            } else if ((/address-not-found/).test(window.location.href)) { 
+                wtEligResult = 'Address Not Found';  
+            } 
+            jQuery('<meta/>', {name: 'DCSext.dcsua', content: v_dcsua}).appendTo('head'); 
+            if (sessionStorage['desktop-CAEvent'] == 'true') { 
+            	<!-- set default event for case of desktop-CAEvent; but override if other value set in session storage --> 
+                jQuery('<meta/>', {name: 'DCSext.wtEvent', content: 'HRock_Check_Avail_Submit'}).appendTo('head'); 
+                if (typeof sessionStorage['desktop-wtEvent'] !== undefined) { 
+					jQuery('meta[name="DCSext.wtEvent"]').attr('content',sessionStorage['desktop-wtEvent']); 
+				} 
+                <!-- For address research and notify me pages, add these parameters regardless of error status... --> 
+                <!-- TODO: confirm this interpretation of requirements, i.e. add params always                    --> 
+                if (sessionStorage['desktop-wtEvent'] === 'HRock_Check_AddressResearchRequest_Submit') { 
+					if (typeof sessionStorage['desktop-wtAddrRequestOpt'] != 'undefined') { 
+						jQuery('<meta/>', {name: 'DCSext.wtAddrRequestOpt', content: sessionStorage['desktop-wtAddrRequestOpt']}).appendTo('head'); 
+						sessionStorage.removeItem('desktop-wtAddrRequestOpt'); 
+					} 
+					if (typeof sessionStorage['desktop-wtEmailAddr'] != 'undefined') { 
+						jQuery('<meta/>', {name: 'DCSext.wtEmailAddr', content: sessionStorage['desktop-wtEmailAddr']}).appendTo('head'); 
+						sessionStorage.removeItem('desktop-wtEmailAddr'); 
+					} 
+					if (typeof sessionStorage['desktop-wtComments'] != 'undefined') { 
+						jQuery('<meta/>', {name: 'DCSext.wtComments', content: sessionStorage['desktop-wtComments']}).appendTo('head'); 
+						sessionStorage.removeItem('desktop-wtComments'); 
+					} 
+				} else if (sessionStorage['desktop-wtEvent'] === 'HRock_Check_NotifyMe_Submit') { 
+					if (typeof sessionStorage['desktop-wtNotifyMeOpt'] != 'undefined') { 
+						jQuery('<meta/>', {name: 'DCSext.wtNotifyMeOpt', content: sessionStorage['desktop-wtNotifyMeOpt']}).appendTo('head'); 
+						sessionStorage.removeItem('desktop-wtNotifyMeOpt'); 
+					} 
+					if (typeof sessionStorage['desktop-wtEmailAddr'] != 'undefined') { 
+						jQuery('<meta/>', {name: 'DCSext.wtEmailAddr', content: sessionStorage['desktop-wtEmailAddr']}).appendTo('head'); 
+						sessionStorage.removeItem('desktop-wtEmailAddr'); 
+					} 
+				} else if (sessionStorage['desktop-wtEvent'] === 'HRock_Check_PendingOrder_Continue') { 
+					if (typeof sessionStorage['desktop-wtPendingOrderOpt'] != 'undefined') { 
+						jQuery('<meta/>', {name: 'DCSext.wtPendingOrderOpt', content: sessionStorage['desktop-wtPendingOrderOpt']}).appendTo('head'); 
+						sessionStorage.removeItem('desktop-wtPendingOrderOpt'); 
+					} 
+				} else if (sessionStorage['desktop-wtEvent'] === 'HRock_Check_ExistingService_Continue') { 
+					if (typeof sessionStorage['desktop-wtExistingServiceOpt'] != 'undefined') { 
+						jQuery('<meta/>', {name: 'DCSext.wtExistingServiceOpt', content: sessionStorage['desktop-wtExistingServiceOpt']}).appendTo('head'); 
+						sessionStorage.removeItem('desktop-wtExistingServiceOpt'); 
+					} 
+				} 
+                	<!-- No v_wtStatusCode...must be either no errors, or back/cancel --> 
+                	if (sessionStorage['desktop-CAEvent-Back'] == 'true') { 
+                		// back/cancel, so set both StatusCode and SuccessFlag to -1 
+                		jQuery('<meta/>', {name: 'DCSext.wtStatusCode', content: '-1'}).appendTo('head'); 
+                        jQuery('<meta/>', {name: 'DCSext.wtSuccessFlag', content: '-1'}).appendTo('head'); 
+                        sessionStorage.removeItem('desktop-CAEvent-Back'); 
+                	}  
+                	 else if ((/out-of-footprint/).test(window.location.href)) { 
+                	jQuery('<meta/>', {name: 'DCSext.wtStatusCode', content: 'CA_ERR_004'}).appendTo('head'); 
+                        jQuery('<meta/>', {name: 'DCSext.wtSuccessFlag', content: '0'}).appendTo('head'); 
+                	} 
+                	else { 
+                		// not back/cancel, and we already know no errors, so indicate success 
+                		jQuery('<meta/>', {name: 'DCSext.wtStatusCode', content: '0'}).appendTo('head'); 
+                        jQuery('<meta/>', {name: 'DCSext.wtSuccessFlag', content: '1'}).appendTo('head'); 
+                	} 
+                if (typeof sessionStorage['desktop-wtEvent'] !== undefined) { 
+                	sessionStorage.removeItem('desktop-wtEvent'); 
+                } 
+                jQuery('<meta/>', {name: 'DCSext.wtQualCriteria', content: 'zip'}).appendTo('head'); 
+                jQuery('<meta/>', {name: 'DCSext.wtDwellingType', content: ''}).appendTo('head'); 
+                jQuery('<meta/>', {name: 'DCSext.wtConnectedComm', content: ''}).appendTo('head'); 
+                jQuery('<meta/>', {name: 'DCSext.wtELUID', content: 'unknown'}).appendTo('head'); 
+                jQuery('<meta/>', {name: 'DCSext.wtAddressID', content: ''}).appendTo('head'); 
+                jQuery('<meta/>', {name: 'DCSext.wtUverseCtn', content: ''}).appendTo('head'); 
+                jQuery('<meta/>', {name: 'DCSext.wtUverseAvailResult', content: ''}).appendTo('head'); 
+                jQuery('<meta/>', {name: 'DCSext.wtDSLAvailResult', content: ''}).appendTo('head'); 
+                jQuery('<meta/>', {name: 'DCSext.wtAccessLnAvailResult', content: ''}).appendTo('head'); 
+                jQuery('<meta/>', {name: 'DCSext.wtSysRespCode', content: ''}).appendTo('head'); 
+                jQuery('<meta/>', {name: 'DCSext.wtSysTransID', content: ''}).appendTo('head'); 
+                jQuery('<meta/>', {name: 'DCSext.wtServiceTypeAvail', content: 'IPTV~N|HSIA~N|VOIP~N'}).appendTo('head'); 
+                jQuery('<meta/>', {name: 'DCSext.wtServiceRequestCheck', content: sessionStorage['desktop-wtServiceRequestCheck']}).appendTo('head'); 
+                jQuery('<meta/>', {name: 'DCSext.wtEligResult', content: wtEligResult}).appendTo('head'); 
+                jQuery('<meta/>', {name: 'DCSext.wtUserResp', content: sessionStorage['desktop-wtUserResp']}).appendTo('head'); 
+                jQuery('meta[name="DCSext.wtCustType"]').attr('content',sessionStorage['desktop-wtCustType']); 
+            	jQuery('<meta/>', {name: 'DCSext.wtMigrationTargetProdElig', content: ''}).appendTo('head'); 
+                jQuery('<meta/>', {name: 'DCSext.wtFCCCenterTrialStatus', content: ''}).appendTo('head'); 
+				jQuery('<meta/>', {name: 'DCSext.wtWHPEligibility', content: 'false'}).appendTo('head'); 
+                jQuery('<meta/>', {name: 'DCSext.wtSourceAppName', content: 'MyAttSalesWireline'}).appendTo('head'); 
+                if (typeof sessionStorage['desktop-wtCQClickId'] != 'undefined') { 
+                    jQuery('<meta/>', {name: 'DCSext.wtCQClickId', content: sessionStorage['desktop-wtCQClickId']}).appendTo('head'); 
+                } 
+                if (v_pathName.indexOf('notify-me') > 0) { 
+                    jQuery('<meta/>', {name: 'DCSext.wtPN', content: 'HRock NotifyMe Pg'}).appendTo('head'); 
+                } 
+                sessionStorage['desktop-CAEvent'] = 'false'; 
+            } 
+            var CADesktopData = []; 
+            CADesktopData.push('DCSext.wtEvent'); CADesktopData.push('HRock_Check_Avail_Submit');	// TODO: always Submit event?  Can't be right, can it? 
+            CADesktopData.push('DCSext.wtSuccessFlag'); CADesktopData.push('1');					// TODO: always success value of 1?  Can't be right, can it? 
+            CADesktopData.push('DCSext.wtQualCriteria'); CADesktopData.push('zip'); 
+            CADesktopData.push('DCSext.wtDwellingType'); CADesktopData.push(''); 
+            var connCommFlag = ''=='N' ? 'false' : '' =='Y' ? 'true' : '' ; 
+            CADesktopData.push('DCSext.wtConnectedComm'); CADesktopData.push(connCommFlag); 
+            CADesktopData.push('DCSext.wtELUID'); CADesktopData.push('unknown'); 
+            CADesktopData.push('DCSext.wtAddressID'); CADesktopData.push(''); 
+            CADesktopData.push('DCSext.wtUverseCtn'); CADesktopData.push(''); 
+            CADesktopData.push('DCSext.wtUverseAvailResult'); CADesktopData.push(''); 
+            CADesktopData.push('DCSext.wtDSLAvailResult'); CADesktopData.push(''); 
+            CADesktopData.push('DCSext.wtAccessLnAvailResult'); CADesktopData.push(''); 
+            CADesktopData.push('DCSext.wtSysRespCode'); CADesktopData.push(''); 
+            CADesktopData.push('DCSext.wtSysTransID'); CADesktopData.push(''); 
+            CADesktopData.push('DCSext.wtServiceTypeAvail'); CADesktopData.push('IPTV~N|HSIA~N|VOIP~N'); 
+            CADesktopData.push('DCSext.wtServiceRequestCheck'); CADesktopData.push('unknown'); 
+            CADesktopData.push('DCSext.wtEligResult'); CADesktopData.push(wtEligResult); 
+            CADesktopData.push('DCSext.dcsua'); CADesktopData.push(v_dcsua); 
+            CADesktopData.push('DCSext.wtUserResp'); CADesktopData.push(sessionStorage['desktop-wtUserResp']); 
+            CADesktopData.push('DCSext.wtCustType'); CADesktopData.push(sessionStorage['desktop-wtCustType']); 
+        	CADesktopData.push('DCSext.wtMigrationTargetProdElig'); CADesktopData.push(''); 
+        	CADesktopData.push('DCSext.wtFCCCenterTrialStatus'); CADesktopData.push(''); 
+        	CADesktopData.push('DCSext.wtWHPEligibility'); CADesktopData.push('false'); 
+        	CADesktopData.push('DCSext.wtSourceAppName'); CADesktopData.push('MyAttSalesWireline'); 
+            if (sessionStorage['desktop-wtCQClickId'] != 'undefined') { 
+                CADesktopData.push('DCSext.wtCQClickId'); CADesktopData.push(sessionStorage['desktop-wtCQClickId']); 
+            } 
+        } 
+    } 
+    var URL =  document.referrer; 
+    var serviceRequestCheck =""; 
+       	{ 
+    	if(URL.indexOf("all")  !== -1 || URL.indexOf("bundles")  !== -1 ) 
+    	{ 
+    		serviceRequestCheck= "All"; 
+    	} 
+    	else if(URL.indexOf("internet") !== -1) 
+    	{ 
+    		serviceRequestCheck="Internet"; 
+    	} 
+    	else if(URL.indexOf("tv") !== -1) 
+    	{ 
+    		serviceRequestCheck="TV"; 
+    	} 
+    	else if(URL.indexOf("u-verse") !== -1) 
+    	{ 
+    		serviceRequestCheck="U-Verse"; 
+    	} 
+    	else if(URL.indexOf("home-phone") !== -1) 
+    	{ 
+    		serviceRequestCheck="Home-Phone"; 
+    	} 
+    	else 
+    	{ 
+    		serviceRequestCheck="Unknown"; 
+    	} 
+    	} 
+    	window.localStorage.setItem('serviceRequestCheck', serviceRequestCheck);  
+</script> 
+<div id='checkAvailDetails' style='display:none'> 
+{"wtQualCriteria":"zip","wtDwellingType":"","wtELUID":"unknown","wtAddressID":"","wtUverseCtn":"","wtUverseAvailResult":"","wtDSLAvailResult":"","wtAccessLnAvailResult":"","wtSysRespCode":"","wtSysTransID":"","wtServiceTypeAvail":"IPTV~N|HSIA~N|VOIP~N","wtServiceRequestCheck":"unknown","wtEligResult":"","wtConnectedComm":""} 
+</div> 
+	<script> 
+	//<![CDATA[ 
+	if (window.webTrendTag_unprototype) webTrendTag_unprototype(); 
+	//]]> 
+	</script> 
+	<script> 
+	//<![CDATA[ 
+		ATT.namespace("DCSSignals"); 
+		ATT.DCSSignals = (function(){ 
+				var dfd = new jQuery.Deferred(); 
+				setTimeout(function(){ dfd.resolve(); }, 15000); 
+				return { 
+						"dcs_ready_promise" : dfd.promise(), 
+						"resolveDCSFuncs" : dfd.resolve 
+				}; 
+		}()); 
+	// Use any event to append the code 
+	jQuery(document).ready(function(){ 
+		jQuery.when(reporting_ready).then(function() { 
+			setTimeout(function () { 
+				if (typeof pb_ready == "undefined"){ pb_ready = new jQuery.Deferred(); pb_ready.resolve();} 
+				jQuery.when(pb_ready).then(function() { 
+					ATT.globalVars.wtFull(); 
+					ATT.checkPromo(); 
+					ATT.log('dcs injection block'); 
+					var s = document.createElement("script"); 
+					s.type = "text/javascript"; 
+					s.src = "//www.att.com/webtrends/scripts/dcs_tag.js";  
+					s.onload = (function() { ATT.DCSSignals.resolveDCSFuncs(); jQuery(document).trigger('dcs_tag_ready');}); 
+					s.onreadystatechange = (function(){ if (s.readyState === 'loaded') s.onload(); }); 
+					// Use any selector 
+					jQuery("head")[0].appendChild(s); 
+					//PROD12-3312 PROD_RPT_WT Rotating Marquees are not passing log for 1st rotation consistently	 
+					if (window.JSAM) 
+					JSAM.Stat.reportReady(); 
+				}); 
+			}, 3000);     
+		}); 
+	}); 
+	//]]> 
+	</script> 
+	 <script src="https://www.att.com/media/cms/shop/scripts/ATT.cqWebtrend.js" type="text/javascript"></script> 
+	<!--  
+			<script src="https://www.att.com/media/cms/shop/scripts/ATT.cqWebtrend.min.js" type="text/javascript" ></script> 
+	 --> 
+	<script> 
+		ATT.globalVars.localStorageSetup = function () { 
+		//to view output of ATT.log set ATT.util.setCookie('attdebug','true',1); 
+	    console.log('LP VISITOR TYPE: document for localStorageSetup is ready!'); 
+	    var rightnow = new Date(); 
+	    rightnow.setHours(0, 0, 0, 0); 
+	    var compareToday = JSON.stringify(rightnow); 
+	    var compareTodayObj = JSON.parse(compareToday); 
+	    ATT.log('LP VISITOR TYPE: today is: ' + compareTodayObj); 
+	    // set number of days to expire 
+	    var label_interval = parseInt('30'); // label.lpvisitortype.numberofdaystoexpir 
+	    var interval = 30; //in case this value is not set by authoring  label 
+	    if (!label_interval || isNaN(label_interval)) { 
+	        var label_interval = 30; 
+	    } 
+	    if (localStorage.getItem("visitorTypeKey") === null) { 
+	        var startDate = new Date(); 
+	        startDate.setHours(0, 0, 0, 0); 
+	        var expiresDate = new Date(); 
+	        expiresDate.setHours(0, 0, 0, 0); 
+	        expiresDate.setDate(expiresDate.getDate() + label_interval); 
+	        var objectRET = { 
+	            valueObjKey: "RET", 
+	            startdateObjKey: startDate, 
+	            expdateObjKey: expiresDate 
+	        }; 
+	        localStorage.setItem("visitorTypeKey", JSON.stringify(objectRET)); 
+	        ATT.globalVars.lpVisitorType = ATT.globalVars.cartContents.buyFlowType; 
+	        lpMTagConfig.vars.push(["page", "visitorType", ATT.globalVars.lpVisitorType || 'UNK']); 
+	        ATT.log('LP VISITOR TYPE: creating local storage object with start date:' + startDate + ' and expiration date: ' + expiresDate); 
+	    } else { 
+	        /* if key exists then create vars below */ 
+	        var localStorageObj = JSON.parse(localStorage.getItem("visitorTypeKey")); 
+	        var ExpirationDateObj = localStorageObj.expdateObjKey; 
+	        var StartDateObj = localStorageObj.startdateObjKey; 
+	        var localStorageVisitorType = localStorageObj.valueObjKey; //this value is always RET	} 
+	        ATT.log('LP VISITOR TYPE: Found local storage object with the following values: '); 
+	        ATT.log('LP VISITOR TYPE: start Date: ' + StartDateObj); 
+	        ATT.log('LP VISITOR TYPE: expiration Date: ' + ExpirationDateObj); 
+	        if (typeof (Storage) !== "undefined") { // check if web storage is browser supported 
+	            ATT.log("LP VISITOR TYPE: web storage supported!!!"); 
+	            if ((ATT.globalVars.cartContents.authenticated === "authenticated" && ATT.globalVars.cartContents.wirelessAuthenticated === true) || (StartDateObj == compareTodayObj) || (ATT.globalVars.cartContents.buyFlowTypeShown === true)) { //visitor type is not RET 
+	                localStorage.userName = ATT.globalVars.cartContents.buyFlowType; 
+	                ATT.globalVars.lpVisitorType = ATT.globalVars.cartContents.buyFlowType; 
+	                ATT.log("LP VISITOR TYPE: setting visitorType to NEW, AL, ALF or UP"); 
+	                lpMTagConfig.vars.push(["page", "visitorType", ATT.globalVars.lpVisitorType || 'UNK']); 
+	            } else { //visitor type is RET 
+	                localStorage.userName = localStorageVisitorType; 
+	                ATT.log("LP VISITOR TYPE: setting visitorType to RET"); 
+	                ATT.globalVars.lpVisitorType = localStorageVisitorType; 
+	                lpMTagConfig.vars.push(["page", "visitorType", ATT.globalVars.lpVisitorType || 'UNK']); 
+	            } 
+	            //  ATT.globalVars.lpVisitorType = localStorageVisitorType; 
+	            if (localStorage.getItem("visitorTypeKey") === null) {} else { 
+	                if (ExpirationDateObj > compareTodayObj) { 
+	                    ATT.log("LP VISITOR TYPE: visitorTypeKey storage object is not expired"); 
+	                } else { 
+	                    localStorage.removeItem("visitorTypeKey"); 
+	                    ATT.log("LP VISITOR TYPE: visitorTypeKey storage object expired and deleting it from local storage ... setting visitor type to NEW"); 
+	                    ATT.globalVars.lpVisitorType = ATT.globalVars.cartContents.buyFlowType; 
+	                    lpMTagConfig.vars.push(["page", "visitorType", ATT.globalVars.lpVisitorType || 'UNK']); 
+	                } //remove the localstorage key and reset it 
+	            } 
+	            ATT.log("LP VISITOR TYPE: FINAL VALUE IS: " + ATT.globalVars.lpVisitorType); 
+	        } else { 
+	            localStorage.userName = "UNK"; 
+	            ATT.globalVars.lpVisitorType = ATT.globalVars.cartContents.buyFlowType; 
+	            ATT.log("LP VISITOR TYPE: Browser does not support Web Storage"); 
+	            lpMTagConfig.vars.push(["page", "visitorType", ATT.globalVars.cartContents.buyFlowType || 'UNK']); 
+	            ATT.log("LP VISITOR TYPE: FINAL VALUE IS: " + ATT.globalVars.cartContents.buyFlowType); 
+	        } 
+	    } 
+	}; 
+	</script> 
+	<script> 
+		ATT.globalVars.localStorageSetup = function () { 
+		//to view output of ATT.log set ATT.util.setCookie('attdebug','true',1); 
+		console.log('LP VISITOR TYPE: document for localStorageSetup is ready!'); 
+		var rightnow = new Date(); 
+		rightnow.setHours(0, 0, 0, 0); 
+		var compareToday = JSON.stringify(rightnow); 
+		var compareTodayObj = JSON.parse(compareToday); 
+		ATT.log('LP VISITOR TYPE: today is: ' + compareTodayObj); 
+		// set number of days to expire 
+		var label_interval = parseInt('30'); // label.lpvisitortype.numberofdaystoexpir 
+		var interval = 30; //in case this value is not set by authoring  label 
+		if (!label_interval || isNaN(label_interval)) { 
+			var label_interval = 30; 
+		} 
+		if (localStorage.getItem("visitorTypeKey") === null) { 
+			var startDate = new Date(); 
+			startDate.setHours(0, 0, 0, 0); 
+			var expiresDate = new Date(); 
+			expiresDate.setHours(0, 0, 0, 0); 
+			expiresDate.setDate(expiresDate.getDate() + label_interval); 
+			var objectRET = { 
+				valueObjKey: "RET", 
+				startdateObjKey: startDate, 
+				expdateObjKey: expiresDate 
+			}; 
+			localStorage.setItem("visitorTypeKey", JSON.stringify(objectRET)); 
+			ATT.globalVars.lpVisitorType = ATT.globalVars.cartContents.buyFlowType; 
+			lpMTagConfig.vars.push(["page", "visitorType", ATT.globalVars.lpVisitorType || 'UNK']); 
+			ATT.log('LP VISITOR TYPE: creating local storage object with start date:' + startDate + ' and expiration date: ' + expiresDate); 
+		} else { 
+			/* if key exists then create vars below */ 
+			var localStorageObj = JSON.parse(localStorage.getItem("visitorTypeKey")); 
+			var ExpirationDateObj = localStorageObj.expdateObjKey; 
+			var StartDateObj = localStorageObj.startdateObjKey; 
+			var localStorageVisitorType = localStorageObj.valueObjKey; //this value is always RET	} 
+			ATT.log('LP VISITOR TYPE: Found local storage object with the following values: '); 
+			ATT.log('LP VISITOR TYPE: start Date: ' + StartDateObj); 
+			ATT.log('LP VISITOR TYPE: expiration Date: ' + ExpirationDateObj); 
+			if (typeof (Storage) !== "undefined") { // check if web storage is browser supported 
+				ATT.log("LP VISITOR TYPE: web storage supported!!!"); 
+				if ((ATT.globalVars.cartContents.authenticated === "authenticated" && ATT.globalVars.cartContents.wirelessAuthenticated === true) || (StartDateObj == compareTodayObj) || (ATT.globalVars.cartContents.buyFlowTypeShown === true)) { //visitor type is not RET 
+					localStorage.userName = ATT.globalVars.cartContents.buyFlowType; 
+					ATT.globalVars.lpVisitorType = ATT.globalVars.cartContents.buyFlowType; 
+					ATT.log("LP VISITOR TYPE: setting visitorType to NEW, AL, ALF or UP"); 
+					lpMTagConfig.vars.push(["page", "visitorType", ATT.globalVars.lpVisitorType || 'UNK']); 
+				} else { //visitor type is RET 
+					localStorage.userName = localStorageVisitorType; 
+					ATT.log("LP VISITOR TYPE: setting visitorType to RET"); 
+					ATT.globalVars.lpVisitorType = localStorageVisitorType; 
+					lpMTagConfig.vars.push(["page", "visitorType", ATT.globalVars.lpVisitorType || 'UNK']); 
+				} 
+				//  ATT.globalVars.lpVisitorType = localStorageVisitorType; 
+				if (localStorage.getItem("visitorTypeKey") === null) {} else { 
+					if (ExpirationDateObj > compareTodayObj) { 
+						ATT.log("LP VISITOR TYPE: visitorTypeKey storage object is not expired"); 
+					} else { 
+						localStorage.removeItem("visitorTypeKey"); 
+						ATT.log("LP VISITOR TYPE: visitorTypeKey storage object expired and deleting it from local storage ... setting visitor type to NEW"); 
+						ATT.globalVars.lpVisitorType = ATT.globalVars.cartContents.buyFlowType; 
+						lpMTagConfig.vars.push(["page", "visitorType", ATT.globalVars.lpVisitorType || 'UNK']); 
+					} //remove the localstorage key and reset it 
+				} 
+				ATT.log("LP VISITOR TYPE: FINAL VALUE IS: " + ATT.globalVars.lpVisitorType); 
+			} else { 
+				localStorage.userName = "UNK"; 
+				ATT.globalVars.lpVisitorType = ATT.globalVars.cartContents.buyFlowType; 
+				ATT.log("LP VISITOR TYPE: Browser does not support Web Storage"); 
+				lpMTagConfig.vars.push(["page", "visitorType", ATT.globalVars.cartContents.buyFlowType || 'UNK']); 
+				ATT.log("LP VISITOR TYPE: FINAL VALUE IS: " + ATT.globalVars.cartContents.buyFlowType); 
+			} 
+		} 
+	}; 
+	</script> 
+ <!-- Capturing  CSR JMS events --> 
+ <script> 
+		jQuery( "#tguardLoginForm").submit(function( event ) { 
+					ATT.cqWebtrend.loadcsrjmsevents('HRock_Login_Submit'); 
+				}); 
+	</script> 
+	<!-- C2C --> 
+		<div class="parbase chat"> 
+<script> 
+//<![CDATA[ 
+//minimal set of configuration setting to set up connection to liveperson server  
+var lpNumberfrmDialog = "26709415"; 
+var depNamefrmDialog  = "att";       
+var lpMTagConfig = lpMTagConfig || {}, 
+	v_ChatEligibility = 'false', 
+	v_href = window.location.href, 
+	v_uverseResultIndex = -1, 
+	v_uverseAvailResultContent = ''; 
+lpMTagConfig.vars = lpMTagConfig.vars || []; 
+ATT.globalVars.custName = ["",""].join(' '); 
+ATT.globalVars.customerItemsOwned = ATT.util.filter(['','','',''], function(n){return n;}).join('|'); 
+lpMTagConfig.lpServer = "sales.liveperson.net"; 
+lpMTagConfig.lpTagSrv = lpMTagConfig.lpServer; 
+if(lpNumberfrmDialog){ 
+		lpMTagConfig.lpNumber = lpNumberfrmDialog; 
+}else{ 
+    	lpMTagConfig.lpNumber = "26709415"; 
+} 
+if(~location.href.indexOf('/international')){ 
+    lpMTagConfig.vars.push(["page","unit","international"]); 
+    lpMTagConfig.deploymentID = "international"; 
+    jQuery('#lpButtonDiv-2').css('top', '20px'); 
+}else if(~location.href.indexOf('/shop/wireless/data-plans.html')){ 
+    lpMTagConfig.deploymentID = "msv"; 
+} else { 
+    lpMTagConfig.deploymentID = depNamefrmDialog; 
+} 
+if(~location.href.indexOf('/u-verse')){  
+    lpMTagConfig.vars.push(["page","unit","uverse-residential"]);    
+}else if(~location.href.indexOf('/wireless.html')){  
+    lpMTagConfig.vars.push(["page","unit","wireless"]); 
+}else if(~location.href.indexOf('/shop/wireless/') || ~location.href.indexOf('/shop/en/wireless/') || ~location.href.indexOf('/shop/es/wireless/')){ 
+    lpMTagConfig.vars.push(["page","unit","wireless"]); 
+}else if(~location.href.indexOf('/special-offers') || ~location.href.indexOf('/att-locker')){ 
+    lpMTagConfig.vars.push(["page","unit","att"]); 
+}else{ 
+	 lpMTagConfig.vars.push(["page","unit","supern22"]); 
+} 
+lpMTagConfig.vars.push(["session","language","english"]); 
+jQuery.when(reporting_ready).done(function() {lpMTagConfig.vars.push(["visitor","visitorId",ATT.globalVars.cartContents.lpVisitorId]);}); 
+if (~location.href.indexOf('/shop/checkout/')) { //do not invoke localStorageSetup during checkout 
+		if (!ATT.globalVars.lpVisitorType) {ATT.globalVars.lpVisitorType = "NEW";}  
+		 ATT.log("LP VISITOR TYPE: FINAL VALUE IS: " + ATT.globalVars.lpVisitorType); 
+} else {  
+	jQuery.when(ATT.globalVars.cartPromise).then(function() { 
+		jQuery.when(ATT.globalVars.cartContents).then(function () {	 
+		            if (typeof ATT.globalVars.cartContents !== "undefined") { 
+		            	ATT.log("LP VISITOR TYPE: mktg chat"); 
+		                ATT.globalVars.localStorageSetup(); 
+		            } else { 
+		                ATT.log("LP VISITOR TYPE: cartContents is undefined"); 
+		            } 
+	        }); 
+	}); 
+} 
+lpMTagConfig.vars.push(["page","visitorType", ATT.globalVars.lpVisitorType || 'UNK']);  
+lpMTagConfig.vars.push(["visitor","customerType", ATT.globalVars.lpVisitorType]); 
+if (~location.href.indexOf('shop/availability.html')) { 
+	if (ATT.globalVars.lpVisitorType === 'NEW') { 
+		lpMTagConfig.vars.push(["session","uverse-residential_NewCustomer","1"]); 
+	}else { 
+		lpMTagConfig.vars.push(["session","uverse-residential_NewCustomer","0"]); 
+	} 
+} 
+lpMTagConfig.vars.push(["visitor","customerName",ATT.globalVars.custName]); 
+lpMTagConfig.vars.push(["visitor","customerZip",""]); 
+lpMTagConfig.vars.push(["visitor","customerCity",""]); 
+lpMTagConfig.vars.push(["visitor","customerState",""]); 
+lpMTagConfig.vars.push(["visitor","customerAccountInfo", '']); 
+lpMTagConfig.vars.push(["visitor","customerItemsOwned", ATT.globalVars.customerItemsOwned]); 
+lpMTagConfig.vars.push(["visitor","customerQualification",""]); 
+lpMTagConfig.vars.push(["page","applicationName",""]); 
+lpMTagConfig.vars.push(["page","departmentName","att"]); 
+lpMTagConfig.vars.push(["visitor","customerLocalization",ATT.globalVars.zip()]); 
+lpMTagConfig.vars.push(["session","clickAction",""]); 
+lpMTagConfig.vars.push(["page","errorName",""]); 
+// Business Rules 2013 (Hardrock Uverse WBFC Phase1.1 1401) 
+//  Rule #1: show uverse Chat when user is 'Green' (full or partial) and user is on success page or has 
+//           returned to the main CKAV form page. 
+//  Rule #2: show uverse Chat (regardless of green/red/unknown status) when user is on three given 
+//           URLs: Interstitial, Map, Address Research 
+if (CADesktopData) { 
+	v_uverseResultIndex = jQuery.inArray('DCSext.wtUverseAvailResult', CADesktopData); 
+} 
+if (v_uverseResultIndex > -1) { 
+	v_uverseAvailResultContent = CADesktopData[v_uverseResultIndex + 1];  // not using wtUverseAvailResult meta tag; not always present 
+} 
+// if ((v_uverseAvailResultContent === 'green_GigaPower' || v_uverseAvailResultContent === 'Green_IPDSL' || v_uverseAvailResultContent === 'Green_VDSL' || v_uverseAvailResultContent === 'Green_NotAllServices') 
+if ((v_uverseAvailResultContent === 'Green_VDSL') 
+     &&( v_href.indexOf('availability/success.html') > -1 || v_href.indexOf('availability/business-success.html') > -1 || v_href.indexOf('availability.html') > -1 ) 
+    ) 
+{ 
+	v_ChatEligibility = 'true'; 
+} 
+if ( v_href.indexOf('availability/map-referral.html') > -1 || v_href.indexOf('availability/checkreferralmap.html') > -1 || v_href.indexOf('availability/address-research-request.html') > -1 || v_href.indexOf('pending-order.html') > -1) { 
+	v_ChatEligibility = 'true'; 
+} 
+// End Business Rules 2013 
+lpMTagConfig.vars.push(["session","ChatEligibility",v_ChatEligibility]); 
+    if("" == 'In Progress'){ 
+    	lpMTagConfig.vars.push(["session","WireCenterCode",""]); 
+    	lpMTagConfig.vars.push(["session","WirelessHomePhoneEligible","false"]); 
+    	lpMTagConfig.vars.push(["session","FccWireCenterStatus",""]); 
+    	lpMTagConfig.vars.push(["session","MigrationTargetIdentifier",""]); 
+    } 
+//]]> 
+pagepathname = window.location.pathname; 
+if (pagepathname.indexOf('shop/wireless/data-plans.html') > -1 || pagepathname.indexOf('shop/es/wireless/data-plans.html')) { 
+		   jQuery.when(reporting_ready).done(function() { 
+				lpMTagConfig.vars.push(["page","wtChatInitAppName","HardRock - Mobile Share Value"]); 
+                lpMTagConfig.vars.push(["page","wtChatInitPN","HRock Data Plans and Mobile Share"]); 
+		}); 
+} 
+</script> 
+</div> 
+	<!-- Using Clientlib/replacing combined.js --> 
+				<script type="text/javascript" src="/shopcms/atthomepage/clientlib/clientlib.min.js"></script> 
+        <script type="text/javascript" src="//www.att.com/olam/js/dotComPrefetch.js" async="true" defer="true"></script> 
+        <script type="text/javascript" src="https://www.att.com/media/gvp/GVP.js" defer=  ></script> 
+	<!-- atlastag --> 
+	<div class="atlastag"> 
+</div> 
+	<script type="text/javascript"> 
+	jQuery(document).ready(function() { 
+	var r = navigator.userAgent.toLowerCase(); 
+	if(r.search("mobile")> -1){ 
+	jQuery("#userid, .userInputNote").unbind('mouseover'); 
+	} 
+	}); 
+	var ModelOpen = false; 
+function browserCompatabilityMsg() 
+{    
+	var agentStr = navigator.userAgent; 
+    var isBroswerVersionIE8Lower = true; 
+    if (agentStr.indexOf("Trident")> -1) { 
+        isBroswerVersionIE8Lower = false; 
+	} 
+    if ((BrowserDetect.browser=='Explorer' && isBroswerVersionIE8Lower ) ||  
+            (BrowserDetect.browser=='Firefox' && BrowserDetect.version < 4 ) ||  
+            (BrowserDetect.browser=='Chrome' && BrowserDetect.version < 1) ||  
+            (BrowserDetect.browser=='Safari' && BrowserDetect.version < 1) ||  
+            (BrowserDetect.browser=='Opera' && BrowserDetect.version < 7.54) ||  
+            (BrowserDetect.browser=='Netscape' && BrowserDetect.version < 7))   
+    {    
+        var strDesc = "<div class='LoginModalFirstPara'><p>The browser you are using doesn't fully support the AT&T website. You can continue to explore the site but certain features and layout elements may not function properly.</p></div><div class='LoginModalFirstPara'><p>Please ensure your browser version is supported to get full functionality of the AT&T website.</p></div><div class='LoginModalLastPara'><p>Current supported browsers:-</p><ul class='LoginModalFirstUL'><li>Safari v4.0 and up</li><li>Firefox v4.0 and up</li><li>Chrome v7.0 and up</li><li>Internet Explorer v7.0 and up</li></ul></div>"; 
+        var strHTML = "<!--[if lte IE 9]><div id='ie'><![endif]--><div id='md'>" + 
+                            "<div class='modalHeader'>" + 
+                                "<h1>Outdated browser</h1>" + 
+                                "<a href='#Close' class='closeModal' onclick='jQuery.colorbox.close(); return false'>Close</a>" + 
+                            "</div>" + 
+                            "<div class='LoginModalContent'>"  + 
+                                "<div class='LoginModalFirstPara'> " + 
+                                   strDesc +  
+                                "</div>" + 
+                                "<div class='LoginModalButtonDiv'>" + 
+                                    "<div class='LoginModalBotLinks'><a href='http://www.att.com/esupport/article.jsp?sid=KB402059'>Get more help with browser updates</a></div>" + 
+                                    "<div class='LoginButtonDiv'></div>" + 
+                                    "<div class='clear'></div>" + 
+                                "</div>" +                                 
+                            "</div>" + 
+                        "</div><!--[if lte IE 9]></div><![endif]-->";                                    
+        if(!ModelOpen){ 
+            jQuery.colorbox({ height:430, width:650, scrolling:false, close:"",html:strHTML });  
+            ModelOpen = true; 
+        } 
+    }     
+} 
+	</script> 
+<div class="parbase readabtestprofileattributes"> 
+<script> 
+	var userProfileAttributes = JSON.stringify({}); 
+    localStorage.setItem("userProfileAttributes",JSON.stringify({})); 
+</script> 
+</div> 
+				<script type="text/javascript">_satellite.pageBottom();</script>  
+<script type="text/javascript"> 
+// <![CDATA[ 
+	// signal chat state to TC 
+	window.lpMTagConfig = window.lpMTagConfig || {}; 
+	window.lpMTagConfig.vars = window.lpMTagConfig.vars || []; 
+	window.lpMTagConfig.vars.push(["page", "tcChatEnabled", "true"]) 
+// ]]> 
+</script> 
+	<div id="lcConfig" style="dNO" 
+		data-enabled="true" 
+		data-account-or-business-unit="" 
+		data-skill-or-agent-group="" 
+		data-selector="" 
+		data-where="" 
+		data-supressed="false"><!-- / --></div> 
+</body> 
+<input type="hidden" name="attPrintPageKey" value="AT&T Print Page" id="attPrintPageKey"> 
+<input type="hidden" name="closeKey" value="Close" id="closeKey"> 
+<input type="hidden" name="printPageKey" value="Print Page" id="printPageKey"> 
+</html>  

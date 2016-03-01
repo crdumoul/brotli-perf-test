@@ -1,0 +1,130 @@
+html, body {margin:0;}
+
+.LYT_Header_Print {display:block;}
+
+a:link,
+a:visited,
+.MC_LYT_OS_Title
+{color:#000;}
+
+#LYT_Header,
+.GN_NAV_Wrap,
+.GN_PWS_Header,
+#GN_NAV_Container,
+#GF_LYT_Container,
+.NAV_ShoppingNav,
+.LYT_BannerContainer,
+.shopping-bag-nav-list-container,
+.MC_LYT_print_Button_Container,
+.print,
+.btn,
+.need-help-container,
+.LYT_Breadcrumb,
+.SN_LYT_Container,
+.MC_LYT_OS_item img,
+img.MC_IMG_Question,
+.MC_LYT_ShopBagHideImagesHeader a span,
+.MC_LYT_HeaderFunctionContainer,
+.MC_LYT_DITTO_QuickShop,
+.MC_LYT_DITTO_Scheduler .MC_LYT_HowMuch,
+/*.need-help-outer-border*/
+ul.need-help-list,
+.RadGrid_AmwayGrid th.AmwayGrid_HeaderLink a,
+.RadGrid_AmwayGrid td.AmwayGrid_HeaderLink a,
+.OrderHistoryLineItem .GE_LYT_DarkerGray_Container,
+.btn_tertiary, a.btn_quaternary,
+.PrintHide,
+.GE_LYT_DarkerGray_Container div.FL
+{display:none;}
+
+#LYT_PageContainer,
+.MC_LYT_Container,
+.MC_LYT_CategoryContainer,
+#divErrorMsgContainer,
+.checkout-payment-order-details-header,
+.checkout-payment-order-details-header_A .GE_LYT_GrayBorder_Container,
+.RadGrid_AmwayGrid,
+.GE_LYT_Gray_Container,
+.MC_LYT_RndHeader,
+.MC_LYT_SalesReceiptsContainer,
+.no-items-in-list-container
+{width:100%; float:none;}
+
+.GE_LYT_Gray_Container
+{margin-top:16px; padding:0; border:none;}
+
+.GE_LYT_GrayBorder_Container,
+.checkout-payment-order-details-header,
+.MC_LYT_RndHeader,
+.RadGrid_AmwayGrid
+{width:682px;}
+.RadGrid_AmwayGridContainer .RadGrid_AmwayGrid{ width:100%!important; }
+
+.DittoNotificationContainer
+{width:auto;}
+
+/* order history specific overrides from the aboved ^^ fixed widths */
+.MC_LYT_OrderHistory .RadGrid_AmwayGrid,
+.MC_LYT_OrderHistory .MC_LYT_RndHeader,
+.checkout-payment-order-details-header-width
+{width:100%;}
+
+/* order history specific overrides from the aboved ^^ float none */
+.MC_LYT_OrderHistory .MC_LYT_OrderSummary
+{float:right;}
+
+.MC_LYT_HelpDeliverySummary
+{width:382px; float:none;}
+
+.MC_LYT_OrderSummary,
+.MC_LYT_HelpDeliverySummary .FL
+{float:none;}
+
+.RadGrid_AmwayGrid
+{margin-left:0;}
+
+.RadGrid_AmwayGrid td,
+.RadGrid_AmwayGrid th.GridHeader_AmwayGrid,
+.MC_LYT_OrderSummary .MC_LYT_OS_Title,
+.MC_LYT_OrderSummary tr,
+.MC_LYT_RndHeader,
+.MC_LYT_DITTO_Scheduler table.MonthlyQuantity tr,
+.MC_LYT_DITTO_Scheduler table.MonthlyQuantity th,
+.MC_LYT_DITTO_Scheduler table.MonthlyQuantity td
+{border:solid 1px #ccc; background-image:none;}
+
+.RadGrid_AmwayGrid td.MC_LYT_FirstItem {}
+.RadGrid_AmwayGrid thead th.MC_LYT_LastItem,
+.RadGrid_AmwayGrid td.MC_LYT_LastItem 
+{border-right:solid 1px #ccc;}
+
+.MC_LYT_ProductFamilyQuantity
+{border-bottom-color:#fff;}
+
+.MC_LYT_ProductFamilyQuantityHeader
+{border-right:solid 1px #ccc;}
+
+.MC_LYT_DITTO_Scheduler table {width:712px;}
+.MC_LYT_DITTO_Scheduler table input {margin:4px 0 0; padding:0;}
+.MC_LYT_DITTO_Scheduler colgroup.ColMonths {width:45px;}
+.MC_LYT_DITTO_Scheduler table.OrderTotals .TH {height:2em;}
+.MC_LYT_DITTO_Scheduler table.OrderTotals .TD {height:2em;}
+.MC_LYT_DITTO_Scheduler table.OrderTotals .Date {color:#000;}
+.MC_LYT_DITTO_Scheduler input {border:none; padding:none;}
+
+/* DITTO Platinum Reports */
+.GridDataDiv_AmwayGrid {height:auto !important; overflow:visible !important;}
+
+/*Product Display*/
+div#product_detail_container {width:720px;}
+div#product_detail_container div.right_column {margin-top:20px;width:420px !important;}
+.radwindow, .radwindow_AmwayWindow, .normalwindow, .transparentwindow{width:960px !important;height:900px !important; left:0 !important; top:0 !important;}
+div.MC_LYT_Dashboard_Overlay { width:800px !important; height:1000px !important; overflow:visible;background-color:#FFF !important;}
+div.MC_LYT_Dashboard_Overlay .GE_LYT_GrayBorder_Container_padding{background-color:#FFF !important;font-size:14px !important;height:1000px !important; width:800px !important;}
+.MC_LYT_Dashboard_Overlay .MC_LYT_DB_MsgDescription span{background-color:#FFF !important;font-size:14px !important;}
+
+/* Pin Levels */
+div.MC_LYT_ET_LeftColPinLevel .MC_LYT_RndHeader { width:450px !important; }
+div.MC_LYT_ET_LeftColPinLevel .GE_LYT_GrayBorder_Container { width:445px !important; }
+
+.MC_LYT_PVBVEstimate .RadGrid_AmwayGrid { width:100%; }

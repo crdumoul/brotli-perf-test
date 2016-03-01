@@ -1,0 +1,293 @@
+#dfp_top_ad, .dfp_top_ad {
+	text-align:center; 
+	margin: 0 0 16px 0;
+	z-index:1;
+	position: relative;
+}
+
+#dfp_top_ad div[id^="creative"],
+.dfp_top_ad div[id^="creative"]{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ggl_helptext_afsh:hover, span.ggl_helptext_2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ggl_tooltip_content_afsh{
+	display: none;
+	width: 300px;
+	border: 1px solid #F0EFED;
+	background: #fff;
+	position: absolute;
+	z-index: 2;
+	left: 4px;
+	margin-top: 2px;
+	padding: 5px;
+	cursor:pointer;
+}
+
+.afsh_close_help{
+	width: 16px;
+	height: 16px;
+	float: right;
+	cursor: pointer;
+}
+
+#dfp_pushdown_unit_970x90,
+.dfp_pushdown_unit_970x90 {
+	text-align:center; 
+	margin: 0 0 16px 0;
+}
+#dfp_billboard_970x250,
+.dfp_billboard_970x250 {
+	text-align:center; 
+	margin: 32px 0px;
+}
+#dfp_leaderboard_728x90, .dfp_leaderboard_728x90 {
+	text-align:left; 
+	margin: 16px 0px;
+}
+.order_confirm #dfp_leaderboard_728x90 {
+	text-align:center; 
+	margin: 16px 0px;
+}
+#dfp_leaderboard_728x90_top,
+.dfp_leaderboard_728x90_top {
+	text-align:center; 
+	margin: 16px 0px;
+}
+#dfp_leaderboard_728x90_bottom,
+.dfp_leaderboard_728x90_bottom {
+	text-align:center; 
+	margin: 32px 0px;
+}
+#dfp_wide_skyscraper_160x600,
+.dfp_wide_skyscraper_160x600 {
+	margin: 24px 0px;
+	clear: both;
+}
+.pdp_ad #dfp_wide_skyscraper_160x600 {
+	margin: 60px 0px 24px 0px;
+	float: right;
+}
+#dfp_medium_rectangle_300x250,
+.dfp_medium_rectangle_300x250 {
+	text-align: center;
+	float: right;
+	margin-top: 15px;
+}
+.order_summary_wrapper #dfp_medium_rectangle_300x250 {
+	float: none;
+}
+#rr_result_list_page_pdp_ad_container {
+	clear:both;
+}
+#rr_no_search_result_page_pdp_ad_container #dfp_leaderboard_728x90,
+#rr_product_left_detail_page_pdp_ad_container #dfp_leaderboard_728x90,
+#rr_collection_a_content_page_pdp_ad_container #dfp_leaderboard_728x90{
+    margin: 16px 0px 32px 0px;
+}
+/*<start>MONETIZ-210;MONETIZ-212;MONETIZ-213;MONETIZ-214;MONETIZ-215*/
+#rr_result_list_page_pdp_ad_container .gglad_block_adcontainer1{             /*PMP*/
+    width:424px;
+    margin:32px 0px;
+    float:left;
+}
+#rr_result_list_page_pdp_ad_container #dfp_medium_rectangle_300x250,
+#rr_result_list_page_pdp_ad_container .dfp_medium_rectangle_300x250 {        /*PMP*/
+	margin:32px 0;
+}
+#rr_collection_a_content_page_pdp_ad_container #dfp_medium_rectangle_300x250 {	/*Collection*/
+    margin:12px 0px 32px 0;
+}
+#rr_collection_a_content_page_pdp_ad_container .gglad_block_adcontainer1 {  /*Collection*/
+    width:464px;
+    margin:12px 0px 32px;
+    float:left;
+}
+#rr_product_left_detail_page_pdp_ad_container #dfp_medium_rectangle_300x250 {    /*PDP*/
+    margin:12px 0px 32px;
+}    
+#rr_product_left_detail_page_pdp_ad_container .gglad_block_adcontainer1 {  /*PDP*/
+    width:464px;
+    margin:12px 0px 32px;
+    float:left;
+}
+#rr_no_search_result_page_pdp_ad_container .gglad_block_adcontainer1{	/*Zero Search*/
+    margin:16px 0px 32px 0px;
+}
+/* <start> MONETIZ-215 */
+.frame_no_results .searchframe .lft_cntnt{
+	float:left;
+	Width:400px
+}
+.frame_no_results  .lft_cntnt .new-search{
+	margin:25px 0px 0px;
+}
+.frame_no_results  .lft_cntnt .fleft_tbl{
+	width:100%;
+}
+.frame_no_results .searchframe{
+	width:100%;
+}
+.frame_no_results .relatedframe{
+	margin-top: 115px;
+}
+.frame_no_results #dfp_medium_rectangle_300x250{
+	margin-top: 51px;
+}
+.frame_no_results .rr_no_search_result_page_horizontal_ads {
+	margin:0 !important;
+	padding-top:15px;
+}
+.frame_no_results .searchframe #big_data_recs.no-results{
+	width:795px;
+}
+.hor_separator {
+	border-top:1px solid #ccc;
+	margin-top:32px;
+	display:none;
+}
+/* <End> MONETIZ-215 */
+/*<end>MONETIZ-210;MONETIZ-212;MONETIZ-213;MONETIZ-214;MONETIZ-215*/
+/* fix for MONETIZ-298 */
+.pdp_c_content .pdp_ad{
+	float:right;
+}
+/* CSS added for AFSH */
+.gglad_block_afshcontainer.ggl_sponsered_links{
+    margin: 15px 0 32px;
+    width: 760px;
+    border-bottom: 1px solid #F0EFED;
+    position: relative;
+}
+#pmp_search_dfsh_container .gglad_block_afshcontainer.ggl_sponsered_links{
+    width: 760px;
+}
+.gglad_block_afshcontainer .ggl_greybg {
+    padding:0 15px;
+    height:41px;
+    line-height:41px;
+    margin: 0;
+}
+.gglad_block_afshcontainer.ggl_sponsered_links .ggl_helplink_container{
+    position: absolute;
+    top: 14px;
+    right: 15px;
+}
+.gglad_block_afshcontainer #afshcontainer{
+	 margin: 0;
+}
+#pmp_search_dfsh_container .gglad_block_afshcontainer.ggl_sponsered_links {
+	margin: 17px 0 0;
+}
+.pdp_c_content .gglad_block_afshcontainer.ggl_sponsered_links {
+	width: 798px;
+	float:left;
+	margin: 15px 0 20px;
+}
+#rr_product_left_detail_page_pdp_ad_container .gglad_block_afshcontainer.ggl_sponsered_links #afshcontainer {
+    margin: 0 20px;
+}
+.pdp_c_content #rr_recommendation1 {
+	float:left;
+}
+/* CSS added for AFSH ends here*/
+.pdp_c_content #rr_recommendation1 {
+	float:left;
+}
+/* CSS added for AFSH ends here*/
+.gglad_block_adcontainer1.ggl_sponsered_links {
+	width:758px;
+}
+/*code changes for Monetization-320*/
+#monetizationElements {
+	width:798px;
+	margin:0 auto;
+}
+#monetizationElements .gglad_block_adcontainer1.ggl_sponsered_links {
+	margin-top:17px !important;
+}
+#monetizationElements #dfp_medium_rectangle_300x250 {
+	margin-top:0;
+}
+/*end*/
+/*Changes done for Monetiz-403*/
+.gglad_block_adcontainer1 #adcontainer1 {
+	width:760px;
+}
+#pmp_search_dfsh_container .gglad_block_adcontainer1 #adcontainer1 {
+	width:424px;
+}
+/*end*/
+/* fix for ATG-7835 - Starts  */
+.collection-bottomContent .pdp_ad{
+	float:right;
+}
+.collection-bottomContent .gglad_block_afshcontainer.ggl_sponsered_links {
+	width: 798px;
+	float:left;
+	margin: 15px 0 20px;
+}
+.collection-bottomContent .gglad_block_afshcontainer.ggl_sponsered_links #afshcontainer {
+    margin: 0 20px;
+}
+.collection-bottomContent #rr_recommendation1, .collection-bottomContent #rr_collection_a_content_page_pdp_ad_container {
+	float:left;
+}
+.collection-bottomContent .pdp_ad #dfp_wide_skyscraper_160x600 {
+	margin-top:0;
+}
+/* fix for ATG-7835 - Ends */
+.pmpSearch_rightPanel #rr_horizontal_product_recommendations_div_id{
+	margin-top:40px !important;
+}
+
+/*fix for ATG-9045*/
+.collection_main_container #google_dfp_collection #dfp_leaderboard_728x90 {
+     text-align:center;
+}
+
+.pdp_c_content #dfp_leaderboard_728x90 {
+	 text-align : center;
+}
+/*end*/
+
+/**********Start ATG-9100**********/
+.pmpSearch_container #br-related-searches-widget div, .pmpSearch_container #br-related-products-widget div, .pmpSearch_container .br-related-query a  {
+	font-family:Arial, Helvetica,sans-serif;
+	color : #626262;	
+}
+.pmpSearch_container .br-sf-widget-merchant-title a{
+	font-family:Arial, Helvetica,sans-serif;
+	font-weight:bold;
+	color : #626262;
+}
+.BR_Rel_Both .br-sf-widget-merchant-qv a{
+	color:#4791C5 !important;
+}
+/***********End ATG-9100**********/
+
+.ggl_tooltip_content_afsh .ggl_help_content{
+    padding: 5px !important; 
+    margin-top: 2px !important;
+}
+
+/**********Start MONETIZ-576 *********/
+body .pmpSearch_rightPanel #rr_horizontal_product_recommendations_div_id.rr_search_page_horizontal_ads{ 
+    margin-top: 0px !important;
+}
+/**********End  MONETIZ-576 **********/
+/* PDP Rebuild Styling */
+.pdp-BV-tabs-ads #dfp_leaderboard_728x90,.pdp-dfp-verticalAd #dfp_wide_skyscraper_160x600 {
+	margin:0px;
+}
+.pdp-afsh-container .gglad_block_afshcontainer.ggl_sponsered_links{
+    margin: 30px 0px;
+}
+.pdp-afs-container .gglad_block_adcontainer1 {
+    width:464px;
+}

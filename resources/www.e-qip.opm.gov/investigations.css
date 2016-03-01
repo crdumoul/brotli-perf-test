@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* News styles */
+
+.spotlight_container h1 span {
+	color: #d5ba03;
+}
+
+h1 {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 1.0em 0px;
+	font-family: 'Droid Serif', Georgia, "Times New Roman", Times, serif;
+	font-size: 3.0em;
+	font-weight: normal;
+	color: #d5ba03;
+}

@@ -1,0 +1,2942 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+	
+	
+		
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var SubPortfolioWithSessionID="CBOL:160301143935298918164454";
+ function getData2()
+ {
+  return SubPortfolioWithSessionID;
+ }
+
+</script>
+
+
+<script type="text/javascript"> 
+var HOST="steps.citi.com";
+var PATH_FOLDERNAME="us";
+var PAGE_NAME="navigation";
+</script>
+<script type="text/javascript" src="/JFP/amw/amw.js"></script>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+
+	
+	
+	
+		
+    	
+
+
+
+
+
+
+<script>
+function getParentLocation(){
+return document.referrer;
+}
+function isSelfLoc(src){
+var result = false;
+if(src.substring(0, 7) == "http://" || src.substring(0, 8) == "https://") {
+var token = "://";
+var index = src.indexOf(token);
+var part = src.substring(index + token.length);
+var domain = "";
+for(var i=0; i<part.length; i++) {
+var character = part.charAt(i);
+if(character == '/' || character == ':' || character == '#') {
+break;
+}
+else {
+domain += character;
+}
+}
+if(document.domain == domain){
+result=true;
+}
+}
+return result;
+}
+function isXFSWhiteListed(parentLoc){
+try {
+var result=false;
+var XFSWhitelist="";
+if(XFSWhitelist.toLowerCase() == "null" || XFSWhitelist == "" || XFSWhitelist.length==0 ){
+return false;
+}
+if(parentLoc.toLowerCase() == "null" || parentLoc== "" || parentLoc.length==0 ){
+return false;
+}
+if(isSelfLoc(parentLoc)){
+return true;
+}
+var allowedLocations=XFSWhitelist.split("||");
+var allowedDomains = allowedLocations[0].split(" ");
+var isDomainAllowed = false;
+for (index = 0; index < allowedDomains.length; index++) {
+var token = "://";
+var pos = parentLoc.indexOf(token);
+var prefix=parentLoc.substring(0,pos+token.length);
+var part = parentLoc.substring(pos + token.length);
+var parentDomain = "";
+for(var i=0; i<part.length; i++) {
+var character = part.charAt(i);
+if(character == '/' || character == '#') {
+break;
+} else {
+parentDomain += character;
+}
+}
+parentDomain=prefix+parentDomain;
+if (parentDomain== (allowedDomains[index])) {
+isDomainAllowed = true;
+break;
+}
+}
+if (isDomainAllowed){
+if(allowedLocations[1] == "*"){
+result=true;
+}
+else {
+var allowedPages = allowedLocations[1].split("^");
+for (index = 0; index < allowedPages.length; ++index) {
+if(parentLoc.contains(allowedPages[index]) ) {
+result = true;
+}
+}
+}
+}
+return result;
+}
+catch (err) {
+return false;
+}
+}
+</script>
+
+<noscript>
+
+
+
+<STYLE TYPE='text/css'>
+body {display:none;visibility:hidden;}
+</STYLE>
+
+
+
+</noscript>
+
+<style>
+html {  display:none;visibility:hidden; }
+</style>
+<script>
+var parentLocation = getParentLocation();
+var XFSWhitelisted= isXFSWhiteListed(parentLocation);
+if(  self == top || XFSWhitelisted ){
+
+document.documentElement.style.display ='block';
+document.documentElement.style.visibility='visible';
+
+}else{
+top.location = self.location;
+}
+</script>
+
+
+
+<script type='text/javascript'>
+
+var domainName='online.citi.com';
+
+
+var JFP_CSRF_TOKEN = '4FBRT39O';
+
+if (OBJ_JFP_CSRF_TOKEN == undefined) {
+	var OBJ_JFP_CSRF_TOKEN = {};
+}
+OBJ_JFP_CSRF_TOKEN.onlineDOTcitiDOTcom = '4FBRT39O';
+
+var isCSRFAutomationEnabled = true;
+
+</script>
+
+<script>
+    // Feature - 2942 - CSRFToken Implementation From JSE
+
+	var jfp_token_ambersand = "&JFP_TOKEN="+JFP_CSRF_TOKEN;
+	var jfp_token_question = "?JFP_TOKEN="+JFP_CSRF_TOKEN;
+	
+</script>
+<script>
+	var pageName = '';
+	//Global Avatar 1.0 Regional Integration changes for cross links - STARTS
+	var isCinlessUser = "N"; 
+	//Global Avatar 1.0 Regional Integration changes for cross links - ENDS
+	
+	
+	var pageDef="jUSCBOL_Welcome";
+	function $R(n,f){f()};
+	
+	function launchSendMsgPopup() 
+	{ 
+		launchPopup(
+					'/US/jba/mc/InitializeSubApp.do?TTC=268&type=1'+'&JFP_TOKEN='+ JFP_CSRF_TOKEN,
+					'sendMsgWindow',
+					'toolbar=yes,status=yes,scrollbars=yes,location=no,menubar=no,directories=no,resizable=yes,width=478,height=555,screenX=10,screenY=10,left=10,top=10');
+	}
+		
+	
+	var _server="jfp/prap44-srv3/jfp";
+	var _site="JFP";
+	var _jfp=true;
+	var _j="https://online.citi.com";
+	var _jcontext="/US";
+	var _d="https://web.da-us.citibank.com";
+	var _a="citifi";
+	var _c="https://www.citibank.com";
+	var _pgi="citi.bridgetrack.com";
+	var _pid="USCBOL_Welcome";
+	var _u="visitor";
+	var _f="NO";
+	var _sid="";
+	var _ssid="";
+	var _pn="Banking, Credit Cards, Lending & Investing - Citibank®";
+	var mobile = false;
+	var deviceType = "0";
+	var _locale = "en_US_USPTL";
+	var _tyWinID = "winJpKqhddhy_Dp434Bm0Hm0LL";
+	var _byg = "false"; 
+	var _regionspecific = "F";
+	var _regionspecificAttr = "null";
+	var _rsid="null";
+	var isRainbowOffersFallback=false;
+	var isNPSMakePymtInFallback=false;
+	var BTlink="View Offer";
+	var OfferPageContent = "jJRSLINKACCTS_LinkCardStatus|jJRSLINKACCTS_LinkStatus|jJRSMENU_Payments|jJRSMENU_Transfers|jUSCBOL_SpecialOffers|jJRSMENU_PaymentsCardsOnly|jJRSMENU_BenefitsAndServices|jJRSMENU_MyProfile|jJRSOCDT_OCDTConfirmation|jJRSOCDT_OCDTOrderDepositTicketsConfirmation";
+	var OfferPageCode = "jjba_ada_125|jjba_exp_700 |j46_700 |j23_700 |j23_257|jjba_exp_110|j46_257|jjba_tfr_common_100|jJPSINFRA_Home|jJRSPLESS_PSOptin|j7_700|jJPSINFRA_MyCitiHome|jJRSWORKAREA_AccountSummary|jJRSOCDT_OCDTInitial|jJRSOCDT_OCDTConfirmation|jJRSOCDT_OCDTOrderDepositTicketsConfirmation";
+	var pageDef_MBAR = "";
+	var contextPath = '/US';
+</script>
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript"> 
+var initialPageDef = '';
+var isSPFMigrated = "N";
+var dtacssPh4FallbackVal = "false";
+</script>
+
+<script type="text/javascript" src="/CBOL/portal/layout/js/jquery-combined.min.js"></script>
+<script type="text/javascript" src="/JFP/js/widgets/jfp.branding.js"></script>
+<script type="text/javascript" src="/JPS/portal/js/cssPref.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script type='text/javascript' src='/JFP/js/widgets/jfp.widgets.js'></script>
+	
+		<script type='text/javascript' src='/JPS/portal/js/SitecatCampaigns.js'></script>
+	
+	<script type='text/javascript' src='/GFC/common/js/citi_Common.js'></script>
+	
+
+
+
+
+
+	<script type="text/javascript" language="JavaScript" src="/JPS/portal/js/JFPNav.js"></script>
+	
+		<script language="JavaScript" src="/JFP/js/jquery/plugins/jquery.autocomplete.js"></script>
+	
+	
+	<head>
+			
+			
+			
+				<meta name="keywords" content="banking, citi, financial services, checking account, savings account, credit cards">
+			
+			
+				<meta name="description" content="Discover financial services tailored to your life from Citibank&#xae;. Learn more about our full range of banking products, including checking, savings, credit cards, and loans.">
+			
+			 
+			
+				
+		
+			<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+					
+							
+			
+				<link rel="stylesheet" href="/JFP/css/common/JPPTemp.css" type="text/css" />
+									
+				
+			<link rel="stylesheet" href="/JRS/css/US-Regional.css" type="text/css" />
+			
+
+
+
+
+
+
+<link type='text/css' href='/GFC/branding/css/branding_main.css' rel='stylesheet' />
+<script type='text/javascript' src='//nexus.ensighten.com/citi/na_prod/Bootstrap.js'></script>
+
+
+
+
+
+			
+
+
+
+<script>
+function getParentLocation(){
+return document.referrer;
+}
+function isSelfLoc(src){
+var result = false;
+if(src.substring(0, 7) == "http://" || src.substring(0, 8) == "https://") {
+var token = "://";
+var index = src.indexOf(token);
+var part = src.substring(index + token.length);
+var domain = "";
+for(var i=0; i<part.length; i++) {
+var character = part.charAt(i);
+if(character == '/' || character == ':' || character == '#') {
+break;
+}
+else {
+domain += character;
+}
+}
+if(document.domain == domain){
+result=true;
+}
+}
+return result;
+}
+function isXFSWhiteListed(parentLoc){
+try {
+var result=false;
+var XFSWhitelist="";
+if(XFSWhitelist.toLowerCase() == "null" || XFSWhitelist == "" || XFSWhitelist.length==0 ){
+return false;
+}
+if(parentLoc.toLowerCase() == "null" || parentLoc== "" || parentLoc.length==0 ){
+return false;
+}
+if(isSelfLoc(parentLoc)){
+return true;
+}
+var allowedLocations=XFSWhitelist.split("||");
+var allowedDomains = allowedLocations[0].split(" ");
+var isDomainAllowed = false;
+for (index = 0; index < allowedDomains.length; index++) {
+var token = "://";
+var pos = parentLoc.indexOf(token);
+var prefix=parentLoc.substring(0,pos+token.length);
+var part = parentLoc.substring(pos + token.length);
+var parentDomain = "";
+for(var i=0; i<part.length; i++) {
+var character = part.charAt(i);
+if(character == '/' || character == '#') {
+break;
+} else {
+parentDomain += character;
+}
+}
+parentDomain=prefix+parentDomain;
+if (parentDomain== (allowedDomains[index])) {
+isDomainAllowed = true;
+break;
+}
+}
+if (isDomainAllowed){
+if(allowedLocations[1] == "*"){
+result=true;
+}
+else {
+var allowedPages = allowedLocations[1].split("^");
+for (index = 0; index < allowedPages.length; ++index) {
+if(parentLoc.contains(allowedPages[index]) ) {
+result = true;
+}
+}
+}
+}
+return result;
+}
+catch (err) {
+return false;
+}
+}
+</script>
+
+<style>
+html {display:none;visibility:hidden; }
+</style>
+<script>
+try {
+var parentLocation = getParentLocation();
+var XFSWhitelisted= isXFSWhiteListed(parentLocation);
+var topDM = top.document.domain;
+if(topDM == document.domain || XFSWhitelisted ){
+document.documentElement.style.display ='block';
+document.documentElement.style.visibility='visible';
+}else{
+top.location = self.location;
+}
+}
+catch (e) {
+top.location = self.location;
+}
+</script>
+
+
+
+<script type='text/javascript'>
+
+var domainName='online.citi.com';
+
+
+var JFP_CSRF_TOKEN = '4FBRT39O';
+
+if (OBJ_JFP_CSRF_TOKEN == undefined) {
+	var OBJ_JFP_CSRF_TOKEN = {};
+}
+OBJ_JFP_CSRF_TOKEN.onlineDOTcitiDOTcom = '4FBRT39O';
+
+var isCSRFAutomationEnabled = true;
+
+</script>
+
+			
+<script language="JavaScript">
+function setCookie (name,value,expires,path,domain,secure) {
+document.cookie = name + "=" + value + ((expires) ? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+function getCookie(name)
+{
+var c=""+document.cookie;
+var index = c.indexOf(name + "=");
+if (index == -1) return null;
+var endstr = c.indexOf(";", index);
+if (endstr == -1) endstr = c.length;
+return unescape(c.substring(index+name.length+1, endstr));
+}
+function areCookiesEnabled() {
+var r = false;
+var theDate = new Date();
+var expiryDate = new Date(theDate.getTime() + 900000);
+setCookie("testcookie", "testcookie", expiryDate, "/", null, true);
+if (getCookie("testcookie") != null) {
+r = true;
+var today = new Date();
+today.setYear(1970);
+setCookie("testcookie", "", today, "/", null, true);
+}
+return r;
+}
+
+
+
+
+if (window.location.href.indexOf("file:/") <0)
+if(!areCookiesEnabled()){
+var GetHTMLURL = "/JPS/portal/GetHTMLContent.do?path=/staticfiles/english/CookieHelp.html&JFP_TOKEN=4FBRT39O";
+if (GetHTMLURL.indexOf("JFP_TOKEN") > 0){
+GetHTMLURL = GetHTMLURL.split('JFP_TOKEN')[0];
+}
+var GetCookieURL = "/US/JPS/portal/NoCookie.do?JFP_TOKEN=4FBRT39O";
+if (GetCookieURL.indexOf("JFP_TOKEN") > 0){
+GetCookieURL = GetCookieURL.split('JFP_TOKEN')[0];
+}
+if((window.location.href.indexOf(GetHTMLURL ) == -1  ) && (window.location.href.indexOf(GetCookieURL ) == -1 )){
+window.location.href="/US/JPS/portal/NoCookie.do?JFP_TOKEN=4FBRT39O";
+}
+}
+
+
+
+function gC(n){var c=""+document.cookie,i1=c.indexOf(n+"=");if(i1==-1)return null;var e1=c.indexOf(";", i1);if (e1==-1) e1=c.length;return unescape(c.substring(i1+n.length+1, e1));}
+if(window.location.protocol.indexOf("https")!=-1)document.cookie="JSESSIONID="+gC("JSESSIONID")+"; path=/; secure";
+var logoffOnLeaving = true;
+var callJBAOnload = false;
+var applicationID="USCBOL";
+var screenID="Welcome";
+var transactionTypeCode="";
+var helpVariant="";
+var callJSOOnload = false;
+var callJBAOnunload = false;
+var callJSOOnunload = false;
+var callJPSOnload = false;
+function goHome()
+{
+if (startOverUrl != null && startOverUrl != ""){
+if(startOverUrl.indexOf("JFP_TOKEN") > 0)
+{
+window.top.location.href=startOverUrl;
+}
+else
+{
+if (startOverUrl.indexOf("?") > 0) {
+startOverUrl = startOverUrl+ "&JFP_TOKEN="+JFP_CSRF_TOKEN;
+} else {
+startOverUrl = startOverUrl+ "?JFP_TOKEN="+JFP_CSRF_TOKEN;
+}
+window.top.location.href=startOverUrl;
+}
+}
+else
+window.top.location.href="/US/JPS/portal/Home.do?JFP_TOKEN=4FBRT39O";
+}
+function logOff()
+{
+window.top.location.href="/US/JSO/signoff/Signoff.do?JFP_TOKEN=4FBRT39O";
+}
+function processUnload()
+{
+if (callJBAOnunload)
+JBAOnunload();
+if(callJSOOnunload)
+JSOOnunload();
+}
+
+
+function getHelpURL()
+{
+return "/US/JPS/nav/Help.do?JFP_TOKEN=4FBRT39O";
+}
+var ssChildLoaded = false;
+var SS_NUM_OF_LOOP = 30;
+if(typeof SS_NUM_OF_LOOP == 'undefined')
+{
+SS_NUM_OF_LOOP = 30;
+}
+var ssLoopCount = 1;
+var ssTimeoutID;
+var ssWinHandle;
+var ssURL = "/US/JPS/nav/SummaryRecord.do?JFP_TOKEN=4FBRT39O";
+function signoffPortal()
+{
+ssWinHandle = top.window.open(ssURL,"","height=650,width=600,toolbar=no,menubar=yes,resizable=yes,scrollbars=yes,location=no,status=yes");
+ssLogOff();
+}
+function ssLogOff()
+{
+if(ssChildLoaded || (ssLoopCount > SS_NUM_OF_LOOP))
+{
+top.window.location.href="/US/JSO/signoff/Signoff.do?JFP_TOKEN=4FBRT39O";
+}
+else
+{
+if(ssWinHandle && !ssWinHandle.closed)
+ssTimeoutID = window.setTimeout('isSSChildLoaded();', 1000);
+else
+top.window.location.href="/US/JSO/signoff/Signoff.do?JFP_TOKEN=4FBRT39O";
+}
+}
+function isSSChildLoaded()
+{
+if((!ssWinHandle.closed) && (ssWinHandle.summaryRecord ? true : false)){
+ssChildLoaded = true;
+clearTimeout(ssTimeoutID);
+}else if( ssLoopCount > SS_NUM_OF_LOOP ){
+ssChildLoaded = false;
+clearTimeout(ssTimeoutID);
+}
+ssLoopCount++;
+ssLogOff();
+}
+</script>
+
+
+
+
+
+			
+			
+			
+
+
+
+<script language=javascript>
+
+
+L=1;
+
+L1='liHomeHeader';
+if (L1=='null')
+  L1='ruleLiHomeHeader';
+
+
+
+
+
+
+
+
+var startOverUrl="/US/JPS/portal/Index.do?JFP_TOKEN=4FBRT39O";
+
+</script>
+
+			
+			<title>
+				
+
+
+
+
+
+
+
+
+Banking, Credit Cards, Lending &#x26; Investing - Citibank&#xae;
+-  Citibank 
+
+
+
+
+
+			</title>
+			
+
+
+
+
+			
+										
+				
+			
+			
+			  
+			  
+				    <script>
+var isResponsive = false; 
+</script>
+
+			  
+			
+			<script type='text/javascript'>
+
+if (window.addEventListener)
+window.addEventListener("load", function()
+{doOnload();}, false)
+else if (window.attachEvent)
+window.attachEvent("onload", function()
+{doOnload();})
+
+</script>
+		</head>
+		
+		
+		<body id="aUSCBOL_t_sWelcome" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" > 
+        	<noscript>
+			<meta http-equiv="refresh" runat="server" id="mtaJSCheck" content="0; URL=https://online.citi.com/noscript.html" />
+			</noscript>	
+        	
+        	
+				<script type="text/javascript" src="/JRS/js/mbox.js"></script>
+<div class="mboxDefault">
+</div>
+<script type="text/javascript">
+var hasMbox='Y';
+mboxCreate('C_HP');
+</script>				
+			
+        	
+			
+			
+            <div class="cR-citiWrapper"><div class="cR-citiFloatContainer">
+	            
+				
+
+
+
+
+
+
+<a href="#maincontent" class="hiddenSkipNav">Skip to main content</a>
+<!-- MainBrandingHeader_USCBOL -->
+<div role="presentation" id="citilmHeader" tabindex="-1" class="
+
+     public 
+
+    prelog 
+
+
+br_
+">
+
+<!-- UTILITY NAVIGATION -->
+<div id="nav_utility" class="citiBrandingNav" role="navigation" tabindex="-1">
+    <!-- BrandingUtilityNavigation -->
+<ul id="nav_home" role="menu" tabindex="-1">
+
+  <li role="menuitem" tabindex="-1" class="vip_link">
+   <a tabindex="0" role="presentation" onClick="this.href=getFinalURL(this.href);lnk(this.href);return false;" href="/US/JSO/signon/VIPLocaleUsernameSignon.do?locale=en_US_VIP" title="Click here if you are using screen reading software for the visually impaired.">Click here if you are using screen reading software for the visually impaired</a>
+  </li>
+ 
+  <li role="menuitem" tabindex="-1" class="home_link">
+   <a role="presentation" title="Welcome to Citi.com" onClick="this.href=getFinalURL(this.href);lnk(this.href);return false;" href="/US/Welcome.c">Citi.com</a>
+  </li>
+ 
+  <li role="presentation" tabindex="-1">|</li>
+  <li role="menuitem" tabindex="-1" class="home_link">
+   
+     <a role="presentation"  onClick="this.href=getFinalURL(this.href);lnk(this.href);return false;" href="/US/JSO/signon/LocaleUsernameSignon.do?locale=es_US">Espa&ntilde;ol</a>
+    
+  </li>
+ 
+</ul>
+<ul role="menu" tabindex="-1">   
+ <li role="menuitem" tabindex="-1"><a role="presentation" onClick="this.href=getFinalURL(this.href);lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=AOProductSelection">Open an Account</a></li>
+
+        <li id="ratesTool" role="presentation" tabindex="-1">
+            <!-- BrandingRatesFlyout_USCBOL -->
+<a role="menuitem" aria-haspopup="true" class="flyoutBtn" href="javascript:void(0);"><span class="cM-whiteCaratArrowDown cM-whiteCaratArrowDown-topNav" tabindex="-1"></span> Rates </a>
+<div id="ratesFlyout" tabindex="-1" role="navigation" >
+  <ul role="menubar">
+    <li class="first" role="presentation" tabindex="0"> 
+    	<a tabindex="0" role="menuitem" onClick="this.href=getFinalURL(this.href);lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CurrentRates"> Personal Banking</a></li>
+    <li role="presentation" tabindex="-1">
+      <div role="presentation" class="flyoutSeparator" tabindex="-1"></div>
+      <a role="menuitem"  href="https://www.citi.com/credit-cards/compare-credit-cards/detail.do?ID=view-all-credit-cards"> Credit Cards </a></li>
+    <li role="presentation" tabindex="-1">
+      <div role="presentation" class="flyoutSeparator" tabindex="-1"></div>
+      <a role="menuitem" onClick="this.href=getFinalURL(this.href);lnk(this.href);return false;" href="/US/JRS/portal/template.do?ID=mortgage_home_mortgage">Mortgages&nbsp;</a></li>
+    <li role="presentation" tabindex="-1">
+      <div role="presentation" class="flyoutSeparator" tabindex="-1"></div>
+      <a role="menuitem"  onClick="this.href=getFinalURL(this.href);lnk(this.href);return false;" href="/US/JRS/portal/template.do?ID=mortgage_home_equity_rates">Home Equity</a></li>
+    <li class="last" role="presentation" tabindex="-1">
+      <div role="presentation" class="flyoutSeparator" tabindex="-1"></div>
+      <a role="menuitem" onClick="this.href=getFinalURL(this.href);lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=PersonalLinesRates"> Lending </a></li>
+  </ul>
+</div>
+        </li>
+    
+    
+    <li role="presentation" tabindex="-1">|</li>
+ <li id="finderTool" role="menuitem" tabindex="-1">
+	<a onclick="locatorSubmitForm()" href="https://online.citi.com/US/GCL/citilocator/flow.action" class="flyoutBtn" role="presentation"  tabindex="0" title="Click to view 'Locations' tool">Locations</a>
+<script>
+function locatorSubmitForm(){
+var findMyCitiURL="/US/GCL/citilocator/flow.action";
+var FindCitiCountryList="AUS^www.findmyciti.com/au|BHR^www.findmyciti.com/bh|CHN^www.findmyciti.com/cn|CZE^www.findmyciti.com/cz/index-en-cz.jsp|GRC^www.findmyciti.com/gr/index-gr-en.jsp|HKG^www.findmyciti.com/hk|HUN^www.findmyciti.com/hu/index-en-hu.jsp|IND^www.findmyciti.com/id|JPN^www.findmyciti.com/jp/index.jsp|KOR^www.findmyciti.com/kr|MYS^www.findmyciti.com/my|PHL^www.findmyciti.com/ph|ROM^www.findmyciti.com/ro|RUS^www.findmyciti.com/ru/index-en-ru.jsp|SGP^www.findmyciti.com/sg|TWN^www.findmyciti.com/tw|THA^www.findmyciti.com/th|TUR^www.findmyciti.com/tr/index.jsp|GBR^www.findmyciti.com/uk/|ARE^www.findmyciti.com/ae|VNM^www.findmyciti.com/vn";
+var FindCitiCountryListObject = FindCitiCountryList.split("|");
+var countryValueFromContent = document.getElementById("countryFlyOut").options[document.getElementById("countryFlyOut").selectedIndex].value;
+var isFindMyCitiFlag = "false";
+for(var index=0;index<FindCitiCountryListObject.length;index++)
+{
+var countryURLPair=FindCitiCountryListObject[index].split('^');
+if(countryValueFromContent == countryURLPair[0])
+{
+isFindMyCitiFlag="true";
+findMyCitiURL =countryURLPair[1];
+}
+}
+
+if(isFindMyCitiFlag=="true"){
+findMyCitiURL = "http://" + findMyCitiURL;
+window.open (findMyCitiURL ,"mywindow");
+}
+else{
+document.forms['find-form'].submit();
+}
+}
+</script>
+	</li>
+
+	
+		<li id="contactTool" role="menuitem" tabindex="-1"><!-- BrandingContactFlyout_USCBOL -->
+
+  
+ <a role="presentation" tabindex="0" class="flyoutBtn" href="javascript:void(0);" title="This link will open a new tab or window."><span class="cM-whiteCaratArrowDown cM-whiteCaratArrowDown-topNav"> </span>Contact Us</a>
+<div role="navigation" id="contactFlyout">
+     <ul role="menu" tabindex="-1" >            
+         <li role="menuitem" tabindex="-1" id="SendAMessage" aria-haspopup="true" class="message  hidden ">
+             <a role="presentation"  tabindex="0" href="https://online.citi.com/US/jba/mc/InitializeSubApp.do?TTC=268">Send us a Message
+                 </a>
+         </li>            
+         
+         <li role="menuitem" tabindex="-1" class="contact">
+			
+             <a  role="presentation" tabindex="0" onClick="this.href=getFinalURL(this.href);lnk(this.href);return false;" href="/US/JRS/portal/contactus.do?ID=ContactUsBanking">Contact Us<div>Call, write or tweet us. <strong></strong></div></a>
+			<br></br>
+            
+         </li>          
+     </ul>
+</div>
+<script>
+         function toggleSecureMessageInFlyOut(){
+         if($('#lpButtonNeedHelp').children('a').length > 0){
+             $('#SendAMessage').hide();
+         }else {
+             $('#SendAMessage').show();
+             console.log('sho');
+         }
+     }
+</script>
+		</li>
+	
+
+ <li role="menuitem" tabindex="-1"><a role="presentation" onClick="this.href=getFinalURL(this.href);lnk(this.href);return false;" href="/US/JRS/helpcenter/main.do">Help</a></li>
+ <li role="search" tabindex="-1" class="searchTool">
+  <div id="searchWrapper" class="searchWrapper">
+<span class='cM-searchIcon'></span>
+</div> 
+<input role="button" type="button" onclick="javascript:gsearch();scEvent()" title="Click Here to Search " class="searchBtn" value="| GO" tabindex="0">
+ </li>
+    
+ <li role="menuitem" tabindex="-1"><a role="presentation" onClick="this.href=getFinalURL(this.href);lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=SecurityCenter">Security</a></li>
+</ul>
+</div>
+
+<!-- LOGO -->
+
+<a role="banner" href="javascript:lnk('/Welcome.c')" id="headerLogoLink">
+    <img alt="CITI logo" tabindex="-1" src="https://online.citi.com&#x2f;GFC&#x2f;branding&#x2f;img&#x2f;citilogo_branding_60x35.png"/>
+</a>
+<div id="headerLogoLinkIE"></div>
+<!-- MAIN NAVIGATION -->
+<div id="nav_main" class="citiBrandingNav" role="navigation" tabindex="-1">
+    
+        <!-- MARKETING NAVIGATION -->
+        <ul class="jfpw-menu sf-js-enabled mm_target testx" role="menubar" tabindex="-1" navbar="true" id="nav_marketing">
+  <li role="menuitem" tabindex="-1"  class="submenu" aria-haspopup="true" aria-owns="mm_banking" > 
+  	<a href="#" role="presentation" tabindex="0" id="banking" MM_once="adServe('', 1674636, 'mm_banking_offer');">Banking
+    </a></li>
+  <li role="menuitem" class="submenu" aria-haspopup="true" tabindex="-1" aria-owns="mm_creditcards" > 
+  	<a href="#" role="presentation" tabindex="0" id="creditcards" MM_once="adServe('', 1674638, 'mm_creditcards_offer');">Credit Cards
+    </a></li>
+  <li role="menuitem" class="submenu" aria-haspopup="true" tabindex="-1" aria-owns="mm_lending"> 
+  	<a href="#" role="presentation" tabindex="0" id="lending" MM_once="adServe('', 1674642, 'mm_lending_offer');">Lending
+    </a></li>
+  <li role="menuitem" class="submenu" aria-haspopup="true" tabindex="-1" aria-owns="mm_investing"> 
+  	<a href="#" role="presentation" tabindex="0" id="investing" MM_once="adServe('', 1674644, 'mm_investing_offer');">Investing
+    </a></li>
+  <li role="menuitem" class="submenu" aria-haspopup="true" tabindex="-1" aria-owns="mm_business"> 
+  	<a href="#" role="presentation" tabindex="0" id="business" MM_once="adServe('', 1674647, 'mm_business_offer');">Business
+    </a></li>
+  <li role="menuitem" class="submenu" aria-haspopup="true" tabindex="-1" aria-owns="mm_rewards"> 
+  	<a href="#" role="presentation" tabindex="0" id="rewards" MM_once="adServe('', 1674650, 'mm_rewards_offer');">Rewards & Offers
+    </a></li>
+  <li role="menuitem" class="submenu" aria-haspopup="true" tabindex="-1" aria-owns="mm_services"> 
+  	<a href="#" role="presentation" tabindex="0" id="services" MM_once="adServe('', 1674651, 'mm_services_offer');">Services
+    </a></li>
+  <li role="menuitem" class="submenu" aria-haspopup="true" tabindex="-1" aria-owns="mm_citigold"> 
+  	<a href="#" role="presentation" tabindex="0" id="citigold" MM_once="adServe('', 3110093, 'mm_citigold_offer');">Citigold&reg;
+    </a></li>
+</ul>
+    <!-- SESSION NAVIGATION -->
+    <!-- BrandingSessionNavigation_USCBOL -->
+
+    <ul role="menu">   
+        
+                <div id="signOnTool" class="user_signOn">
+                    
+                </div>
+              
+    </ul>
+
+</div>
+<!-- WELCOME NAVIGATION -->
+<div id="brandingDataTransfer">
+	<span id="brandingData_serverDomain">https://online.citi.com</span>
+	<span id="brandingData_serverPath">/US</span>
+	<span id="brandingData_appPath">https://online.citi.com/US</span>
+	<span id="brandingData_sessID">JpKqhddhy_Dp434Bm0Hm0LL</span>
+	<span id="brandingData_lnkSignOff">/JSO/signoff/SummaryRecord.do?logOff=true</span>
+ 	<span id="brandingData_loggedState">N</span>
+ 
+ 	
+	<span id="brandingData_test">x</span>
+	<span id="brandingData_autocomplete">https://online.citi.com/US/JRS/globalsearch/SearchAutoCompleteJsonP.do</span>
+	 <span id="brandingData_autocompletefalse">/cards/svc/autocomplete.autocomplete?view=ALL</span>
+</div><!-- BrandingMegaMenu -->
+<div id="mm_mask" mm_status="hide">
+    <div id="mm_container">
+        <div id="mm_content">
+            <div id="mm_menus">
+                <!-- CM|SA: Banking Menu START -->
+                <div class="mm_c mm_menu mm_2col_2" id="mm_banking" role="group">
+                    <div class="mm_divider1"></div>
+                    <div class="mm_divider2"></div>
+                    <div class="mm_divider3"></div>
+                    <ul role="menubar">
+                        <li id="link1" tabindex="0" role="separator">
+                          <strong><a role="menuitem" tabindex="0" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=BankingOverview">Banking Overview</a></strong>
+                          <ul role="menu">
+                              <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=Checking">Checking Accounts</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=Savings">Savings Accounts</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=SvgCDs">Certificates of Deposit (<abbr title="Certificates of Deposit ">CDs</abbr>)</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=IRA"><abbr title="Individual Retirement Account">IRA</abbr>s & Rollovers</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CurrentRates">Rates</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=GlobalClientBanking">Global Client Banking</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mm_c2" role="separator" aria-label="Banking Services" tabindex="0">
+                        <strong>Banking Services</strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=OnlineBankingOverview">Online Banking</a>
+                                </li>
+                                <li role="presentation">
+                                <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiMobile">Mobile and Tablet Banking</a>
+
+                                </li>
+                                <li role="presentation">
+                                  <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=MobileCheckDeposit">Mobile Check Deposit</a>
+                                </li>
+                                <li role="presentation">
+                                  <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=WAlerts">Account Alerts</a>
+
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiFinancialTools">Citi Financial Tools</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=OnlineState">Online Bank Statements</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/helpcenter/getHelpContent.do?dispFormat=main&contentId=DeterminingABANumberAccount&contentType=help_item"><abbr title="American Bankers Association">ABA</abbr> Routing Number</a>
+                                </li>
+  
+                            </ul>
+                        </li>
+                        <li class="mm_c3" role="separator" tabindex="0" aria-label=" ">
+                        <strong><a class="mm_noLink" title=" " href="#" tabindex="-1">&nbsp;</a></strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                  <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=Ebill">eBills - View bills on Citi Online</a>
+                                </li>
+                                <li role="presentation">
+                                 <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=BillPay">Online Bill Payments</a>
+
+                                </li>
+                                <li role="presentation">
+                                      <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=PopMoney">Popmoney<sup>&reg;</sup></a>
+                                </li>
+                                <li role="presentation">
+                                <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=ATMCard">Debit Card</a>
+
+                                </li>
+                                <li role="presentation">
+                                <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=ProtectionServices">Protect Your Money</a>
+                                   </li>
+                                <li role="presentation">
+                                 <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=FundTransfers">Transfers</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mm_offer" id="mm_banking_offer" role="presentation">
+
+                        </li>
+                    </ul>
+                     <div class="mm_c mm_tagline">
+  <ul class="topC"  role="presentation">
+    <li role="presentation">
+      <p id="bankingText"><span style="color:#957F55">Citigold&reg;</span> clients can enjoy premium service, preferred rates and sound advice.</p>
+    </li>
+    <li role="presentation"><a role="link" target="_self" class="learnmore" href="https://online.citibank.com/US/JRS/pands/detail.do?ID=CitigoldOverview&intc=1~7~62~3~081612~1~Citigold~CitigoldAwareness_BankingMMBlurb" style="color:#957F55" aria-describedby="bankingText">Learn More</a> </li>
+  </ul>
+</div>
+                </div>
+                <!-- CM|SA: Banking Menu END -->
+
+
+
+
+                <!-- CM|SA: Credit Cards Menu START -->
+                <div class="mm_c mm_menu mm_2col" id="mm_creditcards" role="group">
+                    <div class="mm_divider1"></div>
+                    <div class="mm_divider2"></div>
+                    <div class="mm_divider3"></div>
+                    <ul role="menubar">
+                    <li role="separator" id="link2" tabindex="0">
+                    <strong><a role="menuitem" tabindex="0" href="https://www.citi.com/credit-cards/citi.action">Credit Cards</a></strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/compare-credit-cards/citi.action?ID=view-all-credit-cards">View All Credit Cards</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/compare-credit-cards/citi.action?ID=low-interest-credit-card">Low Interest Credit Cards</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/compare-credit-cards/citi.action?ID=balance-transfer-credit-cards">Balance Transfer Credit Cards</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/compare-credit-cards/citi.action?ID=reward-credit-cards">Rewards Credit Cards</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/compare-credit-cards/citi.action?ID=no-annual-fee-credit-cards">No Annual Fee Credit Cards</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/compare-credit-cards/citi.action?ID=savings-and-cash-back-credit-cards">Cash Back Credit Cards</a>
+                                </li>
+								<li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/compare-credit-cards/citi.action?ID=most-popular-credit-cards">Most Popular Credit Cards</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mm_c2" role="separator" tabindex="0" aria-label=" ">
+                        <strong><a class="mm_noLink" title=" " href="#" tabindex="-1">&nbsp;</a></strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/compare-credit-cards/citi.action?ID=all-small-business-credit-cards">Business Credit Cards</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/compare-credit-cards/citi.action?ID=all-student-credit-cards">Student Credit Cards</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/compare-credit-cards/citi.action?ID=secured-credit-card">Secured Credit Card</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/compare-credit-cards/citi.action?ID=travel-reward-credit-cards">Travel Credit Cards</a>
+                                </li>
+                                   <li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/compare-credit-cards/citi.action?ID=visa-credit-cards">Visa&reg; Credit Cards</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/compare-credit-cards/citi.action?ID=mastercard-credit-cards">MasterCard&reg; Credit Cards</a>
+                                </li>
+
+                                <li role="presentation">
+                                   <a role="menuitem" href="https://www.citicards.com/cards/credit/application/flow.action?isInvitation=Y">Respond to a Mail Offer</a>
+                                </li>
+                                <li role="presentation">
+                                   <a role="menuitem" href="https://www.citicards.com/cards/credit/application/flow.action?isInvitation=N">See If You're Pre-Qualified for a Card</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mm_c3" role="separator" tabindex="0" aria-label="Services &amp; Tools">
+                        <strong>Services &amp; Tools</strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/credit-cards-citi/citi.action?ID=credit-card-services">Citi&reg; Online</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/portal/template.do?ID=CitiMobileMicroOverview">Mobile Banking</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/credit-cards-citi/citi.action?ID=credit-card-rewards">Rewards Programs</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="launchPopup(this.href,'info','toolbar=yes,status=yes,scrollbars=yes,location=yes,menubar=yes,directories=no,resizable=yes,width=800,height=650,screenX=10,screenY=10,left=10,top=10');return false;" href="https://www.citipricerewind.com">Citi Price Rewind</a>
+                                </li>
+                                <li role="presentation">
+                                
+                                <a role="menuitem" onClick="launchPopup(this.href,'info','toolbar=yes,status=yes,scrollbars=yes,location=yes,menubar=yes,directories=no,resizable=yes,width=800,height=650,screenX=10,screenY=10,left=10,top=10');return false;" href="https://www.cardbenefits.citi.com/">Card Benefits</a>
+                                
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/knowledge-center/citi-articles/citi.action?ID=citi-credit-knowledge-center">Citi<sup>&reg;</sup> Credit Knowledge Center</a>
+                                    
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li role="presentation" class="mm_offer" id="mm_creditcards_offer">
+                        </li>
+                    </ul>
+                   <div class="mm_c mm_tagline">
+  <ul class="topC" role="presentation">
+    <li role="presentation">
+      <p id="creditcardsText">Find the card that's right for you - from low intro rate, no annual fee, rewards, or student credit cards.</p>
+    </li>
+    <li role="presentation"><a role="link" class="learnmore" aria-describedby="creditcardsText" href="https://www.citi.com/credit-cards/compare-credit-cards/detail.do?ID=most-popular-credit-cards">Apply Online</a> </li>
+  </ul>
+</div>
+                </div>
+                <!-- CM|SA: Credit Cards Menu END -->
+                <!-- CM|SA: Lending Menu STARTING -->
+                <div class="mm_c mm_menu" id="mm_lending" role="group">
+                    <div class="mm_divider1"></div>
+                    <div class="mm_divider2"></div>
+                    <div class="mm_divider3"></div>
+                    <ul role="menubar">
+
+                    <!-- NEW MARKETING PAGES  -->
+                    <li role="separator" id="link3" tabindex="0">
+                         <strong><a role="menuitem" tabindex="0" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=LinesLoansOverview">Lending Products</a></strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/portal/template.do?ID=mortgage_heloc">Home Equity Lines &amp; Loans</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=PersonalLinesAag">Personal Lines &amp; Loans</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/portal/template.do?ID=mortgage_home_mortgage">Mortgages</a>
+                                </li>
+                            </ul>
+                    </li>
+                        <li role="separator" class="mm_c2" tabindex="0">
+
+                             <strong><a role="menuitem" tabindex="0" onClick="lnk(this.href);return false;" href="/US/JRS/portal/template.do?ID=mortgage_home_mortgage">Homeownership</a></strong>
+
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/portal/template.do?ID=mortgage_buy_home">Buying a Home</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/portal/template.do?ID=mortgage_refinancing">Refinance Your Home</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/portal/template.do?ID=mortgage_heloc">Use Your Home Equity</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/portal/template.do?ID=mortgage_homeowners_support">Homeowner Support</a>
+                                </li>
+                                 <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/portal/template.do?ID=mortgage_check_application_status">Check Mortgage Application Status</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li role="separator" tabindex="0" aria-label="Calculators &amp; Tools" >
+                        <strong>Calculators &amp; Tools</strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/portal/template.do?ID=mortgage_tools_calculators">Mortgage &amp; Home Equity Calculators</a>
+                                </li>
+
+                                 <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/nccmi/purchase/ratequote/flow.action?fromLanding=true&selectedOption=CUSTOM&selectedOptionValue=CUSTOMpurChaseLanding">Mortgage Rate Selector</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/portal/template.do?ID=mortgage_heloc_rate_tool">Home Equity Rate Selector</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="presentation" class="mm_offer" id="mm_lending_offer">
+                        </li>
+                    </ul>
+                    <div class="mm_c mm_tagline">
+  <ul class="topC"  role="presentation">
+    <li role="presentation">
+      <p id="lendingText">Receive Alerts about your Citibank<sup>&reg;</sup> and Citi<sup>&reg;</sup> Credit Card Accounts on the Citi Mobile<span class="SupMarks">&#8480;</span> app.</p>
+    </li>
+    <li role="presentation"><a role="link" aria-describedby="lendingText" class="learnmore"  href="/US/JRS/pands/detail.do?ID=WAlerts&intc=1~7~51~3~121012~5~Alerts~LendingTabMMblurb">Learn More</a> </li>
+  </ul>
+</div>
+                </div>
+                <!-- CM|SA: Lending Menu END -->
+                <!-- CM|SA: Investing Menu START -->
+                <div class="mm_c mm_menu" id="mm_investing" role="group">
+                    <div class="mm_divider1"></div>
+                    <div class="mm_divider2"></div>
+                    <div class="mm_divider3"></div>
+                    <ul role="menubar">
+                        <li role="separator" id="link4" tabindex="0">
+                        <strong><a role="menuitem" tabindex="0" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=InvestingOverview">Ways to Invest with Citi</a></strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=InvestOnYourOwn">Invest On Your Own</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=InvestWithPersonalAdvisor">Invest with a Personal Advisor</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li  role="separator" class="mm_c2" tabindex="0">
+                        <strong><a role="menuitem" tabindex="0" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=InvestingProducts">Products & Services</a></strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=InvestingRetirement">Annuities</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=InvestingManagedAccounts">Advisory Accounts</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=Bonds">Bonds</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=Insurance">Insurance</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=IRAInvesting"><abbr title="Individual Retirement Account">IRA</abbr>s and Rollovers</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=InvestingMutualFunds">Mutual Funds</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=InvestingLending">Securities Backed Lending</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mm_c3" role="separator" tabindex="0" aria-label="Planning Resources">
+                        <strong>Planning Resources</strong>
+                            <ul role="menu">
+                             
+                                    <li role="menuitem"> <a onClick="lnk(this.href);return false;" href="/US/vendor/zywave/flow.action">Financial Planning Tools</a> </li> 
+                                 
+                            <li role="presentation">
+                                <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=FinancialGuidance">Financial Education on Wealth Management</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=LinkingAccounts">Link Your Account</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="presentation" class="mm_offer" id="mm_investing_offer">
+                        </li>
+                    </ul>
+                    <div class="mm_c mm_tagline">
+  <ul  class="topC"  role="presentation">
+    <li role="presentation">
+      <p id="investingText">Track, analyze, and plan your finances with Citibank for iPad&reg;</p>
+    </li>
+    <li role="presentation"><a role="link" class="learnmore" aria-describedby="investingText" target="_blank" href="/US/JRS/portal/template.do?ID=CitiMobileMicroOverview&intc=1~7~51~3~121012~5~iPadKindle~InvestingTabMMblurb">Learn More</a> </li>
+  </ul>
+</div>
+                </div>
+                <!-- CM|SA: Investing Menu END -->
+                <!-- CM|SA: Business Menu START -->
+                <div class="mm_c mm_menu" id="mm_business" role="group">
+                    <div class="mm_divider1"></div>
+                    <div class="mm_divider2"></div>
+                    <div class="mm_divider3"></div>
+                    <ul role="menubar">
+                        <li role="separator" id="link5" tabindex="0">
+                        <strong><a role="menuitem" tabindex="0" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiBizOverview" aria-label="Small Business Banking Company sales below $5 Million">Small Business Banking</a><span aria-hidden="true">Company sales up to $10 Million</span></strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiBizByNeed">Solutions by Business Need</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiBizByIndustry">Solutions by Industry</a>
+                                </li>
+                                <li role="presentation">
+                                  <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiBizProductsServices">Products &amp; Services</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiBizOnline">Online Banking Solutions</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiBizToolsResources">Small Business Resources</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="separator" class="mm_c2" tabindex="0">
+                        <strong><a role="menuitem" tabindex="0" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiBusinessBanking" aria-label="Business Banking Company sales above $5 Million">Business Banking</a><span aria-hidden="true">Company sales above $5 Million</span></strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiBBSolutions">Product Solutions</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiBBGlobalPresence">Global Presence</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="launchPopup(this.href,'citiBusinessWindow','toolbar=yes,status=yes,scrollbars=yes,location=yes,menubar=yes,directories=no,resizable=yes,width=800,height=650,screenX=10,screenY=10,left=10,top=10,persist=T');return false;" href="https://businessaccess.citibank.citigroup.com/cbusol/signon.do">CitiBusiness<sup>&reg;</sup> Online</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" title="Click here to see the complete list of the Business Banking Services" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiBusinessBanking">See All</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="separator" tabindex="0">
+                        <strong><a  role="menuitem" tabindex="0" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiCommercialBanking" aria-label="Commercial Banking Company sales above $20 Million">Commercial Banking</a><span aria-hidden="true">Company sales above $20 Million</span></strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiCBIndustries">Industry Specialties</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiCBSolutions">Product Solutions</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="launchPopup(this.href,'citiBusinessWindow','toolbar=yes,status=yes,scrollbars=yes,location=yes,menubar=yes,directories=no,resizable=yes,width=800,height=650,screenX=10,screenY=10,left=10,top=10,persist=T');return false;" href="https://businessaccess.citibank.citigroup.com/cbusol/signon.do">CitiBusiness<sup>&reg;</sup> Online</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" title="Click here to see the complete list of the Commercial Banking Services" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiCommercialBanking">See All</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="presentation" class="mm_offer" id="mm_business_offer">
+                        </li>
+                    </ul>
+                     <div class="mm_c mm_tagline">
+  <ul class="topC" role="presentation">
+    <li role="presentation">
+      <p id="businessText">Business Credit Cards from Citi<sup>&reg;</sup>-  We've got just the card and the rewards for you. 
+       </p>
+    </li>
+    <li role="presentation"><a role="link" class="learnmore" aria-describedby="businessText" target="_blank" href="https://www.citi.com/credit-cards/compare-credit-cards/detail.do?ID=all-small-business-credit-cards&intc=1~7~51~3~032113~1~CBFamily~BusinessTabMMblurb">Apply Online</a> </li>
+  </ul>
+</div>
+                </div>
+                <!-- CM|SA: Business Menu END -->
+                <!-- CM|SA: Rewards Menu START -->
+                <div class="mm_c mm_menu mm_2col" id="mm_rewards" role="group">
+                    <div class="mm_divider1"></div>
+                    <div class="mm_divider2"></div>
+                    <div class="mm_divider3"></div>
+                    <ul role="menubar">
+                        <li role="separator" id="link6" tabindex="0">
+                        <strong><a  role="menuitem"  tabindex="0" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=Rewards">Rewards Programs</a></strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CBNATYRNRewards">Citi ThankYou<sup>&reg;</sup> Rewards Overview</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="launchPopup(this.href,'tynWindow','toolbar=yes,status=yes,scrollbars=yes,location=yes,menubar=yes,directories=no,resizable=yes,width=800,height=650,screenX=10,screenY=10,left=10,top=10,persist=T');return false;" href="https://www.thankyou.com">Visit ThankYou.com</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/credit-cards-citi/citi.action?ID=credit-card-rewards">AAdvantage<sup>&reg;</sup></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mm_c2" role="separator" tabindex="0" aria-label=" ">
+                        <strong><a class="mm_noLink" title=" " href="#" tabindex="-1">&nbsp;</a></strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" href="https://www.citi.com/credit-cards/credit-cards-citi/citi.action?ID=credit-card-rewards">Citi<sup>&reg;</sup> Cash Back Program</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="launchPopup(this.href,'info','toolbar=yes,status=yes,scrollbars=yes,location=yes,menubar=yes,directories=no,resizable=yes,width=800,height=650,screenX=10,screenY=10,left=10,top=10');return false;" href="https://citieasydeals.com">Citi Easy Deals <span class="SupMark">&#8480;</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="separator" tabindex="0" aria-label="Offers">
+                        <strong>Offers</strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/portal/template.do?ID=SpecialOffers">Special Offers</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="launchPopup(this.href,'info','toolbar=yes,status=yes,scrollbars=yes,location=yes,menubar=yes,directories=no,resizable=yes,width=800,height=650,screenX=10,screenY=10,left=10,top=10');return false;" href="http://www.citiprivatepass.com/">Citi<sup>&reg;</sup> Private Pass<sup>&reg;</sup></a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li role="presentation" class="mm_offer" id="mm_rewards_offer">
+                        </li>
+                    </ul>
+                     <div class="mm_c mm_tagline">
+  
+</div>
+                </div>
+                <!-- CM|SA: Rewards Menu END -->
+                <!-- CM|SA: Services Menu START -->
+                <div class="mm_c mm_menu mm_2col_2" id="mm_services" role="group">
+                    <div class="mm_divider1"></div>
+                    <div class="mm_divider2"></div>
+                    <div class="mm_divider3"></div>
+                    <ul role="menubar">
+                        <li  role="separator" id="link7" tabindex="0">
+                        <strong><a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=AccountAccess">Ways to Bank with Citi</a></strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=OnlineBankingOverview">Online Banking</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiMobile">Mobile and Tablet Banking</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiMobileSMS">Text Banking</a>
+                                </li>
+                                 <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=GlobalClientBanking">Global Client Banking</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mm_c2" role="separator" tabindex="0">
+                            <strong><a role="menuitem" tabindex="0" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=ServicesOverview">Other Banking Services</a></strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=WAlerts">Account Alerts</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=AutoSave">Auto Save</a>
+                                </li>
+                                <li role="presentation">
+                                <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=InterInstitution">Inter-Institutions Transfers</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=BillPay">Online Bill Payments</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiFinancialTools">Citi<sup>&reg;</sup> Financial Tools</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="launchPopup(this.href,'info','toolbar=yes,status=yes,scrollbars=yes,location=yes,menubar=yes,directories=no,resizable=yes,width=800,height=650,screenX=10,screenY=10,left=10,top=10');return false;" href="https://online.citibank.com/US/JRS/portal.c?ID=ApplePay&ProductID=Generic&intc=2~1~52~3~120414~ApplePay~ServicesMM">Citi with Apple Pay <span class="SupMark">&trade;</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mm_c3" role="separator" tabindex="0" aria-label=" ">
+                        <strong><a class="mm_noLink" title=" " href="#" tabindex="-1">&nbsp;</a></strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=PopMoney">"Pay Other People" Popmoney<sup>&reg;</sup></a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=ProtectionServices">Protect Your Money</a>
+                                </li>
+                                <li role="presentation">
+                                  <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=OverdraftProtection">Overdraft Protection
+</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=FraudProtection">Online Fraud Protection</a>
+                                </li>
+                            </ul>
+                        </li>
+                        </li>
+                        <li role="presentation" class="mm_offer" id="mm_services_offer">
+                        </li>
+                    </ul>
+                     <div class="mm_c mm_tagline">
+    <ul class="topC" role="presentation">
+        <li  role="presentation">
+            <p id="servicesText">Save a trip to the Bank, Deposit Checks from Anywhere with the Citi Mobile <span class="SupMark">&#8480;</span> App.</p>
+        </li>
+        <li role="presentation"><a role="link" href="/US/JRS/pands/detail.do?ID=MobileCheckDeposit&intc=1~7~51~3~121012~5~MCD~ServicesTabMMblurb" aria-describedby="servicesText" class="learnmore">Learn More</a>
+        </li>
+    </ul>
+</div>
+                </div>
+
+
+                 <!-- CM|SA: citigold Menu STARTING -->
+                <div class="mm_c mm_menu" id="mm_citigold" role="group">
+                    <div class="mm_divider1"></div>
+                    <div class="mm_divider2"></div>
+                    <div class="mm_divider3"></div>
+                    <ul role="menubar">
+
+                    <!-- NEW MARKETING PAGES  -->
+                     <li  role="separator" id="link8" tabindex="0">
+                        <strong><a role="menuitem" aria-haspopup="true" tabindex="0"  onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitigoldOverview">Why Citigold?</a></strong>
+
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitigoldAccessAndServices">Access and Service</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitigoldRecognitionAndBenefits">Recognition and Benefits</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitigoldAdviceAndGuidance">Advice and Guidance</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mm_c2" role="separator" tabindex="0" aria-label="Banking and Wealth Management">
+                        <strong>Banking and Wealth Management</a></strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=Citigold">Citigold Interest Checking</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=InvestingOverview">Investing at Citi</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=OnlineBankingOverview">Online Services</a>
+
+                                </li>
+                                 <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiMobile">Mobile and Tablet Services</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li role="separator" tabindex="0" aria-label="Insight and Tools">
+                        <strong>Insight and Tools</strong>
+                            <ul role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=FinancialGuidance">Financial Education on Wealth Management</a>
+                                </li>
+
+                                <li role="presentation">
+                                    <a role="menuitem" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitiFinancialTools">Citi<sup>&reg;</sup> Financial Tools</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="presentation" class="mm_offer" id="mm_citigold_offer">
+                        </li>
+                    </ul>
+                    <div class="mm_c mm_tagline">
+  <ul class="topC" role="presentation">
+    <li role="presentation">
+      <p id="citigoldText"><span style="color:#957F55">Citigold&reg;</span> clients can enjoy premium service, preferred rates and sound advice.
+        </p>
+    </li>
+    <li role="presentation"><a role="link" class="learnmore" onClick="lnk(this.href);return false;" href="/US/JRS/pands/detail.do?ID=CitigoldOverview" style="color:#957F55" aria-describedby="citigoldText">Learn More</a></li>
+  </ul>
+</div>
+                </div>
+                <!-- CM|SA: citigold Menu END -->
+
+            </div>
+        </div>
+        <div class="mm_m mm_m_r"></div>
+        <div class="mm_m mm_m_l"></div>
+        <div class="mm_m mm_m_b"></div>
+        <div class="mm_t mm_t_r"></div>
+        <div class="mm_t mm_t_l"></div>
+        <div class="mm_b mm_b_l"></div>
+        <div class="mm_b mm_b_r"></div>
+        <div class="mm_l mm_l_t"></div>
+        <div class="mm_r mm_r_t"></div>
+        <div class="mm_l mm_l_b"></div>
+        <div class="mm_r mm_r_b"></div>
+        <div class="mm_tl"></div>
+        <div class="mm_tr"></div>
+        <div class="mm_bl"></div>
+        <div class="mm_br"></div>
+        <div class="mm_a"></div>
+    </div>
+</div>
+</div>
+<link rel="stylesheet" text="text/css" href="/JPS/portal/css/BrowserUpgrade.css">
+
+
+<div class="cA-upgradeBrowserBanner">
+
+<span class="cA-upgradeBrowserAlert"></span> 
+
+<span>Your browser is out of date and not supported. We recommend you update your browser for a better online banking experience.</span> 
+
+<a href="/US/JPS/portal/BrowserWarning.do" class="cA-upgradeBrowserButton">Learn More</a> 
+
+<a href="#" role="button" class="cA-upgradeBrowserClose"> 
+
+<span id="upgradeBrowserClose"> 
+
+<label for="upgradeBrowserCloseLabel" class="jfpw-hidden-accessible">Close Overlay</label> 
+
+</span> 
+
+<span class="cA-upgradeBrowserCloseImage" aria-labelledby="upgradeBrowserClose" id="upgradeBrowserCloseLabel"></span>
+
+</a>
+
+</div>
+<main role="main" id="maincontent">
+
+
+
+
+				<!-- Added for CHIP screens-->
+				
+				  	
+					
+						<div  class="StructPrimaryContainer">
+							
+								
+
+
+
+
+
+
+
+
+
+<script>
+var cinLessUser ="false";
+
+function inc(filename) 
+{ 
+var body = document.getElementsByTagName('head').item(0); 
+script = document.createElement('script'); 
+script.src = filename; 
+script.type = 'text/javascript'; 
+body.appendChild(script); 
+} 
+
+</script>
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Changed for CHIP -->
+
+	
+	
+	
+		
+		<div class="StructBodyContainer">
+		
+	
+
+
+ 
+	
+	
+
+
+	
+	
+	
+	
+     
+     
+          
+          
+     
+               
+	
+	<div class="StructLeftGutter">
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+
+
+
+
+
+
+<!-- Welcome_USCBOL -->
+<link rel="stylesheet" href="/JRS/css/marketing/signon.css">
+ <script>
+    // Parameter for the image preloader -specific to the file 
+    var imgNames = [
+     'mktbgEN3.jpg','mktbgEN9.jpg','mktbgEN5.jpg','mktbgEN4.jpg'
+    ]; 
+</script>
+<script type="text/javascript" language="javascript">
+function SiteCatClickApplePay()
+{
+  var s=s_gi(s_account); s.linkTrackVars="eVar38,eVar20";
+  s.eVar38=s.pageName;
+  s.eVar20="Apple Pay - Learn More";
+  s.tl(this,"o","Apple Pay - Learn More");
+}
+</script>
+
+<!-- START: adServe code -->
+<script type="text/javascript">
+    var adServeFunction = [];
+    adServeFunction[1] = function () { adServe('', 1674595, 'AdBanner'); };
+    adServeFunction[2] = function () { adServe('', 1674596, 'AdBanner'); };
+    adServeFunction[3] = function () { adServe('', 1674598, 'AdBanner'); };
+    adServeFunction[4] = function () { adServe('', 1674600, 'AdBanner'); };
+</script>
+<!-- END: adServe code -->
+
+<script type="text/javascript" src="/JRS/js/welcome.js" charset="utf-8"></script>
+<script type="text/javascript">
+    // CREATE LIKS IN DROP-DOWN USED ON WELCOME AND COOKIED/UNCOOKIED PAGE FOR CBOL
+    function makeLinkTo(s) { 
+        //window.top.location.href = s.options[s.selectedIndex].value; 
+        setTimeout(window.top.location.href = s.options[s.selectedIndex].value, 0);
+    }
+</script>
+
+<div class="container">
+<div class="content">
+  <div class="mkt_signon">
+    <div class="t"></div>
+    <div class="c">
+      <div id="signongrp">
+        <form method="post" name="signon" style="display: inline;">
+          <div id="signon-choose" class="firstContentTab" tabindex="0">
+            <label for="selectSignOn">SIGN ON TO YOUR ACCOUNT</label>
+            <div id="SignOnDiv">
+              <select name="accounts-select" class="DropDown" id="accounts-select" onclick="this.selectedIndex=0;" onChange="makeLinkTo(this);">
+                <option value="" selected="selected">Select an account:</option>
+                
+                <option value="/US/JSO/signon/LocaleUsernameSignon.do?locale=en_US" label="Bank Accounts">Bank Accounts</option>
+                
+                <option value="/US/JSO/signon/LocaleUsernameSignon.do?locale=es_US" label="Bank Accounts en Espanol">Bank Accounts en Espanol</option>
+                
+                <option value="/US/JSO/signon/LocaleUsernameSignon.do?userType=Business" label="Business Accounts">Business Accounts</option>
+                
+                <option value="javascript:launchPopup('https://www.privatebank.citibank.com','privatebankWindow','resizable,menubar,toolbar,scrollbars,status,location,width=850,height=600,persist=T')" label="Citi Private Bank">Citi Private Bank</option>
+                
+                <option value="https://www.citi.com/credit-cards/creditcards/CitiHome.do" label="Credit Cards">Credit Cards</option>
+                
+                <option value="https://www.accountonline.com/cards/svc/Login.do?langId=ESP&locale=es_US">Credit Cards en Espanol</option>
+                
+                <option value="/JSO/signon/LocaleUsernameSignon.do?userType=Mortgage">Mortgage</option>
+                
+                <option value="javascript:launchPopup('https://studentloan.citibank.com/s/slcsite/manage_your_account.asp','studentloanWindow','resizable,menubar,toolbar,scrollbars,status,location,width=850,height=600,persist=T')">Student Loans</option>
+                <option value="javascript:launchPopup('https://www.thankyou.com','tynWindow','resizable,menubar,toolbar,scrollbars,status,location,width=850,height=600,persist=T')">Citi<sup>&reg;</sup> ThankYou<sup>SM</sup> Rewards</option>
+                
+              </select>
+            </div>
+          </div>
+          <div id="signon-apply">
+            <label for="selectApply">APPLY FOR A NEW ACCOUNT</label>
+            <div id="ApplyDiv" class="DropDown">
+              <select id="apply-select"  onclick="this.selectedIndex=0" onChange="makeLinkTo(this);" class="DropDown">
+                <option value="" selected="selected">Select an account:</option>
+                <option value="/US/JRS/pands/detail.do?ID=Checking&JFP_TOKEN=4FBRT39O" label="Checking">Checking</option>
+                <option value="/US/JRS/pands/detail.do?ID=CitiSavingsPlus&JFP_TOKEN=4FBRT39O"label="Savings Plus Account">Savings Plus Account</option>
+                <option value="/US/JRS/pands/detail.do?ID=Savings&JFP_TOKEN=4FBRT39O" label="Savings">Savings</option>
+                <option value="/US/JRS/pands/detail.do?ID=SvgCDs&JFP_TOKEN=4FBRT39O" label="Certificate of Deposit (CD)">Certificate of Deposit (CD)</option>
+                <option value="https://creditcards.citi.com/credit-cards/view-all-credit-cards/" label="Credit Card">Credit Card</option>
+                <option value="/US/JRS/pands/detail.do?ID=IRA&JFP_TOKEN=4FBRT39O" label="IRA">IRA</option>
+                <option value="/US/JRS/portal/template.do?ID=mortgage_home_equity_application
+" label="Home Equity Line/Loan">Home Equity Line/Loan</option>
+                
+                <option value="/US/JRS/portal/template.do?ID=mortgage_home_mortgage">Mortgage</option>
+                
+                </select>
+             </div>
+          </div>
+        </form>
+      </div>
+  
+              <span class="cM-contentSpriteBase cM-signOnHorizontalDivWhite"></span>
+
+                <div id="country" class="flyout">
+                    <div class="header" style="position: relative;">
+                        <!--[if lt IE 9 ]><div class="flyoutAux"><![endif]-->
+                        <strong><a href="#">Select A Country</a></strong>
+                        <p>&nbsp;</p>
+                        <!--[if lt IE 9 ]></div><![endif]-->
+                    </div>
+
+                    <div id="countryFlyout">
+                        <div id="cfRegion">
+                            <strong>Region</strong>
+                            <ul>
+                                <li title="Asia">Asia<div class="gray_arrow"></div>
+                                    <ul>
+                                        <li><a target="_blank" class="clink"  href="http://www.citibank.com.au/portal/citiau_home.htm" title="Australia">Australia</a></li>
+                                        <li title="China">China<div class="gray_arrow"></div>
+                                            <ul>
+                                                <li><a target="_blank" class="clink"  href="http://www.citibank.com.cn/homepage/cn/cn_homepage.htm" title="Chinese">Chinese</a></li>
+                                                <li><a target="_blank" class="clink"  href="http://www.citibank.com.cn/homepage/en/cn_homepage.htm" title="English">English</a></li>
+                                            </ul>
+                                        </li>
+                                      
+                                        <li><a target="_blank" class="clink"  href="http://www.citibank.com.hk/" title="Hong Kong">Hong Kong</a></li>
+                                        <li title="India">India<div class="gray_arrow"></div>
+                                            <ul>
+                                                <li><a target="_blank" class="clink"  href="http://www.online.citibank.co.in/" title="Domestic">Domestic</a></li>
+                                                <li><a target="_blank" class="clink"  href="http://www.online.citibank.co.in/citi-nri.htm" title="Non-Resident Indian (NRI)">Non-Resident Indian (NRI)</a></li>
+                                            </ul>
+                                        </li>
+                                        <li title="Indonesia">Indonesia<div class="gray_arrow"></div>
+                                            <ul>
+                                                <li><a target="_blank" class="clink"  href="https://www.citibank.co.id/portal/bahasa_home/index.htm" title="Bahasa Indonesia" >Bahasa Indonesia</a></li>
+                                                <li><a target="_blank" class="clink"  href="http://www.citibank.co.id/"  title="English" >English</a></li>
+                                            </ul>
+                                        </li>
+                                        <li  title="Korea">Korea<div class="gray_arrow"></div>
+                                            <ul>
+                                                <li><a target="_blank" class="clink"  href="http://www.citibank.co.kr/"  title="Korean">Korean</a></li>
+                                                <li><a target="_blank" class="clink"  href="http://www.citibank.co.kr/"  title="English">English</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a target="_blank" class="clink"  href="http://www.citibank.com.my/" title="Malaysia">Malaysia</a></li>
+                                        <li><a target="_blank" class="clink"  href="http://www.citibank.com.ph/portal/citiph_home.htm" title="Philippines">Philippines</a></li>
+                                        <li><a target="_blank" class="clink"  href="http://www.citibank.com.sg/" title="Singapore">Singapore</a></li>
+                                        <li  title="Taiwan">Taiwan<div class="gray_arrow"></div>
+                                            <ul>
+                                                <li><a target="_blank" class="clink"  href="http://www.citibank.com.tw/portal/home_chinese/twcb_Home.htm"  title="Chinese">Chinese</a></li>
+                                                <li><a target="_blank" class="clink"  href="http://www.citibank.com.tw/portal/home_english/twcb_Home.htm"  title="English">English</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a target="_blank" class="clink"  href="http://www.citibank.co.th/" title="Thailand">Thailand</a></li>
+                                        <li title="Vietnam">Vietnam <div class="gray_arrow"></div>
+                                            <ul>
+                                                <li><a target="_blank" class="clink"  href="http://www.citibank.com.vn/"  title="Vietnamese">Vietnamese</a></li>
+                                                <li><a target="_blank" class="clink"  href="http://www.citibank.com.vn/portal/vietnam_home.htm"  title="English">English</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                               
+                                <li title="Europe">Europe<div class="gray_arrow"></div>
+                                    <ul>
+                                        <li title="Czech Republic">Czech Republic<div class="gray_arrow"></div>
+                                            <ul>
+                                                <li><a target="_blank" class="clink"  href="http://www.citibank.cz/czech/home/index.htm"  title="Czech">Czech</a></li>
+                                                <li><a target="_blank" class="clink"  href="http://www.citibank.cz/czech/home/index-en.htm"  title="English">English</a></li>
+                                            </ul>
+                                        </li>
+                                       
+                                        <li title="Hungary">Hungary<div class="gray_arrow"></div>
+                                            <ul>
+                                                <li><a target="_blank" class="clink"  href="https://www.citibank.hu/gcb/Lakossagi_ugyfelek/hungary/home/index.htm"  title="Hungarian">Hungarian</a></li>
+                                                <li><a target="_blank" class="clink"  href="https://www.citibank.hu/gcb/Lakossagi_ugyfelek/english/home/index.htm"  title="English">English</a></li>
+                                            </ul>
+                                        </li>
+                                       
+                                        <li><a target="_blank" class="clink"  href="http://www.citibank.pl/poland/homepage/polish/index.htm"  title="Poland">Poland</a></li>
+                                       
+                                      
+                                        <li title="Russia">Russia<div class="gray_arrow"></div>
+                                            <ul>
+                                                <li><a target="_blank" class="clink"  href="http://www.citibank.ru/russia/main/rus/home.htm"  title="Russian">Russian</a></li>
+                                                <li><a target="_blank" class="clink"  href="http://www.citibank.ru/russia/main/eng/home.htm"  title="English">English</a></li>
+
+                                            </ul>
+                                        </li>
+                                       
+                                      <li><a target="_blank" class="clink"  href="http://www.citibank.co.uk/index.htm"  title="United Kingdom">United Kingdom</a></li>
+                                    </ul>
+                                </li>
+                                <li title="North America">North America<div class="gray_arrow"></div>
+                                    <ul>
+                                        <li><a target="_blank" class="clink"  href="http://www.citi.com/domain/home.htm"  title="United States">United States</a></li>
+                                        <li><a target="_blank" class="clink"  href="http://www.citi.com/citi/about/countrypresence/mexico.html"  title="Mexico">Mexico</a></li>
+                                       
+                                      
+                                    </ul>
+                                </li>
+                                <li title="Central America">Central America<div class="gray_arrow"></div>
+                                    <ul>
+                                        <li><a target="_blank" class="clink"  href="http://www.citi.com/citi/about/countrypresence/costa-rica.html"  title="Costa Rica">Costa Rica</a></li>
+                                        <li><a target="_blank" class="clink"  href="http://www.citi.com.sv/"  title="El Salvador">El Salvador</a></li>
+                                        <li><a target="_blank" class="clink"  href="http://www.citi.com/citi/about/countrypresence/guatemala.html"  title="Guatemala">Guatemala</a></li>
+                                        <li><a target="_blank" class="clink"  href="http://www.citi.com/citi/about/countrypresence/panama.html"  title="Panama">Panama</a></li>
+                                    </ul>
+                                </li>
+                                <li title="South America">South America<div class="gray_arrow"></div>
+                                    <ul>
+                                        <li><a target="_blank" class="clink"  href="https://www.argentina.citibank.com/ARGCB/JPS/portal/Index.do"  title="Argentina">Argentina</a></li>
+                                        <li><a target="_blank" class="clink"  href="https://www.citibank.com.br/BRGCB/JPS/portal/Index.do"  title="Brazil">Brazil</a></li>
+                                        <li><a target="_blank" class="clink"  href="https://www.citibank.com.co/COGCB/JPS/portal/Index.do"  title="Colombia">Colombia</a></li>
+                                        <li><a target="_blank" class="clink"  href="https://www.citibank.com.pe/PEGCB/JPS/portal/Index.do"  title="Peru">Peru</a></li>
+                                        <li><a target="_blank" class="clink"  href="https://www.citibank.com.ve/VEGCB/JPS/portal/Index.do"  title="Venezuela">Venezuela</a></li>
+                                    </ul>
+                                </li>
+                                <li title="Middle East">Middle East<div class="gray_arrow"></div>
+                                    <ul>
+                                        <li><a target="_blank" class="clink"  href="http://www.citi.com/bahrain/homepage/index.htm"  title="Bahrain">Bahrain</a></li>
+                                                                 <li><a target="_blank" class="clink"  href="http://www.citi.com/uae/homepage/index.htm"  title="United Arab Emirates">United Arab Emirates</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="cfCountry">
+                            <strong>Country</strong>
+                            <ul id="cfCountryList">
+                            </ul>
+                            <div id="cfCountrySlider"></div>
+                        </div>
+                        <div id="cfLanguage">
+                            <strong>Language</strong>
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- adserve image or emergency message -->
+      <!-- <div id="AdBanner"></div> -->
+      <!--<div class="signOnEmer">
+      <img src="/JRS/images/signon/mob_americanredcross_logo.png" style="margin-left:10px;" alt="American Red Cross"/>
+      <h3>American Red Cross Disaster Relief</h3>
+      <p>Help those impacted by flooding in South Carolina by making a donation to the American Red Cross Disaster Relief. Visit <a ID="cmlink_ThankYouNetwork" href="javascript:launchPopup('http://www.thankyou.com', '','resizable,status,scrollbars,menubar,location,toolbar,width=650,height=450')" target="_top"  >thankyou.com</a> to donate points or the <a ID="cmlink_RedCrossSpeedbump" href="javascript:launchPopup('/US/JRS/portal/template.do?ID=RedCrossSpeedbump','RedCross','status,resizable,scrollbars,location,toolbar,width=590,height=480')" target="_top" title="Red Cross"  >American Red Cross</a> to donate money.</p>
+      </div> -->
+      <div id="AdBanner">
+          <a ID="cmlink_ProdDisp" href="/US/JRS/pands/detail.do?ID=SecurityCenter&JFP_TOKEN=4FBRT39O" target="_top"  ><img src="/JRS/images/signon/spoofbannerAd_en.png" alt="Security Center"/></a>
+          </div>
+      </div>
+      <div class="wrap-banner">
+
+        <div id="banner-1" class="banner-content" tabindex="-1">
+           <h1 class="blue">The Citi<sup>&reg;</sup> Double Cash Card <br role="presentation" />  <strong>Earn Cash Back Twice.</strong></h1>
+          <p class="black"> <strong>0% Intro <abbr title="Annual Percentage Rate">APR</abbr> for 15 months</strong> on purchases <br role="presentation" />
+            and balance transfers; after that, the variable <abbr title="Annual Percentage Rate">APR</abbr> <br role="presentation" />
+            will be <strong>13.24% &ndash;<span class="hiddenSkipNav"> to</span> 23.24%</strong> based on creditworthiness.</p>
+          <a  href="https://creditcards.citicards.com/usc/doublecash/2015/Jun/cashback/internal/default.htm?app=UNSOL&sc=4T5ZM5R5&m=3356111111W&B=M&ID=3000&uc=DTC&t=t&intc=1~1~52~1~160225~1~88~RFbnWelcomeTab1" class="cta-button button-blue" target="_blank" role="button">Get Started</a>  
+          </div>
+        <!-- close #banner-1 -->
+        
+        <div id="banner-2" class="banner-content" tabindex="-1">
+               <h1 class="black">
+                     <strong>Stay connected,</strong> <br role="presentation" />
+                     <span>enjoy peace of mind.</span>
+              </h1>
+              <p class="black">
+                Download the Citi Mobile<sup>&reg;</sup> app<br role="presentation" />
+                and simplify your banking.
+             </p>
+          <a  href="https://online.citi.com/US/JRS/portal.c?ID=CitiMobileApp&intc=2~1~52~3~020216~5~Citi_Mobile~Welcome_Tab2" style="border:1px solid white"  class="cta-button button-blue"  target="_blank" role="button">Learn More</a>  
+            </div>
+
+        <!-- close #banner-2 -->  
+        <div id="banner-3" class="banner-content" tabindex="-1">
+            <h1 class="black">
+                <strong>Citi Simplicity<sup>&reg;</sup></strong> <br role="presentation" />
+                 makes saving simple.</span>
+             </h1>
+              <p class="black">
+                    Enjoy <strong>0% Intro <abbr title="Annual Percentage Rate">APR</abbr> for 21 months</strong> on balance<br role="presentation" />
+                    transfers and purchases. After that, a variable <abbr title="Annual Percentage Rate">APR</abbr> <br role="presentation" />
+                    of <strong>13.24% &ndash;<span class="hiddenSkipNav"> to </span>23.24%</strong> based on your creditworthiness.
+              </p>
+              <a href="http://creditcards.citicards.com/usc/simplicity/2016/Jan/internal/default.htm?app=UNSOL&sc=4DPZWW56&m=2355L00101W&B=M&ID=3018&uc=EQY&t=t&intc=1~1~52~3~022516~1~25~SimplicityWelcome3~000036001" target="_blank" class="cta-button button-blue" role="button">
+              Get Started</a> 
+      </div>
+        <!-- close #banner-3 -->
+        
+        <div id="banner-4" class="banner-content" tabindex="-1">
+               <h1 class="white">Citi<sup>&reg;</sup> Private Pass<sup>&reg;</sup></h1>
+                <p class="white">Special access to purchase tickets. </p>
+                <a href="https://www.citiprivatepass.com/landing/dave_matthews_band_2016.html&intc=2~1~51~1020416~52016_Feb_Private_PassFeb_2016_Private_Pass_Dave_Mattews_Welcome_Tab4" class="cta-button button-blue" target="_blank" role="button">Learn More</a>  
+        </div>
+        <!-- close #banner-4 -->
+        
+        <ul class="nav-banners" role="presentation">
+           <li> <a href="#" id="nav-banner-1" class="active" role="button"><strong>EARN CASH BACK TWICE</strong> <span>Citi<sup>&reg;</sup> Double Cash Card</span></a></li>
+           <li> <a href="#" id="nav-banner-2" role="button"> <strong>BANK SIMPLE</strong> <span>Citi Mobile<sup>&reg;</sup> app</span> <span class="banner-nav-arrow"></span> </a> </li>
+           <li> <a href="#" id="nav-banner-3" role="button"><strong>MAKE SAVING SIMPLE </strong> <span>Citi Simplicity<sup>&reg;</sup> Card</span><span class="banner-nav-arrow"></span> </a> </li>
+          <li> <a href="#" id="nav-banner-4" role="button"> <strong>PREFERRED TICKETS </strong> <span>Citi<sup>&reg;</sup> Private Pass<sup>&reg;</sup> </span> <span class="banner-nav-arrow"></span> </a> </li>
+        </ul>
+      </div>
+<!-- close .wrap-banner -->
+  </div>
+</div>
+
+<!--Atlas tags-->
+
+ <script>
+     $(window).load(function(){
+                     $.getScript("https://view.atdmt.com/jaction/CITI_CBOL_HP_v3");
+     });
+ </script>
+
+
+
+
+
+
+
+
+	
+	
+	
+	<img style="display: none;" src="https://idsync.rlcdn.com/387146.gif?partner_uid=">
+
+
+	
+		
+	
+	
+	
+		
+	
+
+	
+	
+		
+	
+</div>
+
+	
+							
+						</div>
+					
+				
+				
+				
+				<!--  end Added for CHIP -->        
+				
+				
+				<!-- pra:olb -->    
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- R161 - Changes for R-1085072 Personal Loan Page mTPR starts --> 
+
+
+
+
+
+
+
+
+<script>
+function redirectToBB(url){
+    s.pageName="Card Benefit-Menu";
+    s.t();
+    window.location=url;
+}
+</script>
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var dashboardoverlay=false;
+</script>
+
+
+<script language=javascript type="text/javascript" src="/JPS/portal/js/MFAOverlay.js"></script>
+
+
+
+<script>
+KBAconfirmPhrase = "";
+var machTagfirstHit = true;
+var callCyotaFlag = true;
+
+	            	callCyotaFlag = false;
+	            
+
+	  function checkStatusCsq(event, ui) {
+			var closeWidget = closeIconClickCsq();
+			if(jQuery("#answerLabelToolTip0")){
+				jQuery('#answerLabelToolTip0').jfpwidget('hide'); }
+			if(jQuery("#answerLabelToolTip1")){
+				jQuery('#answerLabelToolTip1').jfpwidget('hide'); }
+			
+			if(jQuery("#pageInd").val()){
+				window.location="/US/JPS/portal/Index.do?JFP_TOKEN="+ JFP_CSRF_TOKEN;
+			}
+			return closeWidget;
+				
+		}
+		
+</script>
+
+<form name="ajaxform" action="/JRS/portal/getTransactionType.do" >
+ 
+<div id="alertWindow" style="display: none;">
+	<div id="alertWindowOuter">
+		<a name="aw">&nbsp;</a>
+		<div class="alertWindowContainer">
+			<!--[if IE]><v:roundrect arcsize="1966f" fillcolor="#FFF" strokecolor="#000000" strokeweight="1"><![endif]-->
+			<div id="alertWindowContent">
+				<h2>Authentication Required</h2>
+				<p>To provide you with extra security, we may need to ask for more information before you can use the feature you selected.</p>
+				<ul class="appNav">
+					<li class="appNavFirst appNavLast"><a href="#" onclick="javascript:grayOut(false);" class="appNavCncl">Cancel</a></li>
+					<li class="appNavNext"><a href="#" onclick="javascript:btn_continue();" class="appNavNext">OK</a></li>
+				</ul>
+			</div>
+			
+			<div id="waitMessage">
+				<h2>Authentication Required</h2>
+				<p>Just a moment, please...</p>
+			</div>
+			<!--[if IE]></v:roundrect><![endif]-->
+		</div>
+	</div>
+</div>
+
+</form>
+
+
+
+<script type="text/javascript" language="javascript">
+(function(){
+	var f = function(){
+		      $jq(function($){ 
+			if($jq("#InterdictionOverlayContent").jfpwidget() === undefined){
+				$jq("#InterdictionOverlayContent").jfpwidget(new CJW.jfp.widget.Overlay(
+	{
+			wrapperSet: "#InterdictionOverlayContent",
+			hideTitleBar: false,
+			dialog: true
+		}, 
+	{
+			draggable: false,
+			resizable: false,
+			position: ["center", 140],
+			width: 550,
+			height: 420, 
+			shadowOffset: 20,
+			hideTitleBar: false,
+			shadow:true,
+			modal: true,
+			styleClass: 'jfpw-overlay',
+			beforeClose: checkStatusCsq
+		}, 
+	{}));
+			}
+		 }
+		  );
+ 	};
+	if (window.$RDY){
+		$RDY('CJW.jfp.widget.Overlay',f);
+	}
+	else{
+		f();
+	}
+})();
+</script>
+
+<div id="InterdictionOverlayContent"></div>
+
+<script>
+function closeIconClickCsq(){
+
+	//SiteCatalyst Change
+	if(typeof(s)!='undefined' && null != s &&  s!=''){ 
+	var tmp2 = s.pageName ; 
+	s.pageName = s.pageName + " CloseOption";
+	s.t();
+	s.pageName = tmp2;
+	}
+	jQuery('#InterdictionOverlayContent').html('');
+	return true;
+}
+
+function checkKBAInterdictionOverlay(url)
+{
+	var csrfUrl = url+"";
+	if(csrfUrl.indexOf("JFP_TOKEN") > 0)
+	{
+		url = url ;
+	}
+	
+	else
+	{
+		if (csrfUrl.indexOf("?") > 0) 
+		{
+			url = url + "&JFP_TOKEN="+JFP_CSRF_TOKEN;
+		} 
+		else 
+		{
+			url = url + "?JFP_TOKEN="+JFP_CSRF_TOKEN;
+		}
+	}
+	jQuery('body').append('<div id="machineTagSpin" class="ui-widget-overlay" style="width: 1346px; height: 1465px; z-index: 1001;"><div id = "spinMe" style= "position:absolute;top:300px;left:650px;"><img border="0" width="30" src="/CBOL/common/images/loading.gif"></div></div>');
+	//jQuery(url).parent().append('<span style="color:red;font-weight:bold;">Authenticating...</span>');
+	if(callCyotaFlag){
+	if(machTagfirstHit){
+		machTagfirstHit = false;
+	jQuery.ajax({
+		 url:url,
+		 data : {isAjaxCall:"true"},
+		 type:"POST",
+		 success: function(showData,status, jqXHR){
+				if(jqXHR.status == '200'){
+					machTagfirstHit = true;
+					if(!showData.returnURL){
+						showData={returnURL:showData};
+					}
+                                  if(showData.returnURL.indexOf("true")== 0){
+				 	    	showCSQOverlay(url);
+				   		}
+                                  else if(showData.returnURL.indexOf("globalOTP")==0)
+					 {
+						 	
+							showOTPOverlay(url);
+					 }
+                                  else if(showData.returnURL.indexOf("error")== 0){
+						 	document.forms["ajaxform"].action = "/JRS/portal/DefaultError.do";
+							document.forms["ajaxform"].submit();
+					 }
+					 else{
+                                         checkKBA(url,showData.returnURL);
+					 }
+				}else {
+				/* 
+				Error handled in the action, reponse status would always be 200
+				*/
+					document.forms["ajaxform"].action = "/JRS/portal/DefaultError.do";
+					document.forms["ajaxform"].submit();
+		}
+	}});
+	}
+	}else{
+		lnk(url);
+	}
+}
+	
+function showCSQOverlay(url){
+	jQuery('#InterdictionOverlayContent').jfpwidget('open');
+	jQuery('#machineTagSpin').remove(); // remove the machine tag spin for csq
+	var actualContent=executeOnLoad();
+	jQuery('#InterdictionOverlayContent').html(actualContent);
+  
+	jQuery.ajax({ url:url, success: function(showData){
+	if(showData.indexOf("NoCSQQuestions")==0){
+		 document.forms["ajaxform"].action = url;
+		 document.forms["ajaxform"].method = "POST";
+		 document.forms["ajaxform"].submit();
+	}
+	else{
+	jQuery('#InterdictionOverlayContent').html(showData);
+	}
+}});
+}
+function showOTPOverlay(url){
+	// do not remove the machine tag spin for otp, since form submit
+	 jQuery.ajax({
+		 url:url,
+		 cache:false,
+		 type:"POST",
+		 success: function(showData,status, jqXHR){
+				
+			 }	  
+		});
+}
+
+function checkKBAInterdictionResetPasswordOverlay(url)
+{
+	if(machTagfirstHit){
+		machTagfirstHit = false;
+	jQuery.ajax({
+		 url:url,
+		 data : {isAjaxCall:"true"},
+		 type:"POST",
+		 success: function(showData,status, jqXHR){
+				if(jqXHR.status == '200'){
+					machTagfirstHit=true;
+					 if(showData.indexOf("true")== 0){
+				 	    	showCSQOverlay(url);
+				   		}
+					 else if(showData.indexOf("error")== 0){
+						 	document.forms["ajaxform"].action = "/JRS/portal/DefaultError.do";
+							document.forms["ajaxform"].submit();
+					 }
+					 else{
+						 document.forms["ajaxform"].action = _jcontext+ showData;
+						 document.forms["ajaxform"].method = "POST";
+						 document.forms["ajaxform"].submit();
+					 }
+				}else {
+				/* 
+				Error handled in the action, reponse status would always be 200
+				*/
+					document.forms["ajaxform"].action = "/JRS/portal/DefaultError.do";
+					document.forms["ajaxform"].submit();
+		}
+	}});
+	}
+}
+
+
+function executeOnLoad(){
+	var display;
+	var titleText="Security CheckPoint";
+	var waitMessage="Loading";
+		display='<div class="titleLabel fontSize20px overlayColorBackground ">'+titleText+'</div>';
+
+
+		display+='<div class="StructContentDiv" id="mainContentWrapper">';
+		display+='<div style="margin-left: 200px; margin-top: 140px;"><div><img border="0" width="30" src="/CBOL/common/images/loading.gif"></div><div style="margin-left: -5px;">'+waitMessage+'</div></div>';
+		display+='</div>';
+		return display;
+}
+</script>
+
+
+
+
+
+
+
+
+
+	
+
+
+				
+
+
+
+
+
+
+</main>
+<!-- BrandingCommonFooter_USCBOL -->
+<!-- citi.com link -->
+
+
+<!-- privacy link -->
+
+
+<div id="citilmFooter" role="contentinfo" >
+  
+  <div class="links">
+    
+      <!-- RP LABEL FOR DASHBOARD ONLY-->
+      
+      <!-- END -->
+    
+    <a title="Citi.com" class="logo" onclick="this.href=getFinalURL(this.href);lnk(this.href);return false;" href="/US/Welcome.c?JFP_TOKEN=RN26FVP8"><img  alt="Citi.com" src="https://online.citi.com/JRS/images/citi-logo.png"></a>
+    <ul>
+      <li ><a  onclick="this.href=getFinalURL(this.href);lnk(this.href);return false;" href="/JRS/portal/template.do?ID=TermsDisclaimer">Terms &amp; Conditions</a></li>
+      <li ><a  href="javascript:lnk('/JRS/portal/template.do?ID=Privacy')">Privacy</a></li>
+      
+        <li ><a title="Security Center"  href="javascript:lnk('/JRS/pands/detail.do?ID=SecurityCenter')">Security</a></li>
+      
+      <li ><a  href="javascript:launchPopup('http://careers.citigroup.com','careers','toolbar=yes,status=yes,scrollbars=yes,location=yes,menubar=yes,directories=no,resizable=yes,width=800,height=650,screenX=10,screenY=10,left=10,top=10')">Careers&nbsp;<span class="hiddenSkipNav">This link will open a new tab or window.</span></a></li>
+      
+      <li ><a  href="javascript:launchPopup('http://www.citigroup.com','aboutus','toolbar=yes,status=yes,scrollbars=yes,location=yes,menubar=yes,directories=no,resizable=yes,width=800,height=650,screenX=10,screenY=10,left=10,top=10')">About Us&nbsp;<span class="hiddenSkipNav">This link will open a new tab or window.</span></a></li>
+      
+        <li>
+          <a ID="cmlink_STATIC" href="javascript:lnk(_j+&#039;/US/JRS/portal/contactus.do&#039;)" target="_top" class='contact_us' >Contact Us</a>         
+        </li>
+        <li>
+          <a ID="cmlink_STATIC" href="javascript:lnk(_j+&#039;/US/JRS/portal/sitemap.do&#039;)" target="_top"  >Site Map</a>          
+        </li>
+      
+        <li class="social_network"> <a  id="cmlink_FacebookIconLink" href="javascript:launchPopup('/US/JRS/portal/template.do?ID=FacebookSpeedbump','Facebook','status,resizable,scrollbars,focus,width=590,height=480')" target="_top">Facebook&nbsp;<span class="hiddenSkipNav">This link will open a new tab or window.</span></a> 
+        </li>
+        <li class="social_network"> <a  id="cmlink_TwitterIconLink" href="javascript:launchPopup('/US/JRS/portal/template.do?ID=SocialTwitterSpeedbump','TwitterAskCiti','status,resizable,scrollbars,focus,width=590,height=480')" target="_top" style="
+        margin-right: 0px;
+        margin-left: 0px;
+        ">Twitter&nbsp;<span class="hiddenSkipNav">This link will open a new tab or window.</span></a>
+        </li>
+        <li class="social_network"> <a  id="cmlink_YoutubeIconLink" href="javascript:launchPopup('/US/JRS/portal/template.do?ID=SocialYoutubeSpeedbump','YouTube','status,resizable,scrollbars,focus,width=590,height=480')" target="_top">You Tube&nbsp;<span class="hiddenSkipNav">This link will open a new tab or window.</span></a> 
+        </li> 
+      </ul>
+    </div> 
+
+    <div class="footerContent" role="note"><span id="brandingBottomDisclaimer"> <!-- WelcomeDisclaimer_USCBOL -->
+<p>Citibank.com is the source of information about and access to U.S. domestic financial services provided by Citibank retail banking and the Citigroup family of companies and is intended for use domestically in the U.S. Terms, conditions and fees for accounts, products, programs and services are subject to change. Not all accounts, products, and services as well as pricing described here are available in all jurisdictions or to all customers. Your country of citizenship, domicile, or residence, if other than the United States, may have laws, rules, and regulations that govern or affect your application for and use of our accounts, products and services, including laws and regulations regarding taxes, exchange and/or capital controls that you are responsible for following. NMLS ID: 412915</p> 
+      <!-- prod serv bottom disclaimer -->
+       </span> 
+    </div>  
+    <div role="note" class="copyright"> 
+      Copyright &copy; <span class="br_year"></span> Citigroup Inc<br />
+      <span id="cbol-footer-server"></span><br />
+      <span id="cbol-footer-mlc" style="color: rgb(255, 255, 255);"></span> </div>
+      <div class="fdic_content" role="navigation">
+       <!-- FDICdisclaimer_USCBOL -->
+
+       <!-- FDICdisclaimer -->
+        <span class="forrester"><a href="javascript:lnk('/US/JRS/portal/template.do?ID=ForresterAward')" ><img src="https://online.citi.com/JRS/images/marketing/footer.png" style="margin-bottom:20px;" alt="Number One Bank Secure Website, ranked by Forrester Forrester 2012 U.S. Bank Secure Website Rankings, January 2013 Learn More" ></a></span>
+           <span id="cM-FDIC">
+               <img alt="Member FDIC Logo" class="cM-contentSpriteBase cM-FDIC" src="https://online.citi.com/JRS/images/MemberFDIC.png">
+            </span>
+       
+       <span class="EqualHousing"><img src="https://online.citi.com/JRS/images/EqualHousing.png" alt="Equal Housing Logo" /></span>
+
+           <span class="nortonSSL" title="Click to Verify - This site chose Symantec SSL for secure e-commerce and confidential communications.">
+                 <script>
+                    norton = {
+                    pre: "https://seal.websecurity.norton.com/getseal?host_name=",
+                    post:"&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=en",
+                    }
+                    NURL = norton.pre + domainName + norton.post;
+                    document.write("<script type='text/javascript' src='"+ NURL + "'></scr" + "ipt>");
+                    $(function(){
+                    var tabindex = 0;
+                    $('a[href="javascript:vrsn_splash()"]').each(function() {
+                        if (this.type != "hidden") {
+                            var $input = $(this);
+                            $input.attr("tabindex", tabindex);
+                            tabindex++;
+                        }
+                    });
+                    });
+                    </script>
+            </span>
+
+     <span class="AdChoices">
+       <a href="javascript:lnk('/JRS/portal/template.do?ID=Privacy#ad-info-external-use')" target="_self" title="
+       Privacy for Consumers at Citi - What Information Do We Collect"tabindex="-1"><img src="https://online.citi.com/JRS/images/AdChoices.png" alt="Interest Based Ads" class="AdChoicesImage"  tabindex="0"/> </a>
+     </span>
+   </div>    
+ </div>
+ <script type="text/javascript">
+    function hideDiv(){ // Hides FooterContent if is empty
+      var div =  $("#brandingBottomDisclaimer");
+      if(div.children().length < 1 ){
+          $(".footerContent").addClass("cM-hide");
+       }
+    } hideDiv();
+
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
+
+    if ((msie > 0 || !!navigator.userAgent.match(/Trident.*rv:11./)) && ((window.location.pathname == "/US/JSO/signon/CBOLSessionRecovery.do" ) || (window.location.pathname =="/US/JSO/chpw/Next.do"))) {     // If Internet Explorer and timeout page
+        $('img.cM-contentSpriteBase.cM-FDIC').addClass('ie11');             
+    } 
+
+    // function to add alt to area in Norton img coming from external source
+    $("area[href='javascript:symcBuySSL()']").attr('alt','Click to Verify - This site has chosen an SSL Certificate to improve Web site security');
+     // removing from reader
+    $("area[href='javascript:symcBuySSL()']").attr('tabindex','-1');
+    // adding first one for reader and focus on page
+    $("area[coords='0,0,100,50']").attr('tabindex','0');
+
+    //replacing contact us id since is repeated with site map
+    $("a.contact_us").attr('id','Contact_Us');
+  </script>
+ 
+<!-- TeaLeaf JS -->
+<script type='text/javascript' src='/GFC/branding/js/linkCapture.js'></script>
+<script type='text/javascript' src='/GFC/branding/js/branding_universal_megaMenu.js'></script>
+<script type='text/javascript' src='/JRS/js/btAdServe.js'></script>
+
+
+
+
+
+			
+				
+				
+         	</div></div>
+         	
+		</body>
+		
+
+
+
+<!--[if lt IE 10]>
+   <script type='text/javascript' src='/DMP/json2.js'></script>
+   <script type='text/javascript' src='/DMP/jquery-migrate-1.2.1.min.js'></script>
+<![endif]-->
+<script type="text/javascript" src="/DMP/BkDmp.js"></script>
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+  
+    
+	
+    
+				
+	
+	
+	  
+	
+	
+	<!-- SiteCatalyst code version: H.22.1.
+Copyright 1996-2010 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript">
+var s_account='citinaprod';
+</script>
+<script language="JavaScript" type="text/javascript" src="/JRS/js/s_code.js"></script>
+	
+	
+	
+	<script>
+       var wa_BB_Acct = "citibbprod";
+       var wa_TY_Acct = "citicitityprod";
+       var wa_PP_Acct = "citiprivatepassprod";
+       var wa_siteCat_Domain = "metrics1.citibank.com";
+	</script>
+	
+	<script type="text/javascript" language="Javascript">
+	var pageNameExtn = 'null';
+	var pageNameExtn1 = 'null';
+	var rateSalePageName='null';
+		 
+			s.prop52 = "NNNNNNNNNNYNNNNNNNNNNNNNNNNNNNNNNNNNN0000";
+s.eVar42 = "en_US_USPTL";
+s.eVar53 = "Bank|";
+s.s_account = "citinaprod";
+s.prop53 = "NNNNNNNNNNNNNNNNNN";
+s.eVar10 = "";
+s.eVar43 = "NNN";
+s.prop54 = "";
+s.eVar44 = "0";
+s.channel = "BANKRIAWebEnglish";
+s.prop55 = "Bank|";
+s.prop56 = "NNN";
+s.prop34 = "";
+s.prop57 = "0";
+s.prop35 = "";
+s.prop1 = "Public";
+s.prop2 = "Home";
+s.pageName = "Citi Home";
+s.eVar50 = "NNNNN";
+s.prop50 = "0";
+s.eVar40 = "";
+s.eVar51 = "";
+s.prop51 = "NNNNN";
+s.eVar41 = "0";
+s.hier1="BANKRIAWebEnglish/Public/Home";
+
+
+		
+		var eVar = "null";
+
+		
+
+		
+		
+		if(typeof(eVar)!='undefined' && null != eVar && eVar!='' && 'null' != eVar){
+			s.eVar33 =eVar;
+		}
+		if(typeof(scErrorMsg) != 'undefined' && scErrorMsg != ''){ 
+			s.prop12 = scErrorMsg;
+		}
+		
+		
+	    
+       
+
+       
+       			 s.eVar69 = "UnAuth";
+ 
+
+   	s.prop73="null";
+       
+	   </script>
+			
+
+<script>
+
+if(typeof(pageNameExtn)!='undefined' && null != pageNameExtn && pageNameExtn!='' && 'null' != pageNameExtn){
+	var pageName = s.pageName+"_"+pageNameExtn;
+	s.pageName = pageName;
+
+}
+if(typeof(pageNameExtn1)!='undefined' && null != pageNameExtn1 && pageNameExtn1!='' && 'null' != pageNameExtn1){
+	var pageName =pageNameExtn1+" "+s.pageName;
+	s.pageName = pageName;
+
+}
+if(typeof(rateSalePageName)!='undefined' && null != rateSalePageName && rateSalePageName!='' && 'null' != rateSalePageName){
+	s.pageName = rateSalePageName;
+
+}
+
+</script>
+	
+
+
+
+	<script language="JavaScript" type="text/javascript">
+if(typeof(scErrorMsg)!='undefined' && scErrorMsg!='') s.eVar4=scErrorMsg;
+if(typeof(_pid)!='undefined' && _pid!='') s.prop59=_pid;
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+s.linkTrackVars="prop46,prop47,prop48,prop49,eVar6";
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<!-- End SiteCatalyst code version: H.22.1. -->
+
+
+
+
+ 
+ 
+
+	
+<script type="text/javascript">
+String.prototype.startsWith = function(prefix) {
+		return this.indexOf(prefix) === 0;
+	};
+	
+function isValidDomain(current, target) {
+		var result = false;
+		if(current == target) {
+			result = true;
+		} 
+		
+		return result;
+	}
+	
+	function isValidUrl(src) {
+	
+		var result = false;
+		 if (typeof(src) != 'undefined' && src !== null) {
+		if(src.substring(0, 7) == "http://" || src.substring(0, 8) == "https://") {
+			var token = "://";
+			var index = src.indexOf(token);
+			var part = src.substring(index + token.length);
+			var domain = "";
+			for(var i=0; i<part.length; i++) {
+				var character = part.charAt(i);
+
+				if(character == '/' || character == ':' || character == '#') {
+					break;
+				} else {
+					domain += character;
+				}
+			}
+			
+			result = isValidDomain(document.domain, domain);
+		
+		} else if(src.charAt(0) == '#') {
+			result = false;
+		} else if(!src.startsWith("//") && (src.charAt(0) == '/' || src.indexOf(':') == -1)) {
+			result = true;
+		}
+		}
+		else{
+		result=true;
+		}
+		return result;
+	}
+	
+		
+
+
+</script>
+
+
+
+
+
+
+
+
+
+         
+ 
+ 
+
+
+
+
+
+<script>
+if (typeof somTrackingObj != 'undefined') {
+
+$(window).load(function() {
+    somTrackingObj.waitForAjax();
+});
+
+}
+</script>
+
+
+
+
+
+	
+
+
+
+
+
+	 
+		<script>
+			function nullCheck(sProp){
+					if(sProp!='undefined' && sProp!=null) return '/'+sProp;
+					else { return "";}
+			}
+			pageName =s.prop1+nullCheck(s.prop2)+nullCheck(s.prop3)+nullCheck(s.prop4)+nullCheck(s.prop5)+nullCheck(s.prop6)+nullCheck(s.prop7)+nullCheck(s.prop8)+nullCheck(s.prop9)+nullCheck(s.pageName);
+		</script>
+	
+
+
+ 
+    
+
+	
+      	
+			
+		
+
+
+<script type="text/javascript">
+var isBKDMPDeleted="";
+
+</script>
+
+
+	
+		</html>
+		<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+              
+              
+                      
+              
+        
+
+
+

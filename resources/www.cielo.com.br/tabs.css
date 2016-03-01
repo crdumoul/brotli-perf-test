@@ -1,0 +1,70 @@
+.ui-tabs, .ui-tabs * {
+	border-radius: 0;	
+}
+
+.ui-tabs {
+	padding:0 ;
+}
+
+.ui-tabs .ui-tabs-nav {
+	background: #fff;
+	border-width: 0;
+	border-bottom-width: 1px;
+	border-radius: 0;
+}
+
+.ui-tabs.ui-widget-content {
+	border: 0;
+}
+
+.ui-tabs .ui-state-default {
+	border: 0;
+}
+.ui-tabs .ui-tabs-nav {
+	border-bottom-color: #d9d9d9;
+}
+.ui-tabs .ui-tabs-nav li {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.ui-tabs .ui-tabs-nav li + li {
+	margin-left: 1px !important;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-active {
+	margin-left: 0 !important;
+	margin-right: -1px !important;
+	border: 1px solid #d9d9d9;
+	margin-bottom: -2px !important;
+	border-bottom: 0;
+	padding: 0;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+	background: #eeeeef !important;
+}
+
+
+.ui-tabs .ui-tabs-nav li a:hover, .ui-tabs .ui-tabs-nav .ui-state-hover {
+	background: #d9d9d9 !important;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-active a, .ui-tabs .ui-tabs-nav .ui-tabs-active.ui-state-hover a {
+	background: #fff !important;
+}
+
+
+
+
+
+
+@media only screen and (max-device-width : 767px) {
+	
+	.tabs-tri li{ width:210px;}
+	.tabs-duo li{width:318px;}
+	
+	.tab-content{
+		width:100%;
+	}
+}

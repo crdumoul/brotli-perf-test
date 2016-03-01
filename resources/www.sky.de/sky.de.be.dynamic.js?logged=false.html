@@ -1,0 +1,20 @@
+
+
+
+
+
+
+function checkLoginOnButton(object, nextUrl) {
+        if( $("div.cm13__extWrapper").length ) {
+              $("div.cm13__extWrapper").removeClass("nothingActive").addClass("isActive");
+              document.body.scrollTop = document.documentElement.scrollTop = 0;
+              document.getElementById('cm13_nextUrlPostLogin').value=nextUrl;
+              $("section.be-cm13-singleline").removeClass("nothingActive").addClass("isActive");
+        }
+        else {
+            $("il flyout link").click();
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
+        }
+    }
+
+

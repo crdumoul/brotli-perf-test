@@ -1,0 +1,153 @@
+
+.ml-thumb-name h2, .ml-thumb-name h2 a {
+    font-size: 16px;
+    line-height: 1.2em;
+  margin: 0;
+    padding: 0;
+  font-weight: 600;
+}
+div.BVratings div {
+    background-image: url("/images/beachbody/en_us/global/bbv6/bv_stars.png");
+    background-repeat: no-repeat;
+    float: left;
+    height: 22px;
+    padding-right: 5px;
+    width: 74px;
+}
+div.BVratings {
+    font: 11px/2em Arial,Helvetica,sans-serif;
+    white-space: nowrap;
+}
+div.BVstar-0-0 { background-position: 0 2px; }
+div.BVstar-1-0 { background-position: 0 -20px; }
+div.BVstar-1-5 { background-position: 0 -42px; }
+div.BVstar-2-0 { background-position: 0 -64px; }
+div.BVstar-2-5 { background-position: 0 -86px; }
+div.BVstar-3-0 { background-position: 0 -108px; }
+div.BVstar-3-5 { background-position: 0 -130px; }
+div.BVstar-4-0 { background-position: 0 -152px; }
+div.BVstar-4-5 { background-position: 0 -174px; }
+div.BVstar-5-0 { background-position: 0 -196px; }
+
+.ml-thumb-description, .ml-thumb-price {
+  font: 12px/1.6em Arial,Helvetica,sans-serif;
+    margin: 0 0 10px;
+}
+a.arrow, a.linkarrow {
+    background: url("/images/beachbody/en_us/global/bbv6/arrow.png") no-repeat 0 50%;
+    padding-left: 10px;
+}
+.xPayments {
+    color: #444;
+    font-weight: bold;
+  display:inline-block;
+}
+.pricesale {
+    color: #c60;
+    font-weight: bold;
+  display:inline-block;
+}
+.sandhcost {
+    color: #777;
+    font-size: 10px;
+    white-space: nowrap;
+  display: inline-block;
+}
+.addtobasket-nondesktop {
+  display:none;
+}
+@media screen and (max-width: 991px)  {
+.addtobasket-desktop {
+  display:none;
+}
+.addtobasket-nondesktop {
+  display: inline-block;
+  float: right;
+}
+.sandhcost {
+    display: block;
+}
+.ml-thumb-price {
+  float: left;
+}
+}
+@media screen and (max-width: 767px)  {
+}
+
+.ml-thumb-name h2, .ml-thumb-name h2 a {
+    font-size: 16px;
+    line-height: 1.2em;
+  margin: 0;
+    padding: 0;
+  font-weight: 600;
+}
+div.BVratings div {
+    background-image: url("/images/beachbody/en_us/global/bbv6/bv_stars.png");
+    background-repeat: no-repeat;
+    float: left;
+    height: 22px;
+    padding-right: 5px;
+    width: 74px;
+}
+div.BVratings {
+    font: 11px/2em Arial,Helvetica,sans-serif;
+    white-space: nowrap;
+}
+div.BVstar-0-0 { background-position: 0 2px; }
+div.BVstar-1-0 { background-position: 0 -20px; }
+div.BVstar-1-5 { background-position: 0 -42px; }
+div.BVstar-2-0 { background-position: 0 -64px; }
+div.BVstar-2-5 { background-position: 0 -86px; }
+div.BVstar-3-0 { background-position: 0 -108px; }
+div.BVstar-3-5 { background-position: 0 -130px; }
+div.BVstar-4-0 { background-position: 0 -152px; }
+div.BVstar-4-5 { background-position: 0 -174px; }
+div.BVstar-5-0 { background-position: 0 -196px; }
+
+.ml-thumb-description, .ml-thumb-price {
+  font: 12px/1.6em Arial,Helvetica,sans-serif;
+    margin: 0 0 10px;
+}
+a.arrow, a.linkarrow {
+    background: url("/images/beachbody/en_us/global/bbv6/arrow.png") no-repeat 0 50%;
+    padding-left: 10px;
+}
+.xPayments {
+    color: #444;
+    font-weight: bold;
+  display:inline-block;
+}
+.pricesale {
+    color: #c60;
+    font-weight: bold;
+  display:inline-block;
+}
+.sandhcost {
+    color: #777;
+    font-size: 10px;
+    white-space: nowrap;
+  display: inline-block;
+}
+.addtobasket-nondesktop {
+  display:none;
+}
+@media screen and (max-width: 991px)  {
+.addtobasket-desktop {
+  display:none;
+}
+.addtobasket-nondesktop {
+  display: inline-block;
+  float: right;
+}
+.sandhcost {
+    display: block;
+}
+.ml-thumb-price {
+  float: left;
+}
+}
+@media screen and (max-width: 767px)  {
+}
+#header div#dropmenu4 ul li a, #header div#dropmenu4 ul li a:link, #header div#dropmenu4 ul li a:visited {
+	width: 240px;
+}

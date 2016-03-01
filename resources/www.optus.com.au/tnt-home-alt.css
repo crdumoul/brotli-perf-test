@@ -1,0 +1,336 @@
+
+/* Use the .cf class to clear floats */
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+	*zoom: 1;
+}
+
+#tnt-product-selector .button-group > *:first-child {
+	/*margin-left:20px;*/
+}
+
+.tnt-hide {
+	display: none;
+}
+
+.tnt-phone-container {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.tnt-promo-container {
+	text-align: center;
+}
+
+.tnt-phone-container-1,
+.tnt-phone-container-2,
+.tnt-phone-container-3,
+.tnt-phone-container-4 {
+	text-align: center;
+	height: 435px; /* 395px + 40 padding top for phone column*/
+	cursor: pointer;
+}
+
+.tnt-phone-container-2,
+.tnt-phone-container-3,
+.tnt-phone-container-4 {
+	padding-top: 30px;
+}
+
+.tnt-phone-container-1 {
+	background-color: #e5e5e5;
+	border-bottom-left-radius: 0.375em;
+	border-bottom-right-radius: 0.375em;
+	-moz-border-radius-bottomright: 0.375em;
+	-moz-border-radius-bottomleft: 0.375em;
+	padding: 30px 25px;
+	text-align: left;
+}
+
+.tnt-hr-container {
+	text-align: center;
+}
+
+.tnt-hr {
+	background: none repeat scroll 0 0 #F5F5F5;
+	border: medium none;
+	border-radius: 0.375em;
+	bottom: 0;
+	height: 0.5em;
+	/*margin: 1.875rem 0rem 0rem;*/
+	/*padding: 0;
+	position: absolute;*/
+	transition: all 300ms ease-out 0s;
+	width: 85%;
+}
+
+.tnt-hr-hover {
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	background: #cccccc;
+}
+
+.tnt-promo-title {
+	font-family: "optus_voice_betabold",Arial,Helvetica,sans-serif;
+	/* color: #006685; */
+	color: #000;
+	font-size: 2.7em;
+	line-height: 0.8em;
+	text-transform: uppercase;
+}
+
+	.tnt-promo-title .teal {
+		color: #00a3ad;
+	}
+
+.tnt-promo-copy {
+	font-family: "TradeGothicLTPro-BdCn20",Arial,Helvetica,sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 30px;
+	margin-top: 15px;
+	text-transform: uppercase;
+}
+
+.tnt-promo-button {
+	background: url(/opfiles/Shop/Consumer/Assets/Images/Campaigns/tnt-img_accesssories.gif);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 216px;
+	padding-top: 135px;
+	text-align: center;
+}
+
+.tnt-image-container {
+	margin-bottom: 20px;
+}
+
+.tnt-image-opacity {
+	opacity: 0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+#tnt-product-selector .tabs {
+	height: 68px;
+	margin-top: 30px;
+}
+
+#tnt-product-selector #popular, 
+#tnt-product-selector #latest, 
+#tnt-product-selector #deal, 
+#tnt-product-selector #prepaid {
+	background: url(/opfiles/Shop/Consumer/Assets/Images/Campaigns/tnt-tab-h_line.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-position: 14px 98px;
+	background-size: 97%;
+}
+
+#tnt-product-selector .tab-container {
+	margin: 0 30px;
+}
+
+	#tnt-product-selector .tab-container .ico {
+		font-size: 40px;
+		float: left;
+		margin-left: 11px;
+		margin-right: -30px;
+		margin-top: 13px;
+	}
+
+#tnt-product-selector .tab-popular, 
+#tnt-product-selector .tab-latest, 
+#tnt-product-selector .tab-deal, 
+#tnt-product-selector .tab-prepaid {
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+}
+
+#tnt-product-selector .tab-popular, 
+#tnt-product-selector .tab-latest, 
+#tnt-product-selector .tab-deal, 
+#tnt-product-selector .tab-prepaid {
+	height: 65px;
+	max-width: 195px;
+	color: #666666;
+	background-color: #e5e5e5;
+	border-radius: 7px 7px 0 0;
+	-moz-border-radius-topleft: 7px;
+	-moz-border-radius-topright: 7px;
+	-webkit-border-top-left-radius: 7px;
+	-webkit-border-top-right-radius: 7px;
+}
+
+#tnt-product-selector .tab-active {
+	background-color: #00a3ad;
+	color: #ffffff;
+}
+
+#tnt-product-selector .tab-hover {
+	color: #00a3ad;
+	/*border: solid 1px #00a3ad;*/
+}
+
+#tnt-product-selector .tab-container [class*="column"] + [class*="column"]:last-child {
+	float: left;
+}
+
+
+@media only screen and (max-width: 859px) {
+
+	#tnt-product-selector .tabs {
+		background: none;
+		height: 68px;
+		margin-top: 0;
+	}
+
+	#tnt-product-selector .tab-container {
+		margin-left: 0;
+		display: inline-block;
+		width: 100%;
+	}
+
+	#tnt-product-selector .tab-popular, 
+	#tnt-product-selector .tab-latest, 
+	#tnt-product-selector .tab-deal, 
+	#tnt-product-selector .tab-prepaid {
+		text-align: center;
+		margin-left: 0;
+		padding: 0 17px;
+		margin-right: 0;
+		border-radius: 0;
+	}
+
+	#tnt-product-selector .tab-popular, 
+	#tnt-product-selector .tab-latest, 
+	#tnt-product-selector .tab-deal, 
+	#tnt-product-selector .tab-prepaid {
+		background: none repeat scroll 0 0 #E5E5E5;
+		height: 65px;
+		color: #666666;
+		border-left: 1px solid #CCCCCC;
+		border-right: 1px solid #CCCCCC;
+		text-decoration: underline;
+	}
+
+	#tnt-product-selector .tab-active {
+		background: none repeat scroll 0 0 #F5F5F5;
+		border: solid 1px #E5E5E5;
+		height: 65px;
+		text-decoration: none;
+		background-color: #00a3ad;
+		color: #fff;
+	}
+
+	#tnt-product-selector .tab-text {
+		float: none;
+		font-family: 'TradeGothicLTPro-BdCn20';
+		font-size: 16px;
+		margin-top: 16px;
+		margin-left: 0;
+		text-transform: uppercase;
+	}
+	
+	#tnt-product-selector .tnt-promo-title {
+		font-size: 1.6em !important;
+	}
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 860px) {
+	#tnt-product-selector .tab-container .ico.show-for-xlarge {
+		display: none !important;
+	}
+
+	#tnt-product-selector .tab-text {
+		float: none;
+		font-family: 'TradeGothicLTPro-BdCn20';
+		font-size: 16px;
+		margin-top: 23px;
+		margin-left: 0;
+		text-transform: uppercase;
+	}
+
+	#tnt-product-selector .tab-container.button-group > * {
+		margin: 0;
+	}
+
+	#tnt-product-selector .tab-popular, 
+	#tnt-product-selector .tab-latest, 
+	#tnt-product-selector .tab-deal, 
+	#tnt-product-selector .tab-prepaid {
+		border-top: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+	}
+
+	#tnt-product-selector .tnt-promo-title {
+		color: #000000;
+		font-family: "optus_voice_betabold",Arial,Helvetica,sans-serif;
+		font-size: 1.6em !important;
+		line-height: 0.8em;
+		text-transform: uppercase;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	#tnt-product-selector .tab-text {
+		font-family: 'TradeGothicLTPro-BdCn20';
+		font-size: 16px;
+		margin-left: 36px;
+		margin-top: 23px;
+		text-transform: uppercase;
+		float: left;
+	}
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+#tnt-product-selector .tab-popular, #tnt-product-selector .tab-latest, #tnt-product-selector .tab-deal, #tnt-product-selector .tab-prepaid {
+ 	padding-left:10px;
+  padding-right:0px;
+  max-width: 165px;
+}
+  #tnt-product-selector .tab-text {
+  	margin-left: 30px;
+}
+  #tnt-product-selector .tab-container .ico {
+  margin-left: 0px;
+  margin-right: -29px;
+}
+#tnt-product-selector .tnt-promo-title {
+	font-size: 2.1em !important;
+}
+  
+}
+
+#tnt-product-selector .popular, 
+#tnt-product-selector .latest, 
+#tnt-product-selector .deal, 
+#tnt-product-selector .prepaid {
+	margin-top: -3px;
+}
+
+#tnt-product-selector .tnt-view-all-link-container {
+	margin-bottom: 30px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+#tnt-product-selector .tnt-view-all-link {
+	font-family: "TradeGothicLTPro-BdCn20",Arial,Helvetica,sans-serif;
+	text-transform: uppercase;
+}

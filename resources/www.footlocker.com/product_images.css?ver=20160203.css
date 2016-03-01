@@ -1,0 +1,148 @@
+body.fullscreenDisabled .s7container[mode='fullscreen'] {
+	z-index: auto;
+}
+
+body.fullscreenEnabled.fullscreenIncapable .s7container[mode='fullscreen'] {
+	z-index: 9999;
+}
+#product_images {
+	position: relative;
+}
+#product_images[data-viewer] {
+	position: relative;
+	margin: 0 0 40px 0 !important;
+	padding: 0 0 76px 0;
+}
+#product_images[data-viewer="s7ZoomViewerViewer"] {
+	margin: 0 0 0 0 !important;
+}
+#product_images:before {
+	display: block;
+	content: "";
+	width: 100%;
+	padding-top: 100%;
+}
+#product_images #product_mixedmedia {
+	position: absolute;
+	top: 0;
+	left: 0;``
+	right: 0;
+	bottom: 0;
+}
+#previewImage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	overflow: hidden;
+	width: 100%;
+	background-color: #fff;
+}
+body.fullscreenDisabled #s7MixedMediaViewer_swatches.s7swatches {
+	bottom: -100px;
+	height: 76px;
+}
+.s7viewer_container.s7size_small .s7colorswatches, .s7viewer_container.s7size_medium .s7colorswatches {
+	margin: 100px 0 0 0;
+}
+body.fullscreenDisabled .s7mixedmediaviewer .s7spinbuttons {
+	margin-top: 56px;
+}
+body.fullscreenDisabled #s7ZoomViewerViewer.s7size_small #s7ZoomViewerViewer_swatches.s7swatches, body.fullscreenDisabled #s7ZoomViewerViewer.s7size_medium #s7ZoomViewerViewer_swatches.s7swatches {
+	bottom: -36px;
+}
+.s7viewer_container.s7size_small .s7colorswatches .s7swatches, #s7ZoomViewerViewer.s7size_small .s7swatches, .s7viewer_container.s7size_medium .s7colorswatches .s7swatches, #s7ZoomViewerViewer.s7size_medium .s7swatches {
+	display:  inline-block;
+	height: 76px;
+} 
+.s7viewer_container.s7size_small .s7colorswatches .s7swatches .s7thumb, .s7viewer_container.s7size_medium .s7colorswatches .s7swatches .s7thumb, .s7viewer_container.s7size_large .s7colorswatches .s7swatches .s7thumb { 
+	width: 56px;
+	height: 56px;
+	background-color : #ffffff;
+	border: 1px solid #dddddd;
+}
+.s7viewer_container.s7size_small .s7colorswatches .s7swatches .s7thumb[state=selected] {
+	border: 1px solid #000;
+}
+.s7mixedmediaviewer #s7MixedMediaViewer_swatches.s7swatches .s7thumb {
+	background-image: none !important;
+}
+.s7mixedmediaviewer #s7MixedMediaViewer_swatches.s7swatches .s7thumb, .s7mixedmediaviewer #s7MixedMediaViewer_swatches.s7swatches .s7thumb .s7thumboverlay {
+
+}
+
+.s7mixedmediaviewer .s7swatches .s7thumb .s7thumboverlay {
+	margin: 0 0 0 5px;
+}
+
+.s7mixedmediaviewer .s7swatches .s7thumb .s7thumboverlay[type="spinset"] {
+}
+.s7mixedmediaviewer .s7swatches .s7thumb .s7thumboverlay[type="swatchset"] {
+	background-image : url('/ns/common/images/alternate-views-icon.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.s7mixedmediaviewer #s7MixedMediaViewer_swatches.s7swatches .s7thumb {
+	border: none;
+}
+.s7mixedmediaviewer #s7MixedMediaViewer_swatches.s7swatches .s7thumb .s7thumboverlay {
+	border: 1px solid #dddddd;
+}
+.s7mixedmediaviewer #s7MixedMediaViewer_swatches.s7swatches .s7thumb[state=selected] .s7thumboverlay {
+	border: 1px solid #000;
+}
+
+.s7mixedmediaviewer #s7MixedMediaViewer_swatches.s7swatches .s7thumb, .s7mixedmediaviewer .s7swatches .s7thumb .s7thumboverlay {
+	height: 56px;
+	width: 56px;
+}
+.s7mixedmediaviewer .s7swatches .s7thumb .s7thumboverlay[type="spinset"]:before {
+	content : '';
+}
+.s7mixedmediaviewer .s7swatches .s7thumb .s7thumboverlay[type="swatchset"]:before {
+	content : '';
+}
+.s7viewer_container .s7toolbarcontainer, #s7ZoomViewerViewer_divcontainer {
+	margin: 55px 0 0 0;
+}
+
+body.fullscreenEnabled.fullscreenCapable .s7container[mode='fullscreen'] #s7ZoomViewerViewer_divcontainer {
+	top: initial !important;
+	bottom: 0px !important;
+	height: 50px;
+}
+#s7MixedMediaViewer_colorSwatches.s7swatches {
+	width: 280px !important;
+}
+.fullscreenEnabled #s7MixedMediaViewer_colorSwatches.s7colorswatches {
+	top: 855px !important;
+}
+#s7MixedMediaViewer_zoomInButton.s7zoominbutton {
+	visibility: visible !important;
+}
+#s7MixedMediaViewer_zoomOutButton.s7zoomoutbutton {
+	visibility: visible !important;
+}
+#s7MixedMediaViewer_zoomResetButton.s7zoomresetbutton {
+	visibility: visible !important;
+}
+.s7zoomviewer.s7size_small.s7touchinput .s7setindicator {
+	visibility: hidden !important;
+}
+.s7zoomviewer.s7size_small.s7touchinput .s7zoominbutton {
+	visibility: visible !important;
+}
+.s7zoomviewer.s7size_small.s7touchinput .s7zoomoutbutton {
+	visibility: visible !important;
+}
+.s7zoomviewer.s7size_small.s7touchinput .s7zoomresetbutton[state='disabled'] {
+	visibility: visible !important;
+}
+
+.s7mixedmediaviewer .s7swatches {
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+}
+
+.s7size_small #s7MixedMediaViewer_toolbarContainer {
+    /*top: 230px !important;*/
+}

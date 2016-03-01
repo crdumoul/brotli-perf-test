@@ -1,0 +1,109 @@
+/*global newsletter signup styles */
+.newsletter-signup__newsletter-title {
+  font: normal normal 22px/1 "PrattHeavy", Georgia, Palatino, "Book Antiqua", "Times New Roman", serif;
+}
+
+.newsletter-signup__newsletter-text {
+  font-size: 1.1em;
+}
+
+.newsletter-signup__button {
+  padding: 15px 40px 12px 40px;
+  background-color: #38b682;
+  border: 0;
+  border-radius: 5px;
+  font: normal normal 16px/1 Helvetica, Arial, Verdana, sans-serif;
+  color: white;
+}
+
+/* newsletter signup section page widget styles */
+.newsletter-signup-widget {
+  float: left;
+  width: 620px;
+  height: 75px;
+  margin-bottom: 20px;
+  font: normal normal 12px/1.5 Helvetica, Arial, Verdana, sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+}
+.newsletter-signup-widget a {
+  float: right;
+  margin: 20px 20px 0 0;
+  text-align: center;
+}
+.newsletter-signup-widget a:hover {
+  color: #DA161F;
+}
+.newsletter-signup-widget .newsletter-signup__button {
+  float: left;
+  margin-top: 18px;
+}
+
+.newsletter-signup-widget__message {
+  float: left;
+  width: 180px;
+  margin: 20px 10px;
+  text-transform: none;
+}
+.newsletter-signup-widget__message .newsletter-signup__newsletter-text {
+  font-style: italic;
+}
+
+/* newsletter signup modal styles >*/
+.newsletter-signup-modal {
+  font: normal normal 12px/1.5 Helvetica, Arial, Verdana, sans-serif;
+  color: #333333;
+}
+.newsletter-signup-modal a {
+  text-decoration: underline;
+}
+
+.newsletter-signup-modal__body {
+  text-align: center;
+}
+.newsletter-signup-modal__body .newsletter-signup__newsletter-title {
+  font-size: 32px;
+}
+
+.newsletter-signup-modal__legal {
+  margin: 20px 50px 10px;
+}
+
+.newsletter-signup-modal__form {
+  text-transform: uppercase;
+}
+.newsletter-signup-modal__form input[type=text],
+.newsletter-signup-modal__form input[type=password] {
+  width: 220px;
+  margin-bottom: 10px;
+  padding: 15px 10px;
+  border: 0;
+  box-shadow: none;
+  font: bold normal 15px/1 Helvetica, Arial, Verdana, sans-serif;
+  text-align: center;
+}
+
+.newsletter-signup__error {
+  display: none;
+  color: #DA161F;
+}
+
+.newsletter-signup-modal__body--input {
+  padding-bottom: 50px;
+}
+
+.newsletter-signup-modal__body--success {
+  display: none;
+}
+.newsletter-signup-modal__body--success .newsletter-signup__newsletter-text {
+  margin: 20px 50px 50px;
+}
+.newsletter-signup-modal__body--success .newsletter-signup__newsletter-title {
+  color: #336699;
+}
+
+.newsletter-signup-modal__body--success a,
+.newsletter-signup-modal__email {
+  color: #336699;
+}

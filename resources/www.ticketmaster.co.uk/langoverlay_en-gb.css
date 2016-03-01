@@ -1,0 +1,28 @@
+a.btn-remove img,
+a.btn-remove:hover img {
+	width:52px;
+	height:12px;
+	background-image: url('img/sys/common_new/edp/btn-remove-sprites.png');
+}
+
+/* irregular image buttons */
+img.addfav-small-button { width:136px; }
+img.addfav-large-button { width:158px; }
+img.addfavnow-button { width:182px; }
+img.myfav-button { width:124px; }
+
+/* pagination buttons */
+img.prevpage-button { width:100px; }
+img.nextpage-button { width:130px; }
+
+.catLinks h3 {
+   padding-bottom:5px;
+   clear:left;
+   float:none;
+   width:100%;
+}
+
+/* Seatwave logo alignment */
+.site-options-promo .promo-image-logo[alt="Seatwave"] {
+  vertical-align: text-bottom;
+}

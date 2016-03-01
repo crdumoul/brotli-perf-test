@@ -1,0 +1,70 @@
+.part-cp-cielo-fidelidade{
+    clear: both;
+}
+
+.part-cp-cielo-fidelidade h2{
+	font-size: 40px;
+	color: #fff;
+}
+
+.part-cp-cielo-fidelidade .img-banner-meio {
+	display: block;
+	float: left;
+	margin-top: -54px;
+	margin-right: 76px;
+}
+
+.part-cp-cielo-fidelidade .cp-right-content {
+	display: table-cell;
+	height: 305px;
+	vertical-align: middle;
+}
+
+.part-cp-cielo-fidelidade .cp-right-content .bt {
+	margin-top: 25px;
+}
+
+
+
+ @media only screen and (max-width : 767px) { 
+ 
+    .part-cp-cielo-fidelidade {
+		background: url(../../images/home/bgBanner_mobile.jpg) no-repeat center center;
+		width: 640px;
+		height: 854px;
+	}
+	.part-cp-cielo-fidelidade .content {
+		width: 640px;
+		height: 854px;
+		position: relative;
+	}
+
+
+	.part-cp-cielo-fidelidade .img-banner-meio {
+		margin: 0;
+		position: absolute; 
+		bottom: 0;
+		left: 25px;
+	}
+
+	.part-cp-cielo-fidelidade h3, 
+	.part-cp-cielo-fidelidade h2{
+		font-size: 45px;
+		width: 540px;
+		margin-left: 50px;
+		margin-top: 32px;
+	}
+
+	.part-cp-cielo-fidelidade p {
+		font-size: 28px;
+		line-height: 32px;
+		width: 540px;
+		margin-left: 50px;
+	}
+
+	.part-cp-cielo-fidelidade  .bt {
+		margin: 45px 45px;
+		width: 470px !important;
+	}
+
+}

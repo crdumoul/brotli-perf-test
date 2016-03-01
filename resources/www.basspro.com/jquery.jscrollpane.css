@@ -1,0 +1,104 @@
+#scroll-pane
+{
+  width: 300px;
+  height: 240px;
+  overflow: hidden;
+}
+#cart-scroll
+{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+#scroll-pane .jspContainer, #cart-scroll .jspContainer
+{
+  overflow: hidden;
+  position: relative;
+}
+
+#scroll-pane .jspPane, #cart-scroll .jspPane
+{
+  position: absolute;
+}
+
+#scroll-pane .jspVerticalBar, #cart-scroll .jspVerticalBar
+{
+  position: absolute;
+  top: 0;
+  right: 1px;
+  width: 9px;
+  height: 100%;
+  background: transparent;
+}
+
+#scroll-pane .jspVerticalBar *, #cart-scroll jspVerticalBar *
+{
+  margin: 0;
+  padding: 0;
+}
+
+#scroll-pane .jspCap, #cart-scroll .jspCap
+{
+  display: none;
+}
+
+#scroll-pane .jspTrack, #cart-scroll .jspTrack
+{
+  background: #fafafa;
+  position: relative;
+}
+
+#scroll-pane .jspDrag, #cart-scroll .jspDrag
+{
+  background: #bbb;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  border-radius:4px;
+}
+
+#scroll-pane .jspArrow.jspArrowUp, #cart-scroll .jspArrow.jspArrowUp
+{
+  background: url(/media.basspro.com/css/upArrow.png) no-repeat;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+}
+
+#scroll-pane .jspArrow.jspArrowDown, #cart-scroll .jspArrow.jspArrowDown
+{
+  background: url(/media.basspro.com/css/downArrow.png) no-repeat;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+}
+
+#scroll-pane .jspArrow.jspArrowUp.jspDisabled, #cart-scroll .jspArrow.jspArrowUp.jspDisabled
+{
+  cursor: default;
+  background: url(/media.basspro.com/css/upArrow.png) no-repeat;
+}
+
+#scroll-pane .jspArrow.jspArrowDown.jspDisabled, #cart-scroll .jspArrow.jspArrowDown.jspDisabled
+{
+  cursor: default;
+  background: url(/media.basspro.com/css/downArrow.png) no-repeat;
+}
+
+#scroll-pane .jspVerticalBar .jspArrow, #cart-scroll .jspVerticalBar .jspArrow
+{
+  height: 5px;
+}
+
+#scroll-pane .jspVerticalBar .jspArrow:focus, #cart-scroll .jspVerticalBar .jspArrow:focus
+{
+  outline: none;
+}
+
+#scroll-pane .jspCorner, #cart-scroll .jspCorner
+{
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}

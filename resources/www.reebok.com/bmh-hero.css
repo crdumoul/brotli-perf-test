@@ -1,0 +1,344 @@
+/*************
+Hero Styles
+*************/
+.bmh-hero {
+	position: relative;
+	background: #252525;
+	line-height: 0;
+}
+
+body.mobile .bmh-hero {
+	padding-bottom: 320px;
+	border-bottom: 5px solid #d8d8cf;
+}
+
+.bmh-hero .over-text {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	display: table;
+	height: 400px;
+	margin-top: -205px;
+	top: 50%;
+}
+
+body.mobile .bmh-hero .over-text {
+	top: auto;
+	bottom: 0;
+	height: 318px;
+	display: table;
+}
+
+.bmh-hero .heroText {
+	margin-bottom: 40px;
+	margin: 0 auto;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.bmh-hero .heroTextWrap {
+	padding: 0 13%;
+	width: 510px;
+	margin: 0 auto;
+}
+
+body.mobile .bmh-hero .heroText {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+body.mobile .bmh-hero .heroTextWrap {
+	width: 96%;
+	padding: 0 2%;
+	left: auto;
+	right: auto;
+	position: static;
+	text-align: center;
+	margin: 0;
+}
+
+.bmh-hero .heroText img {
+	max-width: 960px;
+	width: 100%;
+}
+
+.bmh-hero .heroText h1 {
+	color: #FFFFFF;
+	margin: 0 auto 4px;
+	font-family: 'Q Stencil', Courier New, monospace;
+	font-weight: normal;
+}
+
+body.mobile .bmh-hero .heroText h1 {
+	color: #FFFFFF;
+	text-align: center;
+	width: 100%;
+	text-shadow: none;
+	margin-bottom: 19px;
+}
+
+.bmh-hero .heroText h2 {
+	color: #FFFFFF;
+	font-family: 'DINWebPro-CondMedium', Helvetica, sans-serif;
+	max-width: none;
+	margin-bottom: 10px;
+}
+
+/** Header font sizes **/
+.bmh-hero .heroText h1 {
+	font-size: 38px;
+	line-height: 34px;
+}
+
+body.mobile .bmh-hero .heroText h1 {
+	font-size: 60px;
+	line-height: 54px;
+}
+
+.bmh-hero .heroText h2 {
+	font-size: 18px;
+	line-height: 18px;
+}
+
+body.mobile .bmh-hero .heroText h2 {
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 19px;
+	text-transform:	none;
+}
+
+/*
+@media (min-width: 980px) {
+	.bmh-hero .heroText h1 {
+		font-size: 38px;
+		line-height: 34px;
+		margin-bottom: 6px;
+	}
+	.bmh-hero .hero .heroText h2 {
+		font-size: 16px;
+		line-height: 18px;
+	}
+}
+*/
+
+@media (min-width: 1200px) {
+	.bmh-hero .heroText h1 {
+		font-size: 42px;
+		line-height: 37px;
+		margin-bottom: 6px;
+	}
+	.bmh-hero .heroText h2 {
+		font-size: 18px;
+		line-height: 18px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.bmh-hero .heroText h1 {
+		font-size: 50px;
+		line-height: 45px;
+		margin-bottom: 10px;
+	}
+	.bmh-hero .heroText h2 {
+		font-size: 18px;
+		line-height: 18px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.bmh-hero .heroText h1 {
+		font-size: 60px;
+		line-height: 55px;
+		margin-bottom: 10px;
+	}
+	.bmh-hero .heroText h2 {
+		font-size: 21px;
+		line-height: 21px;
+	}
+	.bmh-hero .heroTextWrap {
+		width: 615px;
+	}
+}
+
+/** End Head font sizes **/
+.bmh-hero img {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.bmh-hero .desktop {
+	display: block;
+}
+
+.bmh-hero .mobile {
+	display: none;
+}
+
+.bmh-hero .lifestyle-tab {
+	margin: auto;
+	line-height: 13px;
+	text-align: center;
+	margin-top: -42px;
+	margin-bottom: -3px;
+}
+
+.bmh-hero .lifestyle-tab p {
+	background: #ededed;
+	background: url('img/tab-pixel-sprite.jpg') repeat-x;
+	background-position: top;
+	display: inline-block;
+	padding: 5px 63px 0 34px;
+	font-family: 'DINWebPro-CondMedium', Helvetica, sans-serif;
+	color: #40403a;
+	font-size: 19.08px;
+	line-height: 41px;
+	position: relative;
+	cursor: pointer;
+	text-transform: uppercase;
+
+}
+
+.bmh-hero .lifestyle-tab p:hover {
+	background: #f2f2ef;
+	background: url('img/tab-pixel-sprite.jpg') repeat-x;
+	background-position: 0 bottom;
+}
+
+.bmh-hero .lifestyle-tab p span:before {
+	content: '@';
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 32.2px;
+	padding-top: 21px;
+	line-height: 0;
+	font-size: 19px;
+}
+
+.bmh-hero .lifestyle-tab p span.closed:before {
+	content: '(';
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 29px;
+	font-size: 24px;
+	padding-top: 21px;
+	line-height: 0;
+}
+
+body.mobile .bmh-hero .lifestyle-tab p span:before {
+	padding-top: 22px;
+}
+
+body.mobile .bmh-hero .lifestyle-tab p span.closed:before {
+	padding-top: 22px;
+}
+
+/** Styles for the positioning classes **/
+.bmh-hero .hero-left .heroTextWrap,
+.bmh-hero .hero-top-left .heroTextWrap,
+.bmh-hero .hero-bot-left .heroTextWrap {
+	margin: 0 0 0 2%;
+	padding: 0;
+	text-align: left;
+	float: left;
+}
+
+.bmh-hero .hero-right .heroTextWrap,
+.bmh-hero .hero-top-right .heroTextWrap,
+.bmh-hero .hero-bot-right .heroTextWrap {
+	margin: 0 2% 0 0;
+	padding: 0;
+	text-align: right;
+	float: right;
+}
+
+.bmh-hero .hero-left-mid .heroTextContainer,
+.bmh-hero .hero-right-mid .heroTextContainer {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.bmh-hero .hero-left-mid .heroTextContainer,
+.bmh-hero .hero-top-left .heroTextContainer,
+.bmh-hero .hero-bot-left .heroTextContainer {
+	text-align: left;
+}
+
+.bmh-hero .hero-right-mid .heroTextContainer,
+.bmh-hero .hero-top-right .heroTextContainer,
+.bmh-hero .hero-bot-right .heroTextContainer {
+	text-align: right;
+
+}
+
+.bmh-hero .hero-left-mid .heroTextWrap,
+.bmh-hero .hero-right-mid .heroTextWrap {
+	margin: 0;
+	padding: 0;
+}
+
+.bmh-hero .hero-right-mid .heroTextWrap {
+	float: right;
+}
+
+.bmh-hero .hero-top-left .heroText,
+.bmh-hero .hero-top-right .heroText,
+.bmh-hero .hero-top-mid .heroText {
+	vertical-align: top;
+	padding-top: 2%;
+}
+
+.bmh-hero .hero-bot-left .heroText,
+.bmh-hero .hero-bot-right .heroText,
+.bmh-hero .hero-bot-mid .heroText {
+	vertical-align: bottom;
+	padding-bottom: 2%;
+}
+
+.bmh-hero .hero-top-left .over-text,
+.bmh-hero .hero-top-right .over-text,
+.bmh-hero .hero-top-mid .over-text {
+	top: 0;
+	margin-top: 0;
+}
+
+.bmh-hero .hero-bot-left .over-text,
+.bmh-hero .hero-bot-right .over-text,
+.bmh-hero .hero-bot-mid .over-text {
+	bottom: 0;
+	top: auto;
+}
+
+body.mobile .bmh-hero .hero-left-mid .heroTextContainer,
+body.mobile .bmh-hero .hero-right-mid .heroTextContainer {
+	text-align: center;
+	width: auto;
+	margin: auto;
+}
+
+body.mobile .bmh-hero .hero-top-left .heroText,
+body.mobile .bmh-hero .hero-top-mid .heroText,
+body.mobile .bmh-hero .hero-top-right .heroText,
+body.mobile .bmh-hero .hero-bot-left .heroText,
+body.mobile .bmh-hero .hero-bot-mid .heroText,
+body.mobile .bmh-hero .hero-bot-right .heroText {
+	padding-top: 0;
+	padding-bottom: 0;
+	vertical-align: middle;
+}

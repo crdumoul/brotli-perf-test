@@ -1,0 +1,1045 @@
+﻿/* SALES/RECEIPTS - C.PRITCHARD 7-20-09 */
+.MC_LYT_SalesReceipts table { background-color:#E3EEF4; }
+.MC_LYT_SalesReceipts td, .MC_LYT_SalesReceipts th { padding:8px 0px 8px 15px;  vertical-align:top;}
+.MC_LYT_SalesReceipts .border-top { border-top:1px solid #AAC9DE; }
+.MC_LYT_SalesReceipts .border-bottom { border-bottom:1px dashed #AAC9DE; }
+.MC_LYT_SalesReceipts .border-bottom-solid { border-bottom:1px solid #AAC9DE; }
+.MC_LYT_SalesReceipts .border-right { border-right: 1px solid #AAC9DE; }
+.MC_LYT_SalesReceipts .border-left { border-left: 1px solid #AAC9DE; }
+.MC_LYT_SalesReceipts .header-highlight { background-color:#FFC; }
+.MC_LYT_SalesReceipts .td-highlight { background-color:#FFC; }
+.MC_LYT_SalesReceipts .text-align-right { /*text-align:right;*/ }
+.MC_LYT_SalesReceipts .text-align-left { text-align:left; }
+.MC_LYT_SalesReceiptsContainer { width:795px; }
+.MC_LYT_SalesReceiptsContainer .MC_LYT_RndHeader {width:100%; }
+.MC_LYT_SalesReceiptsContainer .quick-shop-table h3 {}
+.MC_LYT_SalesReceiptsContainer td {vertical-align:top;}
+.MC_LYT_SalesReceiptsContainer .date-search-control {width:683px; }
+.MC_LYT_SalesReceiptsContainer .tools-intro-container { width:318px; }
+.MC_LYT_SalesReceiptsContainer .sold-to-container-message {width:350px; margin:15px 0;}
+.MC_LYT_SalesReceiptsContainer .sold-to-container {width:390px;}
+.MC_LYT_SalesReceiptsContainer h1 { width:495px; font-size:18px; font-weight:bold; }
+.MC_LYT_SalesReceiptsContainer .sales-help { width:300px; text-align:right; margin-top: -34px; }
+.MC_LYT_SalesReceiptsContainer .sales-receipts-tools-container li { background:url(../images/ico_sprite_sheet.gif)   0 -571px; margin:5px 0; padding:0 0 0 17px; }
+.MC_LYT_SalesReceiptsContainer .sales-receipts-tools-container { width:318px; background:#e3eef4; border:1px solid #ccc; padding:10px; margin:5px 0 0 7px; }
+.MC_LYT_SalesReceiptsContainer h2 { color:#494947; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; margin:5px 0 ; }
+.MC_LYT_SalesReceiptsContainer h2, 
+.MC_LYT_SalesReceiptsContainer .sales-receipts-tools-container h3 { font-size:14px; margin-bottom:5px; }
+.MC_LYT_SalesReceiptsContainer .sales-receipts-intro-container { width:318px; background:#e3eef4; border:1px solid #ccc; padding:10px; margin: 0 0 0 7px; }
+.MC_LYT_SalesReceiptsContainer .sale-receipts-left-table-container { width:449px; }
+.MC_LYT_SalesReceiptsContainer .expand  a {background:url(../images/ico_minimize.gif no-repeat 0 50%;  padding:0 0 0 17px;)}
+.AmwayGrid_HeaderUnsortable .MC_TXT_ProductFamilyProductHeader th a span {padding-top:5px;}
+.MC_LYT_SalesReceiptsContainer .RadGrid_AmwayGrid td, 
+.MC_LYT_SalesReceiptsContainer .RadGrid_AmwayGrid th { padding:8px; border:solid 1px #cccccc; border-left:0; font-size:10px; }
+.MC_LYT_SalesReceiptsContainer fieldset ul li {padding:4px;}
+.date-search-control td { padding:5px;}
+.date-search-control td label { width:90px; }
+/* @group shopping bag multiple items */
+.MC_LYT_ShopBagQuantity input {width:30px;}
+.MC-LYT-ShoppingBag-Multiple-Items-Container { width: 95%; margin: 10px; }
+.multiple-items-table-container { border: 1px solid #ccc; width: 95%; padding: 10px; margin: 3px 0; height: 700px; overflow: auto; }
+.multiple-items-table-container p { margin: 0 0 15px 0; }
+.multiple-items-table-container td, .multiple-items-table-container th { background: #e2e6e9; font-size: 12px; margin:7px; }
+.multiple-items-table-container th { text-transform: uppercase; font-weight: bold; vertical-align: middle; text-indent: 3px; color: #fff; background-color: #bdbdbd; }
+.multiple-items-table-container input { border: 1px solid #bdbdbd; }
+.multiple-items-form-widths { width: 110px; }
+.multiple-items-form-item { width: 5px; }
+.multiple-items-form-qty { width: 12px; }
+.multiple-items-buttons { float: right; padding-right: 50px; }
+.multiple-items-buttons-remove-selected { float: right; padding: 10px 25px; }
+.multiple-items-back-order, .multiple-items-error { color: red; font-size: 12px; margin: 9px 0 0 0; }
+.multiple-items-table-col-item { width: 165px; padding: 8px; }
+.multiple-items-table-col-sizecolor { width: 211px; padding: 8px; }
+.multiple-items-table-col-qty { width: 100px; padding: 8px; }
+.multiple-items-table-col-price { width: 100px; padding: 8px; }
+.multiple-items-table-col-remove { width: 145px; padding: 8px; }
+.multiple-items-table-col-item-th { width: 165px; padding: 8px; }
+.multiple-items-table-col-sizecolor-th { width: 211px; padding: 8px; }
+.multiple-items-table-col-qty-th { width: 100px; padding: 8px; }
+.multiple-items-table-col-price-th { width: 100px; padding: 8px; }
+.multiple-items-table-col-remove-th { width: 145px; padding: 8px; }
+.MC-LYT-ShoppingBag-Multiple-Items-tables { border-top: 1px solid #fff; }
+
+/*
+unused
+.MC-LYT-Box-header {background-color: #e3e6e8; padding: 8px; font-family: arial, verdana; font-size: 12px; font-weight: bold; border: 1px solid #ccc; text-transform: uppercase;}
+.multiple-items-table-container thead { }
+
+*/
+/* @end */
+
+/* @group shopping bag nav header */
+.MC_LYT_print_Button_Container { padding-bottom: 3px; }
+.shopping-bag-nav-container { width: 960px; }
+.shopping-bag-nav-list-container { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin: 10px 0; padding: 8px 8px 8px 8px; text-transform: uppercase; font-family: arial, verdana; font-weight: bold; }
+.shopping-bag-nav-list-container li { display: inline; margin: 0 6px; }
+.shopping-bag-nav-list-container .selected span { color: #fff !important; display: inline; background-color: #B38430; padding: 4px 7px 4px 7px; }
+.shopping-bag-nav-container h1 { color: #cecece; width: 300px; float: left; margin: 10px 0 10 25px; padding: 10px 0 10px 25px; }
+.no-items-in-list-container { border: 1px #ccc solid; padding: 20px; margin: 10px 0 10px 0; }
+.no-items-in-list-container h2 { font-size: 15px; font-weight: bold; display: inline; margin: 0 15px 0 0; float: left; width: 255px; }
+.no-items-in-list-container p {width: 440px; float:left;}
+.quick-shop-table { background: #e2e6e9; width:99%; }
+.quick-shop-table td {padding:0px 4px; vertical-align: middle; text-align: left;}
+.MC_LYT_DITTO_QuickShop .quick-shop-table td {padding:0px 20px 0px 0px;}
+.quick-shop-table_desc{clear:both; margin:10px 0 0 10px}
+.quick-shop-table_desc td{padding-right:10px}
+.shopping-bag-nav-container h3 { font-weight: bold; font-size: 15px; }
+.need-help-container { width: 620px; }
+.need-help-container_Order_His { padding: 10px; width: 610px; float:left; margin-top:1px; height:285px; }
+.need-help-container h3 { font-size: 14px; font-weight: bold; line-height: 30px; }
+.need-help-list li { display: block; padding: 0px 8px; text-align:center;float:left; }
+.need-help-images li { display: inline; padding: 0 10px; }
+.need-help-pipe{ padding:0 8px 0 6px; background:transparent url(../images/ico_nav_pipe.gif) no-repeat 100% 60%; }
+.need-help-pipe-last{padding:0 8px 0 6px;}
+.quick-shop-qty-field { width: 20px; text-align: center; }
+.quick-shop-item-field { width: 110px; }
+.add-multiple-items-definition-list { background: #dbdbdb; padding: 20px 20px 20px 20px; }
+.add-multiple-items-definition-list .first-dd { width: 125px; }
+.add-multiple-items-definition-list dd { padding: 0 10px 0 0; }
+.mini-bag-td-product-title { background: #D5D5D5; font-weight: bold; padding: 5px; font-size: 10px; color: #245475; }
+.mini-bag-cart-borders { border-left: 1px solid #fff; }
+.MC_LYT_ShopBagList table caption { position: absolute; width: 100%; top: 0; left: 0; height: 85px; }
+/*Classes for Cart page only for Enterprise Services promotions*/
+.MC_LYT_ShopBagList .MC_LYT_FirstItem span {width:23px !important}
+.MC_LYT_ShopBagList .MC_LYT_ShopBagPhoto span {width:88px !important}
+/*.MC_LYT_ShopBagList .MC_LYT_ShopBagItems span {width:319px !important}*/
+.MC_LYT_ShopBagList .MC_LYT_ShopBagQuantity span {width:40px !important}
+/*Classes for Cart page only for Enterprise Services promotions IE Hacks*/
+.MC_LYT_ShopBagList .MC_LYT_ShopBagPhoto span {*width:87px !important}
+.MC_LYT_ShopBagList .MC_LYT_ShopBagItems span {*width:auto !important}
+.MC_LYT_ShopBagList .MC_LYT_ShopBagQuantity span {*width:40px !important}
+.MC_LYT_ShopBagList .MC_LYT_ShopBagList div.childItem {margin:0px;}
+.MC_LYT_ShopBagList .TOPTABLE {width:958px; margin-left:1px;}
+.MC_LYT_ShopBagList .TOPTABLE th.MC_LYT_ShopBagTotalPriceHeader, .MC_LYT_ShopBagList .ChildShoppingCartTable th.MC_LYT_ShopBagTotalPriceHeader {border-right:1px solid #ccc;}
+.ChildShoppingCartTable {width:958px; margin-left:1px;}
+
+.MC_LYT_ShopBagList thead tr { /*position:absolute;*/
+    top: 1.5em; left: 0; }
+.MC_LYT_ShopBagList tfoot td { position: absolute; bottom: 0; left: 0; }
+.RadGrid_AmwayGrid table caption { position: absolute; width: 100%; top: 0; left: 0; height: 1.5em; }
+.RadGrid_AmwayGrid thead tr { top: 1.5em; height: 1.5em; left: 0; }
+.RadGrid_AmwayGrid tfoot td { height: 25px; width: 928px; bottom: 0; left: 0; background: #ccc; border-left: 1px solid #ccc; text-align: right; }
+.ie-overflow { overflow: auto; height: 300px; }
+/* @end */
+.need-help-outer-border {text-align: center;margin:10px 0; padding-top:8px;}
+.thumbnail-finance-control-layout {background-color: #e3e6e8;float:right; width:500px; margin:15px;}
+.finance-control-layout-container {background-color:#E3E6E8; padding:0;}
+.finance-control-layout table {width:100%; background:none;} 
+.thumbnail-finance-control-layout p { margin:5px;}
+.thumbnail-finance-control-layout li { margin:5px;}
+.thumbnail-list-control {width:420px; padding:0; float:left; background-color:#fff;}
+.thumbnail-list-control .MC_LYT_SortByBox {display:none;}
+.thumbnail-list-control .HA_LYT_ProductLifecycle {width:auto;}
+.thumbnail-list-control .HA_LYT_ProductLifecycle .MC_LYT_ProductListSlider table {width:420px;}
+.thumbnail-list-control .MC_LYT_ProductListSlider .MC_LYT_ProductListCat .IMG_LYT_ProductListCat {margin-left:5px;}
+
+
+
+
+
+/* CUSTOMER-VISITOR STYLES */
+.MC_LYT_ShopBagActionsCol { }
+.MC_LYT_ShopBagActionsCol li { list-style-type: none; display: block; margin:0; }
+/* ORDER SUMMARY - 2/14/09 Dave Snyder */
+.MC_LYT_Container .MC_LYT_ShoppingListOrderSummary .MC_LYT_OrderSummary {margin: 55px 0 8px 0;}
+.MC_LYT_OrderSummary td {padding-top:5px; padding-top:5px; *border-bottom:1px dotted #FFF;}
+.MC_LYT_OrderSummary { width: 303px; float: right; margin: 8px 0 8px 0; }
+.MC_LYT_OS_AOBOtitle { font-weight: bold; }
+.MC_LYT_OrderSummary table { border-width: 1px; border-collapse: collapse; width: 100%; }
+.MC_LYT_OS_listItems { background: #e2edf4; min-height: 27px; _height: auto !important; height: 27px; border-top:1px dotted #CCC; vertical-align: middle; }
+.MC_LYT_OS_item { padding-left: 20px; vertical-align: middle; font-weight: normal; font-family: Verdana; }
+.MC_LYT_OS_Order { padding: 0 22px 0 0; text-align: right; vertical-align: middle; }
+.MC_LYT_OS_totals { background: #aac9df; min-height: 27px; _height: auto !important; height: 27px; border-bottom:1px dotted #FFF; border-collapse: collapse; vertical-align: middle; }
+.MC_LYT_OS_Security_Image { background: #aac9df; clear: both; overflow: hidden; border-width: 1px; border-bottom:1px dotted #CCC; font-weight: bold; }
+.MC_LYT_OS_Security_Image img { float: right; padding: 10px; }
+.MC_LYT_OS_Information { background: #aac9df; clear: both; padding: 10px 20px 10px 20px; }
+.MC_LYT_OS_totalitem { padding: 0 0 0 20px; font-weight: bold; font-family: Verdana; vertical-align: middle; }
+.MC_LYT_OS_totalOrder { padding: 0 22px 0 0; text-align: right; vertical-align: middle; font-weight: bold;  }
+.MC_LYT_OS_totals_first { background: #aac9df; min-height: 27px; _height: auto !important; height: 27px; border-top: solid 2px #ffffff; border-bottom: dotted 1px #ffffff; vertical-align: middle; }
+.MC_LYT_OS_Title { padding: 20px 22px 0 20px; font-family: Verdana; font-size: 14px; font-weight: bold; color: #245475; min-height: 30px; _height: auto !important; height: auto; background: #e2edf4;*border-bottom:1px solid #FFF; }
+.MC_LYT_OS_help { vertical-align: text-bottom; padding-left: 3px; }
+.MC_LYT_OS_special { color: #fc2727; }
+.MC_LYT_OS_bbb { /*background:#aac9df;*/
+    padding-right: 22px; display: block; }
+.MC_LYT_OS_bbb img { padding: 8px 0 7px 0; }
+.MC_LYT_OS_footer { float: right; padding-top: 3px; }
+.MC_LYT_OS_footer img { padding: 0px; }
+/* SHOPPING BAG - 2/14/09 Dave Snyder */
+.MC_IMG_Question { vertical-align: text-bottom; margin-left: 2px;}
+.MC_LYT_CellProductTitle {font-size:12px; font-weight:bold; margin-bottom:6px; }
+.MC_LYT_CellProductItemNum { padding-bottom: 10px; }
+.MC_LYT_CellProductPVBV { }
+.MC_LYT_CellProductPromoMessage { }
+.MC_LYT_CellProductBackOrder { color: #ff2727; }
+.MC_LYT_CellProductSubstitute span { color: #ff2727; }
+
+
+.MC_LYT_ShopBagList, .MC_LYT_OrderSummary, .CD_innerContainer  {font-family:Arial, Sans-Serif; }
+.currencyFix  {font-family: Arial, Sans-Serif !important; font-weight:400 !important; white-space:nowrap;}
+
+.MC_LYT_ShopBagList .MC_LYT_ShopBagAllHeader { padding-left:10px; }
+.MC_LYT_ShopBagList .MC_LYT_ShopBagHideImagesHeader { padding-left:10px;  }
+.MC_LYT_ShopBagList .MC_LYT_ShopBagItemsHeader { padding-left:10px; }
+.MC_LYT_ShopBagList .MC_LYT_ShopBagRetailPriceHeader { padding-left:10px;  }
+.MC_LYT_ShopBagList .MC_LYT_ShopBagIBOCostHeader { padding-left:10px;  }
+.MC_LYT_ShopBagList .MC_LYT_ShopBagQuantityHeader { padding-left:10px; }
+.MC_LYT_ShopBagList .MC_LYT_ShopBagTotalPVBVHeader { padding-left:10px;}
+.MC_LYT_ShopBagList .MC_LYT_ShopBagTotalPriceHeader { padding-left:10px; }
+.RadGrid_AmwayGrid tr.groupHeader td.AmwayGrid_HeaderUnsortable, .RadGrid_AmwayGrid tr td.AmwayGrid_HeaderUnsortable {color:#000; font-weight:700;}
+.RadGrid_AmwayGrid tr.groupHeader td.AmwayGrid_HeaderUnsortable.groupHeaderName, .RadGrid_AmwayGrid tr td.AmwayGrid_HeaderUnsortable.groupFooterName { font-family:Verdana, Arial, Sans-Serif;}
+.RadGrid_AmwayGrid tr td.AmwayGrid_HeaderUnsortable.groupFooterName {padding-left:15px;}
+.RadGrid_AmwayGrid tr.lineItemListHeaderRow th.AmwayGrid_HeaderUnsortable, .RadGrid_AmwayGrid td.AmwayGrid_HeaderUnsortable {background:none; background-color: #E3E6E8; color:#494948;}
+
+.MC_LYT_ShopBagList .MC_LYT_ShopBagAllHeader span {width:21px; display:block;}
+.MC_LYT_ShopBagList .MC_LYT_ShopBagHideImagesHeader span {width:75px; display:block;}
+.MC_LYT_ShopBagList .promotionFreeItemsContainer .MC_LYT_ShopBagHideImagesHeader span {width:118px;}
+.MC_LYT_ShopBagList .MC_LYT_ShopBagItemsHeader { width:100%;  }
+.MC_LYT_ShopBagList .MC_LYT_ShopBagRetailPriceHeader span {  width:120px; display:block;}
+.MC_LYT_ShopBagList .MC_LYT_ShopBagIBOCostHeader span { width:80px; display:block;}
+.MC_LYT_ShopBagList .MC_LYT_ShopBagQuantityHeader span { width:40px; display:block;}
+.MC_LYT_ShopBagList .MC_LYT_ShopBagTotalPVBVHeader span { width:80px; display:block;}
+.MC_LYT_ShopBagList .MC_LYT_ShopBagTotalPriceHeader span { width:100px; display:block;}
+.MC_LYT_ShopBagList .promotionFreeItemsContainer .MC_LYT_NoChargeHeader span {width:300px; display:block;}
+
+table.explodedChildTable {width: 100%; table-layout:fixed; padding: 0px; margin: 0px; }
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+    /*this hack is for a rendering anomoly in Safari only. IE needs the exploded table to be fixed, Safari needs it to be auto, FF and chrome do not care*/
+    table.explodedChildTable {table-layout:auto;}
+}
+.explodedChildTable td.MC_LYT_FirstItem {width:23px;}
+.MC_LYT_ShopBagList .explodedChildTable tbody td.MC_LYT_ShopBagPhoto {width:75px; padding:4px 10px;}
+/*.explodedChildTable .MC_LYT_ShopBagPhoto {width:75px; padding:4px 10px;}
+.explodedChildTable .MC_LYT_ShopBagItems {width:100%;} */
+.explodedChildTable .MC_LYT_ShopBagQuantity {width:40px;}
+.explodedChildTable .MC_LYT_ShopBagIBOCost {width:80px;}
+.explodedChildTable .MC_LYT_ShopBagTotalPVBV {width:80px;}
+.explodedChildTable .MC_LYT_ShopBagTotalPrice {width:100px;}
+.RadGrid_AmwayGrid .explodedChildTable td.MC_LYT_FirstItem, tr.explodedChildLineItemReview td.MC_LYT_FirstItem {background-color: #E3E6E8;}
+.RadGrid_AmwayGrid .childOrderDisplayControlEmptyRow td {padding:0px; height:0px;}
+.RadGrid_AmwayGrid .childOrderDisplayControlBottomRule td {padding:0px;}
+
+.explodedParent td {background-color: #E3E6E8 !important;}
+.bundleItemsRow .childItem {display:block; width:100%; overflow:hidden; zoom:1;}
+tr.bundleItemsRow td.rowBundleItemsContainer {margin:0px; padding:0px;zoom:1;}
+.rowBundleItemsContainer .childItem div {margin:0px;}
+
+.MC_LYT_ShopBagList tbody td.MC_LYT_LastItem { background-color: #e3e6e8; }
+.MC_LYT_ShopBagList td.mini-bag-totals { font-weight: bold; background: #BDD4E4; border-bottom: 1px solid #fff; }
+.MC_LYT_ShopBagList td { border-bottom: 1px solid #fff; background: #ffffff; padding: 5px; vertical-align:top }
+.MC_LYT_ShopBagList div{margin-bottom:4px;}
+.MC_LYT_ShopBagList tbody td.MC_LYT_ShopBagPhoto { padding:4px; vertical-align:top; text-align:center; }
+.MC_LYT_ShopBagList tbody td.MC_LYT_ShopBagQuantity input { width: 20px; padding: 3px; border: 1px solid #bdbdbd; }
+.MC_LYT_ShopBagActions { display: table-column; }
+.MC_LYT_ShopBagActions img { vertical-align: middle; }
+.MC_LYT_ShopBagActionsFooter { height: 25px; padding: 5px 10px 0 0; border: none; font-weight: bold; }
+.MC_LYT_ShopBagList .MC_LYT_NumberItems { background: #fff; color: #494848; padding: 5px; }
+.MC_LYT_ShopBagList .mini-cart-items { font-size: 10px; }
+.MC_LYT_Box .MC_LYT_RndHeader_bkcolor .MC_LYT_ShopBagActions { padding: 5px 10px 0 0; }
+.MC_LYT_BoxTitle img { padding-right: 20px; }
+.MC_LYT_BoxTitle select { margin-left: 10px; padding: 2px; border: 1px solid #bdbdbd; }
+.MC_LYT_RndHeader_bkcolor { background-color: #e3e6e8; height: 1%; overflow: hidden; }
+.MC_LYT_ShopBagList .pricing-cart { font-weight: bold; text-align: right; }
+.MC_LYT_Your_Bag {line-height: 30px; padding-left: 18px; font-weight: bold; }
+.MC_LYT_ShopBagList { float: left; width: 960px; /*min-width:960px;*/ }
+.radwindow  .windowcontent .MC_LYT_ShopBagList {width:auto;}
+.MC_LYT_Shopping_Cart_help { float: right; width: 300px; }
+.need-help-container .MC_LYT_Shopping_Cart_help { float: right; width: 300px;  }
+.MC_LYT_Shopping_Cart_help_thumb { float: left; width: 120px; height: 90px; background: pink; margin-left: 20px; }
+.MC_LYT_Shopping_Cart_help_desc { float: right; font-size: 10px; padding-top: 25px; }
+.MC_LYT_Shoping_Add_item { height: 50px !important; }
+.MC_LYT_Quick_Shop { float: left; padding-top: 8px; }
+.MC_LYT_Quick_Shop_heading { font-size: 14px; font-weight: bold; float: left; margin-right: 20px; line-height: 26px; }
+.MC_LYT_Quick_Shop_Contentwrapper { float: left; width: 740px; }
+.MC_LYT_Quick_Shop_but { float: left; }
+.MC_LYT_Cart_Qty { width: 20px; }
+.MC_LYT_Quick_Shop span { float: left; padding: 0px 5px 0px 5px; }
+.MC_LYT_Quick_Shop input { float: left; margin-right: 10px; }
+.MC_LYT_Quick_Shop select { margin-right: 10px; padding: 2px; border: 1px solid #bdbdbd; }
+.MC_LYT_Quick_Shop_Add_Item { float: right; text-align: right; font-weight: normal; }
+.MC_LYT_Quick_Shop_Add_Item a { font-weight: normal; }
+.MC_LYT_Quick_Shop_Cont { float: left; width: 900px; vertical-align: middle; }
+.MC_LYT_Quick_Shop_Upper { float: left; }
+.MC_LYT_Quick_Shop_Back_Order { clear: both; font-weight: normal; margin: 5px 0px 0px 100px; }
+.MC_LYT_Quick_Shop_Back_Order span { float: left; width: 150px; }
+.MC_LYT_Quick_Shop_Back_Order_Content { color: Red; padding-left: 10px; }
+.MC_LYT_Quick_Shop_Error_Msg { clear: both; }
+.mini-bag-empty { font-size: 14px; font-weight: bold; }
+hr { border: 1px dotted #ccc; }
+/* SHOPPING LIST - 2/29/2009 - Dave Snyder */
+.MC_LYT_createdColomn { margin-right: 50px; }
+.MC_LYT_createdColomn a { margin-left: 10px; }
+.MC_LYT_shoppingListInfoContainer { display: block; }
+.MC_LYT_headertext_Capitalize { font-size: 12px; font-weight: bold; text-transform: capitalize; }
+.MC_LYT_headertext_Uppercase { font-size: 12px; font-weight: bold; text-transform: uppercase; }
+.MC_LTY_looking_sugg_container { }
+.MC_LTY_looking_sugg_container .MC_LYT_headertext_Capitalize { margin: 0 10px 10px 0; }
+.MC_LYT_ShoppingList_Line_item_Addto_link{width:150px;}
+
+/* SHOPPING LIST COMPACT CONTROL - 4/4/2009 - Dave Snyder */
+.btn_shoppingListCompactControlPopup { padding-top: 10px; }
+
+/* CHECKOUT SHIPPING-DELIVERY - 5/11/2009 - Chris Pritchard*/
+.MC_LYT_CategoryContainer .checkout-continue-button-wrapper { width: 100%; margin: 3px 0; text-align: right; clear:both; }
+.checkout-right-container { width: 303px;  }
+.checkout-left-container { width: 652px; background: #E2E6E9; float: left; clear: right; margin-top:8px; }
+.checkout-left-container h2 { font-weight: bold; font-size: 15px; padding: 15px; }
+.checkout-left-container .checkout-shipto-container { width: 337px; margin: 0 0 0 10px; }
+.checkout-left-container .checkout-pickup-container { width: 285px; margin: 0 10px; }
+.checkout-pickup-container .checkout-pickup-location { margin: 0 24px; }
+.checkout-pickup-container h4 {margin:15px 5px 7px 0; font-weight:bold;}
+.checkout-left-container-visitor { width: 290px; }
+.checkout-ibo-container-visitor { width: 310px; margin: 25px 10px; }
+.MC_LYT_FRM-checkout-cart-adddress-edit td { padding: 4px; text-align: left; }
+.MC_LYT_FRM-checkout-cart-adddress-edit label { font-weight: bold; }
+.paragraph-10px-break { margin: 10px 0; }
+.checkout-ship-address-container { margin: 0 24px 0 0 !important; width:210px; }
+.checkout-ship-address-container table {width:100%;}
+.checkout-left-container .MC_LYT_Alert {margin:15px;}
+
+.RadGrid_AmwayGrid table caption { position: absolute; width: 100%; top: 0; left: 0; height: 1.5em; }
+.RadGrid_AmwayGrid thead tr { top: 1.5em; height: 1.5em; left: 0; }
+.RadGrid_AmwayGrid tfoot td { height: 25px; width: 928px; bottom: 0; left: 0; background: #ccc; border-left: 1px solid #ccc; text-align: right; }
+.ie-overflow { overflow: auto; height: 300px; }
+
+/* CHECKOUT FORM BASE - DEFAULT VERTICAL - C.PRITCHARD 6-2009 */
+fieldset { clear: left; }
+.checkout-field, form .buttons { clear: both; margin: 0 0 .5em; }
+.checkout-field label { display: block; font-weight: bold; }
+ul.fields { margin: 0 0 .8em; padding: 0; }
+ul.fields li { list-style-type: none; margin: 0; }
+ul.inline li, form ul.inline label { display: inline; }
+ul.inline li { padding: 0 .5em 0 0; }
+input.radio, input.checkbox { vertical-align: top; }
+textarea { overflow: auto; }
+.input-text { padding: 3px; width:170px; }
+.FRM_chkbox label { width: 250px; }
+/* HORIZONTAL LAYOUT */
+form .checkout-field { padding-left: 120px; }
+form .checkout-field label { display: inline; float: left; width: 120px; margin-left: -120px; }
+
+/* CHECKOUT - ORDER PREVIEW N CONFIRMATION HEADER */
+.order-confirmation-detail-table td { padding:0 6px 0 12px; }
+.checkout-ordersetup-header { width: 202px; margin: 15px 5px; height: 150px; }
+.checkout-billingto-header { width: 104px; margin: 15px 5px; height: 150px;  }
+.checkout-packing-list-options-header { width: 208px;  margin: 15px 5px; height: 150px; }
+.checkout-order-summary-details-header { width: 163px; margin: 15px 10px; }
+.checkout-shipto-order-header { padding: 0 15px 0 0;  margin: 15px 10px; }
+.checkout-payment-order-details-header h3 { font-size: 14px; margin-bottom: 5px; }
+.checkout-confirmation-shipto { width: 163px; margin: 15px 10px; height: 120px; }
+.checkout-confirmation-status-header { width: 252px; margin: 15px 5px; height: 120px; }
+.checkout-confirmation-summary-header { width: 218px; margin: 15px 5px; height: 120px; }
+.checkout-confirmation-details-header { width: 244px; margin: 15px 5px; height: 120px; }
+.order-history-details-grid { }
+.order-history-details-grid ul li { list-style: disc; margin: 0 0 0 16px; }
+.MC_LYT_10pixBreak fieldset li td {padding: 0 5px;}
+
+
+/* CHECKOUT - DTN 5/5/2009
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.DITTO_Dropcaps { font-size: .9em; margin-left:-7px }
+.MC_LYT_DittoWidth {width:960px; clear:both; overflow:hidden;}
+.DITTO_Dropcaps sup { font-size: .8em; }
+.MC_LYT_CHECKOUT_ScrollingBox { height: 90px; overflow: auto; border: #CCC solid 1px; margin-bottom: 6px; padding: 9px; background-color: #fff; }
+.MC_LYT_CHECKOUT_Scheduler table { border-collapse: separate; margin: -1px 0 1px; }
+.MC_LYT_CHECKOUT_Scheduler td { padding: 5px; border-right: #ccc solid 1px; border-bottom: #ccc solid 1px; }
+.MC_LYT_CHECKOUT_Scheduler .Month td { padding: 5px 5px 0; background-color: #bdbdbd; border-right: #fff solid 1px; border-bottom: none; font-weight: bold; font-size: 10px; color: #fff; }
+.MC_LYT_CHECKOUT_Scheduler .SetQuantity td { padding: 2px 5px 5px; border-right: #fff solid 1px; border-bottom: #fff solid 1px; background-color: #bdbdbd; font-weight: bold; font-size: 10px; vertical-align: middle; }
+.MC_LYT_CHECKOUT_Scheduler .OrderDateLabel { border-top: #ccc solid 1px; border-left: #ccc solid 1px; font-weight: bold; }
+.MC_LYT_CHECKOUT_Scheduler .OrderDate { border-top: #ccc solid 1px; border-right: #ccc solid 1px; border-bottom: #ccc solid 1px; font-weight: bold; color: #083d88; }
+.MC_LYT_CHECKOUT_Scheduler .LeftCol { border-right: #ccc solid 1px; border-bottom: #ccc solid 1px; border-left: #ccc solid 1px; font-weight: bold; }
+.MC_LYT_CHECKOUT_Scheduler td.RightCol { border-right: none; }
+#LYT_PageContainer .GE_LYT_GrayBorder_Container .MC_LYT_PaymentAgreement p { line-height: 1.3em; margin-bottom: 14px; }
+#LYT_PageContainer .GE_LYT_GrayBorder_Container .MC_LYT_PaymentAgreement h4 { font-weight: bold; line-height: 1.3em; margin-bottom: 2px; }
+.MC_LYT_PaymentAgreement dl { margin: 10px 0 10px; font-weight: bold; }
+.MC_LYT_PaymentAgreement dt { width: 200px; margin-bottom: 10px; float: left; }
+.MC_LYT_PaymentAgreement dd { margin-right: 4em; float: left; width: 10em; text-align: right; }
+.MC_LYT_PaymentAgreement dd.parentheses { width: 480px; text-align: left; font-weight: normal; }
+
+
+/* PAYMENT - ASSIGN VOLUME MONTH - DTN 6/11/2009
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.MC_LYT_Assign_Volume_Month input { margin: 0; padding: 0; }
+
+.AssignVolume .GE_LYT_Gray_Container 
+{
+    margin-bottom: 0;
+    border: 0;
+    background-color: #d0e3f6;
+}
+
+.MC_LYT_PaymentMethod { background-color: #E3E6E8; padding: 15px; margin: 0; overflow: auto; height: 1%; border-bottom: 1px solid #fff; }
+.MC_LYT_PaymentMethod dd { /*margin-top: -5px;*/ width: 565px; float: left; }
+.MC_LYT_PaymentMethod dd p { margin: 0 0 6px; }
+.MC_LYT_PaymentMethod dd img { vertical-align: middle; }
+.MC_LYT_PaymentMethod fieldset { padding: 2px 0; width: 100%; }
+.MC_LYT_PaymentMethod fieldset li { border: none; }
+.MC_LYT_PaymentMethod fieldset label { margin-top:3px; }
+.MC_LYT_PaymentMethod label { width: 164px; margin:0; padding: 0; line-height: 1em; font-weight: bold; float: left; }
+.MC_LYT_PaymentMethod input { float: left; margin: 0 6px 0 0; padding: 3px; }
+
+/* PAYMENT - ADDRESS CONTROL OVERRIDES - DTN 9/9/2009
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.MC_LYT_PaymentMethod .MC_LYT_AddressLayout { padding:0; }
+.MC_LYT_PaymentMethod .MC_LYT_AddressLayout fieldset { margin:0; padding: 2px 0; width: 100%; }
+.MC_LYT_PaymentMethod .MC_LYT_AddressLayout label { width:164px; padding:0; line-height:1em; font-weight:bold; float:left; }
+.MC_LYT_PaymentMethod .MC_LYT_AddressLayout input.input-text { width:270px; }
+.MC_LYT_PaymentMethod .MC_LYT_AddressLayout input.smaller-text-field-zip {width:120px;}
+.MC_LYT_PaymentMethod .MC_LYT_AddressLayout input.smaller-text-field {width:30px;}
+.MC_LYT_PaymentMethod .MC_LYT_AddressLayout label.smaller-text-field {display:none;}
+.MC_LYT_PaymentMethod .Creditcard_reqfield { display:none; }
+.MC_LYT_AddressLayout .error-container {width:500px; margin-left:163px;}
+
+
+.MC_LYT_AddressLayout fieldset { margin-bottom: 8px; width: 100%; }
+.MC_LYT_AddressLayout fieldset li { border: none; }
+.MC_LYT_AddressLayout input {/*margin: 0 0px 0 0; padding: 3px !important; */}
+.MC_LYT_EditLayout label, .MC_LYT_AddressLayout label { width: 130px; font-weight: bold; float: left; }
+.MC_LYT_EditLayout .NoLabel label, .MC_LYT_AddressLayout .NoLabel label { font-weight: normal !important;  float: none !important; }
+.MC_LYT_EditLayout .MC_LYT_pnlPrimaryPhone tr td:first-child, .MC_LYT_lblBestTime {width:130px;}
+div.radwindow_AmwayWindow .MC_LYT_EditLayout table.MC_LYT_pnlPrimaryPhone {width:400px;}
+
+.MC_LYT_EditLayout .MC_LYT_pnlPrimaryPhone tr td {padding-bottom:8px;} 
+.MC_LYT_EditLayout .MC_LYT_lblEmail {} 
+.MC_LYT_EditLayout .MC_LYT_fieldNoEmail {padding-left:140px; float:left;}
+.MC_LYT_EditLayout .MC_LYT_radlstBestTime tr td:first-child {width:100px;}
+.MC_LYT_EditLayout .MC_LYT_valErrorSpan {padding-left:140px; float:left;}
+
+.MC_LYT_EditLayout .MC_LYT_fieldNoEmail .MC_LYT_cbxNoEmaild {display:inline-block; padding-right:100px; margin-top:2px;}
+.MC_LYT_AddressLayout label.no-width { width:auto; padding:0px; margin:0px;}
+.MC_LYT_AddressLayout .smaller-text-field { width: 30px !important;} /* Used for Zip 4 */
+.MC_LYT_AddressLayout .smaller-text-field-zip { width: 121px;} /* Used for Zip 4 */
+.MC_LYT_AddressLayout .smaller-text-field-zip-canada { width: 31px;} /* Used for Zip 4 */
+.reg-checkbox, .MC_LYT_AddressLayout .reg-checkbox label { width:auto; float:none; font-weight:normal !important; padding:0 5px 5px 0; }
+.reg-checkbox span input {padding: 0 5px;}
+.MC_LYT_AddressLayout table.reg-checkbox td {padding:0 5px 5px 0; }
+.MC_LYT_AddressLayout h4 {font-weight:bold;margin:15px 5px 7px 0;}
+
+.same-as-billing-checkbox label {width:175px; margin-left:5px;}
+.MC_LYT_AddressLayout .direct-deposit label {width:185px;}
+
+.PersonalInfo label { width: 175px; }
+.PersonalInfo .save-button-cell { width:203px; }
+.PersonalInfo td {vertical-align:top;}
+.PersonalInfo table table input {float:left;}
+.PersonalInfo table table label {width: 110px;}
+
+.GE_LYT_GrayBorder_Container .ImageHide { display:none; }
+
+/*.MC_LYT_PaymentMethod select {width:270px; margin:0; padding:0;}*/
+.MC_LYT_PaymentMethod em { color:#f00; }
+.MC_LYT_PaymentMethod .TextField_Full { width:290px; }
+.MC_LYT_PaymentMethod .TextField_CVS { width:4em; }
+.MC_LYT_PaymentMethod .TextField_BankDraftPIN { width:4em; margin-left:6px; }
+.MC_LYT_PaymentMethod .TextField_Zip { width:140px; }
+.MC_LYT_PaymentMethod .TextField_ZipExt { width:40px; }
+.MC_LYT_PaymentMethod .Selected { background-color:#eaedef; }
+.MC_LYT_PaymentMethod .DOB { color: #888; margin-left:8px; }
+.MC_LYT_PaymentMethod .Required { margin: -8px 0 0; }
+.MC_LYT_PaymentMethod .BillMeLater_Offer label { font-weight:normal; width:460px; line-height:1.4em; }
+.MC_LYT_PaymentMethod .BillMeLater_Offer td input { margin-top:5px; }
+.MC_LYT_PaymentMethod .BillMeLater_Offer td { padding-top:5px; }
+.MC_LYT_PaymentMethod .BillMeLater_Offer img { margin-top:0.8em; }
+.BillMeLater_Required { text-align:right;padding-right:20px; }
+.MC_LYT_PaymentMethod .QualifyingItems { color: #888; padding-left:0px;}
+
+.MC_LYT_PaymentMethod fieldset table.reg-checkbox tr td label {margin-right:20px;}
+
+
+/* PAYMENT - ORDER SETUP OPTIONS - Author Mixed
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.MC_LYT_OrderSetupOptions { background-color: #E3E6E8; padding: 15px; margin: 0; overflow: auto; height: 1%; border-bottom: 1px solid #fff; }
+.MC_LYT_OrderSetupOptions fieldset { margin: 6px 0; }
+.MC_LYT_OrderSetupOptions legend { margin-bottom: 10px; font-weight: bold; }
+.MC_LYT_OrderSetupOptions input { margin: -2px 0 0; padding: 0; }
+.MC_LYT_Crt_Mini_bag_space { margin-bottom: 3px; }
+.MC_LYT_Crt_Mini_bag { background: #aac9df; border-top: solid 2px #ffffff; border-bottom: dotted 1px #ffffff; vertical-align: middle; padding: 3px 0px 5px 3px !important; float: left; width: 99%; }
+.MC_LYT_Crt_Mini_bag_space .MC_LYT_NumberItems { margin-bottom: 5px; }
+.MC_LYT_Crt_IBO_Act_Menu { background-color:#fff; width: 111px; height: 104px; padding: 5px 0px 0px 7px; top:260px; left:840px; position:absolute; }
+.MC_LYT_Crt_IBO_Act_Menu li { border-top: dotted 1px #ccc; width: 100px; padding: 6px 2px; font-weight:normal; }
+.MC_LYT_Crt_IBO_Act_Menu ul li { float:left; text-decoration:none; background:#ffffff; text-transform:capitalize; padding:4px 2px;}
+.MC_LYT_Crt_IBO_Act_State_Menu { background: transparent url(../images/actionmenustate.gif) no-repeat 50%; width: 100px; cursor:pointer; height: 30px; padding: 0px; font-weight:normal; }
+.MC_LYT_ShopBagActions div { margin:-4px 9px; }
+.MC_LYT_ShopBagActions span { margin:0 16px 0 18px; position:relative; top:5px; width:100px;}
+.MC_LYT_Crt_Setup_Chkout { margin: 0 15px 1px 0 !important; }
+.MC_LYT_OrderSetup_Padding_Handling { padding: 15px; float: left; clear: both; overflow: hidden;}
+
+
+/* ORDER HISTORY - AUTHOR MIXED 6/25/2009
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.MC_LYT_OrderHistory {width:960px;}
+.MC_LYT_OrderHistory .MC_LYT_TabContentBorder { border-right: #CCC solid 1px; border-bottom: #CCC solid 1px; border-left: #CCC solid 1px; padding: 1px; background-color: #fff; }
+.MC_LYT_OrderHistory .MC_LYT_GrayContainer { background-color: #E3E6E8; padding: 15px 18px; margin-bottom: 1px; }
+.MC_LYT_OrderHistory .MC_LYT_ArrowRight { float: right; padding-right: 10px; background: url(../images/ico_gray_arrow_right.gif) scroll center right no-repeat; margin-right: 3px; }
+.MC_LYT_OrderHistory fieldset { margin-top: 10px; }
+.MC_LYT_OrderHistory fieldset li { float: left; display: inline; margin-right: 10px; /*padding:0;*/ vertical-align: middle; }
+.MC_LYT_OrderHistory fieldset li div.optionsGroupBox {padding:10px; border:2px solid #ccc; background-color:#ddd; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; float:left;}
+.groupOrderOrLabelTable td {text-align:center:}
+.groupOrderOrLabelTable .orLabelRule {width:50%;}
+.groupOrderOrLabelTable .orLabelRule hr {width:90%;}
+.MC_LYT_OrderHistory .Label { font-weight: bold; width: 11em; float: left; margin: 0; }
+.MC_LYT_OrderHistory .Label_Wide {font-weight: bold; width: 16em; float: left; margin: 0; }
+.MC_LYT_OrderHistory label { margin: 0; padding: 0; }
+.MC_LYT_OrderHistory td label {padding: 5px;}
+.MC_LYT_OrderHistory label.MR { margin-right: 15px; }
+.MC_LYT_OrderHistory label.ML { margin-left: 15px; }
+.MC_LYT_OrderHistory input { margin: 0; padding: 3px; }
+.MC_LYT_OrderHistory input.RewardPointInquiry_Align {float:none;}
+.MC_LYT_OrderHistory .linkSearchLOS {white-space:nowrap;display: inline-block;}
+.MC_LYT_OrderHistory .BtnPos { margin-top: -7px; }
+.MC_LYT_OrderHistory .MC_LYT_Legend img { margin-bottom: -3px; }
+.MC_LYT_Order_History_Order_Col { width: 190px; }
+.MC_LYT_Order_History .RadInputMgr_Outlook .riTextBox input {border:none; background:none;}
+.checkout-payment-order-details-header { clear: left; margin-top: 3px; padding: 0; overflow: hidden; _height: 1%; border:1px solid #ccc; }
+.checkout-payment-order-details-header table td {vertical-align:top;}
+.checkout-payment-order-details-header table table td {padding:0 5px 5px 0;}
+.checkout-payment-order-details-header_A { margin: 1px 0px 30px 0px; }
+.MC_LYT_OrderHistory .checkout-payment-order-details-header_A {margin-bottom:12px;}
+.MC_LYT_Order_History_Order_Actions { background: #ccc; width:auto; padding: 10px; height: 20px; margin-bottom: 1px; }
+.MC_LYT_Order_History_Order_Actions_Options { width: 70%; float: left; }
+.MC_LYT_Order_History_Order_Actions_Actions { width: 30%; float: right; }
+.MC_LYT_Order_History_heading span a { line-height: 22px; }
+.MC_LYT_Order_History_heading span { padding: 0 5px 0 0;}
+.MC_LYT_Ord_His_Certificate_Heading { width: 15%; float: left; padding: 5px 0px 5px 0px; }
+.MC_LYT_Ord_His_Certificate_Content { width: 70%; float: left; padding: 5px 0px 5px 0px; }
+.MC_LYT_Order_History_view_error span {  display:block;}
+.MC_LYT_Order_History_search_field {position:relative; top:-2px;}
+
+.MC_LYT_Order_History_Search_Empty {width:20%;} 
+.MC_LYT_Order_History_Search_Txt {text-align:left;}
+.MC_LYT_Order_History_Search_Txt table td {white-space:nowrap;}
+.MC_LYT_Order_History_Search_View_Col {width:144px;}
+.MC_LYT_Order_History_Search_Opt_Col {width:150px;}
+.MC_LYT_Order_History_Search_Table {width:100%; white-space: nowrap; }
+.MC_LYT_Order_History_Search_Table.MC_LYT_Order_History_Select_View tr td {vertical-align:top;}
+.MC_LYT_Order_History_Search_sep {margin-top:20px;}
+
+.MC_LYT_OH_Search_cells {float:left; min-width:10px; zoom:1; display:block;} 
+.MY_LCL_MC_LYT .MC_LYT_OH_Search_cells .btn li, .MY_LCL_MC_LYT .MC_LYT_Order_History_Search_sep .btn li {float:none !important;}
+.MY_LCL_MC_LYT.MC_LYT_OrderHistory {width:960px;}
+th.GridHeader_AmwayGrid.AmwayGrid_HeaderSortable a {display:inline-block;}
+.OrderHistoryGridControlContainer .RadGrid.OFYH .RadGrid {padding-bottom:16px;}
+.MC_LYT_TrackingInfo { background-color:#ffff9d; }
+
+.OHGroupContainer table td {padding-left:0px !important; padding-right:0px !important;}
+.OHGroupContainer table th {width:103px !important; overflow:hidden;}
+.OHGroupContainer table th.arrowColumn {width: auto !important;}
+.OHGroupContainer table th, .OHGroupContainer table .GridRow_AmwayGrid td {padding-left:4px !important; padding-right:4px !important;}
+.OHGroupContainer table th a {padding-right: 8px !important;}
+.OHGroupContainer table th span, .OrderHistoryGroupDetailContainer td span {word-wrap:break-word; width:95px; overflow:hidden;}
+.OHGroupContainer .OrderHistoryGroupDetailContainer {margin:0px !important;}
+.OHGroupContainer table tr td.OrderHistoryGroupDetail {padding:0px !important;}
+.OHGroupContainer .MasterTable_AmwayGrid td {background-color:#e0eef4; }
+.OHGroupContainer .MasterTable_AmwayGrid .GridRow_AmwayGrid td {background:none;}
+.OHGroupContainer td.OrderHistoryGroupDetail td {width:107px; padding:4px 5px 4px 4px !important; }
+.OrderHistoryGroupDetailContainer td table td {border:none; padding:4px 0px !important;}
+
+/* DITTO - DTN 7/30/2009
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.MC_LYT_RndHeaderAlt_Content .MC_LYT_DITTO_OrderInfo .btn li, .MC_LYT_RndHeaderAlt_Content .MC_LYT_DITTO_OrderInfo ul {float:none;}
+.MC_LYT_RndHeaderAlt_Content .MC_LYT_DITTO_OrderInfo li {margin:0;}
+.MC_LYT_RndHeaderAlt_Content .MC_LYT_DITTO_OrderInfo .btn_primary,
+.MC_LYT_RndHeaderAlt_Content .MC_LYT_DITTO_OrderInfo .btn_primary input,
+.MC_LYT_RndHeaderAlt_Content .MC_LYT_DITTO_OrderInfo .btn_primary:hover,
+.MC_LYT_RndHeaderAlt_Content .MC_LYT_DITTO_OrderInfo .btn_primary:hover input {background:none; height:1%; font-weight:normal;}
+.MC_LYT_RndHeaderAlt_Content .MC_LYT_DITTO_OrderInfo .btn_primary input {padding:0; display:inline-block; background:url(/Shop/Images/common/bkg.button.sprite.gif) repeat-x scroll 0 -478px; margin-right:4px; padding:4px 7px; text-align:center; cursor:pointer; width:auto; border:1px solid #979897; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; -khtml-border-radius:3px; zoom:1; /*Triggers HasLayout in IE*/}
+.MC_LYT_RndHeaderAlt_Content .MC_LYT_DITTO_OrderInfo .btn_primary input:hover {background:#b0b1b0; text-decoration:none;}
+.MC_LYT_RndHeaderAlt_Content .MC_LYT_DITTO_OrderInfo .btn_primary input:active {background:#979897; text-decoration:none;}
+.MC_LYT_RndHeaderAlt_Content .MC_LYT_DITTO_OrderInfo h4 {float:left; padding: 6px 8px 0pt 0pt; font-weight: bold; font-size:12px; text-transform:uppercase;}
+
+.MC_LYT_DITTO_Scheduler {overflow-x:auto; overflow-y:hidden; background-color:#E3E6E8;}
+.MC_LYT_DITTO_Scheduler table {width:100%; border-collapse:separate; border:none; margin:0; padding:0; background-color:#fff;}
+.MC_LYT_DITTO_Scheduler table input {margin:4px 0 0; padding:0;}
+.MC_LYT_DITTO_Scheduler colgroup.ColMonths {width:63px;}
+.MC_LYT_DITTO_Scheduler tr,
+.MC_LYT_DITTO_Scheduler th,
+.MC_LYT_DITTO_Scheduler td {border:none; margin:0; padding:0;}
+
+.MC_LYT_DITTO_Scheduler table.MonthlyQuantity {background-color:#ccc; border-right:#ccc solid 1px;}
+.MC_LYT_DITTO_Scheduler table.MonthlyQuantity tr,
+.MC_LYT_DITTO_Scheduler table.MonthlyQuantity th,
+.MC_LYT_DITTO_Scheduler table.MonthlyQuantity td  {border:none; margin:0; padding:0;}
+.MC_LYT_DITTO_Scheduler table.MonthlyQuantity .Quantity {margin-left:15px;}
+.MC_LYT_DITTO_Scheduler table.MonthlyQuantity .TD {color:#fff; font-weight:bold; padding:5px; border-left:#fff solid 1px;}
+.MC_LYT_DITTO_Scheduler table.MonthlyQuantity .SetMonthlyQuantity span {margin:4px 0; font-weight:bold; font-size:10px; display:block;}
+.MC_LYT_DITTO_Scheduler table.MonthlyQuantity .SetMonthlyQuantity a.MC_LYT_HowMuch {margin:4px 0 0 -2px;} 
+
+.MC_LYT_DITTO_Scheduler table.OrderTotals {border-right:#ccc solid 1px; border-bottom:#ccc solid 1px; margin-bottom:15px;}
+.MC_LYT_DITTO_Scheduler table.OrderTotals .TH {height:1.5em; padding:5px; border-top:#ccc solid 1px; border-left:#ccc solid 1px; font-weight:bold; white-space:nowrap;}
+.MC_LYT_DITTO_Scheduler table.OrderTotals .TD {height:1.5em; padding:5px; border-top:#ccc solid 1px; border-left:#ccc solid 1px;}
+.MC_LYT_DITTO_Scheduler table.OrderTotals .Date {color:#083d88; font-weight:bold;}
+
+.MC_LYT_AmwayGrid_RowWhite tbody td,
+.MC_LYT_AmwayGrid_RowWhite tbody td.MC_LYT_FirstItem,
+.MC_LYT_AmwayGrid_RowWhite tbody td.MC_LYT_LastItem {background-color:#fff;}
+
+
+.MC_LYT_DITTO_AddItem { width: 240px; }
+.MC_LYT_DITTO_AddItem dt { float: left; height: 3em; margin-right: 10px; }
+.MC_LYT_DITTO_OrderCreationDate input { float: left; padding:0; }
+.MC_LYT_DITTO_OrderCreationDate label { margin: 0 0 0 10px; padding: 0; }
+.MC_LYT_DITTO_OrderCreationDate select { margin: 0 14px 0 4px; padding: 0; }
+.MC_LYT_DITTO_OrderCreationDate fieldset fieldset { margin-bottom: 10px; }
+
+
+/* Add products to Ditto orders -- Author Unknown */
+.MC_LYT_Ditto_Add_prod_list{overflow:auto; height:90px; width:48.3%;padding:0px; margin-left:17px;}
+.MC_LYT_Ditto_Add_prod_list_two{width:340px; margin-left:0px;}
+.MC_LYT_Ditto_AddProduct_list_cont li{float:left; width:250px; margin:5px 0px 5px 0px;}
+.MC_LYT_Ditto_AddProdu_Container{padding-top:20px;}
+.MC_LYT_DITTO_Legal_agree{width:97%;height:60px; overflow:none; overflow-y:scroll;font-weight:normal; margin-bottom:10px;}
+
+
+/* DITTO REPORTS - 7/27/2009
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.MC_LYT_DITTOREPORTS{clear:both; float:left; margin-bottom:20px; width:100%}
+.MC_LYT_DITTOREPORTS table tbody tr td {vertical-align:top;}
+table.MC_LYT_DITTOREPORTS_AnnualProjection {border-collapse:collapse; border-bottom:#ccc solid 1px; margin:0; padding:0;}
+.MC_LYT_DITTOREPORTS_AnnualProjection_CustomBorder{border-right:#ccc solid 1px}
+.MC_LYT_DITTOREPORTS_AnnualProjection colgroup.ColFirst {width:140px;}
+.MC_LYT_DITTOREPORTS_AnnualProjection colgroup.ColMonths {width:8%;}
+.MC_LYT_DITTOREPORTS_AnnualProjection colgroup.ColMonthsAlt {width:9%;}
+.MC_LYT_DITTOREPORTS_AnnualProjection_ScrollHor {width:630px; height:190px; overflow-x:auto; overflow-y:hidden; border:0;}
+.MC_LYT_DITTOREPORTS_AnnualProjection .TD,
+.MC_LYT_DITTOREPORTS_AnnualProjection .TH {height:1.5em; padding:5px; border-top:#ccc solid 1px; border-left:#ccc solid 1px;}
+.MC_LYT_DITTOREPORTS_AnnualProjection .TH { font-family: Arial,Sans-Serif !important; font-weight: 400 !important; white-space: nowrap; color:#000;}
+.MC_LYT_DITTOREPORTS_AnnualProjection .AvgTotal, 
+.MC_LYT_DITTOREPORTS_AnnualProjection .Date {height:2em; padding:5px; line-height:1em; background-color:#bdbdbd; color:#083d88; text-align:center; font-weight:bold; border-top:#ccc solid 1px; border-left:#fff solid 1px; }
+.MC_LYT_DITTOREPORTS_AnnualProjection .AvgTotal {color:#fff; }
+.MC_LYT_DITTOREPORTS_AnnualProjection .NoLeftBorder {border-left:none;}
+.MC_LYT_DITTOREPORTS h2 {float:left; margin-right:5px}
+.MC_LYT_DITTOREPORTS ul.DittoReportsHeading {float:right; margin-bottom:16px;}
+.MC_LYT_DITTOREPORTS ul.DittoReportsHeading li.IDNumber { font-weight:bold; padding-right:10px; margin:0 0 3px; float:right;}
+.MC_LYT_DITTOREPORTS .DittoReportsHeading .print a {float:right;}
+.MC_LYT_DITTOREPORTS .DittoReportsHeading .print {clear:both; } 
+.MC_LYT_DITTOREPORTS_AnnualProjection th div {white-space:nowrap;}
+.ProjectionContainerFirstColumn .MC_LYT_DITTOREPORTS_AnnualProjection {border-right: 1px solid #ccc;}
+.MC_LYT_DITTOREPORTS_AnnualProjection td.last {border-right:1px solid #ccc;}
+.dittoMonthlyProjectionContainer {width: auto !important;}
+th.MonthlyProjectionBV, th.MonthlyProjectionPV {width: 90px;}
+th.MonthlyProjectionTotalCost {width:100px}
+table.projectOrderTotalContainer {width:100%;}
+table.projectOrderTotalContainer td {padding:8px 10px 0px 10px;}
+.projectOrderTotalContainer .projectOrderTotalBV, .projectOrderTotalContainer .projectOrderTotalPV {width:90px; }
+.projectOrderTotalContainer .projectOrderTotalCost {width:100px;}
+.projectOrderTotalLabel {text-align:right;}
+
+.MC_LYT_DITTOREPORTS colgroup.ColPortfolioTotals {width:50%;}
+.MC_LYT_DITTOREPORTS colgroup.ColProjectionsSales {width:206px;}
+.MC_LYT_DITTOREPORTS_Proj_Ord_Total{width:600px; padding-top:5px; float:right;}
+.MC_LYT_DITTOREPORTS_Proj_Ord_Total li{float:left;}
+.MC_LYT_DITTOREPORTS_Proj_Ord_Total .MC_LYT_DITTOREPORTS_Proj_Ord_Total_Heading{width:220px;float:right;}
+.MC_LYT_DITTOREPORTS_Proj_Ord_Total .MC_LYT_DITTOREPORTS_Proj_Ord_Total_Cost{width:80px; float:right;}
+.MC_LYT_DITTOREPORTS_Proj_Ord_Total .MC_LYT_DITTOREPORTS_Proj_Ord_Total_PV{width:60px; float:right;}
+.MC_LYT_DITTOREPORTS_Proj_Ord_Total .MC_LYT_DITTOREPORTS_Proj_Ord_Total_BV{width:62px; float:right}
+.MC_LYT_DITTOREPORTS_Proj_table {width:795px; overflow:none; overflow-x:scroll; }
+.MC_LYT_DITTOREPORTS_Proj_table table{width:1000px;}
+.MC_LYT_DITTOREPORTS_Proj_table td{line-height:20px;float:left !important;}
+.MC_LYT_DITTOREPORTS_Proj_table th{line-height:20px; width:130px;  float:left !important;}
+.MC_LYT_DITTOREPORTS {max-width:960px;}
+
+/* Added by AIUHD78 21/8/09 */
+.MC_LYT_DITTOREPORTS .MC_LYT_PortFolio,
+.MC_LYT_DITTOREPORTS .MC_LYT_Projection {width:100%; margin-top:1px}
+.MC_LYT_DITTOREPORTS .MC_LYT_PortFolio td,
+.MC_LYT_DITTOREPORTS .MC_LYT_Projection td,
+.MC_LYT_DITTOREPORTS .MC_LYT_Projection thead th,
+.MC_LYT_DITTOREPORTS .MC_LYT_Projection tbody th {border:1px solid #ccc; padding:5px}
+.MC_LYT_DITTOREPORTS .MC_LYT_PortFolio td span {float:left; margin-left:0.5em;} /* display:block; width:80% */
+.MC_LYT_DITTOREPORTS .MC_LYT_PortFolio td strong {display:block; float:left; width:20%}
+.MC_LYT_DITTOREPORTS .MC_LYT_Projection thead th {text-align:center;}
+.MC_LYT_DITTOREPORTS .MC_LYT_Projection tbody th {text-align:center; font-weight:bold;}
+.MC_LYT_DITTOREPORTS .MC_LYT_Projection tbody tr th {text-align:left;}
+.MC_LYT_DITTOREPORTS .MC_LYT_Projection .MC_LYT_HeadContent {background:#BDBDBD;text-align:center; color:#fff; font-weight:bold}
+
+/* DITTO MANAGE DETAILS - Author Mixed
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.MC_LYT_DITTO_ManageDetails .Fieldset {width:850px; position:relative; padding:0; margin-bottom:1.3em;}
+.MC_LYT_DITTO_ManageDetails fieldset {margin:0; padding:0;}
+.MC_LYT_DITTO_ManageDetails legend span {position:absolute;	width:164px; top:0 !important; left:0; display:block; font-weight:bold;}
+.MC_LYT_DITTO_ManageDetails .Field {padding-left:164px;}
+.MC_LYT_DITTO_ManageDetails .Field label.Hidden {display:none;}
+.MC_LYT_DITTO_ManageDetails .Field li {float:left;}
+.MC_LYT_DITTO_ManageDetails label {margin:0 5px;}
+.MC_LYT_DITTO_ManageDetails input {margin:0;}
+.MC_LYT_DITTO_ManageDetails .MC_LYT_ArrowRight {padding-right:10px; background:url(../images/ico_gray_arrow_right.gif) scroll center right no-repeat; margin-right:3px}
+
+
+/* DITTO MANAGE DETAILS - SUNIL
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.MC_LYT_DITTO_ManageDetails_Tab {padding:10px; margin-top:10px;}
+.MC_LYT_DITTO_ManageDetails_Tab .MDTH {background:#ccc; border-bottom:solid 1px #fff; border-right:solid 1px #ccc; border-left:solid 1px #ccc; border-top:solid 1px #ccc; padding:5px; font-weight:bold;}
+.MC_LYT_DITTO_ManageDetails_Tab .MDTD {border:solid 1px #ccc; padding:5px; background-color:#fff;}
+.MC_LYT_DITTO_ManageDetails_Tab th {margin:0px; padding:0px;}
+.MC_LYT_DITTO_ManageDetails_Tab td {margin:0px; padding:0px;}
+.MC_LYT_DITTO_ManageDetails_Tab td input {margin:3px 0 4px; padding:0px;}
+.MC_LYT_DITTO_ManageDetails_Tab td label {margin-right:12px; padding:0px;}
+
+
+/* DITTO PENDING ORDERS - DTN 7/30/2009
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.MC_LYT_DITTO_PendingOrders dl {margin-bottom:2em;}
+.MC_LYT_DITTO_PendingOrders dt {width:164px; float:left;}
+.MC_LYT_DITTO_Shop_List_Dist_view table{ float:left; font-weight:bold;}
+.MC_LYT_DITTO_PendingOrders dd {padding-left:164px;}
+
+/* Added for DirectDepositPreEdit
+DK added CSS -- need to pull this and similar from MyAccount.css into 
+user-management.css AIUT986 */
+.MC_LYT_TopCheckSection {margin-top:8px;}
+.MC_LYT_TopCheckSection fieldset { width: 100%; margin-bottom: 8px; }
+.MC_LYT_TopCheckSection fieldset label {float: left;  }
+.MC_LYT_From_info {font-weight: bold; font-style: italic;}
+.MC_LYT_From_info p {line-height: 1.6em; width: 100%}
+.MC_LYT_From_info span {margin-bottom: 8px;}
+.MC_LYT_DITTO_PendingOrders dd {padding-left:164px;}
+
+
+/* DITTO ADD ITEMS - DTN 7/31/2009
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.MC_LYT_DITTO_AddItems {width:960px;}
+.MC_LYT_DITTO_AddItems .GE_LYT_Gray_Container {padding:10px;}
+.MC_LYT_DITTO_AddItems .add-multiple-items-definition-list dd.float-right {width:200px; margin-top:-1.5em; padding-right:0;}
+.MC_LYT_DITTO_AddItems .add-multiple-items-definition-list dd.first-dd {display:none;}
+ul.MC_LYT_DITTO_AddItemsFrom {color:#006699; float:right; width:190px; margin-top:-3.8em;}
+.MC_LYT_DITTO_AddItems .MC_LYT_RndHeader {display:none;}
+.MC_LYT_Add_item_left_head .MC_LYT_Add_item_left_head_cont{ float: left; clear: both; width:400px; margin-left:225px;}
+
+/* DELIVERY OPTION OVERRIDES - DTN 8/11/2009
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.MC_LYT_DITTO_DeliveryOptions ul, .DeliveryOptions ul, .DeliveryOptions p, .MC_LYT_DITTO_DeliveryOptions .margin-lt, .MC_LYT_DITTO_DeliveryOptions .margin-top {margin-top:0; margin-left:0;}
+#LYT_PageContainer .MC_LYT_DITTO_DeliveryOptions p {line-height:1em;}
+.MC_LYT_DITTO_DeliveryOptions table {margin-top:10px;}
+#LYT_PageContainer .MC_LYT_DITTO_DeliveryOptions table tr {padding:10px;}
+.divIncompleteDitto {max-height:230px; overflow:auto;}
+
+
+/* WEB OFFLINE - DTN 8/11/2009
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.MC_LYT_WEBOFFLINE_Availability .Fieldset {width:750px; position:relative; padding:0; margin-bottom:1.3em;}
+.MC_LYT_WEBOFFLINE_Availability fieldset {margin:0; padding:0;}
+.MC_LYT_WEBOFFLINE_Availability legend span {position:absolute;	width:194px; top:0; left:0; display:block; font-weight:bold;}
+.MC_LYT_WEBOFFLINE_Availability .Field {padding-left:194px; width:680px;}
+.MC_LYT_WEBOFFLINE_Availability .Field li {float:left;}
+.MC_LYT_WEBOFFLINE_Availability .Field a {padding-left:14px;}
+.MC_LYT_WEBOFFLINE_Availability label {margin:0 5px;}
+.MC_LYT_WEBOFFLINE_Availability input {margin:0; padding:0;}
+
+
+/* SUPPORT EMAIL SUBMIT - DTN 8/14/2009
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.MC_LYT_SUPPORT_Email {background-color:#E3E6E8; padding:0 15px;}
+.MC_LYT_SUPPORT_Email fieldset {margin:0; clear:none;}
+.MC_LYT_SUPPORT_Email legend {font-size:14px; font-weight:bold; margin:0; padding-bottom:12px; *margin:0 -7px;/* IE Win */}
+.MC_LYT_SUPPORT_Email label {float:none; display:inline-block; width:164px; margin:3px 0 0; padding:0; height:2.6em; line-height:1.3em; font-weight:bold; vertical-align:top;}
+.MC_LYT_SUPPORT_Email input {margin:0;}
+.MC_LYT_SUPPORT_Email em {color: #f00;}
+.MC_LYT_SUPPORT_Email input.TextField_Full {width:220px;}
+.MC_LYT_SUPPORT_Email .Required {color:#888;}
+
+/* SUPPORT EMAIL SUBMIT ADDRESS CONTROL OVERRIDES - DTN 8/18/2009
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.MC_LYT_SUPPORT_Email_Address .MC_LYT_AddressLayout {padding:0;}
+.MC_LYT_SUPPORT_Email_Address .MC_LYT_AddressLayout label {float:none; display:inline-block; width:164px; margin:3px 0 0; padding:0; height:2.6em; font-weight:bold; vertical-align:top;}
+.MC_LYT_SUPPORT_Email_Address .MC_LYT_AddressLayout input.input-text {width:220px;}
+.MC_LYT_SUPPORT_Email_Address .MC_LYT_AddressLayout input.smaller-text-field-zip {width:120px;}
+.MC_LYT_SUPPORT_Email_Address .MC_LYT_AddressLayout input.smaller-text-field {width:30px;}
+.MC_LYT_SUPPORT_Email_Address .MC_LYT_AddressLayout label.smaller-text-field {display:none;}
+
+
+/* SUPPORT - FEEDBACK CONTROL - DTN 8/17/2009
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.MC_LYT_SUPPORT_Feedback_ExpandCollapse {background:transparent url(../images/common/bkg.button.link.sprite.notransparency.gif) no-repeat scroll 100% -31px; width:100%; cursor:pointer; border:0; display:block; float:left; height:31px;}
+.MC_LYT_SUPPORT_Feedback_ExpandCollapse span {background:transparent url(../images/common/bkg.button.link.sprite.notransparency.gif) no-repeat 0 0; width:100%; display:block; line-height:1em; padding:9px 15px 10px; font-family:Arial, verdana, sans-serif; font-size:12px;}
+.MC_LYT_SUPPORT_Feedback_ExpandCollapse:hover {background:transparent url(../images/common/bkg.button.link.sprite.notransparency.gif) no-repeat scroll 100% -93px; cursor:pointer; border:0; display:block; float:left; height:31px; text-decoration:none;}
+.MC_LYT_SUPPORT_Feedback_ExpandCollapse span:hover {background:transparent url(../images/common/bkg.button.link.sprite.notransparency.gif) no-repeat 0 -62px; display:block; line-height:1em; padding:9px 15px 10px; text-decoration:none;}
+.MC_LYT_SUPPORT_Feedback_ExpandCollapse a:link {color:#fff; font-weight:bold;}
+.MC_LYT_SUPPORT_Feedback_ExpandCollapse a:visited {color:#fff; font-weight:bold;}
+.MC_LYT_SUPPORT_Feedback_ExpandCollapse a:hover {color:#fff; font-weight:bold; text-decoration:none;}
+.MC_LYT_SUPPORT_Feedback_ExpandCollapse a:active {color:#fff; font-weight:bold;}
+.MC_LYT_SUPPORT_Feedback_ExpandCollapse img {margin-right:6px;}
+.MC_LYT_SUPPORT_Feedback_ExpandCollapse_Content input {float:left;}
+.MC_LYT_SUPPORT_Feedback_ExpandCollapse_Content label {float:left; margin-right:15px;}
+
+
+/* DMK AIUT986
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.padding-lt10 { padding-left: 10px !important; }
+.padding-rt10 { padding-right: 10px !important; }
+.SuperScript {float:left; padding:0 10px 10px 0;}
+
+
+/* Sukanya AIUFX14 Fixed for defect 10839 in cart address phone control
+-----------------------------------------------------------------*/
+.MC_LYT_CartAddress_Phone {width: 120px;float: left;}
+.MC_LYT_CartAddress_Phone label{width: auto;float: left;padding-right: 2px;}
+
+/* Prescott - ES Promottions Stying
+-----------------------------------------------------------------*/
+.MC_LYT_CloseToQualifyingCart {width:195px;float:left;}
+.MC_LYT_CloseToQualifyingCart img {width:185px;}
+#divCloseToQualifyingPromotionsIndicator { padding: 10px 0 10px 0 }
+
+.MC_LYT_CloseToQualifyingCart .header{font-weight:700;color:#FFF;padding:5px;background-color:#245475;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;}
+.MC_LYT_CloseToQualifyingCart .header a {color:#FFF}
+.MC_LYT_CloseToQualifyingCart .header:first-child{margin-top:8px;}
+.MC_LYT_CloseToQualifyingCart .body{margin-bottom:10px;padding:5px;background-color:#E9EBEC;border:1px solid #858585; border-top:none;-moz-border-radius:0 0 5px 5px;border-radius:0 0 5px 5px;-webkit-border-radius:0 0 5px 5px;}
+
+.MC_LYT_CloseToQualifyingPopup{margin-bottom:-50px;*margin-bottom:-45px;width:400px;height:400px;overflow:auto;padding:10px; border:1px solid #ccc;}
+.MC_LYT_CloseToQualifyingPopup .header{font-weight:700; margin-bottom:5px;}
+.MC_LYT_CloseToQualifyingPopup .body a{margin-bottom:5px;}
+.MC_LYT_CloseToQualifyingPopup .body{margin-bottom:5px; border-bottom:1px solid #CCC;background-color: #FFF;height:auto;}
+
+
+.MC_LYT_DisabledQTY{border:1px solid silver; padding:3px; color:silver; vertical-align:middle; width:20px}
+
+/* Cart Designation Control - Pritchard - 5/17/2012 */
+
+.MC_LYT_CartDesignation h4 {font-size:15px; font-weight:bolder; display:inline;} 
+.MC_LYT_CartDesignation td strong  {font-size:15px; font-weight:bolder; display:inline;} 
+
+.multiPaymentOptionsContainer {position:relative; width:620px; overflow:hidden;}
+.multiPaymentOptionsContainer .Required {position:absolute; left:20px; bottom:20px;}
+.multiPaymentOptionsContainer .Required em {color: red;}
+.MultiPaymentOptionsControl {padding: 0px 15px 50px 15px;}
+
+.multi-payment-button .btn_primary input {display:inline-block; background:url(/Shop/Images/common/bkg.button.sprite.gif) repeat-x scroll 0 -478px; margin-right:4px; padding:5px 7px; text-align:center; cursor:pointer; width:auto; border:1px solid #979897; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; -khtml-border-radius:3px; zoom:1; /*Triggers HasLayout in IE*/}
+.multi-payment-button .btn_primary input {color:#fff; font-weight:normal;}
+.multi-payment-button .btn_primary input:hover {background:#d6d7d5; text-decoration:none;}
+.multi-payment-button .btn_primary input:active {background:#979897; color:#fff;}
+
+.multi-payment-control label { margin-left:5px; float:none;}
+
+.MultiPayCreditCardPayment  {background-color:#E9E9E9; padding:10px;}
+.MultiPayCreditCardPayment .apply-credit-card {padding: 5px; width:300px;}
+
+
+.multiPaymentOptionsContainer .MC_LYT_PaymentMethod {
+    border-bottom: medium none;
+    height: auto;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+}
+
+.multi-payment-button .btn_primary input {display:inline-block; background:url(/Shop/Images/common/bkg.button.sprite.gif) repeat-x scroll 0 -478px; margin-right:4px; padding:5px 7px; text-align:center; cursor:pointer; width:auto; border:1px solid #979897; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; -khtml-border-radius:3px; zoom:1; /*Triggers HasLayout in IE*/}
+.multi-payment-button .btn_primary input {color:#fff; font-weight:normal;}
+.multi-payment-button .btn_primary input:hover {background:#d6d7d5; text-decoration:none;}
+.multi-payment-button .btn_primary input:active {background:#979897; color:#fff;}
+
+.multi-payment-control label { margin-left:5px; float:none;}
+
+.MultiPayCreditCardPayment  {background-color:#E9E9E9; padding:10px;}
+.MultiPayCreditCardPayment .apply-credit-card {padding: 5px; width:300px;}
+
+.order-summary-headers {border-bottom: 1px solid #ededed; font-weight:bold; font-size:12px; width:283px; height:19px; padding:5px 3px 3px 21px;}
+.payment-summary-control-applied td {font-size:12px; font-weight:bold; color:Red; padding:5px 20px 3px 21px;}
+
+.multiPaymentOptionsContainer .btn_tertiary a, .btn_quaternary, a.btn_quaternary{
+display: inline-block;
+background: url(/Shop/Images/common/bkg.button.sprite.gif) repeat-x scroll 0 -478px;
+margin-right: 11px;
+padding: 2px 4px;
+text-align: center;
+cursor: pointer;
+width: auto;
+border: 1px solid 
+#979897;
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+-khtml-border-radius: 3px;
+zoom: 1;
+height: 14px;
+font-size: 9px;
+}
+
+.checkout-right-container .border-right {border-right:none;}
+.checkout-right-container .order-confirmation-detail-table h3 {  background: none repeat scroll 0 0 #CEDFEA; color: #245475; font-family: Verdana; font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    min-height: 30px;
+    padding: 10px 22px 0 20px; }
+
+.checkout-right-container .order-confirmation-detail-table td {padding:0px;}
+.checkout-right-container .MC_LYT_OS_Title .MC_LYT_OS_Title { padding: 20px 22px 0 20px; font-family: Verdana; font-size: 14px; font-weight: bold; color: #245475; min-height: 30px; _height: auto !important; height: 30px; background: #e2edf4;*border-bottom:1px solid #FFF; }
+
+.checkout-right-container .MC_LYT_OrderSummary table { border-collapse: collapse; width: 100%; }
+.checkout-right-container .MC_LYT_OS_listItems {  min-height: 27px; _height: auto !important; height: 27px;  vertical-align: middle; }
+.checkout-right-container .MC_LYT_OS_item { padding-left: 20px; vertical-align: middle; font-weight: normal; font-family: Verdana; }
+.checkout-right-container .MC_LYT_OS_Order { padding: 0 22px 0 0; text-align: right; vertical-align: middle; }
+.checkout-right-container .MC_LYT_OS_totals { min-height: 27px; _height: auto !important; height: 27px; border-collapse: collapse; vertical-align: middle; }
+.checkout-right-container .MC_LYT_OS_Security_Image { background: #aac9df; clear: both; overflow: hidden; border-width: 1px; border-bottom:1px dotted #CCC; font-weight: bold; }
+.checkout-right-container .MC_LYT_OS_Security_Image img { float: right; padding: 10px; }
+.checkout-right-container .MC_LYT_OS_Information { background: #aac9df; clear: both; padding: 10px 20px 10px 20px; }
+.checkout-right-container .MC_LYT_OS_totalitem { padding: 0 0 0 20px; font-weight: bold; font-family: Verdana; vertical-align: middle; }
+.checkout-right-container .MC_LYT_OS_totalOrder { padding: 0 22px 0 0; text-align: right; vertical-align: middle; font-weight: bold; font-family: Verdana; }
+.checkout-right-container .MC_LYT_OS_totals_first { min-height: 27px; _height: auto !important; height: 27px; vertical-align: middle; }
+.checkout-right-container .MC_LYT_OS_Title { padding: 10px 22px 0 20px; background: #CEDFEA; font-family: Verdana; font-size: 14px; font-weight: bold; color: #245475; min-height: 30px; _height: auto !important; height: 30px;  }
+.checkout-right-container .MC_LYT_OS_help { vertical-align: text-bottom; padding-left: 3px; }
+.checkout-right-container .checkout-payment-order-details-header { clear: left; margin-top: 3px; padding: 0; overflow: hidden; _height: 1%; border:none; }
+
+table.paypal {width:100%;}
+.paypal td {font-size:11px; white-space:nowrap;}
+.paypal td input {height:12px; width: 10px; white-space:nowrap;}
+.paypal td select {font-size: 11px;  }
+
+table.bml {width:100%;}
+.bml td {font-size:11px; }
+.bml td input {height:12px; width: 80px;}
+
+.checkout-right-container .order-confirmation-detail-table td p, .checkout-right-container .order-confirmation-detail-table td input {margin:0 10px 0 20px;}
+
+.MC_LYT_ErrBox {margin-bottom:10px;}
+
+.MC_LYT_CellAlertTitle {display:block;}
+.MC_LYT_CellAlertBody {border:solid 1px #ccc; padding:15px;clear:both;display:block; }
+.MC_LYT_CellAlerts a.cellAlert-Error {background:transparent url(/Shop/Images/ico_sprite_sheet.gif) -1079px -1955px no-repeat; padding:10px 10px 10px 29px;}
+.MC_LYT_CellAlerts a.cellAlert-Error:link,
+.MC_LYT_CellAlerts a.cellAlert-Error:visited {color:#f00;}
+.MC_LYT_CellAlerts a.cellAlert-Warning {background:transparent url("/Shop/Images/ico_warning.gif") 6px 6px no-repeat; padding:10px 10px 10px 29px;}
+
+.PU_LO_MsgItems li {list-style-position:outside; list-style-type:disc; margin-left:5px; padding-left:5px;}
+.PU_LO_Intro, .PU_LO_Msg { display:block;padding-bottom:10px; }
+a.PU_LO_MsgNav, a.PU_LO_MsgNav:link, a.PU_LO_MsgNav:visited {float:right; border:solid 1px #333;background-color:#ccc;font-size:10px;margin-left:10px;color:#333;text-decoration:none;}
+.PU_LO_MsgNavTxt { padding:3px 6px 3px 6px;display:inline-block; }
+
+/* Inline promo items */
+.InlineReviewPromo_Header {background-color:#E2EDF4;border-top:1px solid #CCCCCC; border-left:1px solid #CCCCCC;border-right:1px solid #CCCCCC;padding:15px;}
+.InlineReviewPromo_Body {background-color:#E2EDF4;border-bottom:1px solid #CCCCCC;border-left:1px solid #CCCCCC;border-right:1px solid #CCCCCC;padding:15px;}
+.InLineReviewPromo_Separator {margin-top:2px;}
+.InLineReviewPromo_HR{border:dashed #CCCCCC; border-width:1px 0 0; height:0;}
+
+/* Reward Inquiry */
+.RewardInquiry_Body{max-width:795px;}
+
+/* Reward Point Inquiry*/
+.RewardPointInquiry_Align{display:inline-block;float:left;}
+/* Review Promo Items  */
+.ReviewPromoItem, .ReviewPromoItem div {color: #006699;font-weight:bold;}
+.ReviewPromoItem_ItemQTY {font-weight:bold; padding-bottom:10px;}
+
+/*Payment Options Reward */
+.RewardPaymentOptions_Div{padding-bottom:5px;}
+
+/* Voucher */
+/*.VoucherItem {width:400px; color:#006699;}*/
+.VoucherList {width:100%}
+.VoucherList th {padding: 10px;}
+.VoucherItem {border-top:1px dashed #CCCCCC; float:none;}
+.VoucherItem td{padding:5px 8px 5px 8px;}
+.VoucherItem label{color:#006699; width:auto}
+.Voucher_Header {color:#006699; font-weight:bold;float:left;padding-left:10px;cursor:hand;cursor:pointer;padding-top:5px;}
+.Voucher_Link {color:#006699;float:right;padding:5px}
+.redemption_total_label {color:red;font-weight:bold;float:left;padding-top:5px;}
+.Voucher_HR {margin-left:10px;margin-right:10px;}
+.VoucherPopup_Header{}
+.VoucherInquiryColumn_Header {background: url("../images/common/grid_bkgd_headers_sorted.gif") repeat-x scroll left bottom #BDBDBD;color:#494948;border-right:1px solid #FFFFFF;border-top:medium none;font-weight:bold;height:33px;line-height:11px;padding:0 10px;text-align:left;text-transform:uppercase;vertical-align:middle;}
+.VoucherHideHeader {display:none;}
+.typeColumn span {display:block; width:160px; word-wrap:break-word; overflow:hidden;}
+.VoucherEditCartLink {font-weight:normal}
+.VoucherErrorContainer {margin-top:30px;}
+
+/*Special Offers Summary */
+.SpecialOffersSummary_Items td {color:red; border-top:1px dashed #CCCCCC; padding:5px 10px 5px 20px;}
+.SpecialOffersSummary_Totals td {font-weight:bold; border-top:1px dashed; padding:5px 10px 5px 20px;}
+.SpecialOffersSummary_Amounts {font-family: Verdana; font-weight: bold;padding: 0 22px 0 0; text-align: right; vertical-align: middle;}
+.SpecialOffersSummary_Table {border:1px solid #CCCCCC; width:100%;}
+.SpecialOffersSummary_Table .SOtitle span {display:inline-block; width:185px; word-wrap:break-word; overflow:hidden;}
+.SpecialOffersSummary_Table .SOtitle {width:185px; zoom:1;}
+
+/* NJoy Affiliate Shopping Cart */
+.NJoyShoppingCart_Table {width: 600px; margin-left:150px;}
+.NJoyShoppingCartContainer {background-color: #E3E6E8 !important; border:0px !important;}
+.NJoyShoppingCartNumNameContainer {border: 0px !important;}
+.NJoyShoppingCart_TD {width:276px; background-color:White; border-left:1px solid #CCCCCC !important;}
+.NJoyShoppingCard_Border {border-left:1px solid #CCCCCC !important;}
+.NJoyShoppingCart_Header {Color:#494948;}
+.NJoyAffiliateShoppingHeader {border-top: medium none; border-left: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC; font-weight: bold; height: 33px; width: 276px; line-height: 11px; padding: 0 10px; text-align: left; text-transform: uppercase; vertical-align: middle; background: url("../images/common/grid_bkgd_headers_unsortable.gif") repeat-x scroll left bottom #BDBDBD; color: #494948; text-align: center;}
+.NJoyChangeBTN {padding-left: 20px; padding-right: 10px;}
+.NJoyIndexHr {border-style:solid;}
+#NJoyNoFloat {float:none !important;}
+.NJoyOrderLineItems{text-align: center;}
+.NJoyWidthCenter {width:100%;}
+.NJoyVDPhone {width:44%; height:16px; margin-bottom:3px;}
+.NJoyVDAreaCode {width:50%;}
+.NJoyOrderConfirmationDetails_TD {padding-top:5px !important; padding-bottom:5px !important;}
+.NJoyShoppingCartCenter {text-align: center !important;}
+
+/* Multi-PFP and Trade in */
+.PromoItemsGrid table {width:100%;}
+.PromoItemsGrid table tr th {font-weight:700; padding:4px 0px 4px 15px;}
+.PromoItemsGrid table tr th.firstRow {padding-left:0px;}
+.PromoItemsGrid table tr td {border-top:1px solid #ccc; padding:4px 0px 4px 15px; width:auto;}
+.PromoItemsGrid table tr td.firstRow, .PromoItemsGrid table tr td.lastRow, .PromoItemsGrid table tr th.lastRow {padding-left:0px;}
+.PromoItemsGrid table tr.multiple-items-error td {padding-bottom:2px;}
+.PromoItemsGrid table tr.PromoPromptRow td, .PromoItemsGrid table tr.PromoTopRow td, .PromoItemsGrid table tr.multiple-items-error td {border:none; padding-top:0px;}
+.PromoItemsGrid th.WebPageDescription {width:75%;}
+.PromoItemsGrid .GE_LYT_Gray_Container {padding-bottom:2px;}
+.PromoItemsGrid .btnRemove li {margin-left:15px; }
+.PromoItemsGrid .PromoPromptRow td {padding-bottom:8px;}
+
+/*Payment Options */
+h3.paymentOptionHdr {padding:10px 0px 10px 10px; zoom:1; font-weight:700; border-top: solid 1px #fff; font-size:12px;}
+div.paymentOptionHdr {margin-left: 20px; padding-bottom:8px;}
+
+.paymentOptionHdr select {width:95%;}
+.paymentOptionsAccordionContainer {position:relative; zoom:1; background-color:#E3E6E8;}
+.ui-dialog-content.ui-widget-content {height:auto !important;}
+
+/* Charitable Donation Selection */
+.MC_LYT_CharitySku {height:110px;position:relative;margin-bottom:15px;overflow:hidden;border:2px solid #999;border-left:0;border-right:0;}
+.MC_LYT_CharitySku .charity-title {display:block;margin-left:0px;padding:0;width:320px;}
+.MC_LYT_CharitySku .charity-sub {display:block;margin-left:0px;padding:0;width:320px;}
+.MC_LYT_CharitySku .charity-instr {width:230px;position:absolute;right:0px;top:73px;}
+.MC_LYT_CharitySku .charity-tiles {height:135px;width:630px;position:absolute;right:0px;top:15px;overflow:hidden;}
+.MC_LYT_CharitySku .charity-tile {position:relative;height:80px;width:80px;overflow:hidden;float:left;margin:0 0 0 40px;padding:0;}
+.MC_LYT_CharitySku .charity-tile img {position:absolute;z-index:1; height: 80px; width: 80px}
+.MC_LYT_CharitySku .charity-choice {position:absolute;height:15px;width:80px;top:55px;text-align:center;z-index:2;}
+
+/* ABO Number watermark */    
+input.watermark { color: #999; }    
+.ABOWrapper { background:#e6e5e5; height: 50px }
+.ElementNoWrap { white-space: nowrap !important;}
+.HeaderText { font-weight:bold; }
+.GroupOrderCell { padding: 5px !important; }
+    
+ /* Cart Desegnation */
+.CD_outerContainer {background-color:#e6eff7; border:1px solid #ccc; clear: left;margin:3px 0px; padding: 4px;}
+.CD_outerContainer h3 {font-size: 14px; margin-bottom: 5px;}
+.CD_innerContainer {width: 100%; overflow: hidden; position:relative;}
+.CD_shipDelContainer {padding-right: 4px;}
+.CD_shipDelContainer, .CD_secondarySection {position: relative;}
+.CD_secondarySection {max-width: 240px; /*word-break:break-all;*/}
+.CD_secondarySection table {height: 100%; max-width:240px;}
+.CD_secondarySection table td > div {max-width:240px;}
+.CD_link {padding-top:12px; display: block; position: absolute; bottom: 4px;}
+.CD_secondarySection .CD_link {max-width:200px; }
+.CD_outerContainer td {vertical-align: top; height: 100%;}
+.CD_sectionContainer {margin-bottom: -300px; padding: 0px 4px 300px 4px; border-left: 1px solid #ccc; height: 100%;}
+.CD_innerContainer td.VAB {padding-top:24px;}
+.CD_orderSummaryControl  a {padding: 4px 0px;}
+.CD_orderSummaryControl table span {display: block; padding-bottom:12px;}
+.CD_orderSetupControl {float:right;}
+.CD_orderSetupControl .CD_label {font-weight: 700;}
+.CD_orderSetupControl div {margin-bottom: 4px;}   
+.CD_fullfillmentLink td.VAB div {border-left:1px solid #000;margin-left:8px;padding-left:8px; float:left;}
+.CD_fullfillmentLink td.VAB div:first-child {border:none !important; margin-left:0px; padding-left:0px;}
+.CD_fullfillmentLink td.VAB > div {display:inline; margin-bottom:4px;}
+.CD_fullfillmentLink {height:100%;}
+.CD_fullfillment {min-width: 1%;} 
+.CD_shipFrom {min-width:1%;} 
+table.CD_fullfillmentControl td { border-bottom: none !important;}
+#product_detail_container .cart .desc .ABOnumberField {width:195px !important;}
+div.ABOnumberTextContainer input.ABOnumberField.borderBoxSizing.watermark {width:95% !important; margin-bottom:4px;}
+span.MC_LYT_ProductListCat table {table-layout: fixed;}
+div.ABONumberField {padding-bottom: 10px;}
+
+.localCartPaymentControl table.paymentOptionsTable td {vertical-align: top;}
+.localCartPaymentControl table.paymentOptionsTable .MC_LYT_RndHeader {margin-top: 8px;}
+.localDeliveryOptionsTable b {font-weight:400 !important;}
+.localDeliveryOptionsTable input {float: left;}
+.localDeliveryOptionsTable label {display:inline-block; width:80%; float:left;}
+
+table.RenewalFeesControlTable {width:959px;}
+.MC_WidthWLeftNav table.RenewalFeesControlTable {width:794px;}

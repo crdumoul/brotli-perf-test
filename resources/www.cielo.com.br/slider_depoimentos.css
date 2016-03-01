@@ -1,0 +1,201 @@
+
+
+.part-slider-depoimentos .content {
+	min-width: 940px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden !important;
+	display: block;
+	height: 381px;
+	position: relative;
+}
+
+.part-slider-depoimentos .carousel-depoimentos li{
+	width: 314px;
+	height: 381px;
+	float: left;
+	display: block;
+    overflow: hidden;
+}
+
+.part-slider-depoimentos .carousel-depoimentos .bg-depoimento {
+	width: auto;
+	height: 361px;
+	padding: 0 20px 70px 20px;
+	background: no-repeat center center;
+	display: block;
+	vertical-align: bottom;
+	color: #fff;
+	position: relative;
+}
+
+.part-slider-depoimentos .carousel-depoimentos .bg-depoimento img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+    max-width: 314px;
+}
+
+.part-slider-depoimentos .txt-depoimento {
+	font-size: 20px;
+	font-family: "museo300", Arial, Helvetiva, Sans-Serif;
+	bottom: 182px;
+}
+
+.part-slider-depoimentos .txt-autor-depoimento {
+	font-weight: bold;
+	bottom: 124px;
+}
+
+.part-slider-depoimentos .txt-descricao-depoimento {
+	bottom: 98px;
+}
+
+.part-slider-depoimentos .txt-depoimento a{
+	color: #fff;
+	display: block;
+	font-family: "museo300", Arial, Helvetiva, Sans-Serif;
+    font-weight: 100;
+}
+
+.part-slider-depoimentos  .txt-depoimento, 
+.part-slider-depoimentos  .txt-autor-depoimento, 
+.part-slider-depoimentos  .txt-descricao-depoimento {
+	position: absolute;
+	z-index: 2 !important;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+    width: 278px;
+}
+
+.part-slider-depoimentos  .pagination-content {
+    display: block !important;
+    width: 100% ;
+    bottom: 12px ;
+    text-align: center ;
+    position: absolute ;
+    z-index: 1;
+}
+
+.part-slider-depoimentos  .pagination-content .swiper-pagination-switch {
+    display: inline-block ;
+    float: none ;
+}
+
+.part-slider-depoimentos  .pagination-content .swiper-visible-switch{
+	display: none;
+}
+
+.part-slider-depoimentos  .pagination-content .swiper-active-switch{
+	display: inline-block ;
+}
+
+.part-slider-depoimentos  .prev-depoimento-page, 
+.part-slider-depoimentos  .next-depoimento-page{
+	width:28px;
+	height: 28px;
+	display:inline-block;
+	position:relative;
+	top: 8px;
+	margin:0 8px;
+}
+
+.part-slider-depoimentos  .prev-depoimento-page{
+	background: url(../../images/icons/ico-seta-prev-28x28.png) no-repeat center bottom;
+}
+
+.part-slider-depoimentos  .next-depoimento-page{
+	background: url(../../images/icons/ico-seta-next-28x28.png) no-repeat center bottom;
+}
+
+.part-slider-depoimentos  .paginacao-carousel-depoimentos a{
+	display: inline-block !important;
+}
+
+
+.part-slider-depoimentos .video-depoimento{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 666;
+}
+
+ @media only screen and (max-width : 767px) { 
+/*  @media only screen and (min-width: 100px) { */  
+  
+  
+    .part-slider-depoimentos .swiper-container, 
+	.part-slider-depoimentos .swiper-wrapper, 
+	.part-slider-depoimentos .swiper-slide {
+		height: 780px !important;
+	}
+
+	.part-slider-depoimentos .txt-depoimento, 
+	.part-slider-depoimentos .txt-autor-depoimento, 
+	.part-slider-depoimentos .txt-descricao-depoimento {
+		margin: 15px 0;
+		padding: 0;
+		width: 540px;
+	}
+
+	.part-slider-depoimentos .txt-depoimento {
+		width: 540px;
+		font-size: 30px;
+		bottom: 220px;
+	}
+	
+	.part-slider-depoimentos .txt-autor-depoimento {
+		bottom: 100px !important;
+	}
+	
+	.part-slider-depoimentos .content {
+		width: 640px;
+		min-width: 640px;
+		max-width: 640px;
+		height: auto;
+	}
+	
+	.part-slider-depoimentos .bg-depoimento {
+		width: 560px;
+		height: 500px;
+	}
+
+	.part-slider-depoimentos  .carousel-depoimentos {
+		margin: 0;
+	}
+	
+	.part-slider-depoimentos .pagination-content {
+		bottom: 10px;
+	}
+	
+	.part-slider-depoimentos .pagination-content .swiper-pagination-switch {
+        background: url(../../images/icons/ico-paginacao-off-30x30.png) no-repeat center center !important;
+    }
+
+    .part-slider-depoimentos .pagination-content .swiper-visible-switch, 
+    .part-slider-depoimentos .pagination-content .swiper-active-switch {
+        background: url(../../images/icons/ico-paginacao-on-30x30.png) no-repeat center center !important;
+    }
+	
+	.part-slider-depoimentos .paginacao-carousel-depoimentos a{
+		display: none !important;
+	}
+	
+	.part-slider-depoimentos .carousel-depoimentos .bg-depoimento{
+		height: 500px;
+	}
+	
+	
+	.part-slider-depoimentos .carousel-depoimentos .bg-depoimento img{
+		max-width: 100%;
+	}
+	
+	.part-slider-depoimentos .txt-descricao-depoimento {
+		bottom: 20px;
+	}
+  
+}

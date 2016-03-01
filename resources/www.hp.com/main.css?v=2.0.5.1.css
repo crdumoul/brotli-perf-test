@@ -1,0 +1,1473 @@
+/* line 9, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+header,
+nav,
+section,
+article,
+aside,
+footer,
+hgroup,
+img {
+  display: block; }
+
+/* line 13, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+#company-notification {
+  z-index: 9999;
+  position: relative; }
+
+/* line 17, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+#header {
+  position: relative;
+  z-index: 9999; }
+
+/* line 24, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+.everything #body,
+.everything-hf32 #body {
+  margin-top: -77px; }
+
+/* line 28, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+body {
+  background-color: #333333 !important; }
+
+/* rules for areas where content has to be duplicated */
+/* line 36, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+.media-tablet,
+.media-mobile {
+  display: none; }
+
+/* line 41, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+.media-desktop.media-tablet,
+.media-desktop.media-mobile {
+  display: block; }
+
+@media (max-width: 1279px) {
+  /* line 48, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .media-desktop,
+  .media-mobile,
+  .media-desktop.media-mobile {
+    display: none; }
+  /* line 52, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .media-desktop.media-tablet,
+  .media-tablet {
+    display: block; } }
+
+@media (max-width: 799px) {
+  /* line 60, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .media-desktop,
+  .media-tablet,
+  .media-desktop.media-tablet {
+    display: none; }
+  /* line 64, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .media-mobile,
+  .media-desktop.media-mobile {
+    display: block; } }
+
+/* end rules */
+/* line 73, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+.body h1 {
+  font-family: "HPSimplifiedLight";
+  font-weight: normal;
+  font-size: 3.75rem;
+  line-height: 3.75rem;
+  margin: 28px 0 0; }
+
+/* line 80, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+.body h2 {
+  font-family: "HPSimplifiedLight";
+  font-weight: normal;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin: 0; }
+
+/* line 87, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+.body h4 {
+  font-family: "HPSimplified";
+  font-weight: bold;
+  font-size: 14px; }
+
+/* line 92, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+.body a {
+  color: #0096d6; }
+  /* line 95, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .body a.trailing-arrow:after {
+    content: '\279d';
+    display: inline-block;
+    font-family: "HPSimplifiedLight", sans-serif;
+    margin-left: .5em;
+    vertical-align: middle; }
+
+/* line 105, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+.body .button2015 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  line-height: 1em;
+  padding: 13px 42px;
+  margin-top: 25px;
+  display: inline-block;
+  border-radius: 3px; }
+  /* line 113, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .body .button2015.white {
+    color: #ffffff;
+    border: 1px solid #ffffff; }
+  /* line 117, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .body .button2015.blue {
+    color: #0096d6;
+    border: 1px solid #0096d6; }
+  /* line 121, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .body .button2015.black {
+    color: #000000;
+    border: 1px solid #000000; }
+  @media (max-width: 1279px) {
+    /* line 105, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+    .body .button2015 {
+      font-size: 14px; } }
+  @media (max-width: 799px) {
+    /* line 105, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+    .body .button2015 {
+      font-size: 21px;
+      padding: 20px 80px;
+      border-radius: 0px; }
+      /* line 132, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+      .body .button2015.white {
+        border: 2px solid #ffffff; }
+      /* line 135, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+      .body .button2015.blue {
+        border: 2px solid #0096d6; }
+      /* line 138, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+      .body .button2015.black {
+        border: 2px solid #000000; } }
+
+/* line 143, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+.body ul {
+  margin-top: 2rem; }
+  /* line 145, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .body ul li {
+    margin-left: 1rem;
+    margin-top: .5em; }
+
+@media (max-width: 1279px) {
+  /* line 151, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .body h1 {
+    font-size: 3.125rem;
+    line-height: 3.125rem; }
+  /* line 155, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .body h2 {
+    font-size: 1.5rem;
+    line-height: 2rem; } }
+
+@media (max-width: 799px) {
+  /* line 161, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .body h1 {
+    font-size: 60px;
+    line-height: 60px; }
+  /* line 166, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .body h4 {
+    font-size: 14px; } }
+
+@-moz-document url-prefix() {
+  /* line 173, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .body a.trailing-arrow:after {
+    font-size: 1.75em; } }
+
+/* line 178, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+.blue {
+  color: #0096d6; }
+
+/* line 182, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+section {
+  clear: both;
+  position: relative;
+  background: #ffffff; }
+
+/* line 188, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+sup {
+  font-size: .6em;
+  vertical-align: top; }
+
+/* line 193, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+.modal button.close {
+  margin-bottom: 20px; }
+
+/* line 197, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+.video-preview {
+  position: relative; }
+  /* line 199, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .video-preview img {
+    width: 100%;
+    display: block; }
+  /* line 204, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .video-preview .video-container-poster:after {
+    content: '';
+    width: 106px;
+    height: 106px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -53px 0 0 -53px;
+    background: url("../images/i/icon-video-poster-play.png") center center no-repeat;
+    opacity: .75;
+    transition: .3s;
+    pointer-events: none; }
+  /* line 219, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .video-preview:hover .video-container-poster:after {
+    opacity: 1; }
+  /* line 224, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .video-preview.playing .video-container-poster:after {
+    opacity: 0; }
+  /* line 228, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  .video-preview .video-container {
+    display: none; }
+
+/* line 233, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+.sixteen-nine {
+  width: 100%; }
+
+/* line 2, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+section.module-immersive-main {
+  position: fixed;
+  display: block;
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+  color: #ffffff;
+  background: #272727;
+  transition: 0s; }
+  /* line 11, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  section.module-immersive-main .container {
+    position: relative; }
+    /* line 14, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    section.module-immersive-main .container .container-content {
+      position: absolute;
+      top: 118px;
+      left: 50%;
+      margin-left: -580px;
+      width: 483px;
+      font-size: 18px;
+      line-height: 25px; }
+      /* line 22, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      section.module-immersive-main .container .container-content .body-copy {
+        margin-top: 40px; }
+      /* line 25, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      section.module-immersive-main .container .container-content h4 {
+        margin-bottom: 35px; }
+  /* line 30, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  section.module-immersive-main .parallax-tracking {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden; }
+  /* line 37, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  section.module-immersive-main.expanded {
+    height: 750px; }
+  @media (max-width: 1279px) {
+    /* line 2, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    section.module-immersive-main {
+      position: relative;
+      margin-top: 72px; }
+      /* line 47, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      section.module-immersive-main .container .container-content {
+        top: 105px;
+        margin-left: -362px;
+        font-size: 14px;
+        line-height: 21px; }
+        /* line 53, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        section.module-immersive-main .container .container-content .body-copy {
+          margin-top: 30px; }
+      /* line 58, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      section.module-immersive-main.expanded {
+        height: 540px; } }
+  @media (max-width: 799px) {
+    /* line 2, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    section.module-immersive-main {
+      position: relative;
+      height: 640px;
+      margin-top: 0; }
+      /* line 66, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      section.module-immersive-main .container {
+        height: auto; }
+        /* line 68, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        section.module-immersive-main .container .container-background {
+          background: url("../images/i/hero-1-background-mobile-a.jpg") center top no-repeat;
+          height: 640px;
+          background-size: cover; }
+        /* line 73, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        section.module-immersive-main .container .container-content {
+          width: 90%;
+          left: auto;
+          margin: 0 5%;
+          top: auto;
+          bottom: 0;
+          font-size: 18px;
+          line-height: 26px; }
+          /* line 82, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+          section.module-immersive-main .container .container-content h4 {
+            margin-bottom: 25px; }
+      /* line 87, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      section.module-immersive-main a.button2015 {
+        display: inline-block; } }
+
+/* line 93, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+section.module-immersive-body {
+  position: relative;
+  display: block;
+  max-height: 0;
+  background: #272727;
+  color: #ffffff; }
+  /* line 100, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  section.module-immersive-body .controlbar {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: -23px;
+    height: 23px;
+    background: url("../images/i/immersive-controlbar-background.png") top center repeat-x;
+    text-align: center;
+    color: #ffffff;
+    transition: .3s;
+    z-index: 111;
+    cursor: pointer;
+    z-index: 111; }
+    /* line 113, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    section.module-immersive-body .controlbar .label {
+      margin-top: 12px;
+      opacity: 0;
+      font-size: 14px;
+      line-height: 20px;
+      transition: .3s;
+      display: none; }
+    /* line 121, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    section.module-immersive-body .controlbar:before {
+      content: '';
+      width: 75px;
+      height: 31px;
+      background: url("../images/i/immersive-controlbar-caret.png") top center no-repeat;
+      position: absolute;
+      top: -29px;
+      left: 50%;
+      margin-left: -37.5px; }
+    /* line 131, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    section.module-immersive-body .controlbar:hover {
+      top: -43px;
+      height: 43px;
+      transition: .3s; }
+    /* line 136, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    section.module-immersive-body .controlbar:hover .label {
+      opacity: 1;
+      display: block; }
+  /* line 141, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  section.module-immersive-body .container {
+    font-family: "Source Sans Pro", "HPSimplifiedLight", sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    position: relative;
+    width: 1160px;
+    padding: 70px 0 40px;
+    margin: 0 auto;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    display: none; }
+    /* line 154, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    section.module-immersive-body .container .container-left {
+      display: inline-block;
+      margin-left: 99px;
+      width: 396px; }
+    /* line 160, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    section.module-immersive-body .container h2 {
+      font-size: 30px;
+      line-height: 34px;
+      margin-bottom: 24px; }
+    /* line 166, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    section.module-immersive-body .container ul li {
+      font-size: 18px;
+      line-height: 26px; }
+  /* line 172, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  section.module-immersive-body .imagery {
+    position: absolute;
+    top: 0;
+    right: 0; }
+    /* line 177, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    section.module-immersive-body .imagery img {
+      width: 100%; }
+    /* line 180, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    section.module-immersive-body .imagery .label {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 15px;
+      line-height: 24px; }
+  /* line 190, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  section.module-immersive-body.expanded {
+    max-height: 1000px; }
+    /* line 192, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    section.module-immersive-body.expanded .controlbar {
+      top: auto;
+      bottom: 0; }
+    /* line 196, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    section.module-immersive-body.expanded .container {
+      opacity: 1;
+      height: auto;
+      overflow: visible;
+      display: block; }
+  @media (max-width: 1279px) {
+    /* line 204, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    section.module-immersive-body .container {
+      font-size: 14px;
+      line-height: 20px;
+      width: 724px;
+      padding: 40px 0 40px; }
+      /* line 209, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      section.module-immersive-body .container h2 {
+        font-size: 24px; }
+      /* line 212, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      section.module-immersive-body .container .container-left {
+        margin-left: 0px;
+        width: 310px; } }
+  @media (max-width: 799px) {
+    /* line 93, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    section.module-immersive-body {
+      display: none; } }
+
+/* line 223, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+#video-hero {
+  display: none;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 100%;
+  background: #272727;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  height: 638px; }
+  /* line 233, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #video-hero div.close {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    color: #fff;
+    font-family: "HPIcons";
+    font-size: 40px;
+    opacity: 1;
+    transition: .3s;
+    z-index: 4;
+    line-height: 1em;
+    cursor: pointer; }
+  @media (max-width: 1279px) {
+    /* line 223, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #video-hero {
+      top: 5px;
+      padding-top: 0;
+      height: 557px; }
+      /* line 250, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #video-hero div.close {
+        top: 20px; } }
+  @media (max-width: 799px) {
+    /* line 223, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #video-hero {
+      height: 0;
+      top: 0;
+      opacity: 0; }
+      /* line 258, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #video-hero div.close {
+        top: 10px; }
+      /* line 261, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #video-hero.active {
+        height: 100%;
+        opacity: 1; } }
+
+/* line 280, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+#hero-1-main {
+  height: 790px; }
+  /* line 282, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+#hero-1-main .container-background {
+    background: #272727 url("../images/i/D_1920x900_Falcon.jpg") center bottom no-repeat;
+    height: 778px; }
+  /* line 287, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #hero-1-main .container-content {
+    width: 100%;
+    top: 65px;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 72px; }
+    /* line 295, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-1-main .container-content h1,
+    #hero-1-main .container-content h2 {
+      font-family: "HPSimplifiedLight", sans-serif;
+      font-size: 64px;
+      line-height: 64px;
+      margin-top: 20px; }
+    /* line 301, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-1-main .container-content h3 {
+      font-family: "Source Sans Pro", "HPSimplifiedLight", sans-serif;
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: normal; }
+  @media (max-width: 1279px) {
+    /* line 280, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-1-main {
+      height: 612px; }
+      /* line 310, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-1-main .container-background {
+        height: 612px;
+        background-position: 85% center; }
+      /* line 314, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-1-main .container-content {
+        margin-top: 0;
+        top: 100px; }
+        /* line 318, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-1-main .container-content h1,
+        #hero-1-main .container-content h2 {
+          font-size: 48px;
+          line-height: 48px;
+          margin-top: 25px; }
+        /* line 323, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-1-main .container-content h3 {
+          font-size: 20px;
+          line-height: 20px; } }
+  @media (max-width: 799px) {
+    /* line 280, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-1-main {
+      height: 825px;
+      margin-top: 78px; }
+      /* line 332, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-1-main .container-background {
+        height: 825px;
+        background: url("../images/i/T_799x825_Falcon.jpg") center top no-repeat; }
+        /* line 336, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-1-main .container-background.active {
+          background: #272727; }
+      /* line 340, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-1-main .container-content {
+        width: 90%;
+        margin: 0 5%; }
+        /* line 344, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-1-main .container-content h1,
+        #hero-1-main .container-content h2 {
+          font-size: 46px;
+          line-height: 46px; }
+        /* line 348, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-1-main .container-content h3 {
+          font-size: 14px;
+          line-height: 14px; }
+        /* line 352, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-1-main .container-content a.button2015 {
+          margin-top: 40px; } }
+
+/* line 359, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+#hero-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+  @media (max-width: 1400px) {
+    /* line 359, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-bg-video {
+      top: -10%;
+      left: -10%;
+      width: 120%;
+      height: 120%; } }
+  @media (max-width: 920px) {
+    /* line 359, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-bg-video {
+      top: -20%;
+      left: -20%;
+      width: 140%;
+      height: 140%; } }
+  @media (max-width: 799px) {
+    /* line 359, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-bg-video {
+      display: none; } }
+
+/* line 383, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+.touch.mobile #hero-bg-video {
+  display: none; }
+
+@media (max-width: 1024px) {
+  /* line 388, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  .touch.mobile #hero-1-main .container-background {
+    background: url("../images/i/D_1920x900_Falcon.jpg") 85% center no-repeat; } }
+
+@media (max-width: 799px) {
+  /* line 395, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  .touch.mobile #hero-1-main .container-background {
+    background: url("../images/i/T_799x825_Falcon.jpg") center top no-repeat; } }
+
+/* line 402, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+#hero-1-immersive {
+  margin-top: 776px; }
+  /* line 405, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #hero-1-immersive.module-immersive-body .container {
+    padding-bottom: 100px; }
+    /* line 407, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-1-immersive.module-immersive-body .container .container-left {
+      width: 400px; }
+  /* line 411, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #hero-1-immersive.module-immersive-body .imagery {
+    right: 40px; }
+  /* line 415, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #hero-1-immersive.module-immersive-body.expanded .imagery {
+    top: -61px; }
+  @media (max-width: 1279px) {
+    /* line 402, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-1-immersive {
+      margin-top: 0; }
+      /* line 424, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-1-immersive.module-immersive-body .container {
+        padding-bottom: 60px; }
+        /* line 426, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-1-immersive.module-immersive-body .container .container-left {
+          width: 330px; }
+          /* line 428, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+          #hero-1-immersive.module-immersive-body .container .container-left > div {
+            width: 315px; }
+      /* line 433, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-1-immersive.module-immersive-body .imagery {
+        width: 53%;
+        right: 0; }
+        /* line 436, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-1-immersive.module-immersive-body .imagery img {
+          width: 100%; }
+      /* line 441, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-1-immersive.module-immersive-body.expanded .imagery {
+        top: -50px; } }
+  @media (max-width: 799px) {
+    /* line 402, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-1-immersive {
+      display: inline-block;
+      width: 90%;
+      padding: 0 5%; }
+      /* line 451, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-1-immersive.module-immersive-body.expanded .container {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.4em; }
+        /* line 455, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-1-immersive.module-immersive-body.expanded .container .container-left {
+          margin: 40px auto 0;
+          display: inherit;
+          text-align: center;
+          width: 100%;
+          max-width: 320px; }
+          /* line 461, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+          #hero-1-immersive.module-immersive-body.expanded .container .container-left > div {
+            display: inline-block;
+            text-align: center;
+            width: auto; }
+          /* line 466, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+          #hero-1-immersive.module-immersive-body.expanded .container .container-left br {
+            display: none; }
+        /* line 470, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-1-immersive.module-immersive-body.expanded .container .imagery {
+          position: relative;
+          top: auto;
+          right: auto;
+          width: 90%;
+          margin: 0 5%; }
+          /* line 476, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+          #hero-1-immersive.module-immersive-body.expanded .container .imagery .image-container {
+            max-width: 400px;
+            margin: 0 auto; } }
+
+
+
+
+/* line 485, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+#hero-security-main {
+  position: relative;
+  height: 782px;
+  color: #fff;
+  padding-top: 85px;
+  background: #fff; }
+  /* line 491, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+#hero-security-main .container-background {
+    background: url("../images/i/hero-black-friday.jpg") center top no-repeat;
+    height: 782px; }
+  /* line 495, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #hero-security-main .container-content {
+    top: 320px;
+    width: 53%;
+    font-family: "HPSimplified", sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1em;
+    margin-left: -26%;
+    text-align: center; }
+  /* line 504, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #hero-security-main h2 {
+    font-family: "HPSimplifiedLight", sans-serif;
+    font-weight: 300;
+    font-size: 68px;
+    line-height: 70px;
+    margin-bottom: 20px; }
+  /* line 511, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #hero-security-main h4 {
+    margin-bottom: 10px; }
+  /* line 514, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #hero-security-main h6 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 20px; }
+  /* line 519, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #hero-security-main a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    clear: both;
+    /*float: left; */ }
+
+
+  @media (max-width: 1279px) {
+    /* line 485, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-security-main {
+      height: 517px;
+      padding-top: 40px; }
+      /* line 528, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-security-main .container-background {
+        height: 517px;
+        background-size: cover;
+        background-position: 45% top; }
+      /* line 533, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-security-main .container-content {
+        top: 180px;
+        margin-top: 0;
+        width: 47%;
+        font-size: 14px;
+        text-align: center;
+        margin-left: -23%; }
+	  #hero-security-main .container-content .content-box{
+	  	width:100%;
+	  }
+      /* line 539, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-security-main h2 {
+        font-size: 42px;
+        line-height: 38px;
+        margin-bottom: 12px; }
+      /* line 545, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-security-main h6,
+      #hero-security-main a {
+        font-size: 14px;
+        line-height: 18px; } }
+
+@media (max-width: 1024px) {
+    #hero-security-main .container-content{
+     top: 168px;
+    }
+}
+
+  @media (max-width: 799px) {
+    /* line 485, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-security-main {
+      
+      height: auto;
+      
+	  }
+      /* line 555, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-security-main .container-background {
+        background: url("../images/i/hero-black-friday-mobile.jpg") center 20% no-repeat;
+        height: 600px;
+        background-size: cover; }
+      /* line 560, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-security-main .container-content {
+        margin: 0 auto;
+		width: 100%;
+		top:222px;
+		
+	  }
+	  
+	  #hero-security-main .container-content .content-box{
+	  	width:480px;
+		margin: 0 auto;
+		  background-color: #000;
+		  padding: 18px 0 40px 0;
+	  }
+        /* line 564, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-security-main .container-content br {
+          display: none; 
+	  }
+      /* line 576, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-security-main h2 {
+        
+	  }
+      /* line 582, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-security-main .container-content .content-box h6,
+      #hero-security-main .container-content .content-box a {
+		  font-size: 21px;
+        line-height: 1em;
+      }
+      /* line 586, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-security-main a.button2015 {
+        margin-top: 20px;
+	  }
+}
+  @media (max-width: 496px) {
+     #hero-security-main .container-background{
+        height: 790px;
+     }
+	  #hero-security-main .container-content {
+        top:80px;
+		
+	  }
+	  #hero-security-main .container-content .content-box div {
+		  font-size: 21px;
+        line-height: 1em;
+		  margin-bottom: 20px;
+      }
+	   #hero-security-main .container-content .content-box{
+	  	width:300px;
+		padding: 18px 0 50px 0;
+	  }
+	  #hero-security-main .container-content .content-box h2 {
+        font-size: 46px;
+        line-height: 46px;
+        margin-bottom: .5em; }
+	  #hero-security-main a.button2015 {
+	  	padding: 20px 65px;
+	  }
+  }
+
+
+
+
+/* line 592, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+#hero-force-main {
+  position: relative;
+  height: 685px;
+  color: #000;
+  padding-top: 85px;
+  background: #fff; }
+  /* line 598, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+#hero-force-main .container-background {
+    background: url("../images/i/us_en_module4_Print-banner-20160203.jpg") center top no-repeat !important;
+    height: 685px; }
+  /* line 602, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #hero-force-main .container-content {
+    top: 140px;
+    width: 490px;
+    font-family: "HPSimplified", sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 1em;
+    margin-left: 10%; }
+  /* line 611, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #hero-force-main h2 {
+    font-family: "HPSimplifiedLight", sans-serif;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 70px;
+    margin-bottom: 30px; 
+	color:#000;}
+	@media (max-width: 799px) {
+	#hero-force-main h2 {
+    color: #000;
+	}
+}
+  /* line 618, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #hero-force-main h4 {
+    margin-bottom: 10px; }
+  /* line 621, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #hero-force-main h6 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 20px; 
+	color:#FFF;}
+	@media (max-width: 799px) {
+	#hero-force-main h6 {
+    color: #000;
+	}
+}
+  /* line 626, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #hero-force-main a {
+    font-size: 18px;
+    line-height: 25px;
+    clear: both;
+    float: left; }
+  /* line 632, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #hero-force-main .video-preview {
+    display: inline-block;
+    clear: both;
+    float: left;
+    margin-top: 1em; }
+  @media (max-width: 1279px) {
+    /* line 592, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-force-main {
+      height: 445px;
+      padding-top: 40px; }
+      /* line 641, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-force-main .container-background {
+        height: 445px;
+        background-size: cover;
+        background-position: 45% top; }
+      /* line 646, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-force-main .container-content {
+        top: 40px;
+        margin-top: 0;
+        width: 320px;
+        font-size: 18px; }
+      /* line 652, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-force-main h2 {
+        font-size: 34px;
+        line-height: 38px;
+        margin-bottom: 25px; }
+      /* line 658, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-force-main h6,
+      #hero-force-main a {
+        font-size: 14px;
+        line-height: 18px; }
+      /* line 662, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-force-main .video-preview {
+        width: 200px; } }
+  @media (max-width: 799px) {
+    /* line 592, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-force-main {
+      color: #000;
+      height: auto;
+      padding-top: 0;
+      background-color: #fff; }
+      /* line 671, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-force-main .container-background {
+        background: #d0d4d5 url("../images/i/us_en_module4_Print-banner-mob-20160203.jpg") center bottom no-repeat;
+        height: 400px;
+        background-size: contain; }
+      /* line 676, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-force-main .container-content {
+        display: inline-block;
+        position: relative;
+        background: #fff;
+        width: 90%;
+        top: auto;
+        bottom: auto;
+        left: 5%;
+        text-align: left;
+        margin: 40px 0;
+        font-size: 21px;
+        line-height: 31px; }
+        /* line 680, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-force-main .container-content br {
+          display: none; }
+      /* line 692, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-force-main h2 {
+        font-size: 40px;
+        line-height: 46px;
+        margin-bottom: .5em; }
+      /* line 698, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-force-main h6,
+      #hero-force-main a {
+        font-size: 18px;
+        line-height: 1.45em; }
+      /* line 702, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-force-main a.button2015 {
+        margin-top: 20px; }
+      /* line 705, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-force-main .video-preview {
+        width: auto; }
+        /* line 707, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-force-main .video-preview iframe {
+          width: 320px !important;
+          height: 180px !important; }
+      /* line 713, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-force-main .playing .video-container-poster {
+        display: none; }
+      /* line 716, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-force-main .playing .video-container {
+        display: inline-block; } }
+
+/* line 2, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+section.editorial .content {
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 1280px;
+  padding: 90px 0 90px; }
+  /* line 6, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+  section.editorial .content .container {
+    display: inline-block; }
+  /* line 9, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+  section.editorial .content h2 {
+    font-size: 36px;
+    line-height: 41px;
+    font-weight: 300;
+    margin: 60px 0 10px; }
+  /* line 15, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+  section.editorial .content h3 {
+    font-family: 'HPSimplified', sans-serif;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: normal;
+    margin-bottom: 25px; }
+  /* line 22, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+  section.editorial .content .overlay {
+    position: absolute;
+    top: 275px;
+    left: 430px; }
+    /* line 26, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+    section.editorial .content .overlay img {
+      width: 100%;
+      display: block; }
+  /* line 31, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+  section.editorial .content .left-side {
+    position: relative;
+    float: left;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-bottom: 78px; }
+    /* line 37, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+    section.editorial .content .left-side .label {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 20px; }
+      /* line 41, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+      section.editorial .content .left-side .label .name {
+        font-weight: bold; }
+  /* line 46, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+  section.editorial .content .right-side {
+    float: right;
+    width: 460px;
+    margin: 40px 0 0 0;
+    font-size: 16px;
+    line-height: 26px; }
+    /* line 52, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+    section.editorial .content .right-side h2 {
+      margin: 25px 0 20px;
+      font-size: 64px;
+      line-height: 64px; }
+    /* line 57, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+    section.editorial .content .right-side .logo {
+      margin-top: 30px; }
+      /* line 59, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+      section.editorial .content .right-side .logo img {
+        display: block; }
+    /* line 63, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+    section.editorial .content .right-side > div {
+      margin-top: 30px;
+      font-size: 18px;
+      line-height: 26px; }
+  /* line 69, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+  section.editorial .content a {
+    font-size: 18px;
+    line-height: 22px; }
+  @media (max-width: 1279px) {
+    /* line 2, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+    section.editorial .content {
+      width: 800px;
+      padding: 60px 0 30px; }
+      /* line 76, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+      section.editorial .content h2 {
+        margin-top: 40px;
+        font-size: 24px;
+        line-height: 28px; }
+      /* line 81, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+      section.editorial .content .overlay {
+        top: 50%;
+        left: 60%;
+        width: 150px; }
+      /* line 86, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+      section.editorial .content .left-side {
+        margin-left: 32px;
+        margin-right: 32px; }
+        /* line 89, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+        section.editorial .content .left-side .video-preview {
+          width: 404px; }
+        /* line 92, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+        section.editorial .content .left-side .label {
+          font-size: 12px;
+          line-height: 17px; }
+      /* line 97, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+      section.editorial .content .right-side {
+        width: 300px;
+        margin: 15px 32px 0 0; }
+        /* line 100, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+        section.editorial .content .right-side h2 {
+          font-size: 31px;
+          line-height: 1.25em;
+          padding: 14px 0;
+          text-align: left;
+          width: 100%;
+          margin: 0; }
+        /* line 108, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+        section.editorial .content .right-side h3 {
+          font-size: 20px;
+          line-height: 28px; }
+        /* line 112, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+        section.editorial .content .right-side > div {
+          margin-top: 25px;
+          font-size: 14px;
+          line-height: 20px; }
+      /* line 118, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+      section.editorial .content a {
+        font-size: 14px;
+        line-height: 18px; } }
+  @media (max-width: 799px) {
+    /* line 2, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+    section.editorial .content {
+      width: auto;
+      padding: 5% 0; }
+      /* line 126, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+      section.editorial .content .overlay {
+        display: none; }
+      /* line 129, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+      section.editorial .content .left-side {
+        clear: both;
+        width: 90%;
+        margin: 0 5% 5%;
+        padding-bottom: 0; }
+        /* line 134, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+        section.editorial .content .left-side .video-preview {
+          width: auto; }
+        /* line 138, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+        section.editorial .content .left-side .playing .video-container-poster {
+          display: none; }
+        /* line 141, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+        section.editorial .content .left-side .playing .video-container {
+          display: block; }
+        /* line 145, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+        section.editorial .content .left-side h2 {
+          display: none; }
+      /* line 149, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+      section.editorial .content .right-side {
+        float: left;
+        width: 90%;
+        margin: 0 5%;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center; }
+        /* line 156, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+        section.editorial .content .right-side h2 {
+          width: auto;
+          padding: 18px 25px;
+          display: inline-block;
+          font-size: 46px;
+          line-height: 46px;
+          margin: 0 auto;
+          text-align: center; }
+        /* line 165, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+        section.editorial .content .right-side h3 {
+          font-size: 24px;
+          line-height: 34px;
+          max-width: 440px;
+          margin: 0 auto 20px; }
+        /* line 171, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+        section.editorial .content .right-side h4 {
+          font-size: 16px;
+          line-height: 16px; }
+        /* line 175, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+        section.editorial .content .right-side > div {
+          font-size: 18px;
+          line-height: 26px;
+          margin: 25px 0 45px; }
+        /* line 180, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+        section.editorial .content .right-side a {
+          margin: 20px auto; }
+      /* line 184, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+      section.editorial .content a {
+        font-size: 18px;
+        line-height: 22px; }
+      /* line 188, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+      section.editorial .content a.button2015 {
+        margin: 40px 0 5px; } }
+
+/* line 197, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+#editorial-labs .content .left-side {
+  float: right; }
+
+/* line 200, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+#editorial-labs .content .right-side {
+  float: left;
+  width: 400px;
+  margin-left: 62px; }
+
+/* line 205, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+#editorial-labs .content .overlay {
+  left: 34px; }
+
+@media (max-width: 1279px) {
+  /* line 214, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+  #editorial-labs .content .right-side {
+    width: 268px;
+    margin-left: 32px;
+    margin-right: 0; } }
+
+@media (max-width: 799px) {
+  /* line 223, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_editorial.scss */
+  #editorial-labs .content .right-side {
+    width: 90%;
+    margin: 0 5%; } }
+
+/* line 1, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+section.gallery {
+  overflow: hidden;
+  position: relative;
+  height: 351px;
+  transition: .3s; }
+  /* line 6, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+  section.gallery:hover {
+    height: 510px; }
+  /* line 9, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+  section.gallery .gallery-viewer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3000px;
+    margin-left: -1500px;
+    text-align: center;
+    transition: .3s; }
+    /* line 17, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+    section.gallery .gallery-viewer:hover {
+      margin-top: 20px; }
+  /* line 21, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+  section.gallery .gallery-container {
+    margin: 0 auto;
+    display: inline-block; }
+  /* line 25, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+  section.gallery .gallery-item {
+    float: left;
+    width: 518px;
+    height: 351px;
+    margin: 0 11px;
+    transition: .3s; }
+    /* line 31, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+    section.gallery .gallery-item img {
+      width: 100%; }
+    /* line 34, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+    section.gallery .gallery-item .gallery-item-label {
+      opacity: 0;
+      width: 100%;
+      text-align: center;
+      margin: 10px auto;
+      transition: .3s; }
+      /* line 40, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+      section.gallery .gallery-item .gallery-item-label h4 {
+        font-family: "HPSimplified";
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 44px; }
+      /* line 46, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+      section.gallery .gallery-item .gallery-item-label p {
+        font-family: "HPSimplified";
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 18px;
+        margin: 0; }
+    /* line 55, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+    section.gallery .gallery-item.item-first {
+      padding-left: 250px; }
+    /* line 58, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+    section.gallery .gallery-item.item-last {
+      padding-right: 250px; }
+    /* line 61, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+    section.gallery .gallery-item:hover {
+      width: 575px;
+      height: 390px;
+      margin-top: -20px; }
+      /* line 65, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+      section.gallery .gallery-item:hover .gallery-item-label {
+        opacity: 1; }
+      /* line 68, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+      section.gallery .gallery-item:hover.item-first {
+        transition: .6s;
+        margin-left: 417px; }
+      /* line 72, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+      section.gallery .gallery-item:hover.item-last {
+        transition: .6s;
+        margin-right: 417px; }
+  @media (max-width: 1279px) {
+    /* line 1, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+    section.gallery {
+      height: 240px; }
+      /* line 80, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+      section.gallery:hover {
+        height: 347px; }
+      /* line 83, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+      section.gallery .gallery-item {
+        width: 355px;
+        height: 240px; }
+        /* line 86, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+        section.gallery .gallery-item:hover {
+          width: 394px;
+          height: 267px; } }
+  @media (max-width: 1024px) {
+    /* line 1, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+    section.gallery {
+      overflow: scroll;
+      height: 380px;
+      margin-top: 40px; }
+      /* line 96, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+      section.gallery:hover {
+        height: 380px; }
+      /* line 99, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+      section.gallery .gallery-viewer {
+        margin-top: 0;
+        width: 1326px;
+        margin-left: auto;
+        left: auto; }
+        /* line 104, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+        section.gallery .gallery-viewer:hover {
+          margin-top: 0; }
+      /* line 108, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+      section.gallery .gallery-item {
+        width: 420px;
+        height: auto;
+        margin-top: 0; }
+        /* line 112, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+        section.gallery .gallery-item .gallery-item-label {
+          opacity: 1; }
+          /* line 114, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+          section.gallery .gallery-item .gallery-item-label h4 {
+            font-size: 20px;
+            line-height: 1.4em;
+            margin-bottom: 10px; }
+        /* line 120, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+        section.gallery .gallery-item.item-first {
+          padding: 0;
+          margin-left: 11px; }
+        /* line 124, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+        section.gallery .gallery-item.item-last {
+          padding: 0;
+          margin-right: 11px; }
+        /* line 128, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+        section.gallery .gallery-item:hover {
+          width: 420px;
+          height: auto;
+          margin: 0 11px 0; }
+          /* line 132, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+          section.gallery .gallery-item:hover.item-first {
+            margin-left: 11px; }
+          /* line 135, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+          section.gallery .gallery-item:hover.item-last {
+            margin-right: 11px; } }
+  @media (max-width: 799px) {
+    /* line 1, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+    section.gallery {
+      height: 333px; }
+      /* line 143, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+      section.gallery:hover {
+        height: 333px; }
+      /* line 146, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+      section.gallery .gallery-viewer {
+        width: 906px; }
+      /* line 149, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+      section.gallery .gallery-item {
+        width: 280px; }
+        /* line 151, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_gallery.scss */
+        section.gallery .gallery-item:hover {
+          width: 280px; } }
+
+/* line 240, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+section.footnotes {
+  color: #767676;
+  padding: 60px 0;
+  font-size: 12px;
+  line-height: 15px; }
+  /* line 245, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+  section.footnotes .content > div {
+    margin-bottom: 1em;
+    padding-left: 0.8em;
+    text-indent: -0.8em; }
+  @media (max-width: 1279px) {
+    /* line 240, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+    section.footnotes {
+      border-top: 1px solid #dddddd;
+      padding: 30px 0 40px; }
+      /* line 253, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+      section.footnotes .content {
+        width: 724px; } }
+  @media (max-width: 799px) {
+    /* line 258, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/main.scss */
+    section.footnotes .content {
+      width: 90%;
+      margin: 0 5%; } }
+
+/*# sourceMappingURL=main.css.map */
+ 
+@font-face {
+  font-family: 'HPSeven';
+  src: url(/country/us/en/styles/icon-fonts/no-seven-regular.eot);
+  /* IE9 compat */
+  src: url(/country/us/en/styles/icon-fonts/no-seven-regular.eot?#iefix) format("embedded-opentype"), url("/country/us/en/styles/icon-fonts/no-seven-regular.woff") format("woff"), url("/country/us/en/styles/icon-fonts/no-seven-regular.ttf") format("truetype");
+  /*iOS, Android, Safari*/
+  font-weight: normal;
+  font-style: normal; }
+
+/* hp seven font */
+
+#hero-mom-main {
+	position: relative;
+margin-top: 72px;}
+  /* line 282, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #hero-mom-main .container-background {
+    background: #ffffff url("../images/i/us_en_module7_Isaac-banner-20160203.jpg") center bottom no-repeat;
+    height: 778px; }
+  /* line 287, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+  #hero-mom-main .container-content {
+    width: 100%;
+    top: 65px;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 72px; }
+    /* line 295, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-mom-main .container-content h1,
+    #hero-mom-main .container-content h2 {
+      font-family: "HPSimplifiedLight", sans-serif;
+      font-size: 64px;
+      line-height: 64px;
+      margin-top: 20px; }
+    /* line 301, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-mom-main .container-content h3 {
+      font-family: "Source Sans Pro", "HPSimplifiedLight", sans-serif;
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: normal; }
+  @media (max-width: 1279px) {
+    /* line 280, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-mom-main {
+      height: 612px; }
+      /* line 310, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-mom-main .container-background {
+        height: 612px;
+        background-position: 85% center; }
+      /* line 314, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-mom-main .container-content {
+        margin-top: 0;
+        top: 100px; }
+        /* line 318, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-mom-main .container-content h1,
+        #hero-mom-main .container-content h2 {
+          font-size: 48px;
+          line-height: 48px;
+          margin-top: 25px; }
+        /* line 323, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-mom-main .container-content h3 {
+          font-size: 20px;
+          line-height: 20px; } }
+  @media (max-width: 799px) {
+    /* line 280, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+    #hero-mom-main {
+      height: 825px;
+      margin-top: 78px; }
+      /* line 332, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-mom-main .container-background {
+        height: 825px;
+        background: url("../images/i/us_en_module4_Print-banner-20160203.jpg") center top no-repeat; }
+        /* line 336, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-mom-main .container-background.active {
+          background: #767676; }
+      /* line 340, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+      #hero-mom-main .container-content {
+        width: 90%;
+        margin: 0 5%; }
+        /* line 344, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-mom-main .container-content h1,
+        #hero-mom-main .container-content h2 {
+          font-size: 46px;
+          line-height: 46px; }
+        /* line 348, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-mom-main .container-content h3 {
+          font-size: 14px;
+          line-height: 14px; }
+        /* line 352, /Applications/MAMP/htdocs/HP/hp_tridion_2013/src/tags/no-tridion/index2015/country/us/en/c/styles/scss/_hero.scss */
+        #hero-mom-main .container-content a.button2015 {
+          margin-top: 40px; } }
+/* Mom banner module 5 */

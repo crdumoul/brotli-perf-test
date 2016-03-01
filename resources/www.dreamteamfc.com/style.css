@@ -1,0 +1,68 @@
+/*
+* styles for settings page
+*/
+.cptch_example_fields_actions {
+	float: left;
+    height: 18px;
+	width: 140px;
+	position: relative;
+	top: -7px;
+	padding: 2px 0;
+}
+.cptch_example_fields_actions img {
+	position: relative;
+	width: 30px;
+	top: 6px;
+}
+.cptch_block {
+	direction: ltr;
+}
+input.cptch_settings_input {
+    width: 252px;
+}
+.cptch_span {
+    color: #888888;
+    font-size: 10px;
+}
+/*
+* styles help tooltips
+*/
+.cptch_help_box {
+    background-image: url("../images/tooltip_icons.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 28px;
+    position: relative;
+    margin: 3px 5px;
+    width: 28px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.cptch_hidden_help_text {
+    background: #F4F4F4;
+    border: 1px solid #DCDCDC;
+    border-radius: 4px;
+    left: 40px;
+    padding: 5px 10px;
+    position: absolute;
+    width: auto;
+    line-height: 1.5;
+    display: none;
+}
+.cptch_hidden_help_text:before {
+    content: url("../images/help.png");
+    left: -10px;
+    position: absolute;
+    top: 7px;
+    direction: ltr;
+}
+.cptch_help_box:hover .cptch_hidden_help_text {
+    display: block;
+}
+/*
+* frontend styles
+*/
+form input.cptch_input {
+    padding-left: 8px;
+    padding-right: 8px;
+}

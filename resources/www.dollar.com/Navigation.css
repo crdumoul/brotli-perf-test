@@ -1,0 +1,263 @@
+/*
+//--------------------------------------------------------------
+// <file name="Navigation.css">
+//     <copyright>
+//         Copyright (c) Dollar Thrifty Automotive Group.
+//         All rights reserved.
+//     </copyright>
+// </file>
+// <summary>
+//     Contains styles used for site navigation controls.	
+// </summary>
+// <history>
+//	   <change date="11/30/2006" ticket="">
+//         <author>mgoppert</author>
+//         <description>Initial version.</description>
+//     </change>
+//	   <change date="04/14/2008" ticket="">
+//         <author>Steven Vivero</author>
+//         <description>
+//			Revised css. Removed styling that was dependent on "hover" property, 
+//			this is because all browsers don't support it, we will use javascript instead.
+//			</description>
+//     </change>
+//	   <change date="02/04/2011 ticket="">
+//         <author>Nancy N.</author>
+//         <description>
+//			Modified height of SecondaryNavHeaderImage
+//			</description>
+//     </change>
+// </history>
+//-----------------------------------------------------------------
+*/
+
+/*=================================================================*/
+/* Menus                                                           */
+/*=================================================================*/
+
+/*------------------------------------*/
+/* BEGIN AspNet-Menu                  */
+/*------------------------------------*/
+/* These don't change ever */
+ul.AspNet-Menu 
+{
+    position: relative;
+    z-index: 99;
+}
+
+ul.AspNet-Menu, 
+ul.AspNet-Menu ul
+{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+ul.AspNet-Menu li
+{
+    position: relative;
+    list-style: none;
+    float: left;
+}
+
+ul.AspNet-Menu li a,
+ul.AspNet-Menu li span
+{
+    display: block;
+    text-decoration: none;
+}
+
+ul.AspNet-Menu ul
+{
+    position: absolute;
+    display: none;    
+}
+
+.AspNet-Menu-Vertical ul.AspNet-Menu li
+{
+    width: 100%;
+}
+/*------------------------------------*/
+/* END AspNet-Menu                    */
+/*------------------------------------*/
+
+/*------------------------------------*/
+/* BEGIN HeaderMenu                   */
+/*------------------------------------*/
+/* Common Tier items   */
+
+/* 2nd Tier Items   */
+.HeaderMenu ul ul
+{
+    top: 30px;
+    left: 0px;
+    border-top: solid 1px #003399;
+}
+
+.HeaderMenu li li
+{
+    background-color: #003399;
+    border-left: solid 1px #FFFFFF;
+    border-bottom: solid 1px #FFFFFF;
+    border-right: solid 1px #FFFFFF;
+    padding: 5px 5px;
+    width: 175px;
+}
+
+.HeaderMenu li.AspNet-Menu-Hover
+{
+    background-color: #FFCC33;
+}
+
+/* 
+ * Explicitly set link, visited, active, and hover styles,
+ * else IE6 will ignore it
+ */
+.HeaderMenu li.AspNet-Menu-Hover a:link,
+.HeaderMenu li.AspNet-Menu-Hover a:visited,
+.HeaderMenu li.AspNet-Menu-Hover a:active,
+.HeaderMenu li.AspNet-Menu-Hover a:hover,
+.HeaderMenu li.AspNet-Menu-Hover a
+{
+    color: #333333;
+    text-decoration: none;
+}
+
+.HeaderMenu .AspNet-Menu-Leaf a:link,
+.HeaderMenu .AspNet-Menu-Leaf a:visited,
+.HeaderMenu .AspNet-Menu-Leaf a:active,
+.HeaderMenu .AspNet-Menu-Leaf a:hover,
+.HeaderMenu .AspNet-Menu-Leaf a
+{
+	color: #FFFFFF;   
+	text-decoration: none;	
+}
+
+div.HeaderTopBannerText
+{
+	display: block;
+	float: left;
+	text-align: center;
+	margin: 0 0 0 0;
+	width: 390px;
+}
+
+/*------------------------------------*/
+/* END HeaderMenu                     */
+/*------------------------------------*/
+
+/*------------------------------------*/
+/* Begin LeftNavMenu                  */
+/*------------------------------------*/
+div.LeftNav
+{
+	padding: 0;
+	background-color:#eaeaea;
+}
+
+div.SecondaryNavUnselectedBack
+{
+	background: url(/common/images/ArrowRight.gif) no-repeat .7em .8em;
+	background-color:#eaeaea;
+	line-height: 1.3em;
+	padding: 5px 0 5px 20px;
+	border-top: solid 1px #999999;
+}
+
+div.SecondaryNavSelectedBack
+{
+	background: url(/common/images/ArrowDown.gif) no-repeat .7em .8em;
+	background-color:White;
+	line-height: 1.3em;
+	border-top: solid 1px #999999;
+}
+
+div.SecondaryNavSelectedChild
+{
+	padding: 5px 0 0px 20px;
+}
+
+div.SecondaryNavSelectedNoChild
+{
+	padding: 5px 0 5px 20px;
+}
+
+div.SecondaryNavSelectedBack1
+{
+	background: url(/common/images/BulletBlue.gif) no-repeat 1.8em .5em;
+	background-color:White;
+	padding: 1px 0 1px 27px;
+	line-height: 1.3em;
+	font-weight: normal;
+	font-size: 10px;
+}
+
+div.SecondaryNavSelectedBack2
+{
+	background: url(/common/images/BulletBlue.gif) no-repeat 2.6em .5em;
+	background-color:White;
+	padding: 1px 0 1px 35px;
+	line-height: 1.3em;
+	font-weight: normal;
+	font-size: 10px;
+}
+
+div.SecondaryNavSelectedNoLink
+{
+	background-color:White;
+	padding: 1px 0 1px 20px;
+	line-height: 1.3em;
+	font-weight: normal;
+	font-size: 11px;
+}
+
+div.SecondaryNavText
+{
+	background-color:White;
+	color:#003399;
+	padding: 8px 0 1px 20px;
+	line-height: 1.3em;
+	font-weight:bold;
+	font-size: 11px;
+}
+
+div.LeftNavRightArrow
+{
+	background-color:#eaeaea;
+	background: url("/common/images/ArrowRight.gif") no-repeat;
+	width: 7px;
+	height: 7px;
+	float:left;
+	background-position:center center;
+	
+}
+div.LeftNavDownArrow
+{
+	background-color:#eaeaea;
+	background: url("/common/images/ArrowDown.gif") no-repeat;
+	width: 7px;
+	height: 7px;
+	float:left;
+	background-position:center center;
+	
+}
+
+div.SecondaryNavHeaderImage
+{
+	background-color:#eaeaea;
+	background: url("/common/images/Backgrounds/DXlogoleftnav.gif") no-repeat;
+	height:55px;
+	width:125px;
+}
+/*------------------------------------*/
+/* END LeftNavMenu                    */
+/*------------------------------------*/
+
+div.BulletGroup
+{
+	background: url(/common/images/BulletBlue.gif) no-repeat .1em .5em;
+	padding: 0px 0px 0px 10px;
+	line-height: 1.3em;
+	font-weight: normal;
+	font-size: 12px;
+}

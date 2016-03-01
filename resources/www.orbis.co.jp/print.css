@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+body {
+	-webkit-print-color-adjust: exact;
+}
+
+#oec-globalNav,
+.oec-topicPath,
+#oec-footerSNS,
+#oec-footerNav {
+	display: none;
+}

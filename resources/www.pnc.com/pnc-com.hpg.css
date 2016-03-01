@@ -1,0 +1,5 @@
+.hero-login-wrapper{padding-top:10px;overflow:hidden;background:#fff}
+@media only screen and (min-width:600px){.hero-header-parsys{width:640px;margin:0 auto}
+}
+@media screen and (min-width:980px){.hero-header-parsys{margin:0 auto;width:960px}
+}

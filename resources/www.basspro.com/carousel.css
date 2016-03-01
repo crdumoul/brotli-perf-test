@@ -1,0 +1,89 @@
+        /* Bullet Navigator Skin Begin */
+        
+            /* jssor slider bullet navigator skin 05 css */
+            /*
+            .jssorb05 div           (normal)
+            .jssorb05 div:hover     (normal mouseover)
+            .jssorb05 .av           (active)
+            .jssorb05 .av:hover     (active mouseover)
+            .jssorb05 .dn           (mousedown)
+            */
+            .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+                background: url(//media.basspro.com/images/carousel/b06.png) no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+
+            .jssorb05 div {
+                background-position: -10px -7px;
+            }
+
+                .jssorb05 div:hover, .jssorb05 .av:hover {
+                    background-position: -40px -7px;
+                }
+
+            .jssorb05 .av {
+                background-position: -70px -7px;
+            }
+
+            .jssorb05 .dn, .jssorb05 .dn:hover {
+                background-position: -100px -7px;
+            }
+        
+/* Bullet Navigator Skin End */
+        /* Arrow Navigator Skin Begin */
+        
+            /* jssor slider arrow navigator skin 12 css */
+            /*
+            .jssora12l              (normal)
+            .jssora12r              (normal)
+            .jssora12l:hover        (normal mouseover)
+            .jssora12r:hover        (normal mouseover)
+            .jssora12ldn            (mousedown)
+            .jssora12rdn            (mousedown)
+            */
+            .jssora12l, .jssora12r, .jssora12ldn, .jssora12rdn {
+                position: absolute;
+                cursor: pointer;
+                display: block;
+                background: url(//media.basspro.com/images/carousel/a20.png) no-repeat;
+                overflow: hidden;
+            }
+
+            .jssora12l {
+                background-position: -178px -5px;
+            }
+
+            .jssora12r {
+                background-position: -264px -5px;
+            }
+
+/*            .jssora12l {
+                background-position: -6px -5px;
+            }
+
+            .jssora12r {
+                background-position: -92px -5px;
+            }
+*/
+
+            .jssora12l:hover {
+                background-position: -178px -5px;
+            }
+
+            .jssora12r:hover {
+                background-position: -264px -5px;
+            }
+
+            .jssora12ldn {
+                background-position: -178px -5px;
+            }
+
+            .jssora12rdn {
+                background-position: -264px -5px;
+            }
+
+            #slider1_container div {
+                margin: 0;
+                padding: 0;
+            }

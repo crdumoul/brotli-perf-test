@@ -1,0 +1,3175 @@
+﻿@import "Editor.css";
+
+.clearRight
+{
+    clear: right;
+}
+
+#HomepageContainer
+{
+    margin: 0;
+    background-color: #FFF;
+    width: 780px;
+}
+#banner
+{
+    background-color: #fff;
+    border-bottom: 1px solid #333;  
+}
+#pageTitle
+{
+    margin: 0;
+    padding: 0;
+    width: 780px;
+	clear:both;
+}
+
+#HomepageLayout, #LeftColumnLayout, #NoLeftColumnLayout, #EmailFormLayout
+{
+    margin: 0;
+	width: 780px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+#HomepageLayout, #LeftColumnLayout, #NoLeftColumnLayout, #EmailFormLayout
+{
+	text-align: left;
+}
+
+#HomepageLayout
+{
+    margin-bottom: 20px;
+}
+#HomepageLayout #LeftColumn
+{
+    clear: both;
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#LeftColumnLayout #LeftColumn
+{
+    float: left;
+    width: 140px;
+}
+#EmailFormLayout #LeftColumn
+{
+    float: left;
+    width: 140px;
+}
+
+#SuperModule
+{
+    height: 190px;
+    width: 298px;
+    
+    border: solid 1px #999999;
+    overflow: hidden;
+}
+
+#HomepageLayout #LeftColumn a:link, #HomepageLayout #LeftColumn a:visited
+{
+	text-decoration: underline;
+}
+#LeftColumn a:link, #LeftColumn a:visited
+{
+	text-decoration: none;
+}
+#LeftColumn a:hover
+{
+	text-decoration: underline;
+}
+#LeftColumnLayout #LeftColumn p
+{
+    margin-top: 0;
+}
+#EmailFormLayout #LeftColumn p
+{
+    margin-top: 0;
+}
+#HomepageLayout #RightColumn
+{
+    width: 460px;
+    float: left;
+}
+#LeftColumnLayout #RightColumn, #EmailFormLayout #RightColumn
+{
+    width: 618px;
+    _width: 614px;  
+    float: left;
+    background-color: #fff;
+    padding: 0 0 0 20px;
+}
+
+#DealsTicker
+{
+    width: 460px;
+}
+
+div#Top div#HomePageFeature
+{
+    width: 460px;
+    border: 0;
+    float: right;
+}
+
+#ModuleContainer
+{
+    width: 460px;
+    height: 190px;
+}
+
+#BodyOutline
+{
+    float: left;
+    width: 778px;
+/*    _width: 780px; */
+    border: solid 1px #999999;
+    border-top: solid 5px #999999;
+    margin-bottom: 20px;
+}
+#HomepageBodyOutline
+{
+    float: left;
+    width: 780px;
+    margin-bottom: 20px;
+}
+
+#HomepageBodyOutline #Top
+{
+	margin-bottom: 20px;
+	width: 780px;
+}
+
+div#HomepageBodyOutline div
+{
+	float: left;
+}
+
+#NoLeftColumnLayout #BodyOutline
+{
+    padding-left: 10px;
+    width: 768px;
+/*    _width: 780px; */
+    background-color: #fff;
+}
+#LeftColumnLayout #BodyOutline, #EmailFormLayout #BodyOutline
+{
+    background-image: url(/Images/LeftColumnLayoutBackground.gif);
+    background-repeat: repeat-y;
+}
+
+#content
+{
+    clear: both;
+}
+#content h2
+{
+    margin-top: 0;
+}
+#content p
+{
+	font-size: 12px;
+	font-family: Arial;
+}
+#footer
+{
+    clear: both;
+    height: 30px;
+    width: 780px;
+    font-size: 1em;
+}
+#footer img
+{
+    float: right;
+}
+
+.EmailSignUp 
+{
+    padding-top:7px;
+    float:right;
+    color: #0066cc;
+    font-weight: bold;
+    font-size: 8pt;
+    display:inline;
+}
+.EnterEmailAddress 
+{
+    font-size: 7pt;
+    color: #999999;
+}
+.LowerFontSize 
+{
+    font-size: 8pt;
+    padding-top:3px;
+}
+.FaceBookImage
+{
+	padding-bottom: 5px;
+}
+.TwitterImage
+{
+	padding-bottom: 5px;
+	padding-right: 10px;
+}
+/* Start Email Opt In*/
+div.emailoptin
+{
+	clear:both;
+/*	position:absolute;
+    bottom:80px;	  */
+    padding: 10px;
+}
+div.emailoptin p
+{
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 12px;
+    color: #666666;
+}
+div.signup input
+{
+    color: #999999;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    width: 120px;
+}
+
+/* Start promosearch*/
+div.promosearch
+{
+    vertical-align: bottom;
+    bottom: 0px;
+/*    background-color: #EAEAEA;    remove for bug 10228*/ 
+    color: #333;
+    margin: 0;
+    padding: 10px 10px 0 10px;
+    font-family: Verdana;
+    font-size: 12px;
+    height: 80px;
+}
+div.promosearch p
+{
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 12px;
+}
+div.promosearch input
+{
+    color: #999999;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    width: 120px;
+}
+
+div.promosearch SignUp_ImageButton
+{
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    width: 77px;
+    height: 17px;
+}
+/*End promosearch Optin */
+/* Start locsearch*/
+div.locsearch
+{
+    vertical-align: bottom;
+    bottom: 0px;
+/*    background-color: #EAEAEA;  */
+    color: #333;
+    margin: 0;
+    padding: 10px 10px 0 10px;
+    font-family: Verdana;
+    font-size: 12px;
+    height: 80px;
+}
+div.locsearch p
+{
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 12px;
+}
+div.locsearch input
+{
+    color: #999999;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    width: 120px;
+}
+div.locsearch SignUp_ImageButton
+{
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    width: 77px;
+    height: 17px;
+}
+/*End locsearch Optin */
+/* Sato Header */
+#SatoThriftyHeaderContainer
+{
+    background-color: #0066CC;
+    height: 110px;
+    width: 780px;
+}
+#SatoThriftyHeaderContainer #SatoThriftyHeaderImage
+{
+    padding: 2em 0px 0px 1em;
+}
+/*end Sato Header */
+/* Tiny Thrifty Header */
+#TinyThriftyHeaderContainer
+{
+    background-color: #0066CC;
+    height: 65px;
+    width: 780px;
+}
+#TinyThriftyHeaderContainer #TinyThriftyHeaderImage
+{
+    padding: 1em 0px 0px 1em;
+}
+/*end Tiny Thrifty Header */
+/* Alt Thrifty Header */
+#AltThriftyHeaderContainer
+{
+    background-color: #0066CC;
+    height: 110px;
+    width: 780px;
+}
+#AltThriftyHeaderContainer #AltThriftyHeaderImage
+{
+    padding: 2em 0px 0px 1em;
+}
+#AltThriftyHeaderContainer #AltThriftyHeaderCarImage
+{
+    clear: left;
+    float: right;
+    width: 100px;
+}
+/*end Alt Thrifty Header */
+/* Module */
+.Module
+{
+    width: 152px;
+ /*   _width: 153px;  */
+    height: 190px;
+    float: left;
+    border: solid 1px #999999;
+    overflow: hidden;
+}
+.Module .ModuleHeader
+{
+    background: #999999 url(/Images/ticker_gradient_bg.png) repeat-x scroll 0pt 100%;
+    text-indent: .2em;
+    padding: .2em;
+    width: 152px;
+}
+.Module .mboxDefault .ModuleHeader
+{
+    background: #999999 url(/Images/ticker_gradient_bg.png) repeat-x scroll 0pt 100%;
+    text-indent: .2em;
+    padding: .2em;
+    width: 152px;
+}
+.Module .ModuleHeader h6
+{
+    color: #333333;
+    font-family: Arial;
+    margin: 0;
+    padding: .2em;
+}
+.Module .ModuleContent
+{
+    padding: .5em;
+}
+/* Super Module */
+#SuperModule
+{
+	width: 298px;
+	height: 190px;
+	margin-right: 20px;
+	border: solid 1px #999;
+}
+
+#SuperModule #SuperModuleHeader
+{
+    background: #999999 url(/Images/ticker_gradient_bg.png) repeat-x scroll 0pt 100%;
+    text-indent: .2em;
+    padding: .2em;
+    width: 293px;
+}
+#SuperModule #SuperModuleHeader h6
+{
+    color: #333333;
+    font-family: Arial;
+    margin: 0;
+    padding: .2em;
+}
+#SuperModule #SuperModuleContent
+{
+    padding: .5em;
+}
+/* End Super Module */
+
+/*Start Our Cars */
+#OurCars
+{
+}
+/*#OurCars h3, #OurCars p 
+{
+	padding: 0 10px;
+}*/
+#OurCarsViewContainer
+{
+    margin-left: -10px;
+}
+#OurCarsSearchBar
+{
+    height: 28px;
+    background-image: url(/Images/box_blueheader_gradient.gif);
+    background-repeat: repeat;
+}
+#OurCarsSearchBar h6
+{
+    color: #FFFFFF;
+    vertical-align: middle;
+    padding-left: 10px;
+    float: left;
+}
+#OurCarsSearchBar #OurCarsSearch
+{
+    float: right;
+    padding: 4px 5px 2px 2px;
+}
+#OurCarsSearchBar #OurCarsSearch span
+{
+    color: #ffffff;
+    font-size: .75em;
+    vertical-align: middle;
+}
+#OurCarsSearchBar #OurCarsSearch input
+{
+    vertical-align: middle;
+}
+#OurCarsSearchBar #OurCarsSearch input.searchBox
+{
+    
+    color: #999;
+}
+#OurCarsContent
+{
+    padding-top: 1em;
+    margin: 0 2em 0 0px;
+}
+#OurCarsInternational_Header
+{
+    width: 780px;
+    text-align: left;
+    font-size: 1em;
+    height: 2em;
+    background: #3380CC url(/Images/altstep1bg.gif) repeat-x 100%;
+}
+#OurCarsInternational_Header #OurCarsSearch
+{
+    float: right;
+    padding: .2em;
+}
+#OurCarsInternational_Body
+{
+    width: 780px;
+/*    height: 700px;   */
+    background: #0066CC;
+    float:left;
+}
+#OurCarsInternational_Body #OurCarsInternational_ModuleContainer
+{
+    margin: 0em 2em 0em 2em;
+}
+#OurCarsInternational_Body #OurCarsInternational_ModuleContainer .OurCarsInternational_Module
+{
+    height: 180px;
+    width: 130px;
+    background: #0066CC url(/Images/Car-Capsule.jpg) no-repeat;
+    float: left;
+    text-align: center;
+    padding: 1em .5em 0 .2em;
+    position: relative;
+}
+#OurCarsInternational_Body #OurCarsInternational_ModuleContainer .OurCarsInternational_Module .OurCarsMakeModel 
+{
+	margin: 5px 0;
+}
+#OurCarsInternational_Body #OurCarsInternational_ModuleContainer .OurCarsInternational_Module .OurCarsMakeModel p
+{
+	margin: 0;
+	padding: 0 10px;
+}
+#OurCarsInternational_Body #OurCarsInternational_ModuleContainer .OurCarsInternational_Module a
+{
+	position: absolute;
+	bottom: 27px;
+	left: 17px;
+}
+#OurCarsInternational_Body #OurCarsInternational_Module .GetRateButton
+{
+    text-align: center;
+    margin: 0;
+    padding: 10em 5em 25em 1em;
+}
+.CarType
+{
+    font-weight: bold;
+    text-transform: uppercase; /* force text to uppercase */
+    color: #fff;
+}
+/* End Our Cars */
+/*BEGIN LeftNav */
+/*Container for the Secondary Navigation*/
+div.LeftNav
+{
+    font-family: Verdana;
+/*    background-color: #EAEAEA; */
+    border-color: #999999;
+    border-style: none;
+    border-width: 0;
+    padding: 0pt;
+    width: 140px;
+    height: 100%;
+}
+
+/*2nd Tier Header Text*/
+div.SecondaryNavHeaderText
+{
+    color: #0066CC;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 2px 0pt 5px 10px;
+}
+
+div.SecondaryNavHeaderText h3, div.SecondarySearchNavHeaderText h3  /*brett: This is a work around until the html can be repaired. the html should use h6, not h3*/
+{
+	font-size:10pt;
+}
+
+div.SecondarySearchNavHeaderText
+{
+    font-family: Verdana;
+    color: #333333;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 5px 0pt 5px 10px;
+}
+div.SecondarySearchNavHeaderText h3
+{
+	font-size: 12px;
+}
+/* Formatted Containers for the 
+  /*3rd Tier Not Selected*/
+div.SecondaryNavUnselectedBack
+{
+    background: url(/images/ArrowRight.gif) no-repeat scroll -3px 0px;
+    font-size: 10px;
+    border-top: 0px solid #999999;
+    line-height: 1.3em;
+    margin-left: 10px;
+    padding: 0px 0pt 5px 11px;
+    overflow: hidden;
+}
+/*3rd Tier Selected*/
+div.SecondaryNavSelectedBack
+{
+    font-size: 10px;
+    color: #666666;
+    background: White url(/images/ArrowRight.gif) no-repeat scroll -3px 0px;
+    border-top: 0px solid #999999;
+    line-height: 1.3em;
+    margin-left: 10px;
+    padding: 1px 0pt 1px 11px;
+    overflow: hidden;
+}
+
+/*3rd Tier with a Selected Child*/
+div.SecondaryNavSelectedChild
+{
+    font-size: 10px;
+    padding: 5px 0pt 0px 20px;
+    overflow: hidden;
+}
+
+/*4th Tier Selected*/
+div.SecondaryNavSelectedBack1
+{
+    background: White url(/images/bullet_gray.gif) no-repeat scroll 0px 5px;
+    color: #666666;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 1.3em;
+    margin-left: 21px;
+    padding: 1px 0pt 1px 13px;
+    overflow: hidden;
+}
+
+/*4th Tier Not Selected*/
+div.SecondaryNavUnselectedBack1
+{
+    background: #EAEAEA url(/images/BulletBlue.gif) no-repeat scroll 0px 5px;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 1.3em;
+    margin-left: 21px;
+    padding: 1px 0pt 1px 13px;
+    overflow: hidden;
+}
+
+/*5th Tier Selected*/
+div.SecondaryNavSelectedBack2
+{
+    background: White url(/images/dash_gray.gif) no-repeat scroll 3.8px 7px;
+    font-size: 10px;
+    color: #666666;
+    font-weight: normal;
+    line-height: 1.3em;
+    margin-left: 30px;
+    padding: 1px 0pt 1px 15px;
+    overflow: hidden; /*width: 95px;*/
+}
+
+/*5th Tier Not Selected*/
+div.SecondaryNavUnselectedBack2
+{
+    background: #EAEAEA url(/images/dash_blue.gif) no-repeat scroll 6.8px 4px;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 1.3em;
+    margin-left: 26px;
+    padding: 1px 0pt 1px 19px;
+    overflow: hidden; /*width: 95px;*/
+}
+
+
+div.SecondaryNavSelectedNoLink
+{
+    background-color: White;
+    color: #666666;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 1.3em;
+    padding: 1px 0pt 1px 25px;
+    overflow: hidden;
+}
+
+
+div.SecondaryNavText
+{
+    background-color: White;
+    color: #003399;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.3em;
+    padding: 8px 0pt 1px 20px;
+}
+
+div.LeftNavRightArrow
+{
+    float: left;
+    height: 7px;
+    width: 27px;
+}
+
+div.BulletGroup
+{
+    background: transparent url(/images/BulletBlue.gif) no-repeat scroll 0.1em 0.5em;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.3em;
+    padding: 0px 0px 0px 10px;
+}
+
+.SecondaryNavLink
+{
+    font-size: 10px;
+}
+.SecondaryNavLink1
+{
+    font-size: 10px;
+}
+a.SecondaryNavLink:link, a.SecondaryNavLink:visited, a.SecondaryNavLink1:link, a.SecondaryNavLink1:visited
+{
+    color: #0066CC;
+    text-decoration: none;
+}
+a.SecondaryNavLink:hover, a.SecondaryNavLink1:hover
+{
+    color: #0066CC;
+    text-decoration: underline;
+}
+#nav
+{
+    float: left;
+    margin-left: 0px;
+    padding-top: 1em;
+    width: 160px;
+}
+#nav p
+{
+    margin-top: 0pt;
+}
+/*END LeftNav*/
+
+/* START Travel Partners Left Nav */
+div.TravelPartnerSecondaryNavHeaderText
+{
+    color: #000000;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 2px 0pt 5px 10px;
+}
+/* END Travel Partners Left Nav */
+
+/* Start Header */
+#ThriftyHeaderContainer
+{
+    background: url(/images/headerbg.jpg) repeat-x right top;
+    height: 110px;
+    width: 780px;
+    float: left;
+}
+
+#ThriftyHeaderContainer div.Left
+{
+	float: left;
+	width: 680px;
+}
+
+#ThriftyHeaderContainer div.Car
+{
+	float: right;
+}
+
+#ThriftyHeaderContainer div.Left img.Brand 
+{
+    margin: 15px 0px 0px 16px;
+    float: left;
+}
+
+#ThriftyHeaderContainer #ThriftyHeaderCarImage
+{
+    clear: left;
+    float: right;
+    width: 100px;
+}
+
+#ThriftyHeaderContainer div.Links
+{
+    float: right;
+    margin: 5px 5px 0;
+    _margin-top: 0;
+}
+
+#ThriftyHeaderContainer #MBox
+{
+    float: left;
+    width: 355px;
+    text-align: center;
+    margin-top: 10px;
+    height: 45px;   
+}
+
+#ThriftyHeaderContainer #MBox h4 
+{  
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 11pt; 
+	font-weight: bold; 
+	line-height: normal; 
+	margin: 0.5em 0pt; 
+}
+
+#ThriftyHeaderContainer div.Links a,
+#ThriftyHeaderContainer div.Links a:visited,
+#ThriftyHeaderContainer div.Links a:hover,
+#ThriftyHeaderContainer div.Links a:active,
+#ThriftyHeaderContainer div.Links span
+{
+	font-size: 7pt;
+    font-family: Arial, Helvetica, sans-serif;    
+    color: #fff;
+    text-decoration: none;
+}
+
+#ThriftyHeaderContainer div.Navigation
+{
+	float: left;
+	clear: both;
+	width: 680px;
+}
+
+#ThriftyHeaderContainer div.Navigation ul
+{
+	
+}
+
+#ThriftyHeaderContainer div.Navigation ul.Tabs
+{
+	padding: 0;
+	margin: 9px 0 0 0;
+	position: relative;
+	float: left;
+	z-index: 99;
+	display: block;
+}
+
+#ThriftyHeaderContainer div.Navigation ul.Tabs li
+{
+	float:left;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	position:relative;
+	height: 23px;
+}
+
+#ThriftyHeaderContainer div.Navigation ul.Tabs li a
+{
+	display: block;
+	text-decoration: none;
+}
+
+#ThriftyHeaderContainer div.Navigation ul.Tabs ul.dropmenu
+{
+	margin: 0;
+	padding: 0;
+	background: #4796e6;
+	position: absolute;
+}
+
+#ThriftyHeaderContainer div.Navigation ul.Tabs ul.dropmenu li
+{
+	padding: 0;
+	margin: 0;
+	display: block;
+	border-bottom: solid 1px #000;
+	border-left: solid 1px #000;
+	border-right: solid 1px #000;
+	position: relative;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	position: relative;
+	float: left;
+	width: 150px;
+}
+
+#ThriftyHeaderContainer div.Navigation ul.Tabs ul.dropmenu li.hover
+{
+	background-color: #06c;
+}
+
+#ThriftyHeaderContainer div.Navigation ul.Tabs ul.dropmenu li a,
+#ThriftyHeaderContainer div.Navigation ul.Tabs ul.dropmenu li a:visited,
+#ThriftyHeaderContainer div.Navigation ul.Tabs ul.dropmenu li a:hover,
+#ThriftyHeaderContainer div.Navigation ul.Tabs ul.dropmenu li a:active,
+#ThriftyHeaderContainer div.Navigation ul.Tabs ul.dropmenu li span
+{
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 8pt;
+	text-decoration: none;
+	padding: 5px 5px 0 5px;
+}
+
+#ThriftyHeaderContainer div.Navigation ul.Tabs li,
+#ThriftyHeaderContainer div.Navigation ul.submenu li
+{
+	display: inline;
+}
+
+#ThriftyHeaderContainer div.Navigation ul.submenu
+{
+	padding: 0;
+	margin: 4px 0 0 10px;
+	_margin: 4px 0 0 5px;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 8pt;
+	float: left;
+}
+
+#ThriftyHeaderContainer div.Navigation ul.submenu li
+{
+	margin: 0 0 0 5px;
+}
+
+#ThriftyHeaderContainer div.Navigation ul.submenu li a,
+#ThriftyHeaderContainer div.Navigation ul.submenu li a:visited,
+#ThriftyHeaderContainer div.Navigation ul.submenu li a:hover,
+#ThriftyHeaderContainer div.Navigation ul.submenu li a:active
+{
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 8pt;
+	text-decoration: none;
+	margin-right: 5px;
+}
+
+#ThriftyHeaderContainer_dropDownMenu, #ThriftyHeaderContainer_dropDownMenu *
+{
+    margin: 0px;
+    padding: 0px;
+    max-width: 670px;
+    height: 1.5em;
+}
+
+#ThriftyHeaderContainer_dropDownMenu
+{
+    float: left;
+    max-width: 100%;
+    position: absolute;
+    text-align: center;
+    width: 50em;
+    top: 65px;
+    /*top: _70px;*/
+}
+
+#ThriftyHeaderContainer_dropDownMenu li ul
+{
+    background-position: 0pt 50% !important;
+    cursor: default;
+    height: auto;
+    left: 0px;
+    max-width: 100%;
+    padding-left: 2em !important;
+    position: absolute;
+    top: 1.5em;
+    width: 38.2em;
+}
+
+#ThriftyHeaderContainer_dropDownMenu li
+{
+    background-image: url(/images/altstep1bg.gif);
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    list-style-type: none;
+    max-width: 16.5%;
+    text-align: center;
+    width: auto;
+}
+#ThriftyHeaderContainer_dropDownMenu li ul li
+{
+    background-color: #3380CC;
+    border: medium none;
+    /*max-width: none;*/
+    width: auto;
+}
+#ThriftyHeaderContainer_dropDownMenu li a
+{
+    border-left: 1px solid #333333;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-family: Verdana,Helvetica,Arial,Sans-serif;
+    font-size: 12px;
+    height: 1.4em;
+    line-height: 1.4em;
+    padding: 0px 0.5em;
+    text-decoration: none;
+}
+#ThriftyHeaderContainer_dropDownMenu li ul li a
+{
+    background-position: 0pt 50% !important;
+    color: #FFFFFF;
+    cursor: pointer !important;
+    font-weight: 400;
+    height: 1.1em;
+    line-height: 1.1em;
+    position: relative !important;
+    white-space: nowrap;
+}
+#ThriftyHeaderContainer_dropDownMenu li ul li
+{
+    background-color: #3380CC;
+    border: medium none;
+    background: none;
+    width: auto;
+}
+#ThriftyHeaderContainer_dropDownMenu li a
+{
+    border-left: 1px solid #333333;
+    color: #FFFFFF;
+    float: left;
+    font-family: Verdana,Helvetica,Arial,Sans-serif;
+    font-size: 12px;
+    height: 1.4em;
+    line-height: 1.4em;
+    padding: 0px 0.5em;
+    text-decoration: none;
+}
+#ThriftyHeaderContainer_dropDownMenu li ul li a
+{
+    /* background-position: 0pt 50% !important;*/
+    color: #FFFFFF;
+    cursor: pointer !important;
+    font-weight: 400;
+    height: 1.1em;
+    line-height: 1.1em;
+    position: relative !important;
+    white-space: nowrap;
+    padding-top: .2em;
+}
+
+#ThriftyHeaderContainer_dropDownMenu li a:hover, #ThriftyHeaderContainer_dropDownMenu li a:focus, #ThriftyHeaderContainer_dropDownMenu li a:active
+{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+#ThriftyHeaderContainer_dropDownMenu li:hover ul, #ThriftyHeaderContainer_dropDownMenu li.msieFix ul
+{
+    left: 0pt;
+}
+.Reservations #ThriftyHeaderContainer_dropDownMenu li#Reservations a, .OurCars #ThriftyHeaderContainer_dropDownMenu li#OurCars a, .Deals #ThriftyHeaderContainer_dropDownMenu li#Deals a, .Locations #ThriftyHeaderContainer_dropDownMenu li#Locations a, .BlueChip #ThriftyHeaderContainer_dropDownMenu li#BlueChip a, .Programs #ThriftyHeaderContainer_dropDownMenu li#Programs a, .TravelCenter #ThriftyHeaderContainer_dropDownMenu li#TravelCenter a
+{
+    color: #000000;
+    cursor: default;
+}
+/*.Reservations #ThriftyHeaderContainer_dropDownMenu li#Reservations ul, .OurCars #ThriftyHeaderContainer_dropDownMenu li#OurCars ul, .Deals #ThriftyHeaderContainer_dropDownMenu li#Deals ul, .Locations #ThriftyHeaderContainer_dropDownMenu li#Locations ul, .BlueChip #ThriftyHeaderContainer_dropDownMenu li#BlueChip ul, .Programs #ThriftyHeaderContainer_dropDownMenu li#Programs ul, .TravelCenter #ThriftyHeaderContainer_dropDownMenu li#TravelCenter
+{
+    left: 0pt;
+    
+}
+*/
+#Reservations:hover, #Reservations:focus, #ThriftyHeaderContainer_dropDownMenu li#Reservations ul
+{
+    background: #3380CC none repeat-x scroll 0pt 100%;
+}
+#Reservations, #Reservations li a, .Reservations #ThriftyHeaderContainer_dropDownMenu li#Reservations ul
+{
+    background: #3380CC repeat-x scroll 0pt 100%;
+}
+#OurCars:hover, #OurCars:focus, #ThriftyHeaderContainer_dropDownMenu li#OurCars ul
+{
+    /*background: #3380CC none repeat-x scroll 0pt 100%;*/
+}
+#OurCars, #OurCars li a, .OurCars #ThriftyHeaderContainer_dropDownMenu li#OurCars ul
+{
+    /*background: #3380CC repeat-x scroll 0pt 100%;*/
+}
+#Deals:hover, #Deals:focus, #ThriftyHeaderContainer_dropDownMenu li#Deals ul, .Deals #ThriftyHeaderContainer_dropDownMenu li#Deals
+{
+    background: #3380CC none repeat scroll 0% 50% !important;
+}
+#Deals, #Deals li a, .Deals #ThriftyHeaderContainer_dropDownMenu li#Deals ul
+{
+    background: #3380CC repeat-x scroll 0pt 100%;
+}
+#Locations:hover, #Locations:focus, #ThriftyHeaderContainer_dropDownMenu li#Locations ul, .Locations #ThriftyHeaderContainer_dropDownMenu li#Locations
+{
+    background: #3380CC none repeat scroll 0% 50% !important;
+}
+#Locations, #Locations li a, .Locations #ThriftyHeaderContainer_dropDownMenu li#Locations ul
+{
+    background: #3380CC repeat-x scroll 0pt 100%;
+}
+#BlueChip:hover, #BlueChip:focus, #ThriftyHeaderContainer_dropDownMenu li#BlueChip ul, .BlueChip #ThriftyHeaderContainer_dropDownMenu li#BlueChip
+{
+    background: #3380CC none repeat scroll 0% 50% !important;
+}
+#BlueChip, #BlueChip li a, .BlueChip #ThriftyHeaderContainer_dropDownMenu li#BlueChip ul
+{
+    background: #3380CC repeat-x scroll 0pt 100%;
+}
+#Programs:hover, #Programs:focus, #ThriftyHeaderContainer_dropDownMenu li#Programs ul, .Programs #ThriftyHeaderContainer_dropDownMenu li#Programs
+{
+    background: #3380CC none repeat scroll 0% 50% !important;
+}
+#Programs, #Programs li a, .Programs #ThriftyHeaderContainer_dropDownMenu li#Programs ul
+{
+    background: #3380CC repeat-x scroll 0pt 100%;
+}
+#TravelCenter:hover, #TravelCenter:focus, #ThriftyHeaderContainer_dropDownMenu li#TravelCenter ul, .TravelCenter #ThriftyHeaderContainer_dropDownMenu li#TravelCenter
+{
+    background: #3380CC none repeat scroll 0% 50% !important;
+}
+#TravelCenter, #TravelCenter li a, .TravelCenter #ThriftyHeaderContainer_dropDownMenu li#TravelCenter ul
+{
+    background: #3380CC repeat-x scroll 0pt 100%;
+}
+#ThriftyHeaderContainer_dropDownMenu li.msieFix a
+{
+    color: #000000 !important;
+}
+/*  End Header */
+/* BEGIN Breadcrumb styles */
+.BreadcrumbContainer
+{
+    float: left;
+    margin: 10px 0;
+}
+ul.Breadcrumbs
+{
+    /*font-size: .65em;*/
+    font-size: 11px;
+    font-family:Arial;
+    color: #666;
+    margin: 0;
+    padding: 0;
+}
+ul.Breadcrumbs a:link, .Breadcrumbs a:visited, .Breadcrumbs a:active
+{
+    color: #0066CC;
+    text-decoration: none;
+}
+ul.Breadcrumbs a:hover
+{
+    color: #0066CC;
+    text-decoration: underline;
+}
+ul.Breadcrumbs li
+{
+    float: left;
+    list-style-type: none;
+}
+/* END Breadcrumb styles */
+/* BEGIN EnrollmentControl */
+div.EnrollmentControl, div.GeneralDataEntryForm
+{
+    width: auto;
+}
+div.EnrollmentControl div, div.GeneralDataEntryForm div
+{
+    clear: both;
+}
+div.GeneralDataEntryForm div
+{
+    font-size: .9em;
+}
+div.EnrollmentControl div span, div.GeneralDataEntryForm div span
+{
+    font-size: .9em;
+}
+div.EnrollmentControl fieldset, div.GeneralDataEntryForm fieldset
+{
+    border: 0 solid; /* solid is for opera */
+    padding: 0;
+    margin: 0;
+}
+div.EnrollmentControl fieldset div, div.GeneralDataEntryForm fieldset div
+{
+    float: left;
+    _float: none;
+    clear: both;
+    padding: 1px 0 2px 0;
+    width: 100%;
+}
+div.GeneralDataEntryForm fieldset div.Alternate
+{
+    background-color: #eaeaea;
+}
+div.EnrollmentControl fieldset div.DirectoryAssistance, div.GeneralDataEntryForm fieldset div.DirectoryAssistance
+{
+    margin-left: 285px;
+    font-size: .9em;
+}
+div.EnrollmentControl fieldset div.Header, div.GeneralDataEntryForm fieldset div.Header
+{
+    margin: 0 0 10px 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+    font-size: .8em;
+}
+div.EnrollmentControl fieldset div.Header h3, div.GeneralDataEntryForm fieldset div.Header h3
+{
+    font-weight: bold;
+    background-color: #06c;
+    color: #fff;
+    padding: 4px 5px 4px 5px;
+    vertical-align: middle;
+    margin: 0;
+    display: inline;
+    float: left;
+    width: 100%;
+    font-size: 1.1em;
+}
+div.GeneralDataEntryForm fieldset div.Header span
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif !important;
+    vertical-align: middle;
+    margin-left: 10px;
+    line-height: 2.3em;
+}
+div.GeneralDataEntryForm fieldset div.Notes, div.GeneralDataEntryForm fieldset div.Alert
+{
+    margin-left: 285px;
+}
+div.GeneralDataEntryForm fieldset div.Notes
+{
+    font-style: italic;
+}
+div.EnrollmentControl fieldset div label, div.GeneralDataEntryForm fieldset div label
+{
+    float: left;
+    width: 280px;
+    vertical-align: middle;
+    text-align: right;
+    margin: 2px 5px 0 0;
+}
+div.EnrollmentControl fieldset div label.Required, div.GeneralDataEntryForm fieldset div label.Required
+{
+    font-weight: bold;
+}
+div.EnrollmentControl fieldset div span, div.GeneralDataEntryForm fieldset div span
+{
+    vertical-align: middle;
+}
+div.EnrollmentControl fieldset div span.RadioButtons label, div.GeneralDataEntryForm fieldset div span.RadioButtons label
+{
+    float: none;
+    display: inline;
+}
+div.GeneralDataEntryForm fieldset.RadioButtonsVertical label
+{
+    float: none;
+    text-align: left;
+    display: inline;
+    vertical-align: middle;
+}
+div.GeneralDataEntryForm fieldset.RadioButtonsVertical input
+{
+    vertical-align: middle;
+}
+div.EnrollmentControl fieldset div span.Validator, div.GeneralDataEntryForm fieldset div span.Validator
+{
+    font-size: .7em;
+}
+div.EnrollmentControl div.ActionArea, div.GeneralDataEntryForm div.ActionArea
+{
+    text-align: center;
+    margin-top: 5px;
+    line-height: 1.5em;
+}
+div.EnrollmentControl div.ActionArea span, div.GeneralDataEntryForm div.ActionArea span
+{
+    font-weight: bold;
+    vertical-align: middle;
+    font-size: .8em;
+}
+/* END EnrollmentControl */
+
+/* BEGIN Footer */
+
+div.FooterControl
+{
+    clear: both;
+    width:780px;
+	_width: 780px;
+    font-size: 8pt;
+    font-family: Arial;   
+    text-align: left; 
+	    
+}
+div.FooterControl .Navigation
+{
+    background: #999 url(/images/footer.gif) no-repeat 99% 50%;
+    padding: 10px;
+    margin: 0;
+}
+div.FooterControl li
+{
+    display: inline;
+    color: #FFFFFF;
+}
+div.FooterControl ul.Navigation li a, div.ForeignFooterControl ul.ForeignNavigation li a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    vertical-align: middle;
+}
+div.FooterControl ul.Navigation a:hover, div.ForeignFooterControl ul.Navigation a:hover
+{
+    text-decoration: underline;
+}
+div.FooterControl div.copyright, div.ForeignFooterControl div.copyright
+{
+    color: #666666;
+    text-align: left;
+    margin: 5px 0 0 10px;
+}
+/* END Footer */
+/* BEGIN FAQ */
+div.topquestions
+{
+    background: transparent url(/images/BulletBlue.gif) no-repeat scroll 0.1em 0.5em;
+    color: #0066CC;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: normal;
+    line-height: 1.3em;
+    padding: 0px 0px 0px 10px;
+}
+div.bottomqa
+{
+    padding: 15px 10px 0px 10px;
+}
+
+div.bottomquestions
+{
+    color: #0066CC;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: bold;
+    line-height: 1.3em;
+    padding: 0;
+}
+div.bottomquestions a
+{
+	text-decoration: none;
+}
+div.bottomquestions a:hover
+{
+	color: #0066CC;
+	text-decoration: none;
+}
+div.bottomanswers
+{
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: normal;
+    line-height: 1.3em;
+    padding: 0;
+}
+/* END FAQ */
+/* PageTitleHomepage */
+#PageTitleHomepage #Welcome h1
+{
+    color: #666;
+    margin: 0;
+    padding: 10px 0px 10px 15px;
+    float: left;
+    font-size: 14px;
+}
+#PageTitleHomepage a
+{
+    margin: 0;
+    padding: 13px 10px 0px 10px;
+    float: left;
+    font-size: 0.75em;
+}
+#PageTitleHomepage #Welcome h2
+{
+    color: #666;
+    margin: 0;
+    padding: 10px 0px 10px 15px;
+    float: left;
+    font-size: 11px;
+}
+#PageTitleHomepage #SignOut a
+{
+    float: right;
+}
+/* END PageTitleHomepage */
+/*PageTitleBlueChip */
+#PageTitleBlueChip
+{
+    height: 33px;
+    padding: 2px 0px 0px 0px;
+    float: left;
+}
+#PageTitleBlueChip ul li.PageTitleBlueChipWelcome h4
+{
+    color: #666;
+    padding: 0px 0px 0px 5px;
+    margin-top:5px;
+}
+#PageTitleBlueChip ul
+{
+    padding: 0px 0px 0px 15px;
+    margin: 0;
+}
+#PageTitleBlueChip li
+{
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#PageTitleBlueChip li a
+{
+    float: right;
+    padding: 2px;
+}
+#BlueChipSignInLink
+{
+    float: right;
+}
+/* END PageTitleBlueChip */
+/* PageTitleGeneric */
+#PageTitleGeneric h4
+{
+    color: #666;
+    margin: 0;
+    padding: 10px 10px 10px 15px;
+}
+/* END PageTitleGeneric */
+
+#BlueChipSignInLink
+{
+    padding: 0px;
+    list-style: none;
+    float: right;
+}
+#BlueChipSignInLink ul
+{
+    padding: 10px 15px 0px 0px;
+    margin: 0;
+}
+#BlueChipSignInLink ul li.links
+{
+    display: inline;
+    padding: 2px 4px;
+    list-style: none;
+    vertical-align: middle;
+    font-size: .8em;
+}
+
+.BlueChipMainLogo
+{
+	float:right;
+}
+/* BlueChipFAQ */
+#BlueChipFAQ
+{
+    position: relative;
+}
+#BlueChipFAQ img.BlueChipFAQLogo
+{
+    position: absolute;
+    left: 485px;
+    top: 10px;
+}
+.BlueChipFAQHeader
+{
+    background-image: url(/Images/bcnonmembergradient.gif);
+    background-repeat: repeat;
+    height: 50px;
+}
+#BlueChipFAQ #BlueChipFAQQuestions #BlueChipFAQCallToAction
+{
+    padding: 5px 5px 5px 5px;
+    height: 50px;
+    /*background-image: url(/Images/bcnonmembergradient.gif);*/
+    clear: right;
+}
+#BlueChipFAQ #BlueChipFAQQuestions #BlueChipFAQCallToAction div
+{
+    padding: 20px 5px;
+    float: left;
+    font-size: .8em;
+}
+
+#BlueChipFAQ #BlueChipFAQQuestions #BlueChipFAQCallToAction div .TopLinkPadding
+{
+    padding-top: 5px;
+    color: #0066CC;
+	text-decoration: underline;
+}
+#BlueChipFAQ #BlueChipFAQQuestions ul
+{
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+#BlueChipFAQ #BlueChipFAQQuestions ul li
+{
+    list-style-image: url(/Images/bcnonmemberbullet.gif);
+    list-style-position: inside;
+    vertical-align: middle;
+    height: 25px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+#BlueChipFAQ #BlueChipFAQQuestions ul li.BlueChipFAQ_Alternating
+{
+    background-image: url(/Images/bcnonmembergradient.gif);
+    background-repeat: repeat-y;
+    vertical-align: middle;
+}
+#BlueChipFAQ #BlueChipFAQDivider
+{
+    font: color #FFFFFF;
+    height: 28px;
+    background-image: url(/Images/box_blueheader_gradient.gif);
+    background-repeat: repeat;
+    clear: both;
+    margin-left: -10px;
+    padding-left: 20px;
+}
+#BlueChipFAQ #BlueChipFAQDivider p
+{
+    color: #FFFFFF;
+    vertical-align: middle;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+#BlueChipMainDivider
+{
+    font: color #FFFFFF;
+    height: 28px;
+    background-image: url(/Images/box_blueheader_gradient.gif);
+    background-repeat: repeat;
+    clear: both;
+    margin-left: -10px;
+    padding-left: 20px;
+}
+#BlueChipMainDivider p
+{
+    color: #FFFFFF;
+    vertical-align: middle;
+    font-weight: bold;
+    padding-left: 5px;
+	padding-top: 5px;
+}
+#BlueChipFAQ #BlueChipFAQDetails ul
+{
+    list-style: none;
+    padding-left: 2.25em;
+}
+#BlueChipFAQ #BlueChipFAQDetails ul li
+{
+    list-style: none;
+}
+#BlueChipFAQ #BlueChipFAQDetails ul li p
+{
+    font-size: .8em;
+    padding-left: 0.5em;
+    width: 95%;
+}
+#BlueChipFAQ #BlueChipFAQDetails ul li.Questions
+{
+    list-style-image: url(/Images/bcnonmemberbullet.gif);
+    padding-left: 5px;
+}
+
+/* END Blue Chip FAQ */
+/* BEGIN Blue Chip */
+img.BlueChipSeal
+{
+	float:right;
+}
+img.BlueChipSealMedium
+{
+	float:right;
+	padding-right:10px;
+}
+#BlueChipEnrollmentFormContainer
+{
+    float: left;
+    border: solid 1px #0066CC;
+    width: 605px;
+    margin: 5px 0 0 0;
+}
+#BlueChipSignInFormContainer
+{
+    float: left;
+    border: solid 1px #0066CC;
+    width: 280px;
+    margin: 5px 0 0 0;
+    background-color: #EAEAEA;
+}
+#BlueChipForgotPasswordFormContainer
+{
+    float: left;
+    border: solid 1px #0066CC;
+    width: 490px;
+    margin: 5px 0 0 0;
+}
+#BlueChipCreatePasswordFormContainer
+{
+    float: left;
+    border: solid 1px #0066CC;
+    width: 490px;
+    margin: 5px 0 0 0;
+}
+#BlueChipCreatePassword2FormContainer
+{
+    float: left;
+    border: solid 1px #0066CC;
+    width: 440px;
+    margin: 5px 0 0 0;
+}
+#BlueChipForgotIDFormContainer
+{
+    float: left;
+    border: solid 1px #0066CC;
+    width: 490px;
+    margin: 5px 0 0 0;
+}
+#BlueChipSignInFormContainer div.ContentRow
+{
+    /*width: 100%;*/
+    float: inherit;
+	clear: both;
+	padding: 5px;
+	/*height:25px;*/
+	background-color: #FFFFFF;
+}
+#BlueChipSignInFormContainer div.ContentRowShaded
+{
+    /*width: 100%;*/
+	float: inherit;
+	clear: both;
+	padding: 5px;
+	/*height:25px;*/
+	background-color: #EAEAEA;
+}
+#BlueChipSignInFormContainer div.ContentColumnRight
+{
+	float: right;
+}
+#BlueChipSignInFormContainer div.NormalRow
+{
+	height:25px;
+}
+.Center
+{
+	text-align:center;
+}
+#BlueChipSignInFormContainer div.FormColumnLeft
+{
+	/*float: left;*/
+	clear:both;
+	display:block;
+	float:left;
+	/*margin:5px 5px 10px;*/
+	padding:0;
+	text-align:right;
+	width:75px;
+}
+#BlueChipSignInFormContainer div.FormColumnRight
+{
+	float: left;
+	padding-left: 10px;
+	/*margin:5px 5px 10px;*/
+}
+#BlueChipSignInFormContainer div.FormButton
+{
+	text-align:right;
+	padding-right: 63px;
+	height:25px;
+	background-color: #EAEAEA;
+	float:right;
+	width: 217px;
+}
+.inputbox
+{
+	width:125px;
+}
+#BlueChipForgotPasswordFormContainer div.FormColumnLeft
+{
+	/*float: left;*/
+	clear:both;
+	display:block;
+	float:left;
+	/*margin:5px 5px 10px;*/
+	padding:0;
+	text-align:right;
+	width:235px;
+}
+#BlueChipForgotPasswordFormContainer div.FormColumnRight
+{
+	float: left;
+	padding-left: 10px;
+	/*margin:5px 5px 10px;*/
+}
+#BlueChipForgotPasswordFormContainer div.FormButton
+{
+	text-align:right;
+	height:20px;
+	background-color: #EAEAEA;
+	width:336px;
+}
+#BlueChipForgotIDFormContainer div.FormColumnLeft
+{
+	/*float: left;*/
+	clear:both;
+	display:block;
+	float:left;
+	/*margin:5px 5px 10px;*/
+	padding:0;
+	text-align:right;
+	width:235px;
+}
+#BlueChipForgotIDFormContainer div.FormColumnRight
+{
+	float: left;
+	/*margin:5px 5px 10px;*/
+}
+#BlueChipForgotIDFormContainer div.FormButton
+{
+	text-align:right;
+	background-color: #EAEAEA;
+}
+#BlueChipFormHeader
+{
+    height: 28px;
+    background-image: url(/Images/box_blueheader_gradient.gif);
+    background-repeat: repeat;
+    clear: both;
+}
+#BlueChipFormHeader h6
+{
+    color: #fff;
+    margin: 0 0 0 10px;
+    padding: .5em;
+    font-size: 1em;
+}
+#BlueChipFormHeader2
+{
+    height: 28px;
+    background-image: url(/Images/box_blueheader_gradient.gif);
+    background-repeat: repeat;
+    clear: both;
+}
+#BlueChipFormHeader2 h6
+{
+    color: #fff;
+    margin: 0 0 0 10px;
+    padding: .5em;
+    font-size: 1em;
+}
+#BlueChipFormBody
+{
+    /*margin: 10px;*/
+    /*font-family:Verdana;*/
+    /*font-size:10px;*/
+    font-family:Arial;
+    font-size:12px;
+}
+#BlueChipSignInBodyLiteral
+{
+	float:right;
+	width:200px;
+}
+.BlueChipFormSmallText
+{
+	font-size:10px;
+}
+#BlueChipMainNotLoggedIn
+{
+	float:right;
+	padding-right:10px;
+	clear:both;
+}
+.MemberModuleGridView
+{
+	width: 760px;
+}
+.MemberModuleHeader
+{
+	font-weight:bold;
+	background-color:#CCCCCC;
+	white-space: nowrap;
+	text-align: center;
+}
+.MemberModuleHeader a
+{
+	color:#000000;
+	text-decoration:none;
+}
+.MemberModuleRow
+{
+	background-color:#FFFFFF;
+}
+.MemberModuleRow td
+{
+	text-align: center;
+}
+.MemberModuleAlternatingRow
+{
+	background-color:#CCE6FF;
+}
+.MemberModuleAlternatingRow td
+{
+	text-align: center;
+}
+.MemberModuleSearchBox
+{
+	float:right;
+    margin-top: 0;
+}
+.MemberModuleBody
+{
+	margin-top:10px;
+}
+.WaterMark
+{
+	color:#AAAAAA;
+}
+.SearchBoxTitleText
+{
+	font-weight:bold;
+	color: #666666;
+}
+.MemberModuleContentImage
+{
+	float:right;
+	padding:10px 10px 0px 0px;
+}
+.NewsBurst
+{
+	display:block;
+	float:left;
+	padding: 0px 10px 5px 0px;
+}
+.teaserTitle
+{
+    margin: 0px;
+}
+.teaserBody
+{
+    margin-top: -5px;
+    margin-left: 10px;
+}
+#programsList #rewardHeader
+{
+    font-weight:bold;
+    padding-top:15px;
+}
+#programsList #rewardHeader hr
+{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top:3px;
+}
+.RewardsHeaderDate
+{
+    width:12%;
+    display:inline-block;
+    padding-left:15px;
+}
+.RewardsHeaderType
+{
+    width:18%;
+    display:inline-block;
+}
+.RewardsHeaderDescription
+{
+    width:24%;
+    display:inline-block;
+}
+.RewardsHeaderRentalAgreement
+{
+    width:18%;
+    display:inline-block;
+    text-align:center;
+}
+.RewardsHeaderPoints
+{
+    display:inline-block;
+    width:15%;
+    text-align:center;
+}
+#programTypes .lineItem 
+{
+    padding-top:0;
+    padding-bottom:5px;
+}
+#programTypes .lineItem .reward
+{
+    color:Blue;
+    width:14%;
+    display:inline-block;
+}
+#programTypes .lineItem .type
+{
+    width:18%;
+    display:inline-block;
+    text-align:left;
+}
+#programTypes .lineItem .description
+{
+    width:24%;
+    display:inline-block;
+    text-align:left;
+}
+#programTypes .lineItem .rentalAgreement
+{
+    width:18%;
+    display:inline-block;
+    text-align:center;
+}
+#programTypes .lineItem .points
+{
+    width:18%;
+    display:inline-block;
+    text-align:center;
+}
+#programTypes .lineItem #rewardContent
+{
+    margin-top:5px;
+}
+#programTypes .lineItem #rewardContent .date
+{
+    width:14%;
+    display:inline-block;
+    text-align:center;
+}
+#programTypes .lineItem #rewardContent .dateExpanded
+{
+    width:13%;
+    display:inline-block;
+    text-align:left;
+    padding-left: 5px;
+}
+#programTypes .lineItem #rewardContent .subType
+{
+    width:18%;
+    display:inline-block;
+    text-align:left;
+}
+#programTypes .lineItem #rewardContent .description
+{
+    width:24%;
+    display:inline-block;
+    text-align:left;
+}
+#programTypes .lineItem #rewardContent .rentalAgreement
+{
+    width:18%;
+    display:inline-block;
+    text-align:center;
+}
+#programTypes .lineItem #rewardContent .points
+{
+    width:18%;
+    display:inline-block;
+    text-align:center;
+}
+#programTypes hr
+{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top:3px;
+}
+#missingPointsControl 
+{
+	 overflow:auto;
+	 width:85%;
+	 background-color:rgba(233,233,233,1);
+	 margin:1em 2em 2em 2em;
+	 padding:1em;
+}
+#missingPointsControl .missingPointsTable 
+{
+     height:85%;
+     background-color:White;
+     width:96%;
+     margin:auto;
+     border: 1px solid darkgrey;
+}
+#missingPointsControl .missingPointsTable #header
+{
+    padding:6px 0 0 5px;
+}
+#missingPointsControl .missingPointsTable #header #date
+{
+     padding-left:45px;
+}
+#missingPointsControl .missingPointsTable #header #RANumber
+{
+     padding-left:124px;
+}
+#missingPointsControl .missingPointsRow 
+{
+     padding-left:7px;
+     padding-bottom:15px;
+}
+#missingPointsControl #indent
+{
+      padding:1em;
+}
+#missingPointsControl #title
+{
+       padding:8px 0 5px 15px;
+}
+#missingPointsControl hr
+{
+      border: 0;
+      height: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding-top:2px;
+      width:97%;
+}
+#programsList #bodyText
+{
+    /*margin: 10px;*/
+    /*font-family:Verdana;*/
+    /*font-size:10px;*/
+    font-family:Arial;
+    font-size:12px;
+    margin: 0.5em 0pt;
+    padding-right: 5px;
+}
+{
+	float:right;
+	padding:10px 10px 10px 0px;
+}
+.ProfileMessagePanel
+{
+	padding-right:10px;
+}
+.modalBackground
+{
+    text-align:center;
+    background-color: Gray;
+    filter:alpha(opacity=90);
+	opacity:0.9;
+}
+#RentalDetailsPopup
+{
+	width:800px;
+	height:350px;
+	background-color:#FFFFFF;
+}
+.PrintLink 
+{
+	color:#0066CC;
+	text-decoration:underline;
+}
+.PrintLink a:hover
+{
+	color:#3399FF;
+	text-decoration:underline;
+}
+#CloseButtonDiv {
+  margin-left: auto;
+  margin-right: auto;
+}
+{
+	font-weight: bold;
+}
+/* END  Blue Chip */
+/* BEGIN Programs */
+
+#programsList #bodyText #programTypes
+{
+    padding-top: 10px;
+    clear: left;
+}
+#programsList #resStartPanel
+{
+    float: right;
+    width: 300px;
+    margin: 0 0 15px 15px;
+}
+#programsList #bodyText .teaserTitle
+{
+}
+#programsList #bodyText .teaserBody
+{
+    margin-bottom: 15px;
+}
+/* END Programs */
+/* Begin Deals */
+
+#PageTitleDeals
+{
+    float: left;
+}
+Div.DealsDivider
+{
+    font: color #FFFFFF;
+    height: 20px;
+    background-image: url(/Images/box_blueheader_gradient.gif);
+    background-repeat: repeat;
+    clear: both;
+}
+Div.DealsDivider p
+{
+    color: #FFFFFF;
+    vertical-align: middle;
+    font-weight: bold;
+    padding: 2px 0pt 0pt 5px;
+    margin: 0px;
+    font-family: Verdana;
+}
+
+#DealsPage p
+{
+    font-size: 12px;
+}
+#DealsPage .DealsHeader
+{
+    color: #0066CC;
+    background-image: url(/Images/ticker_gradient_bg.png);
+    background-repeat: repeat;
+    height: 50px;
+}
+
+#DealsPage #DealsListing ul li
+{
+    background-color: #EAEAEA;
+    list-style-position: inside;
+    vertical-align: middle;
+    height: 25px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+#DealsPage #Deals_Alternating
+{
+    background-color: #EAEAEA;
+    padding: 0px 0px 5px 0px;
+}
+#DealsPage #Deals_Regular
+{
+    background-color: #FFFFFF;
+    padding: 0px 0px 5px 0px;
+}
+* html #DealsPage #Deals_Regular p
+{
+    height: 1%;
+}
+#DealsPage #title h2
+{
+    margin-top: 0;
+}
+#DealsPage #bodyText
+{
+    font-size: 12px;
+}
+#DealsPage #bodyText #dealsTypes
+{
+    padding-top: 0px;
+    clear: left;
+}
+#DealsPage .dealLogo
+{
+    visibility: visible;
+    width: 100px;
+    padding: 5px;
+    text-align: right;
+    vertical-align: middle;
+    float: left;
+    clear: left;
+    width: 100px;
+    height: 46px;
+    margin-right: 5px;
+}
+#DealsPage .dealCountry
+{
+    visibility: visible;
+    width: 100px;
+    padding: 3px;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    clear: left;
+    width: 100px;
+    margin-right: 5px;
+    background-color: #0B71D7;
+    color: #FFFFFC;
+    /*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+    font-weight:bold;
+    font-size:12px;
+}
+#DealsPage #Deals_Regular .teaserTitle
+{
+    margin: 0px;
+}
+#DealsPage #Deals_Regular .teaserBody
+{
+    margin-top: 0px;
+    margin-left: 115px;
+}
+#DealsPage #Deals_Regular .teaserBody p
+{
+    font-size: 12px;
+    margin: 0.5em 0pt;
+    padding-right: 5px;
+}
+
+#DealsPage #Deals_Alternating .teaserTitle
+{
+    padding: 0px 0px 0px 0px;
+    margin-left: 115px;
+}
+#DealsPage #Deals_Alternating .teaserBody
+{
+    margin-top: 0;
+    margin-left: 115px;
+}
+#DealsPage #Deals_Alternating .teaserBody p
+{
+    font-size: 12px;
+    margin: 0.5em 0pt;
+    padding-right: 5px;
+}
+
+#DealsPage #Deals_Alternating .teaserBody a
+{
+    text-decoration: underline;
+}
+
+#DealsPage #Deals_Regular .teaserBody a
+{
+    text-decoration: underline;
+}
+/* End Deals */
+/* Deals Landing */
+
+#DealsLandingBody
+{
+    float: left;
+    height: auto;
+    margin: 0px 0px 20px 0px;
+    width: 300px;
+}
+
+#DealsLandingBody p
+{
+    margin-top: 0;
+}
+#bodyText p
+{
+    font-size: 12px;
+}
+
+.fineprintheadline
+{
+    font-family: Verdana;
+    /*font-size: 0.66em;*/
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0px 0em 0pt 0px;
+    padding-top: 1em;
+    text-align: left;
+    /*width: 620px;*/
+    width: 220px;
+}
+
+.fineprint
+{
+    font-family: Arial;
+    font-size: 10px;
+    margin: 0px 0em 0 0px;
+}
+
+#respanel
+{
+    float: right;
+    width: 300px;
+    height: 300px;
+    margin: 0px 0em 0 0px;
+}
+
+#PromoCars
+{
+    float: left;
+    /*width: 300px;*/
+    margin: 0px;
+}
+#imgPromoCar
+{
+    margin: 2px;
+    border: 1px solid #ffffff;
+    float: left;
+    text-align: center;
+}
+#imgPromoCar img
+{
+    display: inline;
+    margin: 2px;
+    border: 1px solid #ffffff;
+}
+#imgPromoCar a:hover img
+{
+    border: 0px solid #0000ff;
+}
+#PromoCarDesc
+{
+    text-align: center;
+    font-weight: bold;
+    width: 90px;
+    margin: 2px;
+}
+/* Partners */
+#PartnersLandingBody
+{
+    /*float: left;
+    height: auto;
+    margin: 0px 0px 20px 0px;
+    width: 300px;*/
+}
+
+#PartnersLandingBodyWrapper p
+{
+/*    font-family: Arial;
+    font-size: 12px;             */
+    margin-top: 0;
+}
+
+/* Partners */
+/* BEGIN Forms */
+div.ContentRow
+{
+    /*width: 100%;*/
+    float: inherit;
+	clear: both;
+	padding: 5px;
+	/*height:25px;*/
+	background-color: #FFFFFF;
+}
+div.ContentRowShaded
+{
+    /*width: 100%;*/
+	float: inherit;
+	clear: both;
+	padding: 5px;
+	/*height:25px;*/
+	background-color: #EAEAEA;
+}
+div.ContentColumnRight
+{
+	float: right;
+}
+div.NormalRow
+{
+	height:25px;
+}
+div.MediumRow
+{
+	height:50px;
+}
+div.LargeRow
+{
+	height:100px;
+}
+div.FormContainerInsideTwoColumn
+{
+	width: 600px;
+	padding: 10px 10px;
+	float: left;
+}
+div.FormRow
+{
+	/*width: 100%;*/
+	float: inherit;
+	clear: both;
+	padding: 0px;
+	/*background-color: #FFFFCC;*/
+}
+div.FormColumnLeft
+{
+	/*float: left;*/
+	clear:both;
+	display:block;
+	float:left;
+	/*margin:5px 5px 10px;*/
+	padding:0;
+	text-align:right;
+	width:150px;
+}
+div.FormColumnLeftWide2
+{
+	/*float: left;*/
+	clear:both;
+	display:block;
+	float:left;
+	/*margin:5px 5px 10px;*/
+	padding:0;
+	text-align:right;
+	width:260px;
+}
+div.FormColumnLeftWide
+{
+	/*float: left;*/
+	clear:both;
+	display:block;
+	float:left;
+	/*margin:5px 5px 10px;*/
+	padding:0;
+	text-align:right;
+	width:270px;
+}
+div.FormColumnLeftNarrow
+{
+	/*float: left;*/
+	clear:both;
+	display:block;
+	float:left;
+	/*margin:5px 5px 10px;*/
+	padding:0;
+	text-align:right;
+	width:116px;
+}
+div.FormColumnLeft2
+{
+	float: left;
+	padding-left: 10px;
+	width:95px;
+	text-align:right;
+	/*margin:5px 5px 10px;*/
+}
+div.FormColumnRight
+{
+	float: left;
+	padding-left: 10px;
+/*margin:5px 5px 10px;*/
+}
+div.FormColumnRightText
+{
+	float: left;
+	padding-left: 10px;
+	width:170px;
+/*margin:5px 5px 10px;*/
+}
+div.FormButtons
+{
+    padding: 10px 0 20px 0;
+}
+.FormContainer
+{
+    float: left;
+    border: solid 1px #0066CC;
+    width: 602px;
+    margin: 5px 0 10px 0;
+}
+.FormContainerInfoBoxes
+{
+    float: left;
+    border: solid 1px #0066CC;
+    width: 452px;
+    margin: 5px 0 10px 0;
+}
+.FormHeader
+{
+    height: 28px;
+    background-image: url(/Images/box_blueheader_gradient.gif);
+    background-repeat: repeat;
+    clear: both;
+}
+.FormHeader h6
+{
+    color: #fff;
+    margin: 0 0 0 10px;
+    padding: .5em;
+    font-size: 12px;
+}
+.FormHeader a
+{
+    color: #fff;
+    margin: 0 0 0 10px;
+    padding: .5em;
+    font-size: 10px;
+}
+.FormBody
+{
+    /*margin: 10px;*/
+    /*font-family:Verdana;*/
+    /*font-size:10px;*/
+    font-family:Arial;
+    font-size:12px;
+}
+.FormBody span.strong
+{
+    font-size: 12px;
+    font-weight:bold;
+    white-space: nowrap;
+}
+.FormBody span.required
+{
+    font-size: 12px;
+	color: #FF0000;
+	margin: 0 0 0 0;
+}
+.FormBody span
+{
+	vertical-align:  top;	
+}
+.FormBody div
+{
+    /*padding: 10px;*/
+}
+.FormBody #wrapper
+{
+    padding: 10px;
+}
+.FormBody div.right
+{
+    text-align:right;
+}
+.FormBody input
+{
+	font-size:12px;
+	margin-bottom: 5px;
+	/*height:15px;*/
+	/*margin: 0 10 0 0;*/
+}
+.FormBody select
+{
+	margin-bottom:5px;
+}
+.FormBody input.submit
+{
+	margin-right:68px;
+	margin-bottom:20px;
+}
+.FormBody textarea
+{
+	font-size:12px;
+	margin-bottom: 5px;
+}
+.FormBody textarea.comments
+{
+	font-size:12px;
+	margin-left:8px;
+}
+.FormBody div.shaded
+{
+	background-color: #EAEAEA;
+}
+.FormBody span.WrapTextLabel
+{
+    font-size: 12px;
+    white-space: normal;
+}
+.FontRequiredField
+{
+	font-size: 12px;
+	color: #CC0000;	
+}
+#FormContainer
+{
+    float: left;
+    border: solid 1px #0066CC;
+    width: 605px;
+    margin: 5px 0 0 0;
+}
+#FormHeader
+{
+    height: 28px;
+    background-image: url(/Images/box_blueheader_gradient.gif);
+    background-repeat: repeat;
+    clear: both;
+}
+#FormHeader h6
+{
+    color: #fff;
+    margin: 0 0 0 10px;
+    padding: .5em;
+    font-size: 1em;
+}
+#FormBody
+{
+    /*margin: 10px;*/
+    /*font-family:Verdana;*/
+    /*font-size:10px;*/
+    font-family:Arial;
+    font-size:12px;
+}
+#FormBody span.strong
+{
+    font-size: 12px;
+    font-weight:bold;
+    white-space: nowrap;
+}
+#FormBody span.required
+{
+    font-size: 12px;
+	color: #FF0000;
+	margin: 0 0 0 0;
+}
+#FormBody div
+{
+    /*padding: 10px;*/
+}
+#FormBody #wrapper
+{
+    padding: 10px;
+}
+#FormBody div.right
+{
+    text-align:right;
+}
+#FormBody input
+{
+	font-size:12px;
+	margin-bottom: 5px;
+	/*height:15px;*/
+	/*margin: 0 10 0 0;*/
+}
+#FormBody select
+{
+	margin-bottom:5px;
+}
+#FormBody input.submit
+{
+	margin-right:68px;
+	margin-bottom:20px;
+}
+#FormBody textarea
+{
+	font-size:12px;
+}
+#FormBody textarea.comments
+{
+	font-size:12px;
+	margin-left:8px;
+}
+#FormBody div.shaded
+{
+	background-color: #EAEAEA;
+}
+#FormBody span.WrapTextLabel
+{
+    font-size: 12px;
+    white-space: normal;
+}
+/* END Forms */
+/* Email forms */
+#titleBody
+{
+    clear: both;
+    padding: 0 5px 0 0;
+    font-family:Arial;
+    font-size:12px;
+}
+/*#titleBody h1
+{
+    margin: 0 0 2px 0;    
+} */
+#emailFormContainer
+{
+    float: left;
+    border: solid 1px #0066CC;
+    width: 605px;
+    margin: 5px 0 0 0;
+}
+#emailFormHeader
+{
+    height: 28px;
+    background-image: url(/Images/box_blueheader_gradient.gif);
+    background-repeat: repeat;
+    clear: both;
+}
+#emailFormHeader h6
+{
+    color: #fff;
+    margin: 0 0 0 10px;
+    padding: .5em;
+    font-size: 1em;
+}
+#emailFormBody
+{
+    /*margin: 10px;*/
+    /*font-family:Verdana;*/
+    /*font-size:10px;*/
+    font-family:Arial;
+    font-size:12px;
+}
+#emailFormBody span
+{
+    /*font-size: 12px;*/
+    /*margin: 0 10 0 0;*/
+    /*white-space: nowrap; */
+}
+#emailFormBody span.strong
+{
+    font-size: 12px;
+    font-weight:bold;
+    white-space: nowrap;
+}
+#emailFormBody span.required
+{
+    font-size: 12px;
+	color: #FF0000;
+	margin: 0 0 0 0;
+}
+#emailFormBody div
+{
+    /*padding: 10px;*/
+}
+#emailFormBody #wrapper
+{
+    padding: 10px;
+}
+#emailFormBody div.right
+{
+    text-align:right;
+}
+#emailFormBody td
+{
+    white-space: nowrap;
+    font-family:Arial;
+    font-size:12px;
+}
+#emailFormBody td.label
+{
+    width:140px;
+    text-align:right;
+    vertical-align:text-top;
+}
+#emailFormBody td.input
+{
+    width:130px;
+}
+#emailFormBody input
+{
+	font-size:12px;
+	margin-bottom: 5px;
+	/*height:15px;*/
+	/*margin: 0 10 0 0;*/
+}
+#emailFormBody select
+{
+	margin-bottom:5px;
+}
+#emailFormBody input.submit
+{
+	margin-right:68px;
+	margin-bottom:20px;
+}
+#emailFormBody textarea
+{
+	font-size:12px;
+}
+#emailFormBody textarea.comments
+{
+	font-size:12px;
+	margin-left:8px;
+}
+
+#emailFormBody div.shaded
+{
+	background-color: #EAEAEA;
+}
+#emailFormBody table.shaded
+{
+	background-color: #EAEAEA;
+}
+#thankYouMessage #emailFormBody
+{
+    padding: 0 0 10px 10px;
+}
+#thankYouMessage #emailFormBody h3
+{
+    padding-left: 18px;
+    background-image: url(/Images/checkedBox.gif);
+    background-repeat: no-repeat;
+    color: #FF6600;
+    font-family:Verdana;
+    font-size:14px;
+}
+#thankYouMessage #emailFormBody span
+{
+    white-space: normal;
+    margin: 5px;
+}
+#EmailFormLayout div.fineprint, #thankYouMessage div.fineprint
+{
+    float: left;
+    font-size: 10px;
+    margin: 10px 0 0 0;
+    padding: 0 0 10px 0;
+}
+#emailFormBody span.WrapTextLabel
+{
+    font-size: 12px;
+    white-space: normal;
+}
+#RequestCard
+{
+    float: left;
+    border: solid 1px #0066CC;
+    width: 385px;
+    margin: 5px 0 0 0;
+}
+/* END Email forms */
+/* START LocationsSearch */
+#LocationSearchResults
+{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+#LocationSearchResults #LocationResults
+{
+	float: left;
+}
+
+#LocationSearchResults #ProximitySearch
+{
+    text-align: center;
+    font-size: .75em;
+    position: relative;
+}
+#LocationSearchResults #ProximitySearch .LocationRadioButtons
+{
+    display: inline-block;
+    text-align: left;
+}
+#LocationSearchResults #ProximitySearch div
+{
+    margin: 0;
+    padding: 3px 0px 0 2.5px;
+}
+#LocationSearchResults #ProximitySearch ul li
+{
+    list-style: none;
+    float: left;
+    padding: 0 2.5px 0 2.5px;
+}
+
+#LocationSearchResults #LocationResults #LocationsList
+{
+    float: left;
+    width: 280px;
+    font-size: .75em;
+    padding-right: 5px;
+}
+
+#LocationSearchResults #LocationResults #LocationsList h6
+{
+    background: url(/Images/box_blueheader_gradient.gif);
+    background-repeat: repeat-x;
+    padding: .3em 0 .6em 0;
+    margin-bottom: .3em;
+    font-size: 1em;
+    vertical-align: middle;
+    height: 1em;
+    color: #fff;
+}
+#LocationSearchResults #LocationResults #LocationsList .header
+{
+    padding-left: .9em;
+}
+
+#LocationSearchResults #LocationResults #LocationsList .getRates
+{
+    clear: left;
+    _clear: right;
+    margin-left: 65%;
+    _margin-left: 23%;		
+}
+
+#LocationSearchResults #LocationResults #LocationsMap
+{
+    float: left;
+    _clear: both;
+    _float: right;
+}
+/*Start Location Search Form
+*/
+#LocationSearch
+{
+    width: 100%;
+}
+
+#LocationSelection
+{
+    padding: 10px 5px 30px 30px;
+    float: left;
+    width: 336px;   /*340px;*/
+}
+
+#countryDiv
+{
+    padding: 10px 0 10px 0px;
+}
+#stateDiv
+{
+    padding: 10px 0 10px 0px;
+}
+#metroDiv
+{
+    padding: 10px 0 10px 0px;
+}
+#LocationSearchButton
+{
+    float: left;
+}
+#SearchText
+{
+    width: 150px;
+}
+
+#LocationSearchGutter
+{
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-bottom: 30px;
+    width: 2px;
+    height: 285px;
+    background-color: #999999;
+    float: left;
+}
+#LocationProximitySearch
+{
+    float: left;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 15px;
+    padding-top: 10px;
+    width: 336px; /*340px;  */
+}
+
+#LocationProximitySearch ImageButton
+{
+    padding-left: 15px;
+}
+#LookToBook
+{
+	width:350px;
+}
+/* Travel Agent sign in */
+#travelAgentSignIn #signInPanel
+{
+    float: right;
+    width: 300px;
+    border: solid 1px #0066CC;
+}
+#travelAgentSignIn #signInPanel #signInHeader
+{
+    height: 28px;
+    background: url(/Images/box_blueheader_gradient.gif);
+    background-repeat: repeat;
+}
+#travelAgentSignIn #signInPanel #signInHeader h5
+{
+    color: #fff;
+    margin: 0;
+    padding: 3px 0 3px 5px;
+}
+#travelAgentSignIn #signInPanel h5 img
+{
+    vertical-align: middle;
+}
+#travelAgentSignIn #signInPanel #iataEntry
+{
+    clear: both;
+    margin: 15px 10px 0 0;
+    font-weight: bold;
+    float: right;
+}
+#travelAgentSignIn #signInPanel #iataEntry input
+{
+    color: #999999;
+    margin: 0 0 0 5px;
+    vertical-align: middle;
+}
+#travelAgentSignIn #signInPanel #submitArea
+{
+    margin: 10px 10px 20px 10px;
+    float: right;
+}
+#travelAgentSignIn #signInPanel #submitArea span.error
+{
+    font-weight: bold;
+    color: Red;
+}
+#travelAgentSignIn #signInPanel #submitArea input.submit
+{
+    margin-left: 10px;
+    vertical-align: middle;
+}
+/* End Travel Agent sign in */
+/* BEGIN Travel Agent */
+#travelAgent #title h1
+{
+    margin-top: 0;
+}
+#travelAgent #bodyText
+{
+}
+#travelAgent #bodyText #travelAgentChildren
+{
+    padding-top: 10px;
+    clear: left;
+}
+#travelAgent #resStartPanel
+{
+    float: right;
+    width: 300px;
+    margin: 0 0 15px 15px;
+}
+#travelAgent #bodyText .teaserTitle
+{
+}
+#travelAgent #bodyText .teaserBody
+{
+    margin-bottom: 15px;
+}
+/* END Travel Agent */
+
+/* Page title travel agent */
+#PageTitleTravelAgent h4
+{
+    float: left;
+    display: inline;
+    color: #666;
+    margin: 0;
+    padding: 10px 0px 0px 15px;
+}
+#PageTitleTravelAgent #travelAgentDetails
+{
+    float: right;
+    color: #666;
+    margin: 0;
+    padding: 10px 15px 0px 15px;
+}
+#PageTitleTravelAgent #travelAgentDetails span.travelAgencyName
+{
+    font-size: 0.93em;
+    font-weight: bold;
+}
+#PageTitleTravelAgent #travelAgentDetails span.iataNumber
+{
+    font-size: 0.75em;
+}
+#PageTitleTravelAgent #travelAgentDetails a.signOutLink
+{
+    font-size: 0.75em;
+}
+/* END Page title travel agent */
+/*--------------------*/
+/* Validators         */
+/*--------------------*/
+.Validator
+{
+	background-color: #FFFFCC;		/* Light Yellow */
+	float: left;
+	margin: 5px 0;
+	width: 100%;
+}
+
+.ValidatorIcon
+{
+	color: #000000;					/* Black */
+	font-size: 26px;
+	font-weight: bold;
+	float: left;
+	text-align: center;
+	padding-right: 5px;
+	width: 35px;
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	background: #FFFFCC url(/Images/error.gif) no-repeat;
+}
+
+.ValidatorContent
+{
+    padding: 3px;
+}
+
+.ValidatorContentBody
+{
+    display: inline-block;
+}
+
+.ValidatorTitle
+{ 
+	color: #CC0000;					/* Error Red */
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.ValidatorMessage
+{
+	color: #CC0000;					/* Error Red */
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.ValidatorMessageID
+{
+	color: #999999;					/* Off Black */
+	font-family: Arial;
+	font-size: 10px;
+	font-weight: normal;
+}
+.BlueChipMessage
+{
+	background-color: #FFFFCC;		/* Light Yellow */	
+	margin: 5px 0;	
+	width: 80%;
+}
+
+/* START - Panel Classes*/
+.PanelContainer
+{
+	border: solid 1px #0066CC;
+	margin-bottom: 10px;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	background-color: #E6E6E6;
+	padding: 5px;
+}
+.PanelContainerNoPad
+{
+	/*border: solid 1px #0066CC;*/
+	margin-bottom: 10px;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	background-color: #E6E6E6;
+	/*padding: 5px;*/
+}
+.PanelTitle
+{
+	font-weight: bold;
+	color: #fff;
+    background-image: url(/Images/box_blueheader_gradient.gif);
+    background-repeat: repeat-x;
+    clear: both;
+    height: 28px;
+    width: 100%;
+    margin: -5px;
+    padding: 5px;
+}
+.RightPanelContent
+{
+	padding-left: 10px;
+	width: 300px;
+	/*min-width: 260px;
+	max-width: 310px;*/
+}
+.LeftPanelContent
+{
+    min-width: 285px;
+}
+/* END - Panel Classes*/
+
+/* Location Search */
+
+#LocationSearchResults #ProximitySearch div.LocationOptionsList 
+{
+	text-align: left;
+	margin-left: 275px;
+}
+
+/* END - Location Search */
+
+/* BizLink */
+
+div.RowSpacerMedium 
+{
+	padding-top:10px;
+}

@@ -1,0 +1,293 @@
+﻿/*IP Address Country Location*/
+.MC_LYT_IPAddressCountryLocation_CloseButton { background-image: url(../Images/IPAddressCountryLocation/popup_close.jpg) !important; background-position: right top !important;background-repeat:no-repeat;margin: 0 !important;width:46px !important;height:46px !important;}
+.MC_LYT_IPAddressCountryLocation_Button{background:#ed174b !important; color: white;border-radius: 0;border: 0; margin-top:2%;margin-bottom:2%;  padding: 10px 15px;font-family: Arial, verdana, sans-serif; font-weight: bold;text-align: center;text-transform: uppercase;width:150px;cursor: pointer; cursor: hand;word-wrap: break-word;}
+.MC_LYT_IPAddressCountryLocation_Container {margin-bottom:3%;margin-right:3%;margin-left:3%;}
+.MC_LYT_IPAddressCountryLocation_Center { text-align:center; font-family: Arial, Helvetica, sans-serif;color:#6e6e6e; font-size: 15px;}
+.MC_LYT_IPAddressCountryLocation_HeaderRule {border-top: 2px solid #ccc;display: block;height: 0px;width:70%;margin:auto}
+.MC_LYT_IPAddressCountryLocation_Separator {margin-top:2% !important;}
+.MC_LYT_IPAddressCountryLocation_radwindow_AmwayWindow {width: 40%!important; top:0px;}
+table.MC_LYT_IPAddressCountryLocation_TableMargin {margin-top:2%;}
+.MC_LYT_IPAddressCountryLocation_GlobeImage { background:url(../Images/IPAddressCountryLocation/globe.gif);text-align:center;width:38px;height:38px;display:block;background-repeat:no-repeat}
+div.MC_LYT_IPAddressCountryLocation_HeaderRuleContainer {width:100%;text-align:center;margin-top:3%;float: left;margin-bottom:10%}
+div.MC_LYT_IPAddressCountryLocation_Left { float:left;width:50%;}
+.MC_LYT_IPAddressCountryLocation_Left table {table-layout:fixed;}
+.MC_LYT_IPAddressCountryLocation_Left table tr td:first-child {width:20%;}
+div.MC_LYT_IPAddressCountryLocation_Center { position:absolute;left:50%;   border-left:1px solid white;}
+div.MC_LYT_IPAddressCountryLocation_Right { float:right; width:50%;}
+.MC_LYT_IPAddressCountryLocation_Right table {border-left:2px solid #ccc;table-layout:fixed;}
+.MC_LYT_IPAddressCountryLocation_Right table tr td:first-child{width:30%;}
+.MC_LYT_IPAddressCountryLocation_Right table tr td:last-child {padding-top:3%;}
+.MC_LYT_IPAddressCountryLocation_ButtonLeft {float:left;}
+.MC_LYT_IPAddressCountryLocation_DomainSpacing {margin-top:2%;}
+.MC_LYT_IPAddressCountryLocation_FormatLabel {word-wrap:break-word;font-family: Arial, Helvetica, sans-serif;color:#6e6e6e; font:bold 12px Verdana, Arial, Helvetica, sans-serif;line-height:25px;}
+.MC_LYT_IPAddressCountryLocation_HomeFormatLabel {word-wrap:break-word;font-family: Arial, Helvetica, sans-serif;color:#6e6e6e; font:bold 15px Verdana, Arial, Helvetica, sans-serif; line-height: 1.6em;}
+.MC_LYT_IPAddressCountryLocation_MainContent { display:none;}
+.MC_LYT_IPAddressCountryLocation_radwindow_AmwayWindow {width: 1000px !important;}
+.MC_LYT_IPAddressCountryLocation_CountryLinkLabel {font-size: 12px;color: #929191; padding: 12px 0px 12px 0px;line-height: 1.6em;}
+.MC_LYT_IPAddressCountryLocation_MarginZero {margin-top:0 !important;}
+.ui-widget-overlay,.MC_LYT_IPAddressCountryLocation_radwindow_AmwayWindow {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+/*IP Address Country Flag*/
+.amwayFlag { display: inline-block; background-repeat: no-repeat;}
+.amwayFlag.homeFlag {  display: inline-block; width: 60px; height: 40px; background-image: url('../Images/IPAddressCountryLocation/sprite-flags-64x64.png');border:1px solid #ccc;box-shadow: 0px 3px 4px #ebebeb;background-repeat: no-repeat;}
+.amwayFlag.homeFlag.flag-abkhazia  { background-position:-2px -12px; }
+.amwayFlag.homeFlag.flag-basque-country  { background-position:-66px -12px; }
+.amwayFlag.homeFlag.flag-british-antarctic-territory  { background-position:-130px -12px; }
+.amwayFlag.homeFlag.flag-commonwealth  { background-position:-194px -12px; }
+.amwayFlag.homeFlag.flag-england  { background-position:-258px -12px; }
+.amwayFlag.homeFlag.flag-gosquared  { background-position:-322px -12px; }
+.amwayFlag.homeFlag.flag-kosovo  { background-position:-386px -12px; }
+.amwayFlag.homeFlag.flag-mars  { background-position:-450px -12px; }
+.amwayFlag.homeFlag.flag-nagorno-karabakh  { background-position:-514px -12px; }
+.amwayFlag.homeFlag.flag-nato  { background-position:-578px -12px; }
+.amwayFlag.homeFlag.flag-northern-cyprus  { background-position:-642px -12px; }
+.amwayFlag.homeFlag.flag-olympics  { background-position:-706px -12px; }
+.amwayFlag.homeFlag.flag-red-cross  { background-position:-770px -12px; }
+.amwayFlag.homeFlag.flag-scotland  { background-position:-834px -12px; }
+.amwayFlag.homeFlag.flag-somaliland  { background-position:-898px -12px; }
+.amwayFlag.homeFlag.flag-south-ossetia  { background-position:-962px -12px; }
+.amwayFlag.homeFlag.flag-united-nations  { background-position:-1026px -12px; }
+.amwayFlag.homeFlag.flag-unknown  { background-position:-2px -76px; }
+.amwayFlag.homeFlag.flag-wales  { background-position:-66px -76px; }
+.amwayFlag.homeFlag.flag-ad  { background-position:-130px -76px; }
+.amwayFlag.homeFlag.flag-ae  { background-position:-194px -76px; }
+.amwayFlag.homeFlag.flag-af  { background-position:-258px -76px; }
+.amwayFlag.homeFlag.flag-ag  { background-position:-322px -76px; }
+.amwayFlag.homeFlag.flag-ai  { background-position:-386px -76px; }
+.amwayFlag.homeFlag.flag-al  { background-position:-450px -76px; }
+.amwayFlag.homeFlag.flag-am  { background-position:-514px -76px; }
+.amwayFlag.homeFlag.flag-an  { background-position:-578px -76px; }
+.amwayFlag.homeFlag.flag-ao  { background-position:-642px -76px; }
+.amwayFlag.homeFlag.flag-aq  { background-position:-706px -76px; }
+.amwayFlag.homeFlag.flag-ar  { background-position:-770px -76px; }
+.amwayFlag.homeFlag.flag-as  { background-position:-834px -76px; }
+.amwayFlag.homeFlag.flag-at  { background-position:-898px -76px; }
+.amwayFlag.homeFlag.flag-au  { background-position:-962px -76px; }
+.amwayFlag.homeFlag.flag-aw  { background-position:-1026px -76px; }
+.amwayFlag.homeFlag.flag-ax  { background-position:-2px -140px; }
+.amwayFlag.homeFlag.flag-az  { background-position:-66px -140px; }
+.amwayFlag.homeFlag.flag-ba  { background-position:-130px -140px; }
+.amwayFlag.homeFlag.flag-bb  { background-position:-194px -140px; }
+.amwayFlag.homeFlag.flag-bd  { background-position:-258px -140px; }
+.amwayFlag.homeFlag.flag-be  { background-position:-322px -140px; }
+.amwayFlag.homeFlag.flag-bf  { background-position:-386px -140px; }
+.amwayFlag.homeFlag.flag-bg  { background-position:-450px -140px; }
+.amwayFlag.homeFlag.flag-bh  { background-position:-514px -140px; }
+.amwayFlag.homeFlag.flag-bi  { background-position:-578px -140px; }
+.amwayFlag.homeFlag.flag-bj  { background-position:-642px -140px; }
+.amwayFlag.homeFlag.flag-bl  { background-position:-706px -140px; }
+.amwayFlag.homeFlag.flag-bm  { background-position:-770px -140px; }
+.amwayFlag.homeFlag.flag-bn  { background-position:-834px -140px; }
+.amwayFlag.homeFlag.flag-bo  { background-position:-898px -140px; }
+.amwayFlag.homeFlag.flag-br  { background-position:-962px -140px; }
+.amwayFlag.homeFlag.flag-bs  { background-position:-1026px -140px; }
+.amwayFlag.homeFlag.flag-bt  { background-position:-2px -204px; }
+.amwayFlag.homeFlag.flag-bw  { background-position:-66px -204px; }
+.amwayFlag.homeFlag.flag-by  { background-position:-130px -204px; }
+.amwayFlag.homeFlag.flag-bz  { background-position:-194px -204px; }
+.amwayFlag.homeFlag.flag-ca  { background-position:-258px -204px; }
+.amwayFlag.homeFlag.flag-cc  { background-position:-322px -204px; }
+.amwayFlag.homeFlag.flag-cd  { background-position:-386px -204px; }
+.amwayFlag.homeFlag.flag-cf  { background-position:-450px -204px; }
+.amwayFlag.homeFlag.flag-cg  { background-position:-514px -204px; }
+.amwayFlag.homeFlag.flag-ch  { background-position:-578px -204px; }
+.amwayFlag.homeFlag.flag-ci  { background-position:-642px -204px; }
+.amwayFlag.homeFlag.flag-ck  { background-position:-706px -204px; }
+.amwayFlag.homeFlag.flag-cl  { background-position:-770px -204px; }
+.amwayFlag.homeFlag.flag-cm  { background-position:-834px -204px; }
+.amwayFlag.homeFlag.flag-cn  { background-position:-898px -204px; }
+.amwayFlag.homeFlag.flag-co  { background-position:-962px -204px; }
+.amwayFlag.homeFlag.flag-cr  { background-position:-1026px -204px; }
+.amwayFlag.homeFlag.flag-cu  { background-position:-2px -268px; }
+.amwayFlag.homeFlag.flag-cv  { background-position:-66px -268px; }
+.amwayFlag.homeFlag.flag-cw  { background-position:-130px -268px; }
+.amwayFlag.homeFlag.flag-cx  { background-position:-194px -268px; }
+.amwayFlag.homeFlag.flag-cy  { background-position:-258px -268px; }
+.amwayFlag.homeFlag.flag-cz  { background-position:-322px -268px; }
+.amwayFlag.homeFlag.flag-de  { background-position:-386px -268px; }
+.amwayFlag.homeFlag.flag-dj  { background-position:-450px -268px; }
+.amwayFlag.homeFlag.flag-dk  { background-position:-514px -268px; }
+.amwayFlag.homeFlag.flag-dm  { background-position:-578px -268px; }
+.amwayFlag.homeFlag.flag-do  { background-position:-642px -268px; }
+.amwayFlag.homeFlag.flag-dz  { background-position:-706px -268px; }
+.amwayFlag.homeFlag.flag-ec  { background-position:-770px -268px; }
+.amwayFlag.homeFlag.flag-ee  { background-position:-834px -268px; }
+.amwayFlag.homeFlag.flag-eg  { background-position:-898px -268px; }
+.amwayFlag.homeFlag.flag-eh  { background-position:-962px -268px; }
+.amwayFlag.homeFlag.flag-er  { background-position:-1026px -268px; }
+.amwayFlag.homeFlag.flag-es  { background-position:-2px -332px; }
+.amwayFlag.homeFlag.flag-et  { background-position:-66px -332px; }
+.amwayFlag.homeFlag.flag-eu  { background-position:-130px -332px; }
+.amwayFlag.homeFlag.flag-fi  { background-position:-194px -332px; }
+.amwayFlag.homeFlag.flag-fj  { background-position:-258px -332px; }
+.amwayFlag.homeFlag.flag-fk  { background-position:-322px -332px; }
+.amwayFlag.homeFlag.flag-fm  { background-position:-386px -332px; }
+.amwayFlag.homeFlag.flag-fo  { background-position:-450px -332px; }
+.amwayFlag.homeFlag.flag-fr  { background-position:-514px -332px; }
+.amwayFlag.homeFlag.flag-ga  { background-position:-578px -332px; }
+.amwayFlag.homeFlag.flag-gb  { background-position:-642px -332px; }
+.amwayFlag.homeFlag.flag-gd  { background-position:-706px -332px; }
+.amwayFlag.homeFlag.flag-ge  { background-position:-770px -332px; }
+.amwayFlag.homeFlag.flag-gg  { background-position:-834px -332px; }
+.amwayFlag.homeFlag.flag-gh  { background-position:-898px -332px; }
+.amwayFlag.homeFlag.flag-gi  { background-position:-962px -332px; }
+.amwayFlag.homeFlag.flag-gl  { background-position:-1026px -332px; }
+.amwayFlag.homeFlag.flag-gm  { background-position:-2px -396px; }
+.amwayFlag.homeFlag.flag-gn  { background-position:-66px -396px; }
+.amwayFlag.homeFlag.flag-gq  { background-position:-130px -396px; }
+.amwayFlag.homeFlag.flag-gr  { background-position:-194px -396px; }
+.amwayFlag.homeFlag.flag-gs  { background-position:-258px -396px; }
+.amwayFlag.homeFlag.flag-gt  { background-position:-322px -396px; }
+.amwayFlag.homeFlag.flag-gu  { background-position:-386px -396px; }
+.amwayFlag.homeFlag.flag-gw  { background-position:-450px -396px; }
+.amwayFlag.homeFlag.flag-gy  { background-position:-514px -396px; }
+.amwayFlag.homeFlag.flag-hk  { background-position:-578px -396px; }
+.amwayFlag.homeFlag.flag-hn  { background-position:-642px -396px; }
+.amwayFlag.homeFlag.flag-hr  { background-position:-706px -396px; }
+.amwayFlag.homeFlag.flag-ht  { background-position:-770px -396px; }
+.amwayFlag.homeFlag.flag-hu  { background-position:-834px -396px; }
+.amwayFlag.homeFlag.flag-ic  { background-position:-898px -396px; }
+.amwayFlag.homeFlag.flag-id  { background-position:-962px -396px; }
+.amwayFlag.homeFlag.flag-ie  { background-position:-1026px -396px; }
+.amwayFlag.homeFlag.flag-il  { background-position:-2px -460px; }
+.amwayFlag.homeFlag.flag-im  { background-position:-66px -460px; }
+.amwayFlag.homeFlag.flag-in  { background-position:-130px -460px; }
+.amwayFlag.homeFlag.flag-iq  { background-position:-194px -460px; }
+.amwayFlag.homeFlag.flag-ir  { background-position:-258px -460px; }
+.amwayFlag.homeFlag.flag-is  { background-position:-322px -460px; }
+.amwayFlag.homeFlag.flag-it  { background-position:-386px -460px; }
+.amwayFlag.homeFlag.flag-je  { background-position:-450px -460px; }
+.amwayFlag.homeFlag.flag-jm  { background-position:-514px -460px; }
+.amwayFlag.homeFlag.flag-jo  { background-position:-578px -460px; }
+.amwayFlag.homeFlag.flag-jp  { background-position:-642px -460px; }
+.amwayFlag.homeFlag.flag-ke  { background-position:-706px -460px; }
+.amwayFlag.homeFlag.flag-kg  { background-position:-770px -460px; }
+.amwayFlag.homeFlag.flag-kh  { background-position:-834px -460px; }
+.amwayFlag.homeFlag.flag-ki  { background-position:-898px -460px; }
+.amwayFlag.homeFlag.flag-km  { background-position:-962px -460px; }
+.amwayFlag.homeFlag.flag-kn  { background-position:-1026px -460px; }
+.amwayFlag.homeFlag.flag-kp  { background-position:-2px -524px; }
+.amwayFlag.homeFlag.flag-kr  { background-position:-66px -524px; }
+.amwayFlag.homeFlag.flag-kw  { background-position:-130px -524px; }
+.amwayFlag.homeFlag.flag-ky  { background-position:-194px -524px; }
+.amwayFlag.homeFlag.flag-kz  { background-position:-258px -524px; }
+.amwayFlag.homeFlag.flag-la  { background-position:-322px -524px; }
+.amwayFlag.homeFlag.flag-lb  { background-position:-386px -524px; }
+.amwayFlag.homeFlag.flag-lc  { background-position:-450px -524px; }
+.amwayFlag.homeFlag.flag-li  { background-position:-514px -524px; }
+.amwayFlag.homeFlag.flag-lk  { background-position:-578px -524px; }
+.amwayFlag.homeFlag.flag-lr  { background-position:-642px -524px; }
+.amwayFlag.homeFlag.flag-ls  { background-position:-706px -524px; }
+.amwayFlag.homeFlag.flag-lt  { background-position:-770px -524px; }
+.amwayFlag.homeFlag.flag-lu  { background-position:-834px -524px; }
+.amwayFlag.homeFlag.flag-lv  { background-position:-898px -524px; }
+.amwayFlag.homeFlag.flag-ly  { background-position:-962px -524px; }
+.amwayFlag.homeFlag.flag-ma  { background-position:-1026px -524px; }
+.amwayFlag.homeFlag.flag-mc  { background-position:-2px -588px; }
+.amwayFlag.homeFlag.flag-md  { background-position:-66px -588px; }
+.amwayFlag.homeFlag.flag-me  { background-position:-130px -588px; }
+.amwayFlag.homeFlag.flag-mf  { background-position:-194px -588px; }
+.amwayFlag.homeFlag.flag-mg  { background-position:-258px -588px; }
+.amwayFlag.homeFlag.flag-mh  { background-position:-322px -588px; }
+.amwayFlag.homeFlag.flag-mk  { background-position:-386px -588px; }
+.amwayFlag.homeFlag.flag-ml  { background-position:-450px -588px; }
+.amwayFlag.homeFlag.flag-mm  { background-position:-514px -588px; }
+.amwayFlag.homeFlag.flag-mn  { background-position:-578px -588px; }
+.amwayFlag.homeFlag.flag-mo  { background-position:-642px -588px; }
+.amwayFlag.homeFlag.flag-mp  { background-position:-706px -588px; }
+.amwayFlag.homeFlag.flag-mq  { background-position:-770px -588px; }
+.amwayFlag.homeFlag.flag-mr  { background-position:-834px -588px; }
+.amwayFlag.homeFlag.flag-ms  { background-position:-898px -588px; }
+.amwayFlag.homeFlag.flag-mt  { background-position:-962px -588px; }
+.amwayFlag.homeFlag.flag-mu  { background-position:-1026px -588px; }
+.amwayFlag.homeFlag.flag-mv  { background-position:-2px -652px; }
+.amwayFlag.homeFlag.flag-mw  { background-position:-66px -652px; }
+.amwayFlag.homeFlag.flag-mx  { background-position:-130px -652px; }
+.amwayFlag.homeFlag.flag-my  { background-position:-194px -652px; }
+.amwayFlag.homeFlag.flag-mz  { background-position:-258px -652px; }
+.amwayFlag.homeFlag.flag-na  { background-position:-322px -652px; }
+.amwayFlag.homeFlag.flag-nc  { background-position:-386px -652px; }
+.amwayFlag.homeFlag.flag-ne  { background-position:-450px -652px; }
+.amwayFlag.homeFlag.flag-nf  { background-position:-514px -652px; }
+.amwayFlag.homeFlag.flag-ng  { background-position:-578px -652px; }
+.amwayFlag.homeFlag.flag-ni  { background-position:-642px -652px; }
+.amwayFlag.homeFlag.flag-nl  { background-position:-706px -652px; }
+.amwayFlag.homeFlag.flag-no  { background-position:-770px -652px; }
+.amwayFlag.homeFlag.flag-np  { background-position:-834px -652px; }
+.amwayFlag.homeFlag.flag-nr  { background-position:-898px -652px; }
+.amwayFlag.homeFlag.flag-nu  { background-position:-962px -652px; }
+.amwayFlag.homeFlag.flag-nz  { background-position:-1026px -652px; }
+.amwayFlag.homeFlag.flag-om  { background-position:-2px -716px; }
+.amwayFlag.homeFlag.flag-pa  { background-position:-66px -716px; }
+.amwayFlag.homeFlag.flag-pe  { background-position:-130px -716px; }
+.amwayFlag.homeFlag.flag-pf  { background-position:-194px -716px; }
+.amwayFlag.homeFlag.flag-pg  { background-position:-258px -716px; }
+.amwayFlag.homeFlag.flag-ph  { background-position:-322px -716px; }
+.amwayFlag.homeFlag.flag-pirate-black  { background-position:-386px -716px; }
+.amwayFlag.homeFlag.flag-pirate-white  { background-position:-450px -716px; }
+.amwayFlag.homeFlag.flag-pk  { background-position:-514px -716px; }
+.amwayFlag.homeFlag.flag-pl  { background-position:-578px -716px; }
+.amwayFlag.homeFlag.flag-pn  { background-position:-642px -716px; }
+.amwayFlag.homeFlag.flag-pr  { background-position:-706px -716px; }
+.amwayFlag.homeFlag.flag-ps  { background-position:-770px -716px; }
+.amwayFlag.homeFlag.flag-pt  { background-position:-834px -716px; }
+.amwayFlag.homeFlag.flag-pw  { background-position:-898px -716px; }
+.amwayFlag.homeFlag.flag-py  { background-position:-962px -716px; }
+.amwayFlag.homeFlag.flag-qa  { background-position:-1026px -716px; }
+.amwayFlag.homeFlag.flag-ro  { background-position:-2px -780px; }
+.amwayFlag.homeFlag.flag-rs  { background-position:-66px -780px; }
+.amwayFlag.homeFlag.flag-ru  { background-position:-130px -780px; }
+.amwayFlag.homeFlag.flag-rw  { background-position:-194px -780px; }
+.amwayFlag.homeFlag.flag-sa  { background-position:-258px -780px; }
+.amwayFlag.homeFlag.flag-sb  { background-position:-322px -780px; }
+.amwayFlag.homeFlag.flag-sc  { background-position:-386px -780px; }
+.amwayFlag.homeFlag.flag-sd  { background-position:-450px -780px; }
+.amwayFlag.homeFlag.flag-se  { background-position:-514px -780px; }
+.amwayFlag.homeFlag.flag-sg  { background-position:-578px -780px; }
+.amwayFlag.homeFlag.flag-sh  { background-position:-642px -780px; }
+.amwayFlag.homeFlag.flag-si  { background-position:-706px -780px; }
+.amwayFlag.homeFlag.flag-sk  { background-position:-770px -780px; }
+.amwayFlag.homeFlag.flag-sl  { background-position:-834px -780px; }
+.amwayFlag.homeFlag.flag-sm  { background-position:-898px -780px; }
+.amwayFlag.homeFlag.flag-sn  { background-position:-962px -780px; }
+.amwayFlag.homeFlag.flag-so  { background-position:-1026px -780px; }
+.amwayFlag.homeFlag.flag-sr  { background-position:-2px -844px; }
+.amwayFlag.homeFlag.flag-ss  { background-position:-66px -844px; }
+.amwayFlag.homeFlag.flag-st  { background-position:-130px -844px; }
+.amwayFlag.homeFlag.flag-sv  { background-position:-194px -844px; }
+.amwayFlag.homeFlag.flag-sy  { background-position:-258px -844px; }
+.amwayFlag.homeFlag.flag-sz  { background-position:-322px -844px; }
+.amwayFlag.homeFlag.flag-tc  { background-position:-386px -844px; }
+.amwayFlag.homeFlag.flag-td  { background-position:-450px -844px; }
+.amwayFlag.homeFlag.flag-tf  { background-position:-514px -844px; }
+.amwayFlag.homeFlag.flag-tg  { background-position:-578px -844px; }
+.amwayFlag.homeFlag.flag-th  { background-position:-642px -844px; }
+.amwayFlag.homeFlag.flag-tj  { background-position:-706px -844px; }
+.amwayFlag.homeFlag.flag-tk  { background-position:-770px -844px; }
+.amwayFlag.homeFlag.flag-tl  { background-position:-834px -844px; }
+.amwayFlag.homeFlag.flag-tm  { background-position:-898px -844px; }
+.amwayFlag.homeFlag.flag-tn  { background-position:-962px -844px; }
+.amwayFlag.homeFlag.flag-to  { background-position:-1026px -844px; }
+.amwayFlag.homeFlag.flag-tr  { background-position:-2px -908px; }
+.amwayFlag.homeFlag.flag-tt  { background-position:-66px -908px; }
+.amwayFlag.homeFlag.flag-tv  { background-position:-130px -908px; }
+.amwayFlag.homeFlag.flag-tw  { background-position:-194px -908px; }
+.amwayFlag.homeFlag.flag-tz  { background-position:-258px -908px; }
+.amwayFlag.homeFlag.flag-ua  { background-position:-322px -908px; }
+.amwayFlag.homeFlag.flag-ug  { background-position:-386px -908px; }
+.amwayFlag.homeFlag.flag-us  { background-position:-450px -908px; }
+.amwayFlag.homeFlag.flag-uy  { background-position:-514px -908px; }
+.amwayFlag.homeFlag.flag-uz  { background-position:-578px -908px; }
+.amwayFlag.homeFlag.flag-va  { background-position:-642px -908px; }
+.amwayFlag.homeFlag.flag-vc  { background-position:-706px -908px; }
+.amwayFlag.homeFlag.flag-ve  { background-position:-770px -908px; }
+.amwayFlag.homeFlag.flag-vg  { background-position:-834px -908px; }
+.amwayFlag.homeFlag.flag-vi  { background-position:-898px -908px; }
+.amwayFlag.homeFlag.flag-vn  { background-position:-962px -908px; }
+.amwayFlag.homeFlag.flag-vu  { background-position:-1026px -908px; }

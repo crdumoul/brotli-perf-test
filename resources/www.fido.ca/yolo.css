@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Yolo';
+  font-style: normal;
+  font-weight: 300;
+  src: url('yolo-light.woff2') format('woff2'), url('yolo-light.woff') format('woff');
+  src:url('yolo-light.eot?#iefix-ypioc1') format('embedded-opentype'),
+    url('yolo-light.woff2?-ypioc1') format('woff2'),
+    url('yolo-light.woff?-ypioc1') format('woff'),
+    url('yolo-light.ttf?-ypioc1') format('truetype'),
+    url('yolo-light.svg?-ypioc1') format('svg');
+}
+@font-face {
+  font-family: 'Yolo';
+  font-style: italic;
+  font-weight: 300;
+  src:url('yolo-lightitalic.eot?#iefix-ypioc1') format('embedded-opentype'),
+    url('yolo-lightitalic.woff2?-ypioc1') format('woff2'),
+    url('yolo-lightitalic.woff?-ypioc1') format('woff'),
+    url('yolo-lightitalic.ttf?-ypioc1') format('truetype'),
+    url('yolo-lightitalic.svg?-ypioc1') format('svg');
+}
+
+@font-face {
+  font-family: 'Yolo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('yolo-regular.woff2') format('woff2'), url('yolo-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Yolo';
+  font-style: italic;
+  font-weight: 400;
+  src:url('yolo-italic.eot?#iefix-ypioc1') format('embedded-opentype'),
+    url('yolo-italic.woff2?-ypioc1') format('woff2'),
+    url('yolo-italic.woff?-ypioc1') format('woff'),
+    url('yolo-italic.ttf?-ypioc1') format('truetype'),
+    url('yolo-italic.svg?-ypioc1') format('svg');
+}
+@font-face {
+  font-family: 'Yolo';
+  font-style: normal;
+  font-weight: 600;
+  src: url('yolo-semibold.woff2') format('woff2'), url('yolo-semibold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Yolo';
+  font-style: normal;
+  font-weight: 700;
+  src:url('yolo-bold.eot?#iefix-ypioc1') format('embedded-opentype'),
+    url('yolo-bold.woff2?-ypioc1') format('woff2'),
+    url('yolo-bold.woff?-ypioc1') format('woff'),
+    url('yolo-bold.ttf?-ypioc1') format('truetype'),
+    url('yolo-bold.svg?-ypioc1') format('svg');
+}
+@font-face {
+  font-family: 'Yolo';
+  font-style: italic;
+  font-weight: 700;
+  src:url('yolo-bolditalic.eot?#iefix-ypioc1') format('embedded-opentype'),
+    url('yolo-bolditalic.woff2?-ypioc1') format('woff2'),
+    url('yolo-bolditalic.woff?-ypioc1') format('woff'),
+    url('yolo-bolditalic.ttf?-ypioc1') format('truetype'),
+    url('yolo-bolditalic.svg?-ypioc1') format('svg');
+}

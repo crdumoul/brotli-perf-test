@@ -1,0 +1,194 @@
+/* Basic css for fido pages */
+/* Copy */
+/** Style Overrides **/
+
+body[ute-brand="fido"] .ute-content .rui-cta-panels.twopanels div.second--panel ul li.copy-1{
+    color: #333;
+}
+
+body[ute-brand="fido"] .rui-pricing-banner i{
+    font-size: 7.2rem;
+}
+
+body[ute-brand="fido"] .rui-pricing-banner .intro a.button-secondary{
+    font-size: 1.8rem;
+}    
+
+body[ute-brand="fido"] .rui-pricing-banner .intro p{
+    font-size: 3.2rem;
+}
+
+body[ute-brand="fido"] .rui-pricing-banner.ute-content .details .datacount, body[ute-brand="fido"] .rui-pricing-banner.ute-content .details .plantype{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+body[ute-brand="fido"] .rui-pricing-banner.ute-content .details .dataunit, body[ute-brand="fido"] .rui-pricing-banner.ute-content .details .planunit{
+    color: #7c6900;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+body[ute-brand="fido"] .rui-hero-expander .banner .first--panel p.lead, body[ute-brand="fido"] .rui-hero-expander .banner .second--panel p.lead{
+    font-size: 2.1rem !important;
+}
+
+body[ute-brand="fido"] .rui-main-content  .rui-cta-panels .final-icon-post{
+    padding-top: 10px;
+}
+
+body[ute-brand="fido"] .rui-main-content  .rui-cta-panels .final-icon-post i.rui-icon-wireless{
+    font-size: 2em;
+}
+
+body[ute-brand="fido"] .rui-main-content  .rui-cta-panels .final-icon-post i.rui-icon-internet{
+    font-size: 2.25em;
+}
+
+
+@media only screen and (min-width: 768px) {
+    body[ute-brand="fido"] .rui-pricing-banner.ute-content{
+        background-size: 1170px auto;
+    }  
+      
+    body[ute-brand="fido"] .rui-main-content{
+        margin-top: -30px;
+    }
+
+    body[ute-brand="fido"] .rui-main-content .rui-cta-panels.twopanels{
+        margin-top: -25px;
+    }
+
+    body[ute-brand="fido"] .ute-content .rui-cta-panels.twopanels div.second--panel ul{
+        margin-bottom: 1.7em;
+    }
+
+    body[ute-brand="fido"] .package-label{
+        margin-top: 48px;
+    }
+
+    body[ute-brand="fido"] .tablets .fido-content-wrapper{
+        margin-top: 43px;
+    }
+
+    html[lang="fr"] body[ute-brand="fido"] .tablets .fido-content-wrapper{
+        margin-top: 20px;
+    }
+
+    body[ute-brand="fido"] .rui-cta-panels.twopanels div.second--panel .lead::before{
+        height: 10.5em;
+    }
+
+    body[ute-brand="fido"] .rui-cta-panels.twopanels div.second--panel .lead::after{
+        height: 15em;
+    }
+    
+    body[ute-brand="fido"] .tablets .fido-content-wrapper .header-4{
+        margin-left: 130px;
+    }
+
+    body[ute-brand="fido"] .rui-pricing-banner .intro p{
+        margin-left: -20px;
+    }
+
+    body[ute-brand="fido"] .rui-pricing-banner .intro a.button-secondary{
+        margin-left: -20px;
+    }
+
+    body[ute-brand="fido"] .rui-pricing-banner .intro{
+        width: 35%;
+    }
+
+    body[ute-brand="fido"] .rui-pricing-banner.ute-content .row{
+        padding: 2em 0;
+    }
+
+    body[ute-brand="fido"] .ute-content .second--panel a.button-primary.hook-me-up-btn{
+        margin-top: 0.4em;
+    }
+
+    html[lang="fr"] body[ute-brand="fido"] .ute-content .second--panel a.button-primary.hook-me-up-btn{
+        margin-top: 0.4em;
+    }
+
+    body[ute-brand="fido"] .rui-cta-panels.twopanels div[class*="--panel"] .tablets p{
+        width: 55%;
+    }
+
+    body[ute-brand="fido"] .rui-pricing-banner .details::after{
+        width: 2.7em;
+    }
+
+    body[ute-brand="fido"] .rui-pricing-banner .details{
+        margin-left: -33px;
+        margin-top: 0px;
+    }   
+
+    body[ute-brand="fido"] .rui-pricing-banner .details .price span {
+        display: table-cell;
+        vertical-align: top;    
+        color: #7c6900;    
+    } 
+
+    body[ute-brand="fido"] .rui-pricing-banner .details .price {
+        display: table;
+    }     
+
+    body[ute-brand="fido"] .rui-pricing-banner .details .price .priceamount{
+        color: #333;
+        font-size: 3.2rem;
+        font-weight: 300;
+    }
+
+    body[ute-brand="fido"] .rui-pricing-banner .details .price span.plandesc{
+        padding-left: 15px;
+    }
+
+    body[ute-brand="fido"] .ute-content .fido-side-menu{
+        left: auto;
+        margin-left: -55px;
+    }
+
+    body[ute-brand="fido"] .ute-content .rui-cta-panels.twopanels li::before{
+        color: #333;
+    }
+
+    body[ute-brand="fido"] .fido-side-menu .community.bubble span{
+        margin-top: -1.2em;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    body[ute-brand="fido"] .ute-content .fido-content-wrapper .header-4{
+        margin-top: 25px;
+    }
+
+    body[ute-brand="fido"] .ute-content .fido-side-menu{
+        top: 100%;
+    }    
+
+    body[ute-brand="fido"] .ute-content .fido-side-menu .bubble:first-child{
+        width: 27%;
+    }
+
+    body[ute-brand="fido"] .ute-content .fido-side-menu .bubble:nth-of-type(2){
+        width: 35%;
+    }
+
+/*    body[ute-brand="fido"] .rui-pricing-banner.ute-content{
+        background-color: transparent;
+    }
+
+    body[ute-brand="fido"] .rui-pricing-banner .container::before{
+        content: " ";
+        position: absolute;
+        background: #FEE600;
+        display: block;
+        height: 55%;
+        width: 100%;
+        left: 0;
+    }
+
+*/
+}

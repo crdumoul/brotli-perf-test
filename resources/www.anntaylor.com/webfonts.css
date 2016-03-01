@@ -1,0 +1,72 @@
+
+/* Webfonts */ 
+
+@font-face {
+	font-family: 'FuturaTOTDemRegular';
+	src: url('/webassets/ann/en_US/assets/fonts/FuturaDemi/futuratot-dem-webfont.eot');
+	src: local('☺'),
+		 url('/webassets/ann/en_US/assets/fonts/FuturaDemi/futuratot-dem-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('/webassets/ann/en_US/assets/fonts/FuturaDemi/futuratot-dem-webfont.woff') format('woff'),
+		 url('/webassets/ann/en_US/assets/fonts/FuturaDemi/futuratot-dem-webfont.ttf') format('truetype'),
+		 url('/webassets/ann/en_US/assets/fonts/FuturaDemi/futuratot-dem-webfont.svg#FuturaTOTDemRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura';
+	src: url('/webassets/ann/en_US/assets/fonts/Futura/Futur.eot');
+	src: local('☺'),
+		 url('/webassets/ann/en_US/assets/fonts/Futura/Futur.eot?#iefix') format('embedded-opentype'),
+		 url('/webassets/ann/en_US/assets/fonts/Futura/Futur.woff') format('woff'),
+		 url('/webassets/ann/en_US/assets/fonts/Futura/Futur.ttf') format('truetype'),
+		 url('/webassets/ann/en_US/assets/fonts/Futura/Futur.svg#Futura') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura-Heavy';
+	src: url('/webassets/ann/en_US/assets/fonts/FuturaHeavy/FuturHea.eot');
+	src: local('☺'),
+		 url('/webassets/ann/en_US/assets/fonts/FuturaHeavy/FuturHea.eot?#iefix') format('embedded-opentype'),
+		 url('/webassets/ann/en_US/assets/fonts/FuturaHeavy/FuturHea.woff') format('woff'),
+		 url('/webassets/ann/en_US/assets/fonts/FuturaHeavy/FuturHea.ttf') format('truetype'),
+		 url('/webassets/ann/en_US/assets/fonts/FuturaHeavy/FuturHea.svg#Futura-Heavy') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Didot_L64';
+	src: url('/webassets/ann/en_US/assets/fonts/DidotHTFL64/DidotHTFL64Lig.eot');
+	src: local('☺'),
+		 url('/webassets/ann/en_US/assets/fonts/DidotHTFL64/DidotHTFL64Lig.eot?#iefix') format('embedded-opentype'),
+		 url('/webassets/ann/en_US/assets/fonts/DidotHTFL64/DidotHTFL64Lig.woff') format('woff'),
+		 url('/webassets/ann/en_US/assets/fonts/DidotHTFL64/DidotHTFL64Lig.ttf') format('truetype'),
+		 url('/webassets/ann/en_US/assets/fonts/DidotHTFL64/DidotHTFL64Lig.svg#Didot-HTF-L64-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: 'FuturaTOTDemRegular';
+		src: url('/webassets/ann/en_US/assets/fonts/FuturaDemi/futuratot-dem-webfont.svg#FuturaTOTDemRegular') format('svg');
+	}
+
+	@font-face {
+		font-family: 'Futura';
+		src: url('/webassets/ann/en_US/assets/fonts/Futura/Futur.svg#Futura') format('svg');
+	}
+
+	@font-face {
+		font-family: 'Futura-Heavy';
+		src: url('/webassets/ann/en_US/assets/fonts/FuturaHeavy/FuturHea.svg#Futura-Heavy') format('svg');
+	}
+
+	@font-face {
+		font-family: 'Didot_L64';
+		src: url('/webassets/ann/en_US/assets/fonts/DidotHTFL64/DidotHTFL64Lig.svg#Didot-HTF-L64-Light') format('svg');
+	}
+}

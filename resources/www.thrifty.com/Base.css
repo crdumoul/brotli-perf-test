@@ -1,0 +1,864 @@
+﻿body 
+{        
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 10pt;
+	margin: 0;
+	color:#333;
+} 
+
+h1, h2, h3, h4, h5, h6
+{
+	font-weight: bold;
+	font-family: Verdana, Arial;
+}
+
+h1 
+{ 
+	font-size: 24px;
+	margin: .5em 0 .5em 0;
+}
+
+h2 
+{
+	font-size: 18px;
+	margin: .5em 0 .5em 0;
+}
+
+h3 
+{
+	font-size: 16px;
+	margin: .5em 0 .5em 0;
+}
+
+h4 
+{
+	font-size: 14px;
+	margin: .5em 0 .5em 0;
+}
+
+h5 
+{
+	font-size: 13px;
+	margin: .5em 0 .5em 0;
+}
+
+h6 
+{
+	font-size: 12px;
+	margin: .5em 0 .5em 0;
+}
+
+/*p 
+{
+	margin: 5px 10px 5px 0;
+}
+*/
+table
+{
+font-size:10pt;
+font-family:Arial, Helvetica, sans-serif
+}
+
+ul
+	{
+	margin-left:.75em;
+	padding-left:.75em;
+	}
+ol
+	{
+	margin-left: 1em;
+	padding-left:.75em;
+	}
+small 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	margin: 1.75em 0;
+}
+
+hr
+{
+	border: dotted #999999;
+}
+
+strong
+{
+	font-weight: bold;
+}
+
+img
+{
+	border: 0 solid;
+}
+
+/* END HTML styles */
+
+/* BEGIN hyperlink styles */
+a img
+{
+	border: 0;
+}
+
+a:link
+{
+	color: #0066CC;
+	text-decoration: underline;
+}
+
+a:visited
+{
+	color: #0066CC;
+	text-decoration: underline;
+}
+
+a:hover
+{
+	color: #3399FF;
+	text-decoration: underline;
+}
+
+a:active
+{
+	color: #666666;
+	text-decoration: underline;
+}
+
+/* END hyperlink styles */
+
+/* BEGIN custom styles */
+
+p.Fineprint
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.66em;
+	margin: 1.75em 0; /*caption:Fineprint;*/
+}
+
+img.Left
+{
+	float: left;
+	padding: 5px; /*caption:Float Image Left;*/
+}
+
+img.Right
+{
+	float: right;
+	padding: 5px; /*caption:Float Image Right;*/
+}
+
+div.AlignCenter
+{
+	text-align: center; /*caption: Align Center;*/
+}
+
+div.AlignRight
+{
+	text-align: right; /*caption: Align Right;*/
+}
+
+div.AlignLeft
+{
+	text-align: left; /*caption: Align Left;*/
+}
+
+p.Blockquote
+{
+	padding: 0 10px 0 10px; /*caption: blockquote;*/
+}
+h1.FontStyleOne, h2.FontStyleOne, h3.FontStyleOne, h4.FontStyleOne, h5.FontStyleOne, h6.FontStyleOne
+{
+	background-color: #0066CC;
+	color: #FFFFFF;
+	padding: 0.3em; /*caption: Blue Background;*/
+}
+
+h1.FontStyleTwo, h2.FontStyleTwo, h3.FontStyleTwo, h4.FontStyleTwo, h5.FontStyleTwo, h6.FontStyleTwo
+{
+	background-color: #CCCCCC;
+	color: #000000;
+	padding: 5px; /*caption: Gray Background;*/
+}
+
+h1.FontStyleThree, h2.FontStyleThree, h3.FontStyleThree, h4.FontStyleThree, h5.FontStyleThree, h6.FontStyleThree
+{
+	background-color: #EAEAEA;
+	color: #000000;
+	padding: 5px; /*caption: Light Gray Background;*/
+}
+
+h1.FontStyleFour, h2.FontStyleFour, h3.FontStyleFour, h4.FontStyleFour, h5.FontStyleFour, h6.FontStyleFour
+{
+	background-color: #999999;
+	color: #FFFFFF;
+	padding: 5px; /*caption: Dark Gray Background;*/
+}
+
+p.FontStyleFive, h1.FontStyleFive, h2.FontStyleFive, h3.FontStyleFive, h4.FontStyleFive, h5.FontStyleFive, h6.FontStyleFive, ul.FontStyleFive, td.FontStyleFive
+{
+	color: #666; /*caption: Thrifty Gray Font;*/
+}
+
+p.FontStyleSix, h1.FontStyleSix, h2.FontStyleSix, h3.FontStyleSix, h4.FontStyleSix, h5.FontStyleSix, h6.FontStyleSix, ul.FontStyleSix, td.FontStyleSix
+{
+	color: #0066cc; /*caption: Thrifty Blue Font;*/
+}
+
+p.FontStyleSeven, h1.FontStyleSeven, h2.FontStyleSeven, h3.FontStyleSeven, h4.FontStyleSeven, h5.FontStyleSeven, h6.FontStyleSeven, ul.FontStyleSeven, td.FontStyleSeven
+{
+	color: #004C99; /*caption: Thrifty Dark Blue Font;*/
+}
+
+p.FontStyleEight, h1.FontStyleEight, h2.FontStyleEight, h3.FontStyleEight, h4.FontStyleEight, h5.FontStyleEight, h6.FontStyleEight, ul.FontStyleEight, td.FontStyleEight
+{
+	color: #C00; /*caption: Red Font;*/
+}
+
+ul.NoMargin
+{
+	margin-left: 15px;
+	padding-left: 0px; /*caption: No Indent, Bulleted List;*/
+}
+
+ol.NoMargin
+{
+	margin-left: 20px;
+	_margin-left: 25px;
+	padding-left: 0px; /*caption: No Indent, numbered List;*/
+}
+
+ul ul.NoMargin, ol ol.NoMargin
+{
+	font-size: 1em;
+	margin-left: 40px; /*visible:false;*/
+}
+
+ul.NoMarginNoBullet, ol.NoMarginNoBullet
+{
+	margin-left: 0px;
+	padding-left: 0px;
+	list-style-type: none; /*caption:No Indent, No Bullet;*/
+}
+
+ul ul.NoMarginNoBullet, ol ol.NoMarginNoBullet
+{
+	font-size: 1em;
+	margin-left: 40px;
+}
+
+.LeftNavText ul
+{
+	list-style-image: url(../images/arrowblue.gif);
+	margin-left: -15px;
+	_margin-left: 20px; /*visible: false;*/
+}
+
+.LeftNavText ul li
+{
+	line-height: 0.70em;
+	font-size: 0.85em;
+	margin-top: 1.3em; /*visible: false;*/
+}
+
+.LeftNavText ul ul
+{
+	list-style-image: none;
+	list-style-type: disc;
+	margin-left: -40px;
+	_margin-left: 0; /*visible: false;*/
+}
+
+.LeftNavText ul li ul li
+{
+	font-size:1em;
+	padding-left:0;
+	/*visible: false;*/
+}
+
+
+.Subscript
+{ 
+	vertical-align: sub;
+	/*caption: Subscript;*/
+}
+	
+.Superscript
+{ 
+	vertical-align: super;
+	/*caption: Superscript;*/
+}
+
+#LocationDiv
+{
+    width: 960px;
+    margin-left: auto;
+    margin-right : auto;
+    padding-top: 25px;
+
+}
+/* END custom styles */
+/* BEGIN button styles */
+.ButtonMain, .ButtonMain:visited, .ButtonMain:hover, .ButtonMain:active, .ButtonSecondary
+{
+	background: url(/images/ButtonMain.gif) no-repeat top right;
+	padding: 0 3px 0 0;
+	margin: 0;
+	border: none;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 13pt;
+	vertical-align: top; /*visible:false;*/
+}
+.ButtonMain span, .ButtonSecondary span
+{
+	background: url(/images/ButtonMain.gif) no-repeat top left;
+	color: white;
+	padding: 2px 0 4px 6px;
+	margin-right: 2px;
+	vertical-align: top;
+	font-size: 9pt; /*visible:false;*/
+}
+.ButtonSecondary, .ButtonSecondary:visited, .ButtonSecondary:hover, .ButtonSecondary:active
+{
+	background: url(/images/ButtonSecondary.gif) no-repeat top right;
+	text-decoration: none; /*visible:false;*/
+}
+.ButtonSecondary span
+{
+	background: url(/images/ButtonSecondary.gif) no-repeat top left;
+	color: #06c; /*visible:false;*/
+}
+/* IE will ignore this */
+.ButtonMain > span, .ButtonSecondary > span
+{
+	position: relative;
+	top: 2px; /*visible:false;*/
+}
+/* END button styles */
+
+/*********** 
+
+BEGIN LocationTime control 
+
+************/
+
+/* Override homepage styles */
+div#HomepageBodyOutline div.LocationTimeControl div.TimeArea div.PickupTime, 
+div#HomepageBodyOutline div.LocationTimeControl div.TimeArea div.ReturnTime,
+div#HomepageBodyOutline div.LocationTimeControl div.LocationArea div.LocationEntryArea, 
+div#HomepageBodyOutline div.LocationTimeControl div.ContinueReservationArea div.ButtonArea input,
+div#HomepageBodyOutline div.LocationEntryArea,
+div.LocationTimeControl div.TimeArea div.PickupTime, 
+div.LocationTimeControl div.TimeArea div.ReturnTime,
+div.LocationTimeControl div.LocationArea div.LocationEntryArea, 
+div.LocationTimeControl div.ContinueReservationArea div.ButtonArea input,
+div.LocationEntryArea
+{
+	float: right;	
+}
+
+div.LocationTimeControl
+{
+	border: solid 2px #06c;
+	height:auto;
+	font-family: Arial,Helvetica,san-serif;
+	font-size: 9pt;
+	margin: 0;
+	clear: both;
+	float: left;
+	background-color: #FFFFFF;
+	width: 296px;
+}
+
+div.LocationTimeControl div
+{
+	float: left;
+}
+
+div.LocationTimeControl div.Banner, 
+div.LocationTimeControl div.LocationArea, 
+div.LocationTimeControl div.TimeArea, 
+div.LocationTimeControl div.VehicleTypeArea, 
+div.LocationTimeControl div.OptionsArea, 
+div.LocationTimeControl div.ContinueReservationArea, 
+div.LocationTimeControl div.GetReservationArea
+{
+	width: 100%;
+}
+
+div.LocationTimeControl div.Banner
+{
+	background: #0066cc url(/Images/GradientResPanelHeader.jpg) repeat left top;
+	color: #FFFFFF;
+	font-family: Verdana;
+	font-size: 13pt;
+	font-weight: bold;
+	padding: 6px 0px 5px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+div.LocationTimeControl div.Banner img
+{
+	margin: 0px 0 4px 8px;
+	line-height: 29px;
+	vertical-align: middle;
+}
+
+div.LocationTimeControl div.Banner span.BestRateGuarantee
+{
+	color: #FFFFFF;
+	font-size: 10pt;
+	font-weight: normal;
+	text-decoration: underline;
+	margin-left: 0px;
+}
+
+/* bottom border */
+div.LocationTimeControl div.LocationArea, div.LocationTimeControl div.TimeArea, div.LocationTimeControl div.ReturnLocationArea
+{
+	border-bottom: solid 5px #eaeaea;
+}
+
+div.LocationTimeControl div.LocationArea
+{
+	margin: 0 0 0 0;
+	padding: 10px 0 4px 0;
+}
+
+div.LocationTimeControl div.LocationArea div a:link, div.LocationTimeControl div.LocationArea div a:visited
+{
+	font-size: 9pt;
+	font-weight: normal;
+	color: #0066cc;
+	text-decoration: none;
+	padding: 0;
+	margin: 0 0 0 130px;
+	_margin-left: 125px;
+}
+
+div.LocationTimeControl div.LocationArea div a:hover
+{
+	color: #0000FF;
+	text-decoration: underline;
+}
+
+div.LocationTimeControl div.LocationArea div a:active
+{
+	color: #0066cc;
+	text-decoration: none;
+}
+
+div.LocationTimeControl div.LocationArea span.OneWayArea
+{
+	font-size: 8pt;
+	margin: 0px 0 0 106px;
+	_margin: 0px 0px 0px 110px;
+	float: left;
+}
+
+div.LocationTimeControl div.LocationArea span.OneWayArea input, div.LocationTimeControl div.LocationArea span.OneWayArea span.OneWayLabel
+{
+	vertical-align: middle;
+}
+
+div.LocationTimeControl div.LocationArea div.LocationEntryArea input
+{
+	width: 170px;
+	_width: 160px;
+	/*margin-left: 2px;
+	margin-right: 2px;
+	*/
+}
+
+div.LocationTimeControl div.LocationArea div.LocationEntryArea span.PickupLocationLabel
+{
+	color: #0066cc;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+div.LocationTimeControl div.LocationArea div.LocationEntryArea span,
+div.LocationTimeControl div.LocationArea div.LocationEntryArea span.PickupLocationLabel, 
+div.LocationTimeControl div.TimeArea span.TimeLabel, 
+div.LocationTimeControl div.VehicleTypeArea span.VehicleTypeLabel, 
+div.LocationTimeControl div.ContinueReservationArea div.ButtonArea span.ButtonLabel
+{
+	font-family: Arial,Helvetica,san-serif;
+	font-weight: bold;
+	font-size: 8pt;
+	padding: 0;
+	margin: 0;
+}
+
+div.LocationTimeControl div.LocationArea div.LocationEntryArea, 
+div.LocationTimeControl div.TimeArea div.PickupTime, 
+div.LocationTimeControl div.TimeArea div.ReturnTime
+{	
+	text-align: right;
+	margin-right: 12px;
+	_margin-right: 8px;
+	/*_margin-right: 18px;*/
+}
+
+div.LocationTimeControl div.ContinueReservationArea div.ButtonArea input
+{
+	text-align: right;
+	margin-right: 14px;
+	_margin-right: 16px;
+}
+
+div.LocationTimeControl div.TimeArea div .TimeLabel,
+div.LocationTimeControl div.TimeArea div .CalendarInput,
+div.LocationTimeControl div.TimeArea div .AJAXCalendarLink,
+div.LocationTimeControl div.TimeArea div .AJAXCalendarLink img,
+div.LocationTimeControl div.TimeArea div .CalendarSelect
+{
+	float: left;
+	margin-left: 2px;
+}
+
+div.LocationTimeControl div.TimeArea div.PickupTime,
+div.LocationTimeControl div.TimeArea div.ReturnTime
+{
+	padding-top: 5px;
+	padding-bottom: 0px;
+}
+
+div.LocationTimeControl div.TimeArea div.ReturnTime a img.CalendarImage, div.LocationTimeControl div.TimeArea div.PickupTime a img.CalendarImage
+{
+	vertical-align: top;
+	margin: 1px 0px 0px 0px;
+}
+
+div.LocationTimeControl div.LocationEntryArea input.FontColorSubdued,
+div.LocationTimeControl div.TimeArea div.ReturnTime select.CalendarSelect, 
+div.LocationTimeControl div.TimeArea div.PickupTime select.CalendarSelect,
+div.LocationTimeControl div.TimeArea div.ReturnTime input.CalendarInput, 
+div.LocationTimeControl div.TimeArea div.PickupTime input.CalendarInput,
+div.LocationTimeControl div.LocationArea div.LocationEntryArea input.PickupLocationTextBox,
+div.LocationTimeControl div.LocationArea div.LocationEntryArea input.ReturnLocationTextBox,
+div.LocationTimeControl div.VehicleTypeArea select.VehicleTypeDropDownList,
+div.LocationTimeControl div.OptionsArea div.OptionInformation input
+{
+	font-size: 8pt;	
+}
+
+div.LocationTimeControl div.TimeArea div.ReturnTime select.CalendarSelect, 
+div.LocationTimeControl div.TimeArea div.PickupTime select.CalendarSelect
+{
+	width: 70px;	
+}
+
+div.LocationTimeControl div.TimeArea div.ReturnTime input.CalendarInput, 
+div.LocationTimeControl div.TimeArea div.PickupTime input.CalendarInput
+{
+	width: 95px;
+}
+
+div.LocationTimeControl div.VehicleTypeArea
+{
+	padding: 10px 0 8px 0px;
+	float: left;
+}
+
+div.LocationTimeControl div.VehicleTypeArea select
+{
+	width: 165px;
+}
+
+div.LocationTimeControl div.VehicleTypeArea span.VehicleTypeLabel
+{
+	padding: 0 0 0 64px;
+	_padding: 0 0 0 60px;
+}
+
+div.LocationTimeControl div.ReturnLocationArea
+{
+	margin: 2px 0 0 0;
+	padding: 0px 5px 2px 25px;
+}
+
+div.LocationTimeControl div.OptionsArea
+{
+	font-size: 8pt;	
+	padding:  0px 0px 3px 0px;	
+	_padding:  0px 0px 6px 0px;	
+	/*	
+	width: 284px;
+	_width: 296px;
+	*/
+	clear: both;
+}
+
+div.LocationTimeControl div.OptionsArea div.OptionInformation
+{
+	float: left;
+	padding: 0px 0px 0px 0px;
+	/*_padding: 0px 7px 0px 6px;*/
+	margin: 5px 0px 5px 10px;
+	/*_margin: 5px 12px 5px 0px;*/
+}
+
+div.LocationTimeControl div.OptionsArea div.OptionInformation input
+{
+	width: 78px;
+	_width: 75px;
+	/*margin: 0px 6px 0px 6px;*/
+}
+
+div.LocationTimeControl div.OptionsArea div.OptionInformation span.BlueChipLink
+{
+	color: #0066cc;
+	text-decoration: underline;
+}
+
+div.LocationTimeControl div.OptionsArea div span
+{
+	display: block;
+}
+
+div.LocationTimeControl div.OptionsArea div.CorporateRatesOnly
+{
+	clear: both;
+	float: none;
+}
+
+div.LocationTimeControl div.OptionsArea div.CorporateRatesOnly span
+{
+	display: inline;
+}
+
+div.LocationTimeControl div.ContinueReservationArea
+{
+	float: right;
+	margin: 10px 0px 10px 0;
+	_margin: 8px 0px 8px 0;
+}
+
+div.LocationTimeControl div.ContinueReservationArea input
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+div.LocationTimeControl div.ContinueReservationArea div.HelpArea
+{
+	float: left;
+}
+
+/* Also override MasterStyleList.css */
+div#HomepageBodyOutline div.LocationTimeControl div.ContinueReservationArea div.ButtonArea,
+div.LocationTimeControl div.ContinueReservationArea div.ButtonArea
+{
+	float: right;
+	_line-height: 2em;
+}
+
+div.LocationTimeControl div.TimeArea, div.LocationTimeControl div.OptionsArea
+{
+	float: left;
+	background-color: #eaeaea;
+}
+
+div.LocationTimeControl div.GetReservationArea
+{
+	background: #0066cc url(/Images/GradientResPanelHeader.jpg) repeat left top;
+	float: left;
+	display: block;
+	height: 23px;
+}
+
+div.LocationTimeControl div.GetReservationArea a
+{
+	float: left;
+	font-size: 10pt;
+	font-family: Arial;
+	padding: 3px 0 0 15px;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+div.LocationTimeControl div.CountryResidenceArea
+{
+	clear: both;
+	margin: 0 0 7px 10px;
+}
+
+div.LocationTimeControl div.DataArea
+{
+	display: none;
+}
+
+/* BEGIN ErrorAlert and ErrorKey; used with the ReservationsRequiredFieldValidator and HelpError controls */
+
+div.LocationTimeControl .ErrorAlert
+{
+	background: #ffffd5 url(/images/help_alert.gif) no-repeat 7px center;
+	margin: 3px 0 3px 0;
+	padding: 8px 5px 8px 45px;
+	font-weight: bold;
+	color: red;
+	font-size: 12px;
+	text-align: left;
+}
+
+/* ErrorKey is currently just a placeholder in case someone wants to change the style of the error key at some point */
+div.LocationTimeControl .ErrorKey
+{
+	color: #666666;
+	font-size: 10px;
+}
+
+/* END ErrorAlert and ErrorKey */
+
+/* END LocationTime control */
+
+/*------------------------------------*/
+/* BEGIN LocationSearchControlList    */
+/*------------------------------------*/
+div.LocationSearchControlList
+{
+    background-color: #fff;
+    border: solid 1px #8ba6bf;
+    font-size: 12px;
+    color: #333333;
+    overflow: hidden;
+    width: 250px;
+    margin: 0;    
+    z-index:100000000000;
+}
+
+div.LocationSearchControlList div.Item
+{
+    padding: 2px 5px 2px 5px;
+    float: left;
+    cursor: pointer;
+    width: 100%;
+}
+
+div.LocationSearchControlList div.IeItem
+{
+    padding: 2px 5px 2px 5px;
+    cursor: pointer;
+}
+
+div.LocationSearchControlList img
+{
+    float: left;
+    border: 0;
+    padding: 1px 1px 1px 1px;
+}
+
+div.LocationSearchControlList div.Description
+{
+    padding-left: 23px;
+    text-decoration: underline;
+}
+
+div.LocationSearchControlList span.Highlight
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+/*------------------------------------*/
+/* END LocationSearchControlList      */
+/*------------------------------------*/
+
+/*------------------------------------*/
+/* BEGIN LocationSearchControlMessage */
+/*------------------------------------*/
+div.LocationSearchControlMessage
+{
+    background-color: #eaeaea;
+    border: solid 1px #8ba6bf;
+    font-size: 12px;
+    color: #333333;
+    overflow: hidden;
+    width: 250px;
+    margin: 0;    
+}
+
+
+div.LocationSearchControlMessage div.Description
+{
+    padding: 3px 5px 3px 5px;
+    font-weight: bold;
+}
+
+div.LocationSearchControlMessage div.Message
+{
+    float: left;
+    padding: 3px 5px 3px 5px;
+}
+
+/*------------------------------------*/
+/* END LocationSearchControlMessage   */
+/*------------------------------------*/
+
+/*---------------------------------------*/
+/* BEGIN LocationReturnSearchControl     */
+/*---------------------------------------*/
+div.LocationReturnSearchControl
+{
+    background-color: #fff;
+    border: solid 1px #8ba6bf;
+    font-size: 12px;
+    color: #333333;
+    overflow: hidden;
+    width: 250px;
+    margin: 0;
+}
+
+div.LocationReturnSearchControl div.MessageBox
+{
+    background-color: #eaeaea;
+    float: left;
+    width: 100%;
+}
+
+div.LocationReturnSearchControl div.MessageBox div.Message
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+div.LocationReturnSearchControl div.List
+{
+    padding: 0;
+    float: left;
+    width: 100%;
+}
+
+div.LocationReturnSearchControl div.Item
+{
+    padding: 2px 5px 2px 5px;
+    float: left;
+    cursor: pointer;
+    width: 100%;
+}
+
+div.LocationReturnSearchControl div.IeItem
+{
+    padding: 2px 5px 2px 5px;
+    cursor: pointer;
+}
+
+div.LocationReturnSearchControl img
+{
+    float: left;
+    border: 0;
+    padding: 1px 1px 1px 1px;
+}
+
+div.LocationReturnSearchControl div.Description
+{
+    padding-left: 23px;
+    text-decoration: underline;
+}
+
+/*---------------------------------------*/
+/* END LocationReturnSearchControl       */
+/*---------------------------------------*/
+
+

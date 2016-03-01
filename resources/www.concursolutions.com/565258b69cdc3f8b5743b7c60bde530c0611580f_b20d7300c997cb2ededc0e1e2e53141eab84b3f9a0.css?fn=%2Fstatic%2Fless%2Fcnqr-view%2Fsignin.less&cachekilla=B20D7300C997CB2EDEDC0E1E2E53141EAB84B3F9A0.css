@@ -1,0 +1,148 @@
+/*
+assetUrl: /static/less/cnqr-view/signin.less
+cachekilla on server: B20D7300C997CB2EDEDC0E1E2E53141EAB84B3F9A0
+created: 2/18/2016 9:08:44 PM
+utc: 2/19/2016 2:08:44 AM
+*/
+
+.signin.signin-1 .cnqr-app-content.container {
+  background-image: url(/static/images/signin/signin-20151102-01.jpg);
+}
+.signin.signin-2 .cnqr-app-content.container {
+  background-image: url(/static/images/signin/signin-20151102-02.jpg);
+}
+.signin.signin-3 .cnqr-app-content.container {
+  background-image: url(/static/images/signin/signin-20151102-03.jpg);
+}
+.signin.signin-4 .cnqr-app-content.container {
+  background-image: url(/static/images/signin/signin-20151102-04.jpg);
+}
+.signin.signin-5 .cnqr-app-content.container {
+  background-image: url(/static/images/signin/signin-20151102-05.jpg);
+}
+.signin.signin-6 .cnqr-app-content.container {
+  background-image: url(/static/images/signin/signin-20151102-06.jpg);
+}
+.signin.signin-7 .cnqr-app-content.container {
+  background-image: url(/static/images/signin/signin-20151102-07.jpg);
+}
+.signin .field-validation-error a {
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+}
+.signin #lblselectLang:before {
+  font-family: 'concur-icons';
+  content: "\e048";
+  display: inline-block;
+  padding-right: 4px;
+  vertical-align: top;
+  font-size: 18px;
+  color: #72777b;
+}
+.signin.may4 #lblselectLang:before {
+  content: "\e049";
+}
+.signin .cnqr-app-content.container {
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: unset;
+  background-color: #f9f9f9;
+  background-repeat: repeat-y;
+  background-position: top right;
+}
+.signin .cnqr-app-content.container > .row {
+  min-height: 414px;
+  height: 100%;
+  background-color: transparent;
+  background-image: url(/static/images/signin/mask.png);
+  background-position: -80px 0;
+  background-repeat: repeat-y;
+}
+.signin .cnqr-app-content.container > .row #sidebar1,
+.signin .cnqr-app-content.container > .row #featured {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.signin .cnqr-app-content.container > .row .lang-container {
+  margin-top: 32px;
+}
+.signin .cnqr-app-content.container > .row .cred-container {
+  margin-top: 32px;
+}
+.signin .cnqr-app-content.container > .row .cred-container .cred-container-row {
+  margin-bottom: 16px;
+}
+.signin .cnqr-app-content.container > .row #featured {
+  background-color: transparent;
+  background-image: url(/static/images/signin/mask.png);
+  background-position: 16px 0;
+  background-repeat: repeat-y;
+  max-height: 800px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-left: 32px;
+}
+.signin .cnqr-app-content.container > .row #featured ul.messages {
+  list-style-type: none;
+  padding: 0;
+}
+.signin .cnqr-app-content.container > .row #featured ul.messages li {
+  margin-bottom: 32px;
+}
+.signin .cnqr-app-content.container > .row #featured ul.messages li h2.priority {
+  color: #ca202c;
+}
+.signin #frmMain.nomargins {
+  height: auto;
+}
+@media (max-width: 767px) {
+  .signin .cnqr-app-content.container {
+    height: auto;
+  }
+  .signin .cnqr-app-content.container > .row {
+    height: auto;
+    background-position: 0 0;
+    background-repeat: repeat;
+  }
+  .signin .cnqr-app-content.container > .row #featured {
+    background-image: none;
+    padding-left: 16px;
+    max-height: none;
+  }
+}
+@media (min-width: 992px) {
+  .signin .cnqr-app-content.container > .row {
+    background-position: -74px 0;
+    background-repeat: repeat-y;
+  }
+}
+@media (min-width: 1200px) {
+  .signin .cnqr-app-content.container > .row {
+    background-position: 0 0;
+    background-repeat: repeat-y;
+  }
+}
+@media (min-height: 600px) {
+  .signin .cnqr-app-content.container > .row {
+    min-height: 414px;
+  }
+}
+@media (min-height: 768px) {
+  .signin .cnqr-app-content.container > .row {
+    min-height: 582px;
+  }
+}
+@media (min-height: 900px) {
+  .signin .cnqr-app-content.container > .row {
+    min-height: 714px;
+  }
+}
+@media (min-height: 1024px) {
+  .signin .cnqr-app-content.container > .row {
+    min-height: 800px;
+  }
+}
+.signin.oldIE #frmMain.nomargins {
+  height: 100%;
+}

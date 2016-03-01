@@ -1,0 +1,89 @@
+/* Basic css for fido pages */
+/* Copy */
+/* Important added just to set set the font-size and fontwieght
+    to prevent updating dom too much **/
+body[ute-brand="fido"] .ute-content .copy-1{
+    font-size: 1.8rem !important;
+    font-weight: 300 !important;
+    line-height: 1.4;
+}
+
+body[ute-brand="fido"] .ute-content  .copy-2{
+    font-size: 1.6rem !important;
+    font-weight: 400 !important;
+    line-height: 1.4;
+}
+
+body[ute-brand="fido"] .ute-content  .copy-3{
+    font-size: 1.6rem !important;
+    font-weight: 300 !important;
+    line-height: 1.4;
+}
+
+
+/* header */
+body[ute-brand="fido"] .ute-content  .header-1{
+    font-size: 3.2rem !important;
+    font-weight: 600 !important;
+    line-height: 1.4;
+}
+
+body[ute-brand="fido"] .ute-content  .header-2{
+    font-size: 3.2rem !important;
+    font-weight: 600 !important;
+    line-height: 1.4;
+}
+
+body[ute-brand="fido"] .ute-content  .header-3{
+    font-size: 1.8rem !important;
+    font-weight: 300 !important;
+    line-height: 1.4;
+}
+
+body[ute-brand="fido"] .ute-content  .header-4{
+    font-size: 1.8rem !important;
+    font-weight: 400 !important;
+    line-height: 1.4;
+}
+
+/** Buttons **/
+
+body[ute-brand="fido"] .ute-content  .button-primary{
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;    
+}
+
+
+body[ute-brand="fido"] .ute-content  .button-secondary{
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;    
+}
+
+/** Style Overrides **/
+
+body[ute-brand="fido"] .ute-content .rui-cta-panels.twopanels div.second--panel ul li.copy-1{
+    color: #333;
+}
+
+body[ute-brand="fido"] .rui-pricing-banner i{
+    font-size: 7.2rem;
+}
+
+body[ute-brand="fido"] .rui-pricing-banner .intro a.button-secondary{
+    font-size: 1.8rem;
+}    
+
+body[ute-brand="fido"] .rui-pricing-banner .intro p{
+    font-size: 3.2rem;
+}
+
+body[ute-brand="fido"] .rui-pricing-banner.ute-content .details .datacount, body[ute-brand="fido"] .rui-pricing-banner.ute-content .details .plantype{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+body[ute-brand="fido"] .rui-pricing-banner.ute-content .details .dataunit, body[ute-brand="fido"] .rui-pricing-banner.ute-content .details .planunit{
+    color: #7c6900;
+    font-size: 1.4rem;
+    font-weight: 400;
+}

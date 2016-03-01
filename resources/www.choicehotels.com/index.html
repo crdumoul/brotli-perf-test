@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="chApp" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title ng-bind="pageMetaData.title">Choice Hotels</title>
+  <script>
+    function generateSFid() {
+      var generateHexString = function() {
+        var text = "";
+        var possible = "0123456789ABCDEF";
+
+        for (var i = 0; i < 16; i++ ) {
+          text += possible.charAt(Math.floor(Math.random() * possible.length));
+        }
+
+        return text;
+      }
+
+      return generateHexString() + '-' + generateHexString();
+    };
+
+    function setCookie(cookieName, cookieValue, daysUntilExpiration) {
+      var date = new Date();
+      date.setTime(date.getTime() + (daysUntilExpiration*24*60*60*1000));
+      var expires = "expires=" + date.toUTCString();
+      document.cookie = cookieName + "=" + cookieValue + "; " + expires;
+    }
+
+    function getCookie(cookieName) {
+      var name = cookieName + "=";
+      var cookies = document.cookie.split(';');
+      for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+
+        while (cookie.charAt(0) == ' ') {
+          cookie = cookie.substring(1);
+        }
+
+        if (cookie.indexOf(name) == 0) {
+          return cookie.substring(name.length, cookie.length);
+        }
+      }
+      return '';
+    }
+
+    if (getCookie('s_fid') === '') {
+      setCookie('s_fid', generateSFid(), 730);
+    }
+    window.chPageLoadTime = Date.now();
+    window.chOriginalPageUrl = location.href;
+    
+      (function(reportSuite, locationParam) {
+        // load image (without adding to DOM)
+        (new Image()).src =
+          '//choicehotels.d1.sc.omtrdc.net/b/ss/' +
+          reportSuite +
+          '/1/H.27.5/?url=' +
+          locationParam + '&pe=lnk_o&pev1=' +
+          locationParam + '&pev2=TopOfPage' +
+          '&fid=' + getCookie('s_fid');
+      })('chchoice', encodeURIComponent(location.href));
+    </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion_async.js" charset="utf-8"></script>
+  <base href="/" >
+  <meta name="apple-itunes-app" content="app-id=509342785"
+        app-argument="https://control.kochava.com/v1/cpi/click?campaign_id=kochoice-hotels-ios555a239610d5c8e1b696b9a9bd&network_id=3241&device_id=device_id&site_id=1">
+  <meta name="fragment" content="!">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="description" content="{{pageMetaData.description}}">
+  <meta name="keywords" content="{{pageMetaData.keywords}}">
+  <meta name="ROBOTS" content="{{pageMetaData.metaRobots}}" ng-if="pageMetaData.metaRobots">
+  <meta name="msapplication-config" content="none"/>
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@ChoiceHotels" >
+  <meta name="twitter:title" content="{{pageMetaData.mediaTitle}}">
+  <meta name="twitter:description" content="{{pageMetaData.description}}">
+  <meta property="twitter:image:src" content="https://www.choicehotels.com{{pageMetaData.mediaImage}}" ng-if="pageMetaData.mediaImage">
+  <meta property="twitter:url" content="https://www.choicehotels.com{{pageMetaData.pageUrl}}">
+  <!-- Open Graph data -->
+  <meta property="og:title" content="{{pageMetaData.mediaTitle}}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.choicehotels.com{{pageMetaData.pageUrl}}">
+  <meta property="og:image" content="https://www.choicehotels.com{{pageMetaData.mediaImage}}" ng-if="pageMetaData.mediaImage">
+  <meta property="og:description" content="{{pageMetaData.description}}">
+  <meta property="og:site_name" content="Choice Hotels">
+  <meta property="fb:admins" content="45496659568">
+
+  <link rel="canonical" href="https://www.choicehotels.com{{pageMetaData.pageUrl}}">
+
+  <link href="/1.5.21.0/assets/fonts/google/Open_Sans/font.css" rel="stylesheet" type="text/css">
+  <link href="/1.5.21.0/assets/fonts/google/Droid_Serif/font.css" rel="stylesheet" type="text/css">
+  <!--[if gt IE 9]><!-->
+    <link href="/1.5.21.0/styles/choice-hotels.css" rel="stylesheet" type="text/css">
+  <!--<![endif]-->
+  <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="/1.5.21.0/styles/bless/choice-hotels.css">
+    <link rel="stylesheet" type="text/css" href="/1.5.21.0/styles/ie9.css">
+  <![endif]-->
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="/1.5.21.0/styles/ie8.css">
+  <![endif]-->
+  <script>
+var optimost={A:{},C:{},D:document,L:document.location,M:[],Q:{},T:new Date(),U:'',V:'2.7',Enabled:true,ST:"script",SA:
+{"type":"text/javascript"},I:function(){var s=this.L.search;var c=this.D.cookie;if(s.length>3){for(var a=s.substring(1)
+.split("&"),i=0,l=a.length;i<l;i++){var p=a[i].indexOf("=");if(p>0)this.Q[a[i].substring(0,p)]=unescape(a[i].substring(
+p+1));}}if(c.length>3){for(var a=c.split(";"),i=0,b=a.length;i<b;i++){var v=a[i].split("=");while(v[0].substring(0,
+1)==" ")v[0]=v[0].substring(1,v[0].length);if(v.length==2)this.C[v[0]]=unescape(v[1]);}}},B:function(){var n;this.A={
+};var _o=this;this.A.D_ts=Math.round(_o.T.getTime()/1000);this.A.D_tzo=_o.T.getTimezoneOffset();this.A.D_loc=_o.L.protocol+
+"//"+_o.L.hostname+_o.L.pathname;this.A.D_ckl=_o.D.cookie.length;this.A.D_ref=_o.D.referrer;if(typeof optrial=="object")
+for(n in optrial)this.A[n]=optrial[n];for(n in this.Q)this.A[n]=this.Q[n];for(n in this.C)if(n.substring(0,2)=="op")this.A[n]=
+this.C[n];},S:function(){var q='';for(var n in this.A)if(this.A[n]!=null && this.A[n]!="")q+=(q.length>0?"&":(this.U.indexOf(
+"?")>0?"&":"?"))+n+"="+escape(this.A[n]);return this.U+q;},SC:function(n,v,e,d){var de=new Date();de.setTime(
+de.getTime()+e * 1000);this.D.cookie=n+"="+escape(v)+((e==null)?"":("; expires="+de.toGMTString()))+"; path=/"+((d==
+null)?"":(";domain="+d));},SLD:function(){var sld=this.D.domain;var dp=sld.split(".");var l=dp.length;if(l<2)sld=null;
+else if(!isNaN(dp[l-1])&&!isNaN(dp[l-2]))sld=null;else sld="."+dp[l-2]+"."+dp[l-1];return sld;},R:function(r,c,d,
+e){if(this.Enabled){var b=true;if(r<1000){b=(Math.floor(Math.random()*1000)<r);if(c!=null){if(this.C[c]!=null)b=(this.C[c]!=
+"mvt-no");else this.SC(c,b?"mvt-yes":"mvt-no",e,d);}}if(b){var t='<'+this.ST+' src="'+this.S()+'"';for(n in this.SA)
+t+=(" "+n+'="'+this.SA[n]+'"');t+='><\/'+this.ST+'>';this.D.write(t);}}},addModule:function(s,f){this.M[s]=f;
+},displayModule:function(s){if(typeof this.M[s]=="function")this.M[s]();},hasModules:function(){return count(this.M)>0;
+}};optimost.I();
+var optSelector = {};
+if (window.location && window.location.protocol && window.location.protocol.toLowerCase().indexOf("https") > -1) optSelector.path = "https://by.essl.optimost.com/";
+else optSelector.path = "http://es.optimost.com/";
+optSelector.url_live = "es/1635/c/1/u/SPAChoiceHotels.live.js";
+optSelector.url_qa = "es/1635/c/1/u/SPAChoiceHotels.qa.js";
+optSelector.url = optSelector.url_live;
+if (typeof(optimost) == 'object') {
+  optSelector.qc = optimost.Q["opselect"] || optimost.C["opselect"] || "none";
+  if (optSelector.qc.toLowerCase() == "qa") {
+    optSelector.url = optSelector.url_qa;
+  } else if (optSelector.qc.toLowerCase() == "live") {
+    optSelector.url = optSelector.url_live;
+  } else if (optSelector.qc.toLowerCase() == "off") {
+    optSelector.url ='';
+  }
+}
+if(optSelector.url !=''){
+  if (optSelector.url.toLowerCase().indexOf("http") == -1) optSelector.url = optSelector.path + optSelector.url;
+  document.write('<' + 'script type="text/javascript" src="' + optSelector.url + '"><\/' + 'script>');
+}
+</script>
+<script type="text/javascript">
+    if (self !== top) {
+      document.write('<style>body{display:none !important;}</style>');
+      top.location = self.location;
+    }
+  </script>
+</head>
+<body class="" ng-class="bodyClass">
+<header class="z-index-100 hidden-print" ng-hide="globalHeaderUi.hideHeader">
+   <nav class="utility-nav z-index-90">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-6 col-md-3 brand-logo-container" itemscope itemtype="http://schema.org/Organization">
+  <a itemprop="url" class="brand-logo choice-hotels-header-logo" href="/">
+    <img class="img-responsive" itemprop="logo"
+         src="/1.5.21.0/assets/ch-logo.png"
+         alt="{{::strings.brandChoiceHotelsInternational}}"
+         />
+    <span class="circle-container">
+      <span class="circle"></span>
+    </span>
+  </a>
+
+  <a ng-if="featureFlags.VACATION_RENTALS_BRANDING" itemprop="url" class="brand-logo hidden vacation-rentals-header-logo" 
+  		ng-href="{{::chConstants.route.RENTALS.VACATION_RENTALS}}">
+    <img class="img-responsive" itemprop="logo"
+         src="/1.5.21.0/assets/vr-logo.png"
+         alt="{{::strings.brandChoiceHotelsInternational}}"
+         />
+    <span class="circle-container">
+      <span class="circle"></span>
+    </span>
+  </a>
+</div><div class="col-md-9 utility-nav-links-container hidden-xs">
+               <ul class="">
+   <li
+          
+            ng-if="!cpUser.signedIn"
+          
+        >
+         <a href="/reservations"
+  
+>
+   <span class="text">Manage Reservations</span></a>
+</li>
+      <li
+          
+            ng-if="cpUser.signedIn"
+          
+        >
+         <a href="/choice-privileges/account/recent"
+  
+>
+   <span class="text">Manage Reservations</span></a>
+</li>
+      <li
+          
+        >
+         <a href="/support"
+  
+>
+   <span class="text">Customer Support</span></a>
+</li>
+      </ul>
+
+</div>
+         </div>
+      </div>
+   </nav>
+
+   <nav class="navbar navbar-default navbar-static-top z-index-80" role="navigation">
+      <div class="container navbar-inner">
+        <div class="row">
+          <div class="hidden-xs hidden-sm col-md-5 col-md-offset-3 col-lg-5 z-index-90">
+            <ul class="nav navbar-nav">
+   <li
+          
+        >
+         <a href="/"
+  
+>
+   <span class="text">Home</span></a>
+</li>
+      <li
+          
+        >
+         <a href="/vacation-rentals"
+  
+>
+   <span class="text">Vacation Rentals</span></a>
+</li>
+      <li
+          
+        >
+         <a href="/groups"
+  
+>
+   <span class="text">Groups</span></a>
+</li>
+      <li
+          
+            class="dropdown heightfix"
+          
+        >
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                <span class="text">+ More</span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                 <li><a href="/explore"
+  
+>
+   <span class="text">Explore</span></a>
+</li>
+                    <li><a href="/deals"
+  
+>
+   <span class="text">Deals</span></a>
+</li>
+                    </ul>
+            </li>
+      </ul>
+
+</div>
+
+          <div class="col-xs-7 col-xs-offset-5 col-md-3 col-md-offset-1 cp-user-header ng-cloak"
+              ng-class="{'cp-user-authenticated':cpUser.signedIn,'cp-user-anonymous':!cpUser.signedIn}">
+            <div class="navbar-sign-in dropdown" is-open="globalHeaderUi.showLogin">
+              <div ng-if="!cpUser.signedIn" class="navbar-sign-in-container text-center">
+                <img src='/1.5.21.0/assets/cp-logo-small.png' alt='Choice Privileges Rewards'/><!--
+             --><button class="btn btn-default btn-link dropdown-toggle" type="button" id="cp-sign-in-drop-down">
+                  <span class="text">{{::strings.cpSignInJoin}}</span>
+                </button>
+                <span class="ch-icon ch-icon-chevron-down"></span>
+              </div>
+              <div ng-if="cpUser.signedIn" class="dropdown-toggle navbar-sign-in-container">
+                <img src='/1.5.21.0/assets/cp-logo-small.png' alt='Choice Privileges Rewards'/><!--
+             --><div class="cp-user-toggle text-left" id="cp-sign-in-drop-down">
+                  <div class="cp-user-name">{{::strings.cpHeaderHi}}{{cpUser.firstName}}</div>
+                  <div><ng-pluralize count="cpUser.loyaltyAccount.accountBalance|number:0" when="::strings.cpPtsPluralize"></ng-pluralize></div>
+                  <div class="cp-user-level" ng-if="cpUser.loyaltyAccount.eliteLevel">{{cpUser.loyaltyAccount.eliteLevel}}</div>
+                </div>
+                <div class="ch-icon ch-icon-chevron-down"></div>
+              </div>
+
+              <div role="menu"
+                  class="dropdown-menu dropdown-right dropdown-menu"
+                  aria-labelledby="cp-sign-in-drop-down"
+                  ng-class="{ 'has-recaptcha': featureFlags.RECAPTCHA }"
+                  ch-allow-link-propagation>
+                <div class="cp-user-state logged-out" ng-if="!cpUser.signedIn">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="h2 greetings" ng-bind-html="strings.cpSignInto"></div>
+                      <div class="sign-in-links">
+                        <ul class="list-unstyled">
+   <li
+          
+            ng-if="!cpUser.signedIn"
+          
+        >
+         <a href="/choice-privileges/account/enroll"
+  
+>
+   <span class="text">Join Now</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+            ng-if="cpUser.signedIn"
+          
+        >
+         <a href="/choice-privileges/account"
+  
+>
+   <span class="text">My Account</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+            ng-if="cpUser.signedIn"
+          
+        >
+         <a href="/choice-privileges/account/recent"
+  
+>
+   <span class="text">My Activity</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+        >
+         <a href="/choice-privileges"
+  
+>
+   <span class="text">About Choice Privileges</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+        >
+         <a href="/choice-privileges/your-extras"
+  
+>
+   <span class="text">Your Extras</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+        >
+         <a href="/choice-privileges/earn-points"
+  
+>
+   <span class="text">Earn Points</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+            ng-if="cpUser.signedIn"
+          
+        >
+         <a href="/choice-privileges/report-missing-stay"
+  
+>
+   <span class="text">Report Missing Stay</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+        >
+         <a href="/choice-privileges/redeem-points"
+  
+>
+   <span class="text">Use Points</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+        >
+         <a href="/choice-privileges/membership-levels"
+  
+>
+   <span class="text">Membership Levels</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+        >
+         <a href="/choice-privileges/earn-points/visa-credit-card"
+  
+>
+   <span class="text">Choice Privileges Visa</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+        >
+         <a href="/choice-privileges/buy-points"
+  
+>
+   <span class="text">Buy Points</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+        >
+         <a href="/choice-privileges/rules-regulations"
+  
+>
+   <span class="text">Rules and Regulations</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      </ul>
+
+</div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="clearfix text-right hidden-sm-down">
+                          <span class="member-yet">{{::strings.cpMemberYet}}</span>
+                          <a href="/choice-privileges/account/enroll">
+                            <span class="text">{{::strings.cpJoinToday}}</span>
+                            <span class="ch-icon ch-icon-chevron-right"></span>
+                          </a>
+                      </div>
+                          <form name="chUserLoginForm"
+      ch-user-login
+      ch-casl-form-consent
+      ng-submit="login($event)"
+      novalidate
+      on-login="globalHeaderUi.showLogin = false">
+  <!-- TODO above this to use ch-guest-info-username -->
+  <div class="form-group text-left" ng-class="{'ng-invalid': chUserLoginForm.username.$invalid || chUserLoginForm.$error.service}">
+    <label for="cpSignInUsername">{{::strings.cpUsername}}</label>
+    <div class="ng-errors pull-right">
+      <div ng-if="chUserLoginForm.username.$error.required">{{::strings.cpUsernameRequired}}</div>
+      <div ng-if="chUserLoginForm.username.$valid && chUserLoginForm.$error.service">
+        {{::strings.cpUserInvalidCredentials}}
+      </div>
+    </div>
+    <input type="text" class="form-control" id="cpSignInUsername" name="username" ng-model="username" required
+        maxlength="20" autocapitalize="none" ng-focus="featureFlags.RECAPTCHA && clearRecaptcha()">
+  </div>
+  <div class="form-group text-left margin-bottom-30" ng-class="{'ng-invalid': chUserLoginForm.username.$valid && chUserLoginForm.password.$invalid}">
+    <label for="cpSignInPassword">{{::strings.cpPassword}}</label>
+    <div class="ng-errors pull-right" ng-hide="chUserLoginForm.failedAttempt">
+      <div ng-if="chUserLoginForm.password.$error.required">{{::strings.cpPasswordRequired}}</div>
+    </div>
+    <input type="password" class="form-control" id="cpSignInPassword" name="password" placeholder="" autocomplete="off" ng-model="password" required maxlength="44">
+  </div>
+  <div ng-if="featureFlags.RECAPTCHA" class="margin-bottom-30">
+    <div ch-recaptcha display-save-browser="true" is-modal-open="globalHeaderUi.showLogin"
+         on-expire="onExpire(widgetId)" on-create="onCreate(widgetId)" name="recaptcha"></div>
+  </div>
+
+  <div class="form-group text-left submit margin-bottom-20">
+    <!-- for testing, clicking the cta switch to signed in version -->
+    <button class="btn-cta btn-block btn-primary" type="submit">
+      {{::strings.cpSignIn}}
+    </button>
+  </div>
+
+  <div class="text-center strong text-uppercase margin-bottom-20">
+    <a href="" ng-click="clearForm()">{{::strings.generalCancel}}</a>
+  </div>
+
+  <div class="cp-user-new text-center">
+    <div class="purpose">{{::strings.cpDontHaveAccount}}</div>
+    <div>
+      <a class="cta cta-link" ng-click="globalHeaderUi.showLogin = false" ng-href="{{::chConstants.route.CP_ENROLL}}">
+        {{::strings.cpJoinNow}}
+      </a>
+      <br />
+      <a class="cta cta-link" ng-click="globalHeaderUi.showLogin = false;" ng-href="{{::chConstants.route.CP_FORGOT_CREDENTIALS}}">
+        {{::strings.cpForgot}}
+      </a>
+    </div>
+  </div>
+</form>
+</div>
+                  </div>
+                </div>
+                <div class="cp-user-state logged-in" ng-if="cpUser.signedIn">
+                  <!-- for testing, clicking the cta switch to signed out version -->
+<a class="cta cta-link logout pull-right" href="" ng-click="$event.preventDefault(); cpUserLogout();">
+  <span class="text">{{::strings.cpSignOut}}</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span>
+</a>
+<div class="greetings">
+  <div class="h2">
+    <span>{{::strings.cpWelcomeBack}}</span><br>
+    <span>{{cpUser.firstName}}</span>
+  </div>
+  <div class="cp-user-info">
+    <div ng-show="cpUser.username !== ''">{{cpUser.username}}</div>
+    <div><ng-pluralize count="cpUser.loyaltyAccount.accountBalance|number:0" when="::strings.cpPtsPluralize"></ng-pluralize></div>
+    <div class="cp-elite-level" ng-if="cpUser.loyaltyAccount.eliteLevel">{{cpUser.loyaltyAccount.eliteLevel}}</div>
+  </div>
+</div>
+<div class="row">
+                    <div class="col-sm-5">
+                      <div class="sign-in-links">
+  <ul class="list-unstyled">
+   <li
+          
+            ng-if="!cpUser.signedIn"
+          
+        >
+         <a href="/choice-privileges/account/enroll"
+  
+>
+   <span class="text">Join Now</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+            ng-if="cpUser.signedIn"
+          
+        >
+         <a href="/choice-privileges/account"
+  
+>
+   <span class="text">My Account</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+            ng-if="cpUser.signedIn"
+          
+        >
+         <a href="/choice-privileges/account/recent"
+  
+>
+   <span class="text">My Activity</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+        >
+         <a href="/choice-privileges"
+  
+>
+   <span class="text">About Choice Privileges</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+        >
+         <a href="/choice-privileges/your-extras"
+  
+>
+   <span class="text">Your Extras</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+        >
+         <a href="/choice-privileges/earn-points"
+  
+>
+   <span class="text">Earn Points</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+            ng-if="cpUser.signedIn"
+          
+        >
+         <a href="/choice-privileges/report-missing-stay"
+  
+>
+   <span class="text">Report Missing Stay</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+        >
+         <a href="/choice-privileges/redeem-points"
+  
+>
+   <span class="text">Use Points</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+        >
+         <a href="/choice-privileges/membership-levels"
+  
+>
+   <span class="text">Membership Levels</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+        >
+         <a href="/choice-privileges/earn-points/visa-credit-card"
+  
+>
+   <span class="text">Choice Privileges Visa</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+        >
+         <a href="/choice-privileges/buy-points"
+  
+>
+   <span class="text">Buy Points</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      <li
+          
+        >
+         <a href="/choice-privileges/rules-regulations"
+  
+>
+   <span class="text">Rules and Regulations</span>&nbsp;<span class="ch-icon ch-icon-chevron-right"></span></a>
+</li>
+      </ul>
+
+</div></div>
+                    <div class="col-sm-7">
+                      <div ch-user-member-status count="cpUser.yearToDateEliteNights"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="navbar-header z-index-80">
+                <button type="button"
+                        class="navbar-toggle collapsed"
+                        ng-class="{'open' : !navbarCollapsed}"
+                        ng-click="navbarCollapsed = !navbarCollapsed">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="close-button"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden-md hidden-lg">
+            <div class="collapse navbar-collapse" collapse="navbarCollapsed" ng-init="navbarCollapsed = true">
+              <ul class="nav navbar-nav">
+   <li
+          
+        >
+         <a href="/"
+  
+>
+   <span class="text">Home</span></a>
+</li>
+      <li
+          
+        >
+         <a href="/vacation-rentals"
+  
+>
+   <span class="text">Vacation Rentals</span></a>
+</li>
+      <li
+          
+        >
+         <a href="/groups"
+  
+>
+   <span class="text">Groups</span></a>
+</li>
+      <li
+          
+            class="dropdown heightfix"
+          
+        >
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                <span class="text">+ More</span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                 <li><a href="/explore"
+  
+>
+   <span class="text">Explore</span></a>
+</li>
+                    <li><a href="/deals"
+  
+>
+   <span class="text">Deals</span></a>
+</li>
+                    </ul>
+            </li>
+      </ul>
+
+</div>
+          </div>
+
+        </div>
+      </div>
+   </nav>
+</header>
+<ch-expanding-content-block ng-show="featureFlags.CPREVEAL_BANNER"></ch-expanding-content-block>
+<div ng-controller="AppCtrl" ng-click="">
+  <main class="container message-page text-danger ng-cloak"
+        ng-controller="404Ctrl"
+        ng-if="show404Message">
+    <ch-phantom-marker></ch-phantom-marker>
+    <div ng-bind-html="::strings.generalPageNotFoundHtml"></div>
+  </main>
+
+  <main class="container message-page text-danger ng-cloak"
+        ng-controller="SessionWarningCtrl"
+        ng-if="showSessionWarningMessage">
+      {{::strings.generalSessionWarning}}
+  </main>
+
+  <main class="container message-page text-danger ng-cloak"
+        data-seleniumid="movedPermanentlyGlobalMessage"
+        ng-if="phantomRedirect.reason === $root.chConstants.reason.MOVED_PERMANENTLY">
+    <ch-phantom-marker status-code="301"
+                       redirect-location="{{phantomRedirect.redirectLocation}}"></ch-phantom-marker>
+    {{::strings.generalPageMovedPermanently}}
+  </main>
+
+  <main class="container message-page text-danger ng-cloak"
+        data-seleniumid="movedTemporarilyGlobalMessage"
+        ng-if="phantomRedirect.reason === $root.chConstants.reason.MOVED_TEMPORARILY">
+    <ch-phantom-marker status-code="302"
+                       redirect-location="{{phantomRedirect.redirectLocation}}"></ch-phantom-marker>
+    {{::strings.generalPageMovedTemporarily}}
+  </main>
+
+  <ch-error-page resolver-error="resolverError"></ch-error-page>
+
+  <div ch-notice></div>
+
+  <div ng-view autoscroll="true" class="animate-fade z-index-90"></div>
+</div>
+<footer class="z-index-0 hidden-print" ch-cloak>
+  <section class="footer-links">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-9">
+            <ul class="">
+   <li
+          
+        >
+         <a href="/about"
+  
+>
+   <span class="text">About Choice Hotels</span></a>
+</li>
+      <li
+          
+        >
+         <a href="/affiliate"
+  
+>
+   <span class="text">Affiliates</span></a>
+</li>
+      <li
+          
+        >
+         <a href="/sitemap"
+  
+>
+   <span class="text">Sitemap</span></a>
+</li>
+      <li
+          
+        >
+         <a href="http://careers.choicehotels.com/"
+  
+    target="_blank"
+  
+>
+   <span class="text">Careers</span></a>
+</li>
+      <li
+          
+        >
+         <a href="/travel-professionals"
+  
+>
+   <span class="text">Travel Agents</span></a>
+</li>
+      <li
+          
+        >
+         <a href="/deals/best-rate"
+  
+>
+   <span class="text">Best Rate</span></a>
+</li>
+      <li
+          
+        >
+         <a href="/support"
+  
+>
+   <span class="text">Help</span></a>
+</li>
+      <li
+          
+        >
+         <a href="http://investor.choicehotels.com/phoenix.zhtml?c=99348&p=IROL-irhome"
+  
+    target="_blank"
+  
+>
+   <span class="text">Investor Relations</span></a>
+</li>
+      <li
+          
+        >
+         <a href="http://media.choicehotels.com/phoenix.zhtml?c=217856&p=irol-overview"
+  
+    target="_blank"
+  
+>
+   <span class="text">Media Center</span></a>
+</li>
+      <li
+          
+        >
+         <a href="http://www.roomkey.com/"
+  
+    target="_blank"
+  
+>
+   <span class="text">Room Key</span></a>
+</li>
+      <li
+          
+        >
+         <a href="/legal/privacy-policy"
+  
+>
+   <span class="text">Privacy & Security Policy</span></a>
+</li>
+      <li
+          
+        >
+         <a href="http://www.choicehotelsfranchise.com"
+  
+    target="_blank"
+  
+>
+   <span class="text">Franchise Opportunities</span></a>
+</li>
+      <li
+          
+        >
+         <a href="/legal/terms-of-use"
+  
+>
+   <span class="text">Terms Of Use</span></a>
+</li>
+      <li
+          
+        >
+         <a href="/legal/interest-based-ads"
+  
+>
+   <span class="text">Interest-Based Ads</span></a>
+</li>
+      </ul>
+
+<div class="footer-social">
+            <div class="">
+   <a href="https://www.facebook.com/choicehotels"><span class="ch-sprite ch-sprite-social-media-facebook" style="margin-right:.5em; display:inline-block;">&nbsp;</span></a><a href='https://twitter.com/choicehotels'><span class="ch-sprite ch-sprite-social-media-twitter" style="margin-right:.5em; display:inline-block;">&nbsp;</span></a><a href="https://www.linkedin.com/company/choice-hotels-international"><span class="ch-sprite ch-sprite-social-media-linkedin" style="margin-right:.5em; display:inline-block;">&nbsp;</span></a><a href="https://www.pinterest.com/choicehotels/"><span class="ch-sprite ch-sprite-social-media-pinterest" style="margin-right:.5em; display:inline-block;">&nbsp;</span></a><a href='https://www.youtube.com/user/Choicehotels'><span class="ch-sprite ch-sprite-social-media-youtube" style="margin-right:.5em; display:inline-block;">&nbsp;</span></a><a href='https://plus.google.com/+choicehotels/posts'><span class="ch-sprite ch-sprite-social-media-googleplus" style="margin-right:.5em; display:inline-block;">&nbsp;</span></a><a href="https://instagram.com/choicehotels/"><span class="ch-sprite ch-sprite-social-media-instagram" style="margin-right:.5em; display:inline-block;">&nbsp;</span></a></div>
+
+</div>
+        </div>
+        <div class="col-xs-3 footer-promo">
+          <div class="">
+   <h4>BOOK WITH OUR MOBILE APPS!</h4><p>Book anytime, anywhere! Available for iPhone, iPad, Android and Amazon devices.<br />&nbsp;</p><div class="row"><div class="col-xs-4"><a href="https://control.kochava.com/v1/cpi/click?campaign_id=kochoice-hotels-android555a23c34b6bc1251e9d6efac6&network_id=3306&device_id=device_id&site_id=1&append_app_conv_trk_params=1"><img class="img-responsive" ng-src="/cms/images/choice-hotels/google-play/google-play.png" /> </a></div><div class="col-xs-4"><a href="https://control.kochava.com/v1/cpi/click?campaign_id=kochoice-hotels-ios555a239610d5c9313b4674b81a&network_id=3306&device_id=device_id&site_id=1"><img class="img-responsive" ng-src="/cms/images/choice-hotels/app-store/app-store.png" /> </a></div><div class="col-xs-4"><a href="http://amzn.com/B00O9EN2R6"><img class="img-responsive" ng-src="/cms/images/choice-hotels/amazon/amazon.png" /> </a></div></div></div>
+
+</div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="border-row"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="brands-links">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="">
+   <div class="groups"><div><span>Enjoy the Extras</span> <a class="ch-sprite-logo ch-sprite-footer-ascend-logo" href="/ascend"><img alt="Ascend" ng-src="/{{::assetFingerprint}}/assets/ch-sprite.png" title="Ascend" /></a><a class="ch-sprite-logo ch-sprite-footer-cambria-logo" href="/cambria"><img alt="Cambria" ng-src="/{{::assetFingerprint}}/assets/ch-sprite.png" title="Cambria" /></a></div><div><span>Rest &amp; Refresh</span> <a class="ch-sprite-logo ch-sprite-footer-comfort-inn-logo" href="/comfort-inn"><img alt="Comfort Inn" ng-src="/{{::assetFingerprint}}/assets/ch-sprite.png" title="Comfort Inn" /></a> <a class="ch-sprite-logo ch-sprite-footer-comfort-suites-logo" href="/comfort-suites"><img alt="Comfort Suites" ng-src="/{{::assetFingerprint}}/assets/ch-sprite.png" title="Comfort Suites" /></a> <a class="ch-sprite-logo ch-sprite-sleep-logo" href="/sleep-inn"><img alt="Sleep Inn" ng-src="/{{::assetFingerprint}}/assets/ch-sprite.png" title="Sleep Inn" /></a></div><div><span>Get More Value</span> <a class="ch-sprite-logo ch-sprite-quality-logo" href="/quality-inn"><img alt="Quality Inn" ng-src="/{{::assetFingerprint}}/assets/ch-sprite.png" title="Quality Inn" /></a> <a class="ch-sprite-logo ch-sprite-footer-clarion-logo" href="/clarion"><img alt="Clarion" ng-src="/{{::assetFingerprint}}/assets/ch-sprite.png" title="Clarion" /></a></div><div><span>Stay Awhile</span> <a class="ch-sprite-logo ch-sprite-mainstay-logo" href="/mainstay"><img alt="Mainstay" ng-src="/{{::assetFingerprint}}/assets/ch-sprite.png" title="Mainstay" /></a> <a class="ch-sprite-logo ch-sprite-suburban-logo" href="/suburban"><img alt="Suburban" ng-src="/{{::assetFingerprint}}/assets/ch-sprite.png" title="Suburban" /></a></div><div><span>Travel Simply</span> <a class="ch-sprite-logo ch-sprite-footer-econolodge-logo" href="/econo-lodge"><img alt="Econo Lodge" ng-src="/{{::assetFingerprint}}/assets/ch-sprite.png" title="Econo Lodge" /></a> <a class="ch-sprite-logo ch-sprite-rode-way-logo" href="/rodeway-inn"><img alt="Rodeway Inn" ng-src="/{{::assetFingerprint}}/assets/ch-sprite.png" title="Rodeway Inn" /></a></div><div><span>Earn Rewards</span><a class="ch-sprite-logo ch-sprite-footer-cp-logo" href="/choice-privileges"><img alt="Choice Privileges" ng-src="/{{::assetFingerprint}}/assets/ch-sprite.png" title="Choice Privileges" /></a></div></div></div>
+
+</div>
+      </div>
+    </div>
+  </section>
+  <section class="footer-promo-accordion">
+    <accordion close-others="oneAtATime">
+      <accordion-group is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+        <accordion-heading>
+          <div>
+            Mobile Apps<span class="pull-right ch-icon" ng-class="{'ch-icon-chevron-down': !status.isFirstOpen, 'ch-icon-chevron-up': status.isFirstOpen}"></span>
+          </div>
+        </accordion-heading>
+        <div class="container">
+          <div class="">
+   <h4>BOOK WITH OUR MOBILE APPS!</h4><p>Book anytime, anywhere! Available for iPhone, iPad, Android and Amazon devices.<br />&nbsp;</p><div class="row"><div class="col-xs-4"><a href="https://control.kochava.com/v1/cpi/click?campaign_id=kochoice-hotels-android555a23c34b6bc1251e9d6efac6&network_id=3306&device_id=device_id&site_id=1&append_app_conv_trk_params=1"><img class="img-responsive" ng-src="/cms/images/choice-hotels/google-play/google-play.png" /> </a></div><div class="col-xs-4"><a href="https://control.kochava.com/v1/cpi/click?campaign_id=kochoice-hotels-ios555a239610d5c9313b4674b81a&network_id=3306&device_id=device_id&site_id=1"><img class="img-responsive" ng-src="/cms/images/choice-hotels/app-store/app-store.png" /> </a></div><div class="col-xs-4"><a href="http://amzn.com/B00O9EN2R6"><img class="img-responsive" ng-src="/cms/images/choice-hotels/amazon/amazon.png" /> </a></div></div></div>
+
+</div>
+      </accordion-group>
+    </accordion>
+  </section>
+  <section class="footer-copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="">
+   <p style="margin: 0px; padding: 1px 0px">&copy; 1995-2016. Choice Hotels International, Inc. All rights reserved.</p><p style="margin: 0px; padding: 1px 0px">All hotels and vacation rental properties listed on this site are independently owned and operated.</p></div>
+
+</div>
+      </div>
+    </div>
+  </section>
+</footer>
+
+<ch-casl-footer></ch-casl-footer>
+
+<ch-loader is-loading="globalLoaderCounter.value"></ch-loader>
+
+<script>
+  window.siteConfig = {
+    classicSite: 'http://www.choicehotels.com?source=newtoclassic',
+    defaultLang: 'EN',
+    globalLoaderTimeout: '30000',
+    omniture: {
+      reportSuite: 'chchoice',
+      globalProps: {
+        
+        prop18: 'New',
+        eVar18: 'New',
+        prop47: 'desktop',
+        eVar60: 'desktop'
+      }
+    },
+    groupRequest: {
+        url: 'https://salesforce.ringlead.com/cgi-bin/2796/1/dedup.pl',
+        oid: '00DU0000000HKoC',
+        checkInParameter: '00NU00000047cOQ',
+        checkOutParameter: '00NU00000047cOR'
+    },
+    cssHost: '',
+    deviceType: 'DESKTOP',
+    fileSuffix: '',
+    'assetFingerprint': '1.5.21.0',
+    bv: {
+      daysToReview: '90',
+      env: '',
+      host: 'choice.ugc.bazaarvoice.com',
+      qualifier: 'redes'
+    },
+    pageEvents: {
+      viewRenderingAllowance: '3000'
+    },
+    featureFlags: {
+    RATES_CAROUSEL:true,CAMBRIABUBBLEUP:true,FOLIO:true,VACATION_RENTALS_BRANDING:true,SITE_OP_RESERVATION_SUMMARY:false,YOUREXTRAS:true,LOYALTY:true,RATESTABS:false,CPREDEEM_DIGITAL:true,SITE_OP_ANALYTICS_HOTEL_POSITION:true,FAVORITES:false,DUPLICATE_BOOKING:false,RECAPTCHA:true,RAPIDBOOK:false,VACATIONRENTALS:true,LOGIN_MODAL_SHELL:true,GDC_CREATE_PROFILE:false,SITEOPTIMIZATION:true,CPREDEEM:true,PPC:true,GDC_UPDATE_PROFILE:false,INSPECTLET:true,GOOGLEWALLET:false,RECAPTCHA_DUMMY_KEY:false,GDC_GUEST_DATA_PAGE:false,SITE_OP_INLINE_VALIDATION_GDP:false,SITE_OP_SRP_2_WEEKS:false,MODULARIZED_STRINGS:false,PROMO_CATEGORY:false,SITE_OP_SRP_QUICK_VIEW:false,SITE_OP_CUSTOM_ROOM_DESCRIPTION:false,SITE_OP_OMNITURE_RATES:true,VACATION_RENTALS_FULL_PAGE_ERROR:true,PROPERTY_CAROUSEL:true,POINT_FORFEITURE:true,PREVIOUSPAGETRACKING:true,SRP_CAROUSEL:false,VACATION_RENTALS_SUPPORT_BLADE:true,SITE_OP_BEST_RATE_MOBILE:false,ROOMKEY:true,GDC_MODIFY_RESERVATION:false,RATES_GALLERY:true,TEALEAF_CAPTURE:false,FLEX_REWARDS:true,CP_VISA_SIGNATURE_PROMO_GDP:false,REVIEWS:true,CPREVEAL_BANNER:true,ADDTHIS_SHARING:true,IPERCEPTION:true,SITE_OP_RESERVATION_SUMMARY_FIXED:false,SITE_OP_FREE_CANCELLATION:false,LOCALIZATION:false,CONVERSION_TRACKING:true,BRIGHTTAG:true,SITE_OP_PROMINENT_PROPERTY_PHOTOS:false,APPDYNAMICS_UI_MONITORING:false,SITE_OP_GUEST_RECOMMENDED:false,REFER_A_FRIEND:false,SITE_OP_MOBILE_RATES:false,SRP_GALLERY:false,SITE_OP_MOBILE_GDP:false,CPJOINVISIBILITY:true,HOMEPAGE_TAKEOVER:true
+    },
+    roomkey: {
+      apiKey: '8c31177ca48577cba23904f2001df240'
+    },
+    iperceptionskey: '485b0f84-a6ca-4e0b-b7c0-e0ea15e48669',
+    siteOp: {
+      customDescriptionLength: 18
+    },
+    pointsIntegration: {
+      url: 'https://ssogateway.points.com/SSOGateway/gateway.do'
+    },
+    brandingContext: {"VACATION_RENTALS":"vacation-rentals"}
+  };
+</script>
+<script>
+    window._trackJs = {
+      token: '08fbd7ed06e349c3b6d6fb1c18b0a708',
+      application: 'choicehotels-com',
+      serialize: function (what) {
+        return JSON.stringify(what)
+            .replace(/"(firstName|lastName|email|homePhone|mobilePhone|creditCardNumber|creditCardName|username|password)":"(?:[^"]+)?"/g,
+                '"$1":"********"')
+            .replace(/([?&.](firstName|lastName|email|homePhone|mobilePhone|creditCardNumber|creditCardName|username|password)=)([^&"])*/g,
+                '$1********')
+            ;
+      },
+      version: "1.5.21.0",
+      onError: function(payload, error) {
+        var ignoredErrors = [
+          'quotaexceedederror',
+          'quota_exceeded_err',
+          '401 unauthorized: post /webapi/user-account/login',
+          '500 internal server error: post /webapi/user-account/forgot-username',
+          '403 forbidden: get /webapi/user-account/'
+        ];
+        var msg = payload.message.toLowerCase();
+        return !ignoredErrors.find(function(err) { return msg.indexOf(err) > -1; });
+      }
+    };
+  </script>
+<script src="/1.5.21.0/app/ch-vendor.js"></script>
+<script src="/1.5.21.0/app/ch-app.js"></script>
+<script src="/1.5.21.0/app/ch-templates.js"></script>
+
+<script>
+if (typeof(opModulesArray)!='undefined' && opModulesArray.length>0) {
+  for(var optmst=0;optmst<opModulesArray.length;optmst++){
+    optimost.displayModule(opModulesArray[optmst]);
+  }
+}
+</script>
+<!--[if lte IE 8]>
+  <div id="ie8-popup">
+  <div class="header"></div>
+  <h2>
+    Please update your browser to use choicehotels.com
+  </h2>
+  <div class="content">
+    <div class="dialog">
+      <img src="/1.5.21.0/assets/ch-logo.png" alt="Choice Hotels International"/>
+      <div class="description">
+        <p>
+          We redesigned the new CH.com with the latest technology.  This makes it way faster and easier for you to use.
+        </p>
+        <p>
+          Sadly, the browser you are currently using does not support our new technology.  Please download one of the awesome browsers below and you'll be on your way.
+        </p>
+      </div>
+    </div>
+    <div class="browser-wrapper">
+      <div class="browser border-right">
+        <img class="img-browser-logo" src="/1.5.21.0/assets/ie-logo.png" alt="Microsoft Internet Explorer" />
+        <p>INTERNET EXPLORER<br/>
+          VERSIONS: 9, 10, 11
+        </p>
+        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">DOWNLOAD NOW</a>
+      </div>
+      <div class="browser border-right">
+        <img class="img-browser-logo" src="/1.5.21.0/assets/chrome-logo.png" alt="Google Chrome" />
+        <p>GOOGLE CHROME</p><br/>
+        <a href="https://www.google.com/chrome/browser/desktop/">DOWNLOAD NOW</a>
+      </div>
+      <div class="browser border-right">
+        <img class="img-browser-logo" src="/1.5.21.0/assets/safari-logo.png" alt="Apple Safari" />
+        <p>SAFARI</p><br/>
+        <a href="https://support.apple.com/en-us/HT204416">DOWNLOAD NOW</a>
+      </div>
+      <div class="browser">
+        <img class="img-browser-logo" src="/1.5.21.0/assets/firefox-logo.png" alt="Mozilla Firefox" />
+        <p>FIREFOX</p><br/>
+        <a href="https://www.mozilla.org/en-US/firefox/new/">DOWNLOAD NOW</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="ie8-overlay"></div>
+<![endif]-->
+
+<ch-iperception></ch-iperception>
+<ch-inspectlet></ch-inspectlet>
+</body>
+</html>

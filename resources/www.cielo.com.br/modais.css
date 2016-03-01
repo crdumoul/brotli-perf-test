@@ -1,0 +1,310 @@
+
+
+html, body{
+	/* height: 100%; esta marcação faz ficar sem scroll no ie8 - não aplicar mobile também */
+
+}
+
+body{
+	overflow: visible; /* esta marcação serve para mostrar o modal até o final */
+}
+
+html{
+	overflow: auto; /* esta marcação é ncessaria para mostra o scroll em telas de modais **/
+}
+
+.modal-config{
+	float: left;
+	width: 940px;
+	visibility: hidden;
+	background: #fff;
+}
+
+.body-modal-open .ctnt-menuFixo{
+	visibility: hidden !important;
+}
+
+
+
+.noParent{
+	float: none;
+	visibility: visible;
+	margin: 0 auto;
+}
+
+/* modais */
+
+.reveal-modal-bg { 
+	position: fixed; 
+	height: 100%;
+	width: 100%;
+	background: #000;
+	background: rgba(0,0,0,.8);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	z-index: 100;
+	display: none;
+	top: 0;
+	left: 0; 
+}
+
+.reveal-modal {
+	visibility: hidden;
+	display: none;
+	top: 100px; 
+	left: 50%;
+	margin-left: -300px;
+	width: 520px;
+	position: absolute;
+	z-index: 101;
+	 background-color:#fff; 
+	 /* margin-top: -68px !important; */ 
+	overflow: hidden;
+}
+
+
+.header-modal{
+	float:left; width:100%;
+	height:102px;
+}
+.modal-logo-cielo{
+	float:left;
+	width:106px;
+	overflow:hidden;
+	text-indent:-500px;
+	height:35px;
+	background:url(../../images/logo-cielo-branco106x35.png) no-repeat;
+	margin:34px 0 0 40px;
+}
+
+.modal-logo-div{
+	border-right: 1px solid #fff;
+	padding-right: 20px;
+}
+
+.modal-titulo{
+	float:left;
+	color:#fff;
+	font-size:20px;
+	margin:44px 0 0 36px;
+}
+
+.modal-titulo2{
+	float:left;
+	color:#fff;
+	font-size:20px;
+	margin:44px 0 0 36px;
+}
+
+.header-modal .bt{
+	float:left;
+	margin:40px 0 0 27px;
+}
+
+.header-modal .modal-fechar{
+	float:right;
+	padding: 7px 38px 7px 0;
+	background: url(../../images/icons/ico-fecharmodal-28x28.png) no-repeat right top;
+	font-size:15px;
+	color:#fff;
+	margin: 37px 39px 0 0;
+}
+
+.header-modal .modal-fechar:hover{
+	background: url(../../images/icons/hoverFecharModal.png) no-repeat right top;
+	text-decoration: underline;
+}
+
+.modal-part{
+	float:left;
+	width:100%;
+}
+
+.modal-voltar{
+	clear:both;
+	float:left;
+	padding:7px 0 7px 40px;
+	margin:25px 0 25px 40px;
+	font-size:15px;
+	font-weight:bold;
+	color:#00aeef;
+	background: url(../../images/icons/setaCarouselEsq28x28.png) no-repeat 0 0;
+}
+
+.modal-voltar:hover{
+	background: url(../../images/icons/ico-seta-right-26x26Hover.png) no-repeat 0 0;
+	text-decoration: underline; 
+}
+
+
+.reveal-modal.small 		{ width: 200px; margin-left: -100px;}
+.reveal-modal.medium 		{ width: 400px; margin-left: -200px;}
+.reveal-modal.large 		{ width: 600px; margin-left: -300px;}
+.reveal-modal.xlarge 		{ width: 940px; margin-left: -470px;}
+.reveal-modal.full 			{ width: 100%; margin-left:0; left:0; padding:0;}
+
+.content-modal {
+	width: 860px;
+	padding: 40px;
+	position: relative;
+}
+
+.content-modal:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+
+#iframeModalUrl{
+	width:940px;
+	min-height: 461px;
+	visibility: hidden;
+}
+
+#preLoad{
+	text-align:center;
+	position:absolute;
+	height: 461px;
+	width: 940px;
+	background: #fff;
+	z-index: 999;
+}
+#preLoad span{
+	display: block;
+	padding-top: 190px;
+}
+
+a.video-depoimento{
+	background: #fff;
+	opacity:0;
+	filter:alpha(opacity=0); /* For IE8 and earlier */
+}
+
+
+ @media only screen and (max-width: 767px) {  
+   /*  @media only screen and (min-width: 100px) { */ 
+ 
+ .body-modal-open  header{
+	visibility: hidden !important;
+}
+
+#iframeModalUrl{
+	width:640px;
+}
+
+.modal-config{
+	float: left;
+	width: 640px;
+}
+
+.noParent{
+	float: none;
+}
+
+#preLoad{
+	width: 640px;
+}
+
+
+	.reveal-modal.small 		{ width: 100px; margin-left: -50px;}
+	.reveal-modal.medium 		{ width: 200px; margin-left: -100px;}
+	.reveal-modal.large 		{ width: 300px; margin-left: -150px;}
+	/*.reveal-modal.xlarge 		{ width: 640px; top:32px !important; margin-left:0; left:0;}*/
+	.reveal-modal.xlarge 		{ width: 640px; top:0; margin-left:0; left:0;}
+	.reveal-modal.full 			{ width: 100%; margin-left:0; left:0;}
+	
+	
+	.reveal-modal.xlarge {
+		margin-top: 32px !important;
+	}
+	
+	.header-modal{
+		height:259px;
+	}
+	.modal-titulo{
+		float:left;
+		font-size:40px;
+		margin:0;
+		width:623px; /* Enquanto a largura do modal não é consertada para 100% da largura da tela sem o espaço do scroll */
+		text-align:center;
+	}
+
+	.modal-titulo2{
+		float:left;
+		font-size:40px;
+		margin:0;
+		width:100%;
+		text-align:center;
+		color: #fff;
+		left: 0;
+		position: relative;
+
+	}
+	
+	.header-modal .bt{
+		float:left;
+		margin:35px 0 0 182px;
+		font-size:30px;
+		line-height: 1;
+		padding:20px 70px;
+		 -webkit-border-radius: 35px;
+		-moz-border-radius: 35px;
+		border-radius: 35px;
+	}
+	
+	.header-modal .modal-fechar{
+		float:right;
+		padding: 0;
+		background: url(../../images/icons/ico-fecharmodal-50x50.png) no-repeat right top;
+		overflow:hidden;
+		text-indent:-500px;
+		margin: 28px 38px 0 0;
+		width:50px;
+		height:50px;
+	}
+
+	.header-modal .modal-fechar:hover{
+		background: url(../../images/icons/ico-fecharmodalHover-50x50.png) no-repeat right top;
+	}
+	
+	.modal-voltar{
+		padding:20px 0 20px 84px;
+		font-size:30px;
+		width: 115px;
+		position: relative;
+		display: block;
+		left: 50%;
+		margin: 50px 0 !important;
+		margin-left: -99px !important;
+		background: url(../../images/icons/setaCarouselEsq66x66.png) no-repeat 0 0;
+		height: 90px !important;
+	}
+
+	.modal-voltar:hover{
+		background: url(../../images/icons/setaHover66x66.png) no-repeat 0 0;
+	}
+
+	.content-modal {
+		width: 540px;
+		padding: 40px 50px;
+	}
+
+	.content-modal .table-wrapper {
+		width: 540px;
+	}
+
+}
+@media only screen and (max-width: 767px) {
+    .header-modal {
+        height: 106px;
+    }
+    .modal-titulo2 {
+        margin-top: -45px;
+    }
+    .header-modal .modal-fechar {
+        z-index: 666;
+        position: relative;
+    }
+}

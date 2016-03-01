@@ -1,0 +1,75 @@
+/**
+ * header shopping cart
+ **/
+
+.shoppingcart{
+   background-image: none;
+}
+
+.minicart-iconArea .cartIconItemCount{   
+   color: #FFFFFF;
+   font-size: 10px;
+   position: relative;
+   right: -8px;
+   top: -20px;
+   display:inline-block;
+   padding:2px 2px 2px 1px;
+   text-align:center;
+   min-width:12px;
+   background:#cc0904;
+   border-radius:100%;
+}
+
+.tier2Container {
+   display: inline-block; 
+   left:0;
+   width: 758px;
+   height: 100%;
+}
+
+.navigationMegaCells {
+   min-height: 100px;
+   margin-bottom: 20px;
+}
+
+.navigationHeaderImg img {
+   float: right;
+   vertical-align:top;
+   width: 214px; 
+   margin: 0px;
+  /* padding-right: 6px;*/
+   border: none;
+   text-align: right;
+   right: 0;   
+   /*position: absolute;*/
+}
+
+.footerContent{
+ overflow:hidden;
+}
+.footerSocial{
+   margin: 0;
+   float:right;
+}
+
+input[type='text'].headerInput{
+	display:inline-block;
+	margin:0;
+}
+
+.cartTxt,.cartLink{color:#505050;}
+.cartLink.cart-signed-in-link{color:#fff;}
+.navigationMegaBox{z-index:200;}
+.sign-in-container .login-button:active{background-color:#001F38;padding-top:11px;padding-bottom:9px;padding-left:11px;padding-right:9px;}
+.sign-in-container .login-button span{position:relative;left:0;top:0;}
+.megaMenuHeader img{display:none;}
+
+/*
+.navigationMegaCells .megaMenuHeader:after {
+   background: url("/ux/themes/main/common/img/bluearrow.png") center center no-repeat;
+   content: " ";
+   display: inline-block;
+   height: 9px;
+   width: 9px;
+   margin-left: 2px;
+}*/

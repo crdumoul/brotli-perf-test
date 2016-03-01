@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url("/Content/Styles/font/oswald/oswald-regular-webfont.eot");
+  src: url("/Content/Styles/font/oswald/oswald-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/Content/Styles/font/oswald/oswald-regular-webfont.woff2") format("woff2"), url("/Content/Styles/font/oswald/oswald-regular-webfont.woff") format("woff"), url("/Content/Styles/font/oswald/oswald-regular-webfont.ttf") format("truetype"), url("/Content/Styles/font/oswald/oswald-regular-webfont.svg#oswaldregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'droid_sans';
+  src: url("/Content/Styles/font/droidsans/droidsans-bold-webfont.eot");
+  src: url("/Content/Styles/font/droidsans/droidsans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/Content/Styles/font/droidsans/droidsans-bold-webfont.woff2") format("woff2"), url("/Content/Styles/font/droidsans/droidsans-bold-webfont.woff") format("woff"), url("/Content/Styles/font/droidsans/droidsans-bold-webfont.ttf") format("truetype"), url("/Content/Styles/font/droidsans/droidsans-bold-webfont.svg#droid_sansbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'droid_sans';
+  src: url("/Content/Styles/font/droidsans/droidsans-webfont.eot");
+  src: url("/Content/Styles/font/droidsans/droidsans-webfont.eot?#iefix") format("embedded-opentype"), url("/Content/Styles/font/droidsans/droidsans-webfont.woff2") format("woff2"), url("/Content/Styles/font/droidsans/droidsans-webfont.woff") format("woff"), url("/Content/Styles/font/droidsans/droidsans-webfont.ttf") format("truetype"), url("/Content/Styles/font/droidsans/droidsans-webfont.svg#droid_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* put in a ":before" selector
+   need to give base element padding-left: 20px 
+*/
+/* put in a ":after" selector of base element
+   need to give base element padding-right: 15px 
+*/
+#local-store-special-offers .title {
+  text-transform: uppercase; }
+  #local-store-special-offers .title h1 {
+    float: left; }
+    #local-store-special-offers .title h1 span {
+      display: inline-block; }
+  #local-store-special-offers .title .links-menu {
+    float: right;
+    padding: 10px 0; }
+    #local-store-special-offers .title .links-menu div {
+      position: relative;
+      margin: 1px 0 7px 0;
+      font-size: 10px;
+      line-height: 10px;
+      font-family: "Oswald", impact, charcoal, sans-serif;
+      letter-spacing: 1px;
+      text-align: right; }
+      #local-store-special-offers .title .links-menu div a {
+        padding-right: 18px; }
+        #local-store-special-offers .title .links-menu div a:after {
+          content: "";
+          position: absolute;
+          right: 4px;
+          border: 5px solid transparent;
+          border-left: 5px solid white; }
+          .nl-BE #local-store-special-offers .title .links-menu div a:after, .fr-BE #local-store-special-offers .title .links-menu div a:after, .nl-NL #local-store-special-offers .title .links-menu div a:after {
+            border-left: 5px solid black; }
+#local-store-special-offers .vouchers-wrapper {
+  clear: both; }
+  #local-store-special-offers .vouchers-wrapper .vouchers-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    height: 325px;
+    overflow: hidden; }
+    #local-store-special-offers .vouchers-wrapper .vouchers-container .special-offer {
+      margin: 10px auto 10px auto; }
+
+#disclaimer-footer .disclaimer-section {
+  margin-top: 0;
+  padding-top: 0; }
+
+/*# sourceMappingURL=localstorespecialoffers.css.map */

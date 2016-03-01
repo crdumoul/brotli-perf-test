@@ -1,0 +1,858 @@
+﻿/* =0 Reset
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+@import url('reset.css');
+@import url('product_management_base.css?version=20120621');
+@import url('cart_management_base.css');
+@import url('los_base.css');
+@import url('user_management_base.css?version=201104');
+@import url('content_base.css?version=20120621');
+@import url('icons.css');
+/* =1 Global s
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/ 
+body { line-height:1.4em; font:normal 12px Verdana, Arial, Helvetica, sans-serif; vertical-align:top; color:#494948; background-color:white; }
+
+/* =2 Links & Text Color 
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/ 
+a:link, a:visited { text-decoration:none; color:#006699; }
+a:hover { text-decoration:underline; cursor:pointer; }
+a:active { }
+/* =3 Headings
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/ 
+h1 { font-size:26px; font-weight:lighter; letter-spacing:-1px; }
+h2 { font-size:20px; font-weight:lighter; }
+h3 { font-size:18px; font-weight:bolder; }
+h4 { font-size:16px; font-weight:lighter; line-height:1.8em; }
+h5 { font-size:14px; font-weight:lighter; }
+h6 { font-size:16px; font-weight:bolder; }
+h7 {font-size:12px !important; font-weight:bolder;}
+.ifrClass {width:100%;}
+/* =4 Header & Navigation 
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.MC_LYT_PWSConditionalStyle {width:960px; margin: 0 auto;}
+.MC_LYT_PWS_landing {width:960px; margin: 0 auto;}
+#LYT_PageContainer, #LYT_Header, #LYT_Header a.GN_NAV_Logo {position:relative; }
+#LYT_Header ul li, .GF_NAV_Tertiary ul li { display:block; }
+#LYT_Header { width:990px; z-index:10;left:-30px; /*height:106px;*/}
+#LYT_Header {font-family:Arial, Verdana, Sans-Serif;}
+.LYT_Header_Print { display:none; }
+.GN_headerRule{border-top:1px solid #ccc; display:block;height:0px;}
+.GN_headerRuleFull{padding:0px 0 0px 0;border-bottom:solid 1px #ccc;height:auto;}
+.GN_PWS_Header {float:left;font-size:16px;color:#40a0ca;}
+.GN_headerRuleFull .GN_PWS_Header {padding-top:3px;}
+.GN_NAV_Primary {position:relative; right/*:0;top:85px;*/ z-index:1;}
+.GN_NAV_Primary ul.rmRootGroup {float:right;}
+.GN_NAV_Primary a { color:#6E6E6E; font-weight:700;font-family:Verdana !important;letter-spacing:-0.02em;font-size:12px }
+.GN_NAV_Primary a:hover { color:#0066CC; text-decoration:none; }
+/*
+-------------------------*/
+.MC_LYT_NoWrap td{white-space:nowrap;}
+.nowrap {white-space:nowrap;}
+
+/* = Mega Menu
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+#menu {float:right; list-style:none; margin-top:-8px; padding:0px 10px}
+#menu li {float:left; display:block; text-align:center; position:relative; padding:8px 8px 6px 8px; margin-left:0px;}	
+#menu li > a {cursor:default;}
+#menu li:hover {color:#fff;background:#858585; -moz-box-shadow:3px 3px 3px rgba(0,0,0,0.2); -webkit-box-shadow:3px 3px 3px rgba(0,0,0,0.2); box-shadow:3px 3px 3px rgba(0,0,0,0.2); -moz-border-radius-topleft: 3px; -moz-border-radius-topright: 3px; -khtml-border-radius-topleft: 3px; -khtml-border-radius-topright: 3px; -webkit-border-top-left-radius: 3px; -webkit-border-top-right-radius: 3px; border-top-left-radius: 3px; border-top-right-radius: 3px; border:none}
+#menu li a {font:bold 12px Verdana, Arial, Helvetica, sans-serif; color:#6e6e6e; display:block; outline:0; text-decoration:none}
+#menu li:hover a {color:#fff}
+#menu .dropdown_0columns, #menu .dropdown_1columns, #menu .dropdown_2columns, #menu .dropdown_3columns, #menu .dropdown_4columns, #menu .dropdown_5columns, #menu .dropdown_6columns {margin-top:6px; float:left; position:absolute; top: auto; left: 0; display:none; text-align:left; background:#fff; -moz-box-shadow:3px 3px 3px rgba(0,0,0,0.2); -webkit-box-shadow:3px 3px 3px rgba(0,0,0,0.2); box-shadow:3px 3px 3px rgba(0,0,0,0.2); -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; border:1px solid #858585}
+#menu .dropdown_0columns, #menu .dropdown_1columns {width:248px}
+#menu .dropdown_2columns {width:374px}
+#menu .dropdown_3columns {width:560px}
+#menu .dropdown_4columns {width:748px}
+#menu .dropdown_5columns {width:934px}
+#menu .dropdown_6columns {width:934px}
+#menu .dropdown_0columns .column, 
+#menu .dropdown_1columns .column {width:247px}
+#menu .dropdown_2columns .column, 
+#menu .dropdown_3columns .column, 
+#menu .dropdown_4columns .column, 
+#menu .dropdown_5columns .column {width:185px}
+#menu .dropdown_6columns .column {width:154px}
+#menu .dropdown_0columns .sub_column, 
+#menu .dropdown_1columns .sub_column {width:247px}
+#menu .dropdown_2columns .sub_column, 
+#menu .dropdown_3columns .sub_column, 
+#menu .dropdown_4columns .sub_column, 
+#menu .dropdown_5columns .sub_column {width:185px}
+#menu .dropdown_6columns .sub_column {width:154px}
+#menu .dropdown_2columns .column_span, 
+#menu .dropdown_2columns .column_span_2columns, 
+#menu .dropdown_3columns .column_span, 
+#menu .dropdown_3columns .column_span_2columns,
+#menu .dropdown_4columns .column_span, 
+#menu .dropdown_4columns .column_span_2columns,
+#menu .dropdown_5columns .column_span,
+#menu .dropdown_5columns .column_span_2columns {width:371px}
+#menu .dropdown_3columns .column_span_3columns {width:557px}
+#menu .dropdown_6columns .column_span {width:309px}
+#menu .dropdown_2columns .header_span, 
+#menu .dropdown_2columns .header_span_2columns, 
+#menu .dropdown_3columns .header_span, 
+#menu .dropdown_3columns .header_span_2columns, 
+#menu .dropdown_4columns .header_span, 
+#menu .dropdown_4columns .header_span_2columns, 
+#menu .dropdown_5columns .header_span,
+#menu .dropdown_5columns .header_span_2columns {width:342px}
+#menu .dropdown_3columns .header_span_3columns {width:513px}
+#menu .dropdown_6columns .header_span {width:280px}
+#menu .Squared_Left {-webkit-border-top-left-radius:0px; -moz-border-radius-topleft:0px; border-top-left-radius:0px}
+#menu .Squared_Right {-webkit-border-top-right-radius:0px; -moz-border-radius-topright:0px; border-top-right-radius:0px}
+#menu .sub_column, #menu .col_full, #menu .column {display:inline; float:left; position:relative}
+#menu .col_full {width:100%}
+#menu .col_brdr1 {border-right:#cacaca solid 1px}
+#menu .col_brdr2 {border-right:#cacaca solid 2px}
+#menu .column {margin:12px 0}
+#menu h2, #menu h3, #menu ul li {font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left}
+#menu li div h2 a { padding:10px; font-size:13px; font-weight:bold}
+#menu li:hover div h2 a {color:#fff; background-color:#858585}
+#menu li:hover div h2 a:hover {color:#fff; background-color:#757575}
+#menu .column_hdr { min-height:34px; margin:0 15px 9px 15px; border-bottom:#cacaca solid 2px }
+#menu .column_hdr h3 {margin:0; padding-top:8px; font-size:15px}
+#menu h3 {color:#838383; font-size:13px; margin:0 0 7px 15px}
+#menu li .sub_column li a { padding:5px 15px 5px 15px; font-size:12px; color:#777}	
+#menu li:hover .sub_column a:hover {color:#222}
+#menu li ul {list-style:none; padding:0; margin:0}	
+#menu li ul li {position:relative; padding:0; margin:0; float:none; text-align:left; width:100%}
+#menu li ul li a {padding:0; margin:0}
+#menu li ul li > a {cursor:pointer; font-weight:normal}
+#menu li ul li:hover {background:none; padding:0; margin:0; -moz-box-shadow:none; -webkit-box-shadow:none; box-shadow:none; -moz-border-radius:0; -webkit-border-radius:0; border-radius:0; cursor:pointer}
+#menu li ul ul {padding-left:12px}
+#menu #promos a {display:inline; margin: 0; padding: 0}
+#menu #promos img {float:left}
+
+.GN_NAV_Primary li { margin-left:16px; }
+.GN_NAV_Primary .GN_TXT_NavNoClick { }
+.GN_NAV_Products { float:left; padding-left:2px; width:805px; }
+.GN_NAV_Products div.GN_NAV_ProductsHdr { color:#366C9D; float:left; height:15px; padding:34px 0 1px; width:320px; }
+.GN_NAV_Wrap {position:relative; /*top:9px; right:0;*/ width:990px;z-index:5500; pointer-events:none; margin-bottom:35px;}
+.GN_NAV_Wrap div, .GN_NAV_Wrap ul {pointer-events:auto;}
+.GN_NAV_WrapRight { float:right; /*background:#fff url(../images/common/GN_NAV_Wrap_bkg.gif) top right no-repeat;*/ padding-left:12px; height:39px; }
+.GN_NAV_WrapLeft { float:right; /*background:#fff url(../images/common/GN_NAV_Wrap_bkg.gif) top left no-repeat;*/ padding-right:4px; height:39px; }
+a.linklogin { border-right:1px solid #DADADA; color:#9C9C9C; line-height:10px; margin:0 5px 0 0; padding:0 5px 0 0; }
+.GN_NAV_Locale_Pipe { padding-right:6px;background:transparent url(../images/ico_nav_pipe.gif) no-repeat 100% 50%;}
+.GN_NAV_Locale_PipeLR { padding:0 8px 0 6px; background:transparent url(../images/ico_nav_pipe.gif) no-repeat 100% 50%; }
+.GN_NAV_Locale_PipeLR div { padding-right: 3px; } 
+ul.GN_NAV_Locale { color:#9C9C9C; display:block; float:right; font-size:10px; padding:8px 10px 0 0; /*background:#fff url(../images/common/GN_NAV_Wrap_center_bkg.gif) repeat-x top left;*/ }
+ul.GN_NAV_Locale li { float:left; list-style-type:none; margin:0; padding:5px 0 0 0;vertical-align:top; }
+ul.GN_NAV_Locale li.countryArrow{padding-top:0px!important; margin-left:9px;}
+ul.GN_NAV_Locale li.countryArrow a{cursor:pointer;text-decoration:none;}
+ul.GN_NAV_Locale .countryArrow .RadMenu .rmFirst .rmExpandDown{ display:inline-block; padding-right:10px; background:url(../images/common/ico_nav_arrowDown.gif) right 60% no-repeat; }
+.countryArrow .rmSlide ul { background-color:#f7f7f7; border-bottom:4px solid #CCCCCC; margin:0 0 0; padding: 0 4px 4px 4px !important; }
+ul.GN_NAV_Locale li.switchUser {margin-left:0px;}
+ul.GN_NAV_Locale li.switchUser a{font-weight:700; margin-left:0px;}
+ul.GN_NAV_Locale li.switchUser .rmSlide a{font-size:10px;text-decoration:none; color:#006699;}
+ul.GN_NAV_Locale li.switchUser .rmSlide li{margin-right:10px;}
+ul.GN_NAV_Locale .singleUser{font-weight:700; margin-left:0px}
+.GN_LYT_Wrap_bkgd { /*background:#fff url(../images/common/GN_NAV_Wrap_center_bkg.gif) repeat-x top left;*/ float:right; padding:2px 0 0px 0; *padding:1px 0 0px 0;*width:180px;}
+.GN_LYT_Wrap_bkgd .btn_search { *padding-top:1px;}
+#GN_LYT_Search { float:right; overflow:hidden; padding-top:5px; } 
+#GN_LYT_Search fieldset { margin:0; padding:0; }
+#GN_LYT_Search ol { margin:0; padding:0; }
+.GN_FRM_SearchBox { font-size:10px;height:16px; margin:0px 4px 0 0; padding:1px; top:1px; width:95px; border:1px solid #C2C2C2; *margin-top:1px;}
+#GN_LYT_Search legend, #GN_LYT_Search label { display:none; }
+#GN_LYT_Search li { float:left; margin:0; }
+legend { margin:0; padding:0; }
+.GE_LYT_ContactInfoOverlay{background-color:#fff;padding: 5px; border: solid 1px #ccc; right:10px;position:absolute;top:129px;_top:147px;width:330px;z-index:100;}
+/*Telerik Dropdown Sytles*/
+.RadMenu { z-index:2500; }
+.RadMenu_Default .rmGroup { background-color:#f7f7f7; border-bottom:4px solid #CCCCCC; margin:0 0 0; }
+.RadMenu_Default .rmGroup .rmLink {font-weight:normal; text-decoration:none;}
+.RadMenu_Default .rmSlide { margin:0 0 0 0 !important; }
+.RadMenu_Default ul.rmHorizontal li ul.rmVertical li { margin:0; }
+/*.GN_NAV_Primary .rmSlide .rmLink { background:transparent url(../images/ico_arrowR.gif) no-repeat scroll 5px 50%; padding-left:7px;}*/
+.GN_NAV_Primary .rmSlide .rmLink:hover { background-color:#eee; color:#3365B4; }
+.RadMenu_Default .rmGroup .rmLink .rmText { padding:4px 18px 5px 10px; }
+.RadMenu span.rmText{vertical-align:top !important}
+.RadMenu_Default .rmHorizontal .rmItem { border-right:0 solid #666666; padding-bottom:0; }
+.RadMenu_Default .rmHorizontal .rmLast { border-right:0 none;margin-right:17px; }
+.RadMenu_Default .rmHorizontal .rmFirst{margin-left:0px;}
+.RadMenu_Default .rmHorizontal .rmSeparator { border:0 none; height:18px; line-height:20px; width:1px; }
+.RadList tbody td {background-color:#fff;}
+.RadList tbody td.MC_LYT_FirstItem {background-color:#fff;}
+.RadList tbody td.MC_LYT_LastItem {background-color:#fff;}
+/*Header Country Selector Styles*/
+.GN_LYT_Body { margin:20px 0 0 80px; overflow:hidden; width:780px; }
+div.MC_LYT_CountriesWrap { margin-top:2px; padding:10px; }
+div.MC_LYT_CountriesWrap:after { clear:both; content:"."; display:block; height:0; visibility:hidden; }
+div.MC_LYT_CountriesWrap h2 { font-size:26px; font-weight:normal; margin-bottom:7px; }
+div.MC_LYT_Countries { float:left; padding-left:20px; width:300px; }
+div.MC_LYT_Countries h3 { font-size:14px; font-weight:normal; }
+div.MC_LYT_Countries ul { float:left; margin:10px 0 0 15px; padding:0; }
+* html div.MC_LYT_Countries ul { margin-left:7px; }
+div.MC_LYT_Countries li { float:left; font-size:12px; list-style-image:none; list-style-position:outside; list-style-type:none; margin-bottom:3px; width:140px; }
+div.MC_LYT_Countries li a { text-decoration:none; color:#9EC9E6;}
+div.MC_LYT_Countries li a.MC_LYT_Selected { font-weight:bold; }
+
+.GN_LYT_CountrySelector { height:585px;left:-160px;overflow:hidden;position:absolute;top:88px;width:972px;z-index:100;}
+.GN_LYT_CountrySelector div.GN_LYT_Header { float:right; margin:20px 20px 0 0; padding:2px 12px; text-align:right; }
+.GN_LYT_CountrySelector ul { margin:0; }
+.GN_LYT_CountrySelector li.GN_LYT_Column { float:left; margin:0 20px 0 0; width:240px; }
+.GN_LYT_CountrySelector li.GN_LYT_Column ul { margin:0; padding-bottom:25px; }
+.GN_LYT_CountrySelector li { list-style-image:none; list-style-position:outside; list-style-type:none; width:100%; }
+.GN_LYT_CountrySelector li ul { padding-bottom:15px; }
+.GN_LYT_CountrySelector li.GN_LYT_Column li { clear:both; display:block; padding:3px 0 0; border-bottom:1px solid #E9F1F3; color:#7C7F90; }
+.GN_LYT_CountrySelector li.GN_LYT_Column li span.countryName { float:left; width:115px; }
+.GN_LYT_CountrySelector li.GN_LYT_Column li span.countryLanguage { float:left; font-weight:bold; margin:0 0 0 5px;width:110px; }
+.GN_LYT_CountrySelector li.GN_LYT_Column li span a:hover { text-decoration:underline; }
+.GN_LYT_CountrySelector li li:after { clear:both; content:"."; display:block; height:0; visibility:hidden; }
+.GN_LYT_CountrySelector li label.GN_NAV_Selected { font-weight:bold; }
+.GN_LYT_CountrySelector h3 { font-size:18px; font-weight:normal; margin:0 0; padding:0; color:#3B658D; }
+.GN_LYT_CountrySelector { background-image:url(../images/common/lan_pop.png); }
+.GN_LYT_CountrySelector div.GN_LYT_Header span.GN_NAV_Close a { cursor:pointer; font-size:100%; font-weight:normal; color:#7696B4; }
+/* FUNCTIONS FOUND NEAR THE HEADER
+-------------------------------------------------------------------*/
+
+/* 5/29/2009 - DAS */
+/*This will be replaced once the assessments aspx file is available */
+.MC_LYT_header_functions_container { padding:10px 15px 0 0; float:right; }
+/* =5 Navigation - Shopping Nav
+-------------------------------------------------------------------*/
+.NAV_ShoppingNav {margin-right:7px; position:relative; /*float:right; width:700px;*/}
+.NAV_ShoppingNav h1 { letter-spacing:-1px; color:#858585; margin-left:18px; }
+.NAV_ShoppingNav ul { float:right; margin:0px 10px 0 0; }
+.NAV_ShoppingNav ul, .NAV_ShoppingNav ul a { color:#063D88; }
+.NAV_ShoppingNav ul li { display:block; float:left; margin-right:8px;line-height:14px; }
+.NAV_ShoppingNav ul li a span.small { font-size:7px; }
+.NAV_ShoppingNav ul li.NAV_ShoppingBag, .NAV_ShoppingNav ul li.NAV_ItemCount { border-right:none; margin-right:0; padding-right:0; min-height:14px; }
+.NAV_ShoppingNav ul li.NAV_ShoppingBag { margin-right:4px; }
+.NAV_ShoppingNav ul li.NAV_ItemCount a { padding-right:21px; display:block; }
+.NAV_YourIBO { float:right; padding:0 15px 0px 0;}
+.NAV_YourIBO a { text-decoration:none; color:#245475; }
+.NAV_YourIBO a:hover { text-decoration:underline; }
+.LYT_Breadcrumb { padding:6px 0 6px 15px; margin:0; font-size:10px !important;}
+.LYT_Breadcrumb div { float:left; padding-left:4px; }
+.LYT_Breadcrumb a { color:#858585; float:left; margin:0 5px;vertical-align:top; font-size:10px !important;vertical-align:top; }
+.LYT_BreadcrumbLast{margin-left:5px;}
+.LYT_Breadcrumb span { float:left; }
+.LYT_BannerContainer { clear:both; overflow:auto; line-height:0px; }
+#LYT_NavAndContentWrap { /*overflow:auto; */ margin-top:0px; position:relative; z-index:8 }
+#LYT_NavAndContentWrap.top_border { border-top:solid 1px #ccc; }
+.MarginLeft-10 { margin-left:10px; }
+.NavUtililityUserName { font-size:11px; font-weight:700; }
+/*Left Nav Shopping DWP AIU2886*/
+.SN_LYT_Container { float:left; margin:10px 11px 0 0; width:154px; }
+.SN_LYT_Container h3 { display:block; color:#494948; font-weight:700; font-size:12px; padding:3px 5px 3px 18px; border-bottom:5px solid #e3e6e8; }
+.SN_LYT_Container ul { list-style:none; margin-bottom:12px; }
+.SN_LYT_Container ul li { line-height:1.18em; border-bottom:1px solid #e3e6e8; display:block; padding:7px 6px 7px 18px; color:#494948;vertical-align:top !important; }
+.SN_LYT_Container ul li a{vertical-align:top;}
+.SN_LYT_Container ul li a:hover {text-decoration:underline; }
+.SN_LYT_Container ul li a.selected{font-weight:700;}
+.SN_LYT_Container ul li a.disabled{color:#ccc;}
+.SN_LYT_Container ul li div.Child2{padding-left:10px; line-height:1.3em; margin:6px 0;vertical-align:top !important;}
+/* =6 Middle
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+#LYT_Body { width:960px; }
+#LYT_PageContainer p { line-height:1.6em; }
+.MC_LYT_Protected #LYT_PageContainer{border-top:1px solid #ccc; padding-top:20px; min-height:350px}
+.MC_LYT_Container { float:right; min-width:795px; margin-bottom:30px; margin-top:10px; min-height:400px; }
+.MC_LYT_Container .MC_LYT_CategoryContainer { width:960px; }
+.MC_WidthWLeftNav {width:795px}
+/* =7 Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* 4/29/2009 - Dave Snyder Modded by DMK AIUT986 20090827 */
+input, select, textarea { padding: 3px; }
+.MC_LYT_FORM_Container { padding-top:20px; padding-bottom:30px; }
+.MC_LYT_FORM_Container_Reg {padding-left: 15px; line-height: 1.1em; border: none; width: 28em;}
+.MC_LYT_FORM_Req_Legend { float:right; margin-left:20px; font-size:10px; white-space:nowrap; }
+.MC_LYT_FORM_Field { line-height:24px; padding-right:10px; }
+.MC_LYT_FORM_FieldLabel { font-weight:bold; }
+.MC_LYT_FORM_textfield220px { width:220px; }
+.MC_LYT_FORM_textfield240px { width:240px; }
+.MC_LYT_FORM_notification { font-size:10px; padding-left:10px; }
+.MC_LYT_FORM_radiol_hangindent { padding-left:20px; }
+.MC_LYT_FORM_margBottom { margin-bottom:10px; }
+.MC_LYT_FORM_valign_top { vertical-align:top; }
+.MC_LYT_FORM_listerroricon { margin-right:5px; }
+.MC_LYT_FORM_Container_Reg legend { font-weight: bold }
+.MC_LYT_FORM_Container_Reg h7 { line-height: 1.1em; font-size: 1em; font-weight: 800; margin-bottom: .1em; }
+.additionalMarginBottom {margin-bottom: 6em !important; }
+.errormessage { color:Red; }
+/* =8 Extra 
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+specific floats to template */
+
+#LYT_Header ul li, #LYT_Header ul.GN_LYT_Search input, .GF_NAV_Links ul, .GF_NAV_Tertiary ul.GF_NAV_Main, .GF_NAV_Tertiary ul.GF_NAV_Secondary, .GF_NAV_Tertiary ul li { float:left; }
+#LYT_Header ul.GN_NAV_Container, #LYT_Header ul.GN_LYT_Search, .GF_NAV_Links { float:right; }
+.imgrep { position:absolute; top:0; left:0; width:100%; height:100%; background-position:left top; background-repeat:no-repeat; }
+.action { font-weight:bold; color:#3C7793; }
+.float-left { float:left; }
+.float-right { float:right; }
+.floatNone {float:none !important;}
+/* page container */
+#LYT_PageContainer, #LYT_Header { position:relative; }
+#LYT_Header a.GN_NAV_Logo {position:absolute;}
+a.GN_NAV_Logo { z-index:5500; }
+#LYT_PageContainer, #LYT_Header, #LYT_Body { }
+#LYT_Header ul li, .GF_NAV_Tertiary ul li { display:block; }
+#LYT_PageContainer { background:#fff; width:960px; /*padding:0 7px 7px 7px;*/ margin:0 auto; }
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float - use this instead of overflow */ 
+clear:both; height:0; font-size:1px; line-height:0px; }
+/* general icon styling - DAS */
+.MC_LYT_icon { vertical-align: text-bottom; }
+.MC_LYT_ico_adobereader { background: url(../Images/Product/pdf.gif) 0 0 no-repeat; padding:0 0 10px 25px; }
+/* General Utility Classes - DTN */
+.clearAllSpacing {padding:0px !important; margin: 0px !important;}
+.clearPadding {padding:0px !important; }
+.clearMargin {margin: 0px !important;}
+.breakWord {word-wrap:break-word;}
+.breakall {word-break:break-all;}
+.MaxWidth {width:100%;}
+.MaxHeight {height: 100%;}
+.FL { float:left; }
+.FR { float:right; }
+.CL { clear:left; }
+.CR { clear:right; }
+.CB { clear:both; }
+.clearfix {clear:both; content:'.'; display:block; height:0px; visibility:hidden}
+.NM { margin:0; }
+.TAC { text-align:center; }
+.TAL { text-align: left; }
+.TAR {text-align:right;}
+.HL { overflow:auto; height:1%; zoom:1;}/* Triggers HasLayout in IE */
+.HLhidden { overflow:hidden; height:1%; zoom:1;}
+.PRWDetails { overflow:visible; }
+.DIB { display:inline-block; }
+.DI {display:inline;}
+.DB { display: block;}
+.DN {display:none;}
+.VH {visibility:hidden;}
+.VC {visibility:collapse;}
+.VAM { vertical-align:middle; }
+.VAB {vertical-align: bottom !important;}
+.Alert_Red { color:#ff2727; }
+.horizontal-rule hr { border-bottom:1px solid #333; }
+.OFA {overflow:auto;}
+.OFH {overflow: hidden;}
+.OFXH {overflow-x:hidden;}
+.OFYH {overflow-y:hidden;}
+.OFXA {overflow-x:auto}
+.nowrap {white-space:nowrap;}
+.borderBoxSizing, .bxsz {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;}
+.FWN {font-weight:400 !important;}
+
+/* General Utility Classes - CP */
+.margin-rt { margin-right: 15px; }
+.margin-lt { margin-left: 15px; }
+.margin-lt-20 { margin-left: 20px; }
+.margin-top { margin-top: 15px; }
+.margin-bottom { margin-bottom: 15px; }
+.margin-all { margin: 15px; }
+.padding-all {padding: 15px; }
+.margin-all-ten { margin: 10px; }
+.padding-all-ten {padding:10px !important; }
+.padding-top { padding-top:15px; }
+.padding-top-three {padding-top:3px;}
+.padding-sides-five {padding:0 5px;}
+.padding-sides { padding:0 10px; }
+.border-all{border:1px solid #ccc}
+.border-right {border-right: 1px solid #ccc;}
+.border-left {border-left: 1px solid #ccc;}
+.border-top {border-top: 1px solid #ccc;}
+.border-bottom {border-bottom: 1px solid #ccc;}
+.padding-bottom { padding-bottom:15px; }
+.padding-rt { padding: 0px 15px 0px 0px !important;}
+.padding-5-bottom {padding-bottom:5px;}
+.padding-5-left { padding-left:5px}
+.padding-15-left { padding-left:15px}
+.padding-15-right {padding-right:15px !important;}
+.remove-padding, remove-padding span { padding: 0; }
+.MC_LYT_AddressLayout input-text{}
+.MC_LYT_AddressLayout .MC_LYT_btnReset .btn li {float:left !important;}
+.margin-ten-bottom { margin-bottom: 10px; }
+.margin-four-bottom { margin-bottom: 4px; }
+.margin-ten-top {margin-top: 10px; }
+.margin-four-top {margin-top: 4px; }
+.margin-five-top {margin-top: 5px; }
+.margin-eight-top {margin-top:8px; }
+.margin-10-left{margin-left:10px;}
+.margin-10-right{margin-right:10px}
+.margin-5-right{margin-right:5px;}
+.margin-5-left{margin-left:5px !important;}
+.margin-30-bottom{margin-bottom:30px;}
+.vertical-align { vertical-align:top; }
+.disc ul {margin:6px 0 0 16px; list-style:disc;}
+.disc ul li {margin-bottom:6px;} 
+ol.numbered-list {list-style-type:decimal;padding-left:20px}
+ol.numbered-list li {margin-bottom:8px}
+.zstripe td {background-color:#e4e4e4;}
+/* DO NOT reinstitue the bulletUL class, rather create a style for the HTML elements to enable bullets. Content loaders should not be adding class names. */
+/*.bulletUL li{list-style-position:outside !important; list-style-type:disc; margin:10px 5px 10px 15px;line-height:1.3em;} 
+.bulletli li{list-style-position:outside !important; list-style-type:disc; margin:10px 5px 10px 15px;line-height:1.3em;} 
+.orderedOL li{list-style-type: decimal;list-style-position:outside !important;margin:10px 5px 10px 20px;line-height:1.3em;} */
+.REG_IBOSelection table.REG_IBOSelection ul li {list-style-position:outside !important; list-style-type:disc; margin:10px 5px 10px 15px;line-height:1.3em;}
+.REG_IBOSelection table.REG_IBOSelection ul.btn li {list-style:none outside none; margin: 0px 0px 0px 1px;}
+.sup {vertical-align: baseline; font-size: 0.8em;position: relative;top: -0.4em;}
+/* COMMON GRID/TABLE LIST STYLE ELEMENTS
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––/*
+/* BEGIN FULL GRID STYLING */
+.RadGrid_AmwayGrid { width: 100% }
+.RadGrid_AmwayGrid .MasterTable_AmwayGrid { }
+.RadGrid_AmwayGrid td { padding:10px; border:solid 1px #cccccc; border-left:0; vertical-align:top; }
+.RadGrid_AmwayGrid td.MC_LYT_FirstItem { background:transparent url(../images/common/gc_pixel_cccccc.gif) repeat-y top left; }
+.RadGrid_AmwayGrid td.MC_LYT_LastItem { border-right:0; background:transparent url(../images/common/gc_pixel_cccccc.gif) repeat-y top right; }
+.RadGrid_AmwayGrid .AmwayGrid_Header .GridHeader_AmwayGrid, .RadGrid_AmwayGrid .GridHeader_AmwayGrid { border-top:none; border-right:solid 1px #FFFFFF; vertical-align:middle; font-weight:bold; height:37px; line-height:11px; text-align:left; text-transform:uppercase; padding:2px 10px 0px 10px; }
+.RadGrid_AmwayGrid .AmwayGrid_Header .GridHeader_AmwayGrid, .RadGrid_AmwayGrid .GridDashBoardHeader_AmwayGrid { border-top:none; border-right:solid 1px #FFFFFF; vertical-align:middle; font-weight:bold; height:30px; line-height:11px; text-align:center; padding:0px 10px 0px 10px; color:#063d88;}
+.RadGrid_AmwayGrid th.AmwayGrid_HeaderUnsortable, .RadGrid_AmwayGrid td.AmwayGrid_HeaderUnsortable { background:#bdbdbd url(../images/common/grid_bkgd_headers_unsortable.gif) repeat-x bottom left; color:#FFFFFF; }
+.RadGrid_AmwayGrid th.AmwayGrid_HeaderSortable a span, .RadGrid_AmwayGrid td.AmwayGrid_HeaderSortable a span, .RadGrid_AmwayGrid th.AmwayGrid_HeaderSorted a span, .RadGrid_AmwayGrid td.AmwayGrid_HeaderSorted a span { display:inline-block;  padding-top: 2px;}
+.RadGrid_AmwayGrid th.AmwayGrid_HeaderSortable, .RadGrid_AmwayGrid td.AmwayGrid_HeaderSortable { background:#bdbdbd url(../images/common/grid_bkgd_headers_sortable.gif) repeat-x bottom left; color:#494948; }
+.RadGrid_AmwayGrid th.AmwayGrid_HeaderSortable a, .RadGrid_AmwayGrid td.AmwayGrid_HeaderSortable a, .RadGrid_AmwayGrid th.AmwayGrid_HeaderSortable a:hover, .RadGrid_AmwayGrid td.AmwayGrid_HeaderSortable a:hover, .RadGrid_AmwayGrid th.AmwayGrid_HeaderSortable a:visited, .RadGrid_AmwayGrid td.AmwayGrid_HeaderSortable a:visited { color:#494948; text-decoration:none; padding-right:15px; background:transparent url(../images/common/ico_sort_arrows.gif) no-repeat scroll right -60px; }
+.RadGrid_AmwayGrid th.AmwayGrid_HeaderSorted, .RadGrid_AmwayGrid td.AmwayGrid_HeaderSorted { background:#bdbdbd url(../images/common/grid_bkgd_headers_sorted.gif) repeat-x bottom left; color:#ffffff; }
+.RadGrid_AmwayGrid th.AmwayGrid_HeaderSorted a, .RadGrid_AmwayGrid td.AmwayGrid_HeaderSorted a, .RadGrid_AmwayGrid th.AmwayGrid_HeaderSorted a:hover, .RadGrid_AmwayGrid td.AmwayGrid_HeaderSorted a:hover, .RadGrid_AmwayGrid th.AmwayGrid_HeaderSorted a:visited, .RadGrid_AmwayGrid td.AmwayGrid_HeaderSorted a:visited { color:#ffffff; text-decoration:none; }
+.RadGrid_AmwayGrid th.AmwayGrid_HeaderSorted .AmwayGrid_HeaderSortAsc, .RadGrid_AmwayGrid td.AmwayGrid_HeaderSorted .AmwayGrid_HeaderSortAsc, .RadGrid_AmwayGrid th.AmwayGrid_HeaderSorted .AmwayGrid_HeaderSortAsc:hover, .RadGrid_AmwayGrid td.AmwayGrid_HeaderSorted .AmwayGrid_HeaderSortAsc:hover, .RadGrid_AmwayGrid th.AmwayGrid_HeaderSorted .AmwayGrid_HeaderSortAsc:visited, .RadGrid_AmwayGrid td.AmwayGrid_HeaderSorted .AmwayGrid_HeaderSortAsc:visited { padding-right:15px; background:transparent url(../images/common/ico_sort_arrows.gif) no-repeat scroll right 0px; }
+.RadGrid_AmwayGrid th.AmwayGrid_HeaderSorted .AmwayGrid_HeaderSortDesc, .RadGrid_AmwayGrid td.AmwayGrid_HeaderSorted .AmwayGrid_HeaderSortDesc, .RadGrid_AmwayGrid th.AmwayGrid_HeaderSorted .AmwayGrid_HeaderSortDesc:hover, .RadGrid_AmwayGrid td.AmwayGrid_HeaderSorted .AmwayGrid_HeaderSortDesc:hover, .RadGrid_AmwayGrid th.AmwayGrid_HeaderSorted .AmwayGrid_HeaderSortDesc:visited, .RadGrid_AmwayGrid td.AmwayGrid_HeaderSorted .AmwayGrid_HeaderSortDesc:visited { padding-right:15px; background:transparent url(../images/common/ico_sort_arrows.gif) no-repeat scroll right -30px; }
+.RadGrid_AmwayGrid th.AmwayGrid_HeaderLink a, .RadGrid_AmwayGrid td.AmwayGrid_HeaderLink a { font-weight:normal; color:#063d88; text-transform:none; line-height:14px; }
+.RadGrid_AmwayGrid thead th.MC_LYT_LastItem, .RadGrid_AmwayGrid thead td.MC_LYT_LastItem, .RadGrid_AmwayGrid .AmwayGrid_Header td.MC_LYT_LastItem { border-right:0; }
+.RadGrid_AmwayGrid .last-item-no-bottom-border-td { border-bottom:1px solid #fff; }
+.RadGrid_AmwayGrid tr.AmwayGrid_CategoryRow { border-top:solid 1px #cccccc; }
+.RadGrid_AmwayGrid tr.AmwayGrid_CategoryRow td.MC_LYT_FirstItem { padding:0px 0px 0px 10px; height:14px; font-family:Arial; font-size:10px; vertical-align:middle; text-transform:none; line-height:10px; color:#245475; background-color:#e3e6e8; }
+.RadGrid_AmwayGrid tr.AmwayGrid_CategoryRow td.MC_LYT_LastItem { background-color:#e3e6e8; border-bottom:solid 1px #e3e6e8; }
+.RadGrid_AmwayGrid tr.AmwayGrid_GroupingRow td { font-weight:bold; background-color:#e3e6e8; }
+.AmwayGrid_HeaderUnsortable span { padding-top:2px; }
+/* END FULL GRID STYLING */
+
+#ctl00_PlaceHolderMain_ctl00___dgUserDittoProfile .RadList tbody td {background-color:#fff;}
+.RadList tbody td.MC_LYT_FirstItem {background-color:#fff;}
+.RadList tbody td.MC_LYT_LastItem {background-color:#fff;}
+
+/* 03/29/09 - DP AIU2886 RadTab Styles*/
+/* Telerik Common Tabs */
+.RadTabStrip .rtsTxt { display:inline-block; text-transform:uppercase; }
+.RadTabStrip_AmwayTab .rtsLI, .RadTabStrip_AmwayTab .rtsLink { color:#FFF; }
+.RadTabStrip_AmwayTab .rtsSelected .rtsLink { color:#494948 !important; }
+.RadTabStripTop_AmwayTab .rtsLevel1 { background-color:transparent; }
+.RadTabStrip_AmwayTab .rtsUL { background:url(../images/common/tab_bkgd_border.gif) repeat-x 0 bottom; width:100%; }
+.RadTabStripTop_AmwayTab .rtsLevel1 .rtsLink, .RadTabStripTop_AmwayTab .rtsLevel1 .rtsOut, .RadTabStripBottom_AmwayTab .rtsLevel1 .rtsLink, .RadTabStripBottom_AmwayTab .rtsLevel1 .rtsOut, .RadTabStripTop_AmwayTab_Baseline .rtsLevel1, .RadTabStripBottom_AmwayTab_Baseline .rtsLevel1 { background-image:url(../images/common/tab_bkgd_sprite.gif); }
+.RadTabStripTop_AmwayTab .rtsLevel1 .rtsLink { background-position:0 -33px; }
+.RadTabStripTop_AmwayTab .rtsLevel1 .rtsFirst .rtsLink { background-position:0px -99px; }
+.RadTabStripTop_AmwayTab .rtsLevel1 .rtsOut { background-position:100% 0; }
+.RadTabStripTop_AmwayTab .rtsLevel1 .rtsLast .rtsOut { background-position:100% 0; }
+.RadTabStripTop_AmwayTab .rtsLevel1 .rtsSelected .rtsLink { background-position:0 -99px; }
+.RadTabStripTop_AmwayTab .rtsLevel1 .rtsSelected .rtsOut { background-position:100% -66px }
+.RadTabStripTop_AmwayTab .rtsLevel1 .rtsLI .rtsAfter { background-position:0 -33px; margin-left:1px;}
+.RadTabStripTop_AmwayTab .rtsLevel1 .rtsLI .rtsLink{margin-left:1px;}
+.RadTabStripTop_AmwayTab .rtsLevel1 .rtsFirst .rtsLink{margin-left:0;}
+.RadTabStripTop_AmwayTab .rtsLevel1 .rtsLI .rtsBefore { background-position:0 -33px; }
+.RadTabStrip .rtsLevel { clear:both; overflow:hidden; position:relative; width:100%; }
+.RadTabStrip .rtsUL, .RadTabStripVertical .rtsUL { float:left; margin:0; overflow:hidden; padding:0; }
+.RadTabStrip .rtsLI { display:inline; float:left; }
+.RadTabStrip .rtsLink, .RadTabStripVertical .rtsLink { -x-system-font:none; cursor:pointer; display:block; font-size:12px; font-size-adjust:none; font-stretch:normal; font-style:normal; font-variant:normal; font-weight:bold; line-height:33px; outline-color:-moz-use-text-color; outline-style:none; outline-width:medium; padding-left:2px; text-decoration:none; }
+.RadTabStrip .rtsLink { text-align:center; }
+.RadTabStrip .rtsLevel1 .rtsSelected { text-decoration:none; background-position:0 -99px; color:#494948; }
+.RadTabStrip .rtsOut, .RadTabStripVertical .rtsOut { display:block; padding:0 15px; }
+.RadTabStrip .rtsIn, .RadTabStripVertical .rtsIn { display:block; padding:0 15px; }
+/* 01/29/09 - DP AIU2886 RadTab Styles*/
+#amwayTabLt{position:relative; top:1px;}
+#amwayTabLt ul li{float:left;display:block; padding:5px 13px; border: 1px solid #ccc; border-bottom:none; background-color:#f1f1f1;margin-right:5px;cursor:pointer;}
+#amwayTabLt ul li.selected{background-color:#fff;}
+#amwayTabLt ul li.dropdown{background-color:#DEEAEE;}
+#amwayTabLt ul li.dropdown.selected{background-color:#fff;}
+#amwayTabLt ul li.dropdown {background:url("../images/ico_sprite_right.gif") no-repeat scroll 90% -260px #f1f1f1;padding-right:40px;}
+div#moreInfoContainer{position: absolute;border:1px solid #ccc; background-color:#FFF;}
+div#moreInfoContainer li{padding:10px;}
+div#moreInfoContainer li:hover{background-color:#bdbdbd; cursor:pointer;color:#FFF;} 
+/* 04/20/09 - DP AIU2886 RadWindow Popup Styles*/
+/* Telerik RadWindow Popup */
+div.radwindow_AmwayWindow table { width:100%; height:auto;}
+div.radwindow_AmwayWindow table td.titlebar { background:url(../images/common/popup_headerBar_right.png) top right no-repeat; height:40px; }
+div.radwindow table td.titlebar { -moz-user-select:none; }
+div.radwindow .MC_LYT_ShopBagList table td, div.radwindow .MC_LYT_ShopBagList table th { padding:10px; }
+div.radwindow table td { border-collapse:collapse; margin:0; padding:0; vertical-align:top; }
+div.radwindow_AmwayWindow table td.footerleft { background:transparent url(../images/common/popup_window_corners.png) no-repeat scroll 0 -106px; height:14px; }
+div.radwindow_AmwayWindow table td.footerright { background:transparent url(../images/common/popup_window_corners.png) no-repeat scroll 100% -106px; height:14px; }
+div.radwindow_AmwayWindow table td.topleft { background:transparent url(../images/common/popup_window_corners.png) no-repeat scroll 0 -57px; height:6px; width:14px; }
+div.radwindow_AmwayWindow table td.topright { background:transparent url(../images/common/popup_window_corners.png) no-repeat scroll 100% -57px; width:14px; height:6px; }
+div.radwindow_AmwayWindow table td.bodyleft { background:transparent url(../images/common/popup_window_side.png) repeat-y scroll 0 0; }
+div.radwindow_AmwayWindow table td.bodyright { background:transparent url(../images/common/popup_window_side.png) repeat-y scroll 100% 0; }
+div.radwindow_AmwayWindow table td.footercenter { background:transparent url(../images/common/popup_window_corners.png) repeat-x scroll 0 -125px; height:6px; }
+div.radwindow_AmwayWindow table.titlebarcontrols tr td a.windowicon { margin:0px !important; background:transparent url(../images/common/popup_headerBar_left.png) no-repeat scroll left bottom; display:block; height:24px !important; padding:20px 0 0 2px; width:1px !important; }
+div.radwindow_AmwayWindow table td.corner { line-height:1px; }
+div.radwindow_AmwayWindow table.titlebarcontrols ul.controlbuttons { width:auto !important; }
+div.radwindow_AmwayWindow table td.windowcontent { background-color:#fff; height:100%; }
+div.radwindow_AmwayWindow table.titlebarcontrols ul.controlbuttons li a { cursor:pointer; font-size:1px; height:37px; margin:2px 0 2px 2px; width:30px; display:block; text-decoration:none; }
+div.radwindow_AmwayWindow table.titlebarcontrols ul.controlbuttons li a span { display:none; }
+div.radwindow_AmwayWindow table.titlebarcontrols ul.controlbuttons li { float:right !important; line-height:55px; }
+div.radwindow_AmwayWindow table.titlebarcontrols { height:40px; }
+div.radwindow_AmwayWindow a.closebutton { background:transparent url(../images/common/btn_popup_close.png) no-repeat 60% 20px; }
+div.radwindow_AmwayWindow a.closebutton:hover { background:transparent url(../images/common/btn_popup_close_hover.png) no-repeat 60% 20px; }
+div.radwindow_AmwayWindow .windowcontent { background:#FFFFFF none repeat 0 0; border-bottom:0 none; height:100%;padding-top:6px !important; }
+div.radwindow table.titlebarcontrols td em { color:#494948; font-size:12px; font-weight:bold; text-decoration:none; text-transform:uppercase; font-style:normal; padding-left:5px; display:block; padding-top:24px; }
+div.radwindow.radwindow_Telerik table.titlebarcontrols td em {padding-top:0px;}
+div.radwindow_AmwayWindow .windowcontent iframe { background-color:#fff; overflow:auto; }
+/* End Telerik RadWindow Popup */
+div.radwindow .contentrow .windowcontent {font-size: 12px !important;}
+div.radwindow table td.titlebar div.topresize {height: 0px !important; line-height:10px !important; display:inline;}
+div.radwindow table tr.titlerow {height:44px;}
+
+/*Amway Button Styles - AIU2886 DP New 4/3/09 */
+.btn input { height:31px; width:auto; background-color:transparent; border:none; font-family:Arial, verdana, sans-serif; font-weight:bold; color:#FFFFFF; cursor:pointer; display:block; margin:0; padding:7px 25px 8px 25px; text-align:center; text-transform:uppercase; overflow:visible; }
+.btn li { float:right !important; margin-left:1px; }
+.btn li.btn_prod_detail {float:left !important;}
+.btn_primary { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 0 -31px; padding-left:1px; }
+.btn_primary input { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 100% 0; display: inline-block; max-width:330px; }
+.btn_search .btn input { *width:76px;height:20px;background-color:transparent; border:none; font-family:Arial, verdana, sans-serif; color:#FFFFFF; cursor:pointer; display:block; font-weight:bold; margin:0; padding:0px 6px 2px 6px; text-align:center; text-transform:capitalize; display: inline; }
+.btn_search .btn_primary { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 0 -331px; padding-left:1px; }
+.btn_search .btn_primary input { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 100% -310px; }
+.btn_secondary { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 0 -93px; padding-left:1px; }
+.btn_secondary input { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 100% -62px; display: inline-block; max-width:330px; }
+.btn_disabled { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 0 -155px; padding-left:1px; }
+.btn_disabled input { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 100% -124px; display: inline-block; cursor:auto; }
+.btn_search .btn_disabled { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 0 -331px; padding-left:1px; }
+.btn_search .btn_disabled input { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 100% -310px;cursor:auto; }
+/*Amway Button hover states*/
+.btn_primary:hover { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 0 -217px; padding-left:1px; }
+.btn_primary input:hover { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 100% -186px; }
+.btn_secondary:hover { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 0 -279px; padding-left:1px; }
+.btn_secondary input:hover { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 100% -248px; }
+.btn_search .btn_primary:hover { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 0 -373px; padding-left:1px; }
+.btn_search .btn_primary input:hover { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 100% -352px; display: inline-block;  cursor:pointer;}
+.btn_search .btn_disabled:hover { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 0 -373px; padding-left:1px; }
+.btn_search .btn_disabled input:hover { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 100% -352px; display: inline-block; cursor:pointer; }
+.btn_cancel li { margin-right:29px; margin-right:14px;}
+.btn_create_psw { float: left; margin-right:14px; max-width: 185px;}
+.div_login_instructions { float: left;margin-top: 10px;}
+
+/*Small Buttons for Product Thumbnail pages*/
+.btnSmall input {height: 21px;padding: 0 4px 4px;}
+.btnSmall .btn_primary {background: url(../images/common/bkg.button.sprite.gif) no-repeat 0 -415px;padding-left: 1px;}
+.btnSmall .btn_primary input {background: url(../images/common/bkg.button.sprite.gif) no-repeat scroll 100% -394px transparent;}
+.btnSmall .btn_primary:hover { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 0 -457px; padding-left:1px;}
+.btnSmall .btn_primary input:hover {background: url(../images/common/bkg.button.sprite.gif) no-repeat scroll 100% -436px transparent;cursor: pointer;display: inline-block;}
+
+.list .btnSmall input{height:21px; padding:0px 4px 4px 4px;*padding:0px 0px 2px 0px; *width:85px;}
+.list .btnSmall .btn_primary input{font-size:10px; }
+
+.btnView input{ height:21px; padding:0px 4px 4px 4px;*padding:0px 0px 2px 0px; *width:140px;} 
+.btnView .btn_primary { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 0 -415px; padding-left:1px; }
+.btnView .btn_primary input{ background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 100% -394px; }
+.btnView .btn_primary:hover { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 0 -457px; padding-left:1px; }
+.btnView .btn_primary input:hover { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat 100% -436px; display: inline-block;  cursor:pointer;}
+.btn_cartprimary {background:transparent url("../images/common/bkg.button.sprite.gif") no-repeat scroll left -559px;padding-left:32px;}
+.btn_cartprimary input{background:transparent url("../images/common/bkg.button.sprite.gif") no-repeat scroll right -591px;}
+.btn_cartprimary:hover { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat scroll left -623px;padding-left:32px;}
+.btn_cartprimary input:hover { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat scroll right -655px;}
+.btn_cartdisabled { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat scroll left -687px;padding-left:32px;}
+.btn_cartdisabled input { background:transparent url(../images/common/bkg.button.sprite.gif) no-repeat scroll right -719px;}
+
+/*Overrides default right float for Amway Buttons*/
+.btn_floatLeft li { float:left; margin-right:1px; }
+.btn_floatLeft .btn li  { float:left !important; margin-right:1px; }
+/*Adds 1px white border on the button*/
+.btn_left_border .btn li { border-left:1px solid #fff; background-color:#FFF; }
+/*Controls widths of buttons depending on placement*/
+.btn_prod_detail input {width:167px;}
+.btn_prod_qv input { width:185px;*width:183px;}
+.btn_prodfam_qv input { width:253px;*width:251px;}
+.btn_shoppingListPopup input, .btn_shoppingListPopup ul.btn li { width:100%; }
+/* Text that goes next to a button style AIU2886 DWP */
+.btn_text_floatright { float:right; margin-top:10px; margin-right:10px; }
+/* Added 11/24/09 DTN */
+
+
+
+
+.btn_tertiary a, .btn_quaternary, a.btn_quaternary, input.btn_tertiary, input.btn_quaternary {display:inline-block; background:url(/Shop/Images/common/bkg.button.sprite.gif) repeat-x scroll 0 -478px; margin-right:4px; padding:5px 7px; text-align:center; cursor:pointer; width:auto; border:1px solid #979897; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; -khtml-border-radius:3px; zoom:1; /*Triggers HasLayout in IE*/}
+.btn_tertiary a {color:#fff; font-weight:normal;}
+.btn_tertiary a:hover {background:#b0b1b0; text-decoration:none;}
+.btn_tertiary a:active {background:#979897; color:#fff;}
+a.btn_quaternary:hover, .btn_quaternary:hover {background:#d6d7d5; text-decoration:none;}
+a.btn_quaternary:active, .btn_quaternary:active {background:#979897; color:#fff;}
+a.btn_quaternary span.add {background:transparent url(/Shop/Images/ico_sprite_sheet.gif) no-repeat scroll 0 -1185px; padding-left:1em;}
+a.btn_quaternary span.remove, .btn_quaternary .remove a {background:transparent url(/Shop/Images/ico_sprite_sheet.gif) no-repeat scroll -2171px -2017px; padding-left:1em; text-decoration:none;}
+.btn_tertiary .update a span {background:transparent url(../images/ico_sprite_sheet.gif) no-repeat scroll -2171px -2132px; padding-left:1em;}
+
+/* AMWAY LINK buttons  AIU2886 DP 4/3/09*/
+.FRM_Button { cursor:pointer; border:0; background:transparent url(../images/common/bkg.button.link.sprite.gif) no-repeat scroll 100% -31px; color:#444; display:block; float:left; height:31px; margin-left:1px; padding-right:1px; text-decoration:none; text-transform:uppercase; }
+.FRM_Button span { font-family:Arial, verdana, sans-serif; background:transparent url(../images/common/bkg.button.link.sprite.gif) no-repeat 0 0; display:block; line-height:1em; padding:10px 30px 10px 30px; color:#FFFFFF; font-weight:bold; text-align:center; }
+.FRM_SecondaryButton { cursor:pointer; border:0; background:transparent url(../images/common/bkg.button.link.sprite.gif) no-repeat scroll 100% -93px; color:#444; display:block; float:left; height:31px; margin-left:1px; padding-right:1px; text-decoration:none; text-transform:uppercase; }
+.FRM_SecondaryButton span { font-family:Arial, verdana, sans-serif; background:transparent url(../images/common/bkg.button.link.sprite.gif) no-repeat 0 -62px; display:block; line-height:1em; padding:10px 30px 10px 30px; color:#FFFFFF; font-weight:bold; text-align:center; }
+.FRM_DisabledButton { border:0; background:transparent url(../images/common/bkg.button.link.sprite.gif) no-repeat scroll 100% -155px; color:#444; display:block; float:left; height:31px; margin-left:1px; padding-right:1px; text-decoration:none; text-transform:uppercase; }
+.FRM_DisabledButton span { font-family:Arial, verdana, sans-serif; background:transparent url(../images/common/bkg.button.link.sprite.gif) no-repeat 0 -124px; display:block; line-height:1em; padding:10px 30px 10px 30px; color:#FFFFFF; font-weight:bold; text-align:center; }
+.FRM_Button:hover { cursor:pointer; border:0; background:transparent url(../images/common/bkg.button.link.sprite.gif) no-repeat scroll 100% -217px; color:#444; display:block; float:left; height:31px; margin-left:1px; padding-right:1px; text-decoration:none; text-transform:uppercase; }
+.FRM_Button span:hover { background:transparent url(../images/common/bkg.button.link.sprite.gif) no-repeat 0 -186px; display:block; line-height:1em; padding:10px 30px 10px 30px; color:#FFFFFF; font-weight:bold; text-align:center; }
+.FRM_SecondaryButton:hover { cursor:pointer; border:0; background:transparent url(../images/common/bkg.button.link.sprite.gif) no-repeat scroll 100% -279px; color:#444; display:block; float:left; height:31px; margin-left:1px; padding-right:1px; text-decoration:none; text-transform:uppercase; }
+.FRM_SecondaryButton span:hover { background:transparent url(../images/common/bkg.button.link.sprite.gif) no-repeat 0 -248px; display:block; line-height:1em; padding:10px 30px 10px 30px; color:#FFFFFF; font-weight:bold; text-align:center; }
+.FRM_DisabledButton:hover { cursor:default; text-decoration:none; }
+.FRM_DisabledButton span:hover { cursor:default; text-decoration:none; }
+.FRM_ButtonWrap { float:right; }
+.FRM_CancelButtonWrap { float:right; margin-right:15px; }
+/*Top rounded headers for content AIU2886 DP*/
+.MC_LYT_RndHeader { font-size:12px; font-weight:bold; margin-bottom:1px; min-height:31px; *display:inline-block;background-color:#cccccc; }
+.MC_LYT_EduTraining .MC_LYT_RndHeader{padding-left:10px;}
+.MC_LYT_RndHeader ul { }
+.MC_LYT_RndHeader li, .MC_LYT_RndHeader dt { text-transform:uppercase; float:left; background:transparent url(../images/common/rndHeader_left.gif) no-repeat top left; text-decoration:none; padding:8px 0 7px 15px; }
+.MC_LYT_RndHeader li.RndHeader_right, .MC_LYT_RndHeader dt.RndHeader_right { text-transform:capitalize; float: right; padding:8px 11px 7px 0px; background: #ccc url(../images/common/rndHeader_right.gif) no-repeat top right; }
+.MC_LYT_RndHeader li.btn_primary {padding-left:1px;}
+.reghist div.reghistFilter {padding:4px 8px 0px 0px;}
+.reghist div ul {display:inline; padding-bottom:4px;}
+.reghist div ul li {padding-top:0px;}
+/*Extending rounded header AIUGF21 JT */
+.MC_LYT_RndHeader .MC_LYT_RndHeader_SubHead { font-weight:normal; text-transform:none; display:block; padding-top:8px; }
+.MC_LYT_RndHeader .MC_LYT_RndHeader_Extend { padding:8px 15px 7px 15px; }
+.MC_LYT_HeaderFunctionContainer { display:inline; margin-left:20px; font-weight:normal; }
+/*Alternate Top Rounded Header AIUHA38 DTN */
+.MC_LYT_RndHeaderAlt { display:block; }
+.MC_LYT_RndHeaderAlt * { display:block; height:1px; overflow:hidden; font-size:.01em; background:#ccc; /*vertical-align:bottom;*/ }
+.MC_LYT_RndHeaderAlt_Corners { border-left:1px solid #fff; border-right:1px solid #fff }
+.MC_LYT_RndHeaderAlt_Content { padding:7px 11px 7px 15px; background:#ccc; border-bottom:1px solid #fff; /*overflow:auto; height:1%;*/ zoom:1; }
+.MC_LYT_RndHeaderAlt_Content h2 { margin:0; padding:0; float:left; font-size:12px; text-transform:uppercase; font-weight:bold; }
+.MC_LYT_RndHeaderAlt_Content ul { float:right; }
+.MC_LYT_RndHeaderAlt_Content li { float:left; margin-left:14px; }
+.MC_LYT_RndHeaderAlt_Content img { vertical-align:top; }
+/*Progressive Enhancement Top Rounded Header AIUHA38 DTN */
+.MC_LYT_RndHeader_Prog {width:780px; background-color:#ccc; margin-bottom:1px; padding:8px 0 7px 15px; font-size:12px; font-weight:bold; text-transform:uppercase; border-radius:2px 2px 0 0; -webkit-border-radius:2px 2px 0 0; -moz-border-radius:2px 2px 0 0; -khtml-border-radius:2px 2px 0 0; zoom:1; /*Triggers HasLayout in IE*/ }
+.MC_LYT_RndWrap .MC_LYT_RndHeader {margin-top:10px;}
+.MC_LYT_RndWrap .MC_LYT_RndInner {background-color:#fff;}
+.MC_LYT_RndWrap .MC_LYT_Title {font-size:12px; font-weight:bold;}
+/*Global Element Round Corner Box Container AIU2886 DP*/
+.GE_LYT_RndBox { width:100%; background:transparent url(../images/common/RndBox_bottomLeft.gif) no-repeat bottom left; }
+.GE_LYT_RndBox .RndBox_Outer { background:transparent url(../images/common/RndBox_bottomRight.gif) no-repeat bottom right; padding-bottom:10px; }
+.GE_LYT_RndBox .RndBox_Inner { background:transparent url(../images/common/RndBox_topLeft.gif) no-repeat left top; }
+.GE_LYT_RndBox .RndBox_Content { background:transparent url(../images/common/RndBox_topRight.gif) no-repeat right top; padding:10px 10px 0 10px; }
+.GE_LYT_RndBoxTop { border-top:solid 1px #cccccc; }
+.GE_LYT_RndBoxTopFill { background-color:#E3E6E8; }
+/*Global Element Bottom Rounded Corner Box Container Aiu2886 DP*/
+.GE_LYT_RndBox .TabBox_Content { padding:10px 10px 0 10px; }
+/*Global Element Container #CCC border AIU2886 DP*/
+#divGoalsEstimatedTotalParent .GE_LYT_RndBox .RndBox_Outer {background:none; border:1px solid #ccc; border-top:none;}
+.GE_LYT_GrayBorder_Container { border:#CCC solid 1px; padding:15px; background-color:#fff; }/*Please do not alter this or any global element without checking with David Prescott*/
+.GE_LYT_GrayBorder_Container p { margin-bottom:1.2em; }
+/*Global Element Container Border-Top missing for tab view#CCC border AIU2886 DP*/
+.GE_LYT_GrayBorder_No_BorderTop { border-left:#CCC solid 1px; border-right:#CCC solid 1px; border-bottom:#CCC solid 1px; padding:15px; background-color:#fff; margin-bottom: 10px; }
+.GE_LYT_GrayBorder_No_BorderTop p { margin-bottom:15px; }
+.GE_LYT_GrayBorder_No_BorderTop h3 { font-size:13px; font-weight:700; margin-bottom:5px; }
+.GE_LYT_GrayBorder_No_BorderTop .multipage ul li { list-style:inside; list-style-type:disc; padding-left:15px; line-height:1.5em; }
+.GE_LYT_GrayBorder_TabModal { border-left:#CCC solid 1px; border-right:#CCC solid 1px; border-bottom:#CCC solid 1px; padding:15px; background-color:#fff; margin-bottom: 10px; }
+.GE_LYT_GrayBorder_No_BorderTopBtm { border-left:#CCC solid 1px; border-right:#CCC solid 1px; padding:15px; background-color:#fff; margin-bottom:0; }
+/* LightFill Container [AIU2886 DP] Last Modified [AIUGF21 JT] Border fixed IE6 bug */
+.GE_LYT_Gray_Container { border:#e3e6e8 solid 1px; padding:15px; background-color:#e3e6e8; margin-bottom:10px; }
+.GE_LYT_Gray_Container_Tight { background-color:#E3E6E8; padding:15px; margin-bottom:1px; }
+.GE_LYT_Gray_Container_NM { background-color:#E3E6E8; padding:15px; }
+.GE_LYT_DarkGray_Container { background-color:#CCCCCC; padding:10px; }
+.GE_LYT_DarkerGray_Container { background-color:#bdbebd; padding:5px 15px; margin-bottom:1px; }
+.GE_LYT_Blue_Container { border:#d0d0d0 solid 1px; padding:15px; background-color:#e2edf4; }
+
+/* added for a PWS fix of very short rnd headers - DAS */
+.MC_LYT_RndHeader_shortPWS { font-size:12px; font-weight:bold; margin-bottom:1px; min-height:31px; *display:inline-block;background-color:#cccccc; }
+.MC_LYT_PWS_landing .MC_LYT_PWS_Small_home_left .MC_LYT_RndHeader_shortPWS,.MC_LYT_PWS_landing .MC_LYT_PWS_Small_home_right .MC_LYT_RndHeader {}
+
+.MC_LYT_RndHeader_shortPWS li, .MC_LYT_RndHeader_shortPWS dt { text-transform:uppercase; float:left; text-decoration:none; padding:8px 15px 7px 15px; }
+.MC_LYT_RndHeader_shortPWS li.RndHeader_right, .MC_LYT_RndHeader_shortPWS dt.RndHeader_right { text-transform:capitalize; float: right; padding:0px; line-height:0; }
+/*Global Element Tab Content Contained in #CCC background-color container AIU2886 DP*/
+.MC_LYT_TabBox_SquareCorner { background-color:#FFF; padding:15px; border-left:1px #CCC solid; }
+/*Global Element Partial Round Corner Box Container AIUGF21 JT*/
+.GE_LYT_PartRndBox { width:100%; background:transparent url(../images/common/PartRndBox_cccccc_bottomLeft.gif) no-repeat bottom left; }
+.GE_LYT_PartRndBox .PartRndBox_Outer { background:transparent url(../images/common/PartRndBox_cccccc_bottomRight.gif) no-repeat bottom right; padding-bottom:10px; }
+.GE_LYT_PartRndBox .PartRndBox_Inner { background:transparent url(../images/common/PartRndBox_cccccc_topLeft.gif) no-repeat left top; }
+.GE_LYT_PartRndBox .PartRndBox_Content { background:transparent url(../images/common/PartRndBox_cccccc_topRight.gif) no-repeat right top; padding:10px 10px 0 10px; }
+/*Global Popup Styles AIU2886 DP*/
+.MC_LYT_Modal_BottomBorder { height:5px; display:block; border-bottom:1px solid #CCC; margin-bottom:5px; }
+.MC_LYT_LinkListContainer { border-left:#ccc 1px solid; border-right:#ccc 1px solid; height:130px; overflow:auto; }
+.MC_LYT_LinkListContainer ul li { background-color:#CCCCCC; padding-bottom:1px; }
+.MC_LYT_LinkListContainer ul li a { padding:6px 0 6px 12px; display:block; background-color:#e2edf4; }
+.MC_LYT_LinkListContainer ul li a:hover { background-color:#aac9df; text-decoration:none; }
+.MC_LYT_PopupButtonBanner { text-align:center; }
+.MC_LYT_PopupButtonBanner img { margin:10px 3px 0 3px; }
+.MC_LYT_LinkBold a { font-weight:700; }
+/*Margins and Padding Classes*/
+.MC_LYT_30pixBreak { line-height:30px; }
+.MC_LYT_20pixBreak { line-height:20px; }
+.MC_LYT_10pixBreak { line-height:10px; }
+.MC_LYT_3pixBreak { line-height:3px; }
+.MC_LYT_10pixMargintop { margin-top:10px; }
+.MC_LYT_5pixMarginbot { margin-bottom:5px; }
+.MC_LYT_10pixMarginbot { margin-bottom:10px; }
+.MC_LYT_15pixPaddingLeft{padding-left:15px;}
+.MC_LYT_10pixPaddingLeft{padding-left:10px !important;}
+
+/*Icon Styles  AIU2886 DP*/
+/*Notification Style*/
+.MC_LYT_ICO_Notification h3 { font-size:14px; font-weight:900; margin-bottom:5px; }
+.MC_LYT_ICO_Notification p { margin-bottom:7px; }
+/* Open/Close Link Style*/
+/* for use without in parent span - DAS */
+
+/*END Icon Styles */
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+/* =9 Footer  
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+#GF_LYT_Container {}
+#GF_LYT_Container .GF_NAV_Footer .GF_LYT_Content a { color:#858585 !important; }
+#GF_LYT_Container .GF_NAV_Footer { position:relative;height:1%;text-align:center;}
+#GF_LYT_Container .GF_LYT_Content {text-align:center; line-height:1.625em; margin:0 auto;}
+.GF_NAV_ThirdParty {text-align:center;vertical-align:top;padding-bottom:10px;}
+.GF_NAV_ThirdParty img{padding:0px 5px 0px 5px; border-width:0px;}
+.GF_NAV_ThirdParty .GF_NAV_BBB, .GF_NAV_ThirdParty .GF_NAV_RSA, .GF_NAV_ThirdParty .GF_NAV_DB,.GF_NAV_ThirdParty .GF_NAV_IBOAI  { float:left; }
+.GF_NAV_ThirdParty .GF_NAV_BBB a:hover { cursor:pointer; }
+.GF_NAV_ThirdParty .GF_NAV_RSA a:hover { cursor:pointer; }
+.GF_NAV_ThirdParty .GF_NAV_DB a:hover { cursor:pointer; }
+.GF_NAV_ThirdParty .GF_NAV_IBOAI a:hover { cursor:pointer; }
+.GF_Logo img{float:right;position:absolute; right:0px; top:0px;display:block;z-index:1;}
+.GF_Logo { clear:both;}
+.GF_NAV_Footer { padding:15px;background-color:#E9EBEC; }
+.GF_NAV_Footer .GF_LYT_Content .GF_NAV_Column { display:inline-block;width:145px;margin-right:10px;text-align:left;vertical-align:top; }
+.GF_NAV_Footer .GF_LYT_Content .GF_NAV_Column strong { color:#858585; }
+.GF_NAV_Legal { padding:10px 0; text-align:center;}
+
+#GF_LYT_Container .GF_NAV_FooterPRWS { position:relative;padding:0px;background-color:transparent; }
+#GF_LYT_Container .GF_NAV_FooterPRWS .GF_LYT_Content { float:none; text-align:center; width:940px; }
+#GF_LYT_Container .GF_NAV_FooterPRWS .GF_NAV_ThirdParty { float:none; text-align:center; width:auto; padding-top:15px; }
+
+/*Replaces Body background AIUER62 SS*/ 
+
+.LYT_Popup_Bkg { background:#fff; }
+.MC_LYT_BKGDcolorLightBlue { background-color:#cccccc; }
+input, select, option, textarea { font: normal 12px Verdana, Arial, Helvetica, sans-serif; }
+.text_right { text-align:right; }
+span.FRM_Button { cursor:pointer; border:0; background:transparent url(../images/common/bkg.button.primary.gif) no-repeat scroll right bottom; color:#444; display:block; float:left; height:31px; margin-right:6px; padding-right:18px; text-decoration:none; }
+span.FRM_Button a { background:transparent url(../images/common/bkg.button.primary.gif) no-repeat left top; display:block; line-height:7px; padding:12px 0 12px 18px; color:#FFFFFF; font-weight:bold; text-decoration:none; }
+label { padding-right:10px; }
+input { vertical-align:middle; }
+/*Popup icon AIUER62 SS*/
+/** Changes Made By Jeff to Fix the Print Preview Scroll Bar Issue. Please dont Change or Override this Class **/
+.PV_LYT_Wrapper * { overflow:visible !important; overflow-y: visible !important; }
+.PV_LYT_Wrapper { width:960px; }
+.PV_LYT_Wrapper .GE_LYT_RndBox, .PV_LYT_Wrapper .RndBox_Outer, .PV_LYT_Wrapper .RndBox_Inner, .PV_LYT_Wrapper .RndBox_Content { background:#fff; }
+/*How Much Do I Need/Quantity Calculator Icon Style DWP*/
+a.MC_LYT_HowMuch { text-decoration:none; color:#006699; }
+.opaqueLayer { position:absolute; top:0px; left:0px; opacity:0.6; filter:alpha(opacity=60); background-color: #EFEFEF; z-Index:1000; }
+/*Error message with icon AIUER62 SS - Modified by Gopinath Prasanna 15May09 */ 
+/* general icon styling - DAS */
+.MC_LYT_icon { vertical-align: text-bottom }
+/*Happy Message w/icon AIUT986 DMK */
+
+/* general icon styling - GOPI */ 
+.MC_LYT_img_getadobe { background:transparent url(../Images/ico_adobe_reader.gif) 0 4px no-repeat; clear:both; overflow: auto; padding:0 0 0 125px }
+.MC_LYT_ico_adobereader { background:transparent url(../Images/Product/pdf.gif) 0 0 no-repeat; padding:0 0 10px 25px; zoom:1; }
+.MC_LYT_ico_excel { background:transparent url(../Images/ico_excel.gif) 0 0 no-repeat; padding:0 0 36px 36px; zoom:1;}
+.MC_LYT_ico_pdf { background:transparent url(../Images/ico_pdf.gif) 0 0 no-repeat; padding:0 0 36px 36px; zoom:1;}
+.MC_LYT_arrowWhite_icon { background:transparent url(../images/Small_Right_White_Arrow.gif) right 50% no-repeat; padding-right:15px }
+.MC_LYT_whathot_icon { background:transparent url(../Images/common/icon_what_hot.gif) 0 bottom no-repeat; padding-left:20px }
+.MC_LYT_Grayarrow_icon { background:transparent url(../Images/common/Arrow_left_darkgrey.gif) right bottom no-repeat; font-weight:normal; margin-right:10px; padding-right:15px; text-transform:none }
+.MC_LYT_document_icon { background:transparent url(../Images/ico_doc_small.gif) 0 50% no-repeat; padding: 0 0 0 13px }
+.MC_LYT_required_icon { background:transparent url(../Images/ico_required.gif) 0 50% no-repeat; padding: 0 0 0 25px }
+/* general icon styling - SUKANYA BASU */
+.MC_LYT_ico_rss { background:url(../Images/common/ico_rss_mark.gif) left 100% no-repeat; padding:0px 0 0 22px; display:inline-block}
+.LYT_PrintPage { float:right; margin:6px 3px 5px 0; margin:6px 3px 8px 0}
+.MC_LYT_arrowGrey_icon { background:transparent url(../Images/common/Arrow_left_darkgrey.gif) no-repeat right bottom; font-size:10px; font-weight:normal; margin-right:10px; padding-right:15px; text-transform:none }
+/* general icon styling - PRAGYA N */
+/* Spinner Syles - Buttons and div wait spinner */
+div.jquery-ajax-loader { background: #FFFFFF url(../Images/indicator_small.gif) no-repeat 50% 50%; opacity: .7; z-index: 9999; }
+div.jquery-ajax-loader-large { background: #FFFFFF url(../Images/indicator_big.gif) no-repeat 50% 50%; opacity: .7; z-index: 9999; }
+div.jquery-ajax-loader-error {background:#FFFFFF none repeat scroll 0 0;color:red;font-weight:700;opacity:0.8;text-align:center;width:270px;z-index:9999;font-size:10px;}
+div.jquery-ajax-loader-error div.MC_LYT_AjaxError, div.jquery-ajax-loader-error a{float:left; }
+div.jquery-ajax-loader-error .MC_LYT_AjaxError{width:200px;}
+div.jquery-ajax-loader-error a{color:#063D88; margin-left:20px; text-decoration:underline; width:50px }
+div.jquery-ajax-loader-error a:hover{cursor:pointer;}
+div.jquery-ajax-loader-large-error{background:#FFFFFF none repeat scroll 0 0;color:red;font-weight:700;opacity:0.8;text-align:center;z-index:9999;}
+div.jquery-ajax-loader-large-error div.MC_LYT_AjaxError, div.jquery-ajax-loader-large-error a{float:left;}
+div.jquery-ajax-loader-large-error .MC_LYT_AjaxError{position:relative;top:50%;left:25%;}
+div.jquery-ajax-loader-large-error a {color:#063D88;left:24%;margin-left:20px;position:relative;text-decoration:underline;top:50%;}
+div.jquery-ajax-loader-large-error a:hover{cursor:pointer;}
+/* Class fro Register Title control*/
+.MC_REG_Title_Control { float:left; margin-left:10px }
+/* Overlays */
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color:#000000; opacity: 0.3; }
+/* Accordion
+----------------------------------*/
+.ui-accordion .ui-accordion-header { cursor: pointer; position: relative; margin-top: 1px; zoom: 1; }
+.ui-accordion .ui-accordion-li-fix { display: inline; }
+.ui-accordion .ui-accordion-header-active { border-bottom: 0 !important; }
+.ui-accordion .ui-accordion-header a { display: block; padding:8px 0 8px 15px; background-color:#CCC; }
+.ui-accordion .ui-accordion-header .ui-icon { display: none; }
+.ui-accordion .ui-accordion-content { padding: 10px; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none; }
+.ui-accordion .ui-accordion-content-active { display: block; }
+.grp-renewal-pymt .ui-accordion .ui-accordion-content {border:none; padding:0 0 10px 0}
+
+/* Added to override the color property of the Ditto link on the navigation control */
+a.DITTO_link  {color:#666 !important;}
+.support-middle-column {width:620px;}
+.support-right-column {width:150px;}
+
+/*added for use with amwayhyperlink common control that has no navigatetourl property, or no HREF */
+.MC_LYT_hyperlink {color:#006699;}
+
+/* Banners on Registration and Business Center pages */
+.MC_LYT_Center_10pixMarginbot {clear:both; text-align:center; width:795px; margin-left:auto; margin-right:auto; margin-bottom:10px; display:block}
+.MC_LYT_Center_10pixMarginbot ul.slideNaviigation {display:block !important; visibility:hidden}
+
+/* DMK IBO Table Search Results 
+-----------------------------------------------------*/
+.IBOTable td {padding: 4px;}
+
+/*No flash pages */
+.MC_LYT_statichome_container{width:960px; min-height: 410px; background:#fff url(/en/Documents/FlashAssets/home/images/noflash_background.jpg) top right no-repeat;}
+
+.es .MC_LYT_statichome_container{width:960px; min-height: 410px; background:#fff url(../images/staticHome/bg_statichome_es.jpg) top right no-repeat;}
+.MC_LYT_statichome_image {width:660px;}
+.MC_LYT_statichome_text {width:300px; }
+.MC_LYT_statichome_headline { display:block; font-size:52px; color:#5c528d; }
+.MC_LYT_statichome_desc { display:block; font-size:16px; color:#7F7F7F;}
+.MC_LYT_statichome_CTA { display:block; font-size:12px; font-weight:bold; color:#7F7F7F; text-transform:uppercase; }
+.MC_LYT_statichome_CTA a{color:#7F7F7F; padding-right:8px; background:transparent url(/Shop/Images/noflash/ico_statichome_CTA.gif) no-repeat scroll right 3px;}
+.PT_LYT_LandingPromosContainer {width:310px; float:left; padding: 15px 0 0 5px; margin: 0 5px 0 0; line-height:18px;}
+.PT_LYT_LandingPromosContainer .PT_LYT_ImageWrap {float:right; width: 113px;}
+.PT_LYT_LandingPromosContainer a { font-size:108%; font-weight:bold; margin-bottom:0.5em; padding-right:15px;background:transparent url(../images/bkg.arrow.black.gif) no-repeat scroll right center;}
+.PT_LYT_LandingPromosContainer h4 {color:#4a76bc; font-weight:bold;}
+
+/* HeroNav and PromoNav CSS **************************************************/
+.cont_heroNav{}
+.cont_brandHero{width:960px; height:411px;overflow:hidden;position:relative;}
+.cont_brandHero a.hero_img {position:absolute; top:0; left:0; }
+.cont_brandHero a.hero_img {z-index:1;}
+.cont_heroTiles{width:960px; height:101px;position:relative; color:#494948;font-size:12px; font-family:Arial,Verdana, Helvetica, sans-serif;}
+.cont_heroTiles ul{width:958px;position:absolute;z-index:7; border-left:1px solid #ccc;border-right:1px solid #ccc;border-bottom:1px solid #ccc;zoom:1; }
+.cont_heroTiles ul li {float:left;width:172px;height:80px;display:block;cursor:pointer;position:relative;padding:10px; background: url(/Shop/Images/heroNav_TileBorderRight.gif) right 10px no-repeat;}
+.cont_heroTiles ul li.last{background:none; width:170px;}
+.cont_heroTiles div.copy{float:left; width:117px;height:77px;overflow:hidden;}
+.cont_heroTiles div.copy a {text-decoration:none; color:#000;}
+.cont_heroTiles div.image{float:right; width:50px;}
+.cont_heroTiles h3 {font-weight:700;font-size:12px;}
+.cont_heroTiles p{padding-top:2px; line-height:1.2em; font-family:Arial, Helvetica, sans-serif;}
+.cont_heroTiles .arrowslider {position:absolute;z-index:6;top:-22px;}
+.cont_promoTiles{position:relative;width:960px;font-size:12px; font-family:Arial, Verdana, Helvetica, sans-serif; }
+.cont_promoTiles ul{padding-top:23px;}
+.cont_promoTiles ul li{float:left; width:270px; height:130px; background:url(/Shop/Images/promoTile_Separator.gif) top right no-repeat;padding:0 20px 0 30px;}
+.cont_promoTiles ul li.last{background:none;}
+.cont_promoTiles ul li img{float:left;}
+.cont_promoTiles ul li h3{text-transform:uppercase;color:#245475;font-size:12px;}
+.cont_promoTiles ul li p{color:#494948;padding:23px 0 14px 0;line-height:1.2em;}
+.cont_promoTiles ul li a{color:#245475;text-transform:uppercase;background:url(/Shop/Images/promoTile_Arrow.png) 100% 70% no-repeat; padding-right:10px}
+/*****************************************************************************/
+
+.RadGrid_AmwayGrid th.AmwayGrid_HeaderSorted .AmwayGrid_HeaderSortAsc, .RadGrid_AmwayGrid th.AmwayGrid_HeaderSorted .AmwayGrid_HeaderSortDesc {display: inline-block;}
+/* SEARCH LMS CHECKBOX */
+.searchLScontainer {padding-top:6px; display:inline-block; text-align:right;}
+.GN_LYT_Wrap_bkgd .searchLScontainer {float:right; position:relative; }
+.newSearch_wrap .searchLScontainer {float:right; position:absolute; right:20px;}
+.searchLScontainer input {margin-top:2px;}
+.searchLScontainer li {display:block; float:left;}
+/*.MC_LYT_NewSearch div:first-child{text-align:right; float:right; display:inline-block;}*/
+
+
+.NAV_ShoppingNav {margin-top:14px; zoom:1; pointer-events:none;} 
+.NAV_ShoppingNav ul {pointer-events:auto;}
+.GN_NAV_Primary {/*top:94px;*/margin-top:14px; z-index:61;} /* from line 42 */
+#LYT_Header {min-height:100px;} /* fromn line 35 */
+#GN_LYT_Search { float:none; display:block; }  /* from line 139 */
+.MC_LYT_NewSearch fieldset {float:none; padding-bottom:24px;} /* from product_mn_base 5050 */
+.newSearch_wrap {float:right; text-align:right;}
+.GN_LYT_Wrap_bkgd {text-align:right;} /* from line 137 */
+/* IE FIXES */
+.newSearch_wrap .btn input {min-width:76px;}
+
+
+.LClanding .MC_LYT_RCLinkContainer {width:100%;}
+.MC_LYT_RCLinkFull.LClanding .MC_LYT_RCLinkContainer td {padding-right:8px; padding-left:10px;}
+.MC_LYT_RCLinkFull.LClanding .MC_LYT_RCLinkContainer td.MC_LYT_RCLinkMeta {padding-left:31px; padding-bottom:10px; padding-top:10px;}
+.MC_LYT_RCLinkFull.LClanding .MC_LYT_RCLinkContainer dd .RCheader a{padding-bottom:4px; display:block;}
+#LYT_PageContainer .MC_LYT_RCLinkDesc p, #LYT_PageContainer .MC_LYT_RCLinkDesc div{line-height:1.6em;}
+
+.negLeftMargin {margin-left:-10px;}
+.systemLinkAlert.GN_NAV_Locale_PipeLR {padding-left:0px;}
+
+/* Business Report */
+.BusinessReportEntryBox { width: 35% }

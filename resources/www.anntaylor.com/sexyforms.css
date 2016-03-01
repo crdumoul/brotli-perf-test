@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* <input type="checkbox" /> */
+label.checkbox
+{
+  cursor: pointer;
+  line-height: 16px;
+  margin-bottom: 3px;
+  padding-left: 12px;
+  display: block;
+}
+label.checkbox-on  { background: transparent url(/webassets/ann/en_US/assets/images/buttons/checkbox-bg.png) 0px 0px scroll no-repeat; }
+label.checkbox-off { background: transparent url(/webassets/ann/en_US/assets/images/buttons/checkbox-bg.png) 0px -56px scroll no-repeat; }
+
+label.checkbox.po-box.checkbox-on {background-position: 0 0; font-size: 9px; line-height: 9px;}
+label.checkbox.po-box.checkbox-off {background-position: 0 -56px; font-size: 9px; line-height: 9px;}
+
+label.checkbox-on.active,
+label.checkbox-on:hover { background-position: 0 -225px; }
+label.checkbox-off.active,
+label.checkbox-off:hover { background-position: 0 -281px; }
+label.checkbox.po-box.checkbox-on.active,
+label.checkbox.po-box.checkbox-on:hover { background-position: 0 -225px; }
+label.checkbox.po-box.checkbox-off.active,
+label.checkbox.po-box.checkbox-off:hover { background-position: 0 -281px; }
+
+label.checkbox input[type="checkbox"]
+{
+  position: absolute !important;
+  left: -100000px !important;
+}
+
+/* <input type="radio" /> */
+label.radio
+{
+  cursor: pointer;
+  padding: 0 9px 0 15px;
+}
+label.radio-on  { background: url(/webassets/ann/en_US/assets/images/bkg/bkg-radiobutton_on.gif) 0 0 no-repeat; }
+label.radio-off { background: url(/webassets/ann/en_US/assets/images/bkg/bkg-radiobutton_off.gif) 0 0 no-repeat; }
+
+label.radio input
+{
+  position: absolute;
+  left: -100000px;
+}
+
+/* <select> converted to <ol> */
+div.select-box-container
+{
+  position: relative;
+  display: inline-block;
+  line-height: 16px;
+  overflow: visible;
+  height: 16px;
+  /*z-index: 1;*/
+  font-size: 9px;
+}
+
+div.select-box-container.select-box-container-open {
+	overflow: visible;
+}
+
+div.select-box-container .select-box-btn {
+    cursor: pointer;
+    display: block;
+    width: 17px;
+    height: 16px;
+    position:absolute;
+	right:-1px;
+	top:1px;
+    background: transparent url(/webassets/ann/en_US/assets/images/buttons/select-box-btn.png) no-repeat scroll 0 0;
+    border: 0 none;
+    border-left: 1px solid #b8afa8;
+}
+
+div.select-box-container:hover .select-box-btn,
+div.select-box-container-open .select-box-btn {
+	background-position: left bottom;
+}
+
+.modal-overlay div.select-box-container .select-box-btn {
+    background-position: 0 -16px;
+}
+
+div.select-box-bg span {
+    line-height: 16px;
+    padding: 0 4px;
+}
+
+div.select-box-bg,
+ol.select-box li {
+    background: transparent url(/webassets/ann/en_US/assets/images/buttons/select-box-bg.png) 0 0 repeat-x;
+}
+
+ol.select-box li.hover {
+    background-position: 0 -16px;
+    color: #fff;
+}
+
+div.select-box-bg {
+    height: 16px;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid #b8afa8;
+}
+
+ol.select-box li
+{
+    white-space: nowrap;
+    cursor: pointer;
+    width: 100%;
+    padding: 0;
+    line-height:16px;
+    margin: 0 !important;
+}
+
+ol.select-box {
+    border: 1px solid #b8afa8;
+
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 17px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+
+
+
+
+ol.select-box li span {
+	white-space: nowrap;
+	padding: 0 4px;
+    line-height: 16px;
+}
+
+ol.select-box li.selected { display: block; }
+
+
+/* Darker select box for overlays */
+.modal-overlay div.select-box-bg,
+.modal-overlay ol.select-box li {
+    background-position: 0 -32px;
+}
+.modal-overlay ol.select-box li.hover {
+    background-position: 0 -48px;
+    color: #504f4a;
+}
+
+.modal-overlay div.select-box-bg {
+  border: 1px solid #868179;
+
+}
+
+
+
+
+
+
+/* <input type="text" /> */
+.text-box {
+    border: 0 none;
+    height: 20px;
+    line-height: 20px;
+    background: transparent url(../img/shared/bg_textbox.png) top left no-repeat;
+}
+
+

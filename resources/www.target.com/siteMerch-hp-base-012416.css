@@ -1,0 +1,475 @@
+
+/* --------------------------------------------------------------------------
+   Site Merch Homepage Base Stylesheet.
+   -------------------------------------------------------------------------- */
+
+/* General Style Hacks.
+   -------------------------------------------------------------------------- */
+
+/**
+ * A majority of this was for a redesign last year.  Just a lot of overwriting the global
+ * stylesheet to meet the new design needs.
+ *
+ * 1. Sets the background color and adds a background image for the
+ *    gradient between the "9 pack" and the lower DVM placements.
+ * 2. Removes default borders around all the espots.
+ * 3. Overrides width (940px) set in global stylesheets to match new header width.
+ * 4. Not sure.  Anything flex_grid is staying though.
+ * 5. Overriding footer styles to match the new design of the HP.
+ */
+
+body.newLayout,
+.ie8 body.newLayout { background-image: none; background-color:#ffffff!important; } /*[1]*/
+#Main.flexible_grid_layout #flexible_grid_container > div { border: none !important; } /*[2]*/
+#Core, #Content, #Main { width: 1000px; } /*[3]*/
+#Main.flexible_grid_layout { left: auto; top: auto; position: relative; width: 1000px; height:2150px!important;} /*[4]*/
+
+/*[5]*/
+#Footer { width: 1000px; }
+#Footer > #PageNotes { position: relative; }
+#Footer .pagenotes {
+  position: relative;
+  top: 0px;
+  width: 1000px;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+#RecentViewItems .summary { width: 160px; }
+#rvCore { border-radius: 4px 0 0 0; }
+.myRecsLinks { text-align: center; }
+#linksContainer { border-top: none; }
+#defaultLinks {
+    width: 840px;
+    border-radius: 4px;
+}
+#defaultLinks div.rightMenu { border-radius: 0 4px 0 0; }
+#defaultLinks div.leftMenu { width: 140px; }
+
+/* Keeping these just as a precation.  DVM side rails are not displaying right now. */
+
+#dvm_placeholder_left, #dvm_placeholder_right{top:10px}
+#dvm_placeholder_left { left: -160px; }
+#dvm_placeholder_right { right: -160px; }
+
+/* End that madness. */
+
+
+
+/* Manual Espot Adjustments
+   -------------------------------------------------------------------------- */
+
+/**
+ * Hero & Six Pack
+ *
+ * The Homepage uses masonry to dymacially layout the containers.  Masonry requires a height & width
+ * of the child containers to function properly.  The DVM slot, unfortunately, has no height & width.
+ * This causes the layout to break.  To correct the layout, we have to manually override
+ * all the inline styles masonry adds inline.
+ */
+
+#e1 { width:1000px; } /* Hero */
+#e2 { top: 465px !important; left: 0px !important; } /* Slot One */
+#e3 { top: 465px !important; left: 333px !important; } /* Slot Two */
+
+#e4 { /* DVM Promo placement - Slot Three */
+  top: 465px !important;
+  left: 673px !important;
+  width:326px;
+  height:280px;
+  background-color:#f6f6f6;
+  border-radius: 4px;
+}
+  #e4 > div > div{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    border: 0pt none;
+  }
+
+#e5 { top: 758px !important; left: 0px !important; } /* Slot Four */
+#e6 { top: 758px !important; left: 333px !important; } /* Slot Five */
+#e7 { top: 758px !important; left: 666px !important; } /* Slot Six */
+
+
+/**
+ * Corp Priority Slots
+ */
+
+#e8 { top: 1065px !important; left: 0px !important; }
+#e9 { top: 1120px !important; left: 0px !important; }
+#e10 { top: 1120px !important; left: 333px !important; }
+
+
+/**
+ * Disclaimer
+ */
+
+#e11 { /*top: 1265px !important;*/ left: 666px !important; top: 1120px !important;}
+
+
+/**
+ * DVM 3 Pack.
+ */
+
+#e12 {
+  position: absolute;
+  top:1390px!important;
+  left: 0px !important;
+  width: 320px;
+  height: 135px;
+  background-color: #fff !important;
+}
+  #e12 > div > div {
+    position: relative;
+    top: 5px;
+    left: 5px;
+  }
+
+#e13 {
+  position: absolute;
+  top: 1390px !important;
+  left: 320px !important;
+  width: 380px;
+  height: 135px;
+  background-color: #fff !important;
+}
+  #e13 > div > div {
+    position: relative;
+    top: 5px;
+    left: 30px;
+  }
+
+#e14 {
+  position: absolute;
+  top: 1390px !important;
+  left: 700px !important;
+  width: 300px;
+  height: 135px;
+  background-color: #fff !important;
+}
+  #e14 > div > div {
+    position: relative;
+    top: 5px;
+    right:5px;
+  }
+
+
+/**
+ * Spotlights
+ */
+
+#e15 { top: auto; left:0px !important; } /* Top property is set in weekly file */
+
+/**
+ * #e16 is for the second spotlight which is not currently being used in the template.
+ */
+
+#e16 { top: auto; left:0px !important; } /* Top property is set in weekly file */
+
+
+/**
+ * Social Media / Connect Box
+ */
+
+#e17 { top: auto; left: 0px !important; } /* Top property is set in weekly file */
+
+/* End Manual Espot Adjustments */
+
+
+
+/* Homepage Tiles
+   -------------------------------------------------------------------------- */
+
+/**
+ * 1. Magic # to get masonry to equally space each column.
+ * 2. Clear the floats.
+ * 3. IE specifc hack so the clickable area also includes the padding in IE.
+ * 4. Adds a carrot symbol after the text links.
+ * 5. Removes carrot underline on hover.
+ */
+
+.hp-Tile * {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+.hp-Tile-copyHeader,
+.hp-Tile-copyMessage,
+.hp-Tile-pretendLink,
+.hp-Tile-strip,
+.hp-Tile a {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.hp-Tile {
+  width: 333px; /*[1]*/
+  margin-bottom: 10px;
+}
+
+.hp-Tile:after { /*[2]*/
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hp-Tile-inner { position: relative; }
+.hp-Tile-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.hp-Tile-copy { padding: 16px 10px 0 19px; }
+.hp-Tile-copyHeader {
+  margin: 0 !important;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1em;
+  letter-spacing: -1px;
+  color: #333 !important;
+}
+
+.hp-Tile-copyMessage {
+  padding: 8px 0 0 0;
+  font-size: 18px;
+  line-height: 1.15em;
+  color: #666;
+}
+
+.hp-Tile-linkGroup { padding: 15px 0 0 0; }
+.hp-Tile-linkGroup a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #454545;
+  background: url("http://static.targetimg1.com/2012/ol/global/images/trans.gif");  /*[3]*/
+}
+
+.hp-Tile-linkGroup a:after { /*[4]*/
+  content:'\203A';
+  display: inline-block; /*[5]*/
+  padding-left: 3px;
+  line-height: 1;
+}
+
+.hp-Tile-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.hp-Tile-pretendLink {
+  display: inline-block;
+  padding: 10px 0 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #454545;
+}
+
+.hp-Tile-pretendLink:after { /*[4]*/
+  content:'\203A';
+  display: inline-block; /*[5]*/
+  padding-left: 3px;
+  line-height: 1;
+}
+
+
+/**
+ * Strip along the bottom of the tile.
+ * <span class="hp-Tile-strip"><strong>save an extra 10%*</strong> promo code: MOVINGDAY</span>
+ */
+
+.hp-Tile-strip {
+  position: absolute;
+  bottom: 0;
+  padding: 12px 10px 12px 20px;
+  width: 100%;
+  font-size: 13px;
+  color: white;
+  background-color: #cc0000;
+  border-radius: 0 0 4px 4px;
+}
+  .hp-Tile-strip strong { font-weight: bold; }
+
+
+/* Tile Variations
+   -------------------------------------------------------------------------- */
+
+/**
+ * Default Modifier Class
+ */
+
+.hp-Tile--default .hp-Tile-inner {
+  width: 326px;
+  height: 280px;
+  border-radius: 4px;
+}
+
+/**
+ * Corp Modifier Class
+ */
+
+.hp-Tile--corp { border-right: 1px solid #eee; }
+.hp-Tile--corp .hp-Tile-inner {
+  width: 326px;
+  height: 160px;
+  text-align: center;
+}
+.hp-Tile--corp .hp-Tile-copy { padding: 90px 16px 0 16px; }
+
+
+
+/* Disclaimer
+   -------------------------------------------------------------------------- */
+
+.Disclaimer {
+  position: relative;
+  width: 1000px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+  .Disclaimer-message {
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+  }
+  .Disclaimer-link { font-weight: bold; }
+
+
+/* Utility Classes
+   -------------------------------------------------------------------------- */
+
+/**
+ * Utility Classes For Alignment
+ */
+
+.u-alignLeft { float: left; }
+.u-alignCenter { margin: 0 auto; }
+.u-alignRight { float: right; }
+
+
+/**
+ * Utility Classes For Colors
+ */
+
+.u-colorRed { color: #cc0000 !important; }
+.u-colorGreen { color: #6ea200 !important; }
+.u-colorWhite { color: #fff !important; }
+.u-colorBlack { color: #000000 !important; }
+.u-colorLavender { color: #b30075 }
+.u-colorGreyDark { color: #333333 !important; }
+.u-colorGreyMed { color: #666666 !important; }
+.u-colorGreyLight { color: #898989 !important; }
+
+
+
+a:hover > .u-colorRed { color: #cc0000 !important; }
+
+/**
+ * Utility Class For Hotspots
+ *
+ * 1. Modifier for default hotspot.  I'd probably keep this inline with the
+ *    OC HTML Code since it's specific to that placement.
+ */
+
+.u-linkHotspot {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+span.u-linkHotspot.u-linkHotspot--112615-accessories {
+    position: absolute;
+    top: 0;
+    right: 0;
+	height: 280px;
+    width: 200px;
+}
+/*
+.u-linkHotspot--name { [1]
+  right: 100px;
+  bottom: 100px;
+  width: 50px;
+  height: 50px;
+}
+*/
+
+/**
+ * Utility Class For Block Level Links (links that wrap other elements)
+ *
+ * 1. IE specifc hack so the clickable also includes the padding.
+ * 2. CSS trick for proper underline color.
+ * 3. Hack to remove underline on superscripts.  Just looks better IMO.
+ */
+
+.u-blockAnchor {
+  display: block;
+  background: url( http://static.targetimg1.com/2012/ol/global/images/trans.gif ); /*[1]*/
+}
+
+.u-blockAnchor:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.u-blockAnchor:hover,
+.u-blockAnchor:focus { text-decoration: none; }
+.u-blockAnchor:hover .u-blockAnchor-child,
+.u-blockAnchor:focus .u-blockAnchor-child { text-decoration: underline; } /*[2]*/
+.u-blockAnchor:hover sup,
+.u-blockAnchor:focus sup {
+  display: inline-block; /*[3]*/
+  text-decoration: none;
+}
+
+/**
+ * Utitlity Class For A Proper Superscript
+ */
+
+.u-superscript {
+  position: relative;
+  top: -0.25em;
+  vertical-align: baseline;
+  padding-left: 1px;
+  font-size: .75em;
+  line-height: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------
+    Comment
+   -------------------------------------------------------------------------- */
+
+/*  Comment
+   -------------------------------------------------------------------------- */
+
+/**
+ * Comment
+ */
+
+ /* Comment */
+
+
+/*
+.declaration-order {
+  - Positioning
+  - Box-model
+  - Typography
+  - Visual
+  - Misc
+}
+*/

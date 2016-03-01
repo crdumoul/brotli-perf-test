@@ -1,0 +1,174 @@
+.hdrWrap {
+    width:990px;
+    margin:0 auto;
+}
+.hdrWrap > .Left {
+    float: left;
+    width: 361px;
+    padding-top:6px;
+}
+.hdrWrap > .Right{
+    float: left;
+    width:  629px;
+}
+.hdrWrap > .Left .Left{
+    float: left;
+    width: 217px;
+}
+.hdrWrap > .Left .Right{
+    float: left;
+    margin: 0 0 0 10px;
+    width: 134px;
+}
+
+
+
+
+.hdrTopRightLinksWrapper1 {
+    float: right;
+    position:relative;
+    padding: 2px 0 5px 0px;
+}
+.hdrTopRightLinksWrapper1 > .Left { /* showstopper wrap */
+    float: left;
+    padding: 0 0 0 0;
+}
+.hdrTopRightLinksWrapper1 > .Centre {
+    float: left;
+    padding: 0;
+}
+.hdrTopRightLinksWrapper1 > .Centre .control, .hdrTopRightLinksWrapper1 > .Centre .quicklinks {
+    float: left;
+}
+.hdrTopRightLinksWrapper1 > .Right {  /* signin */
+    float: right;
+    padding: 0px;
+}
+.hdrTopRightLinksWrapper1 .quicklinks li  {
+    float: left;
+}
+
+.hdrTopRightLinksWrapper1 .Centre .quicklinks a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.hdrTopRightLinksWrapper1 .Centre .control a {  /* program guide link */
+    margin: 0;
+    padding: 0px 15px 0 14px;
+    background: url(/tsc/en_ca/assets/images/buttons/btn_header_map01.png) -7px -81px no-repeat;
+    font-size: 11px;
+    font-weight: normal;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    float: left;
+    line-height:40px;
+    font-family: Verdana;
+
+}
+.hdrTopRightLinksWrapper1 .Centre .control a:hover {
+    text-decoration: none;
+    color: #000;
+}
+.hdrTopRightLinksWrapper1 .Left .quicklinks a{
+    text-indent: -1000px;
+    width: 163px;
+    overflow: hidden;
+    background: url(/Content/en_CA/Assets/images/todays_showstopper.png) 50% 49% no-repeat;
+    text-align: left;
+    margin: 0;
+    line-height: 40px;
+    float: left;
+    padding:0 10px 0 10px;
+}
+
+
+
+.hdrMediaLinksWrap {
+    color: #666666;
+    float: right;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+}
+.hdrMediaLinksWrap .Left {
+    float: left;
+}
+.hdrMediaLinksWrap .Left .control, .hdrMediaLinksWrap .Left .quicklinks {
+    float: left;
+}
+
+.hdrMediaLinksWrap .Right {
+    float: right;
+}
+
+.hdrMediaLinksWrap .quicklinks li {
+        float : left;
+}
+.hdrMediaLinksWrap .quicklinks a{
+    color: #1984cc;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 11px;
+    float: right;
+    padding: 9px 15px 0px 15px;
+    cursor: pointer;
+    text-align: right;
+    line-height: 16px;
+    margin: 0px 0 0px 0px;
+}
+
+.hdrTopRightLinksWrapper1 .Centre .control a.icoWatchUsLive{
+    background: url('/tsc/en_ca/assets/images/buttons/btn_header_map01.png') no-repeat;
+    padding: 0px 15px 0 22px;
+    height: auto;
+}
+a.icoWatchUsLive:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.megamenu {
+    font-size: 13px;
+    width: 974px;
+    padding: 0 8px;
+    z-index: 5110;
+    height: 37px;
+    background: none;
+    margin: 0 auto 6px auto;
+    background: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    position:relative;
+    display: table;
+}
+
+.hdrShoppingCartLinkLeft a {
+    background: url(/tsc/en_ca/assets/images/buttons/btn_header_map01.png)  0 -124px no-repeat;
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 33px;
+    padding: 0;
+    text-align: left;
+    width: 92px;
+    position: relative;
+}
+.hdrShoppingCartLinkLeft a:hover {
+    text-decoration: none;
+    background: url(/tsc/en_ca/assets/images/buttons/btn_header_map01.png)  0 -124px no-repeat;
+}
+.hdrShoppingCartLinkLeft a span {
+    top: -4px;
+    position: absolute;
+    left: 14px;
+    text-align: center;
+    width: 24px;
+}
+.hdrSearchCartWrapper .Left{
+    margin-left:0px;
+    width: 482px;
+}
