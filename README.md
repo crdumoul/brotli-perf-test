@@ -1,5 +1,3 @@
-# README #
-
 This tool tests the compression ratio and speed of Brotli at various levels compared to Zlib (Gzip) level 6.
 The resources used to test compression are HTML, JS, and CSS taken from the websites in the sites.txt list.
 
@@ -30,7 +28,7 @@ To run the test:
 
 	ruby brotli_test.rb
 
-The test files are already in the resources directory, however the steps for repopulating the resources directory from the websites in the sites.txt list is done like this:
+The test files are already in the resources directory, however repopulating the resources directory from the websites in the sites.txt list is done like this:
 
 	./download_all_resources.sh
 
