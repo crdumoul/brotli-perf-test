@@ -1,5 +1,3 @@
-# README #
-
 This tool tests the compression ratio and speed of Brotli at various levels compared to Zlib (Gzip) level 6.
 The resources used to test compression are HTML, JS, and CSS taken from the websites in the sites.txt list.
 
