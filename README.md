@@ -30,7 +30,7 @@ To run the test:
 
 	ruby brotli_test.rb
 
-The test files are already in the resources directory, however the steps for repopulating the resources directory from the websites in the sites.txt list is done like this:
+The test files are already in the resources directory, however repopulating the resources directory from the websites in the sites.txt list is done like this:
 
 	./download_all_resources.sh
 
