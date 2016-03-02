@@ -64,6 +64,7 @@ class BrotliTest
           bucket_medians[bucket_size] = get_medians(result_array)
         end
         file.write("\n")
+        write_csv_medians_header(file)
         bucket_medians.each do |bucket_size, bucket_median|
           write_csv_medians(file, bucket_median, bucket_size)
         end
@@ -92,7 +93,7 @@ class BrotliTest
 
   def write_csv_medians(file, medians, bucket_size)
     bucket_description = bucket_size != 0 ? "#{bucket_size/2} <= size < #{bucket_size}" : 'all'
-    file.write("Median (#{bucket_description}),,")
+    file.write("Median (#{bucket_description}),#{medians['num_values']},")
     (1..11).each do |level|
       median = medians["brotli#{level}_median_compression"]
       file.write("#{median},")
@@ -103,6 +104,14 @@ class BrotliTest
       file.write("#{median},")
     end
     file.write("#{medians['zlib6_median_speed']}\n")
+  end
+
+  def write_csv_medians_header(file)
+    file.write(',count,')
+    file.write((1..11).map {|level| "brotli#{level}"}.join(','))
+    file.write(',zlib6,,')
+    file.write((1..11).map {|level| "brotli#{level}"}.join(','))
+    file.write(",zlib6\n")
   end
 
   def write_csv_header(file)
@@ -130,5 +139,5 @@ class BrotliTest
 end
 
 test = BrotliTest.new
-test.run_test
+#test.run_test
 test.process_results
