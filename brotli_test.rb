@@ -10,15 +10,15 @@ class BrotliTest
 
     files = Dir.glob("resources/*/*").reject{|file| File.directory?(file)}
     files.sort!
-    files.slice!(start..-1)
-    files.each_index do |index|
-      file = files[index]
+    to_process = files.slice(start..-1)
+    to_process.each_index do |index|
+      file = to_process[index]
       extension_index = file.rindex('.');
       slash_index = file.rindex('/');
       next unless extension_index && (extension_index > slash_index)
       next unless File.size(file) > 16
 
-      puts "Processing #{index + 1} of #{files.length} - #{file}"
+      puts "Processing #{index + start + 1} of #{files.length} - #{file}"
 
       file_result = JSON.parse(%x(./brotli-test '#{file}'))
       next unless file_result['valid']
@@ -36,6 +36,14 @@ class BrotliTest
     FileUtils.mkdir_p(@@results_dir)
     File.open(@@results_json, 'w') do |file|
       file.write(JSON.generate(results))
+    end
+  end
+
+  def read_raw_results
+    if File.exist?(@@results_json)
+      JSON.parse(File.read(@@results_json))
+    else
+      {}
     end
   end
 
@@ -198,7 +206,7 @@ class BrotliTest
   end
 end
 
-start_index = ARGV[0] || 0
+start_index = ARGV[0] ? (ARGV[0].to_i - 1) : 0
 test = BrotliTest.new
 test.run_test(start_index)
 test.process_results
