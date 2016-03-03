@@ -3,6 +3,9 @@
 #include <brotli/enc/encode.h>
 #include <zlib.h>
 #include <time.h>
+#include <iostream>
+#include <sstream>
+#include <iomanip>
 
 size_t file_size(FILE * file) {
   fseek(file, 0, SEEK_END);
@@ -61,7 +64,7 @@ void zlib_compress(int level, const char * input_data, size_t input_size, char *
 
 typedef void (*CompressionFunc)(int, const char *, size_t, char *, size_t *);
 
-void measure_compress(const char * name, int level, const char * input_data, size_t input_size, char * output_data, CompressionFunc compress) {
+void measure_compress(const char * name, int level, const char * input_data, size_t input_size, char * output_data, CompressionFunc compress, std::ostream & results) {
   int repetitions = 100;
 
   size_t output_size = 0;
@@ -76,7 +79,8 @@ void measure_compress(const char * name, int level, const char * input_data, siz
 
   float compressed_size = (float) total_output_size / (input_size * repetitions);
   float compression_speed = (float) total_output_size / (elapsed_time*1024*1024);
-  printf("\"%s%d_compression\":%.2f, \"%s%d_speed\":%.2f", name, level, compressed_size, name, level, compression_speed);
+  results << "\"" << name << level << "_compression\":" << std::setprecision(3) << compressed_size << ", \"";
+  results << name << level << "_speed\":" << std::setprecision(3) << compression_speed;
 }
 
 int main (int argc, char ** argv) {
@@ -92,16 +96,17 @@ int main (int argc, char ** argv) {
 
     char * output_data = (char *) malloc(input_size);
 
-    printf("{\"original_size\":%lu,\n", input_size);
+    std::ostringstream results;
+    results << "{\"valid\":true, \"original_size\":" << input_size << ",\n";
     for (int level = 1 ; level <= 11 ; level ++) {
-      measure_compress("brotli", level, input_data, input_size, output_data, brotli_compress);
-      printf(",\n");
+      measure_compress("brotli", level, input_data, input_size, output_data, brotli_compress, results);
+      results << ",\n";
     }
-    measure_compress("zlib", 6, input_data, input_size, output_data, zlib_compress);
-    printf("}\n");
+    measure_compress("zlib", 6, input_data, input_size, output_data, zlib_compress, results);
+    results << "}\n";
+    std::cout << results.str();
   } catch (const char * message) {
-    printf("Caught exception: %s\n", message);
-    return 1;
+    std::cout << "{\"valid\":false, \"message\":\"" << message << "\"}\n";
   }
   return 0;
 }
