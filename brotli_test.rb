@@ -6,7 +6,7 @@ class BrotliTest
   @@results_json = @@results_dir + '/raw_results.json'
 
   def run_test(start)
-    results = {}
+    results = read_raw_results
 
     files = Dir.glob("resources/*/*").reject{|file| File.directory?(file)}
     files.sort!
@@ -49,66 +49,72 @@ class BrotliTest
 
   def process_results
     results = JSON.parse(File.read(@@results_json))
-
+    all_results = []
     results.each do |content_type, result_array|
-      puts "Processing #{content_type} results"
-      result_array.sort! {|x, y| x['original_size'] <=> y['original_size']}
+      process_content_type(content_type, result_array)
+      all_results.concat(result_array)
+    end
+    process_content_type('all', all_results)
+  end
 
-      bucket_results = {}
-      File.open("#{@@results_dir}/#{content_type}_raw_results.csv", 'w') do |file|
-        write_csv_raw_header(file)
-        result_array.each do |file_result|
-          size = file_result['original_size']
-          result_line = "\"#{file_result['filename']}\",#{size},"
-          result_line << (1..11).map {|level| file_result["brotli#{level}_compression"]}.join(',')
-          result_line << ",#{file_result['zlib6_compression']},,"
-          result_line << (1..11).map {|level| file_result["brotli#{level}_speed"]}.join(',')
-          result_line << ",#{file_result['zlib6_speed']}\n"
-          file.write(result_line)
+  def process_content_type(content_type, result_array)
+    puts "Processing #{content_type} results"
+    result_array.sort! {|x, y| x['original_size'] <=> y['original_size']}
 
-          size_bucket = get_size_bucket(size)
-          bucket_results[size_bucket] ||= []
-          bucket_results[size_bucket] << file_result
-        end
+    bucket_results = {}
+    File.open("#{@@results_dir}/#{content_type}_raw_results.csv", 'w') do |file|
+      write_csv_raw_header(file)
+      result_array.each do |file_result|
+        size = file_result['original_size']
+        result_line = "\"#{file_result['filename']}\",#{size},"
+        result_line << (1..11).map {|level| file_result["brotli#{level}_compression"]}.join(',')
+        result_line << ",#{file_result['zlib6_compression']},,"
+        result_line << (1..11).map {|level| file_result["brotli#{level}_speed"]}.join(',')
+        result_line << ",#{file_result['zlib6_speed']}\n"
+        file.write(result_line)
+
+        size_bucket = get_size_bucket(size)
+        bucket_results[size_bucket] ||= []
+        bucket_results[size_bucket] << file_result
       end
+    end
 
-      File.open("#{@@results_dir}/#{content_type}_processed_results.csv", 'w') do |file|
-        bucket_medians = {}
-        bucket_results.each do |bucket_size, result_array|
-          bucket_medians[bucket_size] = get_medians(result_array)
-        end
-        global_medians = get_medians(result_array)
-
-        file.write("Median Compressed File Size\n")
-        write_csv_processed_header(file, true)
-        bucket_medians.each do |bucket_size, bucket_median|
-          write_csv_medians_compression(file, bucket_median, bucket_size)
-        end
-        write_csv_medians_compression(file, global_medians, 0)
-
-        file.write("\nMedian Speed (MB/s)\n")
-        write_csv_processed_header(file, true)
-        bucket_medians.each do |bucket_size, bucket_median|
-          write_csv_medians_speed(file, bucket_median, bucket_size)
-        end
-        write_csv_medians_speed(file, global_medians, 0)
-
-        file.write("\nCompressed File Size Improvement vs zlib6\n")
-        write_csv_processed_header(file, false)
-        bucket_medians.each do |bucket_size, bucket_median|
-          write_csv_median_improvement_compression(file, bucket_median, bucket_size)
-        end
-        write_csv_median_improvement_compression(file, global_medians, 0)
-
-        file.write("\nSpeed Improvement vs zlib6\n")
-        write_csv_processed_header(file, false)
-        bucket_medians.each do |bucket_size, bucket_median|
-          write_csv_median_improvement_speed(file, bucket_median, bucket_size)
-        end
-        write_csv_median_improvement_speed(file, global_medians, 0)
-
-        file.write("\n")
+    File.open("#{@@results_dir}/#{content_type}_processed_results.csv", 'w') do |file|
+      bucket_medians = {}
+      bucket_results.each do |bucket_size, result_array|
+        bucket_medians[bucket_size] = get_medians(result_array)
       end
+      global_medians = get_medians(result_array)
+
+      file.write("Median Compressed File Size\n")
+      write_csv_processed_header(file, true)
+      bucket_medians.each do |bucket_size, bucket_median|
+        write_csv_medians_compression(file, bucket_median, bucket_size)
+      end
+      write_csv_medians_compression(file, global_medians, 0)
+
+      file.write("\nMedian Speed (MB/s)\n")
+      write_csv_processed_header(file, true)
+      bucket_medians.each do |bucket_size, bucket_median|
+        write_csv_medians_speed(file, bucket_median, bucket_size)
+      end
+      write_csv_medians_speed(file, global_medians, 0)
+
+      file.write("\nCompressed File Size Improvement vs zlib6\n")
+      write_csv_processed_header(file, false)
+      bucket_medians.each do |bucket_size, bucket_median|
+        write_csv_median_improvement_compression(file, bucket_median, bucket_size)
+      end
+      write_csv_median_improvement_compression(file, global_medians, 0)
+
+      file.write("\nSpeed Improvement vs zlib6\n")
+      write_csv_processed_header(file, false)
+      bucket_medians.each do |bucket_size, bucket_median|
+        write_csv_median_improvement_speed(file, bucket_median, bucket_size)
+      end
+      write_csv_median_improvement_speed(file, global_medians, 0)
+
+      file.write("\n")
     end
   end
 
@@ -208,5 +214,5 @@ end
 
 start_index = ARGV[0] ? (ARGV[0].to_i - 1) : 0
 test = BrotliTest.new
-test.run_test(start_index)
+#test.run_test(start_index)
 test.process_results
