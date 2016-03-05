@@ -20,7 +20,7 @@ class BrotliTest
 
       puts "Processing #{index + start + 1} of #{files.length} - #{file}"
 
-      file_result = JSON.parse(%x(./brotli-test '#{file}'))
+      file_result = JSON.parse(%x(./brotli-test '#{file.gsub("'", "'\"'\"'")}'))
       next unless file_result['valid']
       file_result['filename'] = file.sub('resources/', '')
 
