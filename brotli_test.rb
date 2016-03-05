@@ -214,5 +214,5 @@ end
 
 start_index = ARGV[0] ? (ARGV[0].to_i - 1) : 0
 test = BrotliTest.new
-#test.run_test(start_index)
+test.run_test(start_index)
 test.process_results
