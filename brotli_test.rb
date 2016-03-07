@@ -51,6 +51,7 @@ class BrotliTest
     results = JSON.parse(File.read(@@results_json))
     all_results = []
     results.each do |content_type, result_array|
+      result_array.select! {|result| result['brotli1_compression'] != 0}
       process_content_type(content_type, result_array)
       all_results.concat(result_array)
     end

@@ -31,16 +31,18 @@ void read_data(FILE * file, char ** data, size_t * size) {
   return;
 }
 
-void brotli_compress(int level, const char * input_data, size_t input_size, char * output_data, size_t * output_size) {
+size_t brotli_compress(int level, const char * input_data, size_t input_size, char * output_data, size_t output_buffer_size) {
   brotli::BrotliParams params;
   params.quality = level;
   brotli::BrotliMemIn in(input_data, input_size);
-  brotli::BrotliMemOut out(output_data, input_size);
-  brotli::BrotliCompress(params, &in, &out);
-  *output_size = out.position();
+  brotli::BrotliMemOut out(output_data, output_buffer_size);
+  if (!brotli::BrotliCompress(params, &in, &out)) {
+    throw "Failure in BrotliCompress";
+  }
+  return out.position();
 }
 
-void zlib_compress(int level, const char * input_data, size_t input_size, char * output_data, size_t * output_size) {
+size_t zlib_compress(int level, const char * input_data, size_t input_size, char * output_data, size_t output_buffer_size) {
   z_stream strm;
   strm.zalloc = Z_NULL;
   strm.zfree = Z_NULL;
@@ -50,7 +52,7 @@ void zlib_compress(int level, const char * input_data, size_t input_size, char *
   }
   strm.avail_in = input_size;
   strm.next_in = (unsigned char *) input_data;
-  strm.avail_out = input_size;
+  strm.avail_out = output_buffer_size;
   strm.next_out = (unsigned char *) output_data;
   if (Z_STREAM_ERROR == deflate(&strm, Z_FINISH)) {
     throw "Failure in deflate";
@@ -58,21 +60,19 @@ void zlib_compress(int level, const char * input_data, size_t input_size, char *
   if (0 != strm.avail_in) {
     throw "Failed to consume entire input in deflate";
   }
-  *output_size = input_size - strm.avail_out;
+  size_t output_size = output_buffer_size - strm.avail_out;
   deflateEnd(&strm);
+  return output_size;
 }
 
-typedef void (*CompressionFunc)(int, const char *, size_t, char *, size_t *);
+typedef size_t (*CompressionFunc)(int, const char *, size_t, char *, size_t);
 
-void measure_compress(const char * name, int level, const char * input_data, size_t input_size, char * output_data, CompressionFunc compress, std::ostream & results) {
+void measure_compress(const char * name, int level, const char * input_data, size_t input_size, char * output_data, size_t output_buffer_size, CompressionFunc compress, std::ostream & results) {
   int repetitions = 100;
-
-  size_t output_size = 0;
   size_t total_output_size = 0;
   clock_t start = clock();
   for (int i = 0 ; i < repetitions ; i++) {
-    compress(level, input_data, input_size, output_data, &output_size);
-    total_output_size += output_size;
+    total_output_size += compress(level, input_data, input_size, output_data, output_buffer_size);
   }
   clock_t end = clock();
   float elapsed_time = (float) (end - start) / CLOCKS_PER_SEC;
@@ -85,7 +85,7 @@ void measure_compress(const char * name, int level, const char * input_data, siz
 
 int main (int argc, char ** argv) {
   try {
-    FILE * infile = open_file(argv[1], "r");
+    FILE * infile = open_file(argv[1], "rb");
     if (infile == NULL) {
       exit(1);
     }
@@ -94,15 +94,16 @@ int main (int argc, char ** argv) {
     read_data(infile, &input_data, &input_size);
     fclose(infile);
 
-    char * output_data = (char *) malloc(input_size);
+    size_t output_buffer_size = input_size * 2;
+    char * output_data = (char *) malloc(output_buffer_size);
 
     std::ostringstream results;
     results << "{\"valid\":true, \"original_size\":" << input_size << ",\n";
     for (int level = 1 ; level <= 11 ; level ++) {
-      measure_compress("brotli", level, input_data, input_size, output_data, brotli_compress, results);
+      measure_compress("brotli", level, input_data, input_size, output_data, output_buffer_size, brotli_compress, results);
       results << ",\n";
     }
-    measure_compress("zlib", 6, input_data, input_size, output_data, zlib_compress, results);
+    measure_compress("zlib", 6, input_data, input_size, output_data, output_buffer_size, zlib_compress, results);
     results << "}\n";
     std::cout << results.str();
   } catch (const char * message) {
