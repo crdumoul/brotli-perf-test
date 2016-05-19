@@ -24,7 +24,11 @@ The actual compression test is performed by the program defined in brotli-test.c
 
 The Ruby program brotli_test.rb calls brotli-test once for each file under the resources directory, stores the raw results in the file results/raw_results.json, and then processes the data to generate the final results as CSV files in the results folder. The CSV files can be imported into a spreadsheet like Google Docs.
 
-To run the test:
+First compile the brotli-test executable:
+
+	make
+
+Then run the test:
 
 	ruby brotli_test.rb
 
