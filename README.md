@@ -36,3 +36,8 @@ The test files are already in the resources directory, however repopulating the 
 
 	./download_all_resources.sh
 
+License
+
+Copyright 2016 Akamai Technologies, Inc. All rights reserved.
+
+Licensed under the MIT License
