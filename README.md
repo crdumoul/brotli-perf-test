@@ -1,3 +1,5 @@
+#### Description
+
 This tool tests the compression ratio and speed of Brotli at various levels compared to Zlib (Gzip) level 6.
 The resources used to test compression are HTML, JS, and CSS taken from the websites in the sites.txt list.
 
@@ -24,17 +26,19 @@ The actual compression test is performed by the program defined in brotli-test.c
 
 The Ruby program brotli_test.rb calls brotli-test once for each file under the resources directory, stores the raw results in the file results/raw_results.json, and then processes the data to generate the final results as CSV files in the results folder. The CSV files can be imported into a spreadsheet like Google Docs.
 
-First compile the brotli-test executable:
+#### Running the test
+
+Populate the resources directory from the websites listed in sites.txt like this:
+
+	./download_all_resources.sh
+
+Compile the brotli-test executable:
 
 	make
 
-Then run the test:
+Run the test:
 
 	ruby brotli_test.rb
-
-The test files are already in the resources directory, however repopulating the resources directory from the websites in the sites.txt list is done like this:
-
-	./download_all_resources.sh
 
 #### License
 
@@ -44,7 +48,7 @@ Copyright 2016 Akamai Technologies, Inc.
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+   http://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
