@@ -1,1 +1,0 @@
-function changeMetric(){var displayValue=$("span.imperial").css("display");if(displayValue=="none"){$("span.imperial").css("display","inline");$("span.metric").css("display","none");}else{$("span.imperial").css("display","none");$("span.metric").css("display","inline");}}
