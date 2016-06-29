@@ -4,7 +4,8 @@ This tool tests the compression ratio and speed of Brotli at various levels comp
 The resources used to test compression are HTML, JS, and CSS taken from the websites in the sites.txt list.
 
 The Brotli library is taken from the git repo at https://github.com/bagder/libbrotli. This repo is a wrapper on the core Brotli code (from https://github.com/google/brotli) which compiles and installs a library that can be used in any C/C++ program.
-To install libbrotli:
+
+To install libbrotli, first make sure you have libtool, autoconf and automake installed. Then:
 
 	git clone https://github.com/bagder/libbrotli.git
 	cd libbrotli
@@ -27,6 +28,14 @@ The actual compression test is performed by the program defined in brotli-test.c
 The Ruby program brotli_test.rb calls brotli-test once for each file under the resources directory, stores the raw results in the file results/raw_results.json, and then processes the data to generate the final results as CSV files in the results folder. The CSV files can be imported into a spreadsheet like Google Docs.
 
 #### Running the test
+
+Clone this git repo:
+
+	git clone https://github.com/crdumoul/brotli-perf-test.git
+	
+Enter the brotli-perf-test folder:
+
+	cd brotli-perf-test
 
 Populate the resources directory from the websites listed in sites.txt like this:
 
