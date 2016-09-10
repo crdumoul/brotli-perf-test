@@ -9,6 +9,7 @@ To install libbrotli, first make sure you have libtool, autoconf and automake in
 
 	git clone https://github.com/bagder/libbrotli.git
 	cd libbrotli
+	git checkout e992cce
 	./autogen.sh
 	./configure
 	make
