@@ -1,0 +1,6 @@
+brotli-test
+brotli-test.o
+resources/
+results/
+temp/
+
